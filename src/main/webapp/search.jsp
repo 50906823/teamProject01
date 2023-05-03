@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>상세 검색 페이지</title>
 </head>
 <body>
+	<%@ include file = "header.jsp" %>
+	<%@ include file = "menuBar.jsp" %>
 	<h1>상세 검색 페이지</h1>
 </body>
 </html>
