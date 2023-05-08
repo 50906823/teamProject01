@@ -11,32 +11,17 @@
 
 	<nav class="navbar navbar-expand-lg bg-body-tertiary">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">놀러가조</a>
+	    <a class="navbar-brand" href="#">제대로 모시겠습니다. 행복한 여행하세요.</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="main.jsp">이달의 여행</a>
-	        </li>
-          <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="main.jsp">지역</a>
-	        </li>
-          <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="main.jsp">인기</a>
-	        </li>
-          <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="main.jsp">코스</a>
-	        </li>
-          <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="main.jsp">축제</a>
-	        </li>
-          <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="main.jsp">당일치기</a>
+	          <a class="nav-link active" aria-current="page" href="login.jsp">로그인</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="addArea.jsp">지역</a>
+	          <a class="nav-link" href="signUp.jsp">회원가입</a>
 	        </li>
 	      </ul>
 	    </div>
