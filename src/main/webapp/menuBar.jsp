@@ -72,8 +72,9 @@ i { margin: 5px; padding: 5px; font-size: 1.7rem; }
 <body>
 <div id="menuBar">
 <ul>
+<li>제대로 모시겠습니다. 즐거운 여행 보내세요.</li>
   <li class="li-menuBar">
-    <a href="#"><button class="button-menuBar">전체</button></a>
+    <!-- <a href="#"><button class="button-menuBar">전체</button></a> -->
     <!-- <div class="menuBar-hidden">
       <p>공지사항1</p>
       <div class="li-line-bottom"></div>
@@ -82,7 +83,7 @@ i { margin: 5px; padding: 5px; font-size: 1.7rem; }
   </li>
   <div class="li-line"></div>
   <li class="li-menuBar">
-  <a href="#"><button class="button-menuBar">지도</button></a>
+  <a href="#"><button class="button-menuBar">이달의 여행</button></a>
   <div class="menuBar-hidden">
     <p><a href="#">조직도</a></p>
     <div class="li-line-bottom"></div>
@@ -93,7 +94,7 @@ i { margin: 5px; padding: 5px; font-size: 1.7rem; }
 </li>
 <div class="li-line"></div>
 <li class="li-menuBar">
-  <a href="#"><button class="button-menuBar">이미지</button></a>
+  <a href="#"><button class="button-menuBar">지역</button></a>
   <div class="menuBar-hidden">
     <p><a href="#">급여계산</a></p>
     <div class="li-line-bottom"></div>
@@ -139,7 +140,7 @@ i { margin: 5px; padding: 5px; font-size: 1.7rem; }
   </li>
   <div class="li-line"></div>
   <li class="li-menuBar">
-    <a href="#"><button class="button-menuBar">로그인</button></a>
+    <a href="login.jsp"><button class="button-menuBar">로그인</button></a>
     <div class="menuBar-hidden">
       <p><a href="#">결재사항</a></p>
       <div class="li-line-bottom"></div>
@@ -148,7 +149,7 @@ i { margin: 5px; padding: 5px; font-size: 1.7rem; }
   </li>
     <div class="li-line"></div>
     <li class="li-menuBar">
-      <a href="#"><button class="button-menuBar">회원가입</button></a>
+      <a href="signUp.jsp"><button class="button-menuBar">회원가입</button></a>
       <div class="menuBar-hidden">
         <p><a href="#">게시판</a></p>
         <div class="li-line-bottom"></div>
