@@ -8,7 +8,10 @@
 </head>
 <body>
 	<h1>메인 페이지</h1>
-	<h2>사이트 이름 (확정?!!!) 여행갈거조</h2>
-	<h2>사이트 이름 후보 여행갔조 여행가조 놀러가조</h2>
+
+
+	<div class="box-search">
+		<input class="input-search" type="text" placeholder="메뉴를 검색하세요."><i class="fa-brands fa-sistrix"></i>
+	</div>
 </body>
 </html>
