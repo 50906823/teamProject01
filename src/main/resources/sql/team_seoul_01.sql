@@ -2,24 +2,27 @@
 
 CREATE TABLE team_seoul_01
 (
-  명칭 VARCHAR2(60) PRIMARY KEY,
-  우편번호 VARCHAR2(10) , 
-  주소 VARCHAR2(90) NOT NULL,
-  개요 VARCHAR2(4000) ,
-  문의및안내 VARCHAR2(50),
-  개장일 VARCHAR2(30),
-  쉬는날 VARCHAR2(100) ,
-  체험안내 VARCHAR2(4000),
-  체험가능연령 VARCHAR2(90),
-  수용인원 VARCHAR2(100), 
-  이용시기 VARCHAR2(100) , 
-  이용시간 VARCHAR2(900),
-  주차시설 VARCHAR2(840) ,
-  유모차대여여부 VARCHAR2(6),
-  애완동물동반가능여부 VARCHAR2(6),
-  상세정보 VARCHAR2(4000)
+  seoul_name VARCHAR2(60) PRIMARY KEY,
+  seoul_postNum VARCHAR2(10) , 
+  seoul_address VARCHAR2(90) NOT NULL,
+  seoul_outline VARCHAR2(4000) ,
+  seoul_tel VARCHAR2(50),
+  seoul_opening VARCHAR2(30),
+  seoul_dayOff VARCHAR2(100) ,
+  seoul_experienceInfo VARCHAR2(4000),
+  seoul_experienceAge VARCHAR2(90),
+  seoul_limitPeople VARCHAR2(100), 
+  seoul_period VARCHAR2(100) , 
+  seoul_hours VARCHAR2(900),
+  seoul_parking VARCHAR2(840) ,
+  seoul_rentalStroller VARCHAR2(6),
+  seoul_withPet VARCHAR2(6),
+  seoul_detailInfo VARCHAR2(4000)
 );
-
 
 --DROP TABLE team_seoul_01;
 SELECT * FROM team_seoul_01;
+
+SELECT *
+FROM team_seoul_01
+WHERE seoul_name LIKE '%서울%';
