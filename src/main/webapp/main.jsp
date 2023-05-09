@@ -35,9 +35,7 @@
   border-style: none;
   background-color: #ffffff00;
 }
-.box-search::cue{
 
-}
 
 </style>
 
@@ -53,7 +51,6 @@
 	<form method="post" name="search" action="search.jsp">
 <!-- 	<div class="blank"></div>
 	<div class="box-search">
-	
 		<input class="input-search" type="text" placeholder="검색어를 입력하세요!"><i class="fa-brands fa-sistrix"></i>
 	</div> -->
 	
@@ -67,6 +64,15 @@
 		    <option value="gwangju">광주</option>
 		    <option value="daejeon">대전</option>
 		    <option value="ulsan">울산</option>
+		    <option value="gyeongi">경기</option>
+		    <option value="gangwon">강원</option>
+		    <option value="chungbuk">충북</option>
+		    <option value="chungnam">충남</option>
+		    <option value="gyeongbuk">경북</option>
+		    <option value="gyeongnam">경남</option>
+		    <option value="jeonbuk">전북</option>
+		    <option value="jeonnam">전남</option>
+		    <option value="jeju">제주</option>
   		</select>
         <input type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요!">
         <button id="searchBtn" type="button">검색</button>
