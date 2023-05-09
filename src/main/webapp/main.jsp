@@ -35,7 +35,9 @@
   border-style: none;
   background-color: #ffffff00;
 }
+.box-search::cue{
 
+}
 
 </style>
 
@@ -51,11 +53,47 @@
 <div class="mainContainer">
 
 	<div class="blank"></div>
+	<form method="post" name="search" action="search.jsp">
 	<div class="box-search">
+	
 		<input class="input-search" type="text" placeholder="검색어를 입력하세요!"><i class="fa-brands fa-sistrix"></i>
+	
+	</form>
+	</div> <!--메인 컨테이너-->
+<!--  -->
+
+<div class="container">
+		<div class="row">
+			<form method="post" name="search" action="search.jsp">
+				<table class="pull-right">
+					<tr>
+						<td><select class="form-control" name="searchField">
+								<option value="0">선택</option>
+								<option value="bbsTitle">옵션1</option>
+								<option value="userID">옵션2</option>
+						</select></td>
+						<td><input type="text" class="form-control"
+							placeholder="검색어 입력" name="searchText" maxlength="100"></td>
+						<td><button type="submit" class="btn btn-success">검색</button></td>
+					</tr>
+
+				</table>
+			</form>
+		</div>
+	
 	</div>
 
-</div>
+	<!--스크립트 시작  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+	integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script>
+		var TrueLink =  "search.jsp";
+		var falseLink = "main.jsp";
+
+	</script>
+
 		
 
 </body>
