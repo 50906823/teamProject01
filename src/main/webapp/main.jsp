@@ -48,11 +48,7 @@
 <div class="mainContainer">
 
 	<div class="blank"></div>
-	<form method="post" name="search" action="search.jsp">
-<!-- 	<div class="blank"></div>
-	<div class="box-search">
-		<input class="input-search" type="text" placeholder="검색어를 입력하세요!"><i class="fa-brands fa-sistrix"></i>
-	</div> -->
+
 	
     <form id="searchForm" action="search.jsp" method="post">
     	  <select id="inputArea" name="area" >
