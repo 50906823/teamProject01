@@ -29,17 +29,19 @@
 		</thead>
 		<tbody>
 	<%
-			request.setCharacterEncoding("UTF-8"); 
+			request.setCharacterEncoding("UTF-8");
 			
 		    String search = request.getParameter("search");
+		    String area = request.getParameter("area");
 		    
 		    SearchlDto searchDto = new SearchlDto();
 		    
 		    searchDto.setName(search);
+		    searchDto.setArea(area);
 		    
 		    SearchDao searchDao = new SearchDao();
 		    
-		    List<SearchlDto> searchInfoList = searchDao.selectSearchInfoList(search);
+		    List<SearchlDto> searchInfoList = searchDao.selectSearchInfoList(area, search);
 		
 		for(SearchlDto item : searchInfoList){
 	%>

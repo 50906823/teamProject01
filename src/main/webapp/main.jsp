@@ -75,16 +75,20 @@
 
 
 	<script>
-			document.getElementById('searchBtn').addEventListener('click', ()=>{
+		document.getElementById('searchBtn').addEventListener('click', ()=>{
 			
 			let form = document.getElementById('searchForm');
 			
 			let inputSearch = document.getElementById('inputSearch');
+			let inputArea = document.getElementById('inputArea');
+			
 			if(inputSearch.value == ""){
 				alert('검색어를 입력해 주세요.');
 				inputSearch.focus();
+			} else if(inputArea.value == "none") {
+				alert('지역을 선택해 주세요.');
 			} else {
-					form.submit();
+				form.submit();
 			}
 		});
 			

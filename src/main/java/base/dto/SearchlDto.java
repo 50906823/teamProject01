@@ -18,6 +18,9 @@ public class SearchlDto {
 	String withPet;		 //애완동물동반가능여부
 	String detailInfo;	 //상세정보
 	
+	String area;        //지역, 메인 페이지 옵션에 필요
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -115,4 +118,11 @@ public class SearchlDto {
 		this.detailInfo = detailInfo;
 	}
 	
+	
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
+	}
 }

@@ -13,7 +13,7 @@ import base.oracle.DBConnectionManager;
 public class SearchDao {
 	
 	//select
-	public List<SearchlDto> selectSearchInfoList(String search) {
+	public List<SearchlDto> selectSearchInfoList(String area, String search) {
 		Connection conn = null;
 		PreparedStatement psmt = null;
 		ResultSet rs = null;
@@ -25,8 +25,44 @@ public class SearchDao {
 		try {
 			conn = DBConnectionManager.getConnection();
 
-			//테이블 옵션 들어가게 변경해야 함!! 서울은 테스트용
-			String sql = "SELECT * FROM team_seoul_01 WHERE name LIKE '%' || ? || '%'";
+			String tableArea = area;
+			if(area.equals("seoul")) {
+				tableArea = "team_seoul_01";
+			} else if(area.equals("busan")) {
+				tableArea = "team_busan_01";
+			} else if(area.equals("daegu")) {
+				tableArea = "team_daegu_01";
+			} else if(area.equals("incheon")) {
+				tableArea = "team_incheon_01";
+			} else if(area.equals("gwangju")) {
+				tableArea = "team_gwangju_01";
+			} else if(area.equals("daejeon")) {
+				tableArea = "team_daejeon_01";
+			} else if(area.equals("ulsan")) {
+				tableArea = "team_ulsan_01";
+			} else if(area.equals("sejong")) {
+				tableArea = "team_sejong_01";
+			} else if(area.equals("gyeongi")) {
+				tableArea = "team_gyeongi_01";
+			} else if(area.equals("gangwon")) {
+				tableArea = "team_gangwon_01";
+			} else if(area.equals("chungbuk")) {
+				tableArea = "team_chungbuk_01";
+			} else if(area.equals("chungnam")) {
+				tableArea = "team_chungnam_01";
+			} else if(area.equals("gyeongbuk")) {
+				tableArea = "team_gyeongbuk_01";
+			} else if(area.equals("gyeongnam")) {
+				tableArea = "team_gyeongnam_01";
+			} else if(area.equals("jeonbuk")) {
+				tableArea = "team_jeonbuk_01";
+			} else if(area.equals("jeonnam")) {
+				tableArea = "team_jeonnam_01";
+			} else if(area.equals("jeju")) {
+				tableArea = "team_jeju_01";
+			}
+			
+			String sql = "SELECT * FROM "+ tableArea + " WHERE name LIKE '%' || ? || '%'";
 
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, search);
