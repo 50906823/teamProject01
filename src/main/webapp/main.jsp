@@ -44,6 +44,7 @@
 <div class="mainContainer">
 
 	<div class="blank"></div>
+
 	
     <form id="searchForm" action="search.jsp" method="post">
     	<select id="inputArea" name="area" >
