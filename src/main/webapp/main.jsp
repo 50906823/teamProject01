@@ -46,7 +46,7 @@
 	<div class="blank"></div>
 	
     <form id="searchForm" action="search.jsp" method="post">
-    	  <select id="inputArea" name="area" >
+    	<select id="inputArea" name="area" >
 		    <option value="none">=== 지역 선택 ===</option>
 		    <option value="seoul">서울</option>
 		    <option value="busan">부산</option>

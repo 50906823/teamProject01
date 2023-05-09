@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="base.dao.SeoulDao"%>
-<%@ page import="base.dto.SeoulDto"%>
+<%@ page import="base.dao.SearchDao"%>
+<%@ page import="base.dto.SearchlDto"%>
 <%@ page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
@@ -29,25 +29,24 @@
 		</thead>
 		<tbody>
 	<%
-	
-	request.setCharacterEncoding("UTF-8"); 
-	
-    String search = request.getParameter("search");
-    
-    SeoulDto seoulDto = new SeoulDto();
-    
-    seoulDto.setSeoul_name(search);
-    
-    SeoulDao seoulDao = new SeoulDao();
-    
-    List<SeoulDto> seoulInfoList = seoulDao.selectSeoulInfoList(search);
+			request.setCharacterEncoding("UTF-8"); 
+			
+		    String search = request.getParameter("search");
+		    
+		    SearchlDto searchDto = new SearchlDto();
+		    
+		    searchDto.setName(search);
+		    
+		    SearchDao searchDao = new SearchDao();
+		    
+		    List<SearchlDto> searchInfoList = searchDao.selectSearchInfoList(search);
 		
-		for(SeoulDto item : seoulInfoList){
+		for(SearchlDto item : searchInfoList){
 	%>
 			<tr>
-				<td><%=item.getSeoul_name()%></td>
-				<td><%=item.getSeoul_address()%></td>
-				<td><%=item.getSeoul_tel()%></td>
+				<td><%=item.getName()%></td>
+				<td><%=item.getAddress()%></td>
+				<td><%=item.getTel()%></td>
 
 			</tr>
 	<%
@@ -55,5 +54,6 @@
 	%>
 		</tbody>	
 	</table>
+    
 </body>
 </html>
