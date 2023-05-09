@@ -50,13 +50,45 @@
 <div class="mainContainer">
 
 	<div class="blank"></div>
+	<form method="post" name="search" action="search.jsp">
+<!-- 	<div class="blank"></div>
 	<div class="box-search">
 	
 		<input class="input-search" type="text" placeholder="검색어를 입력하세요!"><i class="fa-brands fa-sistrix"></i>
-	</div>
+	</div> -->
+	
+    <form id="searchForm" action="search.jsp" method="post">
+    	  <select id="inputArea" name="area" >
+		    <option value="none">=== 지역 선택 ===</option>
+		    <option value="seoul">서울</option>
+		    <option value="busan">부산</option>
+		    <option value="daegu">대구</option>
+		    <option value="incheon">인천</option>
+		    <option value="gwangju">광주</option>
+		    <option value="daejeon">대전</option>
+		    <option value="ulsan">울산</option>
+  		</select>
+        <input type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요!">
+        <button id="searchBtn" type="button">검색</button>
+    </form>
 
 </div>
-		
+
+	<script>
+			document.getElementById('searchBtn').addEventListener('click', ()=>{
+			
+			let form = document.getElementById('searchForm');
+			
+			let inputSearch = document.getElementById('inputSearch');
+			if(inputSearch.value == ""){
+				alert('검색어를 입력해 주세요.');
+				inputSearch.focus();
+			} else {
+					form.submit();
+			}
+		});
+			
+	</script>
 
 </body>
 </html>
