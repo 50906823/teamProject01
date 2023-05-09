@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
-
 .mainContainer{
 	width: 100%;
 	height: 1000px;
@@ -36,10 +35,7 @@
   background-color: #ffffff00;
 }
 
-
 </style>
-
-
 </head>
 <body>
 	<%@ include file = "navBar.jsp" %>
@@ -48,7 +44,6 @@
 <div class="mainContainer">
 
 	<div class="blank"></div>
-
 	
     <form id="searchForm" action="search.jsp" method="post">
     	  <select id="inputArea" name="area" >
@@ -60,6 +55,7 @@
 		    <option value="gwangju">광주</option>
 		    <option value="daejeon">대전</option>
 		    <option value="ulsan">울산</option>
+		    <option value="sejong">세종</option>
 		    <option value="gyeongi">경기</option>
 		    <option value="gangwon">강원</option>
 		    <option value="chungbuk">충북</option>
@@ -76,6 +72,7 @@
 
 </div>
 
+
 	<script>
 			document.getElementById('searchBtn').addEventListener('click', ()=>{
 			
@@ -91,6 +88,6 @@
 		});
 			
 	</script>
-
+	
 </body>
 </html>
