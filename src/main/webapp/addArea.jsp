@@ -11,12 +11,12 @@
 	
 	<form name='areaAddForm' action='addArea_proc.jsp' method="post">
 		<div class="mb-3">
-		  <label for="formGroupExampleInput1" class="form-label">Area Num</label>
+		  <label for="formGroupExampleInput1" class="form-label">지역 번호</label>
 		  <input type="text" class="form-control" id="inputNum"
 		  		name="num" placeholder="지역 번호 입력">
 		</div>
 		<div class="mb-3">
-		  <label for="formGroupExampleInput2" class="form-label">Area Name</label>
+		  <label for="formGroupExampleInput2" class="form-label">지역 이름</label>
 		  <input type="text" class="form-control" id="inputName"
 		  		name="name" placeholder="지역 이름 입력">
 		</div>

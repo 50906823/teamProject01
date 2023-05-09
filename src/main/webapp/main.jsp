@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>메인 페이지</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
@@ -42,21 +42,48 @@
 
 </head>
 <body>
-	<!-- <h1>메인 페이지</h1>
-	<h2>사이트 이름 (확정?!!!) 여행갈거조</h2>
-	<h2>사이트 이름 후보 여행갔조 여행가조 놀러가조 같이가조 가시조 제대로모십조</h2> -->
 	<%@ include file = "navBar.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
 
 <div class="mainContainer">
 
-	<div class="blank"></div>
+<!-- 	<div class="blank"></div>
 	<div class="box-search">
 		<input class="input-search" type="text" placeholder="검색어를 입력하세요!"><i class="fa-brands fa-sistrix"></i>
-	</div>
+	</div> -->
+	
+    <form id="searchForm" action="search.jsp" method="post">
+    	  <select id="inputArea" name="area" >
+		    <option value="none">=== 지역 선택 ===</option>
+		    <option value="seoul">서울</option>
+		    <option value="busan">부산</option>
+		    <option value="daegu">대구</option>
+		    <option value="incheon">인천</option>
+		    <option value="gwangju">광주</option>
+		    <option value="daejeon">대전</option>
+		    <option value="ulsan">울산</option>
+  		</select>
+        <input type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요!">
+        <button id="searchBtn" type="button">검색</button>
+    </form>
 
 </div>
-		
+
+	<script>
+			document.getElementById('searchBtn').addEventListener('click', ()=>{
+			
+			let form = document.getElementById('searchForm');
+			
+			let inputSearch = document.getElementById('inputSearch');
+			if(inputSearch.value == ""){
+				alert('검색어를 입력해 주세요.');
+				inputSearch.focus();
+			} else {
+					form.submit();
+			}
+		});
+			
+	</script>
 
 </body>
 </html>
