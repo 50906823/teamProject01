@@ -24,7 +24,7 @@ public class AreaDao {
 			conn = DBConnectionManager.getConnection();
 
 			// 쿼리문!
-			String sql = "SELECT * FROM team_area_info";
+			String sql = "SELECT * FROM team_area";
 
 			psmt = conn.prepareStatement(sql);
 
@@ -62,7 +62,7 @@ public class AreaDao {
 			conn = DBConnectionManager.getConnection();
 
 			// 쿼리문!
-			String sql = "SELECT * FROM team_area_info WHERE area_num = ?";
+			String sql = "SELECT * FROM team_area WHERE area_num = ?";
 
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, area_num);
@@ -97,7 +97,7 @@ public class AreaDao {
 			conn = DBConnectionManager.getConnection();
 
 			// 쿼리문!
-			String sql = "update team_area_info"
+			String sql = "update team_area"
 						+" SET area_name = ?"
 						+" WHERE area_num = ?";
 
@@ -129,7 +129,7 @@ public class AreaDao {
 				conn = DBConnectionManager.getConnection();
 
 				// 쿼리문!
-				String sql = "update team_area_info"
+				String sql = "update team_area"
 						+" SET area_name = ?"
 						+" WHERE area_num = ?";
 
@@ -163,7 +163,7 @@ public class AreaDao {
 			conn = DBConnectionManager.getConnection();
 
 			// 쿼리문!
-			String sql = "INSERT INTO team_area_info"
+			String sql = "INSERT INTO team_area"
 						+" VALUES(?, ?)";
 
 			psmt = conn.prepareStatement(sql);
@@ -195,7 +195,7 @@ public class AreaDao {
 			conn = DBConnectionManager.getConnection();
 
 			// 쿼리문!
-			String sql = "DELETE FROM team_area_info"
+			String sql = "DELETE FROM team_area"
 						+" WHERE area_num = ?";
 
 
