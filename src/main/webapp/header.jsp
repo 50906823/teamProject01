@@ -15,16 +15,20 @@
   justify-content: center;
   align-items: center;
 }
-.logo { width: 120px; height: 60px; } /*로고 생기면 변경하기*/
+.logo { 
+	/* width: 120px; height: 60px; */
+	color: black;
+	font-size: 2rem;
+	text-decoration: none;
+	}
 .box-search {
   width: 500px; height: 50px;
-  border: 1px solid black; border-radius: 30px;
+  border: 1px solid black; border-radius: 5px;
   margin: 0px 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.box-search > i { cursor: pointer; }
 .input-search {
   width: 400px; height: 80%;
   font-size: 1rem;
@@ -32,87 +36,58 @@
   border-style: none;
   background-color: #ffffff00;
 }
-.box-icon {
-  padding: 5px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
+.input-search:focus {
+  outline: none;
+  border: none;
 }
-.box-icon > ul > li > i:hover { cursor: pointer; }
 
-.header-hidden {
-  width: 150px;
-  background-color: #FFFFFF;
-  font-weight: bold;
-  border: 3px solid black;
-  display: none;
-  position: absolute;
-  border-radius: 10px;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-}
-.li-header:hover .header-hidden {
-  display: block;
-}
-.header-hidden > p {
+#searchBtn {
+  background-color: #AFD485;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bolder;
   padding: 10px;
-  /* background-color: #FFFFFF; */
-  border-radius: 7px;
-}
-.header-hidden > p:hover {
-  background-color: rgb(230, 230, 230);
   cursor: pointer;
 }
-.header-hidden > .employee-info { padding: 10px; }
-.header-hidden > .employee-info > p > .employee-idNumber {
-  color: gray;
-  font-size: 0.9rem;
-  font-weight: normal;
+#searchBtn:hover {
+  background-color: #7BB661;
 }
-.header-hidden > .employee-info > p > .employee-extensionNumber {
-  font-weight: normal;
-}
-
-ul { list-style: none; display: flex; }
-a { color: black; text-decoration: none; }
-i { margin: 5px; padding: 5px; font-size: 1.7rem; }
 </style>
 </head>
 <body>
 	<div id="header">
-	<!-- <a href="main.html"><img class="logo" src="logo_duck.png"></a> -->
-	<a href="main.jsp"><sapn>놀러가조</sapn></a>
-<div class="box-search">
-  <input class="input-search" type="text" placeholder="메뉴를 검색하세요."><i class="fa-brands fa-sistrix"></i>
-</div>
-<div class="box-icon">
-  <ul>
-    <li class="li-header">
-      <i class="fa-solid fa-user"></i>
-      <div class="header-hidden">
-        <div class="employee-info">
-          <p class="employee-name">유승아 <span class="employee-idNumber">00001</span></p>
-          <p class="employee-department">○○부 <span class="employee-extensionNumber">(5252)</span></p>
-        </div>
-        <div class="li-line-bottom"></div>
-        <p><a href="#">출퇴근 확인</a></p>
-        <div class="li-line-bottom"></div>
-        <p><a href="leftSeat.html">자리비움</a></p>
-        <div class="li-line-bottom"></div>
-        <p><a href="login.html">로그아웃</a></p>
-      </div>
-    </li>
-    <li class="li-header">
-      <i class="fa-solid fa-bars"></i>
-      <div class="header-hidden">
-        <p><a href="#">고객센터</a></p>
-        <div class="li-line-bottom"></div>
-        <p><a href="#">FAQ</a></p>
-        <div class="li-line-bottom"></div>
-        <p><a href="#">상담요청</a></p>
-      </div>
-    </li>
-  </ul>
-</div>
+		<!-- <a href="main.jsp"><img class="logo" src="로고"></a> -->
+		<a href="main.jsp" class="logo">놀러가조</a>
+		
+		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px;">
+			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">
+			    <option value="none">==지역 선택==</option>
+			    <option value="seoul">서울</option>
+			    <option value="busan">부산</option>
+			    <option value="daegu">대구</option>
+			    <option value="incheon">인천</option>
+			    <option value="gwangju">광주</option>
+			    <option value="daejeon">대전</option>
+			    <option value="ulsan">울산</option>
+			    <option value="sejong">세종</option>
+			    <option value="gyeongi">경기</option>
+			    <option value="gangwon">강원</option>
+			    <option value="chungbuk">충북</option>
+			    <option value="chungnam">충남</option>
+			    <option value="gyeongbuk">경북</option>
+			    <option value="gyeongnam">경남</option>
+			    <option value="jeonbuk">전북</option>
+			    <option value="jeonnam">전남</option>
+			    <option value="jeju">제주</option>
+			</select>
+			<div class="box-search" style="flex: 1;">
+				<input class="input-search" type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요.">
+			</div>
+			<button id="searchBtn" type="button" style="margin-left: 10px;">검색</button>
+	    </form>
+	    로그인 정보
 	</div>
 </body>
 </html>

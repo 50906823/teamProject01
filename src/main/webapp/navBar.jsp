@@ -6,27 +6,26 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<style>
+.nav {
+	align-items: baseline;
+}
+</style>
 </head>
 <body>
-
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">제대로 모시겠습니다. 행복한 여행하세요.</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarNav">
-	      <ul class="navbar-nav">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="login.jsp">로그인</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="join.jsp">회원가입</a>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
-	
+	<ul class="nav">
+		<li class="nav-item">
+			<span>전국의 관광지를 소개해드립니다!</span>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="login.jsp" style="color: black">로그인</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="join.jsp" style="color: black">회원가입</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#" style="color: black">Link</a>
+		</li>
+	</ul>
 </body>
 </html>
