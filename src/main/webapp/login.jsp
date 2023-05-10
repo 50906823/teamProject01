@@ -68,7 +68,7 @@
 <body>
     <div class="login-wrapper">
         <h2>로그인</h2>
-        <form method="post" action="main.jsp" id="login-form">
+        <form method="post" action="Main.html" id="login-form">
             <input type="text" name="userName" placeholder="아이디 입력 *">
             <br>
             <input type="password" name="userPassword" placeholder="비밀번호 입력 *">

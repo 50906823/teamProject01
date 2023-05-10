@@ -21,7 +21,7 @@
 	          <a class="nav-link active" aria-current="page" href="login.jsp">로그인</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="signUp.jsp">회원가입</a>
+	          <a class="nav-link" href="join.jsp">회원가입</a>
 	        </li>
 	      </ul>
 	    </div>
