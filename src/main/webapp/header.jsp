@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -87,7 +88,7 @@
 			</div>
 			<button id="searchBtn" type="button" style="margin-left: 10px;">검색</button>
 	    </form>
-	    로그인 정보
+	    <%@ include file="loginInfo.jsp" %>
 	</div>
 	
 	<script>
