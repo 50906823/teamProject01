@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="base.dao.JoinDao" %>
 <%@ page import="base.dto.JoinDto" %>
+<%@ page import="java.io.PrintWriter"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,18 @@
 </head>
 <body>
 	<%
+	String userID = null;
+	if(session.getAttribute("userID") != null) {
+		userID = (String) session.getAttribute("userID");
+	}
+	if (userID != null) {
+		PrintWriter script = response.getWriter();
+        script.println("<script>");
+        script.println("alert('이미 로그인이 되어있습니다.')");
+        script.println("location.href = 'main.jsp");
+        script.println("</script>");
+	}
+	
 		request.setCharacterEncoding("UTF-8");
 		JoinDto user = new JoinDto();
 		user.setUserID(request.getParameter("userID"));
