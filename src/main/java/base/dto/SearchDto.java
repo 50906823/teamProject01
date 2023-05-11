@@ -1,6 +1,6 @@
 package base.dto;
 
-public class SearchlDto {
+public class SearchDto {
 	String name;			 //명칭
 	String postNum; 		 //우편번호
 	String address; 		 //주소

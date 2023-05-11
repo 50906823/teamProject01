@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="base.dao.SearchDao"%>
+<%@ page import="base.dto.SearchDto"%>
+<%@ page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +21,9 @@
 }
 
 p {
+  color: #7BB661;
   font-size: 3rem;
   font-weight: bold;
-  color: #7BB661;
   padding: 1rem;
   border-radius: 5px;
   text-align: center;
@@ -65,6 +68,10 @@ p {
 <body>
 	<%@ include file = "navBar.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
+	<%
+		SearchDto searchDto = new SearchDto();
+		searchDto.setArea(request.getParameter("area"));
+	%>
 	<div class="container">
 	<p>놀러가조</p>
 		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px; margin: 0 auto;">
@@ -87,7 +94,7 @@ p {
 			    <option value="jeonbuk">전북</option>
 			    <option value="jeonnam">전남</option>
 			    <option value="jeju">제주</option>
-			</select>
+			</select> 
 			<div class="box-search" style="flex: 1;">
 				<input class="input-search" type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요.">
 			</div>
@@ -103,11 +110,14 @@ p {
 			let inputSearch = document.getElementById('inputSearch');
 			let inputArea = document.getElementById('inputArea');
 			
-			if(inputSearch.value == ""){
+			 if(inputArea.value == "none") {
+				alert('지역을 선택해 주세요.');
+				inputArea.focus();
+			} else if(inputArea.value != "none") {
+				form.submit();
+			} else if(inputSearch.value == ""){
 				alert('검색어를 입력해 주세요.');
 				inputSearch.focus();
-			} else if(inputArea.value == "none") {
-				alert('지역을 선택해 주세요.');
 			} else {
 				form.submit();
 			}
