@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="sample.UserDao"%>
+<%@ page import="base.dao.JoinDao"%>
 <%@ page import="java.io.PrintWriter"%>
 <% request.setCharacterEncoding("UTF-8"); %>
-<jsp:useBean id="user" class="sample.UserDto" scope="page" />
+<jsp:useBean id="user" class="base.dto.JoinDto" scope="page" />
 <jsp:setProperty name="user" property="userID" param="userID" />
 <jsp:setProperty name="user" property="userPassword" param="userPassword" />
 <!DOCTYPE html>
@@ -14,8 +14,8 @@
 </head>
 <body>
     <%
-        UserDao userDao = new UserDao();
-        int result = userDao.login(user.getUserID(), user.getUserPassword());
+        JoinDao joinDao = new JoinDao();
+        int result = joinDao.login(user.getUserID(), user.getUserPassword());
         if (result == 1) {
             PrintWriter script = response.getWriter();
             script.println("<script>");

@@ -73,7 +73,7 @@
 		<div class="col-lg-4"></div>
 		<div class="col-lg-4">
 			<div class="jumbotron" style="padding-top: 20px;">
-				<form method="post" action="main.jsp" id="login-form">
+				<form method="post" action="loginAction.jsp" id="login-form">
 					<input type="text" class="form-control" name="userID"
 						maxlength="20" placeholder="아이디 입력 *"> <br> <input
 						type="password" class="form-control" name="userPassword"
