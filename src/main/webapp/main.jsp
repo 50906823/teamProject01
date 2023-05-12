@@ -23,7 +23,6 @@ p {
   font-weight: bold;
   color: #7BB661;
   padding: 1rem;
-  border-radius: 5px;
   text-align: center;
 }
 .box-search {
@@ -47,13 +46,32 @@ p {
   background-color: #ffffff00;
 }
 
+.input-search:focus {
+  outline: none;
+  border: none;
+}
+
+#searchBtn {
+  background-color: #AFD485;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 10px;
+  cursor: pointer;
+}
+#searchBtn:hover {
+  background-color: #7BB661;
+}
 </style>
 </head>
 <body>
 	<%@ include file = "navBar.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
 	<div class="container">
-	<p>놀러가조</p>
+	<a href="main.jsp" style="text-decoration: none"><p>놀러가조</p></a>
+		 //검색form
 		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px; margin: 0 auto;">
 			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">
 			    <option value="none">==지역 선택==</option>
@@ -98,13 +116,14 @@ p {
 					form.submit();
 			}
 		});
-			
 	</script>
 	
 
 
 </body>
-</html> -->
+</html> 
+-->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="base.dao.SearchDao"%>
