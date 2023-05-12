@@ -37,93 +37,7 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-<<<<<<< HEAD
-  <%@ include file = "header.jsp" %>
-  <%@ include file = "menuBar.jsp" %>
-  
-  <%
-    request.setCharacterEncoding("UTF-8");
-      
-      String area = request.getParameter("area");
-      String search = request.getParameter("search");
-      
-      SearchDto searchDto = new SearchDto();
-      
-      searchDto.setArea(area);
-      searchDto.setName(search);
-      
-      SearchDao searchDao = new SearchDao();
-      
-      List<SearchDto> searchInfoList = searchDao.selectSearchInfoList(area, search);
-    %>
-  
-  <%
-    String areaString = "";
-      
-      if (area.equals("seoul")) { areaString = "서울";
-      } else if (area.equals("busan")) { areaString = "부산";
-      } else if (area.equals("daegu")) { areaString = "대구";
-      } else if (area.equals("incheon")) { areaString = "인천";
-      } else if (area.equals("gwangju")) { areaString = "광주";
-      } else if (area.equals("daejeon")) { areaString = "대전";
-      } else if (area.equals("ulsan")) { areaString = "울산";
-      } else if (area.equals("sejong")) { areaString = "세종";
-      } else if (area.equals("gyeongi")) { areaString = "경기";
-      } else if (area.equals("gangwon")) { areaString = "강원";
-      } else if (area.equals("chungbuk")) { areaString = "충북";
-      } else if (area.equals("chungnam")) { areaString = "충남";
-      } else if (area.equals("gyeongbuk")) { areaString = "경북";
-      } else if (area.equals("gyeongnam")) { areaString = "경남";
-      } else if (area.equals("jeonbuk")) { areaString = "전북";
-      } else if (area.equals("jeonnam")) { areaString = "전남";
-      } else if (area.equals("jeju")) { areaString = "제주";
-      } else { areaString = "지역 선택";
-      }
-      
-      if(search == "") {
-        out.println("<h3>지역: \"" + areaString + "\" 검색 결과</h3>");
-      } else {
-        out.println("<h3>지역: \"" + areaString + "\", 검색어: \"" + search + "\" 검색 결과</h3>");
-      }
-    %>
-  
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-6">
-      <div class="card my-4">
-        <div class="card-header">현재 날씨 정보</div>
-        <div class="card-body">
-          <div class="d-flex justify-content-center align-items-center" id="current-weather">
-            <p class="text-secondary">날씨 정보를 불러오는 중입니다.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <table class="table">
-    <thead>
-      <tr>
-        <th>명칭</th>
-        <th>주소</th>
-        <th>연락처</th>
-      </tr>
-    </thead>
-    <tbody>
-  <%
-  for(SearchDto item : searchInfoList){
-  %>
-      <tr>
-        <td><a href="detail.jsp?name=<%=item.getName()%>"><%=item.getName()%></a></td>
-        <td><%=item.getAddress()%></td>
-        <td><%=item.getTel()%></td>
-      </tr>
-  <%
-    }
-  %>
-    </tbody>  
-  </table>
     
-=======
 	<%@ include file = "header.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
 	
@@ -176,6 +90,19 @@ $(document).ready(function() {
 			out.println("<h3>지역: \"" + areaString + "\", 검색어: \"" + search + "\" 검색 결과</h3>");
 		}
 		%>
+		
+	<div class="row justify-content-center">
+	    <div class="col-12 col-md-6">
+	      <div class="card my-4">
+	        <div class="card-header">현재 날씨 정보</div>
+	        <div class="card-body">
+	          <div class="d-flex justify-content-center align-items-center" id="current-weather">
+	            <p class="text-secondary">날씨 정보를 불러오는 중입니다.</p>
+	          </div>
+	        </div>
+	      </div>
+  	  </div>
+  </div>
 	
 	<table class="table">
 		<thead>
@@ -210,6 +137,5 @@ $(document).ready(function() {
 	%>
 		</tbody>	
 	</table>
->>>>>>> 756b7a3f0f8c45db9d98cfb29218f38ca67a06dc
 </body>
 </html>
