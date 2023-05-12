@@ -16,18 +16,23 @@
 <%
     String userID = null;
     String userName = null;
+    String kakaoNickname = null;
     if (session.getAttribute("userID") != null) {
         userID = (String) session.getAttribute("userID");
         userName = (String) session.getAttribute("userName");
     }
+    if (session.getAttribute("kakaoNickname") != null) {
+        kakaoNickname = (String) session.getAttribute("kakaoNickname");
+    }
 %>
 
 <%
-    if(userID == null) {
+    if(userID == null && kakaoNickname == null) {
     } else {
+        String welcomeName = userID != null ? userID : kakaoNickname;
 %>
 <ul class="nav">
-    <li class="nav-item"><span>&nbsp;&nbsp;<%= userID %>님 환영합니다!</span></li>
+    <li class="nav-item"><span>&nbsp;&nbsp;<%= welcomeName %>님 환영합니다!</span></li>
 </ul>
 
 <%
