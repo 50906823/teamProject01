@@ -25,7 +25,6 @@ p {
   font-size: 3rem;
   font-weight: bold;
   padding: 1rem;
-  border-radius: 5px;
   text-align: center;
 }
 
@@ -62,18 +61,15 @@ p {
 #searchBtn:hover {
   background-color: #7BB661;
 }
-
 </style>
 </head>
 <body>
 	<%@ include file = "navBar.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
-	<%
-		SearchDto searchDto = new SearchDto();
-		searchDto.setArea(request.getParameter("area"));
-	%>
+
 	<div class="container">
-	<p>놀러가조</p>
+	<a href="main.jsp" style="text-decoration: none"><p>놀러가조</p></a>
+		<!-- 검색form -->
 		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px; margin: 0 auto;">
 			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">
 			    <option value="none">==지역 선택==</option>
@@ -104,6 +100,7 @@ p {
 
 
 	<script>
+		/* 검색 조건 */
 		document.getElementById('searchBtn').addEventListener('click', ()=>{
 			
 			let form = document.getElementById('searchForm');
@@ -122,8 +119,6 @@ p {
 				form.submit();
 			}
 		});
-			
 	</script>
-	
 </body>
 </html>

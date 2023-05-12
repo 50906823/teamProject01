@@ -20,7 +20,6 @@ public class SearchDto {
 	
 	String area;        //지역, 메인 페이지 옵션에 필요
 	
-	
 	public String getName() {
 		return name;
 	}
@@ -117,7 +116,6 @@ public class SearchDto {
 	public void setDetailInfo(String detailInfo) {
 		this.detailInfo = detailInfo;
 	}
-	
 	
 	public String getArea() {
 		return area;

@@ -13,6 +13,7 @@ import base.oracle.DBConnectionManager;
 public class SearchDao {
 	
 	//select
+	//검색 키워드 리스트(main)
 	public List<SearchDto> selectSearchInfoList(String area, String search) {
 		Connection conn = null;
 		PreparedStatement psmt = null;
@@ -21,10 +22,10 @@ public class SearchDao {
 		
 		searchInfoList = new ArrayList<SearchDto>();
 		
-		//Select 검색 키워드 리스트
 		try {
 			conn = DBConnectionManager.getConnection();
 
+			//main-select-option 선택사항에 따라 테이블 변경
 			String tableArea = area;
 			if(area.equals("seoul")) {
 				tableArea = "team_seoul_01";
@@ -88,17 +89,17 @@ public class SearchDao {
 	}
 	
 	//select
-	public SearchDto selectSearchInfoByName(String name) {
+	//단ㄴ일 상세 리스트(detail)
+	public SearchDto selectSearchInfoByName(String area, String name) {
 		Connection conn = null;
 		PreparedStatement psmt = null;
 		ResultSet rs = null;
 		SearchDto searchDto = new SearchDto();
 		
-		//select 단일 상세 리스트
 		try {
 			conn = DBConnectionManager.getConnection();
 
-			String area = searchDto.getArea();
+			//main-select-option 선택사항에 따라 테이블 변경
 			String tableArea = area;
 			if(area.equals("seoul")) {
 				tableArea = "team_seoul_01";
@@ -136,16 +137,13 @@ public class SearchDao {
 				tableArea = "team_jeju_01";
 			}
 			
-			String sql = "SELECT * FROM "+ tableArea + " WHERE name = " + name;
+			String sql = "SELECT * FROM "+ tableArea + " WHERE name = '" + name + "'";
 
 			psmt = conn.prepareStatement(sql);
-//			psmt.setString(1, name);
 			
 			rs = psmt.executeQuery();
 
 			if(rs.next()) {
-//				SearchDto searchDto = new SearchDto();
-				
 				searchDto.setName(rs.getString("name"));					 //명칭
 				searchDto.setPostNum(rs.getString("postNum"));				 //우편번호
 				searchDto.setAddress(rs.getString("address"));				 //주소
@@ -172,42 +170,4 @@ public class SearchDao {
 		return searchDto;
 	}
 
-	//select
-	/*	public List<SearchlDto> selectSearchInfoList() {
-		Connection conn = null;
-		PreparedStatement psmt = null;
-		ResultSet rs = null;
-		List<SearchlDto> searchInfoList = null;
-		
-		//Select 리스트 전체
-		try {
-			conn = DBConnectionManager.getConnection();
-
-			//테이블 옵션 들어가게 변경해야 함!!
-			String sql = "SELECT * FROM team_search_01";
-
-			psmt = conn.prepareStatement(sql);
-
-			rs = psmt.executeQuery();
-
-			searchInfoList = new ArrayList<SearchlDto>();
-			
-			while(rs.next()) {
-				SearchlDto searchDto = new SearchlDto();
-				
-				searchDto.setName(rs.getString("name"));
-				searchDto.setAddress(rs.getString("address"));
-				searchDto.setTel(rs.getString("tel"));
-
-				searchInfoList.add(searchDto);
-			}
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			DBConnectionManager.close(rs, psmt, conn);			
-		}
-		return searchInfoList;
-	}
-	 */	
 }
