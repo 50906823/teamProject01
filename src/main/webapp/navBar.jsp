@@ -18,10 +18,12 @@
 </style>
 </head>
 <body>
-    <%
+ <%
         String userID = null;
         String userName = null;
         String kakaoNickname = null;
+        String naverNickname = null;
+
         if (session.getAttribute("userID") != null) {
             userID = (String) session.getAttribute("userID");
             userName = (String) session.getAttribute("userName");
@@ -29,10 +31,23 @@
         if (session.getAttribute("kakaoNickname") != null) {
             kakaoNickname = (String) session.getAttribute("kakaoNickname");
         }
+        if (session.getAttribute("naverNickname") != null) {
+            naverNickname = (String) session.getAttribute("naverNickname");
+        }
     %>
 
     <%
-        if(userID == null && kakaoNickname == null) {
+        String welcomeName = null;
+
+        if (userID != null) {	// ID -> Name 변경 시
+            welcomeName = userID; // ID -> Name 변경 시
+        } else if (kakaoNickname != null) {
+            welcomeName = kakaoNickname;
+        } else if (naverNickname != null) {
+            welcomeName = naverNickname;
+        }
+
+        if(welcomeName == null) {
     %>
     <ul class="nav">
         <li class="nav-item"><span>전국의 관광지를 소개해드립니다!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
@@ -45,8 +60,21 @@
     </ul>
 
     <%
+        } else if (welcomeName.equals("admin")) {
+    %>
+    <ul class="nav">
+        <li class="nav-item"><span>전국의 관광지를 소개해드립니다!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        	<%= welcomeName %>님 환영합니다!</span></li>
+        <li class="nav-item"><a class="nav-link active"
+            aria-current="page" href="adminMembers.jsp" style="color: black">회원관리</a></li> <!-- admin만 추가 -->
+        <li class="nav-item"><a class="nav-link active"
+            aria-current="page" href="logoutAction.jsp" style="color: black">로그아웃</a>
+        <li class="nav-item"><a class="nav-link" href="#"
+            style="color: black">Link</a></li>
+    </ul>
+    
+    <%
         } else {
-            String welcomeName = userID != null ? userID : kakaoNickname;
     %>
     <ul class="nav">
         <li class="nav-item"><span>전국의 관광지를 소개해드립니다!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
