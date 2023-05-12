@@ -3,6 +3,7 @@
 <%@ page import="base.dao.JoinDao"%>
 <%@ page import="java.io.PrintWriter"%>
 <% request.setCharacterEncoding("UTF-8"); %>
+
 <jsp:useBean id="user" class="base.dto.JoinDto" scope="page" />
 <jsp:setProperty name="user" property="userID" param="userID" />
 <jsp:setProperty name="user" property="userPassword" param="userPassword" />

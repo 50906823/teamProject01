@@ -7,11 +7,12 @@
 <title>로그아웃</title>
 </head>
 <body>
-	<%
-		session.invalidate();
-	%>
-	<script>
-		location.href = 'main.jsp';
-	</script>
+<%
+ 
+  if (session != null) {
+    session.invalidate();
+  }
+  response.sendRedirect("main.jsp");
+%>
 </body>
 </html>

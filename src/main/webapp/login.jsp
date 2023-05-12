@@ -40,11 +40,12 @@
 	color: gray;
 }
 
-#login-form>input[type="submit"] {
-	color: black;
-	font-size: 22px;
-	background-color: yellow;
-	margin-top: 20px;
+#login-form > input[type="submit"] {
+    color: white;
+    font-size: 22px;
+    background-color: #1a73e8; /* 진한 파란색으로 변경 */
+    margin-top: 20px;
+    border: none; /* 테두리 제거 */
 }
 
 #login-form>input[type="checkbox"] {
@@ -65,6 +66,17 @@
 #login-form input[type="checkbox"]:checked+label {
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.kakao-buttons {
+	position: absolute;
+	top: 650px;
+	left: 400px;
 }
 </style>
 
@@ -89,61 +101,78 @@
 		</div>
 		<div class="col-lg-4"></div>
 	</div>
-	
-	
-	
-	<ul>
-	<li onclick="kakaoLogin();">
-      <a href="javascript:void(0)">
-          <span>카카오 로그인</span>
-      </a>
-	</li>
-	<li onclick="kakaoLogout();">
-      <a href="javascript:void(0)">
-          <span>카카오 로그아웃</span>
-      </a>
-	</li>
-</ul>
-<!-- 카카오 스크립트 -->
+
+
+<!-- 카카오로그인 버튼 body-->
+	<div class="kakao-buttons">
+		<ul>
+			<li onclick="kakaoLogin();"><a href="javascript:void(0)"> <img
+					src="카카오_로그인.png" alt="카카오 로그인"
+					style="width: 200px; height: 50px;">
+			</a></li>
+		</ul>
+	</div>
+
+	<!-- 카카오 스크립트 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script>
 Kakao.init('c5768091dc20d0d6b6bd572539d84ff0'); //발급받은 키 중 javascript키를 사용해준다.
 console.log(Kakao.isInitialized()); // sdk초기화여부판단
+
 //카카오로그인
 function kakaoLogin() {
-    Kakao.Auth.login({
-      success: function (response) {
-        Kakao.API.request({
-          url: '/v2/user/me',
-          success: function (response) {
-        	  console.log(response)
-        	  window.location.href = 'loginAction.jsp'; // 로그인 성공 시 main.jsp로 이동
-          },
-          fail: function (error) {
-            console.log(error)
-          },
-        })
-      },
-      fail: function (error) {
-        console.log(error)
-      },
-    })
-  }
+  Kakao.Auth.login({
+    success: function (response) {
+      Kakao.API.request({
+        url: '/v2/user/me',
+        success: function (response) {
+          console.log(response);
+          // 사용자의 닉네임을 가져옵니다.
+          const nickname = response.properties.nickname;
+
+          // 서버에 요청하여 세션에 저장하는 코드를 추가합니다. (예: 로그인 처리)
+          // 이 부분은 서버에서 처리해야하므로, 별도의 서버 스크립트를 작성해야 합니다.
+          $.ajax({
+        	  type: "POST",
+        	  url: "kakaoLogin.jsp",
+        	  data: { nickname: nickname },
+        	  success: function (response) {
+        	    // 로그인에 성공한 경우 메인 페이지로 이동
+        	    window.location.href = "main.jsp";
+        	  },
+        	  error: function (request, status, error) {
+        	    console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+        	  },
+        	});
+
+        },
+        fail: function (error) {
+          console.log(error);
+        },
+      });
+    },
+    fail: function (error) {
+      console.log(error);
+    },
+  });
+}
+
 //카카오로그아웃  
 function kakaoLogout() {
     if (Kakao.Auth.getAccessToken()) {
       Kakao.API.request({
-        url: '/v1/user/unlink',
+        url: '/v1/user/logout',
         success: function (response) {
-        	console.log(response)
+          location.href = "logoutAction.jsp";
         },
         fail: function (error) {
-          console.log(error)
-        },
-      })
-      Kakao.Auth.setAccessToken(undefined)
+          console.log(error);
+        }
+      });
+    } else {
+      location.href = "logoutAction.jsp";
     }
-  }  
+  }
 </script>
 
 <script>
