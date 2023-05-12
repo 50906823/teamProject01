@@ -79,8 +79,17 @@
 			<tr>
 				<!-- main에서 받은 값(area, name)을 detail.jsp에도 보내기 -->
 				<td><a href="detail.jsp?area=<%=area%>&name=<%=item.getName()%>"><%=item.getName()%></a></td>
-				<td><%=item.getAddress()%></td>
-				<td><%=item.getTel()%></td>
+				<!-- 값이 null인 부분은 - 출력 -->
+				<% if(item.getAddress() != null) { %>
+					<td><%=item.getAddress()%></td>
+				<% } else { %>
+					<td>-</td>
+				<% } %>
+				<% if(item.getTel() != null) { %>
+					<td><%=item.getTel()%></td>
+				<% } else { %>
+					<td>-</td>
+				<% } %>
 			</tr>
 	<%
 		}
