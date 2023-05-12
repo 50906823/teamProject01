@@ -89,7 +89,7 @@ public class SearchDao {
 	}
 	
 	//select
-	//단ㄴ일 상세 리스트(detail)
+	//단일 상세 리스트(detail)
 	public SearchDto selectSearchInfoByName(String area, String name) {
 		Connection conn = null;
 		PreparedStatement psmt = null;

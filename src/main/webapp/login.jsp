@@ -75,8 +75,14 @@ ul {
 
 .kakao-buttons {
 	position: absolute;
-	top: 650px;
-	left: 400px;
+	top: 620px;
+	left: 390px;
+}
+
+.naver-buttons {
+	position: absolute;
+	top: 620px;
+	left: 610px;
 }
 </style>
 
@@ -174,6 +180,80 @@ function kakaoLogout() {
     }
   }
 </script>
+
+<div class="naver-buttons">
+	<ul>
+		<li>
+			<!-- 아래와같이 아이디를 꼭 써준다. --> <a href="#"
+			onclick="naverLogin.authorize()" style="cursor: pointer;"> <img
+				src="네이버_로그인.png" alt="네이버 로그인" style="width: 200px; height: 50px;">
+		</a>
+	</ul>
+</div>
+
+<!-- 네이버 스크립트 -->
+<script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+
+<script>
+
+var naverLogin = new naver.LoginWithNaverId(
+    {
+        clientId: "39I2hbPLaBqwis5MtIxf",
+        callbackUrl: "http://localhost:8080/WebTeamProject_01/login.jsp",
+        isPopup: false,
+        callbackHandle: true
+    }
+);  
+
+naverLogin.init();
+
+window.addEventListener('load', function () {
+    naverLogin.getLoginStatus(function (status) {
+        if (status) {
+            var email = naverLogin.user.getEmail();
+            console.log(naverLogin.user); 
+            
+            if (email === undefined || email === null) {
+                alert("이메일은 필수정보입니다. 정보제공을 동의해주세요.");
+                naverLogin.reprompt();
+                return;
+            }
+            
+            // 아래 코드 추가
+            if(email !== undefined && email !== null) {
+                var naverNickname = naverLogin.user.getNickname();
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState === 4 && this.status === 200) {
+                        location.href = "main.jsp";
+                    }
+                };
+                xhttp.open("POST", "NaverLogin.jsp", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("naverNickname=" + naverNickname);
+            }
+        } else {
+            console.log("callback 처리에 실패하였습니다.");
+        }
+    });
+});
+
+var testPopUp;
+function openPopUp() {
+    testPopUp= window.open("https://nid.naver.com/nidlogin.logout", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=1,height=1");
+}
+function closePopUp(){
+    testPopUp.close();
+}
+
+function naverLogout() {
+    openPopUp();
+    setTimeout(function() {
+        closePopUp();
+        }, 1000);
+}
+</script>
+
 
 <script>
 
