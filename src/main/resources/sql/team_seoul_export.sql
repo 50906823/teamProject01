@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 수요일-5월-10-2023   
+--  파일이 생성됨 - 목요일-5월-11-2023   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TEAM_SEOUL_01
@@ -9,6 +9,8 @@
    (	"NAME" VARCHAR2(60 BYTE), 
 	"POSTNUM" VARCHAR2(10 BYTE), 
 	"ADDRESS" VARCHAR2(90 BYTE), 
+	"LATITUDE" NUMBER(20,0), 
+	"LONGITUDE" NUMBER(20,0), 
 	"OUTLINE" VARCHAR2(4000 BYTE), 
 	"TEL" VARCHAR2(50 BYTE), 
 	"OPENING" VARCHAR2(30 BYTE), 
@@ -31,51 +33,20 @@
   TABLESPACE "EXAMPLE" ;
 REM INSERTING into SCOTT.TEAM_SEOUL_01
 SET DEFINE OFF;
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청계산','06806','서울특별시 서초구 원터길경기도 성남시ㆍ과천시ㆍ의왕시','서울대공원과 서울랜드, 국립현대미술관을 둘러싼 푸른 산자락이 바로 청계산이다. 서울 양재동과 과천시, 성남시,의왕시의 경계를 이루고 있는 청계산은 관악산 산자락이 과천 시내를 에둘러 남쪽으로 뻗어내린 것이다. 산맥은 여기서 멈추지 않고 서남쪽으로 뻗어나가 의왕시의 백운산, 모락산, 오봉산으로 이어진다. 청계산은 조선 태조 이성계에 의해 고려가 멸망하자, 고려말 충신이었던 조윤(趙胤)이 송도를 떠나 입산했던 곳이라고 전해진다. 청룡이 승천했던 곳이라고해서 청룡산으로 불리기도 하며 풍수지리학적으로는 관악산을 백호, 청계산을 청룡이라하여 ''좌청룡 우백호''의 개념으로 해석하기도 한다.
-
-청계산은 울창한 숲과 아늑한 계곡, 공원, 사찰 등 다양한 볼거리가 있는 가족산행의 명소로서 수 많은 등산로가 다양하게 형성되어 있다. 과천쪽에서 바라보는 청계산은 산세가 부드럽고 온화해서 토산처럼 보이지만, 서울대공원쪽에서 보이는 망경대는 바위로 둘러싸여 있어 거칠고 당당하게 보인다. 망경대(해발 618.2m)가 바로 청계산의 정상이다.
-
-주암동쪽에서 망경대 쪽으로 오르다 보면 추사 김정희의 생부김노경의 묘터가 있던 옥녀봉이 나타난다. 조선시대의 학자인 정여창이 피눈물을 흘리며 넘었다는 혈읍재를 지나 망경대 바로 밑으로 가면 정여창이 은거했다는 금정수가 있다. 이 약수는 정여창이 사사되자 핏빛으로 변했다가 이내 금빛으로 물들었다는 말이 전해온다.<BR>풀향기 가득한 산길을 걷다보면 야생밤나무와 도토리나무, 머루와 다래 등이 종종 눈길을 끈다. 청계산 남쪽에 위치한 청계사, 과천 쪽의 동폭포, 금정수 가는 길 근처의 매바위와 돌문바위, 약수터 등도 들러 볼 만하다.
-
-청계산(618m)은 산세가 수려하고, 2km에 이르는 계곡에는 항상 맑은 물이 흘러 시민들이 즐겨찾는다. 관악산과 함께 서울을 지켜주는 ''좌청룡 우백호''의 명산이기도 하다. 예전에는 청룡산이라고도 했던 청계산은 두 개의 얼굴을 가지고 있다. 양재인터체인지를 지나 경부고속도로로 접어들때 오른쪽으로 보이는 청계산은 순한 육산이지만, 과천 서울대공원 정문 부근에서  바라보는 청계산 정상인 망경대 주위는 바위로 이루어져 있어 위압감을 느낀다. 정상인 망경대는 정부시설이 있어 등산이 불가, 국사봉(538m)과 545m봉을 연결 산행하고 있다.','공원녹지과  02-2155-6870',null,null,null,null,null,null,null,'있음','없음','없음','이용가능시설:약수터, 정자, 다리, 삼림욕장 등
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수락산','01622','서울특별시 노원구 상계동 산1-1',38,127,'서울 주위에 좋은 산들이 많지만 수락산(높이 638m)은 계절에 상관없이 언제 찾아가도 나름대로의 특색을 보여주는 산이다. 아기자기한 암봉들은 저 멀리 설악산이나 월출산을 찾아간 듯한 느낌도 안겨준다. 서울시와 경기도 의정부시, 남양주시 별내면의 경계에 솟은 수락산에는 금류, 은류, 옥류 폭포와 신라 때 지은 흥국사, 조선조 때 지어진 내원사, 석림사, 궤산정 등 명소가 산재해 있다. 수락산 남쪽에는 불암산이 솟아있고, 서쪽으로 마주 보이는 곳에는 도봉산이 의젓하게 자리잡고 있다. 수락산의 여러 등산코스 중 서울시민들이 선호하는 코스는 지하철 4호선 당고개역 앞에서 시작하여 학림사와 용굴암을 경유하는 코스이다. 불암산과 잇닿은 쪽의 능선은 봄철이면 철쭉이 아름답다. 산길이 험하지 않고 비교적 교통이 편리해서 휴일이면 많은 사람들로 붐빈다. <br>','02-2116-3943',null,null,null,null,null,null,null,null,'불가','불가','이용가능시설:만남의 광장, 음식점, 매점 등
 화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불암산','01642','서울특별시 노원구 덕릉로130가길 22','서울시 노원구 상계동, 중계동과 남양주시 별내면의 경계에 솟은, 높이 508m의 나지막한 바위산이다. 전체 면적은 약 5,355,396m²(1,620,000평)정도이다. 1977년 도시자연공원으로 지정됐다. 산의 모습이 송낙을 쓴 부처의 모습과 같다 해서 불암산이라는 이름이 지어졌고 일명 천보산, 필암산이라고도 한다. 
-능선이 길게 뻗어 있어 시원한 경치를 맛볼 수 있고 산길도 험하지 않아 가볍게 오를 수 있는 곳이다. 특히, 야간에 정상에 올라보면 멋진 서울시의 야경을 감상하게 된다. 
-불암산 제2봉인 해발 420m의 봉우리에는 불암산성지가 있다. 이 산성지는 대동여지도에도 산성지라고 표기되어 있으며 규모는 약 3백보 정도이다. 곳곳에 있는 바위 절벽들은 암벽타기 연습장으로 활용되고 있다. 등산로와 약수터가 10여개나 된다. 불암폭포는 겨울철이면 빙벽타기 애호가들이 즐겨 찾는다.','02-2116-3943',null,null,null,null,null,null,null,null,'없음','없음','등산로:공원관리소 - 청암약수터입구 - 돌다방쉼터 - 능선사거리 - 정상 (3.1km<br />* 공원관리소 - 정암사 - 불암체육회 - 깔딱고개 - 정상 (3.2km)<br />* 양지초소 - 천병약수터 - 헬기장 - 깔딱고개 - 정상 (3.8km) <br />* 원자력병원후문 - 삼육대갈림길 - 학도암갈림길 - 헬기장 - 정상 (5.8km)
-입산통제 기간:[탐방로 통제기간] <br />
-[탐방로 통제기간] <br />
-(봄가을철 산불조심기간 한시적 등산로구간 통제)<br />
-봄철 3월 2일 ~ 4월 30일 <br />
-가을철 11월 1일 ~ 12월 15일<br />
--국립공원 11월 15일 ~ 12월 15일(경주,태안해안제외)
-
-※ 통제기간은 기상여건 등을 감안하여 공원별로 일부 조정될 수 있으니 공원탐방 시 해당 공원 홈페이지 공지사항 참고
-입산통제 구간:등산로 통제구간안내 <a title="등산로 통제구간 검색" href="http://hiking.kworks.co.kr/sub_map/map_user01.aspx" target="_blank">http://hiking.kworks.co.kr/sub_map/map_user01.aspx</a>
-
-
-관광코스안내:* 하룻길 코스 : 넓은마당→불암산허브공원→좆바위→음바위→학도암→백사마을→산들메수목원→불암사→ 덕릉고개→넓은마당 
-<br />
-* 나절길 코스 : 강릉→태릉선수촌→조선왕릉전시관,태릉→육군박물관→서울여대박물관→화랑대역사→공릉동백세문→백사마을→노원고개 →제명호→삼육대박물관 
-이용가능시설:생성약수터, 음식점, 매점 등
-화장실:있음
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('송암사','01633','서울특별시 노원구 덕릉로145길 101(상계동)','송암사는 서울시 노원구와 경기 의정부, 남양주 별내면의 경계의 위치한 수락산 내에 자리잡은 고즉넉한 사찰이다.<br>','02-936-5722',null,'연중무휴',null,null,null,null,'일출~일몰','주차 가능','없음','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정암사','01716','서울특별시 노원구 덕릉로94길 127(중계동)','정암사는 서울 노원구와 경기 남양주시 별내면(別內面) 경계에 위치한 불암산 내에 있는 사찰이다.<br>','02-930-1995',null,'연중무휴',null,null,null,null,null,null,'없음','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수락산','01622','서울특별시 노원구 상계동 산1-1','서울 주위에 좋은 산들이 많지만 수락산(높이 638m)은 계절에 상관없이 언제 찾아가도 나름대로의 특색을 보여주는 산이다. 아기자기한 암봉들은 저 멀리 설악산이나 월출산을 찾아간 듯한 느낌도 안겨준다. 서울시와 경기도 의정부시, 남양주시 별내면의 경계에 솟은 수락산에는 금류, 은류, 옥류 폭포와 신라 때 지은 흥국사, 조선조 때 지어진 내원사, 석림사, 궤산정 등 명소가 산재해 있다. 수락산 남쪽에는 불암산이 솟아있고, 서쪽으로 마주 보이는 곳에는 도봉산이 의젓하게 자리잡고 있다. 수락산의 여러 등산코스 중 서울시민들이 선호하는 코스는 지하철 4호선 당고개역 앞에서 시작하여 학림사와 용굴암을 경유하는 코스이다. 불암산과 잇닿은 쪽의 능선은 봄철이면 철쭉이 아름답다. 산길이 험하지 않고 비교적 교통이 편리해서 휴일이면 많은 사람들로 붐빈다. <br>','02-2116-3943',null,null,null,null,null,null,null,null,'불가','불가','이용가능시설:만남의 광장, 음식점, 매점 등
-화장실:있음
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도산공원','06020','서울특별시 강남구 도산대로45길 20','서울시 강남구 신사동에 자리한 근린공원이다.
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도산공원','06020','서울특별시 강남구 도산대로45길 20',38,127,'서울시 강남구 신사동에 자리한 근린공원이다.
  1970년 3월 10일 박정희 전 대통령은 도산 안창호 선생이 이 나라 자주와 독립을 위해 바친 위대한 애국정신과 민중의 교화를 위한 교육정신을 국민의 귀감으로 삼게 하고자 도산공원을 조성할 것을 지시한다. <br />이에 서울시는 1973년 강남구 신사동에 약 1만여평 공원을 조성하고, 망우리 공동묘지에서 선생의 유해를 이장하는 동시에 미국 로스앤젤레스에서 부인 이혜련 여사의 유해를 옮겨와 합장하였다.  그 후, 강남구 청담동에서 논현동에 이르는 노폭 50m 연장 3250m의 신설가로를 도산대로로 명명하였다.<br />
 공원 내에는 도산 선생 기념물로 동상 1기, 어록비 1기, 비문해설기 1기 등이 설치되어 있으며, 매년 3월 10일 이곳에서 홍사단 및 도산기념 사업회 주관으로 도산 선생 추모 기념 행사를 거행한다. <br>','02-543-2558','1973년 11월 10일','연중무휴','산책로',null,null,null,'24시간',null,'없음','없음','입 장 료:무료
 
 이용가능시설:안창호 선생과 부인 이혜련 여사의 묘소, 동상, 기념관, 말씀비, 체육시설 등
 화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우이동 먹거리마을','01000','서울특별시 강북구 삼양로181길 101(우이동, 우이공원유원지) 일대','우이동은 도봉산과 북한산 사이의 계곡에 있는 시민의 휴식처로 우이동 입구에서왼쪽은 백운대로 오르는 등산길이며, 도선사를 경유하여 인수봉 정상을 오를 수 있다. 20분 가량 올라가면 원불교 수도원, 성불사, 용덕사, 선운사, 광명사 등 사찰을 찾을 수 있으며 입구에서의 들뜬 분위기는 이내 차분해지며 또 다른 운치를 느낄 수 있다. 산 정상으로는 현재 군부대가 상주하여, 생태계가 서울에서도 드물게 잘 보존되는 우이령, 일명 바위고개로 이어진다. 우이동에서는 우이암으로 이어지는  등산로가 열린다. 우이암까지 가는 길은 꽤 험한데 우이암 옆을 지나 도봉산 주릉으로 올라서게 되어 있다.  이곳에서 북으로 뻗은 주릉을 타거나 성황당, 도봉유원지로 하산하면 된다.<br /><br />※ 우이령은 예약자만 탐방이 가능하다. <br>',null,null,'연중무휴',null,null,null,null,'상시이용가능',null,'없음','불가','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우이동 먹거리마을','01000','서울특별시 강북구 삼양로181길 101(우이동, 우이공원유원지) 일대',38,127,'우이동은 도봉산과 북한산 사이의 계곡에 있는 시민의 휴식처로 우이동 입구에서왼쪽은 백운대로 오르는 등산길이며, 도선사를 경유하여 인수봉 정상을 오를 수 있다. 20분 가량 올라가면 원불교 수도원, 성불사, 용덕사, 선운사, 광명사 등 사찰을 찾을 수 있으며 입구에서의 들뜬 분위기는 이내 차분해지며 또 다른 운치를 느낄 수 있다. 산 정상으로는 현재 군부대가 상주하여, 생태계가 서울에서도 드물게 잘 보존되는 우이령, 일명 바위고개로 이어진다. 우이동에서는 우이암으로 이어지는  등산로가 열린다. 우이암까지 가는 길은 꽤 험한데 우이암 옆을 지나 도봉산 주릉으로 올라서게 되어 있다.  이곳에서 북으로 뻗은 주릉을 타거나 성황당, 도봉유원지로 하산하면 된다.<br /><br />※ 우이령은 예약자만 탐방이 가능하다. <br>',null,null,'연중무휴',null,null,null,null,'상시이용가능',null,'없음','불가','입 장 료:무료
 화장실:남/녀 화장실 구분
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍릉수목원','02455','서울특별시 동대문구 회기로 57(청량리동)','홍릉수목원은 1922년 서울 홍릉에 임업 시험장이 설립되면서 조성된 우리나라 최초의 제1세대 수목원이다.  이곳은 조선왕조 고종의 왕비인 명성황후의 능(1897년)인 「홍릉」이 있었던 곳으로 「홍릉수목원」이라 이름 붙여졌으며 지금은 이장되어 터만 표시되어 있다. 홍릉수목원은 국립산림과학연구원의 부속 전문 수목원으로서, 국내외의 다양한 식물 유전자원을 체계적으로 수집·관리하여, 기초 식물 학문분야 발전은 물론, 식물 유전자원 확보를 위해 조성한 시험 연구림이다. 홍릉수목원과 산림과학관은 매주 일요일은 일반인에게, 평일에는 학생 단체관람객에게 무료로 개방하여, 자연 및 환경학습, 산림의 소중한 가치를 체험할 수 있는 기회를 제공하고 있다.<br>','02-961-2522',null,'매주 월요일, 5월 1일 및 모든 법정 공휴일 (일요일 제외)',null,null,null,'매주 토,일요일 - 일반인에게 개방<br /> 평일 - 숲해설 프로그램(사전예약)','평일(화~금) 숲해설 10:30, 13:30, 15:30<br /><br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍릉수목원','02455','서울특별시 동대문구 회기로 57(청량리동)',38,127,'홍릉수목원은 1922년 서울 홍릉에 임업 시험장이 설립되면서 조성된 우리나라 최초의 제1세대 수목원이다.  이곳은 조선왕조 고종의 왕비인 명성황후의 능(1897년)인 「홍릉」이 있었던 곳으로 「홍릉수목원」이라 이름 붙여졌으며 지금은 이장되어 터만 표시되어 있다. 홍릉수목원은 국립산림과학연구원의 부속 전문 수목원으로서, 국내외의 다양한 식물 유전자원을 체계적으로 수집·관리하여, 기초 식물 학문분야 발전은 물론, 식물 유전자원 확보를 위해 조성한 시험 연구림이다. 홍릉수목원과 산림과학관은 매주 일요일은 일반인에게, 평일에는 학생 단체관람객에게 무료로 개방하여, 자연 및 환경학습, 산림의 소중한 가치를 체험할 수 있는 기회를 제공하고 있다.<br>','02-961-2522',null,'매주 월요일, 5월 1일 및 모든 법정 공휴일 (일요일 제외)',null,null,null,'매주 토,일요일 - 일반인에게 개방<br /> 평일 - 숲해설 프로그램(사전예약)','평일(화~금) 숲해설 10:30, 13:30, 15:30<br /><br />
 주말_ 자유관람<br />
 하절기 09:00~18:00<br />
 동절기 09:00~17:00<br /><br />
@@ -92,18 +63,18 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 
 내국인 예약안내:전화 및 온라인 예약 가능
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도선사(서울)','01002','서울특별시 강북구 삼양로173길 504(우이동)','우이동 버스 종점에서 사찰 진입로인 포장도로길 청담로를 따라 ''도선고개''와 청담대종사의 진필 휘호인 "자비무적, 밤생도량"이 새겨진 자비문과 바위고개 청담폭포 등을 지나 2.5km쯤 오르면 삼각산의 주봉인 백운대 만경봉 인수봉을 배경으로 도선사의 현관인 안양암과 마음의 광장이 나타난다.호국참회 본찰 도선사는 1,100여 년전 신라말의 유명한 도승 도선국사가 명산승지를 답사하다가 산세가 절묘하고 풍경이 청수하여  천년후 말세 불법이 재흥하리라'' 예견하고 건립한 사찰이다. 그 후 도선국사는 신통력으로 사찰 옆에 서있는 큰 바위를 반으로 잘라 그 한쪽 면에다 20여책에 달하는 관세음보살상을 주장자로 새겼다고 하는데 , 이 마애불상은 정으로 쪼은 흔적을 찾을 수 없어 불가사의로 남아 있다.<br /><br />조선조 광무 7년에 광무황제로부터 정식으로 국가기원도량으로 지정받은바 있는 도선사가 오늘날의 위용을 갖추게 된 것은 조계종단의 종점과  총무원장, 종회의장, 장로원장 등을 두루 역임하신  한국불교정화유신운동의 총수 청담대종사의 대원력에서 기인한 것으로, 수행불교, 실천불교, 생활불교로 불교의 중흥을 꾀하자는 청담대종사의 호국참회사상이 대종사의 뜻을 받든 제자들과 고 육영수 대덕화보살을 비롯한  뜻있는 신남신녀들의 지극한 정성으로 모아져 호국참회사상을 펼치는 근본도량으로 크게 중창되었다.경내로 들어서면 호국참회원의 옹자와 마주치는데, 이 건물의 청담기념관에서는 청담대종사의 유물과 선필을 만날 수 있다.<br /><br /> 천불전으로 오르는 길 옆 연못청담 심지에서는 참배객들이 동전을 던지며 소원을 빌기도 한다.  명부전에는 생전 인연이 깊었던 고 박정희대통령과 고 육영수 여사(대덕화), 고 정주영 현대그룹 회장의 영정이 봉안되어 있으며, 명부전 앞뜰에는 200여 년전 어떤 고승이 인도에서 가져와 심었다는 보리수가 고목이 되어 있고, 12세 소년이 썼다는 기록이 새겨진 대웅전 현판글씨는 보는 이들의 감탄을 자아내게 한다. 대웅전 옆 계단을 오르면 도선국사가 새겼다는 마애불상이 있는 석불전이 나오는데, 이곳은 관세음보살 기도영험이 있는 곳으로 알려져 일년 내내 기도객의 발길이 끊이지 않는 곳이다. 절의 용암문을 거치면 백운대와 인수봉으로 오르는 등산로가 이어진다.<br>','02-993-3161',null,'연중개방',null,null,null,null,null,null,'없음','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도선사(서울)','01002','서울특별시 강북구 삼양로173길 504(우이동)',38,127,'우이동 버스 종점에서 사찰 진입로인 포장도로길 청담로를 따라 ''도선고개''와 청담대종사의 진필 휘호인 "자비무적, 밤생도량"이 새겨진 자비문과 바위고개 청담폭포 등을 지나 2.5km쯤 오르면 삼각산의 주봉인 백운대 만경봉 인수봉을 배경으로 도선사의 현관인 안양암과 마음의 광장이 나타난다.호국참회 본찰 도선사는 1,100여 년전 신라말의 유명한 도승 도선국사가 명산승지를 답사하다가 산세가 절묘하고 풍경이 청수하여  천년후 말세 불법이 재흥하리라'' 예견하고 건립한 사찰이다. 그 후 도선국사는 신통력으로 사찰 옆에 서있는 큰 바위를 반으로 잘라 그 한쪽 면에다 20여책에 달하는 관세음보살상을 주장자로 새겼다고 하는데 , 이 마애불상은 정으로 쪼은 흔적을 찾을 수 없어 불가사의로 남아 있다.<br /><br />조선조 광무 7년에 광무황제로부터 정식으로 국가기원도량으로 지정받은바 있는 도선사가 오늘날의 위용을 갖추게 된 것은 조계종단의 종점과  총무원장, 종회의장, 장로원장 등을 두루 역임하신  한국불교정화유신운동의 총수 청담대종사의 대원력에서 기인한 것으로, 수행불교, 실천불교, 생활불교로 불교의 중흥을 꾀하자는 청담대종사의 호국참회사상이 대종사의 뜻을 받든 제자들과 고 육영수 대덕화보살을 비롯한  뜻있는 신남신녀들의 지극한 정성으로 모아져 호국참회사상을 펼치는 근본도량으로 크게 중창되었다.경내로 들어서면 호국참회원의 옹자와 마주치는데, 이 건물의 청담기념관에서는 청담대종사의 유물과 선필을 만날 수 있다.<br /><br /> 천불전으로 오르는 길 옆 연못청담 심지에서는 참배객들이 동전을 던지며 소원을 빌기도 한다.  명부전에는 생전 인연이 깊었던 고 박정희대통령과 고 육영수 여사(대덕화), 고 정주영 현대그룹 회장의 영정이 봉안되어 있으며, 명부전 앞뜰에는 200여 년전 어떤 고승이 인도에서 가져와 심었다는 보리수가 고목이 되어 있고, 12세 소년이 썼다는 기록이 새겨진 대웅전 현판글씨는 보는 이들의 감탄을 자아내게 한다. 대웅전 옆 계단을 오르면 도선국사가 새겼다는 마애불상이 있는 석불전이 나오는데, 이곳은 관세음보살 기도영험이 있는 곳으로 알려져 일년 내내 기도객의 발길이 끊이지 않는 곳이다. 절의 용암문을 거치면 백운대와 인수봉으로 오르는 등산로가 이어진다.<br>','02-993-3161',null,'연중개방',null,null,null,null,null,null,'없음','불가','화장실:있음
 외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('봉원사(서울)','03721','서울특별시 서대문구 봉원사길 120(봉원동)','신라 제 51대 진성여왕 3년(889년) 도선국사가 현 연세대 터에 창건하고, 반야사라 하였다.제21대 영조 24년(1748년) 찬즙, 중암 두 스님에 의해 지금의 터전으로 이전하였고,영조는 친필로 봉원사라 현액하였으며, 신도들 사이에는 이 때부터 새로 지은 절이라 하여 "새절"이라 부르게 되었다. 제26대 고종 21년(1884년) 발생한 갑신정변의 주축을 이룬 김옥균, 박영효, 서광범 등 개화파 인사의 정신적 지도자였던  이동인 스님이 5년간 주석하였던 갑신정변의 요람지이기도 했다. 1911년 주지 보담스님의 중수와 사지의 확보로 가람의 면모를 새롭게 하였다. 1945년 주지 기월스님, 화주 운파스님과 대종의 원력으로 광복기념관을 건립하였다. 1950년 9월 28일 서울 수복 당시 병화로 광복기념관이 소진되었고, 이때 영조의 친필 현판 등 사보와 이동인스님 및 개화파인사들의 유물이 함께 소실되었다.<br /><br />1966년 주지 영월스님, 화주 운파스님과 대중의 원력으로 소실된 염불당을 중건하였는데 이 건물은 대원군의 별처였던 공덕동 아소정을 옮긴 것이다.현재 봉원사는 한국불교의 전통 종단인 태고종의 총본산으로서 전법수행의 맥을 이어가고 있는 바 대중은 60여 스님, 신도는 10만을 헤아리며 박송암 스님(2000년 2월 입적), 이만봉스님이 주석하며 후학을 지도하고 있다. 교육기관으로는 옥천범음대학이 있고, 신행단체로는 관음회, 화엄법회, 청년회, 학생회, 어린이 인경회 등 법회가 개최되고 있으며 대외적으로도 교도소, 소년원, 양로원, 고아원,군부대 등을 정기적으로 방문하여 교화활동을 펼치고 있어 태고종 총 본산으로서 그 소임을 다하고 있다.<br /><br />* 영산재(靈山齋)<br /><br />봉원사에서는 대한민국 국가무형문화재인 영산재 보존회 주최로 세계평화 및 남북통일을 기원하기 위하여 영산재를 봉행하고 있다.영산재란, 석가모니 부처님께서 영취산에서 법화경을 설하시는 도량을 시공을 초월하여 본 도량으로 오롯이 옮기고 영산회상의 제불보살님께 공양을 올리는 의식이다. 그리하여 살아있는 사람과 죽은 사람이 다 함께 진리를 깨달아 이고득락의 경지에 이르게 하는 의의가 있다. 그러므로 영산재는 공연이 아닌 장엄한 불교의식임을 인식해야 한다. 즉, 삶과 죽음으로 갈라진 우리 모두가 불법 가운데 하나가 되어 다시 만날 것을 기원하며, 부처님 전(前)에 행하는 최대 최고의 장엄한 불교 의식이다.<br>','02-392-3007',null,null,null,null,null,null,null,'주차 가능','없음','불가','이용가능시설:불교용품점, 다원
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('봉원사(서울)','03721','서울특별시 서대문구 봉원사길 120(봉원동)',38,127,'신라 제 51대 진성여왕 3년(889년) 도선국사가 현 연세대 터에 창건하고, 반야사라 하였다.제21대 영조 24년(1748년) 찬즙, 중암 두 스님에 의해 지금의 터전으로 이전하였고,영조는 친필로 봉원사라 현액하였으며, 신도들 사이에는 이 때부터 새로 지은 절이라 하여 "새절"이라 부르게 되었다. 제26대 고종 21년(1884년) 발생한 갑신정변의 주축을 이룬 김옥균, 박영효, 서광범 등 개화파 인사의 정신적 지도자였던  이동인 스님이 5년간 주석하였던 갑신정변의 요람지이기도 했다. 1911년 주지 보담스님의 중수와 사지의 확보로 가람의 면모를 새롭게 하였다. 1945년 주지 기월스님, 화주 운파스님과 대종의 원력으로 광복기념관을 건립하였다. 1950년 9월 28일 서울 수복 당시 병화로 광복기념관이 소진되었고, 이때 영조의 친필 현판 등 사보와 이동인스님 및 개화파인사들의 유물이 함께 소실되었다.<br /><br />1966년 주지 영월스님, 화주 운파스님과 대중의 원력으로 소실된 염불당을 중건하였는데 이 건물은 대원군의 별처였던 공덕동 아소정을 옮긴 것이다.현재 봉원사는 한국불교의 전통 종단인 태고종의 총본산으로서 전법수행의 맥을 이어가고 있는 바 대중은 60여 스님, 신도는 10만을 헤아리며 박송암 스님(2000년 2월 입적), 이만봉스님이 주석하며 후학을 지도하고 있다. 교육기관으로는 옥천범음대학이 있고, 신행단체로는 관음회, 화엄법회, 청년회, 학생회, 어린이 인경회 등 법회가 개최되고 있으며 대외적으로도 교도소, 소년원, 양로원, 고아원,군부대 등을 정기적으로 방문하여 교화활동을 펼치고 있어 태고종 총 본산으로서 그 소임을 다하고 있다.<br /><br />* 영산재(靈山齋)<br /><br />봉원사에서는 대한민국 국가무형문화재인 영산재 보존회 주최로 세계평화 및 남북통일을 기원하기 위하여 영산재를 봉행하고 있다.영산재란, 석가모니 부처님께서 영취산에서 법화경을 설하시는 도량을 시공을 초월하여 본 도량으로 오롯이 옮기고 영산회상의 제불보살님께 공양을 올리는 의식이다. 그리하여 살아있는 사람과 죽은 사람이 다 함께 진리를 깨달아 이고득락의 경지에 이르게 하는 의의가 있다. 그러므로 영산재는 공연이 아닌 장엄한 불교의식임을 인식해야 한다. 즉, 삶과 죽음으로 갈라진 우리 모두가 불법 가운데 하나가 되어 다시 만날 것을 기원하며, 부처님 전(前)에 행하는 최대 최고의 장엄한 불교 의식이다.<br>','02-392-3007',null,null,null,null,null,null,null,'주차 가능','없음','불가','이용가능시설:불교용품점, 다원
 화장실:있음
 외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('봉은사(서울)','06087','서울특별시 강남구 봉은사로 531','봉은사는 신라 원성왕 10년(794년)에 연회국사가 세웠고, 견성사라고 했다. 1498년 성종의 계비 정현왕후가 성종의 능(선릉) 동편에 있던 이 절을 크게 중창하고 절이름을 봉은사로 바꿨다. 본래는 서남쪽으로 1km가량 떨어진 선릉에 있던 것을 조선 명종 때 보우가 옮겨 지었다.
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('봉은사(서울)','06087','서울특별시 강남구 봉은사로 531',38,127,'봉은사는 신라 원성왕 10년(794년)에 연회국사가 세웠고, 견성사라고 했다. 1498년 성종의 계비 정현왕후가 성종의 능(선릉) 동편에 있던 이 절을 크게 중창하고 절이름을 봉은사로 바꿨다. 본래는 서남쪽으로 1km가량 떨어진 선릉에 있던 것을 조선 명종 때 보우가 옮겨 지었다.
 추사 김정희가 쓴 현판이 걸린 판전에는 화엄경, 금강경 등 13가지의 불경 경판 3,479판이 보관되어 있다. 매년 음력 9월 9일에는 사부대중이 함께 경판을 머리에 이고 법성게를 독송하면서 법계도를 따라 행진하는 정대불사라는 의식이 행해진다.','02-3218-4800',null,'연중개방',null,null,null,null,null,'있음','없음','불가','관 람 료:무료
 화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한강시민공원 뚝섬지구(뚝섬한강공원)','05097','서울특별시 광진구 강변북로 139(자양동)','뚝섬한강공원은 한강공원으로 새단장하기 이전부터 강변유원지로 유명했던 곳이다. 공원 내에는 수변광장, 장미정원, 자연학습장, 어린이 놀이터 등으로 조성되어 있다.뚝섬한강공원에는 몸은 가늘고 긴 원통형인 ''자벌레'' 형태의 길이 243m 규모의 예술과 휴식이 함께하는 복합 전망문화콤플렉스가 있다. 뚝섬유원지역에서 연결되어 있어 누구나 이곳을 통해 편리하게 공원으로 진입할 수 있으며 ''자벌레'' 통로에는 카페, 찻집, 기프트숍은 물론 미디어아트 작가들의 작품전시 감상을 할 수 있다.<br /><br />여름에는 시원한 바람을 맞으며 낭만과 젊음을 만끽할 수 있는 윈드서핑, 수상스키, 모터보트 등 수상스포츠가 활발하게 이루어진다. 봄과 가을에는 카페테리아와 계절 꽃전시장으로, 겨울철에는 눈썰매장과 스케이트장으로 사계절 내내 시민들에게 보다 많은 볼거리와 즐길거리를 제공한다.뚝섬한강공원에는 이 외에도 X게임장, 인공암벽장, 유람선 선착장, 토요 나눔장터 운영, 수유실, 여성전용쉼터 등의 시설들로 시민들의 많은 사랑을 받고 있다.<br>','02-3780-0521',null,'연중무휴',null,null,null,null,null,'있음(3개소, 661대 주차 가능)','없음','가능','이용가능시설:[운동시설] 축구장, 농구장, 테니스장, 게이트볼장, 배드민턴장, 족구장, 체력단련장<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한강시민공원 뚝섬지구(뚝섬한강공원)','05097','서울특별시 광진구 강변북로 139(자양동)',38,127,'뚝섬한강공원은 한강공원으로 새단장하기 이전부터 강변유원지로 유명했던 곳이다. 공원 내에는 수변광장, 장미정원, 자연학습장, 어린이 놀이터 등으로 조성되어 있다.뚝섬한강공원에는 몸은 가늘고 긴 원통형인 ''자벌레'' 형태의 길이 243m 규모의 예술과 휴식이 함께하는 복합 전망문화콤플렉스가 있다. 뚝섬유원지역에서 연결되어 있어 누구나 이곳을 통해 편리하게 공원으로 진입할 수 있으며 ''자벌레'' 통로에는 카페, 찻집, 기프트숍은 물론 미디어아트 작가들의 작품전시 감상을 할 수 있다.<br /><br />여름에는 시원한 바람을 맞으며 낭만과 젊음을 만끽할 수 있는 윈드서핑, 수상스키, 모터보트 등 수상스포츠가 활발하게 이루어진다. 봄과 가을에는 카페테리아와 계절 꽃전시장으로, 겨울철에는 눈썰매장과 스케이트장으로 사계절 내내 시민들에게 보다 많은 볼거리와 즐길거리를 제공한다.뚝섬한강공원에는 이 외에도 X게임장, 인공암벽장, 유람선 선착장, 토요 나눔장터 운영, 수유실, 여성전용쉼터 등의 시설들로 시민들의 많은 사랑을 받고 있다.<br>','02-3780-0521',null,'연중무휴',null,null,null,null,null,'있음(3개소, 661대 주차 가능)','없음','가능','이용가능시설:[운동시설] 축구장, 농구장, 테니스장, 게이트볼장, 배드민턴장, 족구장, 체력단련장<br />
 [자전거도로] <br />
 [수상업체] 레스토랑 및 오리보트<br />
 [수상스키장] 모터보트, 수상스키<br />
@@ -118,13 +89,13 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 
 입 장 료:없음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한강시민공원 망원지구(망원한강공원)','04005','서울특별시 마포구 마포나루길 467','서울 시민의 대표적인 휴식공간인 한강시민공원 중 망원한강공원은 원효대교와 성산대교 사이 강변북단에 있으며 마포구와 인접하고 있다. 둔치에는 잔디밭과 산책로 등의 휴식공간이 잘 조성되어 있으며, 월드컵경기장이 있는 부근과 함께 사람들이 많이 찾는 곳으로 고수부지의 폭이 넓은 편으로 자전거도로, 야외수영장 등의 시민들을 위한 각종 편의시설과 운동시설이 마련되었다. 수상에서는 요트를 비롯한 수상스키, 모터보트 등 수상레져를 즐길 수 있는 선착장이 있다. 또한, 망원한강공원 주변에는 망원정(望遠亭), 절두산 성지(切頭山 聖地) 등의 문화유적지가 있다.<br>','망원안내센터 02-3780-0601~4',null,'연중개방',null,null,null,null,'00:00~24:00','주차가능','없음','가능','이용가능시설:[체육시설] 축구장, 농구장, 배구장, 테니스장, 배드민턴장, 어린이야구장, 게이트볼장, 다목적운동장, 체력단련장, 수상훈련장(스카우트연맹)<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한강시민공원 망원지구(망원한강공원)','04005','서울특별시 마포구 마포나루길 467',38,127,'서울 시민의 대표적인 휴식공간인 한강시민공원 중 망원한강공원은 원효대교와 성산대교 사이 강변북단에 있으며 마포구와 인접하고 있다. 둔치에는 잔디밭과 산책로 등의 휴식공간이 잘 조성되어 있으며, 월드컵경기장이 있는 부근과 함께 사람들이 많이 찾는 곳으로 고수부지의 폭이 넓은 편으로 자전거도로, 야외수영장 등의 시민들을 위한 각종 편의시설과 운동시설이 마련되었다. 수상에서는 요트를 비롯한 수상스키, 모터보트 등 수상레져를 즐길 수 있는 선착장이 있다. 또한, 망원한강공원 주변에는 망원정(望遠亭), 절두산 성지(切頭山 聖地) 등의 문화유적지가 있다.<br>','망원안내센터 02-3780-0601~4',null,'연중개방',null,null,null,null,'00:00~24:00','주차가능','없음','가능','이용가능시설:[체육시설] 축구장, 농구장, 배구장, 테니스장, 배드민턴장, 어린이야구장, 게이트볼장, 다목적운동장, 체력단련장, 수상훈련장(스카우트연맹)<br />
 [기타시설] 낚시터ㆍ자전거도로, 자전거대여소, 수영장, 유람선선착장<br />
 [편의시설] 매점, 음수대, 그늘막, 자전거보관소, 그늘막 
 입 장 료:무료
 화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보라매안전체험관','07062','서울특별시 동작구 여의대방로20길 33','서울시 보라매안전체험관은 보라매공원 내에 있으며, ''안전 서울'' 실현을 목표로 종합재난체험 인프라를 구출,다양한 전문체험과정 운영으로 대 시민 재난대응 능력향상을 위하여 만들어졌다.자연재해 및 인위재난 등 각종 재해, 재난 상황을 시민들이 직접 체험하면서 재난 안전의 중요성을 현장경험이 풍부한 현직 소방관들에게 생생한 경험담을 들을 수 있는 국내 최고의 재난안전 종합체험관이다.','02-2027-4100','2010년 5월 25일','매주 월요일, 매년 1월 1일, 설·추석 당일','* 대면체험(지진,태풍,화재,교통,4D 영상관) : 10시, 10시30분, 13시, 15시, 16시, <br />비대면체험(응급처치, 재난안전체험) ; 15시
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보라매안전체험관','07062','서울특별시 동작구 여의대방로20길 33',37,127,'서울시 보라매안전체험관은 보라매공원 내에 있으며, ''안전 서울'' 실현을 목표로 종합재난체험 인프라를 구출,다양한 전문체험과정 운영으로 대 시민 재난대응 능력향상을 위하여 만들어졌다.자연재해 및 인위재난 등 각종 재해, 재난 상황을 시민들이 직접 체험하면서 재난 안전의 중요성을 현장경험이 풍부한 현직 소방관들에게 생생한 경험담을 들을 수 있는 국내 최고의 재난안전 종합체험관이다.','02-2027-4100','2010년 5월 25일','매주 월요일, 매년 1월 1일, 설·추석 당일','* 대면체험(지진,태풍,화재,교통,4D 영상관) : 10시, 10시30분, 13시, 15시, 16시, <br />비대면체험(응급처치, 재난안전체험) ; 15시
 <br />
 * 전문체험<br />
 - 심폐소생술 : 10시, 13시, 15시(주말 10시)<br />
@@ -147,16 +118,16 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 화장실:있음
 내국인 예약안내:사전예약제로 운영되므로 반드시 홈페이지에서 예약
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불국사','06359','서울특별시 강남구 광평로10길 30-71(일원동)','고려 공민왕 2년(1385년)에 진정국사가 약사절 창건하였다. 조선말 고종황제께서 불국정토를 이루자는 뜻에서 불국사란 사명을 내렸고,한국전쟁으로 약사 부처님만 남고 사찰 소실되어 1964년 풍곡화상이 중창하였다.','02-445-4543',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('개봉 유수지','08329','서울특별시 구로구 개봉동(개봉동)','유수지의 특성을 고려한 안정적인 생태기반환경 복원과 주변 주거지역과 연계한 다양한 서식공간 조성으로 종다양성 증진, 목감천의 하천생태축과 연계한 도시생태 네트워크 구축했다.<br>','02-860-3114',null,null,null,null,null,null,null,null,'없음','없음','이용가능시설:배드민턴장 2개, 농구장 1면, 어린이 놀이터 1개, 잔디광장, 레인가든, 생태놀이터 
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불국사','06359','서울특별시 강남구 광평로10길 30-71(일원동)',37,127,'고려 공민왕 2년(1385년)에 진정국사가 약사절 창건하였다. 조선말 고종황제께서 불국정토를 이루자는 뜻에서 불국사란 사명을 내렸고,한국전쟁으로 약사 부처님만 남고 사찰 소실되어 1964년 풍곡화상이 중창하였다.','02-445-4543',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('개봉 유수지','08329','서울특별시 구로구 개봉동(개봉동)',37,127,'유수지의 특성을 고려한 안정적인 생태기반환경 복원과 주변 주거지역과 연계한 다양한 서식공간 조성으로 종다양성 증진, 목감천의 하천생태축과 연계한 도시생태 네트워크 구축했다.<br>','02-860-3114',null,null,null,null,null,null,null,null,'없음','없음','이용가능시설:배드민턴장 2개, 농구장 1면, 어린이 놀이터 1개, 잔디광장, 레인가든, 생태놀이터 
 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('온수도시 자연공원(잣절공원)','08254','서울특별시 구로구 고척로3길 86-52(오류동)','온수도시자연공원 내 조성된 잣절공원으로 연못과 데크가 설치되어 있어 여름에 청량감을 느낄 수 있고, 매년 반딧불이 방사행사가 개최되고 있다.<br>','02-860-2396',null,null,null,null,null,null,null,null,'없음','없음','이용가능시설:축구장, 농구장, 배드민턴장, 테니스장, 족구장, 음수대, 화장실, 그늘막, 정자, 운동기구 등
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('온수도시 자연공원(잣절공원)','08254','서울특별시 구로구 고척로3길 86-52(오류동)',38,127,'온수도시자연공원 내 조성된 잣절공원으로 연못과 데크가 설치되어 있어 여름에 청량감을 느낄 수 있고, 매년 반딧불이 방사행사가 개최되고 있다.<br>','02-860-2396',null,null,null,null,null,null,null,null,'없음','없음','이용가능시설:축구장, 농구장, 배드민턴장, 테니스장, 족구장, 음수대, 화장실, 그늘막, 정자, 운동기구 등
 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('호암산성','08570','서울특별시 금천구 독산로36나길 63','관악산에 위치한 삼국시대 신라 시기의 성곽으로 한우물, 석구상 등 문화재 및 관악산 둘레길 코스중 하나인 전통사찰 호압사와 연계 관광 가능하다.<br>호암산성은 산마루를 둘러 쌓은 통일신라시대의 테뫼식 산성으로 둘레는 1,250m이며, 그 중 약 300m 구간에 성의 흔적이 남아있다. 한우물은 호암산 정상에 있는 길이 22m, 폭12m의 연못으로 네 주변을 화강암으로 쌓았으며, 용보(龍洑)라는 별칭을 가지고 있다. 가뭄 때에는 기우제를 지내고 전시(戰時)에는 군용에 대비하였다 한다. 이 연못 모양의 우물이 만들어진 정확한 시기는 알 수 없으나 보수를 위한 발굴 당시 확인된 바로는 삼국시대에 만들어진 연못이 현재의 연못 밑에 묻혀 있었으며, 그 위에 어긋나게 축석한 연못이 다시 조선 초기에 만들어졌음이 밝혀졌다. 한우물의 조선시대 석축지는 동서 22m, 남북 12m, 깊이 1.2m의 규모로 그 아래의 통일신라의 석출지도 확인되었다. 다른 우물지에서는 ‘잉벌내력지내미(仍伐內力只內未)’라는 글이 있는 청동숟가락이 나왔다. 우물지 근처에서 개 모양의 동물상(석수상, 길이 1.7m, 폭 0.9m, 높이 1.0m)이 발견되었는데, 이 것은 조선시대 서울에 화재가 생기는 것을 막기 위해 세웠다는 설화와 관련 있는 것으로 보인다. 한우물 근처에서 석구지(石拘池)라고 새겨진 돌이 발견되었는데, 아마도 이 연못이 석수상과 관련되어 석구지라고 불려진 것이라고 보여진다.<br>','금천구청 문화체육과 02-2627-1453',null,null,null,null,null,null,'상시운영',null,'없음','없음','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('호암산성','08570','서울특별시 금천구 독산로36나길 63',37,127,'관악산에 위치한 삼국시대 신라 시기의 성곽으로 한우물, 석구상 등 문화재 및 관악산 둘레길 코스중 하나인 전통사찰 호압사와 연계 관광 가능하다.<br>호암산성은 산마루를 둘러 쌓은 통일신라시대의 테뫼식 산성으로 둘레는 1,250m이며, 그 중 약 300m 구간에 성의 흔적이 남아있다. 한우물은 호암산 정상에 있는 길이 22m, 폭12m의 연못으로 네 주변을 화강암으로 쌓았으며, 용보(龍洑)라는 별칭을 가지고 있다. 가뭄 때에는 기우제를 지내고 전시(戰時)에는 군용에 대비하였다 한다. 이 연못 모양의 우물이 만들어진 정확한 시기는 알 수 없으나 보수를 위한 발굴 당시 확인된 바로는 삼국시대에 만들어진 연못이 현재의 연못 밑에 묻혀 있었으며, 그 위에 어긋나게 축석한 연못이 다시 조선 초기에 만들어졌음이 밝혀졌다. 한우물의 조선시대 석축지는 동서 22m, 남북 12m, 깊이 1.2m의 규모로 그 아래의 통일신라의 석출지도 확인되었다. 다른 우물지에서는 ‘잉벌내력지내미(仍伐內力只內未)’라는 글이 있는 청동숟가락이 나왔다. 우물지 근처에서 개 모양의 동물상(석수상, 길이 1.7m, 폭 0.9m, 높이 1.0m)이 발견되었는데, 이 것은 조선시대 서울에 화재가 생기는 것을 막기 위해 세웠다는 설화와 관련 있는 것으로 보인다. 한우물 근처에서 석구지(石拘池)라고 새겨진 돌이 발견되었는데, 아마도 이 연못이 석수상과 관련되어 석구지라고 불려진 것이라고 보여진다.<br>','금천구청 문화체육과 02-2627-1453',null,null,null,null,null,null,'상시운영',null,'없음','없음','입 장 료:무료
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울풍물시장 전통문화체험관','02586','서울특별시 동대문구 천호대로4길 21(신설동)','‘전통문화체험관’은 서울풍물시장을 방문한 내∙외국인 관광객이 다양한 한국의 전통문화 소품을 간단하게 만들어 볼 수 있는 공간이다. 외국인에게는 한국만의 특색 있는 전통문화를 경험하며 한국을 이해하는 계기가 되고, 내국인에게는 우리 전통문화를 쉽게 접하며 온 가족이 함께 즐길 수 있는 문화관광 여가시간을 제공하고 있다.<br>','02-2232-3368','2010년 4월 1일','매주 화요일','* 한지체험 : 접시만들기, 손거울만들기, 액자만들기, 전등갓꾸미기<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울풍물시장 전통문화체험관','02586','서울특별시 동대문구 천호대로4길 21(신설동)',38,127,'‘전통문화체험관’은 서울풍물시장을 방문한 내∙외국인 관광객이 다양한 한국의 전통문화 소품을 간단하게 만들어 볼 수 있는 공간이다. 외국인에게는 한국만의 특색 있는 전통문화를 경험하며 한국을 이해하는 계기가 되고, 내국인에게는 우리 전통문화를 쉽게 접하며 온 가족이 함께 즐길 수 있는 문화관광 여가시간을 제공하고 있다.<br>','02-2232-3368','2010년 4월 1일','매주 화요일','* 한지체험 : 접시만들기, 손거울만들기, 액자만들기, 전등갓꾸미기<br />
 * 생활체험 : 청사초롱만들기, 족자꾸미기, 솟대만들기<br />
 * 복식체험 : 사모만들기, 노리개만들기<br />
 * 놀이체험 : 꾸미기, 팽이꾸미기, 한지제기만들기',null,null,null,'10:00~19:00 (식당 ~ 22:00까지 영업)','서울풍물시장 앞 공영주차장','없음','불가','화장실:있음
@@ -164,31 +135,62 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 주차요금:5분에 150원
 내국인 예약안내:특정단체나 7명 이상의 단체 모임은 홈페이지에서 참가 신청서를 다운받아 등록하여 이메일을 보내거나, 전화 문의(02-2232-3368)
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산','08826','서울특별시 관악구 관악로(신림동)','관악산(높이 632.2 m)은 1973년 관악구가 영등포구에서 분구되면서, 명산으로서 산 이름이 구의 명칭이 되어 관악구의 상징이자 자랑이 되고 있으며, 관악구 문화유산의 대부분이 관악산에서 비롯되었다. 1968년에 건설부 고시 제34호로 도시자연공원으로 지정되었으며 오늘날에는 수많은 서울 시민들이 즐겨 찾는 휴식처로 서울의 명소가 되었다. 곳곳에 드러난 암봉들이 깊은 골짜기와 어울려 험준한 산세를 이루고 있는 관악산은 산의 규모가 그다지 크지 않고 도심에서 가까워 누구나 하루 일정으로 산에 오를 수 있는데 봄에는 관악산 입구 쪽으로 벚꽃이 만발하고, 철쭉이 필 때는 철쭉제가 열리기도 한다. 봄철에 무리지어 피는 철쭉꽃과 여름의 짙은 녹음과, 계곡 깊은 곳에 동폭포, 서폭포의 물소리가 장엄하고 가을에는 단풍, 겨울에는 설경이 명산 관악의 면모를 자랑하고 있다. 관악산 정상에는 지상 레이다 관측소와 조선 태조 이성계가 서울을 도읍지로 정할 때 연주사와 원각사 두 절을 지어 화환에 대처했다고 하는 정상의 원각사와 연주암을 비롯하여 크고 작은 사찰과 암자가 있는데, 아슬아슬한 벼랑 위에 자리잡고 있는 연주대는 관악산의 모든 등산로가 집결하는 곳이다.<br>','02-879-6521',null,'연중무휴',null,null,null,null,null,'주차 가능','불가','없음','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산','08826','서울특별시 관악구 관악로(신림동)',37,127,'관악산(높이 632.2 m)은 1973년 관악구가 영등포구에서 분구되면서, 명산으로서 산 이름이 구의 명칭이 되어 관악구의 상징이자 자랑이 되고 있으며, 관악구 문화유산의 대부분이 관악산에서 비롯되었다. 1968년에 건설부 고시 제34호로 도시자연공원으로 지정되었으며 오늘날에는 수많은 서울 시민들이 즐겨 찾는 휴식처로 서울의 명소가 되었다. 곳곳에 드러난 암봉들이 깊은 골짜기와 어울려 험준한 산세를 이루고 있는 관악산은 산의 규모가 그다지 크지 않고 도심에서 가까워 누구나 하루 일정으로 산에 오를 수 있는데 봄에는 관악산 입구 쪽으로 벚꽃이 만발하고, 철쭉이 필 때는 철쭉제가 열리기도 한다. 봄철에 무리지어 피는 철쭉꽃과 여름의 짙은 녹음과, 계곡 깊은 곳에 동폭포, 서폭포의 물소리가 장엄하고 가을에는 단풍, 겨울에는 설경이 명산 관악의 면모를 자랑하고 있다. 관악산 정상에는 지상 레이다 관측소와 조선 태조 이성계가 서울을 도읍지로 정할 때 연주사와 원각사 두 절을 지어 화환에 대처했다고 하는 정상의 원각사와 연주암을 비롯하여 크고 작은 사찰과 암자가 있는데, 아슬아슬한 벼랑 위에 자리잡고 있는 연주대는 관악산의 모든 등산로가 집결하는 곳이다.<br>','02-879-6521',null,'연중무휴',null,null,null,null,null,'주차 가능','불가','없음','화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천왕근린공원','08366','서울특별시 구로구 천왕동','천왕근린공원은 구로구 경계에 위치하고 있고, 연못 내 연꽃이 만개했을때 아름다운 경관을 보여준다. 그리고 여름 8월 1개월간 캠핑장을 운영하고 있다.<br>','02-860-3086',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천호자전거거리',null,'서울시강동구 천호동','천호동 공원사거리부터 한강으로 향하는 즈믄 나들목까지 조성된 327m의 자전거 특화 거리이다. 30곳 넘는 자전거 관련 점포들이 모여 있으며, 라이더들을 위한 아지트도 형성되어 있다.','02-3425-6260',null,'없음',null,null,null,null,'00:00~24:00','없음','없음','가능','화장실:없음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천왕근린공원','08366','서울특별시 구로구 천왕동',37,127,'천왕근린공원은 구로구 경계에 위치하고 있고, 연못 내 연꽃이 만개했을때 아름다운 경관을 보여준다. 그리고 여름 8월 1개월간 캠핑장을 운영하고 있다.<br>','02-860-3086',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천호자전거거리',null,'서울시강동구 천호동',38,127,'천호동 공원사거리부터 한강으로 향하는 즈믄 나들목까지 조성된 327m의 자전거 특화 거리이다. 30곳 넘는 자전거 관련 점포들이 모여 있으며, 라이더들을 위한 아지트도 형성되어 있다.','02-3425-6260',null,'없음',null,null,null,null,'00:00~24:00','없음','없음','가능','화장실:없음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도그베이 서울점','04991','서울특별시 광진구 광나루로 441 육영재단어린이회관','도심 속 힐링 가능한 애견 동반 워터파크',null,null,null,null,null,null,null,null,null,null,null,':
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도그베이 서울점','04991','서울특별시 광진구 광나루로 441 육영재단어린이회관',38,127,'도심 속 힐링 가능한 애견 동반 워터파크',null,null,null,null,null,null,null,null,null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('화계사(서울)','01095','서울특별시 강북구 화계사길 117(수유동)','화계사는 원래 부허동이라는 곳에 보덕암이라는 암자였으며, 현재 화계사 자리로 이전하여 조선 중종 17년(1522년)에 신월대사가 창건하였다. 광해군 10년인 1618년 화재로 모두 소실되었다가 다음 해에 도월스님에 의해 중건되었다.백운봉(白雲峰 836.5m), 인수봉(人壽峰 810.5m), 만경봉(萬鏡峰 787.0m)으로 북한산의 핵심을 이루고 있는 삼각산(三角山)의 동남쪽으로, 칼바위 능선을 지나 흘러내린 끝자락에자리 잡고 있으며, 도심과 가깝고 주택가와 인접해 있으면서도 숲과 계곡이 감싸 안아 자연에서 주는 편안함과, 고즈넉한 산사의 정취를 느낄 수 있는 강북구의 대표적인 사찰이다.<br /><br />1866년 용선스님과 범운스님이 지은 건물들이 지금까지 내려오고 있으며, 명부전의 지장보살과 시왕은 특히 유명하다. 이 조각들은 고려 말엽의 나옹스님이 정교하게 깎은 작품들로서, 1877년 조대비가 화계사에 안치했다고 한다. 조선시대에는 국태민안을 빌던 왕가 사람들의 출입이 많아 궁궐이라고 불려질 정도였으며, 대원군은 이곳 골짜기에 있는 오탁천약수로 피부병을 고치기 위하여  이 절에 머물렀기 때문에 대원군의 글씨를  비롯해서 그와의 인연이 많이 얽혀 있다. 현재 화계사는 숭산스님에 의해 시작된 관음국제선원의 산실로서 외국인 승려들과 불자들이 이곳에서 수행하고 있다.  규모는 크지 않지만 소나무, 전나무, 느티나무에 둘러싸여 이곳을 찾는 이들의 마음을 평온하게 만들어 준다.<br /><br />또한, 화계사에는 화계사를 직접 체험 해 볼 수 있는 템플스테이 프로그램이 마련되어 있다. 템플스테이(Templestay)는 한국의 전통사찰에 머물면서 사찰의 일상생활을 체험하고 한국 불교의 전통 문화와 수행 정신을 체험하는 프로그램으로, 도시와 매우 근접해 있으면서도 깊은 산사의 체험을 할 수 있는 것이 화계사 템플스테이의 특징이다. 다양한 필요에 맞추어 체험형, 휴식형, 당일형 프로그램 등이 준비되어 있다.<br>','02-902-2663',null,'연중무휴',null,null,null,null,null,'있음','없음','없음','이용가능시설:일주문, 대웅전, 명부전, 천불오백성전, 삼성각, 보화루, 대적광전, 교육관/템플스테이, 조실당, 범종각과 동종, 부도전
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청계산','06806','서울특별시 서초구 원터길경기도 성남시ㆍ과천시ㆍ의왕시',37,127,'서울대공원과 서울랜드, 국립현대미술관을 둘러싼 푸른 산자락이 바로 청계산이다. 서울 양재동과 과천시, 성남시,의왕시의 경계를 이루고 있는 청계산은 관악산 산자락이 과천 시내를 에둘러 남쪽으로 뻗어내린 것이다. 산맥은 여기서 멈추지 않고 서남쪽으로 뻗어나가 의왕시의 백운산, 모락산, 오봉산으로 이어진다. 청계산은 조선 태조 이성계에 의해 고려가 멸망하자, 고려말 충신이었던 조윤(趙胤)이 송도를 떠나 입산했던 곳이라고 전해진다. 청룡이 승천했던 곳이라고해서 청룡산으로 불리기도 하며 풍수지리학적으로는 관악산을 백호, 청계산을 청룡이라하여 ''좌청룡 우백호''의 개념으로 해석하기도 한다.
+
+청계산은 울창한 숲과 아늑한 계곡, 공원, 사찰 등 다양한 볼거리가 있는 가족산행의 명소로서 수 많은 등산로가 다양하게 형성되어 있다. 과천쪽에서 바라보는 청계산은 산세가 부드럽고 온화해서 토산처럼 보이지만, 서울대공원쪽에서 보이는 망경대는 바위로 둘러싸여 있어 거칠고 당당하게 보인다. 망경대(해발 618.2m)가 바로 청계산의 정상이다.
+
+주암동쪽에서 망경대 쪽으로 오르다 보면 추사 김정희의 생부김노경의 묘터가 있던 옥녀봉이 나타난다. 조선시대의 학자인 정여창이 피눈물을 흘리며 넘었다는 혈읍재를 지나 망경대 바로 밑으로 가면 정여창이 은거했다는 금정수가 있다. 이 약수는 정여창이 사사되자 핏빛으로 변했다가 이내 금빛으로 물들었다는 말이 전해온다.<BR>풀향기 가득한 산길을 걷다보면 야생밤나무와 도토리나무, 머루와 다래 등이 종종 눈길을 끈다. 청계산 남쪽에 위치한 청계사, 과천 쪽의 동폭포, 금정수 가는 길 근처의 매바위와 돌문바위, 약수터 등도 들러 볼 만하다.
+
+청계산(618m)은 산세가 수려하고, 2km에 이르는 계곡에는 항상 맑은 물이 흘러 시민들이 즐겨찾는다. 관악산과 함께 서울을 지켜주는 ''좌청룡 우백호''의 명산이기도 하다. 예전에는 청룡산이라고도 했던 청계산은 두 개의 얼굴을 가지고 있다. 양재인터체인지를 지나 경부고속도로로 접어들때 오른쪽으로 보이는 청계산은 순한 육산이지만, 과천 서울대공원 정문 부근에서  바라보는 청계산 정상인 망경대 주위는 바위로 이루어져 있어 위압감을 느낀다. 정상인 망경대는 정부시설이 있어 등산이 불가, 국사봉(538m)과 545m봉을 연결 산행하고 있다.','공원녹지과  02-2155-6870',null,null,null,null,null,null,null,'있음','없음','없음','이용가능시설:약수터, 정자, 다리, 삼림욕장 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불암산','01642','서울특별시 노원구 덕릉로130가길 22',38,127,'서울시 노원구 상계동, 중계동과 남양주시 별내면의 경계에 솟은, 높이 508m의 나지막한 바위산이다. 전체 면적은 약 5,355,396m²(1,620,000평)정도이다. 1977년 도시자연공원으로 지정됐다. 산의 모습이 송낙을 쓴 부처의 모습과 같다 해서 불암산이라는 이름이 지어졌고 일명 천보산, 필암산이라고도 한다. 
+능선이 길게 뻗어 있어 시원한 경치를 맛볼 수 있고 산길도 험하지 않아 가볍게 오를 수 있는 곳이다. 특히, 야간에 정상에 올라보면 멋진 서울시의 야경을 감상하게 된다. 
+불암산 제2봉인 해발 420m의 봉우리에는 불암산성지가 있다. 이 산성지는 대동여지도에도 산성지라고 표기되어 있으며 규모는 약 3백보 정도이다. 곳곳에 있는 바위 절벽들은 암벽타기 연습장으로 활용되고 있다. 등산로와 약수터가 10여개나 된다. 불암폭포는 겨울철이면 빙벽타기 애호가들이 즐겨 찾는다.','02-2116-3943',null,null,null,null,null,null,null,null,'없음','없음','등산로:공원관리소 - 청암약수터입구 - 돌다방쉼터 - 능선사거리 - 정상 (3.1km<br />* 공원관리소 - 정암사 - 불암체육회 - 깔딱고개 - 정상 (3.2km)<br />* 양지초소 - 천병약수터 - 헬기장 - 깔딱고개 - 정상 (3.8km) <br />* 원자력병원후문 - 삼육대갈림길 - 학도암갈림길 - 헬기장 - 정상 (5.8km)
+입산통제 기간:[탐방로 통제기간] <br />
+[탐방로 통제기간] <br />
+(봄가을철 산불조심기간 한시적 등산로구간 통제)<br />
+봄철 3월 2일 ~ 4월 30일 <br />
+가을철 11월 1일 ~ 12월 15일<br />
+-국립공원 11월 15일 ~ 12월 15일(경주,태안해안제외)
+
+※ 통제기간은 기상여건 등을 감안하여 공원별로 일부 조정될 수 있으니 공원탐방 시 해당 공원 홈페이지 공지사항 참고
+입산통제 구간:등산로 통제구간안내 <a title="등산로 통제구간 검색" href="http://hiking.kworks.co.kr/sub_map/map_user01.aspx" target="_blank">http://hiking.kworks.co.kr/sub_map/map_user01.aspx</a>
+
+
+관광코스안내:* 하룻길 코스 : 넓은마당→불암산허브공원→좆바위→음바위→학도암→백사마을→산들메수목원→불암사→ 덕릉고개→넓은마당 
+<br />
+* 나절길 코스 : 강릉→태릉선수촌→조선왕릉전시관,태릉→육군박물관→서울여대박물관→화랑대역사→공릉동백세문→백사마을→노원고개 →제명호→삼육대박물관 
+이용가능시설:생성약수터, 음식점, 매점 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('송암사','01633','서울특별시 노원구 덕릉로145길 101(상계동)',38,127,'송암사는 서울시 노원구와 경기 의정부, 남양주 별내면의 경계의 위치한 수락산 내에 자리잡은 고즉넉한 사찰이다.<br>','02-936-5722',null,'연중무휴',null,null,null,null,'일출~일몰','주차 가능','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정암사','01716','서울특별시 노원구 덕릉로94길 127(중계동)',38,127,'정암사는 서울 노원구와 경기 남양주시 별내면(別內面) 경계에 위치한 불암산 내에 있는 사찰이다.<br>','02-930-1995',null,'연중무휴',null,null,null,null,null,null,'없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('화계사(서울)','01095','서울특별시 강북구 화계사길 117(수유동)',38,127,'화계사는 원래 부허동이라는 곳에 보덕암이라는 암자였으며, 현재 화계사 자리로 이전하여 조선 중종 17년(1522년)에 신월대사가 창건하였다. 광해군 10년인 1618년 화재로 모두 소실되었다가 다음 해에 도월스님에 의해 중건되었다.백운봉(白雲峰 836.5m), 인수봉(人壽峰 810.5m), 만경봉(萬鏡峰 787.0m)으로 북한산의 핵심을 이루고 있는 삼각산(三角山)의 동남쪽으로, 칼바위 능선을 지나 흘러내린 끝자락에자리 잡고 있으며, 도심과 가깝고 주택가와 인접해 있으면서도 숲과 계곡이 감싸 안아 자연에서 주는 편안함과, 고즈넉한 산사의 정취를 느낄 수 있는 강북구의 대표적인 사찰이다.<br /><br />1866년 용선스님과 범운스님이 지은 건물들이 지금까지 내려오고 있으며, 명부전의 지장보살과 시왕은 특히 유명하다. 이 조각들은 고려 말엽의 나옹스님이 정교하게 깎은 작품들로서, 1877년 조대비가 화계사에 안치했다고 한다. 조선시대에는 국태민안을 빌던 왕가 사람들의 출입이 많아 궁궐이라고 불려질 정도였으며, 대원군은 이곳 골짜기에 있는 오탁천약수로 피부병을 고치기 위하여  이 절에 머물렀기 때문에 대원군의 글씨를  비롯해서 그와의 인연이 많이 얽혀 있다. 현재 화계사는 숭산스님에 의해 시작된 관음국제선원의 산실로서 외국인 승려들과 불자들이 이곳에서 수행하고 있다.  규모는 크지 않지만 소나무, 전나무, 느티나무에 둘러싸여 이곳을 찾는 이들의 마음을 평온하게 만들어 준다.<br /><br />또한, 화계사에는 화계사를 직접 체험 해 볼 수 있는 템플스테이 프로그램이 마련되어 있다. 템플스테이(Templestay)는 한국의 전통사찰에 머물면서 사찰의 일상생활을 체험하고 한국 불교의 전통 문화와 수행 정신을 체험하는 프로그램으로, 도시와 매우 근접해 있으면서도 깊은 산사의 체험을 할 수 있는 것이 화계사 템플스테이의 특징이다. 다양한 필요에 맞추어 체험형, 휴식형, 당일형 프로그램 등이 준비되어 있다.<br>','02-902-2663',null,'연중무휴',null,null,null,null,null,'있음','없음','없음','이용가능시설:일주문, 대웅전, 명부전, 천불오백성전, 삼성각, 보화루, 대적광전, 교육관/템플스테이, 조실당, 범종각과 동종, 부도전
 화장실:있음
 한국어 안내서비스:가능
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산 낙성대공원','08799','서울특별시 관악구 낙성대로 77','고려의 명장 인헌공 강감찬 장군(948년∼1031년)의 탄생지를 성역화한 곳이다. 1973년 서울시에서 장군의 출생 유적지를 정비하여 지금에 이른다. 낙성대 3층 석탑이 석탑의 첫층 탑신 앞면에 "강감찬 낙성대"라는 명문이 해서체로 새겨져 있어  탑 이름을 강감찬탑 또는 강감찬 낙성대탑이라 부르고 있다. 조성 연대는 고려시대로,자재는 화강암이며, 탑의 높이는 4.48m이다. 이 탑에 연유해서 이 곳 옛마을을 탑골이라하며, 옛마을 사람들은 장군을 성신이라 우러러 받들고 그 위업을 추모하고 있다.<br /><br />* 안국사<br /><br />안국사는 고려 시대 목조 건축양식의 대표적인 영주 부석사 무량수전을 본따 세우고, 장군의 영정을 모시고 있다. 정면 5간, 측면 2간의 청기와 지붕이 높이 올려져있어 매우 웅장한 느낌을 준다. 위치가 서울대학교 후문으로 통하는 길의 바로 동쪽이기 때문에 찾는 사람이 많아 서울 남부지역의 명소가 되고 있다.<br /><br />* 낙성대 유지<br /><br />강감찬 장군이 탄생한 집터이며, 본래 낙성대 3층석탑이 있던 자리이다. 1973년 낙성대를 정화하면서 이 석탑을 안국사 경내로 옮기고 그 자리에 높이 2m의 유허비를 세워 유서깊은 사적지임을 표시하였다. 따라서 강감찬 장군의 탄생지를 기념하여 성역화한 곳이 낙성대이지만, 그가 태어난 곳은 유허비가 있는 곳이다.<br>','02-879-6519',null,'연중무휴',null,null,null,null,null,'있음','불가','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산 낙성대공원','08799','서울특별시 관악구 낙성대로 77',37,127,'고려의 명장 인헌공 강감찬 장군(948년∼1031년)의 탄생지를 성역화한 곳이다. 1973년 서울시에서 장군의 출생 유적지를 정비하여 지금에 이른다. 낙성대 3층 석탑이 석탑의 첫층 탑신 앞면에 "강감찬 낙성대"라는 명문이 해서체로 새겨져 있어  탑 이름을 강감찬탑 또는 강감찬 낙성대탑이라 부르고 있다. 조성 연대는 고려시대로,자재는 화강암이며, 탑의 높이는 4.48m이다. 이 탑에 연유해서 이 곳 옛마을을 탑골이라하며, 옛마을 사람들은 장군을 성신이라 우러러 받들고 그 위업을 추모하고 있다.<br /><br />* 안국사<br /><br />안국사는 고려 시대 목조 건축양식의 대표적인 영주 부석사 무량수전을 본따 세우고, 장군의 영정을 모시고 있다. 정면 5간, 측면 2간의 청기와 지붕이 높이 올려져있어 매우 웅장한 느낌을 준다. 위치가 서울대학교 후문으로 통하는 길의 바로 동쪽이기 때문에 찾는 사람이 많아 서울 남부지역의 명소가 되고 있다.<br /><br />* 낙성대 유지<br /><br />강감찬 장군이 탄생한 집터이며, 본래 낙성대 3층석탑이 있던 자리이다. 1973년 낙성대를 정화하면서 이 석탑을 안국사 경내로 옮기고 그 자리에 높이 2m의 유허비를 세워 유서깊은 사적지임을 표시하였다. 따라서 강감찬 장군의 탄생지를 기념하여 성역화한 곳이 낙성대이지만, 그가 태어난 곳은 유허비가 있는 곳이다.<br>','02-879-6519',null,'연중무휴',null,null,null,null,null,'있음','불가','불가','화장실:있음
 입 장 료:무료
 
 이용가능시설:기념광장, 열린마당, 전통야외소극장, 구민체육센터, 미니도서관 등
 외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산성','04963','서울특별시 광진구 광장동','아차산성은 백제의 책계왕이 왕위에 오른 첫해(A.D286)에 고구려의 침입에 대비하여 고쳤다는 기록에서 처음 나타난다. 또한 고구려 장수왕이 한강 하류의 남쪽에 있었던 백제의 왕성을 빼앗고 개로왕을 사로잡아 아차산성으로 끌고 와서 죽인 곳이기도 하다.한강 하류를 장악한 신라에 있어서도 고구려를 공격하는 전진기지가 되었다. 이러한 신라의 야망을 미리 막기 위하여 싸움터로 나왔던 고구려의 온달 장군이 신라군의 화살에 맞아 전사한 곳이라고도 한다. 이때 사랑하는 남편 온달장군의 주검을 거두기 위하여 천 리 길도 마다치 않고 달려온 고구려 평강공주의 슬픈 사랑 노래가 한강을 따라 천 여년을 흘려보낸 곳이 아차산성이다. 아차산성은 한강 하류의 북쪽 강변에 있는 해발 203m의 작은 산봉우리를 감싸며 쌓았다. 성의 둘레는 1,038m이다. 바로선 성벽을 쌓고 난 다음 다시 밑에서 비스듬히 보강하여 쌓은 성벽이 고구려의 두 번째 도읍이었던 국내성의 성벽과 같은 뒤로 밀려 쌓은 층계식이어서 고구려의 영향을 받은 것으로 추측하고 있다.<br>','02-450-7593',null,'연중무휴',null,null,null,null,'24시간','아차산생태공원 주차장 이용','불가','없음','화장실:있음(공원 입구)
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산성','04963','서울특별시 광진구 광장동',38,127,'아차산성은 백제의 책계왕이 왕위에 오른 첫해(A.D286)에 고구려의 침입에 대비하여 고쳤다는 기록에서 처음 나타난다. 또한 고구려 장수왕이 한강 하류의 남쪽에 있었던 백제의 왕성을 빼앗고 개로왕을 사로잡아 아차산성으로 끌고 와서 죽인 곳이기도 하다.한강 하류를 장악한 신라에 있어서도 고구려를 공격하는 전진기지가 되었다. 이러한 신라의 야망을 미리 막기 위하여 싸움터로 나왔던 고구려의 온달 장군이 신라군의 화살에 맞아 전사한 곳이라고도 한다. 이때 사랑하는 남편 온달장군의 주검을 거두기 위하여 천 리 길도 마다치 않고 달려온 고구려 평강공주의 슬픈 사랑 노래가 한강을 따라 천 여년을 흘려보낸 곳이 아차산성이다. 아차산성은 한강 하류의 북쪽 강변에 있는 해발 203m의 작은 산봉우리를 감싸며 쌓았다. 성의 둘레는 1,038m이다. 바로선 성벽을 쌓고 난 다음 다시 밑에서 비스듬히 보강하여 쌓은 성벽이 고구려의 두 번째 도읍이었던 국내성의 성벽과 같은 뒤로 밀려 쌓은 층계식이어서 고구려의 영향을 받은 것으로 추측하고 있다.<br>','02-450-7593',null,'연중무휴',null,null,null,null,'24시간','아차산생태공원 주차장 이용','불가','없음','화장실:있음(공원 입구)
 외국어 안내서비스:불가
 한국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 암사동 유적','05239','서울특별시 강동구 올림픽로 875(암사동)','지난 1925년 한강대홍수로 처음 유적지가 발견된 이래, 여러 차례의 발굴 과정을 거쳐 1979년 7월 26일, 국가지정문화재로 지정된 암사동 선사주거지는 우리나라에서 발견된 신석기시대 사람들의 최대 집단취락지이다. 전체 넓이 23,600여평의 대지 위에 잔디 및 나무가 우거져 있으며 556평 규모의 2개소의 원시생활전시관, 그리고 야외에 9개의 움집 및 관람객이 직접 들어가서 신석기시대 사람들의 생활상을 직접 볼 수 있는 1개소의 개방형 "체험움집"이 설치되어 있다. <br /><br />원시생활 전시관의 주요 전시 내용은 6000년 전의 집터 8개, 빗살무늬토기, 석기, 돌도끼 등 신석기시대의 유물 및 선사시대 영상 방영을 위한 50석 규모의 영상실, 신석기시대 사람들의 생활상에 대한 각종 입체모형, 발굴 당시의 현장 축소 모형, 자동 작동 62인치 3D영상 프로젝션TV, 자료검색용 터치스크린 컴퓨터, 직접 실습할 수 있는 불피우기도구, 기념사진촬영을 위한 원시인 모형 등이다. 개방형 "체험 움집"에는 29평 규모에 창을 손질하고 있는 아버지의 모습, 돌칼로 고기를 써는 어머니의 모습, 물고기를 굽는 아들의 모습, 음식을 먹고 있는 딸의 모습 및 당시 음식물을 보관해 두었던 저장고 시설, 자동감지설명 나레이션이 설치되어 있어 관람객들의 신석기시대 사람들의 생활상에 대한 이해를 돕고 있다. 이 암사동 유적지는 우리 나라에서 가장 잘 정비된 신석기시대의 유적지이며, 특히 출토 유물 중 신석기시대의 가장 대표적인 토기인 빗살무늬토기가 유명하다.<br /><br />* 시대 - 석기시대<br>','02-3425-6520',null,'매년 1월 1일, 매주 월요일(월요일이 공휴일인 경우 화요일 휴관)',null,null,null,null,'09:30~18:00(30분 전까지 입장)<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 암사동 유적','05239','서울특별시 강동구 올림픽로 875(암사동)',38,127,'지난 1925년 한강대홍수로 처음 유적지가 발견된 이래, 여러 차례의 발굴 과정을 거쳐 1979년 7월 26일, 국가지정문화재로 지정된 암사동 선사주거지는 우리나라에서 발견된 신석기시대 사람들의 최대 집단취락지이다. 전체 넓이 23,600여평의 대지 위에 잔디 및 나무가 우거져 있으며 556평 규모의 2개소의 원시생활전시관, 그리고 야외에 9개의 움집 및 관람객이 직접 들어가서 신석기시대 사람들의 생활상을 직접 볼 수 있는 1개소의 개방형 "체험움집"이 설치되어 있다. <br /><br />원시생활 전시관의 주요 전시 내용은 6000년 전의 집터 8개, 빗살무늬토기, 석기, 돌도끼 등 신석기시대의 유물 및 선사시대 영상 방영을 위한 50석 규모의 영상실, 신석기시대 사람들의 생활상에 대한 각종 입체모형, 발굴 당시의 현장 축소 모형, 자동 작동 62인치 3D영상 프로젝션TV, 자료검색용 터치스크린 컴퓨터, 직접 실습할 수 있는 불피우기도구, 기념사진촬영을 위한 원시인 모형 등이다. 개방형 "체험 움집"에는 29평 규모에 창을 손질하고 있는 아버지의 모습, 돌칼로 고기를 써는 어머니의 모습, 물고기를 굽는 아들의 모습, 음식을 먹고 있는 딸의 모습 및 당시 음식물을 보관해 두었던 저장고 시설, 자동감지설명 나레이션이 설치되어 있어 관람객들의 신석기시대 사람들의 생활상에 대한 이해를 돕고 있다. 이 암사동 유적지는 우리 나라에서 가장 잘 정비된 신석기시대의 유적지이며, 특히 출토 유물 중 신석기시대의 가장 대표적인 토기인 빗살무늬토기가 유명하다.<br /><br />* 시대 - 석기시대<br>','02-3425-6520',null,'매년 1월 1일, 매주 월요일(월요일이 공휴일인 경우 화요일 휴관)',null,null,null,null,'09:30~18:00(30분 전까지 입장)<br />
 ※ 아침 운동시간 무료개방 10~3월 06:00~09:00 / 4~9월 05:30~09:00','있음(이용시간 09:30~18:00)','없음','불가','입 장 료:개인 - 어른 500원 / 초, 중, 고등학생 300원<br />
 단체(30인 이상) - 어른 400원 / 초, 중, 고등학생 200원<br />
 ※ 어른(19~64세), 초/중/고등학생(7~18세)<br />
@@ -198,10 +200,10 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 이용가능시설:전시관 - 제1전시관,  제2전시관, 복원움집
 화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('사육신공원','06902','서울특별시 동작구 노량진로 191','서울특별시 유형문화재로 지정된 사육신묘는 오늘날 성역으로 가꾸어져 있다.한강 인도교와 노량진역 중간의 높은 언덕에 자리한 사육신묘는 조선조 단종을 강제로 내쫓고 왕위를 빼앗은 세조에 항거하다가 형장의 이슬로 사라진 성삼문, 박팽년, 하위지, 이개, 유성원, 유응부, 김문기 등 일곱 충신 절사의 묘역이다. 숙종은 1681년 사육신의 충성심을 기리는 듯에서 이곳 산 기슭에 ''민절서원''을 세우고 제사를 지내기도 했다.총 면적 49,40㎡에 33종 15,000주의 수목으로 조경된 사육신 공원에는 사당인 의절사, 홍살문, 삼문(불이문), 육각비, 신도비 등이 있다. 신도비 비각과 마주보고 있는 육각형의 사육신비는 1955년에 세워진 것이다. 사육신공원은 봄이면 벚꽃 등 갖가지 꽃들이 피어나고 여름에는 녹음이 시원해서 시민들이 사육신의 충정도 생각할 겸 휴식 차 많이 찾는다.<br>','02-813-2130',null,null,null,null,null,null,null,null,'없음','없음','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('사육신공원','06902','서울특별시 동작구 노량진로 191',38,127,'서울특별시 유형문화재로 지정된 사육신묘는 오늘날 성역으로 가꾸어져 있다.한강 인도교와 노량진역 중간의 높은 언덕에 자리한 사육신묘는 조선조 단종을 강제로 내쫓고 왕위를 빼앗은 세조에 항거하다가 형장의 이슬로 사라진 성삼문, 박팽년, 하위지, 이개, 유성원, 유응부, 김문기 등 일곱 충신 절사의 묘역이다. 숙종은 1681년 사육신의 충성심을 기리는 듯에서 이곳 산 기슭에 ''민절서원''을 세우고 제사를 지내기도 했다.총 면적 49,40㎡에 33종 15,000주의 수목으로 조경된 사육신 공원에는 사당인 의절사, 홍살문, 삼문(불이문), 육각비, 신도비 등이 있다. 신도비 비각과 마주보고 있는 육각형의 사육신비는 1955년에 세워진 것이다. 사육신공원은 봄이면 벚꽃 등 갖가지 꽃들이 피어나고 여름에는 녹음이 시원해서 시민들이 사육신의 충정도 생각할 겸 휴식 차 많이 찾는다.<br>','02-813-2130',null,null,null,null,null,null,null,null,'없음','없음','화장실:있음
 이용가능시설:묘역, 조망명소, 야생화정원, 생활체육시설, 벤치, 쉼터, 식수대 등
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국립4.19민주묘지','01009','서울특별시 강북구 4.19로8길 17(수유동)','삼각산(북한산) 기슭의 국립 4.19 묘지는 1960년 3·15 부정선거를 자행한 권력에 맞서다 1960년 4.19 혁명 때에 희생된 224분이 안장되어 있으며 이를 기리는 기념탑이 세워져 있다. 기념탑 중앙에는 의롭게 죽어간 이들을 기리는 탑문이 새겨져 있다. 135,901m²의 묘지 경내에는 소나무와 향나무, 주목과 단풍나무 등으로 아담하게 꾸며져 있으며, 1,652.9m² 규모의 기념관과 영정을 모신 유영봉 안소는 한식 목조건물이 330.58m² 규모로 확장되어 있다. 그 외에 상징문, 민주의 뿌리, 정의의 불꽃 등 조각 작품과 연못이 있으며, 보도블록을 예쁘게 깔아 놓은 산책로와 야외 의자도 있다. 벚꽃이 피는 5월, 공원에서 바라보는 삼각산(북한산)은 어머니 품과 같은 아늑함과 화려함을 동시에 느낄 수 있으며, 일몰의 풍경은 장관이다.','02-996-0419',null,'묘지: 연중무휴 / 기념관: 월요일(월요일이 공휴일인 경우 그 다음날 휴관)',null,null,null,null,'*묘지<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국립4.19민주묘지','01009','서울특별시 강북구 4.19로8길 17(수유동)',38,127,'삼각산(북한산) 기슭의 국립 4.19 묘지는 1960년 3·15 부정선거를 자행한 권력에 맞서다 1960년 4.19 혁명 때에 희생된 224분이 안장되어 있으며 이를 기리는 기념탑이 세워져 있다. 기념탑 중앙에는 의롭게 죽어간 이들을 기리는 탑문이 새겨져 있다. 135,901m²의 묘지 경내에는 소나무와 향나무, 주목과 단풍나무 등으로 아담하게 꾸며져 있으며, 1,652.9m² 규모의 기념관과 영정을 모신 유영봉 안소는 한식 목조건물이 330.58m² 규모로 확장되어 있다. 그 외에 상징문, 민주의 뿌리, 정의의 불꽃 등 조각 작품과 연못이 있으며, 보도블록을 예쁘게 깔아 놓은 산책로와 야외 의자도 있다. 벚꽃이 피는 5월, 공원에서 바라보는 삼각산(북한산)은 어머니 품과 같은 아늑함과 화려함을 동시에 느낄 수 있으며, 일몰의 풍경은 장관이다.','02-996-0419',null,'묘지: 연중무휴 / 기념관: 월요일(월요일이 공휴일인 경우 그 다음날 휴관)',null,null,null,null,'*묘지<br />
 - 여름(3월-10월) 06:00 ~ 18:00<br />
 - 겨울(11월-2월) 07:00 ~ 18:00<br />
 <br />
@@ -226,7 +228,7 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 화장실:있음
 내국인 예약안내:[단체해설신청] 온라인 또는 전화(02-996-0419)
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 영휘원(순헌황귀비)과 숭인원(이진)','02456','서울특별시 동대문구 홍릉로 90(청량리동)','영휘원 안에는 조선왕조 제 26대 고종의 후궁이며 영친왕의 생모인 순헌귀비 엄씨의 원인 영휘원과 영친왕의 첫째 아들의 원인 숭인원이 있다. 엄씨의 위패는 현재 종로구 궁정동에 있는 칠궁에 모셔져 있다. 영휘원이 있는 이 지역은 원래 고종 황제의 비인 명성왕후 민씨의 홍릉이었으나, 1919년 고종의 장례 때 함께 묻기 위해 경기도 남양주시 금곡동 소재현 홍유릉에 이장하였다.','02-962-0556',null,'매주 월요일',null,null,null,null,'3~10월 09:00~18:30<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 영휘원(순헌황귀비)과 숭인원(이진)','02456','서울특별시 동대문구 홍릉로 90(청량리동)',38,127,'영휘원 안에는 조선왕조 제 26대 고종의 후궁이며 영친왕의 생모인 순헌귀비 엄씨의 원인 영휘원과 영친왕의 첫째 아들의 원인 숭인원이 있다. 엄씨의 위패는 현재 종로구 궁정동에 있는 칠궁에 모셔져 있다. 영휘원이 있는 이 지역은 원래 고종 황제의 비인 명성왕후 민씨의 홍릉이었으나, 1919년 고종의 장례 때 함께 묻기 위해 경기도 남양주시 금곡동 소재현 홍유릉에 이장하였다.','02-962-0556',null,'매주 월요일',null,null,null,null,'3~10월 09:00~18:30<br />
 11~2월 09:00~17:30<br />
 ※ 매표는 마감 1시간 전까지','있음(약 소형 23대) - 영휘원 정문에 위치','없음','불가','입 장 료:만19세~64세 - 개인 1,000원 / 단체(10인 이상) 800원<br />
 ※ 문화가 있는 날 무료관람 - 매월 마지막 주 수요일<br />
@@ -266,16 +268,16 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 주차요금:무료
 화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('절두산 순교성지','04085','서울특별시 마포구 토정로 6','절두산은 원래 머리를 높이 든 형상이라 하여, 가을두, 누에의 머리와 비슷하다고 하여 잠두봉이라 부르던 곳이다. 바로 아래 양화진나루터에는 한강을 통해서 각 지방에서 조세곡 수송선과 어물, 채소 등을 실은 배가 드나들었다. 양화진주변은 잠두봉과 어울려 이름난 명승으로 많은 풍류객과 문인들이 뱃놀이를 즐기면서 시를 지었던 곳이기도 하다. 1866년 2월 프랑스군함이 천주교탄압을 문제삼아 한강을 거슬러 양화진과 서강까지 진입하였다. 이에 격분한 대원군은 수많은 천주교인들을 잠두봉에서 목을 베어 참수케 한다. 그 뒤로 머리를 잘랐다하여 절두산(切頭山)이라는 지명을 얻게 되었다. 한국 천주교회에서는 병인(1866년) 순교100주년을 기념하여 1967년 10월 순교 기념관을 개관하였다.현재 절두산성지 내에는 한국 천주교회 관련 사료와 유물·유품전시관, 28위의 성인유해를 모신 유해실, 순례성당, 순교자 교육관을 비롯하여, 야외 전시관이 있다. 절두산 순교 성지는 생명을 바쳐 믿음을 증거한 한국 천주교회 신앙 선조들의 순교정신이 살아 쉼쉬는 뜻깊은 성지이다.','02-3142-4434',null,'월요일',null,null,null,null,'09:30~17:00','있음','없음','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('절두산 순교성지','04085','서울특별시 마포구 토정로 6',38,127,'절두산은 원래 머리를 높이 든 형상이라 하여, 가을두, 누에의 머리와 비슷하다고 하여 잠두봉이라 부르던 곳이다. 바로 아래 양화진나루터에는 한강을 통해서 각 지방에서 조세곡 수송선과 어물, 채소 등을 실은 배가 드나들었다. 양화진주변은 잠두봉과 어울려 이름난 명승으로 많은 풍류객과 문인들이 뱃놀이를 즐기면서 시를 지었던 곳이기도 하다. 1866년 2월 프랑스군함이 천주교탄압을 문제삼아 한강을 거슬러 양화진과 서강까지 진입하였다. 이에 격분한 대원군은 수많은 천주교인들을 잠두봉에서 목을 베어 참수케 한다. 그 뒤로 머리를 잘랐다하여 절두산(切頭山)이라는 지명을 얻게 되었다. 한국 천주교회에서는 병인(1866년) 순교100주년을 기념하여 1967년 10월 순교 기념관을 개관하였다.현재 절두산성지 내에는 한국 천주교회 관련 사료와 유물·유품전시관, 28위의 성인유해를 모신 유해실, 순례성당, 순교자 교육관을 비롯하여, 야외 전시관이 있다. 절두산 순교 성지는 생명을 바쳐 믿음을 증거한 한국 천주교회 신앙 선조들의 순교정신이 살아 쉼쉬는 뜻깊은 성지이다.','02-3142-4434',null,'월요일',null,null,null,null,'09:30~17:00','있음','없음','불가','화장실:있음
 입 장 료:무료<br />
 [한국천주교순교자박물관]<br />
 - 천주교 단체 : 자율적인 봉헌금<br />
 - 기타 단체 : 국내 1,000원 / 국외 2,000원<br />※ 국제단체 중 2주 전에 예약한 단체는 관람료 면제
 내국인 예약안내:단체(10명 이상) 방문시 2주 전 홈페이지 사전 예약 <a href="http://www.jeoldusan.or.kr" title="새창: 절두산 순교성지 홈페이지로 이동" target="_blank">http://www.jeoldusan.or.kr</a>
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('무악산 동봉수대 터','03721','서울특별시 서대문구 봉원동(봉원동)','변란 등을 횃불로 알려 위급함을 전하는 봉화터가 조선시대에 전국적으로 5군데 있었는데, 그 중에서 2군데가 안산(무악산)정상에 있었다. 하나는 평안도 강계에서 시발, 직봉 78 간봉 22처를 거쳐 산 "동봉수"(제3봉수로)에서 전해져 남산으로 최종 보고되었고 다른 하나는 평안도 의주에서 시발, 서해안을 따라 직봉 71 간봉 35처를 거쳐 안산 "서봉수"(제4봉수로)에 전해져 남산으로 전달되었다. 현재 2개의 봉수대 중 동봉수대는 서울 정도 600년 기념 사업 일환으로 남산중앙봉수대와 연계하여 제3봉수로의 봉화를 올리기 위해 봉수대가 멸실된지 100년 만인 1994년 8월 30일 서대문 향토사연구회의 자문을 받아 복원하였다. 이 봉수대의 면적은 381㎡, 상부 연대(烟臺) 108㎡, 하부연대 307㎡ 봉화연조대의 높이 3.2m로 자연석을 사용, 축조하였다. 서봉수대는 동봉수대로부터 100m 떨어진 현 군부대의 통신탑이 자리하고 있는 곳으로 추정하고 있다.<br>','02-330-1121',null,null,null,null,null,null,null,'없음','불가','없음','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('무악산 동봉수대 터','03721','서울특별시 서대문구 봉원동(봉원동)',38,127,'변란 등을 횃불로 알려 위급함을 전하는 봉화터가 조선시대에 전국적으로 5군데 있었는데, 그 중에서 2군데가 안산(무악산)정상에 있었다. 하나는 평안도 강계에서 시발, 직봉 78 간봉 22처를 거쳐 산 "동봉수"(제3봉수로)에서 전해져 남산으로 최종 보고되었고 다른 하나는 평안도 의주에서 시발, 서해안을 따라 직봉 71 간봉 35처를 거쳐 안산 "서봉수"(제4봉수로)에 전해져 남산으로 전달되었다. 현재 2개의 봉수대 중 동봉수대는 서울 정도 600년 기념 사업 일환으로 남산중앙봉수대와 연계하여 제3봉수로의 봉화를 올리기 위해 봉수대가 멸실된지 100년 만인 1994년 8월 30일 서대문 향토사연구회의 자문을 받아 복원하였다. 이 봉수대의 면적은 381㎡, 상부 연대(烟臺) 108㎡, 하부연대 307㎡ 봉화연조대의 높이 3.2m로 자연석을 사용, 축조하였다. 서봉수대는 동봉수대로부터 100m 떨어진 현 군부대의 통신탑이 자리하고 있는 곳으로 추정하고 있다.<br>','02-330-1121',null,null,null,null,null,null,null,'없음','불가','없음','화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('육군사관학교','01805','서울특별시 노원구 화랑로 574(공릉동)','육군사관학교는 개교 50주년을 계기로 ''국민과 함께하는 육사''의 이미지를 부여하고 대군신뢰를 증진하기 위하여 1997년 2월 1일에 국내 및 외국인 등에게 학교를 개방하고 있다. 육사 방문 안내소에 도착하면 안내가이드의 안내를 받아 육군박물관 지역에서 소개영화와 국내 유일의 군사박물관 전시물을 관람하고, 육사 기념관 지역에서 육사 50년의 발자취를 살핀 뒤, 화랑연병장, 야외 군사전시장 등을 방문할 수 있다. 특히, 매주 금요일 14시에 실시하는 "화랑의식" 행사에서는 찬란한 예복을 입고 행진하는 사관 생도들의 늠름한 모습을 볼 수 있다.<br>','02-2197-6125',null,'매주 월요일, 1월 1일, 주말,설·추석 연휴',null,null,null,null,'14:00 - 16:00 ( 홈페이지 사전 예약 필수)','있음(2정문 행정안내소 뒤편 주차장)','없음','불가','관광코스안내:박물관 (학교홍보 및 안보영상 15분 시청 후 유물관람) → 청헌당 → 화랑연병장 → 야외 무기전시장(범무천) →  육사기념관 →  생도회관 →  제2정문 
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('육군사관학교','01805','서울특별시 노원구 화랑로 574(공릉동)',38,127,'육군사관학교는 개교 50주년을 계기로 ''국민과 함께하는 육사''의 이미지를 부여하고 대군신뢰를 증진하기 위하여 1997년 2월 1일에 국내 및 외국인 등에게 학교를 개방하고 있다. 육사 방문 안내소에 도착하면 안내가이드의 안내를 받아 육군박물관 지역에서 소개영화와 국내 유일의 군사박물관 전시물을 관람하고, 육사 기념관 지역에서 육사 50년의 발자취를 살핀 뒤, 화랑연병장, 야외 군사전시장 등을 방문할 수 있다. 특히, 매주 금요일 14시에 실시하는 "화랑의식" 행사에서는 찬란한 예복을 입고 행진하는 사관 생도들의 늠름한 모습을 볼 수 있다.<br>','02-2197-6125',null,'매주 월요일, 1월 1일, 주말,설·추석 연휴',null,null,null,null,'14:00 - 16:00 ( 홈페이지 사전 예약 필수)','있음(2정문 행정안내소 뒤편 주차장)','없음','불가','관광코스안내:박물관 (학교홍보 및 안보영상 15분 시청 후 유물관람) → 청헌당 → 화랑연병장 → 야외 무기전시장(범무천) →  육사기념관 →  생도회관 →  제2정문 
 
 이용가능시설:[생도 교육 및 지원시설]<br />
 - 충무관, 흥무관, 도서관<br />
@@ -316,25 +318,25 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 - 동시간대에 다 같이 입장하므로 반드시 시간 준수<br /> 
 - 사관학교내에서 식사 불가능, 식사원할 경우 행정안내소 2층 식당(02-2197-5912)을 이용
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('압구정 로데오거리','06017','서울특별시 강남구 압구정동일대','압구정 로데오거리는 한국의 ‘유행1번지’란 말로 대표된다. 이곳은 90년대 초 패션의 중심가로 자리잡으면서 젊은이들의 해방구로, 기존질서나 가치로부터 탈피하려는 문화의 거리로 탄생되었다. 과거 압구정 로데오 거리는 비벌리힐스의 로데오거리를 표방하면서 부유층 자녀들이 외제차와 고급브랜드 옷을 입고 활보했던 곳으로 유명했지만 지금은 다양한 젊음의 문화를 대변하는 곳으로, 첨단 유행을 대표하는 곳으로 발전했다.로데오 거리에는 골목마다 명품 브랜드상점, 보세옷가게, 구두가게, 속옷가게, 액세서리가게, 명품 할인가게 등의 패션관련 매장이 들어서 있으며 피부과, 성형외과, 헤어숍들도 성업 중이다. 머리끝에서 발끝까지 패션에 관한 모든 것이 이곳에 모여있는 셈이다. 게다가 첨단 유행을 대변하는 곳인 만큼 모든 상점들이 독특한 인테리어로 손님의 눈길을 끌고 있다. 압구정 로데오 거리는 그 화려함을 가장 큰 장점으로 꼽을 수 있다. 현란하리만치 화려한 네온 불빛, 그 주위를 생동감 있게 거니는 활기찬 사람들의 모습이 눈에 띈다. 이 곳에 위치한 갤러리아 백화점 명품관은 압구정 로데오거리의 가장 대표적인 공간으로, 세계적으로 유명한 명품들을 한자리에서 비교 구입할 수 있다. 프라다, 발리, 조르지오 아르마니, 페라가모, 구찌, 베르사체 등 최고급 브랜드 매장이 자리하고 있다. 가격은 제품별로 천차만별이며, 세일기간에는 20~30% 할인된다. 반면 보세가게는 최신 유행을 쏟아놓는 곳으로 다른 곳에서는 볼 수 없는 독특한 디자인의 물건들이 많다. 좋은 품질을 기본으로 독특한 디자인에 승부를 거는 가게들이 많고, 젊은이들도 남들과는 다른 옷을 구입하기 위해 많이 찾는다. 로데오 거리에는 젊은이들에게 입소문으로 퍼진 맛집과 명소도 즐비하기때문에, 쇼핑 외에도 먹을거리,볼거리가 많다.','02-3445-0111',null,null,null,null,null,null,'상시 가능',null,'불가','가능',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구암공원','07525','서울특별시 강서구 허준로5길 42(가양동)','탑산 아래의 천연적인 바위 동굴인 허가바위 일대에 조성된 공원으로, 허가바위에서 양천 허씨의 시조인 허선문이 태어났다는 전설이 있다. 구암공원은 의성이라 불리는 허준선생 기념공원으로, 구암(龜巖)은 허준선생의 호이다. 준선생이 관직에서 물러나 그 유명한 동의보감을 저술한 곳이, 허가바위 동굴이자, 지금의 구암공원이다. 구암공원에는 올림픽대로 건설로 인해 한강의 일부분이 잘려나와 호수처럼 되었고, 아파트가 하늘 높이 솟아있어 병풍처럼 둘러쳐져 있다. 이 곳에는 의성 허준선생이 환자를 진료하는 인자한 모습의 동상이 앉아있다. 한편에는 아름다운 호수가 있고 그 호수 속에는 재미있는 전설이 담겨 있는 고색 창연하고 구멍이 뚫려있는 자색의 광주바위가 있다. 양화대교가 놓여지기 전까지 이 곳은 한강하류를 건너는 공암(孔巖)나루터였고, 허가바위 동굴이 있어 여러차례 정변과 임진왜란, 병자호란, 가깝게는 6.25동란에 이르기까지 많은 사람들이 피신하였다 한다.','02-2600-4196','1993년 10월 31일','연중무휴',null,null,null,null,null,'있음','불가','없음','이용가능시설:연못, 정자, 어린이 놀이 시설 허준 동상, 음악분수 등
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('압구정 로데오거리','06017','서울특별시 강남구 압구정동일대',38,127,'압구정 로데오거리는 한국의 ‘유행1번지’란 말로 대표된다. 이곳은 90년대 초 패션의 중심가로 자리잡으면서 젊은이들의 해방구로, 기존질서나 가치로부터 탈피하려는 문화의 거리로 탄생되었다. 과거 압구정 로데오 거리는 비벌리힐스의 로데오거리를 표방하면서 부유층 자녀들이 외제차와 고급브랜드 옷을 입고 활보했던 곳으로 유명했지만 지금은 다양한 젊음의 문화를 대변하는 곳으로, 첨단 유행을 대표하는 곳으로 발전했다.로데오 거리에는 골목마다 명품 브랜드상점, 보세옷가게, 구두가게, 속옷가게, 액세서리가게, 명품 할인가게 등의 패션관련 매장이 들어서 있으며 피부과, 성형외과, 헤어숍들도 성업 중이다. 머리끝에서 발끝까지 패션에 관한 모든 것이 이곳에 모여있는 셈이다. 게다가 첨단 유행을 대변하는 곳인 만큼 모든 상점들이 독특한 인테리어로 손님의 눈길을 끌고 있다. 압구정 로데오 거리는 그 화려함을 가장 큰 장점으로 꼽을 수 있다. 현란하리만치 화려한 네온 불빛, 그 주위를 생동감 있게 거니는 활기찬 사람들의 모습이 눈에 띈다. 이 곳에 위치한 갤러리아 백화점 명품관은 압구정 로데오거리의 가장 대표적인 공간으로, 세계적으로 유명한 명품들을 한자리에서 비교 구입할 수 있다. 프라다, 발리, 조르지오 아르마니, 페라가모, 구찌, 베르사체 등 최고급 브랜드 매장이 자리하고 있다. 가격은 제품별로 천차만별이며, 세일기간에는 20~30% 할인된다. 반면 보세가게는 최신 유행을 쏟아놓는 곳으로 다른 곳에서는 볼 수 없는 독특한 디자인의 물건들이 많다. 좋은 품질을 기본으로 독특한 디자인에 승부를 거는 가게들이 많고, 젊은이들도 남들과는 다른 옷을 구입하기 위해 많이 찾는다. 로데오 거리에는 젊은이들에게 입소문으로 퍼진 맛집과 명소도 즐비하기때문에, 쇼핑 외에도 먹을거리,볼거리가 많다.','02-3445-0111',null,null,null,null,null,null,'상시 가능',null,'불가','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구암공원','07525','서울특별시 강서구 허준로5길 42(가양동)',38,127,'탑산 아래의 천연적인 바위 동굴인 허가바위 일대에 조성된 공원으로, 허가바위에서 양천 허씨의 시조인 허선문이 태어났다는 전설이 있다. 구암공원은 의성이라 불리는 허준선생 기념공원으로, 구암(龜巖)은 허준선생의 호이다. 준선생이 관직에서 물러나 그 유명한 동의보감을 저술한 곳이, 허가바위 동굴이자, 지금의 구암공원이다. 구암공원에는 올림픽대로 건설로 인해 한강의 일부분이 잘려나와 호수처럼 되었고, 아파트가 하늘 높이 솟아있어 병풍처럼 둘러쳐져 있다. 이 곳에는 의성 허준선생이 환자를 진료하는 인자한 모습의 동상이 앉아있다. 한편에는 아름다운 호수가 있고 그 호수 속에는 재미있는 전설이 담겨 있는 고색 창연하고 구멍이 뚫려있는 자색의 광주바위가 있다. 양화대교가 놓여지기 전까지 이 곳은 한강하류를 건너는 공암(孔巖)나루터였고, 허가바위 동굴이 있어 여러차례 정변과 임진왜란, 병자호란, 가깝게는 6.25동란에 이르기까지 많은 사람들이 피신하였다 한다.','02-2600-4196','1993년 10월 31일','연중무휴',null,null,null,null,null,'있음','불가','없음','이용가능시설:연못, 정자, 어린이 놀이 시설 허준 동상, 음악분수 등
 화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 남현동 요지','08807','서울특별시 관악구 남현3길 60(남현동)','이곳은 발견 당시 채집한 격자문 토기편들로 미루어 백제시대 가마터로 확인되어 1976년 사적으로 지정되었다. 가마는 파괴 되어 있으나 한강변에 있는 백제토기 가마터로서는 유일한 것으로, 한강변의 바람드리토성, 곰말토성, 삼성산성, 강건너 아차산성 그리고 석촌동 백제돌무지무덤, 방이동 고분군 등과 함께 주목 되는 유적지로서 백제시대 문화 및 삼국시대 문화를 연구하는데 귀중한 자료가 되고있다. 사유지인 밭에 위치하고 있는 이 가마터는, 현재 발굴되지 않은 상태로 보전되고 있으며, 약 661m²(200평) 면적에 흑토가 깔려 있다. 그리고 이곳으로부터 서쪽으로 약 500m 거리에 있는 남현동 1080-1, 즉 사당초등학교 경내 동편 축대와 이어져있는 곳은 신라토기의 요지로 추정되고 있다. 이곳에서는 벽과 가까운 곳에 탄화된 재와 목탄 부스러기가 남아 있었으며 또 가마자리가 확인되었고, 다량의 토기편을 수습하였다. 삼국시대와 통일신라시대에는 이곳이 토기를 굽던 가마터로 매우 적합한 조건을 갖추고 있었던 것으로 추정된다.<br>','02-879-5618',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정정공강사상묘역','08859','서울특별시 관악구 난곡동','조선 숙종 39년(1713년)에 세워진 정정공 강사상(1519∼1581)의 신도비이다. 선생은 1543년(중종38년) 사마시에 합격하고, 1546년(명종1년) 식년문과에 병과 급제하여 한림이 되어 수많은 관직을 거쳤다. 그후 우의정과 영중추부사를 지냈으며, 사후 아들인이 호성공신에 책록되자 영의정에 추증되었다. 선생은 강홍립 장군(1570 ∼1627)의 조부로서 1561년에 명나라 성절사, 1568년 사신원접사, 1570년 명나라 주청사로 활동하는 등 외교에 역할이 컸으며, 평상시 국가의 치란은 천운에 있지 인력으로는 되는 것이 아니라하여 당파에 초연하였다. 신도비문은 권유가 짓고 본문은 이진검이, 비문의 전서는 권규가 쓴 것이다.<br>','02-880-3114',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('효민공 이경직 묘역','08803','서울특별시 관악구 남현동','조선 현종 9년(1668)에 세워진 효민공 이경직의 신도비이다. 선생은 백사 이항복과 사계 김장생의 제자로 1605년 식년시와 중광별시에 잇달아 합격한 후, 전시에 응시하여 승문원에서 처음으로 벼슬을 시작하여 강화유수를 지내다가 병사할 때까지 도승지, 호조판서 등 많은 관직을 거쳤다. 1617(광해군 9년) 일본에 회답사의 종사관으로 다녀오고, 1642년(인조 2년) 이괄의 난 때 전라절도사로 공을 세우고, 1627(인조 5년) 정묘호란 때 병조참판으로서 후금국 사신과 교섭하여 화의를 성립시켰다. 신도비문은 김류가 짓고 글은 3남인 정영이 썼으며, 공의 묘소는 이 묘역 가운데 위치하고 있다.<br>','02-879-5618',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관음사(서울)','08809','서울특별시 관악구 승방1길 109-80(남현동)','관악산 주봉에서 북동쪽으로 뻗어있는 마지막 봉우리의 기슭에 위치하고 있다. 신라 제51대 진성여왕 9년(895)에 도선국사가 창건한 비보사찰의 하나다.  비보사찰은 명당에 절을 세우고 기도하면 나라가 융성하게 된다는 불교의 호국 사상에서 비롯되었다. 천여년 동안 기도의 도량으로 사용되어 오다가 1924년 주지 석주가 증축하였다. 1974년 진선당 박종하 스님이 주지로 부임하여  재차 중건하기 시작하여  대웅전, 용왕각, 종각, 즉심시불의 비문석탑을 세웠다. 항간에 조선 고종 20년경에 봉은사의 스님들이 개창했던 것이라고 하지만 실제로는 그 당시 중건되었던 사실이 와전된 것으로 생각된다. 세간의 소리를 듣고 있다가 곧바로 구제해준다는 관세음보살을 모시고 있기에,  관음사라고 부르게 되었다고 한다.<br>','02-582-8609',null,'연중개방',null,null,null,null,null,'있음','없음','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 남현동 요지','08807','서울특별시 관악구 남현3길 60(남현동)',37,127,'이곳은 발견 당시 채집한 격자문 토기편들로 미루어 백제시대 가마터로 확인되어 1976년 사적으로 지정되었다. 가마는 파괴 되어 있으나 한강변에 있는 백제토기 가마터로서는 유일한 것으로, 한강변의 바람드리토성, 곰말토성, 삼성산성, 강건너 아차산성 그리고 석촌동 백제돌무지무덤, 방이동 고분군 등과 함께 주목 되는 유적지로서 백제시대 문화 및 삼국시대 문화를 연구하는데 귀중한 자료가 되고있다. 사유지인 밭에 위치하고 있는 이 가마터는, 현재 발굴되지 않은 상태로 보전되고 있으며, 약 661m²(200평) 면적에 흑토가 깔려 있다. 그리고 이곳으로부터 서쪽으로 약 500m 거리에 있는 남현동 1080-1, 즉 사당초등학교 경내 동편 축대와 이어져있는 곳은 신라토기의 요지로 추정되고 있다. 이곳에서는 벽과 가까운 곳에 탄화된 재와 목탄 부스러기가 남아 있었으며 또 가마자리가 확인되었고, 다량의 토기편을 수습하였다. 삼국시대와 통일신라시대에는 이곳이 토기를 굽던 가마터로 매우 적합한 조건을 갖추고 있었던 것으로 추정된다.<br>','02-879-5618',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정정공강사상묘역','08859','서울특별시 관악구 난곡동',37,127,'조선 숙종 39년(1713년)에 세워진 정정공 강사상(1519∼1581)의 신도비이다. 선생은 1543년(중종38년) 사마시에 합격하고, 1546년(명종1년) 식년문과에 병과 급제하여 한림이 되어 수많은 관직을 거쳤다. 그후 우의정과 영중추부사를 지냈으며, 사후 아들인이 호성공신에 책록되자 영의정에 추증되었다. 선생은 강홍립 장군(1570 ∼1627)의 조부로서 1561년에 명나라 성절사, 1568년 사신원접사, 1570년 명나라 주청사로 활동하는 등 외교에 역할이 컸으며, 평상시 국가의 치란은 천운에 있지 인력으로는 되는 것이 아니라하여 당파에 초연하였다. 신도비문은 권유가 짓고 본문은 이진검이, 비문의 전서는 권규가 쓴 것이다.<br>','02-880-3114',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('효민공 이경직 묘역','08803','서울특별시 관악구 남현동',37,127,'조선 현종 9년(1668)에 세워진 효민공 이경직의 신도비이다. 선생은 백사 이항복과 사계 김장생의 제자로 1605년 식년시와 중광별시에 잇달아 합격한 후, 전시에 응시하여 승문원에서 처음으로 벼슬을 시작하여 강화유수를 지내다가 병사할 때까지 도승지, 호조판서 등 많은 관직을 거쳤다. 1617(광해군 9년) 일본에 회답사의 종사관으로 다녀오고, 1642년(인조 2년) 이괄의 난 때 전라절도사로 공을 세우고, 1627(인조 5년) 정묘호란 때 병조참판으로서 후금국 사신과 교섭하여 화의를 성립시켰다. 신도비문은 김류가 짓고 글은 3남인 정영이 썼으며, 공의 묘소는 이 묘역 가운데 위치하고 있다.<br>','02-879-5618',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관음사(서울)','08809','서울특별시 관악구 승방1길 109-80(남현동)',37,127,'관악산 주봉에서 북동쪽으로 뻗어있는 마지막 봉우리의 기슭에 위치하고 있다. 신라 제51대 진성여왕 9년(895)에 도선국사가 창건한 비보사찰의 하나다.  비보사찰은 명당에 절을 세우고 기도하면 나라가 융성하게 된다는 불교의 호국 사상에서 비롯되었다. 천여년 동안 기도의 도량으로 사용되어 오다가 1924년 주지 석주가 증축하였다. 1974년 진선당 박종하 스님이 주지로 부임하여  재차 중건하기 시작하여  대웅전, 용왕각, 종각, 즉심시불의 비문석탑을 세웠다. 항간에 조선 고종 20년경에 봉은사의 스님들이 개창했던 것이라고 하지만 실제로는 그 당시 중건되었던 사실이 와전된 것으로 생각된다. 세간의 소리를 듣고 있다가 곧바로 구제해준다는 관세음보살을 모시고 있기에,  관음사라고 부르게 되었다고 한다.<br>','02-582-8609',null,'연중개방',null,null,null,null,null,'있음','없음','불가','화장실:있음
 외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('자운암(서울)','08826','서울특별시 관악구 관악로(신림동)',' 자하동이라고 불리웠던 서울대학교 신공학관 뒤에 있는 골짜기 중턱에 위치하며 무학대사가 조선 태조 5년(1396년)에 창건한 절이다. 남허 스님이 남긴 자운암 기록에는 영조 13년(1734년)에 중수했다는 기록이 있으며, 성종이 어머니를 위해 만든 위패가 아직까지 전해오고 있다.
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('자운암(서울)','08826','서울특별시 관악구 관악로(신림동)',37,127,' 자하동이라고 불리웠던 서울대학교 신공학관 뒤에 있는 골짜기 중턱에 위치하며 무학대사가 조선 태조 5년(1396년)에 창건한 절이다. 남허 스님이 남긴 자운암 기록에는 영조 13년(1734년)에 중수했다는 기록이 있으며, 성종이 어머니를 위해 만든 위패가 아직까지 전해오고 있다.
  현재의 자운암은 1976년 보륜스님이 자운암에 들면서 대웅전, 칠성각 산신각을 세우고 비로소 사찰다운 면모를 가지게 되었다. 자운암의 대웅전은 원래 관음보살만 모셨기 때문에 관음전이었으나,  어느날 보륜스님이 석가로부터 계시를 받고 석가모니 불상과 그 좌우에 대세지보살, 관세음보살을 모시고 누각 이름도 대웅전으로 고쳤다고 한다.<br>','02-882-3839',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('약수사(서울)','08823','서울특별시 관악구 약수암1길 28 약수사','약수사(藥水寺)는 대한불교 조계종 직할교구에 속해있는 사찰로써 산세가 수려하고 숲이 많아 일찍이 남쪽의 금강산으로 불리웠으며 기암괴석이 장대하며, 골이 깊은 경기 오악(五嶽)의 하나인  관악산 언저리 신림동에 위치해 있다. 본래 신림동은 마을에 숲이 무성하다하여 붙여진 이름으로 조선시대까지 경기도 시흥군이었다가 1963년에 서울에 포함되었다. 최초 창건연대는 세종대왕 3년에 무명대사가 창건하였다. 그후(고종 17년)에 명성왕후가 법당을 중창하여 영험한 기도 도량으로, 신심 깊은 기도처로, 시주의 발길이 끝없이 이어졌다고 한다. 그 뒤 1923년경에  화재로 인하여 전소된 것을 당시 주지스님인 영원 대사께서 다시 불사를 일으켜 오늘날과 같은 수행납자들의 공부도량이 되었다. 1995년 설법전 중창불사를 다시 시작하여 1998년에 중창불사를 회향하고 신심깊은 불자들의 기도도량으로, 시민선방으로, 심신수련장으로 휴일에는 관악산을 찾는 시민들에게도 편안한 휴식처를 제공하고 있다. 또한 가뭄에도 마르지 않는 신선하고 깨끗한 약수는 인근의 시민들과 불자들에게 잘 알려져 있다. 가람 배치는 대웅전을 중심으로 왼쪽에 응향각이 있고,  정면은 설법전이 있으며, 동쪽으로 삼성각이 있다. 대웅전은 정면 3칸, 측면 2칸의 팔작지붕으로 안에는 본존불인 석가모니 불상과 좌우에 지장보살상, 관음보살상이 모셔져 있다. 그 뒤에는 석가후불탱화, 칠성탱화, 신중탱화, 지장탱화, 산신탱화가 있다.<br>','02-877-7514',null,null,null,null,null,null,null,null,'없음','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('약수사(서울)','08823','서울특별시 관악구 약수암1길 28 약수사',37,127,'약수사(藥水寺)는 대한불교 조계종 직할교구에 속해있는 사찰로써 산세가 수려하고 숲이 많아 일찍이 남쪽의 금강산으로 불리웠으며 기암괴석이 장대하며, 골이 깊은 경기 오악(五嶽)의 하나인  관악산 언저리 신림동에 위치해 있다. 본래 신림동은 마을에 숲이 무성하다하여 붙여진 이름으로 조선시대까지 경기도 시흥군이었다가 1963년에 서울에 포함되었다. 최초 창건연대는 세종대왕 3년에 무명대사가 창건하였다. 그후(고종 17년)에 명성왕후가 법당을 중창하여 영험한 기도 도량으로, 신심 깊은 기도처로, 시주의 발길이 끝없이 이어졌다고 한다. 그 뒤 1923년경에  화재로 인하여 전소된 것을 당시 주지스님인 영원 대사께서 다시 불사를 일으켜 오늘날과 같은 수행납자들의 공부도량이 되었다. 1995년 설법전 중창불사를 다시 시작하여 1998년에 중창불사를 회향하고 신심깊은 불자들의 기도도량으로, 시민선방으로, 심신수련장으로 휴일에는 관악산을 찾는 시민들에게도 편안한 휴식처를 제공하고 있다. 또한 가뭄에도 마르지 않는 신선하고 깨끗한 약수는 인근의 시민들과 불자들에게 잘 알려져 있다. 가람 배치는 대웅전을 중심으로 왼쪽에 응향각이 있고,  정면은 설법전이 있으며, 동쪽으로 삼성각이 있다. 대웅전은 정면 3칸, 측면 2칸의 팔작지붕으로 안에는 본존불인 석가모니 불상과 좌우에 지장보살상, 관음보살상이 모셔져 있다. 그 뒤에는 석가후불탱화, 칠성탱화, 신중탱화, 지장탱화, 산신탱화가 있다.<br>','02-877-7514',null,null,null,null,null,null,null,null,'없음','불가','화장실:있음
 외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 신림동 굴참나무','08858','서울특별시 관악구 난곡로35길 28-7','이 나무는 참나무과에 속하는 굴참나무로 수령이 1,000년이나 되는 노거수이다. 이 같은 참나무류는 우리나라 전역에서 잘 자라는 수종인데, 오랜 세월 동안 인위적인 식재와 육림으로 자원을 확보하지 않고, 필요에 따라 여러 가지 방면으로 활용만 되었다. 특히 우리나라 전래의 숯을 참나무로 구웠으므로, 자연 번식으로는 수요에 충당하지 못하였기 때문에 이 나무와 같이 수형이 좋고 수관폭이 방대한 노거수는 남아있는 것이 드문 실정이다. 
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 신림동 굴참나무','08858','서울특별시 관악구 난곡로35길 28-7',37,127,'이 나무는 참나무과에 속하는 굴참나무로 수령이 1,000년이나 되는 노거수이다. 이 같은 참나무류는 우리나라 전역에서 잘 자라는 수종인데, 오랜 세월 동안 인위적인 식재와 육림으로 자원을 확보하지 않고, 필요에 따라 여러 가지 방면으로 활용만 되었다. 특히 우리나라 전래의 숯을 참나무로 구웠으므로, 자연 번식으로는 수요에 충당하지 못하였기 때문에 이 나무와 같이 수형이 좋고 수관폭이 방대한 노거수는 남아있는 것이 드문 실정이다. 
  전설에 의하면 강감찬 장군이 이곳을 지나가다가 지팡이를 꽂아 놓은 것이 자라서 현재와 같은 커다란 나무가 되었다고 한다. 인근에는 장군이 별당으로 사용하였다는 칠불사가 있으며, 연 2회 음력 7월 1일과 10월 1일 수명 보존(목신)과 동리의 평안을 위하여 고사를 지내고 있다.
  * 규모 - 수고 17m, 가슴둘레 2.5m','관악구청 문화체육과 02-879-5618',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양화진외국인선교사묘원(외인묘지)','04084','서울특별시 마포구 양화진길 46','합정 143번지 일대로 미국인을 비롯 13개국의 외국인 480여 명이 안장되어 있다. 이들은 선교활동 및 한국 사회 사업의 유공자들이며, 대표적인 사람으로는 배설, 헐버트, 언더우드, 아펜젤러 등이 있다. 현재 한국기독교 1백주년 기념사업회가 관리하고 있으며, 묘지기념관 교회에 2백여명의 외국인들이 주일마다 예배 드리는 교회가 세워져 있다.','02-332-9174','2005년 5월','매주 일요일','[방문안내]<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양화진외국인선교사묘원(외인묘지)','04084','서울특별시 마포구 양화진길 46',38,127,'합정 143번지 일대로 미국인을 비롯 13개국의 외국인 480여 명이 안장되어 있다. 이들은 선교활동 및 한국 사회 사업의 유공자들이며, 대표적인 사람으로는 배설, 헐버트, 언더우드, 아펜젤러 등이 있다. 현재 한국기독교 1백주년 기념사업회가 관리하고 있으며, 묘지기념관 교회에 2백여명의 외국인들이 주일마다 예배 드리는 교회가 세워져 있다.','02-332-9174','2005년 5월','매주 일요일','[방문안내]<br />
 - 방문절차 : 개방시간 내 누구나 무료 방문 가능(단, 가이드 안내 받으려면 예약 신청)<br />
 - 사진/영상촬영을 원할 때에는 최소 1주일전에 fax통해 공문<br />
 - 촬영목적, 날짜/시간, 방문인원, 연락처, 상업적인 용도로 사용하지 않겠다는 문구 기록',null,null,null,'월~토 10:00~17:00','주차 가능(양화진 공영주차장 이용)<br />
@@ -358,24 +360,24 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 중학생 이상 - 영상시청(28분), 묘역안내(15분), 홀 관람(15분)
 외국인 예약안내:홈페이지를 통하여 예약가능
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양천향교','07521','서울특별시 강서구 양천로47나길 53','양천향교는 서울에 유일하게 남은 향교로, 서울특별시 기념물로 지정되어 있는 곳이다. 조선조 태종 12년(1411)에 창건돼 노후된 것을 지난 81년에 전면 복원했다. 건물로는 대성전(大成殿)을 비롯, 명륜당(明倫堂), 전사청(典祀廳), 동재(東齋), 서재(西齋), 내삼문(內三門), 외삼문(外三門)과 부속건물 등 8동이 있다. 현재 양천향교에서는 봄과 가을 2회에 걸쳐 석전(釋奠)을 봉행하고 있으며, 이와 함께 지역주민과 초, 중학생을 대상으로 한문과 서예 및 사군자 등을 가르치는 등 청소년의 인성교육 및 옛 전통문화 재현에 노력하고 있다. 주변의 겸재정선미술관, 궁산땅굴역사전시관 등과 연계 가능하며 서울도보해설관광 양천로 겸재정선 코스에 포함되어 있다.<br>','02-2658-9988',null,'매주 월요일','석전대제, 봉심, 가정의례, 충효교실 등',null,null,null,'화~일 10:00~16:00, 공휴일 개방<br>
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양천향교','07521','서울특별시 강서구 양천로47나길 53',38,127,'양천향교는 서울에 유일하게 남은 향교로, 서울특별시 기념물로 지정되어 있는 곳이다. 조선조 태종 12년(1411)에 창건돼 노후된 것을 지난 81년에 전면 복원했다. 건물로는 대성전(大成殿)을 비롯, 명륜당(明倫堂), 전사청(典祀廳), 동재(東齋), 서재(西齋), 내삼문(內三門), 외삼문(外三門)과 부속건물 등 8동이 있다. 현재 양천향교에서는 봄과 가을 2회에 걸쳐 석전(釋奠)을 봉행하고 있으며, 이와 함께 지역주민과 초, 중학생을 대상으로 한문과 서예 및 사군자 등을 가르치는 등 청소년의 인성교육 및 옛 전통문화 재현에 노력하고 있다. 주변의 겸재정선미술관, 궁산땅굴역사전시관 등과 연계 가능하며 서울도보해설관광 양천로 겸재정선 코스에 포함되어 있다.<br>','02-2658-9988',null,'매주 월요일','석전대제, 봉심, 가정의례, 충효교실 등',null,null,null,'화~일 10:00~16:00, 공휴일 개방<br>
 (사무국은 토, 공휴일 휴무)','주차 가능(주차장이 협소함으로 대중교통 이용바람)','불가','불가','입 장 료:무료
 화장실:있음
 한국어 안내서비스:가능 - 단체관람시 사전예약(02-2658-9988)
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 양천고성지','07521','서울특별시 강서구 가양동','가양동 양천향교 뒷산인 궁산에 위치하며 대략 29,390㎡ 넓이의 옛 성터이다. 궁산(宮山)은 한강 올림픽대로 변 해발 약 74m의 야산으로 서쪽과 남쪽은 완경사로 시가지와 연결되며, 북쪽은 한강 변 쪽으로 급경사를 이루고 있고 동쪽은 남쪽보다는 다소 급하게 경사져 새로 조성된 가양아파트 단지와 연결된다.신증동국여지승람, 여지도서, 대동지지 등 문헌기록에 등장하며, 축성시기는 언제인지 알 수 없다.  그러나 역사의 흐름에 맞추어 추정해 볼 때, 이 성은 백제가 축성한 성(城)으로 백제 22대 문주왕이 웅진으로 천도(475년)하기 전, 강 건너 고구려를 견제하며 국경을 지키던 백제성으로 짐작된다. 특히 이곳에서 백제 초기시대의 토기 파편이 발견됨으로써 백제 성이었다는 사실을 뒷받침해주고 있다. 또한, 임진왜란 당시 김천일 장군 등이 의병을 이끌고 이 성에 주둔하였다가 권율장군을 도와 행주대첩에 참가하기도 했다. 1994년에는 산 정상 동편에 예부터 전해  내려오는 소악루(小岳樓)가 아름답게 복원되어 강서구민들의 관광 휴식처가 되고 있다.<br /><br />* 시설규모 - 29,370㎡ 넓이의 토성터<br />* 시대 및 조성시기 - 백제시대로 추정<br>','02-2600-6300',null,'연중개방',null,null,null,null,'상시 개방','없음','없음','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 양천고성지','07521','서울특별시 강서구 가양동',38,127,'가양동 양천향교 뒷산인 궁산에 위치하며 대략 29,390㎡ 넓이의 옛 성터이다. 궁산(宮山)은 한강 올림픽대로 변 해발 약 74m의 야산으로 서쪽과 남쪽은 완경사로 시가지와 연결되며, 북쪽은 한강 변 쪽으로 급경사를 이루고 있고 동쪽은 남쪽보다는 다소 급하게 경사져 새로 조성된 가양아파트 단지와 연결된다.신증동국여지승람, 여지도서, 대동지지 등 문헌기록에 등장하며, 축성시기는 언제인지 알 수 없다.  그러나 역사의 흐름에 맞추어 추정해 볼 때, 이 성은 백제가 축성한 성(城)으로 백제 22대 문주왕이 웅진으로 천도(475년)하기 전, 강 건너 고구려를 견제하며 국경을 지키던 백제성으로 짐작된다. 특히 이곳에서 백제 초기시대의 토기 파편이 발견됨으로써 백제 성이었다는 사실을 뒷받침해주고 있다. 또한, 임진왜란 당시 김천일 장군 등이 의병을 이끌고 이 성에 주둔하였다가 권율장군을 도와 행주대첩에 참가하기도 했다. 1994년에는 산 정상 동편에 예부터 전해  내려오는 소악루(小岳樓)가 아름답게 복원되어 강서구민들의 관광 휴식처가 되고 있다.<br /><br />* 시설규모 - 29,370㎡ 넓이의 토성터<br />* 시대 및 조성시기 - 백제시대로 추정<br>','02-2600-6300',null,'연중개방',null,null,null,null,'상시 개방','없음','없음','불가','화장실:있음
 입 장 료:없음
 외국어 안내서비스:불가
 한국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청담공원','06073','서울특별시 강남구 영동대로131길 26(청담동)','1960년대 초까지만 해도 뚝섬 나루터에서 배를 타고 한강을 건너면 강남 땅에 닿는 곳이 지금의 청담동 일대였다. 오늘날 청담공원은 지극히 도시적인 청담동에 위치한 오염되지 않은 작고 아담한 공원이다. 낮은 산책로를 따라 올라가면 간단한 운동기구가 비치되어 있는 놀이터가 있는데 아침이면 운동하는 사람들로 제법 붐비는 곳이기도 하다.  빽빽이 들어선 나무들로 도시에서는 드물게 맑은 공기를 들이마실 수 있는 휴식공간이다. 공원의 면적은 59,347㎡이다.<br>','공원녹지과 02-3423-6248','1991년 4월 30일','연중무휴',null,null,null,null,'24시간 개방',null,'불가','없음','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청담공원','06073','서울특별시 강남구 영동대로131길 26(청담동)',38,127,'1960년대 초까지만 해도 뚝섬 나루터에서 배를 타고 한강을 건너면 강남 땅에 닿는 곳이 지금의 청담동 일대였다. 오늘날 청담공원은 지극히 도시적인 청담동에 위치한 오염되지 않은 작고 아담한 공원이다. 낮은 산책로를 따라 올라가면 간단한 운동기구가 비치되어 있는 놀이터가 있는데 아침이면 운동하는 사람들로 제법 붐비는 곳이기도 하다.  빽빽이 들어선 나무들로 도시에서는 드물게 맑은 공기를 들이마실 수 있는 휴식공간이다. 공원의 면적은 59,347㎡이다.<br>','공원녹지과 02-3423-6248','1991년 4월 30일','연중무휴',null,null,null,null,'24시간 개방',null,'불가','없음','입 장 료:무료
 화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('망원정지','04019','서울특별시 마포구 동교로8안길 23(합정동)','합정동에 위치하고 있는 정자로서 서울시 기념물로 1989년 10월 복원되어 관리하고 있다. 세종6년(1424년)에 효령대군이 별서를 지었는데 이듬해 세종이 서교에 농정을 살피러 왔다가 정자에 들렀을 때 단비가 내리어 "희우정"으로 이름지었다고 하며, 성종 15년(1484년)에 월산대군이 정자를 크게 고치고, 망원정으로 이름했다. 연산군 12년 7월 1천여명이 앉을 수 있게 확장하고 수려정으로 고쳤으나, 그해 9월 중종반정으로 다시 망원정으로 변경하였다. 1925년 을축대홍수과 한강개발로 자취를 감추었던 것을 한강변 문화 유적 복원 계획의 일환으로 1988년 6월에 기공하여 1989년 10월 준공하였다. 근처의 망원동은 바로 이 정자에서 딴 동네 이름이다.<br>','02-3153-8372',null,'연중무휴',null,null,null,null,null,null,'불가','불가','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('망원정지','04019','서울특별시 마포구 동교로8안길 23(합정동)',38,127,'합정동에 위치하고 있는 정자로서 서울시 기념물로 1989년 10월 복원되어 관리하고 있다. 세종6년(1424년)에 효령대군이 별서를 지었는데 이듬해 세종이 서교에 농정을 살피러 왔다가 정자에 들렀을 때 단비가 내리어 "희우정"으로 이름지었다고 하며, 성종 15년(1484년)에 월산대군이 정자를 크게 고치고, 망원정으로 이름했다. 연산군 12년 7월 1천여명이 앉을 수 있게 확장하고 수려정으로 고쳤으나, 그해 9월 중종반정으로 다시 망원정으로 변경하였다. 1925년 을축대홍수과 한강개발로 자취를 감추었던 것을 한강변 문화 유적 복원 계획의 일환으로 1988년 6월에 기공하여 1989년 10월 준공하였다. 근처의 망원동은 바로 이 정자에서 딴 동네 이름이다.<br>','02-3153-8372',null,'연중무휴',null,null,null,null,null,null,'불가','불가','입 장 료:무료
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정몽주 동상','04084','서울특별시 마포구 합정동401-2','1970년 10월 16일 건립되었으며 합정동 양화대교 입구 녹지대에 있다. 포은 정몽주는 고려 말 문신학자(1337~1392)로서, 자는 달가(達可), 호는 포은이고 시호는 문충이며 본관은 연일(延日)이고 영천(永川)출신이다.1360년 문과에 장원, 우문관 대제학을 지냈다. 명나라, 일본과의 외교에 능했고 왜구, 여진족 토벌 등 공로가 혁혁하였을 뿐 아니라 의창을 세워 빈민을 구제하고 유학을 보급했으며 성리학에 밝았다.사회윤리와 도덕의 합리화를 기하며 고려에 충성했으나 국운이 다하고 국가를 이끌 신층세력이 등장함에 따라 희생되었다. "단심가" 외 많은 한시가 전하며, 서화에도 출중하여 고려 3은의 한 사람으로 태종 1년(1401)에 영의정에 추증,  익양부원군에 추봉되고 중종 때 문묘에 배향되었다.<br>','02-334-7878',null,'연중무휴',null,null,null,null,null,'없음','없음','가능','입 장 료:없음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정몽주 동상','04084','서울특별시 마포구 합정동401-2',38,127,'1970년 10월 16일 건립되었으며 합정동 양화대교 입구 녹지대에 있다. 포은 정몽주는 고려 말 문신학자(1337~1392)로서, 자는 달가(達可), 호는 포은이고 시호는 문충이며 본관은 연일(延日)이고 영천(永川)출신이다.1360년 문과에 장원, 우문관 대제학을 지냈다. 명나라, 일본과의 외교에 능했고 왜구, 여진족 토벌 등 공로가 혁혁하였을 뿐 아니라 의창을 세워 빈민을 구제하고 유학을 보급했으며 성리학에 밝았다.사회윤리와 도덕의 합리화를 기하며 고려에 충성했으나 국운이 다하고 국가를 이끌 신층세력이 등장함에 따라 희생되었다. "단심가" 외 많은 한시가 전하며, 서화에도 출중하여 고려 3은의 한 사람으로 태종 1년(1401)에 영의정에 추증,  익양부원군에 추봉되고 중종 때 문묘에 배향되었다.<br>','02-334-7878',null,'연중무휴',null,null,null,null,null,'없음','없음','가능','입 장 료:없음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('길동생태공원','05291','서울특별시 강동구 천호대로 1291(길동)','서울시에서 조성한 유일한 자연생태공원으로서 강동구 천호대로변 습지에 생물 서식공간을 복원하여 시민과 학생들에게 자연생태의 학습과 자연체험공간을 제공하며 생물의 다양성을 증진시켜 도시민들에게 건강한 녹지 공간 제공으로 도시환경의 질을 높이기 위하여 조성된 공원이다.               
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('길동생태공원','05291','서울특별시 강동구 천호대로 1291(길동)',38,127,'서울시에서 조성한 유일한 자연생태공원으로서 강동구 천호대로변 습지에 생물 서식공간을 복원하여 시민과 학생들에게 자연생태의 학습과 자연체험공간을 제공하며 생물의 다양성을 증진시켜 도시민들에게 건강한 녹지 공간 제공으로 도시환경의 질을 높이기 위하여 조성된 공원이다.               
 
 전체 80,683㎡(24,407평)에 습지지구, 산림지구, 초지지구광장지구를 조성하였으며 야외 강의장, 야외 전시장, 야외 관찰대, 파고라, 조류 관찰대, 수중섬, 자연초지와 초가집, 움집, 인공벌통, 돌담, 버섯재배대, 새집, 조류먹이공급대 등이 설치 조성되어 있다. 특히, 조류 관찰대는 나무로 높이 칸막이를 만들고 사방 30cm 정도의 관찰창을 뚫어 새들이 놀라지 않게 세심하게 배려하였다. 계절에 따라 물총새, 왜가리, 원앙, 흰뺨검둥오리, 꼬마물떼새등을 관찰할 수 있다. 습지지구에서는 수생식물과 수서곤충 개구리 등을 볼 수 있고, 수련 노랑어리 연꽃 갈대창포와 하늘의 사냥꾼 잠자리, 물방개 물자라 등을 볼 수 있다.','길동생태공원 02-472-2770','1999년 4월 28일','매주 월요일','매달 다양한team_insert;유/무료team_insert;프로그램 운영중<br>
  (신나는 길동생태학교, 유아생태학교, 일요가족나들이, 천연비누만들기, 아빠랑 함께하는 자연체험 등)<br> ※ 예약, 요금은 홈페이지 참조',null,'공원입장예약 시간대별로 회당 30~60명, 프로그램 8~30명이내',null,'09:00 ~ 입장마감 16:00','길동생태공원내에는 별도의 주차장이 없으므로 공원 맞은편 길동생태문화센터 주차장 이용<br>
@@ -389,7 +391,7 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 내국인 예약안내:서울의 공원 홈페이지 및 서울시공공서비스 예약 홈페이지에서 사전예약<br>
 ※ 홈페이지에서 사전 예약 후 입장 가능
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천호공원','05324','서울특별시 강동구 올림픽로 702(천호동)','강동지역의 대표적 근린공원인 천호공원은 강동구 천호동에 위치한 공원으로 음악분수, 야외무대, 체력단련시설을 갖추고 시민들의 여가생활 및 노년층의 휴식공간으로 각광을 받고 있다. 규모는 작지만, 1998년 개장 이후 인근 주민들의 산책, 운동, 나들이 공간으로 이용되었다. 2007년에는 해공도서관이 들어서 문화공간으로 한단계 수준을 향상시켰고, 최근에는 음악분수, 야외무대 등 주요시설이 오래되고 낡아 주민의 시설 현대화 요구에 따라 음악분수와 야외무대, 각종 체육시설, 편의시설을 재정비하여 쾌적하고 문화가 가득한 공원으로 재조성하였다. 특히, 새로 설치된 음악분수(880㎡)는 음악에 맞추어 워터스크린형, 원형멀티벡터형, 안개형, 시간차형 등 다양한 모양으로 연출되는 아름다운 분수를 감상할 수 있도록 하였다. 이 외에도 윗몸일으키키, 다리운동, 버터플라이 등의 체력단련시설과 족구, 배드민턴, 농구 등의 운동시설 뿐만 아니라 공원 곳곳에 벤치와 육각정, 산책로 등 다양한 편의시설을 개선ㆍ보완하여 주민들에게 보다 많은 사랑을 받고 있다.<br>','02-489-2776','1998년 06월 20일','연중개방',null,null,null,null,null,'10대 가능(주차 공간이 협소한 관계로 가능한 대중교통 이용)','없음','가능','이용가능시설:기반시설 : 광장<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천호공원','05324','서울특별시 강동구 올림픽로 702(천호동)',38,127,'강동지역의 대표적 근린공원인 천호공원은 강동구 천호동에 위치한 공원으로 음악분수, 야외무대, 체력단련시설을 갖추고 시민들의 여가생활 및 노년층의 휴식공간으로 각광을 받고 있다. 규모는 작지만, 1998년 개장 이후 인근 주민들의 산책, 운동, 나들이 공간으로 이용되었다. 2007년에는 해공도서관이 들어서 문화공간으로 한단계 수준을 향상시켰고, 최근에는 음악분수, 야외무대 등 주요시설이 오래되고 낡아 주민의 시설 현대화 요구에 따라 음악분수와 야외무대, 각종 체육시설, 편의시설을 재정비하여 쾌적하고 문화가 가득한 공원으로 재조성하였다. 특히, 새로 설치된 음악분수(880㎡)는 음악에 맞추어 워터스크린형, 원형멀티벡터형, 안개형, 시간차형 등 다양한 모양으로 연출되는 아름다운 분수를 감상할 수 있도록 하였다. 이 외에도 윗몸일으키키, 다리운동, 버터플라이 등의 체력단련시설과 족구, 배드민턴, 농구 등의 운동시설 뿐만 아니라 공원 곳곳에 벤치와 육각정, 산책로 등 다양한 편의시설을 개선ㆍ보완하여 주민들에게 보다 많은 사랑을 받고 있다.<br>','02-489-2776','1998년 06월 20일','연중개방',null,null,null,null,null,'10대 가능(주차 공간이 협소한 관계로 가능한 대중교통 이용)','없음','가능','이용가능시설:기반시설 : 광장<br />
 조경시설 : 연못<br />
 운동시설 : 배드민턴코트, 농구대, 족구장, 체력단련시설<br />
 교양시설 : 야외무대, 도서관<br />
@@ -397,31 +399,57 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 화장실:있음
 입 장 료:무료
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강동예찬시비','05246','서울특별시 강동구 천호동','조선 초기의 서거정 선생이 지은 해질 무렵의 한강변과 강동지역의 아름다운 전원풍경을 노래한 시를 옛 광나루였던 광진교 입구에 한강의 쌍돛배의 모습으로 강동예찬시비를 건립하였다. 강동예찬시비는 한강을 조망하는 훌륭한 쉼터이며, 또한 지방자치시대를 맞아 지역주민들이 고장에 대한 자긍심과 애향심을 간직할 수 있는 한강변의 문화명소이다.<br>','02-3425-5253',null,null,null,null,null,null,'24시간',null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일자산자연공원','05357','서울특별시 강동구 동남로 660일대','일자산은 강동구와 경기도 하남시 서부 등을 경계로 뻗어 있는 강동구의 최고봉으로 강동에서 가장 먼저 해가 뜬다. 둔촌 이집 선생의 시비가 있으며 도시민에게 좋은 휴식공간이다. 이집선생은 고려말 공민왕 때의 충신으로, 당시 세도가였던 신돈의 모함으로 일자산 서남쪽에 토굴을 짓고 숨어 살았다. 그 고초를 잊지 않고자 호를 둔촌이라 바꿨으며 둔촌동이란 동네 이름은 이집선생의 호에서 따온 것이다.','02-480-1395',null,'연중무휴',null,null,null,null,null,'있음','없음','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강동예찬시비','05246','서울특별시 강동구 천호동',38,127,'조선 초기의 서거정 선생이 지은 해질 무렵의 한강변과 강동지역의 아름다운 전원풍경을 노래한 시를 옛 광나루였던 광진교 입구에 한강의 쌍돛배의 모습으로 강동예찬시비를 건립하였다. 강동예찬시비는 한강을 조망하는 훌륭한 쉼터이며, 또한 지방자치시대를 맞아 지역주민들이 고장에 대한 자긍심과 애향심을 간직할 수 있는 한강변의 문화명소이다.<br>','02-3425-5253',null,null,null,null,null,null,'24시간',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일자산자연공원','05357','서울특별시 강동구 동남로 660일대',38,127,'일자산은 강동구와 경기도 하남시 서부 등을 경계로 뻗어 있는 강동구의 최고봉으로 강동에서 가장 먼저 해가 뜬다. 둔촌 이집 선생의 시비가 있으며 도시민에게 좋은 휴식공간이다. 이집선생은 고려말 공민왕 때의 충신으로, 당시 세도가였던 신돈의 모함으로 일자산 서남쪽에 토굴을 짓고 숨어 살았다. 그 고초를 잊지 않고자 호를 둔촌이라 바꿨으며 둔촌동이란 동네 이름은 이집선생의 호에서 따온 것이다.','02-480-1395',null,'연중무휴',null,null,null,null,null,'있음','없음','불가','화장실:있음
 입 장 료:없음
 이용가능시설:실내외배드민턴장, 실내체육관, X-game장, 광장, 주차장, 초화류원, 생태연못 등 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('백마고지 3용사의 상','04991','서울특별시 광진구 능동로 216','6.25전쟁 당시 가장 치열했던 백마고지 전투에서 육탄으로 적의 진지를 공격해 승리로 이끌었던 강승우 소위 및 오규봉 일병, 안영권 일병을 추모하고 그 넋을 기리기 위해 1973년 어린이대공원 내(동문 인근 위치)에 건립하였다. 이들 3용사는 국군 제9사단 제30연대 예하 제1중대 제1소대 소속으로 1952년 10월 철원평야 일대 중부전선의 전략 요충지인 백마고지에서 TNT와 박격포탄, 수류탄 등을 휴대하고 육탄으로 돌진하여 적의 기관총 특화점을 격파한 후 장렬히 산화함으로써 고지를 탈환하는데 결정적인 기여를 하였다.<br /><br />* 규격 - 상높이 8.1m, 좌대높이 5m, 기념물높이 4m<br />* 건립자 - 백마개선기념사업회(국방부)','서울어린이대공원 운영팀 02-450-9311',null,'연중무휴',null,null,null,null,null,null,'없음','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('송재서재필선생상','03732','서울특별시 서대문구 통일로 251','전남 보성 출신으로 개화운동가이자 독립운동가인 서재필 선생을 기리기 위하여 서대문독립공원 내에 건립되었다. 선생은 1896년 4월 7일 한국 최초의 민간신문인「독립신문」을 발간하였고 윤치호, 이상재 등의 협력을 얻어 독립협회를 창립하여 종래 중국을 사대하던 상징인 영은문을 헐고 그 자리에 국민의 성금을 모아 한국독립의 상징으로서 독립문을 세웠으며 종래의 모화관을 개수하여 독립관으로 고치고 독립협회의 집회장소와 사무실로 사용하였다. 또한, 토론회를 통해 시민들을 모아 나라의 독립과 개혁에 대한 토론을 시키고 만민공동회를 조직하여 러시아의 부산 절영도 조차(租借) 요구를 반대하는 등 국민의 독립사상과 민권사상을 크게 신장시켰다.1919년 3.1운동 이후 임시정부가 워싱턴에 구미위원회를 설치하자 그 위원장을 맡아 독립운동을 위한 외교활동을 전개하였고 전 재산을 독립운동의 경비에 바치는 등 조국의 독립을 위하여 헌신하셨으나 1951년 1월 5일 미국에서 87세의 생을 마감하였다.<br /><br />* 규격 - 동상높이 3.5m, 좌대높이 2.8m<br />* 건립주체자 - 송재서재필선생동상건립추진위원회, (1990.04.07. 건립)','02-300-5501',null,'연중개방',null,null,null,null,'상시 개방','있음','없음','불가','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 신림동 민속순대타운','08776','서울특별시 관악구 신림로59길 14(신림동)',37,127,'신림동 순대타운의 역사는 1977년을 전, 후로 하여 신림동 시장 안에 순대볶음 요리가 등장하면서 시작됐다. 그리고 1992년 지금의 민속순대타운 건물에 시장에서 장사를 하던 사람들이 입주하면서 신림동 순대골목은 제 2의 시대를 맞이하게 되었다.  현재 민속순대타운에는 1, 2층이 같은 집이며 3층과 4층에 약 30개의 음식점이 영업을 하고 있다.1977년에는 순대 집이 두 집 밖에 없었다. 그리고 1979년 이후로 몇 집이 더 생겼고 점차 늘어나면서 1985년을 전, 후로 20집 남짓까지 늘어나면서 신림동 순대 골목이 형성되었다. 1970년대의 주된 단골  안주는 백순대였다. 다시 말해 신림동 순대볶음의 효시가 된 음식이 바로 ''백순대''였던 것이다.
+여기서 말하는 ''백순대''는 양념이 없이 깻잎이나 양파 등의 간단한 야채와 순대를 넣고 하얗게 볶았다. 연탄 불 위 네모난 무쇠철판은 지금은 사라진 추억이 되었다.또 양념볶음이 등장한 것은 1980년대 초반 부터이다. 그러나 지금의 양념볶음과 들어가는 재료가 달랐는데 당시에는 깻잎,양파, 당근 등 약간의 야채와 순대를 올리고 다른 양념을 넣지 않은 그냥 고추장으로 빨갛게 볶았으며 화력도 연탄 불에서 곤로로 바뀌는 시기가 이 때였다.그리고 민속순대타운 건물로 입주를 하기 시작한 1992년부터 지금에 이르기까지 민속순대타운에는 초창기 메뉴인 백순대가 다시 등장했음은 물론이고  양념순대까지 신림동 순대타운의 주 메뉴로 자리잡게 되었다. 또 양배추, 파, 마늘, 당근, 양파, 새송이버섯, 오징어, 쫄면, 가래떡 등 양념순대에 들어가는 재료 역시 더 많아졌다. 뿐만 아니라 백순대 전용 소스 역시 들깨, 참깨, 고추장, 참기름 등을 넣어 새롭게 선보였다. 서민들의 가벼운 주머니로도 마음을 넉넉하게 나눌 수 있는 곳이 바로 신림동 민속순대타운으로 30년을 넘긴 신림동 순대볶음의 역사는 서민들의 힘으로 계속될 것이다.',null,null,'연중무휴',null,null,null,null,'매장에 따라 다름','주차 가능(인근 주변 유료주차 / 1,500원(30분))','불가','불가','화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('순국선열추념탑','03732','서울특별시 서대문구 독립문공원길 80(현저동)','순국선열추념탑은 애국지사들과 항일투사들이 가장 많이 옥고를 치른 조국수난의 현장이었던 서대문형무소를 비롯하여 우리 산하와 해외 각처에서 조국 광복을 위하여 일제에 항거하다 장렬히 순국하신 선열들의 얼을 되새기며 원혼을 추모하기 위하여 서울특별시에서 1992년 8월 15일에 건립하였다.추념탑의 중앙에는 전국 14개도 전역에서 나타난 우리민족의 드높은 독립의지와 기상을 상징하고 있는 태극기를 음양각한 조각상이 높이 22.3m로 축조되어 있으며 좌우에는 길이 40m로 독립투쟁의 역사적 활동상을 형상화한 모습이 부조되어 있다. 좌측에는 항일의병무장상, 윤봉길ㆍ이봉창열사 상징상, 독립군의병 순국선열 처형상, 유관순열사 운동상이, 우측에는 3.1독립만세상, 안중근의사 이토 히로부미 저격상, 순국선열 의병체포 처형상, 청산리 전투상이 새겨져 있다. 또한, 바로 아래의 순국선열추념탑기(殉國先烈追念塔記)에는 일제의 침략부터 조국독립을 쟁취하기 위한 우리 선열들의 자주독립 의지와 끊임없이 계속된 항일투쟁사가 기록되어 있다.<br>','1577-0606',null,'연중개방',null,null,null,null,'상시 개방','있음','없음','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('유관순열사상','04991','서울특별시 광진구 능동로 216(능동)','천안 아우내 장터에서 독립만세운동을 주동하다 체포되어 옥중에서 순국한 유관순 열사를 기리기 위해 건립되었으며, 어린이대공원 내(방문자센터 뒤편)에 위치해 있다. 유관순은 이화학당 재학 중 3.1운동이 일어나자 학생들과 함께 가두시위를 벌였고, 학교가 휴교에 들어가자 만세 시위를 지휘하기 위하여 고향인 천안 병천으로 내려갔다. 1919년 4월 1일, 3천여 명의 시위 군중이 모인 아우내 장터에서 유관순은 미리 준비한 태극기를 시위 군중들에게 나누어 주고 시위대열의 선두에 서서 독립만세를 외치며 시위 행진을 주도하였다. 이에 일본 헌병은 총검을 휘두르고 무차별 사격을 감행하여 유관순의 아버지 유중권과 어머니 이소제 등 19명이 현장에서 순국하고 30여명이 부상당하였다. 일제는 유관순을 이 독립만세운동의 주동자로 체포하여 서대문형무소에 감금하였으나 유관순은 옥중에서도 계속 독립만세를 외치다가 모진 고문으로 결국 1920년 10월 18세의 꽃다운 나이에 옥중에서 순국하였다.<br /><br />* 규격 - 좌대면적 5.3㎡, 좌대높이 1.2m, 동상높이 0.8m<br />* 건립자 - 조각가 이순석(1973.10.20 건립)<br>','02-2125-0848',null,'연중무휴',null,null,null,null,null,'있음','없음','불가','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('백련사(서울)','03655','서울특별시 서대문구 백련사길 170-43',38,127,'백련사는 신라 경덕왕 6년(747)에 진표율사가 창건하였다. 당시는 정토사라 하였는데 조선조 정종 원년에 백련사라 개칭하였다.조선 2대 임금인 정종이 왕위를 태종에게 물려주고 난 뒤에 요양차 이 곳에서 머무르기도 했다. 조선 임금 세조의 딸 의숙옹주가 20세에 남편을 잃고 비통함을 달래기 위해 돌아다니다가 여기서 해동묵(엄나무)을 보고 인생의 참뜻을 깨달았다고 한다. 그 후 의숙옹주의 원당으로 정하면서 이름을 백련사로 바꾸었다고 한다. 전설에 의하면 경복궁에서 볼 때 서쪽에 있어서 "서방정", "정토사"라고 하였는데 어느 여름날  연못에서 갑자기 하얀 연꽃이 피어올라  [백련사]라고 명칭을 바꾸었다고 전한다. 선조 때 임진왜란으로 소실되었으나 바로 재건하였고, 그 뒤로도 여러차례 중창을 거듭했다.','02-302-0288',null,null,null,null,null,null,null,null,'없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서대문독립공원','03732','서울특별시 서대문구 통일로 251(현저동)',38,127,'독립공원은 1945년 8월 15일 광복이 될 때까지 수많은 애국지사와 1960년대 정치적 변동을 겪으면서 많은 시국사범들이 수감되었던 서울구치소가 있었던 곳이다. 서울구치소가 1987년 11월 경기도 의왕시로 옮겨감에 따라 감옥 7동, 사형장, 지하여자감옥 등을 복원하고, 탑골공원에서 3·1운동기념탑을 이전하였으며, 1992년 영은문 주초와 연계하여 1992년 8월 15일 독립공원으로 조성하였다. 독립협회에서 건립(1895년)한 독립문(사적)이 있으며 조선시대 중국사신들을 영접하던 독립관(당시는 모화관이라 하였음)을 복원(1996년)하여 그 내부에 순국선열위패 2,327위가 봉안되어 있고, 독립문 바로 앞에는 영은문주초(사적 제33호)가 자리하고 있다. 그 외 순국선열추념탑, 3·1독립선언기념탑, 서재필박사 동상 등이 있다. 또한 일제의 침략에 맞서 빼앗긴 나라를 되찾기 위해 독립운동을 하다 순국하신 애국지사들의 고귀한 넋을 기리고자 서대문구에서 서대문형무소역사관을 별도로 관리·운영하고 있다.<br><br>* 면적 : 113,021.7m2(34,180평)','서대문구 공원관리팀 02-3140-8305','1992년 8월 15일','연중무휴',null,null,null,null,'연중 개방','있음','없음','가능','화장실:있음
+이용가능시설:방문자센터(관리사무소 위치), 순국선열추념탑, 서재필선생동상, 독립관(순국선열 위패봉안소),3·1독립선언기념탑, 독립문, 형무소 역사관, 이진아기념도서관 
+입 장 료:무료
+외국어 안내서비스:불가
+한국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼각산','01002','서울특별시 강북구 삼양로173길 460(탐방지원센터)',38,127,'서울시 북쪽 외곽에 병풍을 친듯이 솟아 있는 삼각산은 우이동 종점에서 등정할 수 있다. 삼각산의 유래는 산의 최고봉인 백운대, 인수봉, 만경대(국망봉)의 높은 세 봉우리가 뿔처럼 높이 서 있어서 붙여진 이름이다. 세봉우리 중에서 가장 높은 백운대는 해발 836.5m로 정상에 오르면 사방이 탁 틔여서 전망이 무한히 넓고, 또 봉 위에는 많은 사람이 앉을 수 있는 넓은 암반이 있기도 하다. 동북쪽으로는 산맥이 서로 통하는 도봉산의 연봉이 줄을 이어 있고 아래로 강북, 도봉, 노원구가 한 눈에 내려다 보인다. 남쪽으로 눈을 돌리면 한강 건너 옆으로 뻗어나간 남한산을 바라볼 수 있고 서남쪽으로는 관악산이 눈에 들어온다.<br /><br />백운대 동쪽에 우뚝 솟은 인수봉도 온통 바위 하나가 하늘 높이 솟아 장관을 이루며, 동남쪽에 솟은 국망봉은 일명 만경대라고도 하는데, 이 국망봉의 봉명은 일찌기 이태조가 한양에 도읍을 정할때 왕사 무학이 영기에 올라가 새 나라의 도읍터를 바라 보고 정해서 국망이라는 봉명이 생겼다고 전해오기도 한다. 삼각산 일대의 지질기반은 중생대말에 관입한 화강암으로 구성되어 있다. 다른 지역에서는 보기 드문 담조색을 띠고 있는데 장구한 세월에 걸친 지반의 상승과 침식작용으로 지표에 노출되고 다시 그 절리와 표면에 생긴 풍화작용으로 오늘날과 같은 산모양이 된 것이다. 따라서 높이에 비해 산세가 험준하고 경사가 심하며 암벽으로 된 바위 봉우리들이 주축을 이루고 있다. 또한, 북한산 일대에는 옛 한성의 방어역할을 했던 북한산성이 있으며, 성의 둘레는 12.7km이고 성안의 면적은 6,611,600m² (약 200만 평)으로,1990년부터 훼손된 대남문, 대성문, 대동문, 보국문, 동장대의 성곽들을 일부 보수 복원하였다.<br>','02-901-6936',null,null,null,null,null,null,null,null,'없음','없음','등산로:* 우이코스<br>1) 
+소귀천통제소→소귀천계곡→대동문(2시간 / 2.3Km) <br>2) 
+용암문통제소→용암문(50분 / 1.1Km) <br>3) 백운봉탐방지원센터→하루재→백운대피소→백운봉 (1시간 30분 / 1.9Km) <br>4) 
+선운사입구→우이능선→영봉→하루재→위문→백운봉 (3시간 / 3.6Km) <br><br>* 수유코스<br>1) 솔샘터널→문필봉→흥륜골→칼바위능선→보국문 (2시간 40분 / 3.8Km) <br>2) 빨래골탐방센터→칼바위능선→대동문 (2시간 30분 / 3.6Km)<br>3) 화계사통제소→칼바위능선→대동문 (2시간 30분 / 3.5Km) <br>4) 아카데미탐방지원센터→구천폭포→대동문(1시간 10분 / 2Km) <br>5) 
+운가사통제소→운가사→대동문(1시간 20분 / 2Km) <br>6) 백련사통제소→진달래능선→대동문(1시간 30분 / 2.7Km) 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남강이승훈선생동상','04991','서울특별시 광진구 능동로 216(능동) 서울어린이대공원 내',38,127,'대한제국 말기 및 일제 강점기 시절 교육자이자 애국계몽가인 남강 이승훈 선생의 공적을 기리기 위해 건립되었으며 어린이대공원 내(남문과 동문 사이 위치)에 있다.남강 이승훈 선생(1864~1930)은 평안북도 정주의 가난한 가정에서 태어나 어린시절부터 근검 절약하고 노력하여 40대에 큰 부자가 되었다. 일본의 침략으로 나라가 위기에 처하자 1907년 재산을 털어 오산학교를 세우고 인재를 기르는데 힘썼고 독립운동에 몸바쳐 1922년부터 세차례 수년간의 옥고를 치루었다.출옥 후 기독교 신앙에 몰입하여 복음전도와 복지운동, 민립대학 설립추진, 언론 창달 등에 힘을 쏟았다. 평생을 말보다 실천을 앞세우는 교육 운동에 헌신한 그는 ''내 유해를 땅에 묻지말고 골격표본으로 만들어 학생들이 공부하는데 쓰게 하라'' 유언하고 눈을 감았다.<br /><br />* 규격 - 좌대높이 3.5m, 좌대면적 6.3㎡, 동상높이 4m<br />
+* 건립자 - 남강이승훈선생동상재건립위원회(1987.03.02. 재건)<br>','1577-0606',null,'연중무휴',null,null,null,null,'05:00~22:00<br />
+※ 계절 및 날씨 등에 따라 변경 가능','있음 <br />
+※ 운영시간 09:00~22:00','없음','불가','입 장 료:무료 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('독립관','03732','서울특별시 서대문구 통일로 251(현저동)',38,127,'독립관은 원래 1407년(태종 7년)에 중국 사신을 영접하기 위해 지어진 영빈관으로서 초기의 이름은 모화루였으나, 1429년(세종 11년) 확장 개축되면서 모화관이라 개칭되었다. 한말에 이르자 국제관계의 변화로 원래의 목적대로 사용되지 못하고 방치되어 있던 모화관을 서재필이 독립협회를 세우면서 독립관으로 개칭하고, 이곳에서 애국토론회를 개최하여 자주ㆍ민권ㆍ자강 사상을 고취시키는 독립운동의 기지로써 사용하였다. 그러자 일본제국주의자들은 독립운동 탄압의 일환으로써 이 건물을 철거해버렸다. 세워질 당시의 위치는 현재의 위치에서 동남쪽으로 약 350m 떨어진 곳이었으며, 서대문독립공원 조성사업계획에 의거 전문가의 고증 자문에 따라 지상층은 당초대로 한식 목조건물로 복원하여 순국선열들의 위패(位牌)봉안과 전시실로 사용하고, 지하층은 행사 및 유물보관을 위해 1995년 12월 28일부터 1996년 12월 31일까지 서울특별시에서 건립하였다.<br>','02-365-4388',null,'연중무휴',null,null,null,null,'상시 개방','있음<br />
+※ 주차문의 02-312-6218','없음','불가','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('백마고지 3용사의 상','04991','서울특별시 광진구 능동로 216',38,127,'6.25전쟁 당시 가장 치열했던 백마고지 전투에서 육탄으로 적의 진지를 공격해 승리로 이끌었던 강승우 소위 및 오규봉 일병, 안영권 일병을 추모하고 그 넋을 기리기 위해 1973년 어린이대공원 내(동문 인근 위치)에 건립하였다. 이들 3용사는 국군 제9사단 제30연대 예하 제1중대 제1소대 소속으로 1952년 10월 철원평야 일대 중부전선의 전략 요충지인 백마고지에서 TNT와 박격포탄, 수류탄 등을 휴대하고 육탄으로 돌진하여 적의 기관총 특화점을 격파한 후 장렬히 산화함으로써 고지를 탈환하는데 결정적인 기여를 하였다.<br /><br />* 규격 - 상높이 8.1m, 좌대높이 5m, 기념물높이 4m<br />* 건립자 - 백마개선기념사업회(국방부)','서울어린이대공원 운영팀 02-450-9311',null,'연중무휴',null,null,null,null,null,null,'없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('송재서재필선생상','03732','서울특별시 서대문구 통일로 251',38,127,'전남 보성 출신으로 개화운동가이자 독립운동가인 서재필 선생을 기리기 위하여 서대문독립공원 내에 건립되었다. 선생은 1896년 4월 7일 한국 최초의 민간신문인「독립신문」을 발간하였고 윤치호, 이상재 등의 협력을 얻어 독립협회를 창립하여 종래 중국을 사대하던 상징인 영은문을 헐고 그 자리에 국민의 성금을 모아 한국독립의 상징으로서 독립문을 세웠으며 종래의 모화관을 개수하여 독립관으로 고치고 독립협회의 집회장소와 사무실로 사용하였다. 또한, 토론회를 통해 시민들을 모아 나라의 독립과 개혁에 대한 토론을 시키고 만민공동회를 조직하여 러시아의 부산 절영도 조차(租借) 요구를 반대하는 등 국민의 독립사상과 민권사상을 크게 신장시켰다.1919년 3.1운동 이후 임시정부가 워싱턴에 구미위원회를 설치하자 그 위원장을 맡아 독립운동을 위한 외교활동을 전개하였고 전 재산을 독립운동의 경비에 바치는 등 조국의 독립을 위하여 헌신하셨으나 1951년 1월 5일 미국에서 87세의 생을 마감하였다.<br /><br />* 규격 - 동상높이 3.5m, 좌대높이 2.8m<br />* 건립주체자 - 송재서재필선생동상건립추진위원회, (1990.04.07. 건립)','02-300-5501',null,'연중개방',null,null,null,null,'상시 개방','있음','없음','불가','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('순국선열추념탑','03732','서울특별시 서대문구 독립문공원길 80(현저동)',38,127,'순국선열추념탑은 애국지사들과 항일투사들이 가장 많이 옥고를 치른 조국수난의 현장이었던 서대문형무소를 비롯하여 우리 산하와 해외 각처에서 조국 광복을 위하여 일제에 항거하다 장렬히 순국하신 선열들의 얼을 되새기며 원혼을 추모하기 위하여 서울특별시에서 1992년 8월 15일에 건립하였다.추념탑의 중앙에는 전국 14개도 전역에서 나타난 우리민족의 드높은 독립의지와 기상을 상징하고 있는 태극기를 음양각한 조각상이 높이 22.3m로 축조되어 있으며 좌우에는 길이 40m로 독립투쟁의 역사적 활동상을 형상화한 모습이 부조되어 있다. 좌측에는 항일의병무장상, 윤봉길ㆍ이봉창열사 상징상, 독립군의병 순국선열 처형상, 유관순열사 운동상이, 우측에는 3.1독립만세상, 안중근의사 이토 히로부미 저격상, 순국선열 의병체포 처형상, 청산리 전투상이 새겨져 있다. 또한, 바로 아래의 순국선열추념탑기(殉國先烈追念塔記)에는 일제의 침략부터 조국독립을 쟁취하기 위한 우리 선열들의 자주독립 의지와 끊임없이 계속된 항일투쟁사가 기록되어 있다.<br>','1577-0606',null,'연중개방',null,null,null,null,'상시 개방','있음','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('유관순열사상','04991','서울특별시 광진구 능동로 216(능동)',38,127,'천안 아우내 장터에서 독립만세운동을 주동하다 체포되어 옥중에서 순국한 유관순 열사를 기리기 위해 건립되었으며, 어린이대공원 내(방문자센터 뒤편)에 위치해 있다. 유관순은 이화학당 재학 중 3.1운동이 일어나자 학생들과 함께 가두시위를 벌였고, 학교가 휴교에 들어가자 만세 시위를 지휘하기 위하여 고향인 천안 병천으로 내려갔다. 1919년 4월 1일, 3천여 명의 시위 군중이 모인 아우내 장터에서 유관순은 미리 준비한 태극기를 시위 군중들에게 나누어 주고 시위대열의 선두에 서서 독립만세를 외치며 시위 행진을 주도하였다. 이에 일본 헌병은 총검을 휘두르고 무차별 사격을 감행하여 유관순의 아버지 유중권과 어머니 이소제 등 19명이 현장에서 순국하고 30여명이 부상당하였다. 일제는 유관순을 이 독립만세운동의 주동자로 체포하여 서대문형무소에 감금하였으나 유관순은 옥중에서도 계속 독립만세를 외치다가 모진 고문으로 결국 1920년 10월 18세의 꽃다운 나이에 옥중에서 순국하였다.<br /><br />* 규격 - 좌대면적 5.3㎡, 좌대높이 1.2m, 동상높이 0.8m<br />* 건립자 - 조각가 이순석(1973.10.20 건립)<br>','02-2125-0848',null,'연중무휴',null,null,null,null,null,'있음','없음','불가','입 장 료:무료
 화장실:공원 내 화장실 이용 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('존비코올터장군상','04991','서울특별시 광진구 능동로 216(능동) 서울어린이대공원 내','6.25전쟁에서 위기일발의 포항전투에서 미 제8군 부사령관으로 북한의 침입을 막아내고 전쟁이 끝난 후 초토화된 우리나라의 재건에 힘쓴 공로로 1959년 10월 이태원에 동상을 건립했다. 이후 1977년 어린이대공원(후문에서 아차산역 방면 위치)으로 이전하였다.<br /><br />* 규격 - 좌대높이 3.6m, 기념물높이 3m<br />* 건립자 - 국방부(6.25연합군 참전기념)<br>','1577-0606',null,'연중무휴',null,null,null,null,'05:00~22:00<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('존비코올터장군상','04991','서울특별시 광진구 능동로 216(능동) 서울어린이대공원 내',38,127,'6.25전쟁에서 위기일발의 포항전투에서 미 제8군 부사령관으로 북한의 침입을 막아내고 전쟁이 끝난 후 초토화된 우리나라의 재건에 힘쓴 공로로 1959년 10월 이태원에 동상을 건립했다. 이후 1977년 어린이대공원(후문에서 아차산역 방면 위치)으로 이전하였다.<br /><br />* 규격 - 좌대높이 3.6m, 기념물높이 3m<br />* 건립자 - 국방부(6.25연합군 참전기념)<br>','1577-0606',null,'연중무휴',null,null,null,null,'05:00~22:00<br />
 ※ 계절 및 날씨 등에 따라 변경 가능','있음<br />
 ※ 운영시간 09:00~22:00','가능','불가','입 장 료:무료
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('해공신익희선생동상','05340','서울특별시 강동구 천호3동 448-49호 (천호동 마을마당 내)','독립운동가로 우리 민족의 자주독립과 민주주의 발전을 위해 헌신한 해공 신익희 선생의 공적을 기려 강동구청 주관으로 천호동에 동상을 건립하였다. 해공 신익희선생은 1894년 경기 광주 출신으로 1910년 한성관립외국어학교 졸업 후, 1912년 일본 와세다대학 정경학부에 입학하여 유학생 통합단체인 학우회를 조직하고 기관지 학지광을 발간하며 민족정신과 독립사상을 고취하였다. 1913년 귀국하여 고향에 동명강습소를 열어 신문화와 개화 사상을 보급하였으며, 1919년 독립선언문을 배포하며 만세시위를 주도하였다. 그 해 일경의 체포령을 피해 상해로 망명, 임시정부 수립에 참여하여 내무차장, 국무원비서장, 외무총장 서리, 내무부장 등을 역임하시고 조국의 광복을 맞아 귀국하였다. 귀국 후 민주당 최고위원 및 국회의장을 역임하고 1956년 민주당 대통령 후보로 민주주의 실현을 위해 혼신의 힘을 기울이다 유세가던 중 열차에서 뇌내출혈로 서거하였다.<br /><br />* 규격 - 동상 높이 2.5m, 좌대 높이 1.5m<br />* 건립자 - 강동구청(2001.05.03.. 건립)<br>','02-2125-0848',null,'연중무휴',null,null,null,null,null,null,'없음','가능','입 장 료:
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('해공신익희선생동상','05340','서울특별시 강동구 천호3동 448-49호 (천호동 마을마당 내)',38,127,'독립운동가로 우리 민족의 자주독립과 민주주의 발전을 위해 헌신한 해공 신익희 선생의 공적을 기려 강동구청 주관으로 천호동에 동상을 건립하였다. 해공 신익희선생은 1894년 경기 광주 출신으로 1910년 한성관립외국어학교 졸업 후, 1912년 일본 와세다대학 정경학부에 입학하여 유학생 통합단체인 학우회를 조직하고 기관지 학지광을 발간하며 민족정신과 독립사상을 고취하였다. 1913년 귀국하여 고향에 동명강습소를 열어 신문화와 개화 사상을 보급하였으며, 1919년 독립선언문을 배포하며 만세시위를 주도하였다. 그 해 일경의 체포령을 피해 상해로 망명, 임시정부 수립에 참여하여 내무차장, 국무원비서장, 외무총장 서리, 내무부장 등을 역임하시고 조국의 광복을 맞아 귀국하였다. 귀국 후 민주당 최고위원 및 국회의장을 역임하고 1956년 민주당 대통령 후보로 민주주의 실현을 위해 혼신의 힘을 기울이다 유세가던 중 열차에서 뇌내출혈로 서거하였다.<br /><br />* 규격 - 동상 높이 2.5m, 좌대 높이 1.5m<br />* 건립자 - 강동구청(2001.05.03.. 건립)<br>','02-2125-0848',null,'연중무휴',null,null,null,null,null,null,'없음','가능','입 장 료:
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('해병대104고지전적비','03707','서울특별시 서대문구 성산로13길 35-1(연희동) 부근','6.25 전쟁 당시 낙동강 전선까지 밀려 내려갔던 국군과 연합군이 인천상륙작전 성공 후, 북한군은 서울 사수의 최후 방어선으로 연희동 104고지 일대를 완전히 요새화하여 강력하게 방어하였다. 이에 한강을 도하한 한국 해병대가 1950년 9월 21일 공격을 감행하여 치열한 백병전 끝에 적을 격퇴시키고 104고지를 탈환함으로써 중앙청에 태극기를 게양하였으며 이는 수도 서울 탈환에 결정적으로 기여하였다. 이곳 격전지에서 3일 주ㆍ야간의 끝없는 혈전으로 1개 중대 중 26명만이 생존하는 처절한 혈전 끝에 이 고지를 탈환하였다. 수도 서울 탈환 작전에서 장렬히 산화한 젊은 해병대원들의 명복을 길이 추모하기 위해 서대문구 연희동 궁동산의 끝자락에 이 비를 건립하였다.<br /><br />* 규격 - 비높이 8m<br />* 건립자 - 해병대 사령부(1982.09.28. 건립)<br>','1577-0606',null,null,null,null,null,null,null,null,'없음','없음','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('해병대104고지전적비','03707','서울특별시 서대문구 성산로13길 35-1(연희동) 부근',38,127,'6.25 전쟁 당시 낙동강 전선까지 밀려 내려갔던 국군과 연합군이 인천상륙작전 성공 후, 북한군은 서울 사수의 최후 방어선으로 연희동 104고지 일대를 완전히 요새화하여 강력하게 방어하였다. 이에 한강을 도하한 한국 해병대가 1950년 9월 21일 공격을 감행하여 치열한 백병전 끝에 적을 격퇴시키고 104고지를 탈환함으로써 중앙청에 태극기를 게양하였으며 이는 수도 서울 탈환에 결정적으로 기여하였다. 이곳 격전지에서 3일 주ㆍ야간의 끝없는 혈전으로 1개 중대 중 26명만이 생존하는 처절한 혈전 끝에 이 고지를 탈환하였다. 수도 서울 탈환 작전에서 장렬히 산화한 젊은 해병대원들의 명복을 길이 추모하기 위해 서대문구 연희동 궁동산의 끝자락에 이 비를 건립하였다.<br /><br />* 규격 - 비높이 8m<br />* 건립자 - 해병대 사령부(1982.09.28. 건립)<br>','1577-0606',null,null,null,null,null,null,null,null,'없음','없음','입 장 료:무료
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('호국충혼위령비','07504','서울특별시 강서구 개화동로13길 56-33(개화동)','1950년 6월 25일 북한군의 무력남침으로 조국의 운명이 풍전등화의 위기에 처하자 육군 제1사단 11, 12, 15연대 소속 장병 1,100여 명은 김포지구로 후퇴하여 6월 26일부터 30일까지 개화산에 최후의 방어진을 치고 아군으로 위장한 적의 대병력을 맞아 전투를 벌였다. 그러나 안타깝게도 본부와 통신이 두절되고 탄약과 보급이 끊긴 채 북한군의 수와 화력에 밀려 부대원 전원이 개화산 골짜기에서 장렬이 산화하는 비운을 맞이하였다. 조국과 민족을 위해 목숨을 바친 이들의 넋을 위로하기 위해 1994년 개화산에 위령비를 건립하고 매년 6월 28일 이 곳에서 위령제를 지내고 있다.<br /><br />* 규격 - 비높이 4.7m<br />* 건립주체자 - 육군제1사단, 미타사<br>','02-2125-0848',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강남 시티투어 (트롤리버스)','06001','서울특별시 강남구 압구정로 161','강남의 주요 관광명소를 순환하는 셔틀버스로, 2016년 5월부터 세빛섬 정거장에서 강북을 여행하는 서울시티투어버스로 환승이 가능하도록 통합 운영 중이다.<br>','02-777-6090',null,null,null,null,null,null,null,null,'없음','없음','관광코스안내:
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('호국충혼위령비','07504','서울특별시 강서구 개화동로13길 56-33(개화동)',38,127,'1950년 6월 25일 북한군의 무력남침으로 조국의 운명이 풍전등화의 위기에 처하자 육군 제1사단 11, 12, 15연대 소속 장병 1,100여 명은 김포지구로 후퇴하여 6월 26일부터 30일까지 개화산에 최후의 방어진을 치고 아군으로 위장한 적의 대병력을 맞아 전투를 벌였다. 그러나 안타깝게도 본부와 통신이 두절되고 탄약과 보급이 끊긴 채 북한군의 수와 화력에 밀려 부대원 전원이 개화산 골짜기에서 장렬이 산화하는 비운을 맞이하였다. 조국과 민족을 위해 목숨을 바친 이들의 넋을 위로하기 위해 1994년 개화산에 위령비를 건립하고 매년 6월 28일 이 곳에서 위령제를 지내고 있다.<br /><br />* 규격 - 비높이 4.7m<br />* 건립주체자 - 육군제1사단, 미타사<br>','02-2125-0848',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강남 시티투어 (트롤리버스)','06001','서울특별시 강남구 압구정로 161',38,127,'강남의 주요 관광명소를 순환하는 셔틀버스로, 2016년 5월부터 세빛섬 정거장에서 강북을 여행하는 서울시티투어버스로 환승이 가능하도록 통합 운영 중이다.<br>','02-777-6090',null,null,null,null,null,null,null,null,'없음','없음','관광코스안내:
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오미요리연구소','02479','서울특별시 동대문구 고산자로46길 22-1','오미요리연구소에서는 약령시장과 경동시장에서 구입한 제철 식재료를 이용해 한식을 만들어 볼 수 있는 곳이다.2014team_insert;관광공사team_insert;관광벤처 공모전 장려상수상, 2016 관광벤처로 선정된 바 있다. 한국의 가정식, 디저트, 분식부터 채식이나, 김치까지 다양한 음식을 배워볼 수 있다. 계절에 따라 신선한 계절 식재료를 사용하기 때문에 상세한 메뉴는 매일 다르게 운영하고 있으며, 외국인 관광객들이 주로 찾고 있어 한국어 뿐만 아니라 중국어와 영어로도 수업이 진행된다. 일반 수업은 4명이 정원이며, 더 많은 인원이 참가하길 희망하는 경우에는 사전에 협의가 필요하다. 수업 예약은 이메일로 가능하다.<br>','010-5060-5250',null,null,null,'전 연령 가능','일반 수업은 4명 정원 (정원 초과의 경우 사전 협의)',null,'월~토 10:00 ~ 17:00','없음(인근주차자이용)','없음','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('초안산','01874','서울특별시 노원구 월계동, 도봉구 창동','도봉구 창동과 노원구 월계동에 걸쳐 자리한 초안산은 겉으로 보기에는 집 근처 동산처럼 보이지만 그 안에 들어서면 제법 우거진 수풀 사이로 여러 갈래의 길이 이어진다. 초안산 곳곳에 산재해 있는 조선시대 사대부ㆍ내시들의 묘를 살펴보며 ''역사 공부''까지 더할 수 있다.','노원구청 공원여가과 02-2116-0545',null,null,null,null,null,null,null,'없음','없음','없음','입산통제 기간:[봄가을철 산불조심기간] <br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오미요리연구소','02479','서울특별시 동대문구 고산자로46길 22-1',38,127,'오미요리연구소에서는 약령시장과 경동시장에서 구입한 제철 식재료를 이용해 한식을 만들어 볼 수 있는 곳이다.2014;관광공사team_insert;관광벤처 공모전 장려상수상, 2016 관광벤처로 선정된 바 있다. 한국의 가정식, 디저트, 분식부터 채식이나, 김치까지 다양한 음식을 배워볼 수 있다. 계절에 따라 신선한 계절 식재료를 사용하기 때문에 상세한 메뉴는 매일 다르게 운영하고 있으며, 외국인 관광객들이 주로 찾고 있어 한국어 뿐만 아니라 중국어와 영어로도 수업이 진행된다. 일반 수업은 4명이 정원이며, 더 많은 인원이 참가하길 희망하는 경우에는 사전에 협의가 필요하다. 수업 예약은 이메일로 가능하다.<br>','010-5060-5250',null,null,null,'전 연령 가능','일반 수업은 4명 정원 (정원 초과의 경우 사전 협의)',null,'월~토 10:00 ~ 17:00','없음(인근주차자이용)','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('초안산','01874','서울특별시 노원구 월계동, 도봉구 창동',38,127,'도봉구 창동과 노원구 월계동에 걸쳐 자리한 초안산은 겉으로 보기에는 집 근처 동산처럼 보이지만 그 안에 들어서면 제법 우거진 수풀 사이로 여러 갈래의 길이 이어진다. 초안산 곳곳에 산재해 있는 조선시대 사대부ㆍ내시들의 묘를 살펴보며 ''역사 공부''까지 더할 수 있다.','노원구청 공원여가과 02-2116-0545',null,null,null,null,null,null,null,'없음','없음','없음','입산통제 기간:[봄가을철 산불조심기간] <br />
 (산불예방을 위해 한시적으로 등산로 구간통제)<br />
 봄철 3월 2일 ~ 4월 30일 <br />
 가을철 11월 1일 ~ 12월 15일<br />
@@ -431,21 +459,93 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 화장실:없음
 입 장 료:없음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마포전차종점 3·1운동 만세 시위지','04175','서울특별시 마포구 마포대로 20(마포동)','1919년 3월 1일 오후 8시경 약 1천명의 군중이 모여 독립 만세시위를 벌인 장소로 현재는 불교방송국이 있는 다보빌딩이 자리하고 있다. 만세시위지임을 알리는 표지석이 건물 앞 화단에 설치되어 있다.<br>','02-3153-8372',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구암서원 터(구암정)','05205','서울특별시 강동구 암사동','백제 불교의 효시인 백중사가 있던 자리이다. 지방에서 먼길을 달려온 사람들이 강일I.C에서 나와 올림픽 대로상에서 정자를 마주하며 한강의 아름다움을 느낄 수 있는 곳이다. 강동구 암사동에 위치한 구암서원은 조선 중기 현종8년(1667)에 건립된 구천면 최초의 사원이다. 이 지역의 유생들은 여기에서 유교적인 학식과 교양을 쌓아 과거에 응시하여 관료로 입신 할 수 있었다. 여기에서 배출된 구천면 유생들은 둔촌 이 집(李集)을 향사하고 숙종 때 구암서원이라는 사액을 받았으며, 이집(1314~1387)·이양중·어윤겸(1559~1625) · 임숙영(1576~1623) · 정선근(?~1504) 등이 배향되고 노론의 색목이 강하였다. 유생들은 구암서원 건립을 중심으로 하여 향약을 조직, 유교적 마을 공동체를 조직하였다.하지만 구암서원은 1871년 고종 때 전국의 서원철폐와 함께 사라지고, 1898년 이를 기념하기 위한 유허비가 남아 있을 뿐이다. 원래 구암서원은 삼국시대 바위절터 위에 조성된 것이며, 오늘날 구암정을 건립하여 이를 기념하고 있다.<br>','02-3425-5252',null,null,null,null,null,null,null,null,'불가','가능',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('독립문','03732','서울특별시 서대문구 통일로 251(현저동)','1898년 1월 자주독립의 상징물 건립을 위하여 독립협회의 주관으로 이루어졌으며,기금은 협회가 모금한 돈으로 충당되었다. 중국 사신을 맞이했던 영은문 자리에 한국인 기사 심의석에 의해 중국인 노동자를 고용하여 구축한 최초의 서양식 건물이다.높이 14.28m, 넓이 11.48m로 프랑스 개선문을  모방하여 만든 건축물이다. 1979년 성산대로 건설에 따라 현재의 위치로 이전하게 되었다. 이 독립문은 조선 말기 독립협회의 대표적인 사업 중 하나였지만, 일본이나 외세로부터의 독립을 의미하기보다 주로 중국으로부터의 자주독립을 강조하는 상징물이었다.','02-120',null,'연중무휴',null,null,null,null,'상시개방','있음','없음','불가','이용가능시설:쉼터, 체육시설, 음수대, 매점 등
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마포전차종점 3·1운동 만세 시위지','04175','서울특별시 마포구 마포대로 20(마포동)',38,127,'1919년 3월 1일 오후 8시경 약 1천명의 군중이 모여 독립 만세시위를 벌인 장소로 현재는 불교방송국이 있는 다보빌딩이 자리하고 있다. 만세시위지임을 알리는 표지석이 건물 앞 화단에 설치되어 있다.<br>','02-3153-8372',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('라온트래블스토리지','04051','서울특별시 마포구 양화로 지하 188',38,127,'홍대입구역 공항철도 7번출구 지하 2층에 위치한 라온보관소(RAON BAGGAGE STORAGE)는 여행객들을 위한 짐보관소이다. 홍대를 방문하는 외국인 관광객들과 내국인들에게 보다 간편하게 물건을 맡기고, 양손 가볍게 마음편히 홍대 및 서울을 방문할 수 있도록 짐보관 서비스를 제공한다. 저렴한 가격으로 하루종일 자유롭게 여행을 즐길수 있을 뿐만 아니라, 장기보관도 가능하고 외국인과의 소통을 위해 항시 외국어가 가능한 스텝이 상주하여 손님들이 편하게 이용할 수 있도록 노력하고 있다.','라온보관소 070-8884-1251','2014년 12월','명절 당일',null,null,null,null,'일-목요일 09:30 - 21:30 <br />
+금-토요일 09:30 - 23:30',null,'없음','가능','시설이용료:<strong>team_insert;물품 보관team_insert;</strong><br>
+ 소형 : 4,000원(1~7일) / 25,000원(8~15일) / 35,000원(16일~한달) <br>
+ 중형 : 6,000원(1~7일) / 35,000원(8~15일) / 50,000원(16일~한달)<br>
+ 대형 : 8,000원(1~7일) / 45,000원(8~15일) / 65,000원(16일~한달)<br>
+ <strong><br>
+team_insert;공항배송서비스team_insert;</strong><br>
+ 20,000원(28인치 이하) / 30,000원(28인치 초과)<br>
+<br>
+<strong>team_insert;수화물 배송서비스team_insert;</strong><br>
+라온↔호텔/숙소 : 14,000원<br>
+<strong> </strong>라온↔라온 : 10,000원<br>
+ <strong><br>
+team_insert;부가서비스team_insert;</strong><br>
+유심판매 : 아시아 21,000원 / 유럽통합권 35,000원 / 태국 12,000원<br>
+엽서 : 1,000원<br>
+우표 : 500원<br>
+국제택배 : 사이즈와 무게에 따라 5,000원부터 책정<br>
+내국인 예약안내:예약없이 이용 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강변스파랜드','05049','서울특별시 광진구 구의강변로 45(구의동)',38,127,'강변스파랜드는 9917.4m²(3,000평) 규모의 지하 1,200m 게르마늄 탄산 암반유황천의 재래식 불한증막 및 사우나로 한국 최초, 최고의 발맛사지탕을 무료로 이용할 수 있으며, 한차원 높은 문화공간 체험이 가능한 곳이다. 후불제 정산시스템을 도입하여 락커키로 편리하게 시설들을 사용할 수 있으며, 지하 2층은 사우나, 지하 1층은 공용 찜질방이다. 세련된 인테리어와 유황 성분이 함유된 사우나 물은 매끄럽고 피부에도 좋다고 한다. 재래식 소나무장작 불한증막, 넓은 남.녀 공용홀을 비롯하여 숯방, 소금방, 은피라미드방, 황토불가마 등 다양한 찜질방과 야외 공기와 연결되는 발맛사지탕과 이글루체험방, 옥냉방 그외 휴식공간으로 산소방, 생잣나무방, 황토토굴방이 있으며 스넥코너, 아이스크림코너,한식당, 분식당, 헬스장, 에어로빅실, 영화방, 만화대여점(보드게임대여점, 어린이방), 매점, 스포츠마사지, 네일아트, 피부관리실, 좌욕실 등 각종 편의시설이 구비되어 있다.<br>','02-455-3737',null,'연중무휴',null,null,null,null,'24시간<br />
+주간 : 05:00~20:00 / 야간 20:00~05:00','주차 가능','불가','불가','이용가능시설:* 불가마 - 숯방, 소금방, 황토불가마, 은피라미드방<br />
+* 냉방 - 이글루체험방, 옥냉방<br />
+* 휴식공간 - 청정산소방, 생잣나무방, 황토토굴방, 숙면실<br />
+* 문화공간 - 영화감상실, PC방, 만화방, 보드게임방<br />
+* 운동공간 - 에어로빅, 요가실, 헬스장<br />
+* 먹거리 - 한식당, 분식당, 커피숍, 스넥코너<br />
+* 어린이 공간 - 놀이방, 어린이 게임방<br />
+* 미용공간 - 네일아트, 스포츠맛사지, 피부관리실<br />
+* 모임공간 - 다양한 크기의 모임방  
+입 장 료:주간 : 대인 12,000원 / 소인(7세이하) 8,000원<br />
+야간 : 대인 14,000원 / 소인(7세이하) 10,000원<br />
+찜질복대여 : 2,000원
+주차요금:05시 ~ 20시 입차  :  5시간 무료
+20시 ~ 05시 입차  :  익일 오전 8시까지 무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산','04948','서울특별시 광진구 영화사로 135',38,127,'서울과 구리시에 걸쳐 있는 아차산은 한강과 어우러진 도시 풍경을 즐길 수 있는 명소로, 40분 정도의 등산로를 오르면 정상에서 보이는 잠실부터 남산, 북한산과 도봉산까지 360도 파노라마 영상처럼 펼쳐진 장관이 특징이다. 또한 해발 295.7m의 야트막한 산으로 산세가 험하지 않아 구리와 인근 시민들이 가벼운 산행을 위해 자주 찾는 곳이다. 조선 시대에는 지금의 봉화산을 포함하여 망우리 공동묘지 지역과 용마봉 등의 광범위한 지역 모두 아차산으로 불렸던 것으로 추정된다. 삼국시대, 백제의 도읍이 한강 유역에 있을 때 우뚝 솟은 지형적 특성으로 인해 일찍부터 이 아차산에 흙을 깎고 다시 돌과 흙으로 쌓아 올려 산성을 축조함으로써 고구려의 남하를 막으려는 백제인의 노력이 있었다. 한강을 사이에 두고 맞은 편 남쪽에 있는 풍납동 토성과 함께 중요한 군사적 요지로서 백제의 운명을 좌우하던 곳이기도 하다. 아단성(阿旦城), 아차성(阿且城), 장하성, 광장성 등으로 불리우기도 하여 백제, 신라, 고구려가 한강을 중심으로 공방전을 장기간에 걸쳐 벌였던 것을 짐작할 수 있다.','02-450-1395',null,null,null,null,null,null,'24시간 개방','있음 (문의 02-455-5288)','불가','가능','등산로:[등산코스] <br />
+1코스 : 아차산생태공원-소나무숲-아차산길-낙타고개-친수계곡-아차산관리사무소-만남의광장 (약 1시간 30분 소요) <br />
+2코스 : 만남의 광장-소나무숲-낙타고개-고구려정-해맞이광장-아차산정상-대성암-낙타고개-친수계곡-만남의광장 <br />
+3코스 : 만남의 광장-아차산관리사무소-신추계곡-고구려정-아차산 정산-용마산 정상-뻥튀기골 입구 (약2시간30분소요) <br />
+관광코스안내:[이야기가 있는 문화생태탐방로 - 아차산 고구려 역사길]<br />
+* 1코스 / 아차산 고구려 역사길(7.8km, 3시간 40분) <br />
+광나루역-아차산 입구(만남의 광장)-홍련봉 1/2보루-고구려정-해맞이광장-아차산1보루-아차산5보루-아차산3보루-아차산4보루-아차산2보루-대성암-낙타고개-아차산성-아차산생태공원,아차산고구려역사문화홍보관-워커힐길-워커힐 피자힐-상부암석불입상-광나루터(광나루 낭만의 거리)-광진교(리버뷰 8번가)-한강자전거공원<br />
+* 2코스 / 토성산성 어울길 연계코스(5.5km, 3시간) <br />
+한강자전거공원-풍납토성-한강둔치길-성내천입구-몽촌토성(올림픽공원)-(토성산성 어울길과 연결-남한산성)
+입 장 료:무료
+화장실:있음 (공원 입구) 
+주차요금:10분에 300원
+이용가능시설:생태공원(자생식물원, 나비정원, 습지원), 만남의 광장(420평), 황톳길 및 지압보도(550m), 소나무숲, 약수터, 생태공원 사무실 및 생태자료실(21평), 생태관찰로 및 자생관찰로, 파고라, 관상용 논 및 재배용 밭 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청담패션거리','06015','서울특별시 강남구 청담동일대',38,127,'청담역 사거리에서 갤러리아 백화점에 이르는 대로변에는 명품 브랜드 매장이 밀집되어 있다. 패셔니스타들의 주요 쇼핑 장소인 이름하여 청담동 명품 거리. 국내 유일의 패션특구로 최근 청담 패션 거리라는 공식 명칭을 갖게 되었다. 한류 열풍에 힘입어 일본 관광객들의 관광 코스로도 각광받고 있다. 대로의 안쪽 골목으로는 유명 레스토랑도 몰려 있다. 근래에는 편집 매장과 갤러리들이 대거 들어서면서 쇼핑과 문화를 동시에 즐길 수 있는 공간으로 사랑받고 있다.<br>','02-3445-0111',null,'매장별로 다름',null,null,null,null,'상시이용가능',null,'없음','없음','입 장 료:없음
+이용가능시설:의류매장, 백화점, 음식점 등
+외국어 안내서비스:관광안내전화 02-1330 (한,영,일,중) <br />
+강남관광정보센터 02-3445-0111
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('광진교 8번가','05250','서울특별시 강동구 구천면로 77(천호동)',38,127,'광진교의 상판 아래 8번째 교각에 위치해 있는 광진교 8번가는 최고의 절경에서 공연과 전시라는 소재를 통해 다양한 문화컨텐츠를 만들어 시민들의 문화 감성을 충전하고 편안한 휴식을 즐기기위한 시민 문화공간이다.광진교 8번가에 들어서면 반은 간단한 공연을 관람할 수 있는 공연장이 있고, 반은 한강의 100년을 주제로 한 사진이 전시된 홀과 한강르네상스의 계획과 진행과정을 볼 수 있는 한강르네상스 홍보관이 위치해 있다. 유리벽 외부에는 시원한 바람을 맞으며 한강의 뷰를 전망할 수 있도록 전망대길이 마련되어 있다.광진교 아래 한강공원 광나루지구에는 자전거 공원 등 이 있어 광진교를 포함한 그 지역 자체가 하나의 쉼터를 제공한다.','02-476-0722',null,'월요일',null,null,'공연 1회 60명',null,'4월~10월 12:00 ~ 22:00',null,'없음','불가','화장실:있음
+이용가능시설:공연장
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대모산공원','06359','서울특별시 강남구 광평로10길 30-71(일원동)',37,127,'국수봉이라고도 불렸던 높이 293m의 나지막한 산으로 산 모양이 늙은 할미와 같다 하여 할미산으로 불리다가 태종의 천릉을 모신 후 어명으로 대모산으로 고쳤다고 한다. 예부터 전해 내려오는 구천에 의하면 산 모양이 여승이 앉은 모습과 같다고 하는 설과 여자의 앞가슴 모양과 같다 하여 대모산이라는 설이 있으며 이산에는 불국사(약사절)를 비롯하여 수질 좋은 약수터가 있고 산 입구에는 각종 희귀나무로 가꾸어진 자연 학습장이 있어 학생들의 야외 교육장 및 주민들의 산책로로 사랑받고 있다.
+
+(출처 : 서울의 공원 홈페이지)','02-3423-6283','1989년 11월 23일','연중개방',null,null,null,null,'00:00~24:00','주차 가능','없음','없음','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('능인선원','06357','서울특별시 강남구 양재대로 340(개포동)',37,127,'능인선원은 부처님의 가르침인 지혜와 자비를 바탕으로 불자 양성과 포교 및 사회복지 증진을 위한 수행도량으로 설립되었다. 불교 포교와 공부하는 불자 양성으로 일관해 온 능인선원은 이제 대한민국 최고의 포교사찰이 되었다. ''능인(能仁)''이란 ''능히 남을교화하여 이롭게 하는 이'' 라는 뜻을 지닌 석가모니 부처님의 다른 이름이다. 능인선원은 생활 불교를 선언하여 기도의 생활화, 지역법회의 활성화 및 각종 봉사활동을 통해 한국 불교를 현대화하는데 기여하였다. 또한 체계적인 불교 교육을 통해 불교의 과학성과 우수성을 널리 펼쳐 우수한 불자를 양성함으로써 불법 중흥에 이바지하고 있다.','02-577-5800',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('3.1독립선언기념탑','03732','서울특별시 서대문구 통일로 251',38,127,'1919년 3월 1일 오후 2시 손병희 등 민족대표들은 태화관에서 독립선언식을 거행하고 독립만세를 삼창함으로써 거족적인 3.1독립만세운동의 불을 지폈다.3.1독립선언기념탑은 이날의 숭고한 자주독립정신을 기리기 위하여 1963년 8월 15일에 당시 재건국민운동본부 주관으로 온 국민의 성금을 모금하여 3.1독립만세운동의 현장이었던 탑골공원에 건립되었다. 그러나 1979년 탑골공원의 정비사업으로 철거되어 12년간 방치되었다가 각 계에서 복원의 목소리가 높아지자 1992년에 항일 독립운동의 터전인 서대문 독립공원으로 옮겨 세우게 되었다. 탑의 높이는 4.2m이며 탑 뒤에는 3.1독립선언문과 손병희 등 독립만세운동을 주도한 민족대표 33인의 이름이 판각되어 있다.<br>','1577-0606',null,'연중개방',null,null,null,null,'상시 개방','있음','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고당조만식선생동상','04991','서울특별시 광진구 능동로 216(능동) 서울어린이대공원 내',38,127,'조선의 간디라 불리는 비폭력 무저항주의를 실천한 사상가이자 독립운동가인 조만식 선생의 업적을 기리기 위하여 건립되었으며 어린이대공원 내(동문과 후문 사이 위치)에 있다. 평남 강서 출신으로 오산학교에서 민족교육에 힘쓰다 교장직을 사임하고, 1919년 3.1운동을 주도하다 1년간 옥고를 치루었다.  이후 1920년 조선 물산장려운동회를 조직하여 사회운동을 전개하였으며, 조선 민립대학 설립 운동에 적극 참여하여 인재양성에 힘쓰고, 1932년에는 조선일보사 사장으로 취임하여 언론창달 및 민족계몽에 앞장섰다. 선생은 좌우파가 하나가 되는 신간회가 결성되도록 애썼으며, 광복 후 반탁운동과 민족자주 독립운동의 지도자로서 활동하다가 소련군에 의해 연행된 이후 공개적인 장소에서 선생의 모습을 다시는 볼 수 없게 되었다.<br /><br />* 규격 - 좌대면적 13.32㎡, 좌대높이 3.3m, 동상높이 3m<br />* 건립자 - 고당조만식선생기념사업회(1976.12.07. 건립)<br>','1577-0606',null,'연중무휴',null,null,null,null,'05:00~22:00<br />
+※ 계절 및 날씨 등에 따라 변경 가능','있음<br />
+※ 운영시간 09:00~22:00<br /> 
+※ 문의 : 02-444-3056','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고하송진우선생동상','04991','서울특별시 광진구 능동로 216(능동) 서울어린이대공원 내',38,127,'독립운동가, 교육자, 언론인, 정치가이자 민족지도자로 활동한 고하 송진우 선생을 추모하기 위해 건립되었으며 서울어린이대공원 내(정문과 서문 사이 위치)에 있다.고하 선생은 3.1운동을 배후 주동하여 옥고를 치루었고 1921년 동아일보 사장 취임 후 20여년 간 신문을 통하여 일제 암흑기에 국내 독립운동을 주도하고 민족 민주 민생 민문주의를 구국의 기본사상으로 삼아 언론 교육 산업 문화활동을 통하여 독립을 위한 민족의 힘과 얼을 고취하였다.해방 직전 일제의 정권 인수제의를 거절하였고 광복 후 한국민주당을 창당하여 동아일보 사장으로서 민주건국과 신탁통치 반대에 진력하던 중 한현우 등의 총탄에 서울 원서동 자택에서 서거하였다.<br /><br />* 규격 - 좌대면적 9㎡, 좌대높이 3.9m, 동상높이 3.6m<br />* 건립자 - 송진우선생동상건립위원회(1983.09.23. 건립)<br>','1577-0606',null,null,null,null,null,null,'05:00~22:00<br />
+※ 계절 및 날씨 등에 따라 변경 가능','05:00~22:00<br />
+※ 계절 및 날씨 등에 따라 변경 가능','없음','불가','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구암서원 터(구암정)','05205','서울특별시 강동구 암사동',38,127,'백제 불교의 효시인 백중사가 있던 자리이다. 지방에서 먼길을 달려온 사람들이 강일I.C에서 나와 올림픽 대로상에서 정자를 마주하며 한강의 아름다움을 느낄 수 있는 곳이다. 강동구 암사동에 위치한 구암서원은 조선 중기 현종8년(1667)에 건립된 구천면 최초의 사원이다. 이 지역의 유생들은 여기에서 유교적인 학식과 교양을 쌓아 과거에 응시하여 관료로 입신 할 수 있었다. 여기에서 배출된 구천면 유생들은 둔촌 이 집(李集)을 향사하고 숙종 때 구암서원이라는 사액을 받았으며, 이집(1314~1387)·이양중·어윤겸(1559~1625) · 임숙영(1576~1623) · 정선근(?~1504) 등이 배향되고 노론의 색목이 강하였다. 유생들은 구암서원 건립을 중심으로 하여 향약을 조직, 유교적 마을 공동체를 조직하였다.하지만 구암서원은 1871년 고종 때 전국의 서원철폐와 함께 사라지고, 1898년 이를 기념하기 위한 유허비가 남아 있을 뿐이다. 원래 구암서원은 삼국시대 바위절터 위에 조성된 것이며, 오늘날 구암정을 건립하여 이를 기념하고 있다.<br>','02-3425-5252',null,null,null,null,null,null,null,null,'불가','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('독립문','03732','서울특별시 서대문구 통일로 251(현저동)',38,127,'1898년 1월 자주독립의 상징물 건립을 위하여 독립협회의 주관으로 이루어졌으며,기금은 협회가 모금한 돈으로 충당되었다. 중국 사신을 맞이했던 영은문 자리에 한국인 기사 심의석에 의해 중국인 노동자를 고용하여 구축한 최초의 서양식 건물이다.높이 14.28m, 넓이 11.48m로 프랑스 개선문을  모방하여 만든 건축물이다. 1979년 성산대로 건설에 따라 현재의 위치로 이전하게 되었다. 이 독립문은 조선 말기 독립협회의 대표적인 사업 중 하나였지만, 일본이나 외세로부터의 독립을 의미하기보다 주로 중국으로부터의 자주독립을 강조하는 상징물이었다.','02-120',null,'연중무휴',null,null,null,null,'상시개방','있음','없음','불가','이용가능시설:쉼터, 체육시설, 음수대, 매점 등
 입 장 료:없음
 화장실:있음
 외국어 안내서비스:불가
 한국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('난지한강공원','03900','서울특별시 마포구 한강난지로 162','난지한강공원은 수변공간으로서의 공원기능은 물론 여가·레저 및 습지생태공원 기능을 골고루 갖추고 있는 공원이다. 공원의 상류부는 수변 활동 구역으로 캠핑장, 선착장, 수변 광장으로 조성하고, 중류부는 완충녹지 지역으로 다목적 초지광장, 잔디마당, 하류부는 기존 수목을 이용하여 습지생태공원을 이루고 있다. 홍제천교에서 난지천교 사이에 위치해 있는 난지한강공원은 길이 4.02㎞(약 776,000㎡)로 마포구 상암동에 위치하고 있다. 한강르네상스 사업으로 새롭게 조성된 난지한강공원은 노을공원, 하늘공원과 연결되는 중앙연결브릿지, 평화의 공원 연결브릿지, 복합연결통로가 완공되어 공원 이용시민들의 접근성과 편리성을 더하고 있다.<br />평화의 공원 연결브릿지 앞에 설치된 거울분수는 난지한강공원의 랜드마크로, 물을 뿜을 때마다 아름다운 풍경을 연출하여 일곱빛깔 무지개처럼 다양한 볼거리와 즐길거리를 제공하고 있으며, 여름철 이용할수 있는 강변물놀이장은 과거 강변에서 물놀이하던 추억을 되살리는 공간으로 어린아이를 동반한 온 가족이 함께 즐길수 있도록 조성되어있다. 또한 생태습지원에 보행연결브릿지가 설치되어 자연상태의 초지 및 식물군락 등 수변에 서식하는 동물을 관찰할수 있으며,주변에 야생탐사센터, 수변문화센터가 설치되어 있어 이곳을 찾는 어린이들이 자연과 더불어 마음껏 뛰어놀 수 있는 자연학습장으로 이용할 수 있다. 인근에는난지캠핑장이 조성되어 있어 바베큐를 즐기며 야영을 할 수 있어 더더욱 인기가 좋다.<br>','02-3780-0611~2',null,'연중무휴',null,null,null,null,null,'있음(4개소, 545대 주차 가능)','없음','가능','입 장 료:없음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('난지한강공원','03900','서울특별시 마포구 한강난지로 162',38,127,'난지한강공원은 수변공간으로서의 공원기능은 물론 여가·레저 및 습지생태공원 기능을 골고루 갖추고 있는 공원이다. 공원의 상류부는 수변 활동 구역으로 캠핑장, 선착장, 수변 광장으로 조성하고, 중류부는 완충녹지 지역으로 다목적 초지광장, 잔디마당, 하류부는 기존 수목을 이용하여 습지생태공원을 이루고 있다. 홍제천교에서 난지천교 사이에 위치해 있는 난지한강공원은 길이 4.02㎞(약 776,000㎡)로 마포구 상암동에 위치하고 있다. 한강르네상스 사업으로 새롭게 조성된 난지한강공원은 노을공원, 하늘공원과 연결되는 중앙연결브릿지, 평화의 공원 연결브릿지, 복합연결통로가 완공되어 공원 이용시민들의 접근성과 편리성을 더하고 있다.<br />평화의 공원 연결브릿지 앞에 설치된 거울분수는 난지한강공원의 랜드마크로, 물을 뿜을 때마다 아름다운 풍경을 연출하여 일곱빛깔 무지개처럼 다양한 볼거리와 즐길거리를 제공하고 있으며, 여름철 이용할수 있는 강변물놀이장은 과거 강변에서 물놀이하던 추억을 되살리는 공간으로 어린아이를 동반한 온 가족이 함께 즐길수 있도록 조성되어있다. 또한 생태습지원에 보행연결브릿지가 설치되어 자연상태의 초지 및 식물군락 등 수변에 서식하는 동물을 관찰할수 있으며,주변에 야생탐사센터, 수변문화센터가 설치되어 있어 이곳을 찾는 어린이들이 자연과 더불어 마음껏 뛰어놀 수 있는 자연학습장으로 이용할 수 있다. 인근에는난지캠핑장이 조성되어 있어 바베큐를 즐기며 야영을 할 수 있어 더더욱 인기가 좋다.<br>','02-3780-0611~2',null,'연중무휴',null,null,null,null,null,'있음(4개소, 545대 주차 가능)','없음','가능','입 장 료:없음
 이용가능시설:[운동시설] 야구장, 족구장, 풋살경기장, 농구장<br />
 [물놀이시설] 거울분수, 강변물놀이장, 물놀이장 음악분수 (7~8월 운영), 수상스키장, 요트장<br />
 [기타시설] 난지캠핑장, 자전거도로, 자전거대여점<br />
 [편의시설] 매점, 음수대, 그늘막, 자전거보관소 등
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보라매공원','07062','서울특별시 동작구 여의대방로20길 33','옛 공군사관학교 자리에 마련된 보라매공원은 시민위락공원으로, 1986년 5월에 문을 열었다.약 12만평의 대지에 테니스장, 체육센터 등의 체육 시설과 소동물원, 연못, 산책로 등의 편의시설이 갖추어져 있으며, 특히 2층 건물 4동에 학생들을 위한 독서실을 갖추어 청소년의 선도에 크게 도움을 주고 있다. 이외에 어린이를 위한 놀이시설도 있다. 청소년회관에서는 영화감상교실 등 다채로운 프로그램을 운영하고 있어, 청소년들에게 인기가 높다.공군사관학교 시절부터 자리를 지킨 상징탑이 지금도 남아 이 곳을 찾은 어린이들에게 충효사상을 고취시켜준다.<br>','02-2181-1114, 02-2181-1172~3','1986년 5월 5일','연중무휴',null,null,null,null,'24시간 개방','있음(서문주차장 86면 / 동문주차장 42면)','없음','가능','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보라매공원','07062','서울특별시 동작구 여의대방로20길 33',37,127,'옛 공군사관학교 자리에 마련된 보라매공원은 시민위락공원으로, 1986년 5월에 문을 열었다.약 12만평의 대지에 테니스장, 체육센터 등의 체육 시설과 소동물원, 연못, 산책로 등의 편의시설이 갖추어져 있으며, 특히 2층 건물 4동에 학생들을 위한 독서실을 갖추어 청소년의 선도에 크게 도움을 주고 있다. 이외에 어린이를 위한 놀이시설도 있다. 청소년회관에서는 영화감상교실 등 다채로운 프로그램을 운영하고 있어, 청소년들에게 인기가 높다.공군사관학교 시절부터 자리를 지킨 상징탑이 지금도 남아 이 곳을 찾은 어린이들에게 충효사상을 고취시켜준다.<br>','02-2181-1114, 02-2181-1172~3','1986년 5월 5일','연중무휴',null,null,null,null,'24시간 개방','있음(서문주차장 86면 / 동문주차장 42면)','없음','가능','화장실:있음
 입 장 료:무료
 주차요금:보라매근린공원 정문주차장 : 5분당 100원 / 09:00 ~ 22:00<br />
 보라매근린공원 동문주차장 : 5분당 100원 / 09:00 ~ 22:00
@@ -463,85 +563,149 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 <br />
 * 기타시설 : 관악노인종합복지관, 서울시지적장애인복지관, 서울시남부장애인복지관, 동작경찰서 지구대파견소 등
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 신림동 민속순대타운','08776','서울특별시 관악구 신림로59길 14(신림동)','신림동 순대타운의 역사는 1977년을 전, 후로 하여 신림동 시장 안에 순대볶음 요리가 등장하면서 시작됐다. 그리고 1992년 지금의 민속순대타운 건물에 시장에서 장사를 하던 사람들이 입주하면서 신림동 순대골목은 제 2의 시대를 맞이하게 되었다.  현재 민속순대타운에는 1, 2층이 같은 집이며 3층과 4층에 약 30개의 음식점이 영업을 하고 있다.1977년에는 순대 집이 두 집 밖에 없었다. 그리고 1979년 이후로 몇 집이 더 생겼고 점차 늘어나면서 1985년을 전, 후로 20집 남짓까지 늘어나면서 신림동 순대 골목이 형성되었다. 1970년대의 주된 단골  안주는 백순대였다. 다시 말해 신림동 순대볶음의 효시가 된 음식이 바로 ''백순대''였던 것이다.
-여기서 말하는 ''백순대''는 양념이 없이 깻잎이나 양파 등의 간단한 야채와 순대를 넣고 하얗게 볶았다. 연탄 불 위 네모난 무쇠철판은 지금은 사라진 추억이 되었다.또 양념볶음이 등장한 것은 1980년대 초반 부터이다. 그러나 지금의 양념볶음과 들어가는 재료가 달랐는데 당시에는 깻잎,양파, 당근 등 약간의 야채와 순대를 올리고 다른 양념을 넣지 않은 그냥 고추장으로 빨갛게 볶았으며 화력도 연탄 불에서 곤로로 바뀌는 시기가 이 때였다.그리고 민속순대타운 건물로 입주를 하기 시작한 1992년부터 지금에 이르기까지 민속순대타운에는 초창기 메뉴인 백순대가 다시 등장했음은 물론이고  양념순대까지 신림동 순대타운의 주 메뉴로 자리잡게 되었다. 또 양배추, 파, 마늘, 당근, 양파, 새송이버섯, 오징어, 쫄면, 가래떡 등 양념순대에 들어가는 재료 역시 더 많아졌다. 뿐만 아니라 백순대 전용 소스 역시 들깨, 참깨, 고추장, 참기름 등을 넣어 새롭게 선보였다. 서민들의 가벼운 주머니로도 마음을 넉넉하게 나눌 수 있는 곳이 바로 신림동 민속순대타운으로 30년을 넘긴 신림동 순대볶음의 역사는 서민들의 힘으로 계속될 것이다.',null,null,'연중무휴',null,null,null,null,'매장에 따라 다름','주차 가능(인근 주변 유료주차 / 1,500원(30분))','불가','불가','화장실:있음
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('백련사(서울)','03655','서울특별시 서대문구 백련사길 170-43','백련사는 신라 경덕왕 6년(747)에 진표율사가 창건하였다. 당시는 정토사라 하였는데 조선조 정종 원년에 백련사라 개칭하였다.조선 2대 임금인 정종이 왕위를 태종에게 물려주고 난 뒤에 요양차 이 곳에서 머무르기도 했다. 조선 임금 세조의 딸 의숙옹주가 20세에 남편을 잃고 비통함을 달래기 위해 돌아다니다가 여기서 해동묵(엄나무)을 보고 인생의 참뜻을 깨달았다고 한다. 그 후 의숙옹주의 원당으로 정하면서 이름을 백련사로 바꾸었다고 한다. 전설에 의하면 경복궁에서 볼 때 서쪽에 있어서 "서방정", "정토사"라고 하였는데 어느 여름날  연못에서 갑자기 하얀 연꽃이 피어올라  [백련사]라고 명칭을 바꾸었다고 전한다. 선조 때 임진왜란으로 소실되었으나 바로 재건하였고, 그 뒤로도 여러차례 중창을 거듭했다.','02-302-0288',null,null,null,null,null,null,null,null,'없음','불가','화장실:있음
-외국어 안내서비스:불가
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서대문독립공원','03732','서울특별시 서대문구 통일로 251(현저동)','독립공원은 1945년 8월 15일 광복이 될 때까지 수많은 애국지사와 1960년대 정치적 변동을 겪으면서 많은 시국사범들이 수감되었던 서울구치소가 있었던 곳이다. 서울구치소가 1987년 11월 경기도 의왕시로 옮겨감에 따라 감옥 7동, 사형장, 지하여자감옥 등을 복원하고, 탑골공원에서 3·1운동기념탑을 이전하였으며, 1992년 영은문 주초와 연계하여 1992년 8월 15일 독립공원으로 조성하였다. 독립협회에서 건립(1895년)한 독립문(사적)이 있으며 조선시대 중국사신들을 영접하던 독립관(당시는 모화관이라 하였음)을 복원(1996년)하여 그 내부에 순국선열위패 2,327위가 봉안되어 있고, 독립문 바로 앞에는 영은문주초(사적 제33호)가 자리하고 있다. 그 외 순국선열추념탑, 3·1독립선언기념탑, 서재필박사 동상 등이 있다. 또한 일제의 침략에 맞서 빼앗긴 나라를 되찾기 위해 독립운동을 하다 순국하신 애국지사들의 고귀한 넋을 기리고자 서대문구에서 서대문형무소역사관을 별도로 관리·운영하고 있다.<br><br>* 면적 : 113,021.7m2(34,180평)','서대문구 공원관리팀 02-3140-8305','1992년 8월 15일','연중무휴',null,null,null,null,'연중 개방','있음','없음','가능','화장실:있음
-이용가능시설:방문자센터(관리사무소 위치), 순국선열추념탑, 서재필선생동상, 독립관(순국선열 위패봉안소),3·1독립선언기념탑, 독립문, 형무소 역사관, 이진아기념도서관 
-입 장 료:무료
-외국어 안내서비스:불가
-한국어 안내서비스:불가
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼각산','01002','서울특별시 강북구 삼양로173길 460(탐방지원센터)','서울시 북쪽 외곽에 병풍을 친듯이 솟아 있는 삼각산은 우이동 종점에서 등정할 수 있다. 삼각산의 유래는 산의 최고봉인 백운대, 인수봉, 만경대(국망봉)의 높은 세 봉우리가 뿔처럼 높이 서 있어서 붙여진 이름이다. 세봉우리 중에서 가장 높은 백운대는 해발 836.5m로 정상에 오르면 사방이 탁 틔여서 전망이 무한히 넓고, 또 봉 위에는 많은 사람이 앉을 수 있는 넓은 암반이 있기도 하다. 동북쪽으로는 산맥이 서로 통하는 도봉산의 연봉이 줄을 이어 있고 아래로 강북, 도봉, 노원구가 한 눈에 내려다 보인다. 남쪽으로 눈을 돌리면 한강 건너 옆으로 뻗어나간 남한산을 바라볼 수 있고 서남쪽으로는 관악산이 눈에 들어온다.<br /><br />백운대 동쪽에 우뚝 솟은 인수봉도 온통 바위 하나가 하늘 높이 솟아 장관을 이루며, 동남쪽에 솟은 국망봉은 일명 만경대라고도 하는데, 이 국망봉의 봉명은 일찌기 이태조가 한양에 도읍을 정할때 왕사 무학이 영기에 올라가 새 나라의 도읍터를 바라 보고 정해서 국망이라는 봉명이 생겼다고 전해오기도 한다. 삼각산 일대의 지질기반은 중생대말에 관입한 화강암으로 구성되어 있다. 다른 지역에서는 보기 드문 담조색을 띠고 있는데 장구한 세월에 걸친 지반의 상승과 침식작용으로 지표에 노출되고 다시 그 절리와 표면에 생긴 풍화작용으로 오늘날과 같은 산모양이 된 것이다. 따라서 높이에 비해 산세가 험준하고 경사가 심하며 암벽으로 된 바위 봉우리들이 주축을 이루고 있다. 또한, 북한산 일대에는 옛 한성의 방어역할을 했던 북한산성이 있으며, 성의 둘레는 12.7km이고 성안의 면적은 6,611,600m² (약 200만 평)으로,1990년부터 훼손된 대남문, 대성문, 대동문, 보국문, 동장대의 성곽들을 일부 보수 복원하였다.<br>','02-901-6936',null,null,null,null,null,null,null,null,'없음','없음','등산로:* 우이코스<br>1) 
-소귀천통제소→소귀천계곡→대동문(2시간 / 2.3Km) <br>2) 
-용암문통제소→용암문(50분 / 1.1Km) <br>3) 백운봉탐방지원센터→하루재→백운대피소→백운봉 (1시간 30분 / 1.9Km) <br>4) 
-선운사입구→우이능선→영봉→하루재→위문→백운봉 (3시간 / 3.6Km) <br><br>* 수유코스<br>1) 솔샘터널→문필봉→흥륜골→칼바위능선→보국문 (2시간 40분 / 3.8Km) <br>2) 빨래골탐방센터→칼바위능선→대동문 (2시간 30분 / 3.6Km)<br>3) 화계사통제소→칼바위능선→대동문 (2시간 30분 / 3.5Km) <br>4) 아카데미탐방지원센터→구천폭포→대동문(1시간 10분 / 2Km) <br>5) 
-운가사통제소→운가사→대동문(1시간 20분 / 2Km) <br>6) 백련사통제소→진달래능선→대동문(1시간 30분 / 2.7Km) 
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강변스파랜드','05049','서울특별시 광진구 구의강변로 45(구의동)','강변스파랜드는 9917.4m²(3,000평) 규모의 지하 1,200m 게르마늄 탄산 암반유황천의 재래식 불한증막 및 사우나로 한국 최초, 최고의 발맛사지탕을 무료로 이용할 수 있으며, 한차원 높은 문화공간 체험이 가능한 곳이다. 후불제 정산시스템을 도입하여 락커키로 편리하게 시설들을 사용할 수 있으며, 지하 2층은 사우나, 지하 1층은 공용 찜질방이다. 세련된 인테리어와 유황 성분이 함유된 사우나 물은 매끄럽고 피부에도 좋다고 한다. 재래식 소나무장작 불한증막, 넓은 남.녀 공용홀을 비롯하여 숯방, 소금방, 은피라미드방, 황토불가마 등 다양한 찜질방과 야외 공기와 연결되는 발맛사지탕과 이글루체험방, 옥냉방 그외 휴식공간으로 산소방, 생잣나무방, 황토토굴방이 있으며 스넥코너, 아이스크림코너,한식당, 분식당, 헬스장, 에어로빅실, 영화방, 만화대여점(보드게임대여점, 어린이방), 매점, 스포츠마사지, 네일아트, 피부관리실, 좌욕실 등 각종 편의시설이 구비되어 있다.<br>','02-455-3737',null,'연중무휴',null,null,null,null,'24시간<br />
-주간 : 05:00~20:00 / 야간 20:00~05:00','주차 가능','불가','불가','이용가능시설:* 불가마 - 숯방, 소금방, 황토불가마, 은피라미드방<br />
-* 냉방 - 이글루체험방, 옥냉방<br />
-* 휴식공간 - 청정산소방, 생잣나무방, 황토토굴방, 숙면실<br />
-* 문화공간 - 영화감상실, PC방, 만화방, 보드게임방<br />
-* 운동공간 - 에어로빅, 요가실, 헬스장<br />
-* 먹거리 - 한식당, 분식당, 커피숍, 스넥코너<br />
-* 어린이 공간 - 놀이방, 어린이 게임방<br />
-* 미용공간 - 네일아트, 스포츠맛사지, 피부관리실<br />
-* 모임공간 - 다양한 크기의 모임방  
-입 장 료:주간 : 대인 12,000원 / 소인(7세이하) 8,000원<br />
-야간 : 대인 14,000원 / 소인(7세이하) 10,000원<br />
-찜질복대여 : 2,000원
-주차요금:05시 ~ 20시 입차  :  5시간 무료
-20시 ~ 05시 입차  :  익일 오전 8시까지 무료
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산','04948','서울특별시 광진구 영화사로 135','서울과 구리시에 걸쳐 있는 아차산은 한강과 어우러진 도시 풍경을 즐길 수 있는 명소로, 40분 정도의 등산로를 오르면 정상에서 보이는 잠실부터 남산, 북한산과 도봉산까지 360도 파노라마 영상처럼 펼쳐진 장관이 특징이다. 또한 해발 295.7m의 야트막한 산으로 산세가 험하지 않아 구리와 인근 시민들이 가벼운 산행을 위해 자주 찾는 곳이다. 조선 시대에는 지금의 봉화산을 포함하여 망우리 공동묘지 지역과 용마봉 등의 광범위한 지역 모두 아차산으로 불렸던 것으로 추정된다. 삼국시대, 백제의 도읍이 한강 유역에 있을 때 우뚝 솟은 지형적 특성으로 인해 일찍부터 이 아차산에 흙을 깎고 다시 돌과 흙으로 쌓아 올려 산성을 축조함으로써 고구려의 남하를 막으려는 백제인의 노력이 있었다. 한강을 사이에 두고 맞은 편 남쪽에 있는 풍납동 토성과 함께 중요한 군사적 요지로서 백제의 운명을 좌우하던 곳이기도 하다. 아단성(阿旦城), 아차성(阿且城), 장하성, 광장성 등으로 불리우기도 하여 백제, 신라, 고구려가 한강을 중심으로 공방전을 장기간에 걸쳐 벌였던 것을 짐작할 수 있다.','02-450-1395',null,null,null,null,null,null,'24시간 개방','있음 (문의 02-455-5288)','불가','가능','등산로:[등산코스] <br />
-1코스 : 아차산생태공원-소나무숲-아차산길-낙타고개-친수계곡-아차산관리사무소-만남의광장 (약 1시간 30분 소요) <br />
-2코스 : 만남의 광장-소나무숲-낙타고개-고구려정-해맞이광장-아차산정상-대성암-낙타고개-친수계곡-만남의광장 <br />
-3코스 : 만남의 광장-아차산관리사무소-신추계곡-고구려정-아차산 정산-용마산 정상-뻥튀기골 입구 (약2시간30분소요) <br />
-관광코스안내:[이야기가 있는 문화생태탐방로 - 아차산 고구려 역사길]<br />
-* 1코스 / 아차산 고구려 역사길(7.8km, 3시간 40분) <br />
-광나루역-아차산 입구(만남의 광장)-홍련봉 1/2보루-고구려정-해맞이광장-아차산1보루-아차산5보루-아차산3보루-아차산4보루-아차산2보루-대성암-낙타고개-아차산성-아차산생태공원,아차산고구려역사문화홍보관-워커힐길-워커힐 피자힐-상부암석불입상-광나루터(광나루 낭만의 거리)-광진교(리버뷰 8번가)-한강자전거공원<br />
-* 2코스 / 토성산성 어울길 연계코스(5.5km, 3시간) <br />
-한강자전거공원-풍납토성-한강둔치길-성내천입구-몽촌토성(올림픽공원)-(토성산성 어울길과 연결-남한산성)
-입 장 료:무료
-화장실:있음 (공원 입구) 
-주차요금:10분에 300원
-이용가능시설:생태공원(자생식물원, 나비정원, 습지원), 만남의 광장(420평), 황톳길 및 지압보도(550m), 소나무숲, 약수터, 생태공원 사무실 및 생태자료실(21평), 생태관찰로 및 자생관찰로, 파고라, 관상용 논 및 재배용 밭 등
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청담패션거리','06015','서울특별시 강남구 청담동일대','청담역 사거리에서 갤러리아 백화점에 이르는 대로변에는 명품 브랜드 매장이 밀집되어 있다. 패셔니스타들의 주요 쇼핑 장소인 이름하여 청담동 명품 거리. 국내 유일의 패션특구로 최근 청담 패션 거리라는 공식 명칭을 갖게 되었다. 한류 열풍에 힘입어 일본 관광객들의 관광 코스로도 각광받고 있다. 대로의 안쪽 골목으로는 유명 레스토랑도 몰려 있다. 근래에는 편집 매장과 갤러리들이 대거 들어서면서 쇼핑과 문화를 동시에 즐길 수 있는 공간으로 사랑받고 있다.<br>','02-3445-0111',null,'매장별로 다름',null,null,null,null,'상시이용가능',null,'없음','없음','입 장 료:없음
-이용가능시설:의류매장, 백화점, 음식점 등
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강남','06232','서울특별시 강남구 역삼동(역삼동)',37,127,'강남역 주변은 강남 지역에 있어서 교통의 핵심인 곳이다. 강남대로를 중심으로 동쪽으로는 테헤란로가 뻗어 있어 잠실 방향과 이어지며, 서쪽으로는 사당 방면으로 연결된다. 교보타워 사거리에서 좌측으로는 고속터미널과 이어져 노량진 및 서부 서울로 연결되며, 그대로 북쪽으로는 한남대교를 거쳐 강북으로 연결된다. 그리고 남쪽으로는 양재를 거쳐 분당 등의 신도시와 성남시 등 수도권으로 연결된다. 많은 유동인구가 강남역으로 모이는 이유는 강남역 부근이 만남을 위한 약속장소로 적합하기 때문이다. 각종 모임이나 행사 또는 개인적인 만남을 갖기에 좋은 지역적, 상권적 특성을 지니고 있다. 따라서 평일에는 주로 저녁 시간대, 주말의 경우는 낮부터 강남역 10, 11번 출구, 롯데시네마 앞(구,시티극장), 지오다노 매장 앞 등에서 많은 사람들로 붐비는 것을 흔히 볼 수 있다.<br /><br />편리한 교통과 다수의 패션관련 매장, 극장, 대형서점 등 소비를 하기 좋은 이러한 환경이 거리가 먼 지역의 소비자들까지 강남역으로 모이게 하고 있다. 강남구에서는 내ㆍ외국인 관광객에게 종합관광서비스는 물론, 강남구의 우수 인프라인 의료와 한류에 대하여 보고, 느끼고, 즐길 수 있는 체험형 관광거점시설인 강남관광정보센터를 건립ㆍ운영하고 있으며, 강남관광정보센터는 서울과 강남의 주요 관광명소를 안내하고 관광객 편의시설을 갖춘 ‘종합관광안내센터’와 강남구 특화 병원과 진료 프로그램을 소개하고 체험할 수 있는 ‘메디컬투어센터’,  한류 스타를 활용하여 다양한 한류체험이 가능한 ‘한류체험관’으로 구성되어있다.<br>','02-3423-5114',null,null,null,null,null,null,'24시간','주차 가능','없음','없음','관광코스안내:* 강남시티투어 트롤리버스 <br />
+- 어라운드강남시티투어 코스: 강남역-봉은사/코엑스-한류스타거리-관광정보센터-가로수길-세빛섬-고속터미널/신세계백화점-서래마을-법원.교대역-삼성타운-강남역(종착)<br />
+<br />
+* 강남관광정보센터 외국인대상 무료도보관광 프로그램<br />
+- 한류코스: 강남관광정보센터-JYP엔터테인먼트-JS엔터테인먼트-FNC엔터테인먼트-SM엔터테인먼트-한류스타거리-강남돌하우스-G+스타존(압구정로데오역)
+이용가능시설:쇼핑상가, 카페, 영화관, 서점, 병원, 음식점, 숙박시설 등
+화장실:있음
 외국어 안내서비스:관광안내전화 02-1330 (한,영,일,중) <br />
 강남관광정보센터 02-3445-0111
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('광진교 8번가','05250','서울특별시 강동구 구천면로 77(천호동)','광진교의 상판 아래 8번째 교각에 위치해 있는 광진교 8번가는 최고의 절경에서 공연과 전시라는 소재를 통해 다양한 문화컨텐츠를 만들어 시민들의 문화 감성을 충전하고 편안한 휴식을 즐기기위한 시민 문화공간이다.광진교 8번가에 들어서면 반은 간단한 공연을 관람할 수 있는 공연장이 있고, 반은 한강의 100년을 주제로 한 사진이 전시된 홀과 한강르네상스의 계획과 진행과정을 볼 수 있는 한강르네상스 홍보관이 위치해 있다. 유리벽 외부에는 시원한 바람을 맞으며 한강의 뷰를 전망할 수 있도록 전망대길이 마련되어 있다.광진교 아래 한강공원 광나루지구에는 자전거 공원 등 이 있어 광진교를 포함한 그 지역 자체가 하나의 쉼터를 제공한다.','02-476-0722',null,'월요일',null,null,'공연 1회 60명',null,'4월~10월 12:00 ~ 22:00',null,'없음','불가','화장실:있음
-이용가능시설:공연장
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이대거리','03767','서울특별시 서대문구 대현동(대현동)',38,127,'이대거리는 이화여대 정문에서 신촌 기차역까지 이어지는 골목거리로 카페, 음식점, 의류, 미용실, 화장품 등 특색있는 점포들이 가득한 거리다.<br>','신촌관광안내센터 02-363-7833',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('G밸리 4차산업체험관','08390','서울특별시 구로구 디지털로26길 111(구로동), B1층',37,127,'<strong>4차산업에 맞춰 4가지 체험 (드론, 코딩, VR, 3D 프린팅)과 산업관광 운영 </strong><br /><br />제4차산업체험센터에서는 한 공간에 4개의 제4차산업혁명을 대표하는 기술과 체험을 준비하여 드론, 코딩, VR 3D프린팅의 원리를 이해하고, 기초 실습과 관련 시뮬레이션을 진행하고있다. 이를 바탕으로 실제 응용해 볼 수 있는 커리큘럼들이 준비되어 참여자들은 개별체험을 통하여 스스로 심화하고, 이를 다양한 분야에 적용할 수 있는 통찰을 경험할 수 있도록한다.<br /><br />산업관광이란, 기업체의 생산현장이나 홍보시설 등을 활용한 관광 콘텐츠를 말하며, 이를 통해 직간접적인 비즈니스 를 연계하고, 관련 산업의 활성화를 지원하는 새로운 형식의 산업과 관광을 합친 컨텐츠이다. 이러한 산업관광을 통해 참가자들 (관광객, 지역주민, 학생 등등)은 산업적 배움과 더불어 재미있는 새로운 볼거리와 체험거리를 경험할 수 있는 기회를, 기업과 국내 및 해외 바이어들은 기업의 우수성을 홍보할 수 있는 기회를 제공한다.<br>','070-4756-4241',null,'연중무휴','코딩, 드론, 3D 프린터, VR, 산업관광','유치원생~성인','각 체험 당 1명~최대 6명',null,'개관 10:00~17:00  / 각 체험 당 1시간','주차 가능 (약 300대 이상 주차 가능)','없음','없음','이용가능시설:- 체험관 (회의실)<br />
+- 부대시설 : 사무공간
+화장실:건물 내 있음
+시설이용료:각 체험 마다 1인당 15,000원
+내국인 예약안내:홈페이지 또는 전화 예약
+한국어 안내서비스:가능
+외국어 안내서비스:가능
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대모산공원','06359','서울특별시 강남구 광평로10길 30-71(일원동)','국수봉이라고도 불렸던 높이 293m의 나지막한 산으로 산 모양이 늙은 할미와 같다 하여 할미산으로 불리다가 태종의 천릉을 모신 후 어명으로 대모산으로 고쳤다고 한다. 예부터 전해 내려오는 구천에 의하면 산 모양이 여승이 앉은 모습과 같다고 하는 설과 여자의 앞가슴 모양과 같다 하여 대모산이라는 설이 있으며 이산에는 불국사(약사절)를 비롯하여 수질 좋은 약수터가 있고 산 입구에는 각종 희귀나무로 가꾸어진 자연 학습장이 있어 학생들의 야외 교육장 및 주민들의 산책로로 사랑받고 있다.
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('원당샘공원','01360','서울특별시 도봉구 해등로32가길 16(방학동)',38,127,'600년 전부터 마을의 생활용수로 공급되던 원당샘을 복구하여 조성한 공원으로 연산군묘, 방학동 은행나무와 함께 역사와 문화가 어우러지는 도봉구 문화명소<br>','02-2091-3765',null,null,null,null,null,null,'상시운영',null,'없음','없음','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('푸른수목원team_insert','08361','서울특별시 구로구 연동로 240',37,127,'서울시 최초로 조성된 시립수목원으로 2,100 여종의 다양한 식물을 감상할 수 있으며 수목원 입구와 연결되는 항동철길과 연계 관광이 가능하다. 푸른수목원은 인적 없는 공터에서 친환경 청정수목원으로 개장한 서울시 최초의 시립 수목원이며 2018년 서울시 1호 공립수목원으로 지정되었다. 식물유전자원을 수집해 증식시키고 보존하고 있으며 항동저수지와 20개 주제정원에서 다양한 희귀식물을 볼 수 있다. 푸른수목원은 오색정원, 야생화원, 어린이정원 등의 주제정원과 안내센터, 숲교육센터 등 교육콘텐츠와 가드닝 프로그램 등을 통해 생태 학습의 장이 되고 있다.','푸른수목원 관리사무소 / 02-2686-3200',null,null,null,null,null,null,'매일 05:00 - 22:00',null,'없음','없음','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일상비일상의틈','06129','서울특별시 강남구 강남대로 426(역삼동)',38,127,'일상비일상의틈은 2020년 9월에 문을 오픈 했으며, LG유플러스가 만든 MZ세대를 위한 복합문화공간으로 제품을 진열한 통신사 매장이 아니라 브랜드 가치를 전달하는 공간이다. 지하 1층부터 지상 7층까지의 공간은 층마다 다른 콘셉트를 선보인다. 층과 지하 1층에서 MZ세대 취향을 저격하는 전시와 브랜드 팝업 행사가 주기적으로 열리고 있으며, 2층은 콜라보레이션을 중심으로 한 팝업이 진행된다. 3층은 독립출판물을 소개하는 책방이다. 4층은 아날로그 기록과 현상을 도와주는 필름 스튜디오가 있으며, 5층은 LG유플러스의 5G 서비스를 체험할 수 있는 공간, 7층은 루프톱이 위치해 있다,<br /><br /><출처 : 일상비일상의틈><br>','070-4090-8005',null,'매주 월요일',null,null,null,null,'11:00~21:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용양봉저정 공원','06908','서울특별시 동작구 현충로 16(본동)',38,127,'이곳은 조선의 22대왕 정조가 수원화성 행차 때 쉬던 용봉정저정 주변을 공원으로 조성한 곳으로 한강 및 서울 시내의 아름다운 경관을 주야간 조망 할 수 있는 명소이다. 주요시설은 하늘전망대, 자연놀이터, 연못, 탐방로(데크로드), 전망포토존 등이 있고, 어린이를 위한 자연놀이터는 가족단위의 이용에도 적합하다. 2022년말 준공예정인 옥상전망대에는 이용자의 편의를 위해 매점, 카페 등이 운영될 예정이다. 또한, 주변에 서울시 유형문화재 제6호인 용봉정저정, 효사정, 노들섬, 노들나루공원 등이 있어 볼거리를 제공한다.<br>','02-820-1395',null,null,null,null,null,null,'24시간 개방',null,'없음','없음','이용가능시설:하늘전망대, 연못, 자연놀이터, 탐방로(데크로드), 각종 포토존, 옥상전망대(2022년 예정)		
 
-(출처 : 서울의 공원 홈페이지)','02-3423-6283','1989년 11월 23일','연중개방',null,null,null,null,'00:00~24:00','주차 가능','없음','없음','화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('능인선원','06357','서울특별시 강남구 양재대로 340(개포동)','능인선원은 부처님의 가르침인 지혜와 자비를 바탕으로 불자 양성과 포교 및 사회복지 증진을 위한 수행도량으로 설립되었다. 불교 포교와 공부하는 불자 양성으로 일관해 온 능인선원은 이제 대한민국 최고의 포교사찰이 되었다. ''능인(能仁)''이란 ''능히 남을교화하여 이롭게 하는 이'' 라는 뜻을 지닌 석가모니 부처님의 다른 이름이다. 능인선원은 생활 불교를 선언하여 기도의 생활화, 지역법회의 활성화 및 각종 봉사활동을 통해 한국 불교를 현대화하는데 기여하였다. 또한 체계적인 불교 교육을 통해 불교의 과학성과 우수성을 널리 펼쳐 우수한 불자를 양성함으로써 불법 중흥에 이바지하고 있다.','02-577-5800',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('3.1독립선언기념탑','03732','서울특별시 서대문구 통일로 251','1919년 3월 1일 오후 2시 손병희 등 민족대표들은 태화관에서 독립선언식을 거행하고 독립만세를 삼창함으로써 거족적인 3.1독립만세운동의 불을 지폈다.3.1독립선언기념탑은 이날의 숭고한 자주독립정신을 기리기 위하여 1963년 8월 15일에 당시 재건국민운동본부 주관으로 온 국민의 성금을 모금하여 3.1독립만세운동의 현장이었던 탑골공원에 건립되었다. 그러나 1979년 탑골공원의 정비사업으로 철거되어 12년간 방치되었다가 각 계에서 복원의 목소리가 높아지자 1992년에 항일 독립운동의 터전인 서대문 독립공원으로 옮겨 세우게 되었다. 탑의 높이는 4.2m이며 탑 뒤에는 3.1독립선언문과 손병희 등 독립만세운동을 주도한 민족대표 33인의 이름이 판각되어 있다.<br>','1577-0606',null,'연중개방',null,null,null,null,'상시 개방','있음','없음','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고당조만식선생동상','04991','서울특별시 광진구 능동로 216(능동) 서울어린이대공원 내','조선의 간디라 불리는 비폭력 무저항주의를 실천한 사상가이자 독립운동가인 조만식 선생의 업적을 기리기 위하여 건립되었으며 어린이대공원 내(동문과 후문 사이 위치)에 있다. 평남 강서 출신으로 오산학교에서 민족교육에 힘쓰다 교장직을 사임하고, 1919년 3.1운동을 주도하다 1년간 옥고를 치루었다.  이후 1920년 조선 물산장려운동회를 조직하여 사회운동을 전개하였으며, 조선 민립대학 설립 운동에 적극 참여하여 인재양성에 힘쓰고, 1932년에는 조선일보사 사장으로 취임하여 언론창달 및 민족계몽에 앞장섰다. 선생은 좌우파가 하나가 되는 신간회가 결성되도록 애썼으며, 광복 후 반탁운동과 민족자주 독립운동의 지도자로서 활동하다가 소련군에 의해 연행된 이후 공개적인 장소에서 선생의 모습을 다시는 볼 수 없게 되었다.<br /><br />* 규격 - 좌대면적 13.32㎡, 좌대높이 3.3m, 동상높이 3m<br />* 건립자 - 고당조만식선생기념사업회(1976.12.07. 건립)<br>','1577-0606',null,'연중무휴',null,null,null,null,'05:00~22:00<br />
-※ 계절 및 날씨 등에 따라 변경 가능','있음<br />
-※ 운영시간 09:00~22:00<br /> 
-※ 문의 : 02-444-3056','없음','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고하송진우선생동상','04991','서울특별시 광진구 능동로 216(능동) 서울어린이대공원 내','독립운동가, 교육자, 언론인, 정치가이자 민족지도자로 활동한 고하 송진우 선생을 추모하기 위해 건립되었으며 서울어린이대공원 내(정문과 서문 사이 위치)에 있다.고하 선생은 3.1운동을 배후 주동하여 옥고를 치루었고 1921년 동아일보 사장 취임 후 20여년 간 신문을 통하여 일제 암흑기에 국내 독립운동을 주도하고 민족 민주 민생 민문주의를 구국의 기본사상으로 삼아 언론 교육 산업 문화활동을 통하여 독립을 위한 민족의 힘과 얼을 고취하였다.해방 직전 일제의 정권 인수제의를 거절하였고 광복 후 한국민주당을 창당하여 동아일보 사장으로서 민주건국과 신탁통치 반대에 진력하던 중 한현우 등의 총탄에 서울 원서동 자택에서 서거하였다.<br /><br />* 규격 - 좌대면적 9㎡, 좌대높이 3.9m, 동상높이 3.6m<br />* 건립자 - 송진우선생동상건립위원회(1983.09.23. 건립)<br>','1577-0606',null,null,null,null,null,null,'05:00~22:00<br />
-※ 계절 및 날씨 등에 따라 변경 가능','05:00~22:00<br />
-※ 계절 및 날씨 등에 따라 변경 가능','없음','불가','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용두동 쭈꾸미골목',null,'서울특별시 동대문구 용두동',38,127,' 용두동 쭈꾸미 골목은 쭈꾸미 특화거리이다. 황금색 쭈꾸미 모형을 주위로 쭈꾸미 전문점들이 들어서 있다. 고추장으로 매콤하게 양념한 쭈꾸미를 철판에 익혀 먹는 용두동 쭈꾸미는 별미 중에 별미이다.  <br>',null,null,'점포마다 상이함',null,null,null,null,'점포마다 상이함',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('역삼동성당','06222','서울특별시 강남구 언주로85길 23-11(역삼동)',38,127,'강남지역의 교세 신장에 따라 1984년 8월 1일 대치동 성당과 양재동 성당의 관할 구역중 일부(2,263명)를 분할하여 신설되었다. 초대 김구희(세자요한) 신부님을 모시고 주보성인을 ''성 최경환(프란치스코)''로 정하였으며, 임시가건물을 축조하여 사용하면서 새 성전 봉헌을 준비하였다. 교우 김대환 형제가 봉헌한 신축부지에 1992년 12월 25일 성당 신축공사를 시작하였다. 착공한 지 5년 만에 연건평 3,960평 건축, 순공사비만 약 120억원의 거대하고 아름다운 성전을 완공하여 1997년9월 21일 김수환 추기경님을 모시고 새 성전 봉헌식을 거행하였다.(상반기 혼인미사 예약 온라인 선착순 접수)','02-553-0801','1984-08-01','없음',null,null,null,null,'미사 및 성사<br>월요일 06:00 10:00<br>화요일 06:00 10:00 19:00<br>수요일 06:00 10:00 19:00<br>목요일 06:00 10:00 19:00<br>금요일 06:00 10:00 19:00<br>토요일 06:00 19:00 (토요일 저녁 주일미사)<br>주일 07:00 09:30 (영어미사/경환당) 10:00 (교중) 10:00 (중고등부/청소년회관) 16:00 (어린이미사/매달마지막주일 미사없음) 18:00 (청년미사) 21:00','주차가능','없음','불가','이용가능시설:성당시설
+주차요금:없음
+화장실:남녀구분
+입 장 료:없음
+외국인 예약안내:없음
+한국어 안내서비스:없음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남강이승훈선생동상','04991','서울특별시 광진구 능동로 216(능동) 서울어린이대공원 내','대한제국 말기 및 일제 강점기 시절 교육자이자 애국계몽가인 남강 이승훈 선생의 공적을 기리기 위해 건립되었으며 어린이대공원 내(남문과 동문 사이 위치)에 있다.남강 이승훈 선생(1864~1930)은 평안북도 정주의 가난한 가정에서 태어나 어린시절부터 근검 절약하고 노력하여 40대에 큰 부자가 되었다. 일본의 침략으로 나라가 위기에 처하자 1907년 재산을 털어 오산학교를 세우고 인재를 기르는데 힘썼고 독립운동에 몸바쳐 1922년부터 세차례 수년간의 옥고를 치루었다.출옥 후 기독교 신앙에 몰입하여 복음전도와 복지운동, 민립대학 설립추진, 언론 창달 등에 힘을 쏟았다. 평생을 말보다 실천을 앞세우는 교육 운동에 헌신한 그는 ''내 유해를 땅에 묻지말고 골격표본으로 만들어 학생들이 공부하는데 쓰게 하라'' 유언하고 눈을 감았다.<br /><br />* 규격 - 좌대높이 3.5m, 좌대면적 6.3㎡, 동상높이 4m<br />
-* 건립자 - 남강이승훈선생동상재건립위원회(1987.03.02. 재건)<br>','1577-0606',null,'연중무휴',null,null,null,null,'05:00~22:00<br />
-※ 계절 및 날씨 등에 따라 변경 가능','있음 <br />
-※ 운영시간 09:00~22:00','없음','불가','입 장 료:무료 
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('거리공원','08297','서울특별시 구로구 공원로 28(구로동)',37,127,'구로구(九老區)는 옛날에 노인 9명이 오래도록 장수하였다는 전설로부터 유래된 지역이다. 서울특별시 구로구 구로동 106-5번지 가마 산길 거리공원오거리에서 구로구 구로동 3-55번지 신도림역에 이르는 보조 간 선급 가로를 거리공원길이라고 하는데, 구로 거리공원을 따라 이어진 길이라는 의미에서 거리공원길이라고 이름 붙였다.','02-860-2947',null,'연중무휴','없음',null,null,null,null,'없음','없음','가능','시설이용료:없음
+
+입 장 료:없음
+
+주차요금:없음
+
+화장실:있음, 남녀 분리
+
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('독립관','03732','서울특별시 서대문구 통일로 251(현저동)','독립관은 원래 1407년(태종 7년)에 중국 사신을 영접하기 위해 지어진 영빈관으로서 초기의 이름은 모화루였으나, 1429년(세종 11년) 확장 개축되면서 모화관이라 개칭되었다. 한말에 이르자 국제관계의 변화로 원래의 목적대로 사용되지 못하고 방치되어 있던 모화관을 서재필이 독립협회를 세우면서 독립관으로 개칭하고, 이곳에서 애국토론회를 개최하여 자주ㆍ민권ㆍ자강 사상을 고취시키는 독립운동의 기지로써 사용하였다. 그러자 일본제국주의자들은 독립운동 탄압의 일환으로써 이 건물을 철거해버렸다. 세워질 당시의 위치는 현재의 위치에서 동남쪽으로 약 350m 떨어진 곳이었으며, 서대문독립공원 조성사업계획에 의거 전문가의 고증 자문에 따라 지상층은 당초대로 한식 목조건물로 복원하여 순국선열들의 위패(位牌)봉안과 전시실로 사용하고, 지하층은 행사 및 유물보관을 위해 1995년 12월 28일부터 1996년 12월 31일까지 서울특별시에서 건립하였다.<br>','02-365-4388',null,'연중무휴',null,null,null,null,'상시 개방','있음<br />
-※ 주차문의 02-312-6218','없음','불가','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강서한강공원','07518','서울특별시 강서구 양천로27길 279-23(방화동)',38,127,'강서한강공원은 한강 남단 가양대교에서 서울-김포시 경계까지이며, 습지 생태공원과 체육공원이 결합한 테마형 공원이다.<br>서울시 생태관광명소 30개소 중 하나로 선정된 강서습지생태공원은 하중도, 자연관찰로, 습초지토 등 습지 생태계를 복원하여 하천의 자연정화 기능을 제공하고, 방화대교 하부, 가족 피크닉장 앞, 행주대교 하부에는 체력단련기구 등을 갖춰 시민의 여가활동과 스포츠 공간으로써의 기능을 하고 있다.','02-3780-0621~3',null,'연중무휴',null,null,null,null,'오전 09:00 ~ 오후 18:00',null,'없음','가능','시설이용료:자전거대여 3,000원 (1시간)<br>
+※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
+주차요금:기본요금 최초30분 1,000원 / 초과 10분당 500원<br>
+1일 주차 최고한도 10,000원<br>
+※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
+이용가능시설:운동시설(족구장, 암벽장, 다목적운동장, 체력단력장), 자전거대여소, 가족피크닉장, 습지생태공원, 한강조망대, 기타편의시설 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('피노파밀리아','01740','서울특별시 노원구 중계로 131-17','도심 속에 우뚝 선 PINOFAMILIA는 한국의 미니멀한 건축물의 대표 작가 ''문훈''의 설계를 시작으로 2014년 부터 2년여 동안 공사를 진행하여 2016년 9월 29일 개관하게 되었다. 거짓말을 하면 코가 길어진다는 스토리의 대명사 피노키오, 피노키아와 함께 세월의 흐름에 따라 변신을 거듭하는 피노의 가족들을 만날 수 있으며 독창적인 건축물인 고래의 탄생 또한 관람객의 눈으로 그 크기를 가늠할 수 있게 한다.피노파밀리아 예술 체험관은 남다른 경쟁력을 갖춘 콘텐츠를 체험할 수 있으며, 피노키오의 여자친구로 국내에서 탄생된 캐릭터 피노키아 테마 예술 체험관이다. 복합문화공간인 피노파밀리아는 문화, 체험, 상징, 힐링의 대표적인 창조적 공간이며 사람과 사람을 이어주는 복합 문화를 실현한다.피노플랫폼을 통해 행복하고 재미있는 삶을 영위하며 창조의 계기를 경험할 수 있다. 영유아부터 노년층까지 전 세대가 피노문화를 향유하며 어린이에게는 창의력을, 청소년에게는 꿈을, 청년에게는 희망을, 성인들에게는 치유와 행복을 줄 수 있는 체험공간이다.','02-938-0911','2016년 09월 29일','매주 월요일, 설/추석 연휴 당일','* 무료체험<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대치유수지체육공원','06190','서울특별시 강남구 역삼로90길 43(대치동)',38,127,'각종 체육시설과 운동기구, 산책로, 휴게공간, 음악분수, 상징조형물 등 여러 시설물을 갖추어 체력 증진과 생활 체육의 활성화를 위해 지역 주민이 편리하게 이용할 수 있도록 조성한 체육공원이다.',null,null,'연중무휴',null,null,null,null,'07:00 ~21:00','없음 (예약자에 한해 주변 노상공영주차장 할인 가능)','없음','불가','입 장 료:축구장 100,000원 / 테니스장 8,000원 / 풋살구장 40,000원
+이용가능시설:축구장, 테니스장, 풋살구장
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('노을공원','03900','서울특별시 마포구 하늘공원로 108-2(상암동)',38,127,'노을공원 총면적의 57% 정도는 골프장으로 만들어지고 나머지 부분은 자연 식생지, 운동시설 및 산책로 등 시민들이 여가를 즐길 수 있는 공간이다. 드넓은 잔디밭에 조각예술품과 전망데크가 있어 여유를 느낄 수 있다.
+파크골프장, 가족 캠핑장, 노을 책방, 누에체험장, 반딧불이 서식처, 동시 농부정원 등 자연을 직접 체험할 수 있는 시설이 갖춰져 있다.','02-3153-9554',null,'연중무휴','없음',null,null,null,'매일 05:00 ~ 20:30, 월마다 유동적','있음','없음','가능','이용가능시설:노을캠핑장/조각공원/파크골프장/노을여가센터/반딧불이생태관/누에생태체험장/노을별누리/수유실
+
+화장실:있음, 남녀 분리
+
+입 장 료:없음
+
+주차요금:30분 1,000원 
+
+한국어 안내서비스:가능
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불암산나비정원','01719','서울특별시 노원구 한글비석로12길 51-27(중계동)',38,127,'노원구 불암산 힐링타운 사업지 중 한 곳으로 365일 살아있는 나비를 볼 수 있는 정원이다.
+나비 정원 건물 1층에는 사육배양실, 채란실, 나비 온실 등이 위치해 있고 2층은 곤충학습관으로 이뤄졌다. 
+곤충학습관에서는 환경부 지정 멸종 위기종 2급 곤충인 물장군, 두점박이사슴벌레 등 각종 곤충 표본과 곤충 관련 자료들을 볼 수 있다. 단체 관람 시 예약이 필요하다.','02-936-0900','2018년 9월','월요일 휴무','불암산 곤충아카데미 5,000원','초등생 저학년',null,null,'매일 10:00 ~ 17:00, 입장마감 16:30','없음, 상현교회 옆 공원 주차장 이용','없음','가능','입 장 료:무료 		
+
+화장실:있음, 남녀분리
+
+이용가능시설:생태학습관, 곤충학습관, 사육배양실, 채란실, 나비온실		
+
+주차요금:없음
+
+한국어 안내서비스:가능
+
+내국인 예약안내:<a href="https://yeyak.seoul.go.kr" target="_blank" title="새창 : 서울시 공공서비스예약 사이트로 이동">https://yeyak.seoul.go.kr</a>
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구로리공원','08312','서울특별시 구로구 구로중앙로 13(구로동)',37,127,'서울시에서 기존의 단조롭고 노후된 어린이 공원을 창의력을 키울 수 있는 공원으로 새롭게 조성한 사업으로 생긴 공원이다.
+어린이는 물론 남녀노소 모두가 다양하게 이용할 수 있는 다양한 시설과 조경을 갖추고 있다. 매년 청소년 축제 등 지역의 중요 행사가 개최되는 장소이다.','02-860-3398',null,'없음','없음',null,null,null,'00:00~24:00','주차가능','없음','가능','주차요금:30분 900원/ 60분 1,800원/ 120분 3,600원/ 240분 7,200원
+
+이용가능시설:운동기구, 트램펄린, 놀이터		
+
+화장실:있음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울식물원 호수공원','07789','서울특별시 강서구 마곡동로 161(마곡동)',38,127,'서울 강서구 마곡동에 위치한 서울 최초의 도시형 식물원인 서울식물원과 유기적으로 결합한 공원 속 공원이다.
+호수 주변으로 산책길과 수변 관찰 데크가 조성되어 있으며, 호수 계단에 앉아 식물원을 조망하거나 습지식물과 텃새를 관찰할 수도 있는 휴식 공간이자 생태 교육장이다.','02-2104-9716','2019년 5월','없음',null,null,null,null,'09:30~18:00(3~9월)<br>
+09:30~17:00(11~2월)','있음','없음','가능','주차요금:10분당 200원
+
+이용가능시설:호수횡단보행교, 어린이놀이터, 물놀이터, 수변가로, 물가쉼터, 습지관찰데크	
+화장실:있음, 남녀 분리
+
+입 장 료:주제원<br>
+성인 5,000원 / 청소년 3,000원<br>
+소인 2,000원 / 단체 30% 할인
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('어린이회관','04991','서울특별시 광진구 광나루로 441(능동)',38,127,'어린이들의 복지 증진과 보육 환경을 조성하는 것을 목적으로 재단법인 육영재단이 설립한 복지 회관이다. 어린이를 위한 다양한 교육, 전시, 문화, 체육 시설들이 갖춰져 있으며 10,000㎡ 규모의 과학관(지하 1층, 지상 4층)과 6500㎡ 넓이의 문화관(지상 2층)으로 나뉘어 다양한 어린이 관련 행사와 체험전이 운영되고 있다. 실내 놀이터를 무료로 이용할 수 있으며 겨울에는 눈썰매장을 개장 운영한다. 1970년 서울 남산에 설립 개관되어 운영되었다가 1975년에 현재의 위치로 이전했다.','홈페이지, 전화 02-2204-6028',null,'주말','근화원 예절교육, 창의융합교실, 푸른꿈 상상놀이터(무료 실내 놀이터)','어린이',null,null,'평일 09:00 ~ 18:00','주차가능','없음','불가','입 장 료:무료, 프로그램별 상이
+
+이용가능시설:부대시설 : 실내놀이터<br> 육영수 여사 기념 전시실, 근화원 예절교육장, 푸른꿈 상상놀이터(무료 실내놀이터), 클래비키즈파크 시즌 2(요리소리노리 체험전)<br>대관예약 : 무지개극장,이벤트홀,벽면전시시설 대관 가능 - 홈페이지 참조
+
+주차요금:기본 500원 / 10분, 당일 최대요금 20,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('명락사','08786','서울특별시 관악구 청룡1길 11(봉천동)',37,127,'서울 관악구 청룡동에 있는 명락사는 관악산 줄기의 끝자락 도심 상업지역에 있다.  40여 년 넘게 서울 서남권의 포교 활동과 다문화가정을 위한 포교에 관심을 기울이고 있는 사찰이다. 청년회가 활성화되어 있으며, 토요일 저녁 8시 30분부터 정기 법회를 갖는다. 2호선 봉천역과 서울대입구역 중간지점에 있다.','02-889-7272',null,null,'정기법회, 기타법회',null,null,null,'00:00 ~ 24:00','주차가능','없음','불가','이용가능시설:사무실, 요사채, 천불전, 법당<br>매점, 식당
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼각어린이공원','08297','서울특별시 구로구 구로동 47(구로동)',38,127,'서울 구로구에 위치한 삼각어린이공원은 어린이들의 미숙한 교통 지식을 놀이를 통하여 체험시켜주는 조성된 공원이다.
+실제 차로에서 쓰이는 표지판, 신호등을 포함한 횡단보도 등으로 공원이 조성되어 있어 어린이들에게 도로 교통 지식을 학습하고 체험할 수 있다.
+오뚜기의자, 그네, 미끄럼틀 등 놀이터로서의 기본 기능도 충족시켜주어 어린이들과 부모 모두에게 사랑받는 공원이다.','02-860-3090',null,'없음',null,null,null,null,'00:00 ~ 24:00','있음 (43면)','없음','없음','주차요금:10분당 500원
+
+이용가능시설:육교안전하게건너기, 통학버스, 횡단보도, 철길건널목, 기타시설물 등		
+
+입 장 료:없음		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('자양동 양꼬치거리 (중국음식문화거리)','05079','서울특별시 광진구 자양동',38,127,'지하철 2호선 · 7호선 건대입구역 5번 출구로 나와 로데오거리를 지나 한강둔치 방향으로 50m 정도 걸어 내려가면 일명 "양꼬치 거리"로 유명한 중국음식문화거리를 만나게 된다. 중국 동포들이 운영하는 양꼬치 전문점들이 즐비한 이곳은 "신 차이나타운"이라고 부르기도 한다. 한국어보다 중국어 간판이 더 많은 곳으로, 양꼬치 전문점이나 퓨전 중국요리점 등이 있어 서울에서 다양한 음식문화를 느낄 수 있는 명소이다.','광진구청 문화체육과 02-450-7582',null,'점포마다 다름',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('디지털 파빌리온','03925','서울특별시 마포구 월드컵북로 396(상암동)',38,127,'<strong>현재를 미래로, 상상을 현실로</strong><br /><br />디지털 파빌리온은 IT 기업의 신제품과 기업 홍보 공간이다. 미래도시 I City에서는 미래의 거리, 학교, 문화, 생활이 펼쳐지고, ICT 탐구관에서는 놀이와 체험을 통해 ICT기술 원리를 이해한다. 또한 2017년 2월에 “VR DEVELOPING BED”를 개관하여 국내 유명 중소기업의 실감콘텐츠 관련 기술 및 제품을 지원하고 있다. ICT 산업 중 VR을 특화한 다양한 프로그램이 준비되어 있으니, 예약 후 이용해보자.<br>','02-2132-1179','2008년 04월 30일','매주 일요일, 설날(음,양력), 추석연휴 휴관',null,null,null,null,'10:00~17:00','있음 (대형관광버스 이용 불가)','불가','불가','입 장 료:무료
+이용가능시설:[1층 ICT 창조관]<br />
+ 국내 ICT 기업의 우수기술로 구현된 미래도시 i-City를 직접 체험해 볼 수 있는 공간<br />
+[2층 VR DEVELOPING BED]<br />
+ VR콘텐츠 기업의 가상현실 세계를<br> 직접 체험해 볼 수 있는 공간
+주차요금:30분 무료, 10분당 500원씩 추가<br />
+(단, 2m이하 승용차/승합차 가능, 대형버스, 미니버스 주차불가)
+외국어 안내서비스:외국어 안내(영어, 중국어) 지원 가능
+내국인 예약안내:사전예약제 / VR DEVELOPING BED: 최소 1일전 사전예약, 당일예약 불가
+외국인 예약안내:메일문의 (webmaster@digitalpavilion.kr)
+- 현장방문 예약가능 (당일예약 불가)
+한국어 안내서비스:1층 ICT 창조관 / 2층 VR DEVELOPING BED : 도슨트 안내
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('방화대교','07518','서울특별시 강서구 방화동',38,127,'방화대교는 인천국제공항이 21세기 동북아시아 허브 공항의 역할을 수행할 수 있도록 건설된 고속국도 130호선 구간 중 한강을 횡단하는 교량으로 예술성 및 기능성이 우수하다.총 연장 2.6㎞로 한강 교량 중 가장 긴 교량이며, 국내최초로 장경간 아치 트러스 구조로 설계, 시공된 한강의 27번째 교량이다. 아치는 전통 사찰과 기와집 처마의 부드러운 이미지가 도입되어 개화산 봉우리, 덕양산 봉우리에 이어 세 번째 봉우리를 만들어내고 있으며, 이륙하려는 듯한 거대한 항공기를 연상시키는 기하학적인 형상과 밤이면 한강 물결에 비치는 황홀한 야경이 보는 이로 하여금 감탄을 자아내게 한다.<br>','서울시청 02-120',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('광나루한강공원','05249','서울특별시 강동구 선사로 83-66',38,127,'잠실, 뚝섬, 잠원 등 총 12개의 지구로 구성된 한강시민공원은 다양한 문화레포츠 시설과 생태공원 등이 조성되어 있어 연간 4천 만 명 이상이 찾는 대표적인 휴식공원이다.강동대교에서 잠실철교 사이에 있는 광나루 한강공원은 한강 상류로부터 유입된 토사가 퇴적되어 자연스럽게 형성된 모래톱과 대규모 갈대군락지로 자연 그대로의 한강의 모습을 가장 잘 유지하고 있는 곳으로 철새들의 서식처이기도 하다.<br>','02-3780-0501~4',null,'연중개방',null,null,null,null,'24시간','있음(4개소, 407대 가능)','없음','가능','이용가능시설:[자전거공원] 이색자전거체험장, 레이싱경기장, 어린이놀이터, 레일바이크장, 어린이자전거교육장<br />
+[운동시설] 축구장, 배구장, 농구장, 테니스장, 체력단련장, 인라인스케이트광장, 게이트볼장, X-게임장,수영장, 자전거도로,<br />
+[편의시설] 매점, 그늘막 등
+주차요금:기본요금 - 최초 30분 1,000원 / 초과 10분당 200원<br />
+1일 주차 최고한도 10,000원<br />
+월정기권 50,000원
+화장실:있음
+입 장 료:없음
+한국어 안내서비스:가능(안내센터)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('피노파밀리아','01740','서울특별시 노원구 중계로 131-17',38,127,'도심 속에 우뚝 선 PINOFAMILIA는 한국의 미니멀한 건축물의 대표 작가 ''문훈''의 설계를 시작으로 2014년 부터 2년여 동안 공사를 진행하여 2016년 9월 29일 개관하게 되었다. 거짓말을 하면 코가 길어진다는 스토리의 대명사 피노키오, 피노키아와 함께 세월의 흐름에 따라 변신을 거듭하는 피노의 가족들을 만날 수 있으며 독창적인 건축물인 고래의 탄생 또한 관람객의 눈으로 그 크기를 가늠할 수 있게 한다.피노파밀리아 예술 체험관은 남다른 경쟁력을 갖춘 콘텐츠를 체험할 수 있으며, 피노키오의 여자친구로 국내에서 탄생된 캐릭터 피노키아 테마 예술 체험관이다. 복합문화공간인 피노파밀리아는 문화, 체험, 상징, 힐링의 대표적인 창조적 공간이며 사람과 사람을 이어주는 복합 문화를 실현한다.피노플랫폼을 통해 행복하고 재미있는 삶을 영위하며 창조의 계기를 경험할 수 있다. 영유아부터 노년층까지 전 세대가 피노문화를 향유하며 어린이에게는 창의력을, 청소년에게는 꿈을, 청년에게는 희망을, 성인들에게는 치유와 행복을 줄 수 있는 체험공간이다.','02-938-0911','2016년 09월 29일','매주 월요일, 설/추석 연휴 당일','* 무료체험<br />
 - 체코의 마리오네뜨 공연 관람<br />
 - 세계의상 체험<br />
 - 세계 인형전 관람<br />
@@ -579,104 +743,10 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 
 ※ 12개월 미만의 영아는 증빙자료 제출시 무료 입장가능
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 연세대학교 스팀슨관','03722','서울특별시 서대문구 연세로 50(신촌동)','연세대학교에 최초로 세워진 건물로서, 1919년 착공하여 1920년 완성된 돌로 지은 2층 건물이다. 연세대학교의 전신인 연희전문학교의 설립자 언더우드(한국이름 원두우) 목사가 고향인 미국으로 돌아가서 항구적인  학교건축을 위해 미국 로스엔젤레스에 거주하던 찰스 스팀슨의 기부금을 얻어놓고 세상을 떠난 뒤, 후임교장인 에비슨이 그 기부금으로 건립한 것이다.  미망인인 언더우드 부인이 초석을 놓았고 당시 화학과 교수인 밀러가 공사를 감독하였다.  설계자는 알 수 없으나 당시 미국인 건축가들이 우리나라에 와서 설계와 기본계획을 작성하였다고 한다.  장방형의 평면에 맞배지붕을 하고 있으며 고딕양식의 건물이다.<br /><br />면적 - 1,154㎡<br>','02-330-1121',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 연세대학교 언더우드관','03722','서울특별시 서대문구 연세로 50(신촌동)','연세대학교 언더우드관은 이 학교의 전신인 연희전문학교에서 스팀슨관에 이어 지어진 교사로서 학관 (學館)이라 불러왔다. 연세대학교가 위치한 연희동은 이곳에 정종이 태종에게 양위한 후  살았던 연희궁이 있었기 때문인데, 연희궁의 위치는 지금의 연세대자리에서 연희입체교차로가 있던 부근으로 추정되고 있다. 신촌 캠퍼스를 마련한 초창기에 지어진 스팀슨관 (1920년), 아펜젤라관 (1924년), 언더우드관은 ㄷ자형으로 놓여 있는데, 그 가운데 언더우드관은 중앙에 위치한 가장 웅장한 건물이다. 나아가 정문에 들어서면 캠퍼스의 중앙을 가로지른 백양로의 끝자락, 캠퍼스의 중앙에 자리잡고 있다. 이 건물의 5층으로 된 중앙의 탑은 이 캠퍼스의 중심역할을 하고 있다.<br /><br />언더우드관은 연희전문학교 창립자인 언더우드(H.G.Underwood)를 기념하기 위하여 그의 형인 존 티 언더우드(John T.Underwood)의 10만달러 기부금으로 지어졌다. 1921년 짓기 시작하여 1924년에 완공되었으며, 감독은 당시 화학과 교수였던 밀러가 담당했다. 구조는 본관건물인 스팀슨관과 같은 돌구조로서 지하 1층,지상 3층이며, 탑부분은 5층이다. 평면은 장방형으로 중앙에 현관부를 두고, 동서로 중앙복도를 두었다.  남북 양쪽에는 교실과 계단실을 두고 좌우 동서 양끝에는 큰 강의실을 두었다. 본래 문과대학 전용으로 사용되었으나, 현재는 대학본부 건물로 총장실 등 주요 행정부서가 있다. <br /><br />* 면적 - 2,707㎡<br>','02-330-1121',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 연세대학교 아펜젤러관','03722','서울특별시 서대문구 연세로 50','연세대학교의 본관건물인 스팀슨관의 맞은편에 위치하고 있다. 이 건물은 미국 북감리 교회 최초의 선교사이자  배재학당을 설립한 아펜젤러(H.G. Appengeller)를 기념하기 위하여 미국 매사추세츠주 피츠필드시의 제일감리교회의 기부금으로 지어졌다. 스팀슨관과 언더우드관과 마찬가지로 화학과 교수인 밀러의 감독하에 1921년 짓기 시작하여 1924년에 완성되었다. 아펜젤러관은 스팀슨관과 언더우드관의 두 건물과 함께 ''ㄷ''자형의 캠퍼스를 구성하며, 중앙에 있는 언더우드관의 오른쪽에 자리잡고 있다. 이 건물의 구조와 양식등은 두 건물과 서로 유사한 고딕풍이다. 평면구조는 장방형으로 지하 1층, 지상 2층의 석조건물이다. 본래는 이학관(理學館)으로 자연과학계의 교사로 쓰였으나, 해방 후 상경관(商經館)으로 상경계통에서 사용하였으나, 현재는 행정관으로 활용하고 있다.','02-330-1121',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일상비일상의틈','06129','서울특별시 강남구 강남대로 426(역삼동)','일상비일상의틈은 2020년 9월에 문을 오픈 했으며, LG유플러스가 만든 MZ세대를 위한 복합문화공간으로 제품을 진열한 통신사 매장이 아니라 브랜드 가치를 전달하는 공간이다. 지하 1층부터 지상 7층까지의 공간은 층마다 다른 콘셉트를 선보인다. 층과 지하 1층에서 MZ세대 취향을 저격하는 전시와 브랜드 팝업 행사가 주기적으로 열리고 있으며, 2층은 콜라보레이션을 중심으로 한 팝업이 진행된다. 3층은 독립출판물을 소개하는 책방이다. 4층은 아날로그 기록과 현상을 도와주는 필름 스튜디오가 있으며, 5층은 LG유플러스의 5G 서비스를 체험할 수 있는 공간, 7층은 루프톱이 위치해 있다,<br /><br /><출처 : 일상비일상의틈><br>','070-4090-8005',null,'매주 월요일',null,null,null,null,'11:00~21:00',null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용양봉저정 공원','06908','서울특별시 동작구 현충로 16(본동)','이곳은 조선의 22대왕 정조가 수원화성 행차 때 쉬던 용봉정저정 주변을 공원으로 조성한 곳으로 한강 및 서울 시내의 아름다운 경관을 주야간 조망 할 수 있는 명소이다. 주요시설은 하늘전망대, 자연놀이터, 연못, 탐방로(데크로드), 전망포토존 등이 있고, 어린이를 위한 자연놀이터는 가족단위의 이용에도 적합하다. 2022년말 준공예정인 옥상전망대에는 이용자의 편의를 위해 매점, 카페 등이 운영될 예정이다. 또한, 주변에 서울시 유형문화재 제6호인 용봉정저정, 효사정, 노들섬, 노들나루공원 등이 있어 볼거리를 제공한다.<br>','02-820-1395',null,null,null,null,null,null,'24시간 개방',null,'없음','없음','이용가능시설:하늘전망대, 연못, 자연놀이터, 탐방로(데크로드), 각종 포토존, 옥상전망대(2022년 예정)		
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용두동 쭈꾸미골목',null,'서울특별시 동대문구 용두동',' 용두동 쭈꾸미 골목은 쭈꾸미 특화거리이다. 황금색 쭈꾸미 모형을 주위로 쭈꾸미 전문점들이 들어서 있다. 고추장으로 매콤하게 양념한 쭈꾸미를 철판에 익혀 먹는 용두동 쭈꾸미는 별미 중에 별미이다.  <br>',null,null,'점포마다 상이함',null,null,null,null,'점포마다 상이함',null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('역삼동성당','06222','서울특별시 강남구 언주로85길 23-11(역삼동)','강남지역의 교세 신장에 따라 1984년 8월 1일 대치동 성당과 양재동 성당의 관할 구역중 일부(2,263명)를 분할하여 신설되었다. 초대 김구희(세자요한) 신부님을 모시고 주보성인을 ''성 최경환(프란치스코)''로 정하였으며, 임시가건물을 축조하여 사용하면서 새 성전 봉헌을 준비하였다. 교우 김대환 형제가 봉헌한 신축부지에 1992년 12월 25일 성당 신축공사를 시작하였다. 착공한 지 5년 만에 연건평 3,960평 건축, 순공사비만 약 120억원의 거대하고 아름다운 성전을 완공하여 1997년9월 21일 김수환 추기경님을 모시고 새 성전 봉헌식을 거행하였다.(상반기 혼인미사 예약 온라인 선착순 접수)','02-553-0801','1984-08-01','없음',null,null,null,null,'미사 및 성사<br>월요일 06:00 10:00<br>화요일 06:00 10:00 19:00<br>수요일 06:00 10:00 19:00<br>목요일 06:00 10:00 19:00<br>금요일 06:00 10:00 19:00<br>토요일 06:00 19:00 (토요일 저녁 주일미사)<br>주일 07:00 09:30 (영어미사/경환당) 10:00 (교중) 10:00 (중고등부/청소년회관) 16:00 (어린이미사/매달마지막주일 미사없음) 18:00 (청년미사) 21:00','주차가능','없음','불가','이용가능시설:성당시설
-주차요금:없음
-화장실:남녀구분
-입 장 료:없음
-외국인 예약안내:없음
-한국어 안내서비스:없음
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('거리공원','08297','서울특별시 구로구 공원로 28(구로동)','구로구(九老區)는 옛날에 노인 9명이 오래도록 장수하였다는 전설로부터 유래된 지역이다. 서울특별시 구로구 구로동 106-5번지 가마 산길 거리공원오거리에서 구로구 구로동 3-55번지 신도림역에 이르는 보조 간 선급 가로를 거리공원길이라고 하는데, 구로 거리공원을 따라 이어진 길이라는 의미에서 거리공원길이라고 이름 붙였다.','02-860-2947',null,'연중무휴','없음',null,null,null,null,'없음','없음','가능','시설이용료:없음
-
-입 장 료:없음
-
-주차요금:없음
-
-화장실:있음, 남녀 분리
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강서한강공원','07518','서울특별시 강서구 양천로27길 279-23(방화동)','강서한강공원은 한강 남단 가양대교에서 서울-김포시 경계까지이며, 습지 생태공원과 체육공원이 결합한 테마형 공원이다.<br>서울시 생태관광명소 30개소 중 하나로 선정된 강서습지생태공원은 하중도, 자연관찰로, 습초지토 등 습지 생태계를 복원하여 하천의 자연정화 기능을 제공하고, 방화대교 하부, 가족 피크닉장 앞, 행주대교 하부에는 체력단련기구 등을 갖춰 시민의 여가활동과 스포츠 공간으로써의 기능을 하고 있다.','02-3780-0621~3',null,'연중무휴',null,null,null,null,'오전 09:00 ~ 오후 18:00',null,'없음','가능','시설이용료:자전거대여 3,000원 (1시간)<br>
-※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
-주차요금:기본요금 최초30분 1,000원 / 초과 10분당 500원<br>
-1일 주차 최고한도 10,000원<br>
-※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
-이용가능시설:운동시설(족구장, 암벽장, 다목적운동장, 체력단력장), 자전거대여소, 가족피크닉장, 습지생태공원, 한강조망대, 기타편의시설 
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대치유수지체육공원','06190','서울특별시 강남구 역삼로90길 43(대치동)','각종 체육시설과 운동기구, 산책로, 휴게공간, 음악분수, 상징조형물 등 여러 시설물을 갖추어 체력 증진과 생활 체육의 활성화를 위해 지역 주민이 편리하게 이용할 수 있도록 조성한 체육공원이다.',null,null,'연중무휴',null,null,null,null,'07:00 ~21:00','없음 (예약자에 한해 주변 노상공영주차장 할인 가능)','없음','불가','입 장 료:축구장 100,000원 / 테니스장 8,000원 / 풋살구장 40,000원
-이용가능시설:축구장, 테니스장, 풋살구장
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('노을공원','03900','서울특별시 마포구 하늘공원로 108-2(상암동)','노을공원 총면적의 57% 정도는 골프장으로 만들어지고 나머지 부분은 자연 식생지, 운동시설 및 산책로 등 시민들이 여가를 즐길 수 있는 공간이다. 드넓은 잔디밭에 조각예술품과 전망데크가 있어 여유를 느낄 수 있다.
-파크골프장, 가족 캠핑장, 노을 책방, 누에체험장, 반딧불이 서식처, 동시 농부정원 등 자연을 직접 체험할 수 있는 시설이 갖춰져 있다.','02-3153-9554',null,'연중무휴','없음',null,null,null,'매일 05:00 ~ 20:30, 월마다 유동적','있음','없음','가능','이용가능시설:노을캠핑장/조각공원/파크골프장/노을여가센터/반딧불이생태관/누에생태체험장/노을별누리/수유실
-
-화장실:있음, 남녀 분리
-
-입 장 료:없음
-
-주차요금:30분 1,000원 
-
-한국어 안내서비스:가능
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불암산나비정원','01719','서울특별시 노원구 한글비석로12길 51-27(중계동)','노원구 불암산 힐링타운 사업지 중 한 곳으로 365일 살아있는 나비를 볼 수 있는 정원이다.
-나비 정원 건물 1층에는 사육배양실, 채란실, 나비 온실 등이 위치해 있고 2층은 곤충학습관으로 이뤄졌다. 
-곤충학습관에서는 환경부 지정 멸종 위기종 2급 곤충인 물장군, 두점박이사슴벌레 등 각종 곤충 표본과 곤충 관련 자료들을 볼 수 있다. 단체 관람 시 예약이 필요하다.','02-936-0900','2018년 9월','월요일 휴무','불암산 곤충아카데미 5,000원','초등생 저학년',null,null,'매일 10:00 ~ 17:00, 입장마감 16:30','없음, 상현교회 옆 공원 주차장 이용','없음','가능','입 장 료:무료 		
-
-화장실:있음, 남녀분리
-
-이용가능시설:생태학습관, 곤충학습관, 사육배양실, 채란실, 나비온실		
-
-주차요금:없음
-
-한국어 안내서비스:가능
-
-내국인 예약안내:<a href="https://yeyak.seoul.go.kr" target="_blank" title="새창 : 서울시 공공서비스예약 사이트로 이동">https://yeyak.seoul.go.kr</a>
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구로리공원','08312','서울특별시 구로구 구로중앙로 13(구로동)','서울시에서 기존의 단조롭고 노후된 어린이 공원을 창의력을 키울 수 있는 공원으로 새롭게 조성한 사업으로 생긴 공원이다.
-어린이는 물론 남녀노소 모두가 다양하게 이용할 수 있는 다양한 시설과 조경을 갖추고 있다. 매년 청소년 축제 등 지역의 중요 행사가 개최되는 장소이다.','02-860-3398',null,'없음','없음',null,null,null,'00:00~24:00','주차가능','없음','가능','주차요금:30분 900원/ 60분 1,800원/ 120분 3,600원/ 240분 7,200원
-
-이용가능시설:운동기구, 트램펄린, 놀이터		
-
-화장실:있음
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울식물원 호수공원','07789','서울특별시 강서구 마곡동로 161(마곡동)','서울 강서구 마곡동에 위치한 서울 최초의 도시형 식물원인 서울식물원과 유기적으로 결합한 공원 속 공원이다.
-호수 주변으로 산책길과 수변 관찰 데크가 조성되어 있으며, 호수 계단에 앉아 식물원을 조망하거나 습지식물과 텃새를 관찰할 수도 있는 휴식 공간이자 생태 교육장이다.','02-2104-9716','2019년 5월','없음',null,null,null,null,'09:30~18:00(3~9월)<br>
-09:30~17:00(11~2월)','있음','없음','가능','주차요금:10분당 200원
-
-이용가능시설:호수횡단보행교, 어린이놀이터, 물놀이터, 수변가로, 물가쉼터, 습지관찰데크	
-화장실:있음, 남녀 분리
-
-입 장 료:주제원<br>
-성인 5,000원 / 청소년 3,000원<br>
-소인 2,000원 / 단체 30% 할인
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('어린이회관','04991','서울특별시 광진구 광나루로 441(능동)','어린이들의 복지 증진과 보육 환경을 조성하는 것을 목적으로 재단법인 육영재단이 설립한 복지 회관이다. 어린이를 위한 다양한 교육, 전시, 문화, 체육 시설들이 갖춰져 있으며 10,000㎡ 규모의 과학관(지하 1층, 지상 4층)과 6500㎡ 넓이의 문화관(지상 2층)으로 나뉘어 다양한 어린이 관련 행사와 체험전이 운영되고 있다. 실내 놀이터를 무료로 이용할 수 있으며 겨울에는 눈썰매장을 개장 운영한다. 1970년 서울 남산에 설립 개관되어 운영되었다가 1975년에 현재의 위치로 이전했다.','홈페이지, 전화 02-2204-6028',null,'주말','근화원 예절교육, 창의융합교실, 푸른꿈 상상놀이터(무료 실내 놀이터)','어린이',null,null,'평일 09:00 ~ 18:00','주차가능','없음','불가','입 장 료:무료, 프로그램별 상이
-
-이용가능시설:부대시설 : 실내놀이터<br> 육영수 여사 기념 전시실, 근화원 예절교육장, 푸른꿈 상상놀이터(무료 실내놀이터), 클래비키즈파크 시즌 2(요리소리노리 체험전)<br>대관예약 : 무지개극장,이벤트홀,벽면전시시설 대관 가능 - 홈페이지 참조
-
-주차요금:기본 500원 / 10분, 당일 최대요금 20,000원
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('명락사','08786','서울특별시 관악구 청룡1길 11(봉천동)','서울 관악구 청룡동에 있는 명락사는 관악산 줄기의 끝자락 도심 상업지역에 있다.  40여 년 넘게 서울 서남권의 포교 활동과 다문화가정을 위한 포교에 관심을 기울이고 있는 사찰이다. 청년회가 활성화되어 있으며, 토요일 저녁 8시 30분부터 정기 법회를 갖는다. 2호선 봉천역과 서울대입구역 중간지점에 있다.','02-889-7272',null,null,'정기법회, 기타법회',null,null,null,'00:00 ~ 24:00','주차가능','없음','불가','이용가능시설:사무실, 요사채, 천불전, 법당<br>매점, 식당
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼각어린이공원','08297','서울특별시 구로구 구로동 47(구로동)','서울 구로구에 위치한 삼각어린이공원은 어린이들의 미숙한 교통 지식을 놀이를 통하여 체험시켜주는 조성된 공원이다.
-실제 차로에서 쓰이는 표지판, 신호등을 포함한 횡단보도 등으로 공원이 조성되어 있어 어린이들에게 도로 교통 지식을 학습하고 체험할 수 있다.
-오뚜기의자, 그네, 미끄럼틀 등 놀이터로서의 기본 기능도 충족시켜주어 어린이들과 부모 모두에게 사랑받는 공원이다.','02-860-3090',null,'없음',null,null,null,null,'00:00 ~ 24:00','있음 (43면)','없음','없음','주차요금:10분당 500원
-
-이용가능시설:육교안전하게건너기, 통학버스, 횡단보도, 철길건널목, 기타시설물 등		
-
-입 장 료:없음		
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('브이알존 엑스 코엑스 직영점','06164','서울특별시 강남구 영동대로 513(삼성동)','VRZONE은 단순히 360도로 보이는 가상현실체험을 제공하지 않고, VRZONE에서 직접 개발부터 유통하는 VR콘텐츠를 체험할 수 있다.체험 가능한 콘텐츠는 아래와 같다.  데드프리즌은 의문의 사고로 좀비들이 득실거리는 병원에서 탈출하는 FPS VR 콘텐츠이며, 퓨처스트라이크는 연구소에서 실험 중 사고로 돌연변이 곤충들이 탈출하여 도시가 황폐화되어, 곤충들을 박멸하는 FPS VR 콘텐츠이며,  가디언 히어로즈는 지구를 침략하려는 외계인들과 싸워 이기는 FPS VR 콘텐츠이다. VR 라이더는 약 20여가지의 VR 콘텐츠로 놀이기구를 탑승하는 VR체험 시뮬레이터다.놀이기구를 VR로 재현함과 상상만 해왔던 장소를 탐험하는 상상 그이상의 현실을 구현한다.<br>','02-6002-5525','2018-08-02','연중무휴',null,'만 8세 이상','시간당 40명 수용가능',null,'10:00 ~ 22:00','없음','불가','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 연세대학교 스팀슨관','03722','서울특별시 서대문구 연세로 50(신촌동)',38,127,'연세대학교에 최초로 세워진 건물로서, 1919년 착공하여 1920년 완성된 돌로 지은 2층 건물이다. 연세대학교의 전신인 연희전문학교의 설립자 언더우드(한국이름 원두우) 목사가 고향인 미국으로 돌아가서 항구적인  학교건축을 위해 미국 로스엔젤레스에 거주하던 찰스 스팀슨의 기부금을 얻어놓고 세상을 떠난 뒤, 후임교장인 에비슨이 그 기부금으로 건립한 것이다.  미망인인 언더우드 부인이 초석을 놓았고 당시 화학과 교수인 밀러가 공사를 감독하였다.  설계자는 알 수 없으나 당시 미국인 건축가들이 우리나라에 와서 설계와 기본계획을 작성하였다고 한다.  장방형의 평면에 맞배지붕을 하고 있으며 고딕양식의 건물이다.<br /><br />면적 - 1,154㎡<br>','02-330-1121',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 연세대학교 언더우드관','03722','서울특별시 서대문구 연세로 50(신촌동)',38,127,'연세대학교 언더우드관은 이 학교의 전신인 연희전문학교에서 스팀슨관에 이어 지어진 교사로서 학관 (學館)이라 불러왔다. 연세대학교가 위치한 연희동은 이곳에 정종이 태종에게 양위한 후  살았던 연희궁이 있었기 때문인데, 연희궁의 위치는 지금의 연세대자리에서 연희입체교차로가 있던 부근으로 추정되고 있다. 신촌 캠퍼스를 마련한 초창기에 지어진 스팀슨관 (1920년), 아펜젤라관 (1924년), 언더우드관은 ㄷ자형으로 놓여 있는데, 그 가운데 언더우드관은 중앙에 위치한 가장 웅장한 건물이다. 나아가 정문에 들어서면 캠퍼스의 중앙을 가로지른 백양로의 끝자락, 캠퍼스의 중앙에 자리잡고 있다. 이 건물의 5층으로 된 중앙의 탑은 이 캠퍼스의 중심역할을 하고 있다.<br /><br />언더우드관은 연희전문학교 창립자인 언더우드(H.G.Underwood)를 기념하기 위하여 그의 형인 존 티 언더우드(John T.Underwood)의 10만달러 기부금으로 지어졌다. 1921년 짓기 시작하여 1924년에 완공되었으며, 감독은 당시 화학과 교수였던 밀러가 담당했다. 구조는 본관건물인 스팀슨관과 같은 돌구조로서 지하 1층,지상 3층이며, 탑부분은 5층이다. 평면은 장방형으로 중앙에 현관부를 두고, 동서로 중앙복도를 두었다.  남북 양쪽에는 교실과 계단실을 두고 좌우 동서 양끝에는 큰 강의실을 두었다. 본래 문과대학 전용으로 사용되었으나, 현재는 대학본부 건물로 총장실 등 주요 행정부서가 있다. <br /><br />* 면적 - 2,707㎡<br>','02-330-1121',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 연세대학교 아펜젤러관','03722','서울특별시 서대문구 연세로 50',38,127,'연세대학교의 본관건물인 스팀슨관의 맞은편에 위치하고 있다. 이 건물은 미국 북감리 교회 최초의 선교사이자  배재학당을 설립한 아펜젤러(H.G. Appengeller)를 기념하기 위하여 미국 매사추세츠주 피츠필드시의 제일감리교회의 기부금으로 지어졌다. 스팀슨관과 언더우드관과 마찬가지로 화학과 교수인 밀러의 감독하에 1921년 짓기 시작하여 1924년에 완성되었다. 아펜젤러관은 스팀슨관과 언더우드관의 두 건물과 함께 ''ㄷ''자형의 캠퍼스를 구성하며, 중앙에 있는 언더우드관의 오른쪽에 자리잡고 있다. 이 건물의 구조와 양식등은 두 건물과 서로 유사한 고딕풍이다. 평면구조는 장방형으로 지하 1층, 지상 2층의 석조건물이다. 본래는 이학관(理學館)으로 자연과학계의 교사로 쓰였으나, 해방 후 상경관(商經館)으로 상경계통에서 사용하였으나, 현재는 행정관으로 활용하고 있다.','02-330-1121',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('브이알존 엑스 코엑스 직영점','06164','서울특별시 강남구 영동대로 513(삼성동)',38,127,'VRZONE은 단순히 360도로 보이는 가상현실체험을 제공하지 않고, VRZONE에서 직접 개발부터 유통하는 VR콘텐츠를 체험할 수 있다.체험 가능한 콘텐츠는 아래와 같다.  데드프리즌은 의문의 사고로 좀비들이 득실거리는 병원에서 탈출하는 FPS VR 콘텐츠이며, 퓨처스트라이크는 연구소에서 실험 중 사고로 돌연변이 곤충들이 탈출하여 도시가 황폐화되어, 곤충들을 박멸하는 FPS VR 콘텐츠이며,  가디언 히어로즈는 지구를 침략하려는 외계인들과 싸워 이기는 FPS VR 콘텐츠이다. VR 라이더는 약 20여가지의 VR 콘텐츠로 놀이기구를 탑승하는 VR체험 시뮬레이터다.놀이기구를 VR로 재현함과 상상만 해왔던 장소를 탐험하는 상상 그이상의 현실을 구현한다.<br>','02-6002-5525','2018-08-02','연중무휴',null,'만 8세 이상','시간당 40명 수용가능',null,'10:00 ~ 22:00','없음','불가','불가','화장실:있음
 시설이용료:VR 라이더 7,000원<br />
 시네마틱 12,000원<br />
 ※ 전화문의
@@ -690,7 +760,7 @@ ROOM 4 (수용인원 5명)<br>
 외국인 예약안내:전화 예약 가능
 내국인 예약안내:전화 예약 가능
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울식물원','07789','서울특별시 강서구 마곡동로 161(마곡동)','서울식물원은 세계 12개 도시 식물과 식물문화를 소개하고 도시의 생태감수성을 높이기 위해 서울에 남은 마지막 개발지, 마곡에 조성되었으며, 식물원과 공원을 결합한 이른바 ''보타닉 공원''으로서 면적은 축구장 70개 크기에 달한다. 멸종위기 야생식물 서식지를 확대하고 번식이 어려운 종의 증식 연구, 품종개발 등 식물의 육성이라는 식물연구보전기관 본연의 역할은 물론, 도시 정원문화 확산의 교두보이자 평생교육 기관의 역할을 수행한다. 식물원은 열린숲과 주제원, 호수원, 습지원 들 4가지 공간으로 나뉘며 그 중 하이라이트는 식물문화센터와 야외 주제정원, 마곡문화관이 포함된 주제원이다.<br>','02-120','2019.05','매주 월요일 휴관','서울식물원 체험안내 <a href="http://botanicpark.seoul.go.kr/front/participation/eduList.do" target="_blank" title="새창: 서울식물원">http://botanicpark.seoul.go.kr/front/participation/eduList.do</a>',null,null,null,'평시(3~10월) 09:30~18:00(17:00 입장 마감)<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울식물원','07789','서울특별시 강서구 마곡동로 161(마곡동)',38,127,'서울식물원은 세계 12개 도시 식물과 식물문화를 소개하고 도시의 생태감수성을 높이기 위해 서울에 남은 마지막 개발지, 마곡에 조성되었으며, 식물원과 공원을 결합한 이른바 ''보타닉 공원''으로서 면적은 축구장 70개 크기에 달한다. 멸종위기 야생식물 서식지를 확대하고 번식이 어려운 종의 증식 연구, 품종개발 등 식물의 육성이라는 식물연구보전기관 본연의 역할은 물론, 도시 정원문화 확산의 교두보이자 평생교육 기관의 역할을 수행한다. 식물원은 열린숲과 주제원, 호수원, 습지원 들 4가지 공간으로 나뉘며 그 중 하이라이트는 식물문화센터와 야외 주제정원, 마곡문화관이 포함된 주제원이다.<br>','02-120','2019.05','매주 월요일 휴관','서울식물원 체험안내 <a href="http://botanicpark.seoul.go.kr/front/participation/eduList.do" target="_blank" title="새창: 서울식물원">http://botanicpark.seoul.go.kr/front/participation/eduList.do</a>',null,null,null,'평시(3~10월) 09:30~18:00(17:00 입장 마감)<br />
 동절기(11~2월) 09:30~17:00(16:00 입장 마감)<br />
 <br />
 ※ 열린숲, 호수원, 습지원 : 연중무휴<br />
@@ -704,27 +774,28 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 주차요금:10분당 200원(승용차), 10분당 400원(중형차-승합차), 10분당 600원(대형차-16인승 이상)<br />
 ※ 주차장이 협소하므로 대중교통을 이용권장
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고척근린공원','08239','서울특별시 구로구 고척로45길 39(고척동)','고척 근린공원은 고척2동에 위치하며 자연적인 야산을 공원으로 조성한 구로구의 대표적인 공원이다. 높은 곳에 생긴 마을이라는 데에서 유래해서 고척이라는 지명을 갖게 되었다고 전해지고 있다. 은행나무와 벽화가 일대에 있어 산책하기에 적합하다.<br>','02-2619-6640','1988년 12월에 조성','연중개방',null,'전연령',null,null,'00:00~24:00','주차가능','없음','없음','이용가능시설:도서관, 체육센터(실내 수영장, 체력단련장, 에어로빅장, 체육관 등), 경로당, 축구장, 테니스장, 배드민턴장, 광장, 야외무대 시설
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고척근린공원','08239','서울특별시 구로구 고척로45길 39(고척동)',38,127,'고척 근린공원은 고척2동에 위치하며 자연적인 야산을 공원으로 조성한 구로구의 대표적인 공원이다. 높은 곳에 생긴 마을이라는 데에서 유래해서 고척이라는 지명을 갖게 되었다고 전해지고 있다. 은행나무와 벽화가 일대에 있어 산책하기에 적합하다.<br>','02-2619-6640','1988년 12월에 조성','연중개방',null,'전연령',null,null,'00:00~24:00','주차가능','없음','없음','이용가능시설:도서관, 체육센터(실내 수영장, 체력단련장, 에어로빅장, 체육관 등), 경로당, 축구장, 테니스장, 배드민턴장, 광장, 야외무대 시설
 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고척동 고인돌','08242','서울특별시 구로구 고척동','청동시시대 무덤으로 오류중학교 뒤편 고척동 산 12-1호에는 규모가190x105x28㎝이다. 이 고인돌은 1998년 서울대조사단에 의해 처음 발견되었는데 그 후 실시된 관련분야 교수들의 ''거친 형태의 돌들이 존재하지 않는 것으로 보아 원래의 위치에서 벗어난 것으로 보인다.’라는 의견이 제시되었다. 고척동 고인돌은 규모는 크지 않지만 구로구의 고대사에 대해 다시 생각하게 하는 소중한 문화유적으로 현재 보호를 위하여 안내판과 보호휀스가 설치되어 있다.<br>','02-860-2278',null,null,null,null,null,null,null,null,'없음','없음','이용가능시설:안내판, 보호 펜스
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고척동 고인돌','08242','서울특별시 구로구 고척동',38,127,'청동시시대 무덤으로 오류중학교 뒤편 고척동 산 12-1호에는 규모가190x105x28㎝이다. 이 고인돌은 1998년 서울대조사단에 의해 처음 발견되었는데 그 후 실시된 관련분야 교수들의 ''거친 형태의 돌들이 존재하지 않는 것으로 보아 원래의 위치에서 벗어난 것으로 보인다.’라는 의견이 제시되었다. 고척동 고인돌은 규모는 크지 않지만 구로구의 고대사에 대해 다시 생각하게 하는 소중한 문화유적으로 현재 보호를 위하여 안내판과 보호휀스가 설치되어 있다.<br>','02-860-2278',null,null,null,null,null,null,null,null,'없음','없음','이용가능시설:안내판, 보호 펜스
 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구로기계공구단지','08212','서울특별시 구로구 구로중앙로 198(구로동)','본단지는 현재 1,700여 개의 입주 사업자가 5만 여종의 각종 산업용품을 취급하는 국내 최대 산업용품유통전문 상가이다.<br>','02-2633-0084','1981년 5월',null,null,null,null,null,'판매업체마다 상이함','* 지상 주차장 : 1,600대<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구로기계공구단지','08212','서울특별시 구로구 구로중앙로 198(구로동)',38,127,'본단지는 현재 1,700여 개의 입주 사업자가 5만 여종의 각종 산업용품을 취급하는 국내 최대 산업용품유통전문 상가이다.<br>','02-2633-0084','1981년 5월',null,null,null,null,null,'판매업체마다 상이함','* 지상 주차장 : 1,600대<br />
 * 지하 주차장 : 400대<br />
 * 2층 옥상 주차장 : 800대<br />
 * 3층 옥상 주차장 : 1,200대<br />
 * 총 주차대수 : 4,000대','없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국제음식문화거리(INTERNATIONAL FOOD STREET)','08289','서울특별시 구로구 새말로 102(구로동)','국제예술거리가 조성되는 곳에는 신도림역, 대형 쇼핑몰, 먹자골목 등이 위치해 있어 하루 약 2만명 이상이 왕래하고 있다. 연간 1만 5,000여명의 교육생이 방문하는 유네스코 아태 교육원이 위치한 지역이기도 하다.<br>','종로구청 02-2148-1114',null,null,'개발 예정 : 아시아 문화축제, 국제예술문화 공연, 야외 상설 전시, 아시아 플리마켓, 디자인 벤치, 포토존 등 관련 문화 콘텐츠',null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('궁동저수지 생태공원','08249','서울특별시 구로구 궁동','궁동생태공원은 생태탐방로, 산책로, 전통한식정자, 운동기구 등이 있어 산책하기 좋으며 25,000여 본의 다양한 꽃과 나무가 식재되어 있고 100여 마리의 비단잉어들이 저수지에 노닐고 있는 등 서울에서 보기 드문 아름다운 풍경과 생태 환경을 자랑합니다.<br>','02-860-2321',null,null,null,null,null,null,null,null,'없음','없음','이용가능시설:수궁정(팔각정자), 생태 탐방로, 산책로, 화장실, 목재데크 등
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국제음식문화거리(INTERNATIONAL FOOD STREET)','08289','서울특별시 구로구 새말로 102(구로동)',38,127,'국제예술거리가 조성되는 곳에는 신도림역, 대형 쇼핑몰, 먹자골목 등이 위치해 있어 하루 약 2만명 이상이 왕래하고 있다. 연간 1만 5,000여명의 교육생이 방문하는 유네스코 아태 교육원이 위치한 지역이기도 하다.<br>','종로구청 02-2148-1114',null,null,'개발 예정 : 아시아 문화축제, 국제예술문화 공연, 야외 상설 전시, 아시아 플리마켓, 디자인 벤치, 포토존 등 관련 문화 콘텐츠',null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('궁동저수지 생태공원','08249','서울특별시 구로구 궁동',38,127,'궁동생태공원은 생태탐방로, 산책로, 전통한식정자, 운동기구 등이 있어 산책하기 좋으며 25,000여 본의 다양한 꽃과 나무가 식재되어 있고 100여 마리의 비단잉어들이 저수지에 노닐고 있는 등 서울에서 보기 드문 아름다운 풍경과 생태 환경을 자랑합니다.<br>','02-860-2321',null,null,null,null,null,null,null,null,'없음','없음','이용가능시설:수궁정(팔각정자), 생태 탐방로, 산책로, 화장실, 목재데크 등
 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('류순정·류홍 부자 묘역','08358','서울특별시 구로구 오류동','원래 이 묘역은 반정공신으로서 영의정의 자리에 있던 류순정이 1512년(중종 7년) 53세에 졸(卒)하게 되자 중종이 박원종 졸시(卒時)의 예에 따라 철조삼일(輟朝三日)하고 장생전(長生殿)의 관곽(棺槨)을 내어줌과 동시에 현재의 구로구 오류동(梧柳洞)과 온수동(溫水洞) 일대 및 경기도 부천시 여월동(如月洞), 작동(鵲洞)에 이르는 약 300여 만평의 땅을 사여(賜與)하면서 조성되었다. 류순정의 묘역에서 서남쪽으로 약 80여m 떨어진 오류동 산43-31에는 류순정의 아들로서 역시 정국공신(靖國功臣) 4등에 책록된 류홍의 묘가 자리하고 있다. 류홍 묘의 동쪽 아래로는 다른 곳에서 이장된 그 후손묘 5기가 자리하고 있다.<br /><br />류순정 · 류홍 부자 묘역은 서울 지역에서 유일한 부자(父子) 2대 공신 묘역으로 조성시기도 16c 전반으로 상당히 이른 시기에 속한다.특히 중종반정의 1등공신인 류순정의 묘역은 조성 당시 왕족에게만 내려주던 장흥고(長興庫)의 관곽(棺槨)을 사여할 정도로 국가적 관심속에서 조성되어 공신묘역의 조성방식을 알게 하는 중요자료이다.<br>','구로구청 관광진흥팀 02-860-3401',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('여계묘역','08248','서울특별시 구로구 고척동','여계묘역에는 함양 여씨의 선조인 숭의랑공 여계(呂稽)의 묘가 위쪽에 있고 그 아래쪽에 부인의 묘가 있다. 함양 여씨의 시조는 중국 내주 사람 여어매(呂御梅)인데, 그는 원래 당나라의 한림학사를 역임하였으며,황소의 난을 피하여 통일신라 헌강왕 3년(877) 신라에 귀화하였다.경상북도 성주군 벽진면에 정착하여 살았고, 고려시대에는 공조전서를 지냈다.여계는 고려 말에서 조선 초기 병조판서를 지낸 여칭(呂稱,1351～1423)의 아들이며, 태종 때에 호조좌랑ㆍ호조참판 등을 역임하였다. 세종 3년(1421)에 세상을 떠났으며, 세종 10년(1428)에 이곳에 묘소를 마련하였다. 부인은 청송 심씨로 당시 정승을 지낸 심백덕의 손녀이며, 판사를 지낸 심의구의 딸이다.묘역에는 무덤 2기, 묘비 1개, 상석 2기, 문인석 4기가 있다. 조선 전기 묘제를 알 수 있는 분묘양식으로, 지석과 기단석 등은 조선 초기 묘지 양식 연구에 도움을 주는 귀중한 자료로 활용되고 있다.<br>','02-860-2278',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('음식문화특화거리(깔깔거리)','08391','서울특별시 구로구 디지털로32길 97-21','음식점은 깔끔하게(적당하게) 차리고 이용객은 깔끔하게(남기지 않고) 먹기,지하철 2호선 구로디지털단지역 인근에 형성된 상권에 청결하고 간소한 상차림으로 낭비적인 음식문화 개선에 앞장서고 있는 구로구의 우수음식점들이 밀집되어 있는 거리다. 깔깔거리의 음식점 중 손님이 안심하고 믿고 먹을 수 있는 음식을 제공하는 음식점으로 구청에서 인증한 깔깔가맹점에선, 깔끔하게 먹은 손님들에게는 음식값의 2%를 할인(포인트 적립)해 주고, 손님이 먹고 남긴 음식은 포장용기에 싸갈 수 있게 하는 등 음식문화개선을 위해 노력하고 있다.<br>',null,null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이씨레물리노공원(구로근린공원)','08301','서울특별시 구로구 가마산로25길 21(구로동)','이씨레물리노 공원(구로근린공원)은 산책을 즐기기 좋은 공원으로 공원 바닥분수에서 쏟아지는 물줄기를 바라보며 바닥분수 옆에 마련해 놓은 도서함을 통해 독서를 즐기거나, 매년 구로구와 이씨레물리노 지역 간의 문화교류행사로서 다양한 프랑스 문화체험의 기회를 제공해주는 프랑스 문화축제를 제공해주는 장소이기도 하다.<br>','02-860-3082',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정선옹주 묘역','08248','서울특별시 구로구 궁동','정선옹주는 조선 제 14대 임금 선조의 7녀로, 세도가인 안동권씨 집안의 권대임과 결혼해 지금의 구로구 궁동 67번지 일대에서 살았다. 궁동이라는 명칭도 그들이 궁궐 같은 기와집에서 살았던 것에서 유래되었다. 정선옹주 묘역에는 정선옹주 남편 권대임의 묘를 비롯해 여러 기의 안동권씨 무덤이 자리하고 있다. 이들의 묘는 조선 공신 묘역 조성 방식의 귀중한 사례가 되고 있으며, 묘역의 신도비와 묘비는 당시 묘제 연구에 귀중한 자료로 평가받고 있다.<br>','구로구청 문화관광과 02-860-3401',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('문화철도 959','08209','서울특별시 구로구 경인로 688(신도림동)','문화철도 959는 신도림 역사 내에 위치해 있는 복합 문화 공간이다. 뛰어난 접근성과 안전성을 활용하여 문화예술을 통해 다양한 문화를 향유할 수 있으며, 유휴공간 및 지역 경제 활성화를 목적으로 구로구와 구로문화재단 예술가 단체 토카아트가 함께 만들어 가고 있다.<br>','070-7678-0002',null,'일요일, 월요일','교육기간 : 2020년 8월 3일(월) ~ 2020년 12월 16일(수)<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('류순정·류홍 부자 묘역','08358','서울특별시 구로구 오류동',37,127,'원래 이 묘역은 반정공신으로서 영의정의 자리에 있던 류순정이 1512년(중종 7년) 53세에 졸(卒)하게 되자 중종이 박원종 졸시(卒時)의 예에 따라 철조삼일(輟朝三日)하고 장생전(長生殿)의 관곽(棺槨)을 내어줌과 동시에 현재의 구로구 오류동(梧柳洞)과 온수동(溫水洞) 일대 및 경기도 부천시 여월동(如月洞), 작동(鵲洞)에 이르는 약 300여 만평의 땅을 사여(賜與)하면서 조성되었다. 류순정의 묘역에서 서남쪽으로 약 80여m 떨어진 오류동 산43-31에는 류순정의 아들로서 역시 정국공신(靖國功臣) 4등에 책록된 류홍의 묘가 자리하고 있다. 류홍 묘의 동쪽 아래로는 다른 곳에서 이장된 그 후손묘 5기가 자리하고 있다.<br /><br />류순정 · 류홍 부자 묘역은 서울 지역에서 유일한 부자(父子) 2대 공신 묘역으로 조성시기도 16c 전반으로 상당히 이른 시기에 속한다.특히 중종반정의 1등공신인 류순정의 묘역은 조성 당시 왕족에게만 내려주던 장흥고(長興庫)의 관곽(棺槨)을 사여할 정도로 국가적 관심속에서 조성되어 공신묘역의 조성방식을 알게 하는 중요자료이다.<br>','구로구청 관광진흥팀 02-860-3401',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('여계묘역','08248','서울특별시 구로구 고척동',38,127,'여계묘역에는 함양 여씨의 선조인 숭의랑공 여계(呂稽)의 묘가 위쪽에 있고 그 아래쪽에 부인의 묘가 있다. 함양 여씨의 시조는 중국 내주 사람 여어매(呂御梅)인데, 그는 원래 당나라의 한림학사를 역임하였으며,황소의 난을 피하여 통일신라 헌강왕 3년(877) 신라에 귀화하였다.경상북도 성주군 벽진면에 정착하여 살았고, 고려시대에는 공조전서를 지냈다.여계는 고려 말에서 조선 초기 병조판서를 지낸 여칭(呂稱,1351～1423)의 아들이며, 태종 때에 호조좌랑ㆍ호조참판 등을 역임하였다. 세종 3년(1421)에 세상을 떠났으며, 세종 10년(1428)에 이곳에 묘소를 마련하였다. 부인은 청송 심씨로 당시 정승을 지낸 심백덕의 손녀이며, 판사를 지낸 심의구의 딸이다.묘역에는 무덤 2기, 묘비 1개, 상석 2기, 문인석 4기가 있다. 조선 전기 묘제를 알 수 있는 분묘양식으로, 지석과 기단석 등은 조선 초기 묘지 양식 연구에 도움을 주는 귀중한 자료로 활용되고 있다.<br>','02-860-2278',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('음식문화특화거리(깔깔거리)','08391','서울특별시 구로구 디지털로32길 97-21',37,127,'음식점은 깔끔하게(적당하게) 차리고 이용객은 깔끔하게(남기지 않고) 먹기,지하철 2호선 구로디지털단지역 인근에 형성된 상권에 청결하고 간소한 상차림으로 낭비적인 음식문화 개선에 앞장서고 있는 구로구의 우수음식점들이 밀집되어 있는 거리다. 깔깔거리의 음식점 중 손님이 안심하고 믿고 먹을 수 있는 음식을 제공하는 음식점으로 구청에서 인증한 깔깔가맹점에선, 깔끔하게 먹은 손님들에게는 음식값의 2%를 할인(포인트 적립)해 주고, 손님이 먹고 남긴 음식은 포장용기에 싸갈 수 있게 하는 등 음식문화개선을 위해 노력하고 있다.<br>',null,null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이씨레물리노공원(구로근린공원)','08301','서울특별시 구로구 가마산로25길 21(구로동)',37,127,'이씨레물리노 공원(구로근린공원)은 산책을 즐기기 좋은 공원으로 공원 바닥분수에서 쏟아지는 물줄기를 바라보며 바닥분수 옆에 마련해 놓은 도서함을 통해 독서를 즐기거나, 매년 구로구와 이씨레물리노 지역 간의 문화교류행사로서 다양한 프랑스 문화체험의 기회를 제공해주는 프랑스 문화축제를 제공해주는 장소이기도 하다.<br>','02-860-3082',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정선옹주 묘역','08248','서울특별시 구로구 궁동',38,127,'정선옹주는 조선 제 14대 임금 선조의 7녀로, 세도가인 안동권씨 집안의 권대임과 결혼해 지금의 구로구 궁동 67번지 일대에서 살았다. 궁동이라는 명칭도 그들이 궁궐 같은 기와집에서 살았던 것에서 유래되었다. 정선옹주 묘역에는 정선옹주 남편 권대임의 묘를 비롯해 여러 기의 안동권씨 무덤이 자리하고 있다. 이들의 묘는 조선 공신 묘역 조성 방식의 귀중한 사례가 되고 있으며, 묘역의 신도비와 묘비는 당시 묘제 연구에 귀중한 자료로 평가받고 있다.<br>','구로구청 문화관광과 02-860-3401',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구로시장','08311','서울특별시 구로구 구로동로22길 17-4(구로동)',37,127,'쇠락해 가던 구로시장에 다시 활기가 넘친다. 그 이유는 상인 어르신들의 왁자지껄한 흥겨움이 아닌, 청년상인들의 발칙한 아이디어 때문이다. 청년들이 바꿔놓은 전통시장의 신풍경, 과연 어떤 것일지, 청년몰 ''영프라쟈''도 구경할 겸 구로시장으로 떠나보자. 구로시장에 변화의 바람이 불기 시작한 건 2015년. 청년들은 창고마냥 방치되어 있던 빈 점포 몇 곳을 치우고 고쳐 상점을 열었다. 마치 복고풍 활영 세트장 같은 느낌의 상점들은 발랄한 매력을 발산하며, 60~80년대 모습을 간직한 허름한 시장 분위기와 어우러져 눈길을 사로잡는다.','0507-1445-1452',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('문화철도 959','08209','서울특별시 구로구 경인로 688(신도림동)',38,127,'문화철도 959는 신도림 역사 내에 위치해 있는 복합 문화 공간이다. 뛰어난 접근성과 안전성을 활용하여 문화예술을 통해 다양한 문화를 향유할 수 있으며, 유휴공간 및 지역 경제 활성화를 목적으로 구로구와 구로문화재단 예술가 단체 토카아트가 함께 만들어 가고 있다.<br>','070-7678-0002',null,'일요일, 월요일','교육기간 : 2020년 8월 3일(월) ~ 2020년 12월 16일(수)<br />
 장소 : 문화철도959 (신도림역 3층)<br />
 <br />
 * 붓글씨로 나를 표현하기(캘리그라피)<br />
@@ -764,8 +835,7 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 외국인 예약안내:공간 대관 외에 별도 예약 없음
 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구로시장','08311','서울특별시 구로구 구로동로22길 17-4(구로동)','쇠락해 가던 구로시장에 다시 활기가 넘친다. 그 이유는 상인 어르신들의 왁자지껄한 흥겨움이 아닌, 청년상인들의 발칙한 아이디어 때문이다. 청년들이 바꿔놓은 전통시장의 신풍경, 과연 어떤 것일지, 청년몰 ''영프라쟈''도 구경할 겸 구로시장으로 떠나보자. 구로시장에 변화의 바람이 불기 시작한 건 2015년. 청년들은 창고마냥 방치되어 있던 빈 점포 몇 곳을 치우고 고쳐 상점을 열었다. 마치 복고풍 활영 세트장 같은 느낌의 상점들은 발랄한 매력을 발산하며, 60~80년대 모습을 간직한 허름한 시장 분위기와 어우러져 눈길을 사로잡는다.','0507-1445-1452',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('엘크레','06033','서울특별시 강남구 도산대로15길 411층','대한민국 최초 뷰티 이색체험을 할 수 있는 새로운 개념의 뷰티 플랫폼. 유명 여배우들의 메이크업 아티스트가 항시 상주하여 k-뷰티 멘토링을 받을 수 있는 메이크업 카페. 간단한 음료 카페존과 여심저격한 포토존 가심비 높은 셀프바(코리아 코스메틱 체험) 준비되어있다.<br>','02-547-3485, 0507-1305-3485',null,'매주 일요일',null,'만 8세 이상',null,null,'평일 10:00~20:00<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('엘크레','06033','서울특별시 강남구 도산대로15길 411층',38,127,'대한민국 최초 뷰티 이색체험을 할 수 있는 새로운 개념의 뷰티 플랫폼. 유명 여배우들의 메이크업 아티스트가 항시 상주하여 k-뷰티 멘토링을 받을 수 있는 메이크업 카페. 간단한 음료 카페존과 여심저격한 포토존 가심비 높은 셀프바(코리아 코스메틱 체험) 준비되어있다.<br>','02-547-3485, 0507-1305-3485',null,'매주 일요일',null,'만 8세 이상',null,null,'평일 10:00~20:00<br />
 토요일 10:00~19:00<br />
 ※ 매주 일요일 휴무',null,'불가','불가','화장실:있음
 
@@ -783,150 +853,24 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 외국어 안내서비스:영어 중국어 안내 가능
 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('AHC스파','06026','서울특별시 강남구 도산대로 237(신사동)','한국의 K뷰티를 알리고 있는 AHC 코스메틱으로만 케어해 드리고 있는 AHC스파입니다. AHC가 특별한 원료나 공법에만 의존하지 않고, 치열하게 고민하고 연구하여 마침내 찾아낸 AHC만의 특별한 피부해법은 바로 에스테밸런스 입니다. 앞선 피부과학과 최적의 성분배합기술 그리고 고객의 피부에 꼭 맞는 미용법을 추구하는 AHC의 뷰티 키워드 에스테밸런스. 사람마다 다른 다양한 피부의 문제를 근본적으로 개선해주고, 피부 본래의 건강한 변화를 끌어내는 내안에 있는 최고의 아름다움을 발견하는 특별한 경험 입니다. 뷰티 한류의 대표적인 리딩 기업 AHC의 스파는 도산사거리에 위치하여 관광객의 핫 스폿인 압구정동과 가로수길을 관광하면서 경험해보고 싶었던 AHC만의 노하우를 경험하고 1층에서는 제품구매가 가능하며 2층의 헤어샵 서비스도 이용가능한 뷰티 핫 플레이스 입니다.<br>','02-541-8239',null,'매주 월요일 휴무',null,null,null,null,'12:00 ~ 21:00',null,'없음','없음','외국인 예약안내:전화/홈페이지 예약 가능
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('AHC스파','06026','서울특별시 강남구 도산대로 237(신사동)',38,127,'한국의 K뷰티를 알리고 있는 AHC 코스메틱으로만 케어해 드리고 있는 AHC스파입니다. AHC가 특별한 원료나 공법에만 의존하지 않고, 치열하게 고민하고 연구하여 마침내 찾아낸 AHC만의 특별한 피부해법은 바로 에스테밸런스 입니다. 앞선 피부과학과 최적의 성분배합기술 그리고 고객의 피부에 꼭 맞는 미용법을 추구하는 AHC의 뷰티 키워드 에스테밸런스. 사람마다 다른 다양한 피부의 문제를 근본적으로 개선해주고, 피부 본래의 건강한 변화를 끌어내는 내안에 있는 최고의 아름다움을 발견하는 특별한 경험 입니다. 뷰티 한류의 대표적인 리딩 기업 AHC의 스파는 도산사거리에 위치하여 관광객의 핫 스폿인 압구정동과 가로수길을 관광하면서 경험해보고 싶었던 AHC만의 노하우를 경험하고 1층에서는 제품구매가 가능하며 2층의 헤어샵 서비스도 이용가능한 뷰티 핫 플레이스 입니다.<br>','02-541-8239',null,'매주 월요일 휴무',null,null,null,null,'12:00 ~ 21:00',null,'없음','없음','외국인 예약안내:전화/홈페이지 예약 가능
 내국인 예약안내:전화/홈페이지 예약 가능
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연세로','03789','서울특별시 서대문구 연세로 일대','신촌전철역에서 연세대학교까지 이어지는 연세로는 신촌의 중심거리이다. 이 길을 중심으로 사잇길이 뿌리처럼 뻗어 있다. 연세로는 1999년 서울시가 ''걷고 싶은 거리''로 지정한 이후 가로수 정비, 신촌거리 지도 부착 등의 조성사업을 했다. 각종 음식점, 페스트푸드점, 커피숍, 상점 등이 포진하고 있으며 오후가 되면 길거리 음식도 맛볼 수 있다. 연세대학교 도로 맞은편에는 아름다운 벽화가 그려져 있다.','02-120',null,null,null,null,null,null,null,null,'불가','가능','이용가능시설:음식점, 카페, 의류/악세사리점 등
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연세로','03789','서울특별시 서대문구 연세로 일대',38,127,'신촌전철역에서 연세대학교까지 이어지는 연세로는 신촌의 중심거리이다. 이 길을 중심으로 사잇길이 뿌리처럼 뻗어 있다. 연세로는 1999년 서울시가 ''걷고 싶은 거리''로 지정한 이후 가로수 정비, 신촌거리 지도 부착 등의 조성사업을 했다. 각종 음식점, 페스트푸드점, 커피숍, 상점 등이 포진하고 있으며 오후가 되면 길거리 음식도 맛볼 수 있다. 연세대학교 도로 맞은편에는 아름다운 벽화가 그려져 있다.','02-120',null,null,null,null,null,null,null,null,'불가','가능','이용가능시설:음식점, 카페, 의류/악세사리점 등
 외국어 안내서비스:관광안내전화 02-1330 (한,영,일,중)
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강남','06232','서울특별시 강남구 역삼동(역삼동)','강남역 주변은 강남 지역에 있어서 교통의 핵심인 곳이다. 강남대로를 중심으로 동쪽으로는 테헤란로가 뻗어 있어 잠실 방향과 이어지며, 서쪽으로는 사당 방면으로 연결된다. 교보타워 사거리에서 좌측으로는 고속터미널과 이어져 노량진 및 서부 서울로 연결되며, 그대로 북쪽으로는 한남대교를 거쳐 강북으로 연결된다. 그리고 남쪽으로는 양재를 거쳐 분당 등의 신도시와 성남시 등 수도권으로 연결된다. 많은 유동인구가 강남역으로 모이는 이유는 강남역 부근이 만남을 위한 약속장소로 적합하기 때문이다. 각종 모임이나 행사 또는 개인적인 만남을 갖기에 좋은 지역적, 상권적 특성을 지니고 있다. 따라서 평일에는 주로 저녁 시간대, 주말의 경우는 낮부터 강남역 10, 11번 출구, 롯데시네마 앞(구,시티극장), 지오다노 매장 앞 등에서 많은 사람들로 붐비는 것을 흔히 볼 수 있다.<br /><br />편리한 교통과 다수의 패션관련 매장, 극장, 대형서점 등 소비를 하기 좋은 이러한 환경이 거리가 먼 지역의 소비자들까지 강남역으로 모이게 하고 있다. 강남구에서는 내ㆍ외국인 관광객에게 종합관광서비스는 물론, 강남구의 우수 인프라인 의료와 한류에 대하여 보고, 느끼고, 즐길 수 있는 체험형 관광거점시설인 강남관광정보센터를 건립ㆍ운영하고 있으며, 강남관광정보센터는 서울과 강남의 주요 관광명소를 안내하고 관광객 편의시설을 갖춘 ‘종합관광안내센터’와 강남구 특화 병원과 진료 프로그램을 소개하고 체험할 수 있는 ‘메디컬투어센터’,  한류 스타를 활용하여 다양한 한류체험이 가능한 ‘한류체험관’으로 구성되어있다.<br>','02-3423-5114',null,null,null,null,null,null,'24시간','주차 가능','없음','없음','관광코스안내:* 강남시티투어 트롤리버스 <br />
-- 어라운드강남시티투어 코스: 강남역-봉은사/코엑스-한류스타거리-관광정보센터-가로수길-세빛섬-고속터미널/신세계백화점-서래마을-법원.교대역-삼성타운-강남역(종착)<br />
-<br />
-* 강남관광정보센터 외국인대상 무료도보관광 프로그램<br />
-- 한류코스: 강남관광정보센터-JYP엔터테인먼트-JS엔터테인먼트-FNC엔터테인먼트-SM엔터테인먼트-한류스타거리-강남돌하우스-G+스타존(압구정로데오역)
-이용가능시설:쇼핑상가, 카페, 영화관, 서점, 병원, 음식점, 숙박시설 등
-화장실:있음
-외국어 안내서비스:관광안내전화 02-1330 (한,영,일,중) <br />
-강남관광정보센터 02-3445-0111
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('스파 도향','06122','서울특별시 강남구 논현로 611','* 강남 최대 규모의 토탈 Beauty team_insert<br /><br />스파 도향( 道鄕 ) : 길 도 , 시골 향 Since 2007, 뉴트로 시대의 빠른 변화 속 옛 것의 감성을 찾듯, 기존 스파의 차별화가 아닌 한국 스파의 자존심인 전통 스파를 고집한다. 나만의 케렌시아 공간이 제공 될 수 있도록 최선을 다해 노력하며 고객의 시간과 감성의 가치를 높여 주는 최고의 서비스를 제공하고 스파의 가장 기본적인 덕목인 오감 만족을 지향한다.','02-6326-0881,7',null,'전화문의',null,null,null,null,'11:00 ~ 22:00','월~토 : 대승주차장 10:00~18:00 (2시간 기준 3,000원)<br />
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('스파 도향','06122','서울특별시 강남구 논현로 611',38,127,'* 강남 최대 규모의 토탈 Beauty team_insert<br /><br />스파 도향( 道鄕 ) : 길 도 , 시골 향 Since 2007, 뉴트로 시대의 빠른 변화 속 옛 것의 감성을 찾듯, 기존 스파의 차별화가 아닌 한국 스파의 자존심인 전통 스파를 고집한다. 나만의 케렌시아 공간이 제공 될 수 있도록 최선을 다해 노력하며 고객의 시간과 감성의 가치를 높여 주는 최고의 서비스를 제공하고 스파의 가장 기본적인 덕목인 오감 만족을 지향한다.','02-6326-0881,7',null,'전화문의',null,null,null,null,'11:00 ~ 22:00','월~토 : 대승주차장 10:00~18:00 (2시간 기준 3,000원)<br />
 일 : 스파도향 자체 주차 가능','없음','없음','주차요금:2시간 : 무료 (2시간 이후 추가 금액 3,000원)
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이대거리','03767','서울특별시 서대문구 대현동(대현동)','이대거리는 이화여대 정문에서 신촌 기차역까지 이어지는 골목거리로 카페, 음식점, 의류, 미용실, 화장품 등 특색있는 점포들이 가득한 거리다.<br>','신촌관광안내센터 02-363-7833',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('G밸리 4차산업체험관','08390','서울특별시 구로구 디지털로26길 111(구로동), B1층','<strong>4차산업에 맞춰 4가지 체험 (드론, 코딩, VR, 3D 프린팅)과 산업관광 운영 </strong><br /><br />제4차산업체험센터에서는 한 공간에 4개의 제4차산업혁명을 대표하는 기술과 체험을 준비하여 드론, 코딩, VR 3D프린팅의 원리를 이해하고, 기초 실습과 관련 시뮬레이션을 진행하고있다. 이를 바탕으로 실제 응용해 볼 수 있는 커리큘럼들이 준비되어 참여자들은 개별체험을 통하여 스스로 심화하고, 이를 다양한 분야에 적용할 수 있는 통찰을 경험할 수 있도록한다.<br /><br />산업관광이란, 기업체의 생산현장이나 홍보시설 등을 활용한 관광 콘텐츠를 말하며, 이를 통해 직간접적인 비즈니스 를 연계하고, 관련 산업의 활성화를 지원하는 새로운 형식의 산업과 관광을 합친 컨텐츠이다. 이러한 산업관광을 통해 참가자들 (관광객, 지역주민, 학생 등등)은 산업적 배움과 더불어 재미있는 새로운 볼거리와 체험거리를 경험할 수 있는 기회를, 기업과 국내 및 해외 바이어들은 기업의 우수성을 홍보할 수 있는 기회를 제공한다.<br>','070-4756-4241',null,'연중무휴','코딩, 드론, 3D 프린터, VR, 산업관광','유치원생~성인','각 체험 당 1명~최대 6명',null,'개관 10:00~17:00  / 각 체험 당 1시간','주차 가능 (약 300대 이상 주차 가능)','없음','없음','이용가능시설:- 체험관 (회의실)<br />
-- 부대시설 : 사무공간
-화장실:건물 내 있음
-시설이용료:각 체험 마다 1인당 15,000원
-내국인 예약안내:홈페이지 또는 전화 예약
-한국어 안내서비스:가능
-외국어 안내서비스:가능
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오류동역광장','08272','서울특별시 구로구 경인로20나길 17(오류동)',37,127,'서울 구로구 오류동역광장은 지하철 1호선 오류역 3번 출구 앞에 위치한 광장이다. 오류역을 바라보고 왼쪽에는 운동시설과 벤치, 산책로가 조성되어 지역 주민들이 만남과 휴식을 취할 수 있는 장소로 이용되고 있으며 오른쪽에는 공영 주차장이 있다. <br>지역 주민들을 위한 프로그램과 바자회 등 다양한 종류의 행사가 진행되는 이벤트 장소인 동시에, 코로나19 기간 동안에는 임시선별소가 들어서서 지역 주민들을 위한 생활편의 공간으로 활용되고 있다.','02-2620-7451',null,null,null,null,null,null,'00:00 ~ 24:00','주차가능','없음','없음','주차요금:최초 30분 1,500원<br>추가 10분 500원
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('원당샘공원','01360','서울특별시 도봉구 해등로32가길 16(방학동)','600년 전부터 마을의 생활용수로 공급되던 원당샘을 복구하여 조성한 공원으로 연산군묘, 방학동 은행나무와 함께 역사와 문화가 어우러지는 도봉구 문화명소<br>','02-2091-3765',null,null,null,null,null,null,'상시운영',null,'없음','없음','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산 고구려정',null,'서울특별시 광진구 구의동 3',38,127,'서울 광진구와 경기도 구리시에 걸쳐 있는 아차산은 높이 295.7m의 부담 없이 오를 수 있는 산이다. 삼국시대부터 전략적 요충지로 꼽혔는데 고구려와 백제, 신라가 한강 유역을 차지하기 위해 무려 250여 년 동안 각축을 벌였다는 아차산성이 대표적인 유적이다. 아차산성 외에도 신라 시대 의상대사가 창건했다는 영화사와 고구려 시대에 세워졌다고 알려진 보루 등 다수의 유적이 곳곳에 남아 있다. 서울지하철 5호선 아차산역에서 바로 오를 수 있어 도심에서 등산을 즐기는 코스로 인기다. 특히 서울의 동쪽 끝에 자리해 가장 일찍 해가 떠오르는 아차산은 매년 해맞이 축제가 열리는 장소이기도 하다. 낙타 능선에 자리한 고구려정은 일출은 물론 서울의 화려한 야경을 눈에 담을 수 있는 명소로도 입소문이 자자하다.','02-450-1395',null,null,null,null,null,null,'일출 ~ 일몰','주차가능','없음','없음','입 장 료:
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('푸른수목원team_insert','08361','서울특별시 구로구 연동로 240','서울시 최초로 조성된 시립수목원으로 2,100 여종의 다양한 식물을 감상할 수 있으며 수목원 입구와 연결되는 항동철길과 연계 관광이 가능하다. 푸른수목원은 인적 없는 공터에서 친환경 청정수목원으로 개장한 서울시 최초의 시립 수목원이며 2018년 서울시 1호 공립수목원으로 지정되었다. 식물유전자원을 수집해 증식시키고 보존하고 있으며 항동저수지와 20개 주제정원에서 다양한 희귀식물을 볼 수 있다. 푸른수목원은 오색정원, 야생화원, 어린이정원 등의 주제정원과 안내센터, 숲교육센터 등 교육콘텐츠와 가드닝 프로그램 등을 통해 생태 학습의 장이 되고 있다.','푸른수목원 관리사무소 / 02-2686-3200',null,null,null,null,null,null,'매일 05:00 - 22:00',null,'없음','없음','입 장 료:무료
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관음사국기봉',null,'서울특별시 관악구 남현동 산 62-1',37,127,'서울 한강 남쪽에 우뚝 솟은 관악산은 관악구 신림동과 경기도 안양시, 과천시의 경계를 이룬다. 산꼭대기는 바위로 이루어져 있는데, 그 모습이 마치 갓을 쓰고 있는 것처럼 보여 관악산이란 이름이 붙었다. 대중교통으로도 쉽게 찾아갈 수 있을 만큼 접근성도 좋고 웅장한 바위 능선을 자랑해 등산객들에게 늘 인기 코스로 꼽힌다. 그중에서도 통일신라 때 창건한 사찰인 관음사를 끼고 국기봉으로 오르는 길은 짧고 굵게 관악산의 매력을 즐길 수 있는 코스로 통한다. 바위가 많고 일부 급경사를 이루는 구간도 있지만, 정상에 오르면 그동안의 수고로움을 잊을 만큼 탁월한 전망이 펼쳐진다. 우수경관 전망대란 이름으로 느긋하게 쉬어갈 수 있는 공간도 마련돼 있다. 관음사 국기봉은 성인 기준으로 2시간이면 넉넉하게 오르내릴 수 있다.',null,null,null,null,null,null,null,'일출 ~ 일몰','있음(공영주차장)','없음','없음','입 장 료:
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('라온트래블스토리지','04051','서울특별시 마포구 양화로 지하 188','홍대입구역 공항철도 7번출구 지하 2층에 위치한 라온보관소(RAON BAGGAGE STORAGE)는 여행객들을 위한 짐보관소이다. 홍대를 방문하는 외국인 관광객들과 내국인들에게 보다 간편하게 물건을 맡기고, 양손 가볍게 마음편히 홍대 및 서울을 방문할 수 있도록 짐보관 서비스를 제공한다. 저렴한 가격으로 하루종일 자유롭게 여행을 즐길수 있을 뿐만 아니라, 장기보관도 가능하고 외국인과의 소통을 위해 항시 외국어가 가능한 스텝이 상주하여 손님들이 편하게 이용할 수 있도록 노력하고 있다.','라온보관소 070-8884-1251','2014년 12월','명절 당일',null,null,null,null,'일-목요일 09:30 - 21:30 <br />
-금-토요일 09:30 - 23:30',null,'없음','가능','시설이용료:<strong>team_insert;물품 보관team_insert;</strong><br>
- 소형 : 4,000원(1~7일) / 25,000원(8~15일) / 35,000원(16일~한달) <br>
- 중형 : 6,000원(1~7일) / 35,000원(8~15일) / 50,000원(16일~한달)<br>
- 대형 : 8,000원(1~7일) / 45,000원(8~15일) / 65,000원(16일~한달)<br>
- <strong><br>
-team_insert;공항배송서비스team_insert;</strong><br>
- 20,000원(28인치 이하) / 30,000원(28인치 초과)<br>
-<br>
-<strong>team_insert;수화물 배송서비스team_insert;</strong><br>
-라온↔호텔/숙소 : 14,000원<br>
-<strong> </strong>라온↔라온 : 10,000원<br>
- <strong><br>
-team_insert;부가서비스team_insert;</strong><br>
-유심판매 : 아시아 21,000원 / 유럽통합권 35,000원 / 태국 12,000원<br>
-엽서 : 1,000원<br>
-우표 : 500원<br>
-국제택배 : 사이즈와 무게에 따라 5,000원부터 책정<br>
-내국인 예약안내:예약없이 이용 가능
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불교총지종','06227','서울특별시 강남구 도곡로25길 35(역삼동)',37,127,'불교총지종은 ‘불교의 생활화, 생활의 불교화’를 표방하고 자리이타(自利利他)의 대승불교 정신을 일상에서 실천하는 생활불교 종단이다.(출처 : 불교총지종 홈페이지)','02-552-1080~1',null,null,null,null,null,null,'매일 09:00 ~ 18:00','주차가능','없음','불가','이용가능시설:서원당
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('자양동 양꼬치거리 (중국음식문화거리)','05079','서울특별시 광진구 자양동','지하철 2호선 · 7호선 건대입구역 5번 출구로 나와 로데오거리를 지나 한강둔치 방향으로 50m 정도 걸어 내려가면 일명 "양꼬치 거리"로 유명한 중국음식문화거리를 만나게 된다. 중국 동포들이 운영하는 양꼬치 전문점들이 즐비한 이곳은 "신 차이나타운"이라고 부르기도 한다. 한국어보다 중국어 간판이 더 많은 곳으로, 양꼬치 전문점이나 퓨전 중국요리점 등이 있어 서울에서 다양한 음식문화를 느낄 수 있는 명소이다.','광진구청 문화체육과 02-450-7582',null,'점포마다 다름',null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('디지털 파빌리온','03925','서울특별시 마포구 월드컵북로 396(상암동)','<strong>현재를 미래로, 상상을 현실로</strong><br /><br />디지털 파빌리온은 IT 기업의 신제품과 기업 홍보 공간이다. 미래도시 I City에서는 미래의 거리, 학교, 문화, 생활이 펼쳐지고, ICT 탐구관에서는 놀이와 체험을 통해 ICT기술 원리를 이해한다. 또한 2017년 2월에 “VR DEVELOPING BED”를 개관하여 국내 유명 중소기업의 실감콘텐츠 관련 기술 및 제품을 지원하고 있다. ICT 산업 중 VR을 특화한 다양한 프로그램이 준비되어 있으니, 예약 후 이용해보자.<br>','02-2132-1179','2008년 04월 30일','매주 일요일, 설날(음,양력), 추석연휴 휴관',null,null,null,null,'10:00~17:00','있음 (대형관광버스 이용 불가)','불가','불가','입 장 료:무료
-이용가능시설:[1층 ICT 창조관]<br />
- 국내 ICT 기업의 우수기술로 구현된 미래도시 i-City를 직접 체험해 볼 수 있는 공간<br />
-[2층 VR DEVELOPING BED]<br />
- VR콘텐츠 기업의 가상현실 세계를<br> 직접 체험해 볼 수 있는 공간
-주차요금:30분 무료, 10분당 500원씩 추가<br />
-(단, 2m이하 승용차/승합차 가능, 대형버스, 미니버스 주차불가)
-외국어 안내서비스:외국어 안내(영어, 중국어) 지원 가능
-내국인 예약안내:사전예약제 / VR DEVELOPING BED: 최소 1일전 사전예약, 당일예약 불가
-외국인 예약안내:메일문의 (webmaster@digitalpavilion.kr)
-- 현장방문 예약가능 (당일예약 불가)
-한국어 안내서비스:1층 ICT 창조관 / 2층 VR DEVELOPING BED : 도슨트 안내
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('방화대교','07518','서울특별시 강서구 방화동','방화대교는 인천국제공항이 21세기 동북아시아 허브 공항의 역할을 수행할 수 있도록 건설된 고속국도 130호선 구간 중 한강을 횡단하는 교량으로 예술성 및 기능성이 우수하다.총 연장 2.6㎞로 한강 교량 중 가장 긴 교량이며, 국내최초로 장경간 아치 트러스 구조로 설계, 시공된 한강의 27번째 교량이다. 아치는 전통 사찰과 기와집 처마의 부드러운 이미지가 도입되어 개화산 봉우리, 덕양산 봉우리에 이어 세 번째 봉우리를 만들어내고 있으며, 이륙하려는 듯한 거대한 항공기를 연상시키는 기하학적인 형상과 밤이면 한강 물결에 비치는 황홀한 야경이 보는 이로 하여금 감탄을 자아내게 한다.<br>','서울시청 02-120',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('광나루한강공원','05249','서울특별시 강동구 선사로 83-66','잠실, 뚝섬, 잠원 등 총 12개의 지구로 구성된 한강시민공원은 다양한 문화레포츠 시설과 생태공원 등이 조성되어 있어 연간 4천 만 명 이상이 찾는 대표적인 휴식공원이다.강동대교에서 잠실철교 사이에 있는 광나루 한강공원은 한강 상류로부터 유입된 토사가 퇴적되어 자연스럽게 형성된 모래톱과 대규모 갈대군락지로 자연 그대로의 한강의 모습을 가장 잘 유지하고 있는 곳으로 철새들의 서식처이기도 하다.<br>','02-3780-0501~4',null,'연중개방',null,null,null,null,'24시간','있음(4개소, 407대 가능)','없음','가능','이용가능시설:[자전거공원] 이색자전거체험장, 레이싱경기장, 어린이놀이터, 레일바이크장, 어린이자전거교육장<br />
-[운동시설] 축구장, 배구장, 농구장, 테니스장, 체력단련장, 인라인스케이트광장, 게이트볼장, X-게임장,수영장, 자전거도로,<br />
-[편의시설] 매점, 그늘막 등
-주차요금:기본요금 - 최초 30분 1,000원 / 초과 10분당 200원<br />
-1일 주차 최고한도 10,000원<br />
-월정기권 50,000원
-화장실:있음
-입 장 료:없음
-한국어 안내서비스:가능(안내센터)
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('영화사(서울)','04948','서울특별시 광진구 영화사로 107','영화사는 서울시 광진구 구의동 아차산에 자리한 대한불교조계종 직할사암이다. 무릇 일반인들이 보아도 명당자리인 듯싶은 곳을 찾아가보면 거의 어김없이 사찰이 자리하고 있다. 굳이 풍수지리설에 의하여 산세와 지세 등을 따지지 않더라도 이 점은 틀리지 않는다. 그만큼 옛 스님들이 선견지명이 있었지 않았나 싶다. 서울의 동쪽 끝 아차산 자락에도 이러한 예상은 틀리지 않는다. 바로 영화사가 그러한 곳이다. 소나무향 그윽하고 강내음 바람타고 올라오는 아차산 남단 중턱에 자리한 영화사는 672년(신라 문무왕 12)에 화엄종을 개창한 의상대사가 화양사(華陽寺)란 이름으로 처음 창건하였다고 전한다. 그러나 절은 역사적으로 볼 때 몇 차례 옮겨졌었다.<br /><br />조선 태조 4년(1395년)에는 이 절의 등불이 궁성에까지 비친다고 하여 산 아래 용마산 기슭 군자봉에 옮겨짓게 하였다가 1907년에 이르러서야 지금 자리로 다시 옮겨오면서 비로소 영화사라 한 것이다. 영화사에는 거대한 미륵석불입상이 미륵전에 모셔져 있는데 이 미륵부처님은 세조가 이곳에서 기도하여 지병을 치유하였다는 영험있는 부처님이다. 그래서인지 요즈음도 이 영험한 미륵불에게 기도하기 위해 대학입시 때나 공무원 시험 등이 있을 때면 백일기도를 정성스럽게 올려 합격을 기원하는 불자들이 많이 찾아온다. 영화사에 들어서면 4OO년이나 된 느티나무가 먼저 멀리서 반긴다. 또한 사찰 주위는 아름드리나무와 무성한 숲으로 둘러싸여 아름다운 자연경관을 잘 갖추고 있다. 따라서 영화사는 인근 주민들의 마음의 평정을 찾는 안식처로도 많은 공헌을 하고 있는 것이다.<br>','02-444-4321',null,'연중개방',null,null,null,null,null,'있음','없음','불가','외국어 안내서비스:불가
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용굴암(서울)','01633','서울특별시 노원구 덕릉로129가길 242(상계동)','자연적으로 이루어진 동굴은 일찍이 납자들에게 있어 좋은 수행처와 기도처로서 역할을 해왔다. 척박할 것만 같은 동굴을 극한 조건에서도 자신을 단련하고 수행하는 납자들에게 깨달음을 향한 불퇴전의 용기로 이겨내게 한 것이다. 산천을 돌아보면 자연동굴에 법당을 마련한 사찰이 눈에 띄는 것은 수행자들의 이러한 의지와 예배공간에 대한 신성함을 주기위한 것일 것이다. 용굴암은 수락산에 자리한 여러 사찰 가운데 가장 정상에 가까운 곳에 있는 사찰로 이름에서 드러나듯 커다란 자연동굴이 하나 있다. 이 동굴은 용굴암이 처음 시작된 곳으로 현재 석가모니불과 16나한이 봉안되어 있어 나한도량임을 나타내고 있다.<br /><br />100여 년 전 지배체제로부터 배척당하던 수행자들은 깊은 산으로 숨을 수밖에 없었고, 인적이 드문 이 동굴은 피신처와 수행처로 적지가 아닐 수 없었던 것이다. 이렇게 하여 용굴암이 세상에 이름을 보이게 되었다. 한때는 흥선대원군의 섭정에 밀려난 명성황후가 피신하여 지내면서 기도를 하였는데, 그 인연으로 용굴암은 대대적인 중건을 하여 사찰로서 모습을 갖추게 되었다. 이후 용굴암은 많은 격변기를 거치면서 퇴락하기도 했지만 나한도량으로서 면모를 갖추기 위해 노력을 경주하고 있다. 그래서 앞으로 나한도량하면 용굴암을 꼽을 수 있을 것이다.<br>','02-937-8206',null,'연중무휴',null,null,null,null,null,'없음','불가','불가','화장실:있음
-외국어 안내서비스:불가
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('옥천암(서울)','03608','서울특별시 서대문구 홍지문길 1-38','옥천암는 서울시 서대문구 홍은2동 8번지 북한산 끝자락에 자리한 대한불교조계종 직할사찰이다. 관세음보살은 광세음보살(光世音菩薩) 또는 관세음자재보살(觀世音自在菩薩)이라고도 하며 보통 줄여서 관음보살이라고 부른다. 대자대비(大慈大悲)를 서원으로 하는 관음보살은 우리나라에서 주로 『화엄경』, 『법화경』, 『아미타경』, 『능엄경』을 중심으로 그 신앙이 전개된다. 각 경전상에서 공통적으로 나타나는 것은 관세음보살의 이름을 마음속에 간직하고 염불하면 모든 고통의 속박에서 벗어나고 어떠한 고난이나 재액에서도 반드시 해탈을 얻게 된다고 한다. 옥천암(玉泉庵)은 동해의 낙산 홍련암(紅蓮庵), 서해의 강화도 보문사(普門寺), 남해의 보리암(菩提庵)과 함께 4대 관음기도 도량으로 알려져 있다. 이는 옥천암에 있는 관음보살상 때문인데, ‘보도각 백불(普渡閣 白佛)’로 불리는 이 관음보살은 많은 영험담을 가지고 있다.일찍이 조선 태조가 한양에 도읍을 정할 때도 이 석불에 기도한 일이 있고, 또 흥선대원군의 부인 민씨(閔氏)도 아들인 고종을 위해서 자주 찾아와 기도하였다고 한다. 삼각산의 맥이 비봉과 향로봉을 거쳐 인왕산으로 이어지기 직전 삼각산이 끝나는 지점에 자리한 옥천암은 서울이 대규모로 도시화되기 전만 해도  옥같이 맑은 물이 흘렀다. 그러한 까닭으로 절 이름 또한 옥천암이라 불리었던 것이다.<br /><br />[옥천암 마애좌상(보도각 백불)]<br /><br />서울특별시 유형문화재(1973.06.07 지정)<br />보도각 백불의 정확한 명칭은 ''홍은동 보도각 마애보살좌상(弘恩洞 普渡閣 磨崖菩薩坐像)''이다. 흰색의 호분이 전체적으로 두껍게 칠해져 있기 때문에 백불(白佛) 또는 해수관음(海水觀音)이라고도 한다. 마애불상은 근래에 세워진 정면 1칸, 측면 2칸의 보도각이란 전각 안에 보존되어 있다. 전하는 말에 의하면 조선 태조 이성계가 서울로 도읍을 정할 때 이 석불에 기원을 했으며, 조선후기에는 고종의 어머니 흥선대원군의 부대부인 민씨도 아들의 천복을 빌었는데 이때부터 하얗게 칠을 하였다고 한다. 머리에는 꽃무늬가 장식된 화려한 관(冠)을 쓰고 있으며, 머리카락은 어깨를 따라 팔꿈치까지 길게 늘어져 있다. 비교적 둥근 얼굴은 눈이 가늘고 입이 작게 표현되어 고려시대 불상의 일반적인 특징을 보여준다. 옷은 양쪽 어깨를 감싸고 있으며 신체는 전체적으로 단정한 모습이다. 옷주름은 선이 깊지는 않지만 신체 전반에 부드럽게 흘러내리고 있다. 손은 오른손을 들어 엄지와 가운데 손가락을 맞대고 왼손은 무릎 위에 올려놓은 아미타불의 손모양을 하고 있다. 고려시대에 만들어진 마애불로서 북한산 구기리 마애석가여래좌상(보물)과 같은 계열의 작품으로 보인다.<br>','02-395-4031',null,'연중무휴',null,null,null,null,null,null,'불가','불가','화장실:있음
-외국어 안내서비스:불가
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천축사(서울)','01300','서울특별시 도봉구 도봉산길 92-2(도봉동)','신라 문무왕 13년(673)에 창건되었다. 의상(義湘)스님이 문도들을 이끌고 만장봉 동쪽 기슭에 왔다가 그 산세의 빼어남에 감탄하여 현재의 위치에 창건하게 하고 옥천암(玉泉庵)이라 하였다고 한다. 그 뒤 고려 명종 때에는 근처 영국사(寧國寺)의 부속암자가 되었다. 조선 태조 7년(1398) 함흥으로 갔다가 돌아오던 태조가 옛날 이곳에서 기도하던 기억을 상기하고 절을 중창하였으며, 천축사(天竺寺) 현판을 하사하였다. 절 이름을 천축사라고 한 것은 고려 때 호승(胡僧) 지공화상이 공민왕의 왕사였던 나옹화상에게 이곳의 경관이 인도 천축국의 영축산과 비슷하다고 한데서 유래된 것으로 전해진다. 성종 5년(1474) 어명으로 중창되었고, 명종 때에는 문정왕후가 화류용상(樺榴龍床)을 헌납하여 불좌를 만들었다고 한다. 순조 12년(1812) 이후 영험 있는 기도 도량으로 여러 차례 중창되었는데 현재의 당우는 1959년에 중수한 것이다. 현존하는 건물로는 대웅전을 비롯하여 원통전 · 독성각 · 산신각 · 요사 등이 있고, 참선도량 무문관이 있다. 무문관은 불교 선수행의 현근대적 역사에 기록될 근대 선수행의 얼이 숨어 있는 기념비적인 수행처이다. 천축사는 역사적 기록과 현대의 불교계에 큰 위치를 차지하고 있으며 부처님의 진신사리가 모셔진 적멸보궁으로, 보존되고 개발되어야 할 전통사찰이자 천 년 고찰이다.<br>','02-954-1474',null,'연중무휴',null,'미취학아동 보호자 동반아래 가능',null,null,null,'도봉산 주차장 이용','불가','불가','화장실:있음
-한국어 안내서비스:경내 안내 가능 
-외국어 안내서비스:불가 
-내국인 예약안내:전화/홈페이지 예약가능
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일원에코파크','06343','서울특별시 강남구 양재대로41길 24(일원동)','서울 강남구 일원동에 있는 일원에코파크는 탄천물재생센터를 변신 시켜 2017년에 새롭게 개장한 근린공원이다. <br>다양한 친환경 페스티벌이 개최되며 주민들의 참여로 쾌적한 환경 장점인 공원이다. 풋살장, 배드민턴장, 인라인스케이트장 등 다양한 운동시설과 식물원으로 구성되어있고 주차장에서는 전기차 충전이 가능하다. 지하철 3호선 대청역 3번 출구 도보 8분 거리다.','02-3410-9815','2017년',null,'어린이물놀이축제(여름), 친환경페스티벌',null,null,null,'00:00 ~ 24:00','주차가능 <br>5분당 100원','없음','가능','이용가능시설:식물원, 족구장, 풋살장, 스케이트장, 게이트볼장, 배드민턴장		
-
-내국인 예약안내:홈페이지, 전화
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산배수지체육공원','04958','서울특별시 광진구 천호대로 731(구의동)','서울 광진구에 위치한 아차산배수지체육공원은 배수지 상부의 유휴공간을 활용하여 만들어진 체육시설이다.
-공원 내부에 인조잔디축구장, 테니스장, 풋살장, 정구장, 족구장을 포함한 각종 체육시설이 갖추어져 있다.
-공원 체육시설이 우수해서 여러 축구 동호회들이 자주 애용하는 만큼 축구 경기를 하기 위한 방문 시 홈페이지를 통한 사전예약이 요구된다.
-지하철 5호선 아차산역 2번 출구에서 650m 거리에 있다.','02-3437-7234',null,'없음',null,null,null,null,'00:00 ~ 24:00','있음(주차구역 협소)','없음','없음','입 장 료:없음		
-
-이용가능시설:인조잔디 축구장, 풋살경기장, 농구장, 족구장, 체련장, 산책로, 테니스장, 정구장		
-
-화장실:있음(남,녀 구분)
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('허브천문공원','05357','서울 강동구 둔촌동 산86(둔촌동)','서울 강동구 길동생태공원 건너편에 있는 공원으로 인근의 일자산 자연공원과 더불어 조깅 코스, 산책로, 전망데크 등 어린이부터 청년, 장년에 이르기까지 다양한 연령의 시민들이 이용할 수 있는 공간이다.
-허브천문공원의 구조는 한민족 고유의 전통사상인 천·지·인의 삼재사상에서 공간개념을 도출하여 우주공간(자미원, 태미원, 천시원, 별자리, 은하수 등)을 담고 있다. 공원 동쪽엔 새벽 일출을 감상할 수 있는 전망대, 서쪽으로는 일몰을 감상할 수 있는 관찰대가 있다.
-특히 야간 이용자를 위해 공원 바닥 곳곳에 282개의 오색 별자리 조명이 설치되어 있어 시시각각 변화무쌍한 별자리를 감상할 수 있다.
-이 바닥 조명은 직경 75m 천문도를 고스란히 공원 바닥에 옮겨놓은 것으로 동·서쪽에 마련된 전망대 위에서 바라보면 북극성을 비롯하여 견우와 직녀 별자리 등을 감상할 수 있어, 젊은이들의 데이트 코스로도 인기가 많다.
-서울시 공공 서비스 예약(https://yeyak.seoul.go.kr)을 통해 이용할 수 있다.','02-3425-6473',null,'없음','허브오감만족허브체험, 천체관측체험','없음',null,null,'00:00 ~ 24:00',null,'없음','없음','이용가능시설:차의정원, 향기의정원, 감촉의정원, 색의정원, 견본원, 천관대		
-
-입 장 료:없음		
-
-화장실:있음(남,녀 구분)
-
-내국인 예약안내:서울시 공공 서비스예약(https://yeyak.seoul.go.kr)		
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('빨래골','01096','서울특별시 강북구 인수봉로23길 60(수유동)','서울시 강북구 수유동 일대의 마을로 삼각산 동쪽 골짜기에 물이 많고 맑아서 빨래터와 쉼터로 이용하던 것에서 유래된 이름이다.
-이곳은 북한산이 시내 쪽으로 쭉 뻗쳐 내려온 칼바위능선 골짜기에 해당하는 곳이다. 골짜기 안쪽에 삼성암이라는 암자가 있고 왼편 산자락에는 아주 특이한 모습의 묘비가 세워져 있는 공초 임상순 선생의 무덤이 자리 잡고 있다.
-2016년부터 ''옛터 빨래골축제''가 개최되는 등 지금도 통용되고 있는 지명이다. 
-지하철 4호선 수유역 3번 출구 앞에서 03번 버스 타고 빨래골 종점에서 내려 안쪽으로 200여 미터 거리에 있다.','02-3778-4452',null,'없음',null,null,null,null,'00:00 ~ 24:00','있음(빨래골 노상 공영 주차장)','없음','가능','이용가능시설:마을, 식당, 편의점 등
-
-입 장 료:없음
-
-화장실:있음(남,녀 구분)
-
-주차요금:30분 1,200원
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('노원 불빛정원','01805','서울특별시 노원구 화랑로 610(공릉동)','해가 저물면 화랑대역 철도공원 입구부터 경춘선 숲길까지 오색찬란한 조명을 밝힌 빛의 향연이 펼쳐진다. 비밀의 정원과 생명의 나무, 음악의 정원, 환상의 기차역, 은하수 정원, 숲속 동화 나라를 주제로 꾸며진 노원 불빛 정원은 시시각각 다양한 색깔을 뿜어낸다. 낮에는 정겨운 간이역 풍경으로 마음을 따스하게 어루만졌던 공간이 밤이 되면 화려한 꽃과 푸른 바닷속 돌고래 떼, 아기자기한 기차 카페로 색다른 매력을 더한다. 특히 MEDIA TRAIN은 다양한 작품을 전광판에 표현하며 방문객들의 시선을 한 번에 사로잡는다. 옛 화랑대역을 스크린으로 활용한 미디어파사드도 압권이다. 기차여행의 추억을 떠올리게 하는 그림부터 색색깔 꽃 모양까지 쉴새 없이 펼쳐지는 영상이 낭만 가득한 밤하늘을 선물한다.','02-2116-0668(노원구청)',null,'매주 월요일',null,null,null,null,'일몰 30분 전 ~ 22:00','주차가능','없음','없음','입 장 료:
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('윤극영가옥','01026','서울특별시 강북구 인수봉로84길 5(수유동)','서울특별시에선 근현대 문화유산 중 미래 세대에게 전달할만한 가치가 있는 보물을 ''서울 미래유산''으로 선정, 관리하고 있다. 국립 4·19민주묘지, 문익환 가옥 등이 여기에 꼽혔는데, 윤극영 가옥은 그 가운데 가장 먼저 선정됐다는 점에서 각별한 의미를 지닌다. 1920~30년대에 활발하게 활동했던 윤극영은 동요 <반달>, <설날>, <우산 셋이 나란히>, <고드름> 등을 작곡했다. 우리나라 최초의 동요집인 <반달>을 제작해 ''반달 할아버지''로도 불린다. 생전에 그가 머물렀던 가옥은 현재 반달 문화원으로 쓰이며 방문객들을 반갑게 맞이한다. 윤극영의 유품들이 전시된 공간은 오랜 세월의 흔적이 더해져 마치 할아버지댁에 온 것처럼 마음이 편안해진다. 은은하게 흐르는 동요 멜로디는 어린 시절 추억을 떠올리게 만든다.   
-가까운 곳에 국립 4.19 민주 묘지, 솔밭근린공원이 있다.','070-8992-9720(한국반달문화원)',null,'매주 월요일',null,null,null,null,'10:00~18:00','없음','없음','없음','입 장 료:없음		
-
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오류동역광장','08272','서울특별시 구로구 경인로20나길 17(오류동)','서울 구로구 오류동역광장은 지하철 1호선 오류역 3번 출구 앞에 위치한 광장이다. 오류역을 바라보고 왼쪽에는 운동시설과 벤치, 산책로가 조성되어 지역 주민들이 만남과 휴식을 취할 수 있는 장소로 이용되고 있으며 오른쪽에는 공영 주차장이 있다. <br>지역 주민들을 위한 프로그램과 바자회 등 다양한 종류의 행사가 진행되는 이벤트 장소인 동시에, 코로나19 기간 동안에는 임시선별소가 들어서서 지역 주민들을 위한 생활편의 공간으로 활용되고 있다.','02-2620-7451',null,null,null,null,null,null,'00:00 ~ 24:00','주차가능','없음','없음','주차요금:최초 30분 1,500원<br>추가 10분 500원
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산 고구려정',null,'서울특별시 광진구 구의동 3','서울 광진구와 경기도 구리시에 걸쳐 있는 아차산은 높이 295.7m의 부담 없이 오를 수 있는 산이다. 삼국시대부터 전략적 요충지로 꼽혔는데 고구려와 백제, 신라가 한강 유역을 차지하기 위해 무려 250여 년 동안 각축을 벌였다는 아차산성이 대표적인 유적이다. 아차산성 외에도 신라 시대 의상대사가 창건했다는 영화사와 고구려 시대에 세워졌다고 알려진 보루 등 다수의 유적이 곳곳에 남아 있다. 서울지하철 5호선 아차산역에서 바로 오를 수 있어 도심에서 등산을 즐기는 코스로 인기다. 특히 서울의 동쪽 끝에 자리해 가장 일찍 해가 떠오르는 아차산은 매년 해맞이 축제가 열리는 장소이기도 하다. 낙타 능선에 자리한 고구려정은 일출은 물론 서울의 화려한 야경을 눈에 담을 수 있는 명소로도 입소문이 자자하다.','02-450-1395',null,null,null,null,null,null,'일출 ~ 일몰','주차가능','없음','없음','입 장 료:
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관음사국기봉',null,'서울특별시 관악구 남현동 산 62-1','서울 한강 남쪽에 우뚝 솟은 관악산은 관악구 신림동과 경기도 안양시, 과천시의 경계를 이룬다. 산꼭대기는 바위로 이루어져 있는데, 그 모습이 마치 갓을 쓰고 있는 것처럼 보여 관악산이란 이름이 붙었다. 대중교통으로도 쉽게 찾아갈 수 있을 만큼 접근성도 좋고 웅장한 바위 능선을 자랑해 등산객들에게 늘 인기 코스로 꼽힌다. 그중에서도 통일신라 때 창건한 사찰인 관음사를 끼고 국기봉으로 오르는 길은 짧고 굵게 관악산의 매력을 즐길 수 있는 코스로 통한다. 바위가 많고 일부 급경사를 이루는 구간도 있지만, 정상에 오르면 그동안의 수고로움을 잊을 만큼 탁월한 전망이 펼쳐진다. 우수경관 전망대란 이름으로 느긋하게 쉬어갈 수 있는 공간도 마련돼 있다. 관음사 국기봉은 성인 기준으로 2시간이면 넉넉하게 오르내릴 수 있다.',null,null,null,null,null,null,null,'일출 ~ 일몰','있음(공영주차장)','없음','없음','입 장 료:
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불교총지종','06227','서울특별시 강남구 도곡로25길 35(역삼동)','불교총지종은 ‘불교의 생활화, 생활의 불교화’를 표방하고 자리이타(自利利他)의 대승불교 정신을 일상에서 실천하는 생활불교 종단이다.(출처 : 불교총지종 홈페이지)','02-552-1080~1',null,null,null,null,null,null,'매일 09:00 ~ 18:00','주차가능','없음','불가','이용가능시설:서원당
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신기한놀이터 떼굴떼굴',null,'서울 서대문구 홍제동 산41-31','홍제1동 주택가 산 아래 탁트인 야외 공간에 조성된 신기한놀이터 떼굴떼굴은 아이들이 신나고 안전하게 놀 수 있는 자연 모래놀이터다. 서대문구가 어린이가 바라고 꿈꾸는 놀이터를 만들어보자는 취지로, 2019년 11월에 개장한 놀이터는 모래놀이터 3곳, 세족장, 음수대, 공중화장실이 조성되어 있다. 놀이터는 세 개의 원형놀이터로 구성하고, 촉감놀이에 적합한 동해안 모래를 깊이 50cm 이상으로 조성했다. 원목 놀이기구, 천연목재 산책로, 황토 포장 등 놀이공간의 다양한 시설도 ''천연재료''를 사용하였고, 자연 지형과 지물을 최대한 활용하여 다른 놀이터와 확실한 차이를 두었다. 다양한 놀이시설들 가운데 롱미끄럼틀과 짐라인은 아이들의 호기심을 유발한다. 관리사무실 앞에 비치되어 있는 어린이 자전거와 모래놀이 도구들은 대여해서 사용할 수 있다. 놀이터 개장은 오전 9시이며, 마감은 4월~10월 중에는 오후 6시,  11월~3월 중에는 오후 4시 40분이다.','02-330-1396','2019년 11월','없음',null,null,null,null,'09:00 ~ 18:00(4월~10월) / 09:00 ~ 16:40(11월~3월)','없음','없음','없음','주차요금:없음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신기한놀이터 떼굴떼굴',null,'서울 서대문구 홍제동 산41-31',38,127,'홍제1동 주택가 산 아래 탁트인 야외 공간에 조성된 신기한놀이터 떼굴떼굴은 아이들이 신나고 안전하게 놀 수 있는 자연 모래놀이터다. 서대문구가 어린이가 바라고 꿈꾸는 놀이터를 만들어보자는 취지로, 2019년 11월에 개장한 놀이터는 모래놀이터 3곳, 세족장, 음수대, 공중화장실이 조성되어 있다. 놀이터는 세 개의 원형놀이터로 구성하고, 촉감놀이에 적합한 동해안 모래를 깊이 50cm 이상으로 조성했다. 원목 놀이기구, 천연목재 산책로, 황토 포장 등 놀이공간의 다양한 시설도 ''천연재료''를 사용하였고, 자연 지형과 지물을 최대한 활용하여 다른 놀이터와 확실한 차이를 두었다. 다양한 놀이시설들 가운데 롱미끄럼틀과 짐라인은 아이들의 호기심을 유발한다. 관리사무실 앞에 비치되어 있는 어린이 자전거와 모래놀이 도구들은 대여해서 사용할 수 있다. 놀이터 개장은 오전 9시이며, 마감은 4월~10월 중에는 오후 6시,  11월~3월 중에는 오후 4시 40분이다.','02-330-1396','2019년 11월','없음',null,null,null,null,'09:00 ~ 18:00(4월~10월) / 09:00 ~ 16:40(11월~3월)','없음','없음','없음','주차요금:없음
 
 화장실:있음(남,녀 구분)
 
@@ -935,17 +879,48 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 이용가능시설:모래놀이터	, 세족장, 음수대, 관리사무소
 
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍제천 폭포마당',null,'서울특별시 서대문구 연희동 170-181','서울 서대문구에 있는 홍제천 폭포마당은 홍제천을 따라 조성된 인공폭포다. 홍제천은 북한산에서 발원하여 종로구, 서대문구, 마포구를 흘러 한강으로 통하는 하천이다. 홍제천 인공폭포는 그중에서도 백련교 하류 안산 경사지에 있다. 홍제천 폭포마당에는 폭포뿐만 아니라 다양한 쉼터가 조성되어 시민들의 휴식처가 되어 준다. 폭포에서 오른쪽 산책로를 따라 걷다 보면 연희숲속쉼터로 이어진다. 정겨운 징검다리를 건너면 시원한 물살과 함께 더위마저 흘러가 버리는 기분을 느낄 수 있다. 테마산책길인 안산 초록숲길도 있다. 백련산 초록숲길과 연결되는 이곳은 메타세쿼이아 숲길을 지나 인왕산과 북한산이 한눈에 들어오는 봉수대, 백암을 지나는 코스다.','02-2236-9134',null,null,null,null,null,null,'09:00 ~ 19:00 (4·5·9·10월) 08:00 ~ 20:00 (6·7·8월)','있음(공영주차장)','없음','없음','입 장 료:
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍제천 폭포마당',null,'서울특별시 서대문구 연희동 170-181',38,127,'서울 서대문구에 있는 홍제천 폭포마당은 홍제천을 따라 조성된 인공폭포다. 홍제천은 북한산에서 발원하여 종로구, 서대문구, 마포구를 흘러 한강으로 통하는 하천이다. 홍제천 인공폭포는 그중에서도 백련교 하류 안산 경사지에 있다. 홍제천 폭포마당에는 폭포뿐만 아니라 다양한 쉼터가 조성되어 시민들의 휴식처가 되어 준다. 폭포에서 오른쪽 산책로를 따라 걷다 보면 연희숲속쉼터로 이어진다. 정겨운 징검다리를 건너면 시원한 물살과 함께 더위마저 흘러가 버리는 기분을 느낄 수 있다. 테마산책길인 안산 초록숲길도 있다. 백련산 초록숲길과 연결되는 이곳은 메타세쿼이아 숲길을 지나 인왕산과 북한산이 한눈에 들어오는 봉수대, 백암을 지나는 코스다.','02-2236-9134',null,null,null,null,null,null,'09:00 ~ 19:00 (4·5·9·10월) 08:00 ~ 20:00 (6·7·8월)','있음(공영주차장)','없음','없음','입 장 료:
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연남동끝자락길','03974','서울특별시 마포구 성미산로17길(연남동)','이름 그대로 연남동 끝자락에 자리한 이곳은 한때 피난길로 불렸다. 좁은 골목들이 얽히고설킨 이 동네가 지닌 정겨움에 매료된 젊은이들이 모여 연남동 끝자락길을 만들었다. 자신만의 브랜드를 사랑하는 이색 가게들로 채워진 거리다. 제로웨이스트샵인 ‘유민얼랏’은 친환경 세제와 천연 설거지 비누, 대나무로 만든 칫솔, 스테인리스 빨대 등 환경을 먼저 생각하는 친환경 생활용품들을 판매한다. ‘플라워에이블’은 제로 웨이스트를 직접 실천하는 플라워샾이다. 비닐 포장지나 공단 리본, 플로랄 폼 대신 종이와 마 끈 등 천연소재를 사용해 꽃이나 화분을 포장한다. 이 외에도 카페와 찻집, 디저트 숍 등 개성 넘치는 가게들을 둘러보는 재미가 쏠쏠하다.','02-2236-9134(서울관광안내소)',null,'매장마다 상이',null,null,null,null,'매장마다 상이',null,'없음','없음','입 장 료:
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연남동끝자락길','03974','서울특별시 마포구 성미산로17길(연남동)',38,127,'이름 그대로 연남동 끝자락에 자리한 이곳은 한때 피난길로 불렸다. 좁은 골목들이 얽히고설킨 이 동네가 지닌 정겨움에 매료된 젊은이들이 모여 연남동 끝자락길을 만들었다. 자신만의 브랜드를 사랑하는 이색 가게들로 채워진 거리다. 제로웨이스트샵인 ‘유민얼랏’은 친환경 세제와 천연 설거지 비누, 대나무로 만든 칫솔, 스테인리스 빨대 등 환경을 먼저 생각하는 친환경 생활용품들을 판매한다. ‘플라워에이블’은 제로 웨이스트를 직접 실천하는 플라워샾이다. 비닐 포장지나 공단 리본, 플로랄 폼 대신 종이와 마 끈 등 천연소재를 사용해 꽃이나 화분을 포장한다. 이 외에도 카페와 찻집, 디저트 숍 등 개성 넘치는 가게들을 둘러보는 재미가 쏠쏠하다.','02-2236-9134(서울관광안내소)',null,'매장마다 상이',null,null,null,null,'매장마다 상이',null,'없음','없음','입 장 료:
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('난지천공원','03900','서울특별시 마포구 월드컵로 365(상암동)','서울 마포구에 자리한 난지천공원은 이름 그대로 한강의 지류인 난지천을 따라 조성된 도심 속 공원이다. 난지천공원이 위치한 난지도는 90년대까지 쓰레기 매립지로 운영되었으나, 정화작업을 통해 아름다운 자연경관을 자랑하는 생태공원으로 조성했다. 난지천공원은 어린이들이 아름다운 자연을 배경으로 신나게 뛰어놀 수 있는 숲 놀이터와 모래놀이장 등을 갖춘 유아 숲 체험장을 비롯해 울창한 숲길과 넓은 잔디 광장, 오리 연못, 매점 등이 있어 가족 단위의 나들이 장소로 제격이다. 완만한 산책로를 따라 걷다 보면 봄날의 향기를 가득 머금은 유채꽃과 알록달록한 튤립 등 다채로운 꽃도 만날 수 있다. 탐스러운 꽃송이를 자랑하는 겹벚꽃도 피어 걷는 재미를 더한다.','02-2236-9134(서울관광안내소)',null,'연중무휴',null,null,null,null,'일출 ~ 일몰','있음(공영주차장)','없음','없음','입 장 료:
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('난지천공원','03900','서울특별시 마포구 월드컵로 365(상암동)',38,127,'서울 마포구에 자리한 난지천공원은 이름 그대로 한강의 지류인 난지천을 따라 조성된 도심 속 공원이다. 난지천공원이 위치한 난지도는 90년대까지 쓰레기 매립지로 운영되었으나, 정화작업을 통해 아름다운 자연경관을 자랑하는 생태공원으로 조성했다. 난지천공원은 어린이들이 아름다운 자연을 배경으로 신나게 뛰어놀 수 있는 숲 놀이터와 모래놀이장 등을 갖춘 유아 숲 체험장을 비롯해 울창한 숲길과 넓은 잔디 광장, 오리 연못, 매점 등이 있어 가족 단위의 나들이 장소로 제격이다. 완만한 산책로를 따라 걷다 보면 봄날의 향기를 가득 머금은 유채꽃과 알록달록한 튤립 등 다채로운 꽃도 만날 수 있다. 탐스러운 꽃송이를 자랑하는 겹벚꽃도 피어 걷는 재미를 더한다.','02-2236-9134(서울관광안내소)',null,'연중무휴',null,null,null,null,'일출 ~ 일몰','있음(공영주차장)','없음','없음','입 장 료:
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일자산허브천문공원',null,'서울특별시 강동구 둔촌동 산86','서울 강동구 일자산 자락에 조성된 공원으로 ‘허브’와 ‘천문’이라는 두 가지의 테마로 꾸며졌다. 색의 정원, 감촉의 정원, 향기의 정원, 차의 정원, 맛의 정원 등 다양한 주제로 120여 종의 허브 32,448본을 심었고 약용식물과 자생식물 47종 9,138본도 각각 약초원과 자생원에 심었다. 공원 한쪽에는 작은 천문대가 자리하고 있으며, 공원 중앙의 동산을 중심으로 바닥에 설치된 282개의 LED 조명이 매일 저녁 북두칠성과 은하수 등의 별자리를 연출한다. 또 서울시가 선정한 우수 조망명소가 있어 공원 맞은편 길동생태공원의 울창한 숲부터 아차산까지 시원스러운 전망을 즐길 수 있다. 전면으로는 푸르른 숲을, 위로는 파란 하늘을 동시에 만날 수 있는 휴식공간인 티하우스도 운영한다.','02-2236-9134(서울관광안내소)',null,'연중무휴',null,null,null,null,'상시 개방','있음','없음','없음','입 장 료:
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('본원정사(서울)','01019','서울특별시 강북구 삼각산로 1(수유동)',38,127,'본원정사(本願精舍)는 서울특별시 강북구 수유동 삼각산에 자리한 대한불교조계종 대각회 소속의 사찰이다. 지장보살은 석가모니 부처님과 미륵불 사이인 부처님 없는 시대에 중생들을 교화하는 대비보살이다. 특히 지옥에서 고통 받는 중생들을 구원하기 위해 지옥에 들어가 교화해 제도하는 보살로 널리 알려져 있다. 《지장보살본원경》에는 지장보살이 석가모니 부처님에게 한 서약의 내용이 있다. 즉 “지옥이 텅 비지 않는다면 결코 성불을 서두르지 않겠나이다. 그리하여 육도의 중생이 다 제도되면 깨달음(菩提)을 이루리다.” 이는‘한시바삐 성불하여 부처님과 같은 거룩한 모습을 갖추겠다’는 것이 아니라, 미래의 세상이 다할 때까지 고통 받는 중생을 구제하고 그들을 남김없이 해탈케 한 다음 부처가 되겠다는 것이다.<br />이러한 지장보살의 서원은 서원(誓願) 중의 서원, 가장 근본이 되는 원으로 모든 보살과 부처가 존재할 수 있는 근거가 되는 본원(本願)인 것이다. 삼각산 아래의 본원정사에는 한국전쟁 때 태고사에 불이 나서 옮겨왔다고 전하는 목조지장보살좌상이 봉안되어 있다. 1980년대 초 주지소임을 맡은 원성스님은 이 지장보살상에 감화를 받아 지장보살의 본원을 따르고자 서원을 하였다고 한다. 그래서 절 이름도 본원정사로 바꾸었다. 이후 본원정사를 사바세계 중생들의 몸과 마음의 병을 다스릴 수 있는 도량으로 만들어 가고 있다. 또한 언제나 열려있는 도량으로 서울시민과 불자들에게 번잡한 마음을 쉴 수 있게 하고, 기도할 수 있는 도량으로 본원정사를 장엄하고 있다.<br>','02-902-7337',null,'연중무휴',null,null,null,null,null,null,'없음','없음','화장실:있음
+외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('답십리 고미술상가','02603','서울특별시 동대문구 고미술로 39','답십리 고미술상가는 고서화, 고가구, 도자기 등의 고미술품과 독특하고 다양한 생활용품을 판매하는 상점이 밀집한 곳이다. 답십리 고미술상가는 청계천 8가, 이태원, 아현동 등지에 흩어져 있던 고미술상점들이 1980년대 중반부터 답십리 일대에 모여들기 시작하여 형성되었으며 현재 약 140여 개의 점포가 밀집해 있다. 고미술품은 물론 나무촛대, 괘종시계, 오래된 액자 등과 같은 오래되고 독특한 소품들이 많아 볼거리가 풍성하다. 일반 상점에서는 보기 힘든 특이한 물건들이 많아 한국인은 물론 외국인들도 자주 찾는다. 일반적으로 인사동이 질 좋고 값 비싼 고미술품들을 주로 판매한다면 답십리 고미술상가는 몇 천원부터 시작되는 작은 소품들이 많은 것이 특징이다.','02-2244-6120',null,'일요일 및 공휴일',null,null,null,null,null,'있음(상가주차장, 공영주차장, 지하주차장)','없음','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('약사사(서울)','07501','서울특별시 강서구 금낭화로17길 261',38,127,'약사사는 서울시 강서구 개화동 개화산에 자리한 대한불교조계종 직할 사암이다. 겸재(謙齋)도 감탄했던 절경, 개화산 약사사(藥師寺) 조선 후기의 화가로 이름 높은 겸재(謙齋) 정선(鄭?, 1676~1759)은 개화사(開花寺)란 제목으로 개화산과 절 그리고 주변의 풍경을 그림으로 남겼는데, 바로 이 개화사가 지금의 약사사이다. 절의 창건은 삼한 시대 혹은 신라 시대로 전하고 있지만 구체적으로 언제 창건되었다는 기록은 없다. 또한 고려 시대의 유물인 석불과 삼층석탑이 남아 있는 점으로 보아 고려 시대에도 법등이 이어져 왔음을 짐작해 볼 따름이다. 이후 조선 후기까지는 별다른 역사를 찾아볼 수 없다가 1737년(영조 13)에 좌의정 송인명(宋寅明)에 의해 크게 중수된 후 송 씨 가문의 원찰이 되었다. 송인명은 조선 후기의 문신으로 어려서 아주 가난했는데 개화사에서 극진한 대접을 받으면서 공부를 하였고, 1736년에 좌의정에 오르자 그 은혜를 보답하기 위해 절을 크게 고쳐지었던 것이다. 이러한 사실은 영조 때 최고의 시인이었던 이병연(秉淵)이 송인명에게 보낸 시를 통해 더욱 잘 알 수 있다.
+
+봄이 오면 행연(杏淵) 배에 오르지 마오
+손님이 오면 어찌 꼭 소악루(小嶽樓)만 오르려 하나
+책을 서너 번 다 읽은 곳이 있다면
+개화사(開花寺)에서 등유(燈油)를 써야지.
+『사천시초(?川詩抄)』
+
+또한 이병연과 교류하고 있던 겸재 정선은 이 시를 보고 ‘개화사’라는 그림으로 절경을 남겼던 것이다. 이후 개화사는 약수암(藥水庵), 약수사(藥水寺), 약사사(藥師寺) 등으로 절의 이름을 바꾸게 되는데 이는 아마도 절에서 솟아나는 약수와 법당에 모셔져 부처님과 매우 연관성이 보인다. 특히 법당에 봉안되어 있는 석불은 영험이 있어 지극정성으로 기도를 올리면 병이 치유되고 소원을 성취한다고 하여 향화의 발길이 끊이지 않고 있다.','02-2662-2551, 7551',null,'연중개방',null,null,null,null,null,'주차 가능','없음','불가','화장실:있음
+외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('코코넛박스','04039','서울특별시 마포구 서교동357-1','코코넛박스는 도심 속 휴식과 힐링의 공간이자, NFT 작품을 체험할 수 있는 아트플레이스이다. 동남아의 한적한 휴양지를 떠올리게 하는 이곳은 메타버스 세상에도, 현실에도 존재하는 하이브리드 뮤지엄이다. 일상을 여행으로, 무료함을 설레임으로, 상상을 현실로 만드는 공간이다. 개성 넘치는 트로피컬 인테리어가 돋보이는 32개의 독립공간이 있다. 각 공간마다 엄청난 에너지와 비타민을 전달받을 수 있다.','0507-1386-9177',null,'연중무휴','bungalow, NFT갤리리, 미디어 아트박스, 밥 말리 풀, VR 박스, 슬리이드 풀, 코코넛 바, Majorca House',null,null,null,'11:00 ~ 22:00','주차가능',null,null,':
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연화사(서울)','02454','서울특별시 동대문구 경희대로3길 56(회기동)',38,127,'연화사(蓮華寺)는 서울시 동대문구 회기동 천장산(天藏山) 자락에 자리한 대한불교 조계종 직할 말사이다.서울 동부의 도심 한복판에 자리한 회기동은 연산군의 생모인 폐비 윤씨의 묘소인 회릉이 있었다 하여 붙여진 이름으로 현재 그 터에는 그녀의 원찰로 지어진 조그마한 절이있다. 
+이 곳은 일체중생(一切衆生)의 근본자성(根本自性)이 진흙 속에서 피어나는 청정한 연꽃과 같다는 의미에서 연화사라 불려 졌는데, 이후 묘련(妙蓮)이라 불려지기도 하였다. 이는 모두 연꽃의 청정함을 상징하는 것으로 연산군이 생모 윤씨의 명복을 빌고 비명에 간 원혼을 천도하기 위한 도량으로서, 연꽃의 기능 중 화생(化生)의 의미로 붙인 이름인 듯하다.
+현재는 회릉이 서삼릉으로 이전되고, 그 자리에 경희여중ㆍ고등학교가 설립되면서 옛 모습은 찾을 수 없지만, 그 터 아래 조그마한 사찰이 있어 그 명맥을 이어가고 있다. 지금은 울창한 수풀에 둘러싸인 전형적인 사찰의 모습이 아닌 빌딩숲에 인공적으로 뭍힌 도심속 사찰로 그 모습이 변모했지만, 사찰에는 폐비 윤씨는 물론 선의왕후의 원찰로서 많은 상궁들이 조성한 불화들이 남아 있어 왕실 원찰로서의 흔적을 찾을 수 있다. 시냇가를 건너 가파른 고개를 지나 당도하는 옛 가람의 모습은 없지만, 도심 속 골목길을 따라 약간의 나무가 있는 곳에서 만날 수 있는 공원같은 곳 - 연화사에서 세속에 찌든 근심을 잠시라도 떨쳐 버릴 수 있으면 좋을 듯하다.','02-962-6186',null,'연중개방',null,null,null,null,null,null,'없음','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('영화사(서울)','04948','서울특별시 광진구 영화사로 107',38,127,'영화사는 서울시 광진구 구의동 아차산에 자리한 대한불교조계종 직할사암이다. 무릇 일반인들이 보아도 명당자리인 듯싶은 곳을 찾아가보면 거의 어김없이 사찰이 자리하고 있다. 굳이 풍수지리설에 의하여 산세와 지세 등을 따지지 않더라도 이 점은 틀리지 않는다. 그만큼 옛 스님들이 선견지명이 있었지 않았나 싶다. 서울의 동쪽 끝 아차산 자락에도 이러한 예상은 틀리지 않는다. 바로 영화사가 그러한 곳이다. 소나무향 그윽하고 강내음 바람타고 올라오는 아차산 남단 중턱에 자리한 영화사는 672년(신라 문무왕 12)에 화엄종을 개창한 의상대사가 화양사(華陽寺)란 이름으로 처음 창건하였다고 전한다. 그러나 절은 역사적으로 볼 때 몇 차례 옮겨졌었다.<br /><br />조선 태조 4년(1395년)에는 이 절의 등불이 궁성에까지 비친다고 하여 산 아래 용마산 기슭 군자봉에 옮겨짓게 하였다가 1907년에 이르러서야 지금 자리로 다시 옮겨오면서 비로소 영화사라 한 것이다. 영화사에는 거대한 미륵석불입상이 미륵전에 모셔져 있는데 이 미륵부처님은 세조가 이곳에서 기도하여 지병을 치유하였다는 영험있는 부처님이다. 그래서인지 요즈음도 이 영험한 미륵불에게 기도하기 위해 대학입시 때나 공무원 시험 등이 있을 때면 백일기도를 정성스럽게 올려 합격을 기원하는 불자들이 많이 찾아온다. 영화사에 들어서면 4OO년이나 된 느티나무가 먼저 멀리서 반긴다. 또한 사찰 주위는 아름드리나무와 무성한 숲으로 둘러싸여 아름다운 자연경관을 잘 갖추고 있다. 따라서 영화사는 인근 주민들의 마음의 평정을 찾는 안식처로도 많은 공헌을 하고 있는 것이다.<br>','02-444-4321',null,'연중개방',null,null,null,null,null,'있음','없음','불가','외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용굴암(서울)','01633','서울특별시 노원구 덕릉로129가길 242(상계동)',38,127,'자연적으로 이루어진 동굴은 일찍이 납자들에게 있어 좋은 수행처와 기도처로서 역할을 해왔다. 척박할 것만 같은 동굴을 극한 조건에서도 자신을 단련하고 수행하는 납자들에게 깨달음을 향한 불퇴전의 용기로 이겨내게 한 것이다. 산천을 돌아보면 자연동굴에 법당을 마련한 사찰이 눈에 띄는 것은 수행자들의 이러한 의지와 예배공간에 대한 신성함을 주기위한 것일 것이다. 용굴암은 수락산에 자리한 여러 사찰 가운데 가장 정상에 가까운 곳에 있는 사찰로 이름에서 드러나듯 커다란 자연동굴이 하나 있다. 이 동굴은 용굴암이 처음 시작된 곳으로 현재 석가모니불과 16나한이 봉안되어 있어 나한도량임을 나타내고 있다.<br /><br />100여 년 전 지배체제로부터 배척당하던 수행자들은 깊은 산으로 숨을 수밖에 없었고, 인적이 드문 이 동굴은 피신처와 수행처로 적지가 아닐 수 없었던 것이다. 이렇게 하여 용굴암이 세상에 이름을 보이게 되었다. 한때는 흥선대원군의 섭정에 밀려난 명성황후가 피신하여 지내면서 기도를 하였는데, 그 인연으로 용굴암은 대대적인 중건을 하여 사찰로서 모습을 갖추게 되었다. 이후 용굴암은 많은 격변기를 거치면서 퇴락하기도 했지만 나한도량으로서 면모를 갖추기 위해 노력을 경주하고 있다. 그래서 앞으로 나한도량하면 용굴암을 꼽을 수 있을 것이다.<br>','02-937-8206',null,'연중무휴',null,null,null,null,null,'없음','불가','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('옥천암(서울)','03608','서울특별시 서대문구 홍지문길 1-38',38,127,'옥천암는 서울시 서대문구 홍은2동 8번지 북한산 끝자락에 자리한 대한불교조계종 직할사찰이다. 관세음보살은 광세음보살(光世音菩薩) 또는 관세음자재보살(觀世音自在菩薩)이라고도 하며 보통 줄여서 관음보살이라고 부른다. 대자대비(大慈大悲)를 서원으로 하는 관음보살은 우리나라에서 주로 『화엄경』, 『법화경』, 『아미타경』, 『능엄경』을 중심으로 그 신앙이 전개된다. 각 경전상에서 공통적으로 나타나는 것은 관세음보살의 이름을 마음속에 간직하고 염불하면 모든 고통의 속박에서 벗어나고 어떠한 고난이나 재액에서도 반드시 해탈을 얻게 된다고 한다. 옥천암(玉泉庵)은 동해의 낙산 홍련암(紅蓮庵), 서해의 강화도 보문사(普門寺), 남해의 보리암(菩提庵)과 함께 4대 관음기도 도량으로 알려져 있다. 이는 옥천암에 있는 관음보살상 때문인데, ‘보도각 백불(普渡閣 白佛)’로 불리는 이 관음보살은 많은 영험담을 가지고 있다.일찍이 조선 태조가 한양에 도읍을 정할 때도 이 석불에 기도한 일이 있고, 또 흥선대원군의 부인 민씨(閔氏)도 아들인 고종을 위해서 자주 찾아와 기도하였다고 한다. 삼각산의 맥이 비봉과 향로봉을 거쳐 인왕산으로 이어지기 직전 삼각산이 끝나는 지점에 자리한 옥천암은 서울이 대규모로 도시화되기 전만 해도  옥같이 맑은 물이 흘렀다. 그러한 까닭으로 절 이름 또한 옥천암이라 불리었던 것이다.<br /><br />[옥천암 마애좌상(보도각 백불)]<br /><br />서울특별시 유형문화재(1973.06.07 지정)<br />보도각 백불의 정확한 명칭은 ''홍은동 보도각 마애보살좌상(弘恩洞 普渡閣 磨崖菩薩坐像)''이다. 흰색의 호분이 전체적으로 두껍게 칠해져 있기 때문에 백불(白佛) 또는 해수관음(海水觀音)이라고도 한다. 마애불상은 근래에 세워진 정면 1칸, 측면 2칸의 보도각이란 전각 안에 보존되어 있다. 전하는 말에 의하면 조선 태조 이성계가 서울로 도읍을 정할 때 이 석불에 기원을 했으며, 조선후기에는 고종의 어머니 흥선대원군의 부대부인 민씨도 아들의 천복을 빌었는데 이때부터 하얗게 칠을 하였다고 한다. 머리에는 꽃무늬가 장식된 화려한 관(冠)을 쓰고 있으며, 머리카락은 어깨를 따라 팔꿈치까지 길게 늘어져 있다. 비교적 둥근 얼굴은 눈이 가늘고 입이 작게 표현되어 고려시대 불상의 일반적인 특징을 보여준다. 옷은 양쪽 어깨를 감싸고 있으며 신체는 전체적으로 단정한 모습이다. 옷주름은 선이 깊지는 않지만 신체 전반에 부드럽게 흘러내리고 있다. 손은 오른손을 들어 엄지와 가운데 손가락을 맞대고 왼손은 무릎 위에 올려놓은 아미타불의 손모양을 하고 있다. 고려시대에 만들어진 마애불로서 북한산 구기리 마애석가여래좌상(보물)과 같은 계열의 작품으로 보인다.<br>','02-395-4031',null,'연중무휴',null,null,null,null,null,null,'불가','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천축사(서울)','01300','서울특별시 도봉구 도봉산길 92-2(도봉동)',38,127,'신라 문무왕 13년(673)에 창건되었다. 의상(義湘)스님이 문도들을 이끌고 만장봉 동쪽 기슭에 왔다가 그 산세의 빼어남에 감탄하여 현재의 위치에 창건하게 하고 옥천암(玉泉庵)이라 하였다고 한다. 그 뒤 고려 명종 때에는 근처 영국사(寧國寺)의 부속암자가 되었다. 조선 태조 7년(1398) 함흥으로 갔다가 돌아오던 태조가 옛날 이곳에서 기도하던 기억을 상기하고 절을 중창하였으며, 천축사(天竺寺) 현판을 하사하였다. 절 이름을 천축사라고 한 것은 고려 때 호승(胡僧) 지공화상이 공민왕의 왕사였던 나옹화상에게 이곳의 경관이 인도 천축국의 영축산과 비슷하다고 한데서 유래된 것으로 전해진다. 성종 5년(1474) 어명으로 중창되었고, 명종 때에는 문정왕후가 화류용상(樺榴龍床)을 헌납하여 불좌를 만들었다고 한다. 순조 12년(1812) 이후 영험 있는 기도 도량으로 여러 차례 중창되었는데 현재의 당우는 1959년에 중수한 것이다. 현존하는 건물로는 대웅전을 비롯하여 원통전 · 독성각 · 산신각 · 요사 등이 있고, 참선도량 무문관이 있다. 무문관은 불교 선수행의 현근대적 역사에 기록될 근대 선수행의 얼이 숨어 있는 기념비적인 수행처이다. 천축사는 역사적 기록과 현대의 불교계에 큰 위치를 차지하고 있으며 부처님의 진신사리가 모셔진 적멸보궁으로, 보존되고 개발되어야 할 전통사찰이자 천 년 고찰이다.<br>','02-954-1474',null,'연중무휴',null,'미취학아동 보호자 동반아래 가능',null,null,null,'도봉산 주차장 이용','불가','불가','화장실:있음
+한국어 안내서비스:경내 안내 가능 
+외국어 안내서비스:불가 
+내국인 예약안내:전화/홈페이지 예약가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일자산허브천문공원',null,'서울특별시 강동구 둔촌동 산86',38,127,'서울 강동구 일자산 자락에 조성된 공원으로 ‘허브’와 ‘천문’이라는 두 가지의 테마로 꾸며졌다. 색의 정원, 감촉의 정원, 향기의 정원, 차의 정원, 맛의 정원 등 다양한 주제로 120여 종의 허브 32,448본을 심었고 약용식물과 자생식물 47종 9,138본도 각각 약초원과 자생원에 심었다. 공원 한쪽에는 작은 천문대가 자리하고 있으며, 공원 중앙의 동산을 중심으로 바닥에 설치된 282개의 LED 조명이 매일 저녁 북두칠성과 은하수 등의 별자리를 연출한다. 또 서울시가 선정한 우수 조망명소가 있어 공원 맞은편 길동생태공원의 울창한 숲부터 아차산까지 시원스러운 전망을 즐길 수 있다. 전면으로는 푸르른 숲을, 위로는 파란 하늘을 동시에 만날 수 있는 휴식공간인 티하우스도 운영한다.','02-2236-9134(서울관광안내소)',null,'연중무휴',null,null,null,null,'상시 개방','있음','없음','없음','입 장 료:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('답십리 고미술상가','02603','서울특별시 동대문구 고미술로 39',38,127,'답십리 고미술상가는 고서화, 고가구, 도자기 등의 고미술품과 독특하고 다양한 생활용품을 판매하는 상점이 밀집한 곳이다. 답십리 고미술상가는 청계천 8가, 이태원, 아현동 등지에 흩어져 있던 고미술상점들이 1980년대 중반부터 답십리 일대에 모여들기 시작하여 형성되었으며 현재 약 140여 개의 점포가 밀집해 있다. 고미술품은 물론 나무촛대, 괘종시계, 오래된 액자 등과 같은 오래되고 독특한 소품들이 많아 볼거리가 풍성하다. 일반 상점에서는 보기 힘든 특이한 물건들이 많아 한국인은 물론 외국인들도 자주 찾는다. 일반적으로 인사동이 질 좋고 값 비싼 고미술품들을 주로 판매한다면 답십리 고미술상가는 몇 천원부터 시작되는 작은 소품들이 많은 것이 특징이다.','02-2244-6120',null,'일요일 및 공휴일',null,null,null,null,null,'있음(상가주차장, 공영주차장, 지하주차장)','없음','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('코코넛박스','04039','서울특별시 마포구 서교동357-1',38,127,'코코넛박스는 도심 속 휴식과 힐링의 공간이자, NFT 작품을 체험할 수 있는 아트플레이스이다. 동남아의 한적한 휴양지를 떠올리게 하는 이곳은 메타버스 세상에도, 현실에도 존재하는 하이브리드 뮤지엄이다. 일상을 여행으로, 무료함을 설레임으로, 상상을 현실로 만드는 공간이다. 개성 넘치는 트로피컬 인테리어가 돋보이는 32개의 독립공간이 있다. 각 공간마다 엄청난 에너지와 비타민을 전달받을 수 있다.','0507-1386-9177',null,'연중무휴','bungalow, NFT갤리리, 미디어 아트박스, 밥 말리 풀, VR 박스, 슬리이드 풀, 코코넛 바, Majorca House',null,null,null,'11:00 ~ 22:00','주차가능',null,null,':
 :
 입 장 료:[전시회] 20,000원 (코코넛박스 + 러브뮤지엄) <br />
 [전시회 + 방갈로2인] 50,000원<br />
@@ -961,152 +936,109 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 ※ 자세한 사항은 홈페이지 참고 
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('반지캠퍼스카페','04055','서울특별시 마포구 서교동 345-16','오마이걸 아린의 단골 매장
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('반지캠퍼스카페','04055','서울특별시 마포구 서교동 345-16',38,127,'오마이걸 아린의 단골 매장
 순은 99.9%의 재료로 반지, 팔찌, 목걸이 등 액세서리를 만들 수 있는 이색 테마 카페다. 반지의 경우 마음에 드는 디자인의 반지를 고른 후 망치질로 사이즈 조절하기, 핸드 피스로 표면 다듬기, 광내기 등의 과정을 거치면 나만의 반지가 완성된다. 직접 만든 액세서리엔 원하는 문구도 새겨 넣을 수 있다. 오마이걸 아린의 단골 매장으로도 유명하다.','02-324-3350',null,null,null,null,null,null,'11:00~21:00',null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('향기억','06018','서울특별시 강남구 신사동 657-19','세상에서 하나뿐인 향수 만들기
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('향기억','06018','서울특별시 강남구 신사동 657-19',38,127,'세상에서 하나뿐인 향수 만들기
 개인 맞춤 향수를 만들 수 있는 공방이다. 모모랜드 주이, 청하 등 다수의 유명 연예인이 방문한 바 있다. 향수 외에도 디퓨저, 캔들 원데이 클래스도 마련되어 있다. 향수는 물론 패브릭 퍼퓸, 반려동물 탈취 제품 등 다양한 향 제품도 구입할 수 있다.','0507-1318-9070',null,null,null,null,null,null,'11:00~21:00',null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('에이바이봄','06016','서울특별시 강남구 청담동 91-6 에이바이봄','카페 분위기의 헤어 team_insert 숍
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('에이바이봄','06016','서울특별시 강남구 청담동 91-6 에이바이봄',38,127,'카페 분위기의 헤어 team_insert 숍
 일명 ‘여배우 숍’으로 불리는 청담동 소재 헤어 team_insert 숍이다. 다수의 여배우를 비롯해 청하, 마마무 휘인, 모모랜드 등 K-팝스타들이 자주 찾는 곳으로 유명하다. 모던+럭셔리+플랜테리어 카페 분위기의 숍으로 지하 1층에 있는 주차 발렛 대기 공간마저 포토존이다. 갤러리 같은 분위기 속에서 식사를 즐길 수 있는 핫플 레스토랑 보메청담이 1층에 있어 함께 이용하기 좋다.','02-516-8765',null,null,null,null,null,null,'10:00~18:00',null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도자기카페 줄','04056','서울특별시 마포구 동교동 179-38','''24/365 with BLACKPINK'' 촬영지
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도자기카페 줄','04056','서울특별시 마포구 동교동 179-38',38,127,'''24/365 with BLACKPINK'' 촬영지
 블랙핑크 단독 리얼리티 콘텐츠인 ''24/365 with BLACKPINK''에서 지수와 로제가 방문해 도자기를 만들었던 공방이다. 원데이 클래스를 통해 머그잔에 그림을 그리거나 직접 빚어 나만의 도자기를 만들 수 있다. 선생님의 수업에 따라 집중하다 보면 서툴더라도 큰 재미가 느껴진다. 촉촉한 흙 반죽을 만지는 것만으로도 일상의 스트레스가 사라지는 효과가 있다. 수업은 예약이 필수이다.','010-2231-8202',null,null,null,null,null,null,null,null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('내맘대로폰케이스 홍대점','04041','서울특별시 마포구 서교동 363-20 삼진빌딩','제니와 지수 폰케이스
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('내맘대로폰케이스 홍대점','04041','서울특별시 마포구 서교동 363-20 삼진빌딩',38,127,'제니와 지수 폰케이스
 V LIVE(브이앱)에서 제니와 지수가 휴대폰 케이스를 만들었던 곳이다. 엄청나게 많은 파츠를 구비하고 있으며 본드의 컬러, 모양 등을 선택 가능하다. 모든 파츠를 제한 없이 원하는 만큼 사용할 수 있는 것이 장점. 제니와 지수의 디자인을 따라 만들어봐도 좋고 나만의 케이스를 만들어도 좋다. 또한 포토 카드용 탑로더 꾸미기, 슬라임 만들기도 인기가 높다. 여행 기념품 혹은 선물용으로 제격이다.','02-322-6682',null,null,null,null,null,null,null,null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신꼼꼼','06019','서울특별시 강남구 신사동 656-7','K-팝스타들이 즐겨 찾는 네일 숍
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신꼼꼼','06019','서울특별시 강남구 신사동 656-7',38,127,'K-팝스타들이 즐겨 찾는 네일 숍
 1인 예약제로 진행되는 네일숍이다. 레드벨벳 웬디부터 아이브 장원영, 권은비까지 K-팝스타들이 즐겨 찾는다. 웬디가 첫 솔로 앨범에서 선보인 물방울 느낌의 네일이 화제를 모았다. 스와로브스키의 스톤을 사용하는 스톤 캐릭터 아트와 드릴 건식 케어가 전문이며, 색다른 네일아트를 원할 때 찾기 좋다. 연예인들의 방문 기념 사인도 볼거리다.','02-548-1722',null,'일요일',null,null,null,null,'11:00~21:00',null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북아현동계단','04199','서울특별시 마포구 아현동 707-8','영화 <기생충> - 기정이 오르던 계단
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북아현동계단','04199','서울특별시 마포구 아현동 707-8',38,127,'영화 <기생충> - 기정이 오르던 계단
 기정(박소담 분)이 복숭아를 훔친 후 오르던 계단이다. 돼지쌀슈퍼 바로 옆에 있어 한 번에 둘러보면 좋다. 이 계단을 올라가면 박 사장의 집으로 향하는 길과 이어진다. 계단 끝까지 올라가면 요새는 보기 드문 전깃줄이 늘어진 오래된 동네의 풍경이 한눈에 들어온다.',null,null,'항시개방',null,null,null,null,null,null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('면역공방 블랙점','06053','서울특별시 강남구 논현동 83-15 JK빌딩','소수 인원이 이용할 수 있는 찜질방 
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('면역공방 블랙점','06053','서울특별시 강남구 논현동 83-15 JK빌딩',38,127,'소수 인원이 이용할 수 있는 찜질방 
 최소 1명부터 소수의 지인끼리 이용할 수 있는 프라이빗 찜질방이다. 예능 프로그램 ''해방타운''에 나온 바 있다. 노폐물과 독소, 스트레스까지 날릴 수 있는 찜질방으로 황토벽돌, 편백 등 자연소재로 구성한 깔끔한 공간이 갖춰져 있다. 원적외선과 음이온을 방출하는 파동석 온열 찜질을 하며 피로를 풀 수 있다.','0507-1310-9608',null,null,null,null,null,null,'09:00~22:30',null,null,null,':
 :
 :
 :
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('달마사(서울)','06987','서울특별시 동작구 서달로 50-26','한강, 그리고 강 건너 남산을 바라보는 서달산 중턱에 작은 사찰이 있다. 낮이면 흐르는 강물을 멀리서 지켜볼 수 있고, 밤이면 작은 불빛을 발하는 남산의 정경을 바라볼 수 있는 열린 사찰이다. 서달산을 남산으로 자연과 함께하는 맑은 도량으로 알려져 있는 곳으로 하루가 다르게 변하는 도심 속에서 찌든 혼탁한 마음을 바로세울 수 있는 도심 속 전통사찰이다. 이른 아침 새벽예불의 소리와 함께 지역주민과 하나되고, 하루라는 인고의 시간을 지는 해와 같이하는 그런 포근한 사찰이다. 한강을 바라보는 녹지 속의 열린공간이며, 부처님의 가르침과 참된 수행의 정신이 깃든 곳, 또 작지만 마음으로 넓힌 지역주민의 공간이다.<br>','02-813-7425',null,'연중무휴',null,null,null,null,null,null,'불가','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('달마사(서울)','06987','서울특별시 동작구 서달로 50-26',37,127,'한강, 그리고 강 건너 남산을 바라보는 서달산 중턱에 작은 사찰이 있다. 낮이면 흐르는 강물을 멀리서 지켜볼 수 있고, 밤이면 작은 불빛을 발하는 남산의 정경을 바라볼 수 있는 열린 사찰이다. 서달산을 남산으로 자연과 함께하는 맑은 도량으로 알려져 있는 곳으로 하루가 다르게 변하는 도심 속에서 찌든 혼탁한 마음을 바로세울 수 있는 도심 속 전통사찰이다. 이른 아침 새벽예불의 소리와 함께 지역주민과 하나되고, 하루라는 인고의 시간을 지는 해와 같이하는 그런 포근한 사찰이다. 한강을 바라보는 녹지 속의 열린공간이며, 부처님의 가르침과 참된 수행의 정신이 깃든 곳, 또 작지만 마음으로 넓힌 지역주민의 공간이다.<br>','02-813-7425',null,'연중무휴',null,null,null,null,null,null,'불가','불가','화장실:있음
 외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('미타사(강서)','07504','서울특별시 강서구 개화동로13길 56-33(개화동)','미타사는 서울시 강서구 개화동 개화산 서남 기슭에 자리한 대한불교조계종 직할사암이다서울의 서쪽 끝 김포평야와 행주나루 끝에 걸쳐 있는 미타사는 도심 속에 있는 사찰이면서도 평온함과 한적함을 느낄 수 있는 곳이다. 아기자기하게 꾸며놓은 동산에 자연스럽게 다듬어진 나무들과 앙증맞게 피어 있는 들꽃들, 하나같이 예쁘게만 보인다. 그러나 이곳은 한국전쟁 때 육군과 인민군이 치열한 교전을 벌이던 격전지로 김포공항을 사수하던 육군 1000여명이 전사했으며 그로 인해 절의 모든 당우들이 전소되는 비운을 맞이하기도 했다.
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('미타사(강서)','07504','서울특별시 강서구 개화동로13길 56-33(개화동)',38,127,'미타사는 서울시 강서구 개화동 개화산 서남 기슭에 자리한 대한불교조계종 직할사암이다서울의 서쪽 끝 김포평야와 행주나루 끝에 걸쳐 있는 미타사는 도심 속에 있는 사찰이면서도 평온함과 한적함을 느낄 수 있는 곳이다. 아기자기하게 꾸며놓은 동산에 자연스럽게 다듬어진 나무들과 앙증맞게 피어 있는 들꽃들, 하나같이 예쁘게만 보인다. 그러나 이곳은 한국전쟁 때 육군과 인민군이 치열한 교전을 벌이던 격전지로 김포공항을 사수하던 육군 1000여명이 전사했으며 그로 인해 절의 모든 당우들이 전소되는 비운을 맞이하기도 했다.
 현재 미타사의 당우는 작은 법당과 요사가 전부인 단촐한 가람을 이루고 있는데, 이러한 모습은 아마도 100여 년 전 창건 당시의 모습과도 별반 차이가 없는 듯하다. 다만 건물들이 현대식으로 바뀌었을 따름이다.미타사에서 가장 눈길을 끄는 것은 단연 법당 옆 커다란 바위 위에 우뚝 솟아 있는 미륵불입상이다. 절의 창건과도 관련이 있을 것 같은 이 불상은 무수한 일화를 남기고 있는데, 이야기 속에 이 미륵부처님은 하나 같이 땅에서 솟아났다고 한다. 미륵경전에 의하면 미륵부처님은 석가모니부처가 열반에 든 후 56억 7천만년이 지나면 사바세계에 출현하여 중생을 구제한다고 하니, 미륵부처님이 출현하였으니 용화삼회(龍華三會)의 설법을 듣기 위해 절을 창건했는지도 모를 일이다.<br>','02-2662-4736',null,'연중개방',null,null,null,null,'00:00~24:00',null,'없음','불가','화장실:있음
 외국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보광사 보광선원(서울)','01008','서울특별시 강북구 삼양로145길 176(우이동)','보광사(普光寺)는 서울시 강북구 우이동 76-19번지 삼각산에 자리한 재단법인 선학원 소속사찰이다. 소나무가 빼곡히 들어서 숲을 이룬 우이동의 솔밭공원을 지나 포장된 길을 따라 걷다보면 삼각산 기슭에 자리한 보광사에 닿는다. 수십 년 전만 해도 이곳은 숲의 한가운데였지만 지금은 도심과 바로 이웃하고 있어 산을 한참이나 올라왔다는 것을 느끼지 못한다. 보광사는 1788년(정조 12) 금강산에서 수도한 원담스님이 신원사를 창건한 것이 그 시초이다. 이후 한국전쟁으로 인해 소실되고 일부 건물만이 남아 법등을 겨우 이어 왔었다. 그러던 것을 1979년 남산당(南山堂) 정일(正日) 스님이 포교의 원을 세우고 이곳에 주석하면서 불사를 시작하여 1980년 11월 보광사로 절 이름을 바꾸었다. 이후 스님은 가람을 일구어 오늘의 모습이 되도록 하였고, 대승경전산림법회와 참선법회를 정기적으로 열어 사람들에게 부처님의 가르침과 선법을 전하여 스스로 바른 길을 찾게 하였다. 이로서 보광사는 스님의 발원대로 명실상부한 포교의 도량으로서 자리매김하게 되었다. 이렇게 대중 교화에 혼을 쏟으셨던 정일스님은 세연이 다해 2004년 열반에 드시고 말았다. 이후 보광사 대중들은 보다 발전적인 모습으로 스님의 뜻을 이어나가고 있다.<br>','02-993-3808',null,'연중무휴',null,null,null,null,null,null,'불가','없음','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보광사 보광선원(서울)','01008','서울특별시 강북구 삼양로145길 176(우이동)',38,127,'보광사(普光寺)는 서울시 강북구 우이동 76-19번지 삼각산에 자리한 재단법인 선학원 소속사찰이다. 소나무가 빼곡히 들어서 숲을 이룬 우이동의 솔밭공원을 지나 포장된 길을 따라 걷다보면 삼각산 기슭에 자리한 보광사에 닿는다. 수십 년 전만 해도 이곳은 숲의 한가운데였지만 지금은 도심과 바로 이웃하고 있어 산을 한참이나 올라왔다는 것을 느끼지 못한다. 보광사는 1788년(정조 12) 금강산에서 수도한 원담스님이 신원사를 창건한 것이 그 시초이다. 이후 한국전쟁으로 인해 소실되고 일부 건물만이 남아 법등을 겨우 이어 왔었다. 그러던 것을 1979년 남산당(南山堂) 정일(正日) 스님이 포교의 원을 세우고 이곳에 주석하면서 불사를 시작하여 1980년 11월 보광사로 절 이름을 바꾸었다. 이후 스님은 가람을 일구어 오늘의 모습이 되도록 하였고, 대승경전산림법회와 참선법회를 정기적으로 열어 사람들에게 부처님의 가르침과 선법을 전하여 스스로 바른 길을 찾게 하였다. 이로서 보광사는 스님의 발원대로 명실상부한 포교의 도량으로서 자리매김하게 되었다. 이렇게 대중 교화에 혼을 쏟으셨던 정일스님은 세연이 다해 2004년 열반에 드시고 말았다. 이후 보광사 대중들은 보다 발전적인 모습으로 스님의 뜻을 이어나가고 있다.<br>','02-993-3808',null,'연중무휴',null,null,null,null,null,null,'불가','없음','화장실:있음
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('본원정사(서울)','01019','서울특별시 강북구 삼각산로 1(수유동)','본원정사(本願精舍)는 서울특별시 강북구 수유동 삼각산에 자리한 대한불교조계종 대각회 소속의 사찰이다. 지장보살은 석가모니 부처님과 미륵불 사이인 부처님 없는 시대에 중생들을 교화하는 대비보살이다. 특히 지옥에서 고통 받는 중생들을 구원하기 위해 지옥에 들어가 교화해 제도하는 보살로 널리 알려져 있다. 《지장보살본원경》에는 지장보살이 석가모니 부처님에게 한 서약의 내용이 있다. 즉 “지옥이 텅 비지 않는다면 결코 성불을 서두르지 않겠나이다. 그리하여 육도의 중생이 다 제도되면 깨달음(菩提)을 이루리다.” 이는‘한시바삐 성불하여 부처님과 같은 거룩한 모습을 갖추겠다’는 것이 아니라, 미래의 세상이 다할 때까지 고통 받는 중생을 구제하고 그들을 남김없이 해탈케 한 다음 부처가 되겠다는 것이다.<br />이러한 지장보살의 서원은 서원(誓願) 중의 서원, 가장 근본이 되는 원으로 모든 보살과 부처가 존재할 수 있는 근거가 되는 본원(本願)인 것이다. 삼각산 아래의 본원정사에는 한국전쟁 때 태고사에 불이 나서 옮겨왔다고 전하는 목조지장보살좌상이 봉안되어 있다. 1980년대 초 주지소임을 맡은 원성스님은 이 지장보살상에 감화를 받아 지장보살의 본원을 따르고자 서원을 하였다고 한다. 그래서 절 이름도 본원정사로 바꾸었다. 이후 본원정사를 사바세계 중생들의 몸과 마음의 병을 다스릴 수 있는 도량으로 만들어 가고 있다. 또한 언제나 열려있는 도량으로 서울시민과 불자들에게 번잡한 마음을 쉴 수 있게 하고, 기도할 수 있는 도량으로 본원정사를 장엄하고 있다.<br>','02-902-7337',null,'연중무휴',null,null,null,null,null,null,'없음','없음','화장실:있음
-외국어 안내서비스:불가
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('약사사(서울)','07501','서울특별시 강서구 금낭화로17길 261','약사사는 서울시 강서구 개화동 개화산에 자리한 대한불교조계종 직할 사암이다. 겸재(謙齋)도 감탄했던 절경, 개화산 약사사(藥師寺) 조선 후기의 화가로 이름 높은 겸재(謙齋) 정선(鄭?, 1676~1759)은 개화사(開花寺)란 제목으로 개화산과 절 그리고 주변의 풍경을 그림으로 남겼는데, 바로 이 개화사가 지금의 약사사이다. 절의 창건은 삼한 시대 혹은 신라 시대로 전하고 있지만 구체적으로 언제 창건되었다는 기록은 없다. 또한 고려 시대의 유물인 석불과 삼층석탑이 남아 있는 점으로 보아 고려 시대에도 법등이 이어져 왔음을 짐작해 볼 따름이다. 이후 조선 후기까지는 별다른 역사를 찾아볼 수 없다가 1737년(영조 13)에 좌의정 송인명(宋寅明)에 의해 크게 중수된 후 송 씨 가문의 원찰이 되었다. 송인명은 조선 후기의 문신으로 어려서 아주 가난했는데 개화사에서 극진한 대접을 받으면서 공부를 하였고, 1736년에 좌의정에 오르자 그 은혜를 보답하기 위해 절을 크게 고쳐지었던 것이다. 이러한 사실은 영조 때 최고의 시인이었던 이병연(秉淵)이 송인명에게 보낸 시를 통해 더욱 잘 알 수 있다.
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일원에코파크','06343','서울특별시 강남구 양재대로41길 24(일원동)',37,127,'서울 강남구 일원동에 있는 일원에코파크는 탄천물재생센터를 변신 시켜 2017년에 새롭게 개장한 근린공원이다. <br>다양한 친환경 페스티벌이 개최되며 주민들의 참여로 쾌적한 환경 장점인 공원이다. 풋살장, 배드민턴장, 인라인스케이트장 등 다양한 운동시설과 식물원으로 구성되어있고 주차장에서는 전기차 충전이 가능하다. 지하철 3호선 대청역 3번 출구 도보 8분 거리다.','02-3410-9815','2017년',null,'어린이물놀이축제(여름), 친환경페스티벌',null,null,null,'00:00 ~ 24:00','주차가능 <br>5분당 100원','없음','가능','이용가능시설:식물원, 족구장, 풋살장, 스케이트장, 게이트볼장, 배드민턴장		
 
-봄이 오면 행연(杏淵) 배에 오르지 마오
-손님이 오면 어찌 꼭 소악루(小嶽樓)만 오르려 하나
-책을 서너 번 다 읽은 곳이 있다면
-개화사(開花寺)에서 등유(燈油)를 써야지.
-『사천시초(?川詩抄)』
+내국인 예약안내:홈페이지, 전화
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산배수지체육공원','04958','서울특별시 광진구 천호대로 731(구의동)',38,127,'서울 광진구에 위치한 아차산배수지체육공원은 배수지 상부의 유휴공간을 활용하여 만들어진 체육시설이다.
+공원 내부에 인조잔디축구장, 테니스장, 풋살장, 정구장, 족구장을 포함한 각종 체육시설이 갖추어져 있다.
+공원 체육시설이 우수해서 여러 축구 동호회들이 자주 애용하는 만큼 축구 경기를 하기 위한 방문 시 홈페이지를 통한 사전예약이 요구된다.
+지하철 5호선 아차산역 2번 출구에서 650m 거리에 있다.','02-3437-7234',null,'없음',null,null,null,null,'00:00 ~ 24:00','있음(주차구역 협소)','없음','없음','입 장 료:없음		
 
-또한 이병연과 교류하고 있던 겸재 정선은 이 시를 보고 ‘개화사’라는 그림으로 절경을 남겼던 것이다. 이후 개화사는 약수암(藥水庵), 약수사(藥水寺), 약사사(藥師寺) 등으로 절의 이름을 바꾸게 되는데 이는 아마도 절에서 솟아나는 약수와 법당에 모셔져 부처님과 매우 연관성이 보인다. 특히 법당에 봉안되어 있는 석불은 영험이 있어 지극정성으로 기도를 올리면 병이 치유되고 소원을 성취한다고 하여 향화의 발길이 끊이지 않고 있다.','02-2662-2551, 7551',null,'연중개방',null,null,null,null,null,'주차 가능','없음','불가','화장실:있음
-외국어 안내서비스:불가
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연화사(서울)','02454','서울특별시 동대문구 경희대로3길 56(회기동)','연화사(蓮華寺)는 서울시 동대문구 회기동 천장산(天藏山) 자락에 자리한 대한불교 조계종 직할 말사이다.서울 동부의 도심 한복판에 자리한 회기동은 연산군의 생모인 폐비 윤씨의 묘소인 회릉이 있었다 하여 붙여진 이름으로 현재 그 터에는 그녀의 원찰로 지어진 조그마한 절이있다. 
-이 곳은 일체중생(一切衆生)의 근본자성(根本自性)이 진흙 속에서 피어나는 청정한 연꽃과 같다는 의미에서 연화사라 불려 졌는데, 이후 묘련(妙蓮)이라 불려지기도 하였다. 이는 모두 연꽃의 청정함을 상징하는 것으로 연산군이 생모 윤씨의 명복을 빌고 비명에 간 원혼을 천도하기 위한 도량으로서, 연꽃의 기능 중 화생(化生)의 의미로 붙인 이름인 듯하다.
-현재는 회릉이 서삼릉으로 이전되고, 그 자리에 경희여중ㆍ고등학교가 설립되면서 옛 모습은 찾을 수 없지만, 그 터 아래 조그마한 사찰이 있어 그 명맥을 이어가고 있다. 지금은 울창한 수풀에 둘러싸인 전형적인 사찰의 모습이 아닌 빌딩숲에 인공적으로 뭍힌 도심속 사찰로 그 모습이 변모했지만, 사찰에는 폐비 윤씨는 물론 선의왕후의 원찰로서 많은 상궁들이 조성한 불화들이 남아 있어 왕실 원찰로서의 흔적을 찾을 수 있다. 시냇가를 건너 가파른 고개를 지나 당도하는 옛 가람의 모습은 없지만, 도심 속 골목길을 따라 약간의 나무가 있는 곳에서 만날 수 있는 공원같은 곳 - 연화사에서 세속에 찌든 근심을 잠시라도 떨쳐 버릴 수 있으면 좋을 듯하다.','02-962-6186',null,'연중개방',null,null,null,null,null,null,'없음','불가','화장실:있음
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울창포원','01318','서울특별시 도봉구 마들로 916','서울 강북의 끝자락인 도봉산과 수락산 사이에 세계 4대 꽃 중 하나로 꼽히는 붓꽃(Iris)이 가득한 특수식물원이 들어섰다. 도봉구 도봉동 4번지 일대 52,417㎡에 새롭게 조성한 서울창포원은 붓꽃원, 약용식물원, 습지원 등 12개의 테마로 구분 조성됐다. 이중 붓꽃원에는 130종의 다양한 붓꽃 30만본을 약 15,000㎡의 면적에 식재해 종류별로 붓꽃의 아름다움을 감상할 수 있게 만들었다. 이곳에는 노랑꽃창포, 부채붓꽃, 타래붓꽃, 범부채 등 꽃봉오리가 ''붓'' 모양을 한 붓꽃류 130여종 30만본이 1만5천㎡에 걸쳐 식재돼 있어 ''창포원''으로 이름 붙여졌다.  또한 약용식물원에는 70종 13만본이 식재돼 있어 국내에서 생산되는 약용식물 대부분을 한자리에서 관찰할 수 있다. 습지원은 습지식물 7만본이 식재돼 있으며, 각종 수생식물과 습지생물들을 관찰할 수 있도록 관찰데크가 설치됐다. 이밖에 군락지 식생의 변화과정을 관찰할 수 있는 천이관찰원을 비롯, 숲속쉼터 등을 조성해 주민들에게 생태교육 및 여가와 휴식공간으로 제공할 계획이다. 붓꽃(Iris)은 매년 5~6월 개화하며 꽃이 없을 때에도 잎 모양이 난과 비슷해 관상용으로 좋다.<br /><br />* 주요식물<br />수목 : 낙우송, 느티나무, 스트로브잣나무, 소나무 등 39종  2,726주<br />관목 : 갯버들, 골담초, 조팝나무, 사철나무, 화살나무 등 18종 57,035주<br />초화 : 달뿌리풀, 맥문동, 터리풀, 구절초, 물억새, 꽃나리 등 46종 438,512본<br />붓꽃  : 꽃창포, 노랑꽃창포, 부채붓꽃, 타래붓꽃, 범부채 등 130종 218,453본<br>','서울창포원 02-954-0031','2009년 6월 7일','연중무휴',null,null,null,null,null,'없음(차량 이용시 도봉산역 건너편 환승주차장(유료)에 주차)','없음','없음','이용가능시설:습지원, 늘푸름원, 약용식물원, 책읽는 언덕, 억새원, 붓꽃원, 넓은잎목원, 산림생태관찰원, 천이관찰원, 숲속쉼터, 잔디마당, 가로수 및 완충녹지, 방문자 센터 등
-화장실:있음
-입 장 료:무료
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아현동 전골목','04116','서울특별시 마포구 굴레방로9길 17(아현동)','천막이 서고 장이 열리면서 장터 사람과 시장 구경을 나온 사람들의 허기진 배와 타는 목을 축여주던 곳이 바로 천막집이었다. 지금은 슈퍼마켓이나 대형마트 등으로 장이 서나 안 서나 물건을 손쉽게 살 수 있지만 그래도 지방 재래시장은 5일장 날이면 보통 때보다 2~3배 많은 사람들이 오고 가니 아직도 5일장은 살아 있는 셈이라고 볼 수 있다. 서울도 그런 재래시장이 많지는 않으나 곳곳에 남아있어 옛 5일장의 추억을 되짚어 볼 수 있다. 또 5일장에서 빠지지 않던 전과 막걸리 천막집이 재래시장 골목 한켠을 차지하고 있으니 생활사의 근간을 이루는 옛 사람들의 모습을 그 곳에서 찾아볼 수 있다 하겠다. <br /><br />아현동 전골목은 시장 역사에 비해 그다지 오래되지는 않았고 현재 문을 열고 있는 5곳 중 1990년대 초반에 문을 연 집이 가장 오래 된 집이다. 역사는 짧지만 재래시장의 풍경 속에서 활기 넘치는 분위기를 만드는 전골목은 없어서는 안될 추억의 장소다. 또  가격도 저렴해서 6,000원 하는 모듬전과 막걸리 4병을 둘이서 나눠 먹으면 배도 차고 기분도 좋아진다. 14,000원에 추억의 재래시장 풍경 속에서 현재의 자기 모습을 되돌아 볼 수 있는 곳으로 많은 사람들이 찾고 있으며 생계를 이어가고 있는 서민들의 생활사가 고스란히 역사가 되고 있는 곳이기도 하다.<br>','02-323-2240',null,null,null,null,null,null,null,'인근 주차장 이용','불가','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도안사','01633','서울특별시 노원구 덕릉로145길 99(상계동)','도안사는 서울 노원구와 경기 의정부시, 남양주시 별내면(別內面) 경계에 위치한 수락산(水落山) 내에 있는 사찰이다. 수락산 뒤쪽 외딴 곳에 아늑하게 자리 잡은 자그마한 산사로 화려하진 않지만 자연과 잘 조화된 경내의 풍경은 마음 속의 근심과 걱정을 씻겨준다.','02-936-5936',null,'연중무휴',null,null,null,null,null,'주차 가능','없음','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마포대교 야경','04175','서울특별시 마포구 마포동','서울 마포구 용강동(龍江洞)과 영등포구 여의도동(汝矣島洞)을 잇는 마포대교는 길이 1,400m, 너비 25m(6차선)이며 한남대교(漢南大橋)에 이어 한강에서는 4번째로 가설된 교량이다.1968년 2월에 착공하여 1970년 5월에 준공하였으며 준공 당시는 ‘서울대교’라고 부르다가 1984년에 ''마포대교''로 이름을 바꾸었다.','02-3153-8365','1970년 5월',null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('키즈오토파크','04991','서울특별시 광진구 능동로 216(능동)','어린이교통안전체험관은 3,000㎡ 부지에 운전 코스와 신호등 등을 배치해 어린이들이 자동차를 운전하며 교통문화를 체험할 수 있는 시설이다. 오토 가상체험시설, 보행교육장, 주행교육장, 교통안전 면허시험장, 오토부스 등 다양한 시설을 갖추고 있다. 입체 동영상을 통해서 가상체험, 안전띠체험, 보행실습 등 다양한 교육프로그램을 체험할 수 있다. 교통안전교육을 수료한 어린이들에게는 시험을 치른 후 어린이 교통안전 면허증를 발급해준다.(3학년 어린이는 4학년이 끝나는 2월까지 면허시험 신청 가능)<br>','02-455-7119',null,'매주 월요일 및 법정 공휴일 휴관','[어린이 교통안전 체험교육]<br />
-교육일시 : 화~토요일 / 1회 10:30~12:00, 2회 14:00 ~ 15:30 <br />
-소요시간 : 약 90분 내외<br />
-교육대상 : 유아 (6~7세,취학 전 어린이), 초등(1~3학년)<br />
-교육내용 : 어린이 체험차량을 이용한 주행교육, 보행교육, 안전띠교육 등 교통안전 체험교육 <br />
- <br />
-[어린이 교통안전 면허시험] <br />
-응시자격 : 키즈오토파크의 초등교통안전교육을 수료한 어린이 중 초등학생 1~3학년 어린이 <br />
-소요시간 : 2시간 <br />
-운영내용 : 필기시험, 보행시험, 주행시험 합격시 어린이 교통안전면허증 발급',null,'어린이 교통안전 체험교육 -  1회 당 유아 55명(초등 50명) 수용 가능',null,null,'어린이대공원 주차장 이용','불가','불가','화장실:있음
-이용가능시설:오토가상체험관, 오토부스, 보행교육장, 주행교육장
+이용가능시설:인조잔디 축구장, 풋살경기장, 농구장, 족구장, 체련장, 산책로, 테니스장, 정구장		
 
-입 장 료:무료
-주차요금:승용차 150원 / 중형차 300원 / 대형차 450원<br />
-※ 1회, 5분<br />
-※ 경차 ·저공해자동차 : 50% 할인<br />
-※ 장애인, 국가유공자, 고엽제휴유증환자 : 80% 할인<br />
-※ 다둥이행복카드 소지자 : 2자녀 30%, 3자녀이상 50% 할인 <br />
-내국인 예약안내:온라인 사전예약제
+화장실:있음(남,녀 구분)
+
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('순명비유강원석물','04991','서울특별시 광진구 능동로 216','조선 제27대 왕이자 마지막 왕인 순종의 황후 순명효황후의 능이었던 옛 ''유강원'' 터에 남아 있던 왕릉 석조각들이다. 순명효황후는 민태호의 딸로 세자빈에 책봉되었으나 순종이 임금이 되기 전 1904년에 사망하여 유강원에 묘소를 마련하였다. 그 후 순종이 세상을 떠난 1926년에 지금의 유릉에 옮겨와 함께 모셔졌으며 순종의 계비였던 순정효황후가 사망하자 이 또한 함께 모셔졌다. 순명효황후의 능을 마련하였던 유강원 터에는 능 주위에 세웠던 20여 기의 석조물이 남아있다. 석등을 비롯하여 문인석과 말, 양, 호랑이 등 동물을 조각한 것 등 매우 뛰어난 조각 솜씨를 보여 줄 뿐만 아니라 조선 말 왕실의 석조각으로 그 역사적 가치가 매우 중요하다.<br>','02-450-7576',null,'연중무휴',null,null,null,null,'공원 05:00~22:00','어린이대공원 주차장 이용','없음','불가','입 장 료:공원 이용 무료
-화장실:공원 화장실 이용
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('허브천문공원','05357','서울 강동구 둔촌동 산86(둔촌동)',38,127,'서울 강동구 길동생태공원 건너편에 있는 공원으로 인근의 일자산 자연공원과 더불어 조깅 코스, 산책로, 전망데크 등 어린이부터 청년, 장년에 이르기까지 다양한 연령의 시민들이 이용할 수 있는 공간이다.
+허브천문공원의 구조는 한민족 고유의 전통사상인 천·지·인의 삼재사상에서 공간개념을 도출하여 우주공간(자미원, 태미원, 천시원, 별자리, 은하수 등)을 담고 있다. 공원 동쪽엔 새벽 일출을 감상할 수 있는 전망대, 서쪽으로는 일몰을 감상할 수 있는 관찰대가 있다.
+특히 야간 이용자를 위해 공원 바닥 곳곳에 282개의 오색 별자리 조명이 설치되어 있어 시시각각 변화무쌍한 별자리를 감상할 수 있다.
+이 바닥 조명은 직경 75m 천문도를 고스란히 공원 바닥에 옮겨놓은 것으로 동·서쪽에 마련된 전망대 위에서 바라보면 북극성을 비롯하여 견우와 직녀 별자리 등을 감상할 수 있어, 젊은이들의 데이트 코스로도 인기가 많다.
+서울시 공공 서비스 예약(https://yeyak.seoul.go.kr)을 통해 이용할 수 있다.','02-3425-6473',null,'없음','허브오감만족허브체험, 천체관측체험','없음',null,null,'00:00 ~ 24:00',null,'없음','없음','이용가능시설:차의정원, 향기의정원, 감촉의정원, 색의정원, 견본원, 천관대		
+
+입 장 료:없음		
+
+화장실:있음(남,녀 구분)
+
+내국인 예약안내:서울시 공공 서비스예약(https://yeyak.seoul.go.kr)		
+
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산 생태공원','08839','서울특별시 관악구 석수동','2007년 12월 개원한 관악산 생태공원은 미성동 117-3번지(관악산 선우지구) 일대 76,521m²의 면적으로 조성되었다. 지형 여건을 최대한 살려 상부는 생태숲 구역으로, 물길이 모이는 하부쪽은 생태연못 구역으로 각각 나누었다. 생태숲 구역은 활엽수림으로 복원했고, 생태연못 구역에는 수생식물과 다양한 수서생물이 살 수 있도록 하였다. 또한 생태학습장과 비를 피할 수 있는 정자를 만들어 다양한 생태학습이 가능하도록 조성하였다.<br>','02-880-3675','2007년 12월','연중무휴',null,null,'200명 이상',null,'24시간','주차 가능','불가','가능','입 장 료:무료
-주차요금:10분당 300원 / 1시간 1,800원 
-장애인 편의시설:경사로, 장애인 화장실, 전용주차구역
-이용가능시설:족구장, 농구장, 테니스장, 체육시설 등
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('빨래골','01096','서울특별시 강북구 인수봉로23길 60(수유동)',38,127,'서울시 강북구 수유동 일대의 마을로 삼각산 동쪽 골짜기에 물이 많고 맑아서 빨래터와 쉼터로 이용하던 것에서 유래된 이름이다.
+이곳은 북한산이 시내 쪽으로 쭉 뻗쳐 내려온 칼바위능선 골짜기에 해당하는 곳이다. 골짜기 안쪽에 삼성암이라는 암자가 있고 왼편 산자락에는 아주 특이한 모습의 묘비가 세워져 있는 공초 임상순 선생의 무덤이 자리 잡고 있다.
+2016년부터 ''옛터 빨래골축제''가 개최되는 등 지금도 통용되고 있는 지명이다. 
+지하철 4호선 수유역 3번 출구 앞에서 03번 버스 타고 빨래골 종점에서 내려 안쪽으로 200여 미터 거리에 있다.','02-3778-4452',null,'없음',null,null,null,null,'00:00 ~ 24:00','있음(빨래골 노상 공영 주차장)','없음','가능','이용가능시설:마을, 식당, 편의점 등
+
+입 장 료:없음
+
+화장실:있음(남,녀 구분)
+
+주차요금:30분 1,200원
+
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('전주이씨광평대군파묘역','06353','서울특별시 강남구 광평로31길 20(수서동)','광평대군 묘역에는 세종의 다섯째 아들인 광평대군과 그의 부인 영가부부인(永嘉府夫人) 신씨(申氏)의 묘를 비롯하여 태조의 아들인 무안대군(撫安大君) 방번(芳蕃), 광평대군의 아들인 영순군(永順君)을 비롯한 종문 700여기의 묘소가 같이 있다. 또, 이곳은 종가 재실(齋室)의 오랜 가옥이 있는 공동 묘역으로서 이 때문에 마을을 궁말[宮村]이라고 부르기도 한다. 광평대군의 이름은 여(璵), 자는 환지(煥之), 호는 명성당(明誠堂)으로, 세종 7년(1425) 5월에 탄생하였다. 세종 14년(1432) 정월에 광평대군으로 봉해졌으며, 5년 후에는 세종의 명으로 후사가 없는 공순공[恭順公, 후의 장혜(章惠)] 방번의 봉사손(奉祀孫)으로 입양되었다.<br /><br />어려서부터 학문에 힘써 온 대군은 문장은 물론 활쏘기와 격구 또한 잘하고 음률과 산수에 밝아 특히 부왕의 총애를 받았다. 무안대군의 봉사손으로 입양된 후에는 안암동(사당말)에 양부의 사당을 짓고 그 후 7년간을 기거하였다. 동지중추부사 신자수(申自守)의 딸과 결혼하여 영순군 부(溥)를 두었으나 세종 26년(1444) 창진(瘡疹)을 앓다가 세상을 떠났다. 시호(諡號)는 장의(章懿)로 장(章)은 경신고명(敬愼高明)을, 의(懿)는 온유현선(溫柔賢善)을 의미한다. 광평대군의 묘는 처음에 경기도 광주 서촌 학당리(현 강남구 삼성동 선릉 부근)에 있었는데 연산군 원년(1495) 3월 이곳이 성종의 왕릉인 선릉(宣陵) 터로 정해지면서 광수산(光秀山)의 지금 위치로 이장되었다. 광평대군과 부인 신씨의 묘소는 높은 언덕 위에 각각의 무덤으로 되어 있다. 장대석으로 단을 쌓은 위에 봉분이 놓여져 있고 그 아래에 묘비와 낮은 받침돌을 둔 혼유석(魂遊石)이 갖춰져 있다.<br /><br /> 하단에는 2기의 장명등(長明燈)과 우측에 신도비(神道碑), 그리고 또 한 단 아래 좌우로 문인석(文人石) 2구가 세워져 있다. 이와 같이 단을 쌓은 위에 봉분이 있는 양식은 양녕대군(讓寧大君)이나 효령대군(孝寧大君)의 묘소에서는 볼 수 없는 특이한 것으로 조선 초기 대군묘(大君墓)의 규모나 규범을 참고하는데 매우 귀중한 자료라고 할 수 있다. 그러나 신도비는 명종 7년(1574)에 세운 것으로 비문은 심의겸(沈義謙)이 짓고, 두전(頭篆)은 박렴(朴簾)이 썼다. 대군의 묘 아래에 있는 제각(祭閣)의 동쪽에는 ''廣州治西光秀山李氏世葬記(광주치서광수산이씨세장기)''란 이름의 세장기비(世葬記碑)가 있다. 이는 숙종 21년(1695)에 조사한 186기 무덤의 위치를 조사한 내용을 평양부윤(平壤府尹)을 지낸 후손 이유(李濡)가 짓고 이담(李湛)이 쓴 것을 비석에 새긴 것으로 가족 묘소로서의 오래고도 광대한 면모를 알려주는 매우 중요한 자료이다. 이 묘역은 서울이나 근교에 현존하는 왕손의 묘역 중 가장 원형에 가까운 것이며 분묘와 비석, 부속물들은 조선 시대 분묘 내지 석비 등을 이해하는데 중요한 학술적 가치가 있다.<br>','02-459-4733',null,'주말, 공휴일',null,null,null,null,'하절기 10:30~16:00 / 동절기 10:30~15:30','주차 가능','불가','불가',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산공원 야외식물원','151-858,1','서울 관악구 대학동 203번지 일대','관악산공원 입구에서 5분정도 걸어들어오면 관악산공원 야외식물원을 만날 수 있다. 등산로 초입에 야생화 학습장이 있어 신기한 꽃들과 사진도 찍고 푯말에 표기된 꽃들의 이름을 외우는 재미도 있다. 
-상류 쪽으로 1km에 이르는 구간에는 어른 허리까지 물이 차는 ''자연형 수영장''이 있으며, 관악산공원 정문을 통해 야외식물원 쪽으로 올라가면 신림계곡이 있다. 
-계곡 옆 자연학습장에 조성된 1,000㎡ 규모 휴식공간에는 19종의 농작물과 1,630본의 식재가 있어 농촌풍경을 그대로 옮겨 놓은 듯하다. 5월 말~6월에는 장미농원에서 장미오감체험도 할 수 있다.','02-879-6561','2007년 11월','연중무휴',null,null,'200명 이상',null,'24시간',null,'없음','없음','관광코스안내:[관악산 둘레길 제 2구간]<br />
-서울대입구 - 들산 - 보덕사입구 - 헬기장 - 삼성산성지 - 산장약수터 - 국제산장아파트
-화장실:있음
-입 장 료:무료
-이용가능시설:장미원, 초화원, 관목원, 자연학습원, 벚나무쉼터, 정자, 그늘막, 원두막, 야외운동기구 54종, 쉼터
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('노원 불빛정원','01805','서울특별시 노원구 화랑로 610(공릉동)',38,127,'해가 저물면 화랑대역 철도공원 입구부터 경춘선 숲길까지 오색찬란한 조명을 밝힌 빛의 향연이 펼쳐진다. 비밀의 정원과 생명의 나무, 음악의 정원, 환상의 기차역, 은하수 정원, 숲속 동화 나라를 주제로 꾸며진 노원 불빛 정원은 시시각각 다양한 색깔을 뿜어낸다. 낮에는 정겨운 간이역 풍경으로 마음을 따스하게 어루만졌던 공간이 밤이 되면 화려한 꽃과 푸른 바닷속 돌고래 떼, 아기자기한 기차 카페로 색다른 매력을 더한다. 특히 MEDIA TRAIN은 다양한 작품을 전광판에 표현하며 방문객들의 시선을 한 번에 사로잡는다. 옛 화랑대역을 스크린으로 활용한 미디어파사드도 압권이다. 기차여행의 추억을 떠올리게 하는 그림부터 색색깔 꽃 모양까지 쉴새 없이 펼쳐지는 영상이 낭만 가득한 밤하늘을 선물한다.','02-2116-0668(노원구청)',null,'매주 월요일',null,null,null,null,'일몰 30분 전 ~ 22:00','주차가능','없음','없음','입 장 료:
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산 호수공원','08813','서울특별시 관악구 대학동','관악산 제 1광장에 닿기 전(신림동 203번지)에 위치한 호수공원은 부지면적 6,406m², 담수면적 2,485m²으로 1997년 3월 준공되었으며, 정자, 분수, 수변무대, 나무다리, 인공섬 등이 설치되어 있어 관악산을 찾는 많은 사람들이 휴식공간으로 활용하고 있으며, 또한, 인근에는 숲속 작은 도서관과 야외 식물원이 조성되어 있어 주민들에게 큰 호응을 얻고 있다.<br>','02-879-6520','1997년 3월','연중무휴',null,null,'200명 이상',null,'24시간','있음(153대)','불가','없음','입 장 료:무료
-화장실:있음
-이용가능시설:자하정,분수,수변무대,석구상,시비,상징석,목교,작은섬
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('윤극영가옥','01026','서울특별시 강북구 인수봉로84길 5(수유동)',38,127,'서울특별시에선 근현대 문화유산 중 미래 세대에게 전달할만한 가치가 있는 보물을 ''서울 미래유산''으로 선정, 관리하고 있다. 국립 4·19민주묘지, 문익환 가옥 등이 여기에 꼽혔는데, 윤극영 가옥은 그 가운데 가장 먼저 선정됐다는 점에서 각별한 의미를 지닌다. 1920~30년대에 활발하게 활동했던 윤극영은 동요 <반달>, <설날>, <우산 셋이 나란히>, <고드름> 등을 작곡했다. 우리나라 최초의 동요집인 <반달>을 제작해 ''반달 할아버지''로도 불린다. 생전에 그가 머물렀던 가옥은 현재 반달 문화원으로 쓰이며 방문객들을 반갑게 맞이한다. 윤극영의 유품들이 전시된 공간은 오랜 세월의 흔적이 더해져 마치 할아버지댁에 온 것처럼 마음이 편안해진다. 은은하게 흐르는 동요 멜로디는 어린 시절 추억을 떠올리게 만든다.   
+가까운 곳에 국립 4.19 민주 묘지, 솔밭근린공원이 있다.','070-8992-9720(한국반달문화원)',null,'매주 월요일',null,null,null,null,'10:00~18:00','없음','없음','없음','입 장 료:없음		
+
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼성산성지','08822','서울특별시 관악구 호암로 454-16','이곳 삼성산 성지는 1839년 기해박해 때 군문효수의 형을 받고 순교한 조선 제2대 교구장 성 앵베르 라우렌시오 범 주교와 성모방 베드로 나 신부, 성 샤스탕 야고보 정 신부의 유해가 안치된 곳이다. 1839년에 기해박해가 일어나자 세 성직자는 교우들의 희생을 줄이기 위해 스스로 관가로 나아가 자수하여 신앙을 고백하고 새남터에서 군문효수라는 특별한 절차로 1839년 9월 21일 사형을 당했다고 한다.','삼선산성당 02-875-2271',null,'연중무휴',null,null,null,null,null,null,null,null,':
-:
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우이동계곡','142-090,1','서울 강북구 우이동일대','''우이동''은 도봉산과 북한산 사이의 계곡에 있는 시민의 휴식처로 우이동 입구에서 왼쪽은 백운대로 오르는 등산길이며, 도선사를 경유하여 인수봉 정상을 오를 수 있다. 오른쪽으로 관광호텔, 놀이공원, 웨딩홀 등을 갖춘 그린파크호텔을 기점으로 유원지가 시작된다. 계곡의 맑고 시원한 냇물을 끼고 각종 별미를 자랑이라도 하듯이 음식점 등이 줄을 이으며 여름철 닭죽은 진미이다. 민박도 가능하며 3,4월에는 대학생들의 MT장소로 선호된다.<br /><br />이렇게 20분 가량 올라가면 원불교 수도원, 성불사, 용덕사, 선운사, 광명사 등 사찰을 찾을 수 있으며 입구에서의 들뜬 분위기는 이내 차분해지며 또 다른 운치를 느낄 수 있다. 산 정상으로는 현재 군부대가 상주하여, 생태계가 서울에서도 드물게 잘 보존되는 우이령, 일명 바위고개로 이어진다. 우이동에서는 우이암으로 이어지는 등산로가 열린다. 우이암까지 가는 길은 꽤 험한데 우이암 옆을 지나 도봉산 주릉으로 올라서게 되어 있다. 이곳에서 북으로 뻗은 주릉을 타거나 성황당, 도봉유원지로 하산하면 된다.<br>','02-909-0497',null,'연중무휴',null,null,null,null,'국립공원 입산 시간 : 일출 전 2시간<br />
-국립공원 하산 시간 : 일몰 후 2시간',null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수암사','01633','서울특별시 노원구 상계동 산153-1','수락산 중턱의 남향 길상지에 자리한 경관 좋고 유서 깊은 사찰 수암사는 신라 진평왕 43년(621년)에 화랑 세속오계의 원작자인 원광 국사께서 삼국통일의 대업을 이루고자 창건하였다. 조선시대 병자호란 때 소실된 이후 석국 법당만 남아 있던 것을 다시 중건하였다. 경내에는 1962년 도욱스님의 중창 당시에 세워진 25평 규모의 전통양식(단청)의 극락보전을 비롯하여 삼성각, 요사채와 1972년에 건립된 미륵 입상 등이 있다. 극락보전 옆의 큰 바위에는 여의주를 쥐고 승천하는 용의 형상이 음각으로 나타나 있고 가람 가운데 마치 여러 마리의 용이 꿈틀대며 승천하는 형상을 지닌 적송이 있어 눈길을 끈다.','02-2116-3114',null,'연중무휴',null,null,null,null,'일출시~일몰시','수락산 공용주차장','없음','불가','등산로:수락산 당고개 지구 - 수암사 - 수락산 정상 (약 2시간 소요)
-한국어 안내서비스:가능
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('탄천','135-210,1','서울 강남구 율현동','탄천은 경기도 용인시, 성남시를 지나 서울특별시를 거쳐 한강으로 유입되는 한강의 한 지류로서, 유역면적이 302km², 총 연장이 35.6km에 달하는 준용하천이다. 탄천의 중앙부에 위치하고 있는 성남시는 시의 중심을 흐르는 25km의 탄천과 함께 개발에 개발을 거듭하고 있다. 탄천살리기범시민연대는 시민들의 환경 보존 의식을 높여 실천할 수 있도록 하고, 탄천의 오염 실태를 조사, 분석하여 대안을 제시하는 활동을 할 것이며, 탄천을 자정 능력이 있는 ''자연형 하천''으로 만들고, 아이들이 마음 놓고 놀 수 있는 하천으로 가꾸는 것을 목표로 1999년 6월 20일 8개 민간환경단체로 출범하였다.<br />
-탄천으로 불리게 된 데에는 전해오는 이야기가 있다. 하루는 염라대왕이 저승사자에게 삼천갑자(18만년)를 살았다는 동박삭을 잡아올 것을 명했다. 그러나 동박삭은 워낙 둔갑술이 뛰어나 저승사자도 어쩔 수가 없었다. 고심하던 저승사자는 꾀를 내 이 냇물에서 숯을 빨기로 했다. 이 모습을 본 한 행인이 “내가 삼천갑자를 살았어도 숯을 빠는 사람은 처음 봤다”고 하자 저승사자는 그 사람이 동박삭인 것을 알아채고 저승으로 데려갔다. 그때부터 ‘숯내’ 또는 같은 뜻의 한문으로 탄천이라 부르게 됐다.<br>','공원녹지과 02-3423-6254',null,null,null,null,null,null,null,null,'없음','없음','관광코스안내:탄천 생태경관 보전지역 : 송파구 탄천  탄천2교~대곡교 6.7km 
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('암사생태공원','05249','서울특별시 강동구 선사로 83-66','암사동 한강변의 콘크리트 인공호안과 자전거 도로를 철거하고 갈대·물억새 군락지, 야생화, 산책로 등을 갖춘 자연형 호안과 생태공원을 조성하였다.
-* 면적 : 162,000㎡<br>','070-7788-9670','2008년 12월 28일','상시개방','- 생태학습프로그램 운영(생태학교, 관찰교실): 연중운영',null,null,null,null,null,'불가','불가','화장실:있음
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고덕동 생태경관 보전지역','134-080,1','서울특별시 강동구 고덕동 396번지 일대','고덕동 생태경관보전지역은 서울지역에서 자연성이 높은 지역으로 고덕수변생태복원지와 연접하고 있으며 고덕지천부터 암사취수장 우측산림지역 일부와 호안 및 한강 저수부지까지 포함하는 구역이다. 고덕수변생태복원지역 중 조류관찰소 등 일부시설이 포함되어 있다. 강의 자연 생태를 복원하고 인근 산림지역과 연계하여 생물종 다양성을 증대하기 위하여 생태경관보전지역으로 지정되어있으며, 시민들에게 여가 및 생태체험 학습장소로 제공되고 있다.<br>','02-3780-0848',null,null,null,null,null,null,null,null,'없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('온수공원','08254','서울특별시 구로구 고척로3길 86-52(오류동)','옛날 온수골에서 유래하였는데 이 지역 일대가 더운물이 나왔기 때문에 온수골이라 하였고, 궁동은 조선 선조의 일곱째 정선옹주가 이곳에 살던 길성군(吉城君) 권대임(權大任)에게 출가하여 살던 집이 여기에 있었으므로 궁궐 같은 큰집이 있다 하여 붙여진 이름이다. 서울시의 남서 측 양천구와 구로구에 걸쳐 있고 시 외각으로는 부천시가 접하고 있으며 남쪽으로 경인국도 동쪽으로 남부순환로 북쪽으로 경인고속국도와 접하여 접근이 매우 용이하고 1971년 도시 자연공원으로 지정되었으며 임상이 양호하며 식생이 다양하고 수목 등 식생이 잘 보존된 전형적인 자연상태의 공원으로 년 180,000여 명의 시민이 공원을 이용하고 있으며 등산로 주변에 약수터와 배드민턴장, 체력단련장, 의자 등 휴게시설과 철봉, 허리 돌리기 등 운동기구가 등산로 곳곳에 설치되어 많은 시민으로부터 좋은 반응을 얻고 있다.','구로구청 공원녹지과 02-860-2396','1971년 8월 6일','연중개방',null,'전연령',null,null,'00:00~24:00',null,'없음','없음','화장실:있음
-입 장 료:무료
-이용가능시설:배드민턴장, 체력단련장, 운동기구 등
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청계천 버들습지','130-070,1','서울 동대문구 용두동고산자교 하류 버들습지','* 유니세프 선정 어린이 다리 *<br /><br />청계천 물길은 복원 구간의 마지막에 이르러 두물다리를 지나 고산자교로 향한다. 두물다리는 과거 청계천의 지류가 합류하던 지점이었다. 그 의미를 살려 두 개의 물이 만나는 다리라는 뜻의 두물다리라는 이름을 붙였다. 형상도 두 개의 물줄기가 손을 잡듯 곡선을 그리며 만나는 모습이다. 먼발치에서 보면 탑신이 마치 돛처럼 솟아 돛단배를 떠올리게 한다. 그 생김이 동화적이라 유니세프에서 어린이 다리로 지정했다.<br /><br />두물다리를 지나면 고산자교로 잇는 물길이다. 도심에서 멀어지므로 점점 생태공원의 표정을 닮아간다. 고산자교는 대동여지도를 만든 김정호의 호를 따서 지었다. 고산자교 인근에는 고산자로가 지난다. 교각의 모양새보다는 하천 경관의 녹지가 단절되는 것을 극복하려는 의지가 투영된 다리다. 그리고 여기서부터 비로소 청계천 물길은 중랑천을 향해 내달리고 언젠가 한강과 만나게 된다.<br /><br />* 청계천의 마지막 비경 *<br /><br />고산자교에 이어 버들습지가 반긴다. 청계8경이요, 청계천의 마지막 비경이다. 청계1경에서 7경까지가 사람의 손길이 묻어나는 공간이었다면 8경은 오롯이 자연이 주인이다. 버들습지는 갯버들이나 매자기, 꽃창포 같은 수생식물의 서식 환경을 조성하기 위한 습지다. 청계천에서도 가장 자연친화적인 생태 공간이다. 수생식물의 성장을 바탕으로 어류나 양서류 등의 생물 서식도 이뤄진다. 메기나 버들치, 피라미 같은 어류도 종종 만날 수 있다.<br /><br />특히, 조류 보호구역으로 지정돼 청둥오리는 물론이요 흼뺨검둥오리, 중대백로 같은 새들이 날아든다. 버드나무 아래 한가로운 풍경이다. 아이들과 함께라면 청계천 생태해설사의 설명을 들어도 좋고, 겨울철 철새탐조교실 같은 프로그램을 활용해도 좋다. 산책 삼아 걷고 싶다면 생태탐방로 데크를 따라 걸어도 좋겠다. 잘 알고 있다고 생각했던 청계천의 새로운 모습을 발견할 수 있을 것이다.<br>','02-2290-6114',null,null,null,null,null,null,null,'청계천 전 구간의 인근 주차장 이용','가능','없음','관광코스안내:청계천문화관 -> 오간수교 (2.6km)
-화장실:청계천 전 구간 인근 화장실 이용 가능
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북서울 꿈의숲','01228','서울특별시 강북구 월계로 173','옛 드림랜드 부지에 조성된 ‘북서울 꿈의 숲’은 월드컵공원, 올림픽공원, 서울숲에 이어 서울에서 4번째로 큰 공원이다. 공원을 둘러싸는 곳은 벚꽃길을, 공원 북쪽 아파트 지역과 인접한 곳에는 단풍숲을 조성했다. 공원 동남쪽에 있던 전통 한옥인 창녕위궁재사(등록문화재 제40호)는 원래 모습으로 복원됐고 주변에 연못과 정자(애련정) 등이 조성돼 운치를 더했다.
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북서울 꿈의숲','01228','서울특별시 강북구 월계로 173',38,127,'옛 드림랜드 부지에 조성된 ‘북서울 꿈의 숲’은 월드컵공원, 올림픽공원, 서울숲에 이어 서울에서 4번째로 큰 공원이다. 공원을 둘러싸는 곳은 벚꽃길을, 공원 북쪽 아파트 지역과 인접한 곳에는 단풍숲을 조성했다. 공원 동남쪽에 있던 전통 한옥인 창녕위궁재사(등록문화재 제40호)는 원래 모습으로 복원됐고 주변에 연못과 정자(애련정) 등이 조성돼 운치를 더했다.
 300석 규모의 공연장 2개와 다목적홀, 전망대 등을 갖춘 문화센터가 있다. 문화센터 전망대에서는 북쪽으로 북한산, 도봉산, 수락산의 절경을 감상할 수 있고 남쪽으로 남산과 한강까지도 조망이 가능하다.
 주요 공원시설은 호수, 대형잔디광장, 월광폭포, 정자(애련정), 산책로, 칠폭지, 야생초화원, 포켓파크와 미술관, 문화센터, 카페테리아, 지하주차장 등이 있다. 강북 지역에 최초로 조성된 대형 녹지공원으로, 기존 노후된 시설물을 모두 비우고, 지형에 맞는 생태적 조경공간으로 탈바꿈하였다. 전통건축물인 창녕위궁재사 건물은 원형으로 복원되었으며, 주변에는 푸른호수와 함께 정자와 폭포 등이 조성돼 전통경관도 연출하였다.
 그동안 드림랜드 눈썰매장으로 쓰였던 경사지에는 공연장과 전시장, 레스토랑, 전망타워 등이 들어서서 강북지역 최첨단 문화 공간으로 거듭나게 되었다. 또한, 아파트와 도로로 둘러싸인 공원 경계부에는 어느 곳에서나 공원접근이 가능하도록 포켓파크, 쌈지마당, 가로공원, 산책로, 체력단련장 등 다양한 형태의 공간으로 조성되어 주민들이 생활 공원으로 최대한 이용할 수 있도록 공간을 구성하였다.
@@ -1131,7 +1063,158 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 ※ 승용자요일제 전자태그를 부착하고 운휴일을 준수한 차량에 대하여 주차요금 30% 할인<br />
 ※ 다둥이행복카드 소지자에 한하여 두자녀 30% 세자녀 이상은 50% 할인
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오동근린공원','01139','서울특별시 강북구 덕릉로42길 49(번동)','서울 강북구와 성북구에 걸쳐 있으며 강북 번동, 미아동외 5개 동과 성북구 월곡동에 걸쳐 있는 대단위 공원으로 수림이 잘 형성되어 있다. 오동공원은 쉼터와 구민체육관, 인조잔디구장, 테니스장, 황토지압 보도, 산책로 등을 두루 갖추고 구민의 쉼터로 자리 잡아 인근 주택단지에 주거하고 있는 주민들의 휴식과 운동장소로 이용되고 있다.<br>','02-901-6923','1987년 4월 27일','연중무휴',null,null,null,null,null,'없음(공원 옆 강북구민운동장 이용-유료)','불가','없음','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서래마을','06577','서울특별시 서초구 반포동',37,127,'서울 반포대교 남단의 사평로를 지나 팔레스호텔 옆으로 난 서래로를 지나다 보면 고급 빌라촌이 한눈에 들어온다. 바로 서초구 반포 4동과 방배본동 일부에 위치한  서래마을이다. 마을 앞의 개울이 서리서리 굽이쳐 흐른다고 해서 ''서래마을''이라고  하며 현재 조달청 부근의 마뉘꿀 주민들이 ''서쪽 물가에 있는 동네''로 뒤에 깎아지른  듯한 산(청룡산)이 있어 서애(西涯)로 불렀다고 하며, 뒤에 음운변동을 일으켜 ''서래''로  부르게 되었다고 한다.<br /><br />서래마을에 프랑스인 거주지가 들어선 것은 1985년 주한프랑스학교(Ecole  Francaise de Seoul)가 이곳으로 이전하면서부터다. 2008년 기준 한국에 거주하는  프랑스인 1,000여 명 중 절반 정도가 이곳에 살고 있다. 서래마을이 프랑스인들의  거주지역으로 자리 잡게 되고 자연스럽게 글로벌 빌리지가 세워짐에 따라 다른 여러  나라 외국인들도 서래마을을 자신들의 거주지로 선택하고 있다. 더욱이 지리적으로  비즈니스와 중심지 강남과 인접하고, 양재천, 한강공원, 우면산 등 쾌적한 환경 공간이  있어 일반인과 외국인들의 호응이 높다.<br /><br />서래로 거리로 들어가면, 서울 프랑스  학교를 찾아볼 수 있다. 불어로 ''Attention ecole(학교 앞 주의)''이라고 쓰인 도로  표지판이 눈길을 끈다. 파리크라상 서래점은 조금 특별하다. 아침이면 갓 구운 바게트를  사기 위해 자전거 탄 사람들이 빵집 앞에 긴 줄을 서 있으며, 이곳은 프랑스에서 직수입한  재료로 정통 프랑스식 바게트 맛을 재현, 프랑스인들도 즐겨찾는 곳이다. 이곳에  있는 서래마을의 상점들은 소박하며 아기자기하다. 유럽의 작은 식당을 옮겨 놓은 듯한 상점과 식당들이 많은 거리이다.최근  몇 년간 서래마을의 모습은 빠르게 변모하고 있다. 골목마다 프랑스풍 ''와인바와  고급 커피숍, 햇볕을 즐기며 식사나 차를 즐길 수 있게 발코니를 튼 카페나 레스토랑이  많아지면서 서울에서 가장 현대적이고 멋스러운 장소로 인기 급부상 중이다.<br>','서초구청 문화관광과 02-2155-6220',null,null,null,null,null,null,null,null,'불가','가능','이용가능시설:음식점, 카페, 의류상점 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양화한강공원','07231','서울특별시 영등포구 노들로 221 한강사업본부 양화안내센터',38,127,'양화한강공원은 여의도 샛강 하구에서 강서구 가양대교까지로 한강남단에 위치하고 있다. 둔치에 넓게 조성된 잔디밭에서 바라보는 탁 트인 전망을 자랑하고 있다. 여의도 샛강 하구에서 가양대교까지 연결된 자전거도로가 있으며, 선유교 아래의 무성하게 우거진 가량의 물 억새길을 만날 수 있다. 뿐만 아니라 자전거도로변에는 매년 5월이면 초록 잔디밭을 붉게 물들이며 꽃피우는 아름다운 장미꽃이 유명하여 친구, 연인이나 가족과 함께 사진 찍기에 좋은 곳이다.<br>','안내센터 02-3780-0581~3',null,'연중무휴',null,null,null,null,null,'있음(5개소, 501대 주차 가능)','가능','가능','이용가능시설:[운동시설] 축구장 1면, 농구장2면, 배구장2면(위치 : 유람선 선착장 앞)<br />
+[편의시설] 매점4개소, 어린이놀이터 1개소, 음수대8, 그늘막21, 의자187 등<br />
+자전거 대여소, 양화대교 전망대, 수상콜택시, 수상훈련장, 유람선 선착장 등
+<br />
+[즐길거리] 장미단지, 월드컵분수, 물억새 길, 양화대교 전망쉼터, 촬영포인트, 낚시, 자전거도로
+입 장 료:없음
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('녹사평 육교','04345','서울특별시 용산구 이태원동 406',38,127,'서울의 멋진 야경은 덤!
+단밤 다음으로 드라마에 자주 등장하는 육교다. 때로는 박새로이와 조이서가 만나는 장소로, 때로는 박새로이가 홀로 생각에 잠기는 장소로 나온다. 촬영지로 입소문을 타며 포토 스폿으로 인기인데, 밤이면 N서울타워와 서울의 화려한 야경을 볼 수 있다.',null,null,null,null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천사의 날개',null,'서울특별시 용산구 이태원동 116-18',0,0,'영원히 소장하고 싶은 해피엔딩 모멘트
+장 회장(유재명 분)에게 복수를 끝낸 후 박새로이와 조이서가 데이트를 즐기며 사진을 찍었던 곳이다. 계단 옆 벽에 다양한 그라피티가 그려져 있는데 천사의 날개가 가장 대표적이라 일명 ‘천사의 날개’라고 불린다. 두 주인공을 따라 천사의 날개를 배경으로 셀카를 찍어보자.',null,null,null,null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용산성당','04357','서울특별시 용산구 효창원로15길 37',38,127,'용산성당은 1백 여 년 전 삼호정 공소 신자들이  스스로 복음의 터전을 일궈 지금까지 오랜 전통을 가지고 있다. 넓은 마당과 녹지를  가지고 있어, 공원과 같은 환경으로 사람들에게 좋은 휴식처 구실을 해주기도 한다. 특히, 초기 사제들과 무명 치명자 등 70여 기의 유해가 안장된 교구 성직자 묘지가  있어서 전국의 성직-수도자들과 신자들이 찾아오는 준성지와도 같은 곳이다. 또한,  2010년 이탈리아 로마 리베리오 교황 성모 대성전과 ''특별한 영적 유대''로 결합된  성모 순례지 전대사 특전을 부여받았다. 이에 따라 성모 공경을 위해 용산성당을  순례하는 이들에게는 로마 리베리오 교황 성모 대성전(제 36대 리베리오 교황 재위  352-366년에 건립되어 지극히 거룩하신 하느님 어머니인 성모 마리아에게 봉헌된  첫 성전)을 순례한 것과 동일한 전대사가 수여된다.<br>','02-719-3301','설립 : 1942년 1월 말',null,null,null,null,null,null,'주차 가능','없음','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양천구 어린이교통공원','08102','서울특별시 양천구 목동남로 106-23(신정동)',38,127,'어린이교통공원은 어린이들에게 자주 발생하는 교통사고 사례들을 중심으로 체험교육을 통해서 어린이들이 교통사고예방법을 배울 수 있는 학습장이다. 어린이들에 대한 교통안전교육은 실제사고, 상황 속에서 어린이들이 올바르게 대처할 수 있는 능력을 향상시켜, 어린이교통사고를 줄이는데 큰 효과가 있을 뿐아니라, 어릴때부터 바람직한 교통질서 의식을 심어주어 올바른 선진교통문화를 정착시키기는데 목적이 있다.<br>','02-2652-1582',null,'주말 및 공휴일','* 교통안전교육<br />
+교육대상 : 5세 이상 어린이. (유치원, 어린이집, 초등학교 저학년생) <br />
+소요시간 : 1회 당 45분 <br />
+교육시간 : 1회 (10:00 ~ 10:50), 2회 (11:00 ~ 11:50), 3회 (13:00 ~ 13:50), 4회 (14:00 ~ 14:50) <br />
+프로그램 : 교통안전교육, 자전거 안전교육 등',null,null,null,'월~금요일 09:00 ~ 18:00','있음 (20~30대 정도)','없음','없음','입 장 료:무료
+화장실:있음
+내국인 예약안내:예약방법 : 인터넷접수 <br />
+※ 사전예약에 의한 단체견학만 가능, 예약취소는 7일전 전화로(02-2652-1582~3) 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('파리공원','07983','서울특별시 양천구 목동동로 363(목동)',38,127,'한국과 프랑스의 수교 100주년을 기념하여 1987년 7월 1일 문을 연 공원이다. 한국과 프랑스는 1886년 수교하였는데, 1986년 파리에 서울 광장을 세우고 서울에는 파리광장을 세우기로 함에 따라 목동 신시가지 제2 근린 공원을 개조하여 만들었다. 서울 광장은 삼태극무늬로 꾸미고 파리 광장에는 프랑스식 화단을 조성하는 등 양국의 전통 양식을 조화롭게 반영했다. 야외 무대 광장에서는 인근 주민들읠 위한 공연히 펼쳐지며 야외 결혼식도 열린다.','02-2620-3574','1987년 6월 30일','연중개방',null,null,null,null,null,'주차 가능','없음','없음','화장실:있음
+이용가능시설:서울광장, 파리광장, 한불마당, 야외무대광장, 연못, 분수대, 야외예식장(한불 수교 100주년 기념공원), 농구대, 게이트볼장, 철봉, 역기 등 체육시설 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용왕정','07969','서울특별시 양천구 목2동',38,127,'용왕정은 서울 정도 600년(1394~1994년)을 기념하여 1994년에 지어진  팔각형 정자로 조선조 중기 건축형태로 건립하였다.정자에 올라가면 서울시내를 조망할 수 있는 전망이 뛰어난 곳으로 서울 8경에 뽑힌 명소이다. 용왕정이 있는 용왕산은 일명 엄지산이라고도 하며 지형적으로 ''천호지벌''(인공폭포 건너편)의 초입되는 곳에 있다. "임금이 꿈에서 누군가 자신을 해치는 꿈을 꾸었다. 왕은 엄지산 아랫마을에 사는 영험한 힘을 가진 박씨 노인이 죽어서 용으로 변신한 뒤 왕이 되려하는 것을 알고는 화살로 용을 쏘아 죽였다." 왕에 얽힌 이 고사 때문에 왕을 상징하는 용(龍)자와 왕(王)자를 합쳐 용왕산으로 불리기 시작했다고 한다.<br>','02-2620-3574',null,'연중개방',null,'전연령',null,null,'00:00~24:00',null,'없음','가능','화장실:있음
+입 장 료:무료
+이용가능시설:용왕산 근린공원 : 체육시설, 지압보도, 어린이놀이터, 배드민턴장, 약수터, 음수대 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양재천 생태공원','06769','서울특별시 서초구 바우뫼로12길(양재동)',37,127,'양재천은 원래 한강으로 직접 유입되는 한강의 1차 지류였으나 한강연안개발사업과 주변일대의 개발로 직강화되면서 탄천으로 유입되는 유역변경 및 유로변경이 인위적으로 이루어진 하천이다.<br>','02-2155-6114',null,null,null,null,null,null,null,'있음','불가','가능','이용가능시설:양재천 주요 시설물 - 자전거도로, 수영장 및 물놀이장, 맨발지압길, 인라인스케이트장, 쉼터, 징검다리, 수변무대, 운동시설 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용왕산근린공원','07971','서울특별시 양천구 용왕정길 41(목동)',38,127,'용왕산은 일명 엄지산이라고도 하며 지형적으로 ''천호지벌''(인공폭포 건너편)의 초입되는 곳에 있다. 데크로 연결된 무장애 순환형 숲길이 조성되어 있다. 또한 용왕정은 전망이 뛰어나 서울8경에 뽑힌 명소다. 서울 정도 600년(1394~1994년)을 기념하여 건립한 용왕정은 팔각형 정자로 조선조 중기 건축형태로 건립하였으며, 정자에 올라가면 서울시내를 조망할 수 있는 전망이 뛰어난 곳이다.<br>','02-2620-3579',null,'연중개방',null,null,null,null,'24시간',null,'없음','없음','관광코스안내:
+입 장 료:무료
+이용가능시설:야생화길, 전통정원, 농구장, 체육시설, 인조잔디, 지압보도, 야외무대, 다목적운동장, 어린이놀이터, 배드민턴장, 약수터, 음수대 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('갈산근린공원','08104','서울 양천구 신정동 162-56',38,127,'대체로 산세가 둥근 양천구의 다른 산들과는 달리 갈산은 동쪽 부분이 벼랑처럼 깍인 절경을 뽐낸다. 안양천의 오랜 침식작용으로 산 정상이 칼날처럼 변한 것으로 ''칼산''이라는 이름으로 불리다가 ''갈산''으로 순화되었다. 갈산 입구에는 어린이교통공원이 들어서 있고, 중턱에는 중심광장과 산책로 등의 쉼터 그리고 정상에는 전망대가 있어 양천을 한눈에 감상할 수 있다. 갈산 정상에는 ''갈산정''과 함께 그 옆으로 우리나라 최초의 ''대삼각본점''이 설치되어 있다. 이 삼각점은 모든 측량의 기준이 되는 중요한 국가시설물로 1910년 6월 우리나라 최초로 토지조사 사업을 위해 설치한 측량기준점으로 서울시 미래유산으로 지정된 양천구의 중요한 문화유산이다.<br>','양천구청 공원녹지과 02-2620-3576',null,'연중개방',null,null,null,null,null,'있음','없음','없음','등산로:정상 전망대까지 이어지는 700m 자연산책코스는 저녁 11시까지 즐길수 있다
+등산로 중턱에 있는 메타세콰이어숲길은 걷고싶은 명소중의 하나이다.
+관광코스안내:3코스, 안양천(신정교-오금교)-어린이교통공원-갈산도서관-갈산근린공원-향림사-계남공원
+화장실:있음
+이용가능시설:체험학습장, 갈산정(정상), 교통교육관 및 전시물, 교통안전교육 체험장, 어린이놀이터, 멀티코트장, 중심광장, 전망대, 산책로, 각종 운동시설 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('매헌 시민의 숲','06773','서울특별시 서초구 매헌로 99(양재동)',37,127,'1986년의 서울아시아경기대회와 1988년의 제24회 올림픽경기대회를 위해 서울특별시의 관문인 양재 톨게이트 주변에 조성한 공원으로, 다양한 수종의 숲이 볼만하며(소나무, 느티나무, 당단풍, 칠엽수, 잣나무 등 43종 94,800주), 숲이 좋아 연인들의 만남의 장소로 이용되고 있다. 현재 도심에서는 매우 보기 드문 울창한 수림대를 형성하고 있고, 특히 가을에는 감, 모과 등 과일이 열려 풍성한 자연을 만끽할 수 있다. 야외예식장과, 농구장, 배구장(족구장 겸용), 테니스장, 맨발공원 등의 운동시설이 있으며, 윤봉길의사 상, 윤봉길의사 숭모비, 대한항공 위령탑, 삼풍사고위령탑, 유격백마부대충혼탑이 있다.<br>','02-575-3895','1986년 11월','연중무휴',null,'전연령',null,null,'상시개방','주차가능','가능','불가','이용가능시설:잔디광장, 파고라, 야외바베큐장, 어린이놀이터, 야외운동장, 매헌 윤봉길 의사상 등
+입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경희궁','03177','서울특별시 종로구 새문안로 45',38,127,'사적인 경희궁은 새문안 대궐 또는 서쪽의 궁궐이라 해서 서궐이라 불리기도 했다. 그 후 왕족의 사저로 쓰이다가 광해군 8년(1616)에 이 새문안 대궐 자리에 왕기(王氣)가 있어 이를 눌러 없애기 위해 별궁을 짓고 경덕궁이라 하였으나 인조반정으로 광해군은 축출되었으며 영조 36년(1760)에는 궁의 이름을 경희궁이라 개칭하였다. 경희궁에는 회상전, 흥정당, 집경당, 숭정전, 흥화문 등의 건축물이 있었으나, 순조 29년(1829)에 화재로 대부분이 소실되어 1831년에 중건하였다. 국권침탈 뒤에 건물은 없어지고 그 터에 경성중학교(지금의 서울고등학교)가 세워졌으며 1987년 서울고교가 강남으로 이전한 뒤 공원으로 가꾸었다. 공원 내에는 서울시립미술관, 산책길 등이 있고 신라호텔로 옮겼던 경희궁의 정문인 흥화문이 다시 제자리에 옮겨졌으며, 정전인 숭정전의 복원작업이 1994년 11월에 완료되었다.<br>','02-724-0274~6',null,'1월 1일, 매주 월요일',null,null,null,null,'09:00~18:00','서울역사박물관 주차장','없음','불가','화장실:있음
+주차요금:20인 미만 차량 - 5분당 400원 / 1일 주차(선불) 15,000원 / 최초 2시간까지 3,000원<br />
+20인 이상 차량 - 5분당 800원 / 1일 주차(선불) 30,000원 / 최초 2시간까지 6,000원
+입 장 료:무료
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수락산 학림사','01632','서울특별시 노원구 덕릉로129가길 241(상계동)',38,127,'<strong>노원구 수락산에 위치한 통일신라 승려 원효가 창건한 사찰로 가을 단풍이 아름다운 노원9경(九景)중 한 곳</strong><br>
+<br>
+멀리서 바라보는 수락산은 드물게 암벽이 우뚝 솟아 봉우리를 이루고 있고, 그 아래로는 울창한 숲이 바다를 이루며 펼쳐져 있다. 이 나무의 바다 속에는 수많은 생명들이 삶을 영위해 가고 있으며, 또한, 크고 작은 많은 사찰들도 자리하여 자연과 더불어 법등을 이어가고 있다. 남쪽 산록에 자리한 학림사는 주변지세가 마치 엄마가 자식을 품고 있는 듯한 모습이다. 그래서 절 이름도 학이 알을 품고 있는 것과 같다고 해서 학림사라 하였다. 경내에는 가지가 늘어지다 못해 처진 듯한 노송(老松)이 당당하게 서 있어 오랜 역사를 말해주는 듯하다.<br>
+<br>
+이러한 학림사는 서울 근교에 자리한 많은 사찰 가운데 그 역사만큼이나 기도도량으로 명성이 높다. 오백나한전에 가득하신 나한님들의 위신력과 약사전의 약사여래의 가피력은 지성으로 기도를 한 사람들에게 반드시 감응이 있기 때문이다. 또한 학림사는 천혜의 자연 조건이 갖추어져 있어 참배는 물론 가족이 함께 산행까지 겸할 수 있는 웰빙 사찰이라 하지 않을 수 없다. 울창한 숲을 걸으며 삼림욕을 즐기고, 산사에 들러 시원한 감로수 한 모금이면 속세에 찌든 온갖 티끌이 씻겨 내려갈 수 있기 때문이다.<br>
+<br>산록에 자리한 학림사가 기도와 웰빙의 도량 역할을 하고 있다면, 노원역 부근에 자리한 학림불교회관은 포교와 교육의 도량으로 자리매김하고 있다. 이곳에서는 다양한 법회와 경전강의, 문화강좌 등을 설치 운영하고 있으며, 유치원과 노인대학을 통하여 복지활동도 펼쳐가고 있기 때문이다. 그러므로 학림사는 명실공히 기도와 수행, 포교와 교육의 도량을 함께 갖춘 사찰로서 역할하기 위해 끊임없이 노력하고 있다.<br>','학림사 02-916-1700',null,'연중무휴',null,null,null,null,'상시운영',null,'불가','불가','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수락산 당고개지구 공원','01639','서울특별시 노원구 상계로 273',38,127,'수락산 당고개지구 공원은 지하철 4호선 당고개역 인근에 있다. 지역주민의 편안한 휴식과 문화공간을 목적으로 지어졌다.  공원 중심에 나선형 광장과 어린이 놀이공간, 야외무대, 소나무 동산, 농구장, 배드민턴장, 체력단련장 등이 조성되어 있다.  열주 이외에 특별한 시설물이 없는 나선형광장은 주민들의 커뮤니티 활성화 공간으로 설계 되어졌다고 한다. 공원내 인기시설로 인공암벽장이 있는데 평일과 주말에 암벽등반 동호인들이 자주 이용한다.<br>','02-950-3918',null,null,null,null,null,null,'연중개방','있음','없음','불가','이용가능시설:휴양시설 : 정자, 야외음악당, 데크쉼터<br /> 
+체육시설 : 궁도장, 배구장, 게이트볼장<br />
+편익시설 : 매점, 약수터 <br />
+문화재 및 사찰 : 아차산보루군, 사찰
+화장실:있음
+입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('효사정','06904','서울특별시 동작구 현충로 55(흑석동)',38,127,'효사정은 세종조에 한성부윤과 우의정을 지낸 노한대감의 별서였다. 노한대감의 자는 유린이며 시호는 공숙공이다. 노한대감이 모친을 여의고 3년간 시묘를 했던 자리에 정자를 짓고, 북쪽 개성에 있는 아버님 산소를 바라보며 추모했던 곳이다. 당시 이조판서 강석덕이 효사정이라 명명하였다고 한다. 이 정자는 효사정의 제자리를 찾기 위해 정인지, 서거정 등의 시문과 신증동국여지승람을 찾고 하였으나, 주위환경 변화로 부득이 이 자리를 선정하여 신축하였다. 정면 3칸, 측면 2칸 5량 집 구조와 검소한 인도리가구 구조의 팔작기와 지붕에 온돌방 1칸을 겸한 정가형식으로 주위에 난간을 둘렀다.<br>','02-820-1258','1993년','연중무휴',null,null,null,null,'00:00~24:00','없음','없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('공덕동 족발 골목','04186','서울특별시 마포구 임정로21길 12-4(신공덕동)',38,127,'시장 골목 한쪽에서 시작한 족발집이 골목을 이루고 시장 상권보다 오히려 더 활발하게 손님을 모으고 있는 곳이 있다. 그 곳이 바로 공덕동 시장 족발골목이다. 시장 한쪽에 2평(7㎡)짜리 식당이 족발골목의 뿌리였다. 당시 시장 사람들의 식사를 위해 순대국을 끓였고 팍팍한 생활을 달랠 술안주로 족발을 만들어 냈다. 순대국과 족발은 그렇게 시장 사람들을 속과 마음을 달래주면서 점차 식당이 잘 되자 부근 가방 가게를 하던 곳에서 업종을 변경해 순대와 족발을 팔기 시작했다. 이렇게 주변에 족발집이 늘어나면서 어느덧 이 골목이 족발 골목으로 자리 잡게 된 것이다. 세월이 흐르며 단골도 시장 사람들에서 학생과 주변 직장인들로 늘어갔다. 이 골목 손님들은 낮에는 나이 드신 분들이 많고 저녁에는 젊은 사람들이 많은데 나이든 분들은 청춘 시절 이 골목에서 술잔을 나누었던 추억을 찾아오는 것이다. 젊은이들은 그들의 추억을 만들며 활기찬 밤 술자리를 만들어 가는 것이다. 손님도 세대가 바뀌었지만 이 골목 식당 가운데는 대를 이어 순댓국을 팔고 족발을 만드는 집도 있으니 오래된 옛 맛을 찾아가보는 것도 괜찮겠다.<br>','02-334-7878',null,null,null,null,null,null,null,null,'불가','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울창포원','01318','서울특별시 도봉구 마들로 916',38,127,'서울 강북의 끝자락인 도봉산과 수락산 사이에 세계 4대 꽃 중 하나로 꼽히는 붓꽃(Iris)이 가득한 특수식물원이 들어섰다. 도봉구 도봉동 4번지 일대 52,417㎡에 새롭게 조성한 서울창포원은 붓꽃원, 약용식물원, 습지원 등 12개의 테마로 구분 조성됐다. 이중 붓꽃원에는 130종의 다양한 붓꽃 30만본을 약 15,000㎡의 면적에 식재해 종류별로 붓꽃의 아름다움을 감상할 수 있게 만들었다. 이곳에는 노랑꽃창포, 부채붓꽃, 타래붓꽃, 범부채 등 꽃봉오리가 ''붓'' 모양을 한 붓꽃류 130여종 30만본이 1만5천㎡에 걸쳐 식재돼 있어 ''창포원''으로 이름 붙여졌다.  또한 약용식물원에는 70종 13만본이 식재돼 있어 국내에서 생산되는 약용식물 대부분을 한자리에서 관찰할 수 있다. 습지원은 습지식물 7만본이 식재돼 있으며, 각종 수생식물과 습지생물들을 관찰할 수 있도록 관찰데크가 설치됐다. 이밖에 군락지 식생의 변화과정을 관찰할 수 있는 천이관찰원을 비롯, 숲속쉼터 등을 조성해 주민들에게 생태교육 및 여가와 휴식공간으로 제공할 계획이다. 붓꽃(Iris)은 매년 5~6월 개화하며 꽃이 없을 때에도 잎 모양이 난과 비슷해 관상용으로 좋다.<br /><br />* 주요식물<br />수목 : 낙우송, 느티나무, 스트로브잣나무, 소나무 등 39종  2,726주<br />관목 : 갯버들, 골담초, 조팝나무, 사철나무, 화살나무 등 18종 57,035주<br />초화 : 달뿌리풀, 맥문동, 터리풀, 구절초, 물억새, 꽃나리 등 46종 438,512본<br />붓꽃  : 꽃창포, 노랑꽃창포, 부채붓꽃, 타래붓꽃, 범부채 등 130종 218,453본<br>','서울창포원 02-954-0031','2009년 6월 7일','연중무휴',null,null,null,null,null,'없음(차량 이용시 도봉산역 건너편 환승주차장(유료)에 주차)','없음','없음','이용가능시설:습지원, 늘푸름원, 약용식물원, 책읽는 언덕, 억새원, 붓꽃원, 넓은잎목원, 산림생태관찰원, 천이관찰원, 숲속쉼터, 잔디마당, 가로수 및 완충녹지, 방문자 센터 등
+화장실:있음
+입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아현동 전골목','04116','서울특별시 마포구 굴레방로9길 17(아현동)',38,127,'천막이 서고 장이 열리면서 장터 사람과 시장 구경을 나온 사람들의 허기진 배와 타는 목을 축여주던 곳이 바로 천막집이었다. 지금은 슈퍼마켓이나 대형마트 등으로 장이 서나 안 서나 물건을 손쉽게 살 수 있지만 그래도 지방 재래시장은 5일장 날이면 보통 때보다 2~3배 많은 사람들이 오고 가니 아직도 5일장은 살아 있는 셈이라고 볼 수 있다. 서울도 그런 재래시장이 많지는 않으나 곳곳에 남아있어 옛 5일장의 추억을 되짚어 볼 수 있다. 또 5일장에서 빠지지 않던 전과 막걸리 천막집이 재래시장 골목 한켠을 차지하고 있으니 생활사의 근간을 이루는 옛 사람들의 모습을 그 곳에서 찾아볼 수 있다 하겠다. <br /><br />아현동 전골목은 시장 역사에 비해 그다지 오래되지는 않았고 현재 문을 열고 있는 5곳 중 1990년대 초반에 문을 연 집이 가장 오래 된 집이다. 역사는 짧지만 재래시장의 풍경 속에서 활기 넘치는 분위기를 만드는 전골목은 없어서는 안될 추억의 장소다. 또  가격도 저렴해서 6,000원 하는 모듬전과 막걸리 4병을 둘이서 나눠 먹으면 배도 차고 기분도 좋아진다. 14,000원에 추억의 재래시장 풍경 속에서 현재의 자기 모습을 되돌아 볼 수 있는 곳으로 많은 사람들이 찾고 있으며 생계를 이어가고 있는 서민들의 생활사가 고스란히 역사가 되고 있는 곳이기도 하다.<br>','02-323-2240',null,null,null,null,null,null,null,'인근 주차장 이용','불가','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도안사','01633','서울특별시 노원구 덕릉로145길 99(상계동)',38,127,'도안사는 서울 노원구와 경기 의정부시, 남양주시 별내면(別內面) 경계에 위치한 수락산(水落山) 내에 있는 사찰이다. 수락산 뒤쪽 외딴 곳에 아늑하게 자리 잡은 자그마한 산사로 화려하진 않지만 자연과 잘 조화된 경내의 풍경은 마음 속의 근심과 걱정을 씻겨준다.','02-936-5936',null,'연중무휴',null,null,null,null,null,'주차 가능','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마포대교 야경','04175','서울특별시 마포구 마포동',38,127,'서울 마포구 용강동(龍江洞)과 영등포구 여의도동(汝矣島洞)을 잇는 마포대교는 길이 1,400m, 너비 25m(6차선)이며 한남대교(漢南大橋)에 이어 한강에서는 4번째로 가설된 교량이다.1968년 2월에 착공하여 1970년 5월에 준공하였으며 준공 당시는 ‘서울대교’라고 부르다가 1984년에 ''마포대교''로 이름을 바꾸었다.','02-3153-8365','1970년 5월',null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('키즈오토파크','04991','서울특별시 광진구 능동로 216(능동)',38,127,'어린이교통안전체험관은 3,000㎡ 부지에 운전 코스와 신호등 등을 배치해 어린이들이 자동차를 운전하며 교통문화를 체험할 수 있는 시설이다. 오토 가상체험시설, 보행교육장, 주행교육장, 교통안전 면허시험장, 오토부스 등 다양한 시설을 갖추고 있다. 입체 동영상을 통해서 가상체험, 안전띠체험, 보행실습 등 다양한 교육프로그램을 체험할 수 있다. 교통안전교육을 수료한 어린이들에게는 시험을 치른 후 어린이 교통안전 면허증를 발급해준다.(3학년 어린이는 4학년이 끝나는 2월까지 면허시험 신청 가능)<br>','02-455-7119',null,'매주 월요일 및 법정 공휴일 휴관','[어린이 교통안전 체험교육]<br />
+교육일시 : 화~토요일 / 1회 10:30~12:00, 2회 14:00 ~ 15:30 <br />
+소요시간 : 약 90분 내외<br />
+교육대상 : 유아 (6~7세,취학 전 어린이), 초등(1~3학년)<br />
+교육내용 : 어린이 체험차량을 이용한 주행교육, 보행교육, 안전띠교육 등 교통안전 체험교육 <br />
+ <br />
+[어린이 교통안전 면허시험] <br />
+응시자격 : 키즈오토파크의 초등교통안전교육을 수료한 어린이 중 초등학생 1~3학년 어린이 <br />
+소요시간 : 2시간 <br />
+운영내용 : 필기시험, 보행시험, 주행시험 합격시 어린이 교통안전면허증 발급',null,'어린이 교통안전 체험교육 -  1회 당 유아 55명(초등 50명) 수용 가능',null,null,'어린이대공원 주차장 이용','불가','불가','화장실:있음
+이용가능시설:오토가상체험관, 오토부스, 보행교육장, 주행교육장
+
+입 장 료:무료
+주차요금:승용차 150원 / 중형차 300원 / 대형차 450원<br />
+※ 1회, 5분<br />
+※ 경차 ·저공해자동차 : 50% 할인<br />
+※ 장애인, 국가유공자, 고엽제휴유증환자 : 80% 할인<br />
+※ 다둥이행복카드 소지자 : 2자녀 30%, 3자녀이상 50% 할인 <br />
+내국인 예약안내:온라인 사전예약제
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('순명비유강원석물','04991','서울특별시 광진구 능동로 216',38,127,'조선 제27대 왕이자 마지막 왕인 순종의 황후 순명효황후의 능이었던 옛 ''유강원'' 터에 남아 있던 왕릉 석조각들이다. 순명효황후는 민태호의 딸로 세자빈에 책봉되었으나 순종이 임금이 되기 전 1904년에 사망하여 유강원에 묘소를 마련하였다. 그 후 순종이 세상을 떠난 1926년에 지금의 유릉에 옮겨와 함께 모셔졌으며 순종의 계비였던 순정효황후가 사망하자 이 또한 함께 모셔졌다. 순명효황후의 능을 마련하였던 유강원 터에는 능 주위에 세웠던 20여 기의 석조물이 남아있다. 석등을 비롯하여 문인석과 말, 양, 호랑이 등 동물을 조각한 것 등 매우 뛰어난 조각 솜씨를 보여 줄 뿐만 아니라 조선 말 왕실의 석조각으로 그 역사적 가치가 매우 중요하다.<br>','02-450-7576',null,'연중무휴',null,null,null,null,'공원 05:00~22:00','어린이대공원 주차장 이용','없음','불가','입 장 료:공원 이용 무료
+화장실:공원 화장실 이용
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산 생태공원','08839','서울특별시 관악구 석수동',37,127,'2007년 12월 개원한 관악산 생태공원은 미성동 117-3번지(관악산 선우지구) 일대 76,521m²의 면적으로 조성되었다. 지형 여건을 최대한 살려 상부는 생태숲 구역으로, 물길이 모이는 하부쪽은 생태연못 구역으로 각각 나누었다. 생태숲 구역은 활엽수림으로 복원했고, 생태연못 구역에는 수생식물과 다양한 수서생물이 살 수 있도록 하였다. 또한 생태학습장과 비를 피할 수 있는 정자를 만들어 다양한 생태학습이 가능하도록 조성하였다.<br>','02-880-3675','2007년 12월','연중무휴',null,null,'200명 이상',null,'24시간','주차 가능','불가','가능','입 장 료:무료
+주차요금:10분당 300원 / 1시간 1,800원 
+장애인 편의시설:경사로, 장애인 화장실, 전용주차구역
+이용가능시설:족구장, 농구장, 테니스장, 체육시설 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('전주이씨광평대군파묘역','06353','서울특별시 강남구 광평로31길 20(수서동)',37,127,'광평대군 묘역에는 세종의 다섯째 아들인 광평대군과 그의 부인 영가부부인(永嘉府夫人) 신씨(申氏)의 묘를 비롯하여 태조의 아들인 무안대군(撫安大君) 방번(芳蕃), 광평대군의 아들인 영순군(永順君)을 비롯한 종문 700여기의 묘소가 같이 있다. 또, 이곳은 종가 재실(齋室)의 오랜 가옥이 있는 공동 묘역으로서 이 때문에 마을을 궁말[宮村]이라고 부르기도 한다. 광평대군의 이름은 여(璵), 자는 환지(煥之), 호는 명성당(明誠堂)으로, 세종 7년(1425) 5월에 탄생하였다. 세종 14년(1432) 정월에 광평대군으로 봉해졌으며, 5년 후에는 세종의 명으로 후사가 없는 공순공[恭順公, 후의 장혜(章惠)] 방번의 봉사손(奉祀孫)으로 입양되었다.<br /><br />어려서부터 학문에 힘써 온 대군은 문장은 물론 활쏘기와 격구 또한 잘하고 음률과 산수에 밝아 특히 부왕의 총애를 받았다. 무안대군의 봉사손으로 입양된 후에는 안암동(사당말)에 양부의 사당을 짓고 그 후 7년간을 기거하였다. 동지중추부사 신자수(申自守)의 딸과 결혼하여 영순군 부(溥)를 두었으나 세종 26년(1444) 창진(瘡疹)을 앓다가 세상을 떠났다. 시호(諡號)는 장의(章懿)로 장(章)은 경신고명(敬愼高明)을, 의(懿)는 온유현선(溫柔賢善)을 의미한다. 광평대군의 묘는 처음에 경기도 광주 서촌 학당리(현 강남구 삼성동 선릉 부근)에 있었는데 연산군 원년(1495) 3월 이곳이 성종의 왕릉인 선릉(宣陵) 터로 정해지면서 광수산(光秀山)의 지금 위치로 이장되었다. 광평대군과 부인 신씨의 묘소는 높은 언덕 위에 각각의 무덤으로 되어 있다. 장대석으로 단을 쌓은 위에 봉분이 놓여져 있고 그 아래에 묘비와 낮은 받침돌을 둔 혼유석(魂遊石)이 갖춰져 있다.<br /><br /> 하단에는 2기의 장명등(長明燈)과 우측에 신도비(神道碑), 그리고 또 한 단 아래 좌우로 문인석(文人石) 2구가 세워져 있다. 이와 같이 단을 쌓은 위에 봉분이 있는 양식은 양녕대군(讓寧大君)이나 효령대군(孝寧大君)의 묘소에서는 볼 수 없는 특이한 것으로 조선 초기 대군묘(大君墓)의 규모나 규범을 참고하는데 매우 귀중한 자료라고 할 수 있다. 그러나 신도비는 명종 7년(1574)에 세운 것으로 비문은 심의겸(沈義謙)이 짓고, 두전(頭篆)은 박렴(朴簾)이 썼다. 대군의 묘 아래에 있는 제각(祭閣)의 동쪽에는 ''廣州治西光秀山李氏世葬記(광주치서광수산이씨세장기)''란 이름의 세장기비(世葬記碑)가 있다. 이는 숙종 21년(1695)에 조사한 186기 무덤의 위치를 조사한 내용을 평양부윤(平壤府尹)을 지낸 후손 이유(李濡)가 짓고 이담(李湛)이 쓴 것을 비석에 새긴 것으로 가족 묘소로서의 오래고도 광대한 면모를 알려주는 매우 중요한 자료이다. 이 묘역은 서울이나 근교에 현존하는 왕손의 묘역 중 가장 원형에 가까운 것이며 분묘와 비석, 부속물들은 조선 시대 분묘 내지 석비 등을 이해하는데 중요한 학술적 가치가 있다.<br>','02-459-4733',null,'주말, 공휴일',null,null,null,null,'하절기 10:30~16:00 / 동절기 10:30~15:30','주차 가능','불가','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산공원 야외식물원','151-858,1','서울 관악구 대학동 203번지 일대',37,127,'관악산공원 입구에서 5분정도 걸어들어오면 관악산공원 야외식물원을 만날 수 있다. 등산로 초입에 야생화 학습장이 있어 신기한 꽃들과 사진도 찍고 푯말에 표기된 꽃들의 이름을 외우는 재미도 있다. 
+상류 쪽으로 1km에 이르는 구간에는 어른 허리까지 물이 차는 ''자연형 수영장''이 있으며, 관악산공원 정문을 통해 야외식물원 쪽으로 올라가면 신림계곡이 있다. 
+계곡 옆 자연학습장에 조성된 1,000㎡ 규모 휴식공간에는 19종의 농작물과 1,630본의 식재가 있어 농촌풍경을 그대로 옮겨 놓은 듯하다. 5월 말~6월에는 장미농원에서 장미오감체험도 할 수 있다.','02-879-6561','2007년 11월','연중무휴',null,null,'200명 이상',null,'24시간',null,'없음','없음','관광코스안내:[관악산 둘레길 제 2구간]<br />
+서울대입구 - 들산 - 보덕사입구 - 헬기장 - 삼성산성지 - 산장약수터 - 국제산장아파트
+화장실:있음
+입 장 료:무료
+이용가능시설:장미원, 초화원, 관목원, 자연학습원, 벚나무쉼터, 정자, 그늘막, 원두막, 야외운동기구 54종, 쉼터
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산 호수공원','08813','서울특별시 관악구 대학동',37,127,'관악산 제 1광장에 닿기 전(신림동 203번지)에 위치한 호수공원은 부지면적 6,406m², 담수면적 2,485m²으로 1997년 3월 준공되었으며, 정자, 분수, 수변무대, 나무다리, 인공섬 등이 설치되어 있어 관악산을 찾는 많은 사람들이 휴식공간으로 활용하고 있으며, 또한, 인근에는 숲속 작은 도서관과 야외 식물원이 조성되어 있어 주민들에게 큰 호응을 얻고 있다.<br>','02-879-6520','1997년 3월','연중무휴',null,null,'200명 이상',null,'24시간','있음(153대)','불가','없음','입 장 료:무료
+화장실:있음
+이용가능시설:자하정,분수,수변무대,석구상,시비,상징석,목교,작은섬
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼성산성지','08822','서울특별시 관악구 호암로 454-16',37,127,'이곳 삼성산 성지는 1839년 기해박해 때 군문효수의 형을 받고 순교한 조선 제2대 교구장 성 앵베르 라우렌시오 범 주교와 성모방 베드로 나 신부, 성 샤스탕 야고보 정 신부의 유해가 안치된 곳이다. 1839년에 기해박해가 일어나자 세 성직자는 교우들의 희생을 줄이기 위해 스스로 관가로 나아가 자수하여 신앙을 고백하고 새남터에서 군문효수라는 특별한 절차로 1839년 9월 21일 사형을 당했다고 한다.','삼선산성당 02-875-2271',null,'연중무휴',null,null,null,null,null,null,null,null,':
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우이동계곡','142-090,1','서울 강북구 우이동일대',38,127,'''우이동''은 도봉산과 북한산 사이의 계곡에 있는 시민의 휴식처로 우이동 입구에서 왼쪽은 백운대로 오르는 등산길이며, 도선사를 경유하여 인수봉 정상을 오를 수 있다. 오른쪽으로 관광호텔, 놀이공원, 웨딩홀 등을 갖춘 그린파크호텔을 기점으로 유원지가 시작된다. 계곡의 맑고 시원한 냇물을 끼고 각종 별미를 자랑이라도 하듯이 음식점 등이 줄을 이으며 여름철 닭죽은 진미이다. 민박도 가능하며 3,4월에는 대학생들의 MT장소로 선호된다.<br /><br />이렇게 20분 가량 올라가면 원불교 수도원, 성불사, 용덕사, 선운사, 광명사 등 사찰을 찾을 수 있으며 입구에서의 들뜬 분위기는 이내 차분해지며 또 다른 운치를 느낄 수 있다. 산 정상으로는 현재 군부대가 상주하여, 생태계가 서울에서도 드물게 잘 보존되는 우이령, 일명 바위고개로 이어진다. 우이동에서는 우이암으로 이어지는 등산로가 열린다. 우이암까지 가는 길은 꽤 험한데 우이암 옆을 지나 도봉산 주릉으로 올라서게 되어 있다. 이곳에서 북으로 뻗은 주릉을 타거나 성황당, 도봉유원지로 하산하면 된다.<br>','02-909-0497',null,'연중무휴',null,null,null,null,'국립공원 입산 시간 : 일출 전 2시간<br />
+국립공원 하산 시간 : 일몰 후 2시간',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수암사','01633','서울특별시 노원구 상계동 산153-1',38,127,'수락산 중턱의 남향 길상지에 자리한 경관 좋고 유서 깊은 사찰 수암사는 신라 진평왕 43년(621년)에 화랑 세속오계의 원작자인 원광 국사께서 삼국통일의 대업을 이루고자 창건하였다. 조선시대 병자호란 때 소실된 이후 석국 법당만 남아 있던 것을 다시 중건하였다. 경내에는 1962년 도욱스님의 중창 당시에 세워진 25평 규모의 전통양식(단청)의 극락보전을 비롯하여 삼성각, 요사채와 1972년에 건립된 미륵 입상 등이 있다. 극락보전 옆의 큰 바위에는 여의주를 쥐고 승천하는 용의 형상이 음각으로 나타나 있고 가람 가운데 마치 여러 마리의 용이 꿈틀대며 승천하는 형상을 지닌 적송이 있어 눈길을 끈다.','02-2116-3114',null,'연중무휴',null,null,null,null,'일출시~일몰시','수락산 공용주차장','없음','불가','등산로:수락산 당고개 지구 - 수암사 - 수락산 정상 (약 2시간 소요)
+한국어 안내서비스:가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('탄천','135-210,1','서울 강남구 율현동',37,127,'탄천은 경기도 용인시, 성남시를 지나 서울특별시를 거쳐 한강으로 유입되는 한강의 한 지류로서, 유역면적이 302km², 총 연장이 35.6km에 달하는 준용하천이다. 탄천의 중앙부에 위치하고 있는 성남시는 시의 중심을 흐르는 25km의 탄천과 함께 개발에 개발을 거듭하고 있다. 탄천살리기범시민연대는 시민들의 환경 보존 의식을 높여 실천할 수 있도록 하고, 탄천의 오염 실태를 조사, 분석하여 대안을 제시하는 활동을 할 것이며, 탄천을 자정 능력이 있는 ''자연형 하천''으로 만들고, 아이들이 마음 놓고 놀 수 있는 하천으로 가꾸는 것을 목표로 1999년 6월 20일 8개 민간환경단체로 출범하였다.<br />
+탄천으로 불리게 된 데에는 전해오는 이야기가 있다. 하루는 염라대왕이 저승사자에게 삼천갑자(18만년)를 살았다는 동박삭을 잡아올 것을 명했다. 그러나 동박삭은 워낙 둔갑술이 뛰어나 저승사자도 어쩔 수가 없었다. 고심하던 저승사자는 꾀를 내 이 냇물에서 숯을 빨기로 했다. 이 모습을 본 한 행인이 “내가 삼천갑자를 살았어도 숯을 빠는 사람은 처음 봤다”고 하자 저승사자는 그 사람이 동박삭인 것을 알아채고 저승으로 데려갔다. 그때부터 ‘숯내’ 또는 같은 뜻의 한문으로 탄천이라 부르게 됐다.<br>','공원녹지과 02-3423-6254',null,null,null,null,null,null,null,null,'없음','없음','관광코스안내:탄천 생태경관 보전지역 : 송파구 탄천  탄천2교~대곡교 6.7km 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('암사생태공원','05249','서울특별시 강동구 선사로 83-66',38,127,'암사동 한강변의 콘크리트 인공호안과 자전거 도로를 철거하고 갈대·물억새 군락지, 야생화, 산책로 등을 갖춘 자연형 호안과 생태공원을 조성하였다.
+* 면적 : 162,000㎡<br>','070-7788-9670','2008년 12월 28일','상시개방','- 생태학습프로그램 운영(생태학교, 관찰교실): 연중운영',null,null,null,null,null,'불가','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고덕동 생태경관 보전지역','134-080,1','서울특별시 강동구 고덕동 396번지 일대',38,127,'고덕동 생태경관보전지역은 서울지역에서 자연성이 높은 지역으로 고덕수변생태복원지와 연접하고 있으며 고덕지천부터 암사취수장 우측산림지역 일부와 호안 및 한강 저수부지까지 포함하는 구역이다. 고덕수변생태복원지역 중 조류관찰소 등 일부시설이 포함되어 있다. 강의 자연 생태를 복원하고 인근 산림지역과 연계하여 생물종 다양성을 증대하기 위하여 생태경관보전지역으로 지정되어있으며, 시민들에게 여가 및 생태체험 학습장소로 제공되고 있다.<br>','02-3780-0848',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('온수공원','08254','서울특별시 구로구 고척로3길 86-52(오류동)',37,127,'옛날 온수골에서 유래하였는데 이 지역 일대가 더운물이 나왔기 때문에 온수골이라 하였고, 궁동은 조선 선조의 일곱째 정선옹주가 이곳에 살던 길성군(吉城君) 권대임(權大任)에게 출가하여 살던 집이 여기에 있었으므로 궁궐 같은 큰집이 있다 하여 붙여진 이름이다. 서울시의 남서 측 양천구와 구로구에 걸쳐 있고 시 외각으로는 부천시가 접하고 있으며 남쪽으로 경인국도 동쪽으로 남부순환로 북쪽으로 경인고속국도와 접하여 접근이 매우 용이하고 1971년 도시 자연공원으로 지정되었으며 임상이 양호하며 식생이 다양하고 수목 등 식생이 잘 보존된 전형적인 자연상태의 공원으로 년 180,000여 명의 시민이 공원을 이용하고 있으며 등산로 주변에 약수터와 배드민턴장, 체력단련장, 의자 등 휴게시설과 철봉, 허리 돌리기 등 운동기구가 등산로 곳곳에 설치되어 많은 시민으로부터 좋은 반응을 얻고 있다.','구로구청 공원녹지과 02-860-2396','1971년 8월 6일','연중개방',null,'전연령',null,null,'00:00~24:00',null,'없음','없음','화장실:있음
+입 장 료:무료
+이용가능시설:배드민턴장, 체력단련장, 운동기구 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청계천 버들습지','130-070,1','서울 동대문구 용두동고산자교 하류 버들습지',38,127,'* 유니세프 선정 어린이 다리 *<br /><br />청계천 물길은 복원 구간의 마지막에 이르러 두물다리를 지나 고산자교로 향한다. 두물다리는 과거 청계천의 지류가 합류하던 지점이었다. 그 의미를 살려 두 개의 물이 만나는 다리라는 뜻의 두물다리라는 이름을 붙였다. 형상도 두 개의 물줄기가 손을 잡듯 곡선을 그리며 만나는 모습이다. 먼발치에서 보면 탑신이 마치 돛처럼 솟아 돛단배를 떠올리게 한다. 그 생김이 동화적이라 유니세프에서 어린이 다리로 지정했다.<br /><br />두물다리를 지나면 고산자교로 잇는 물길이다. 도심에서 멀어지므로 점점 생태공원의 표정을 닮아간다. 고산자교는 대동여지도를 만든 김정호의 호를 따서 지었다. 고산자교 인근에는 고산자로가 지난다. 교각의 모양새보다는 하천 경관의 녹지가 단절되는 것을 극복하려는 의지가 투영된 다리다. 그리고 여기서부터 비로소 청계천 물길은 중랑천을 향해 내달리고 언젠가 한강과 만나게 된다.<br /><br />* 청계천의 마지막 비경 *<br /><br />고산자교에 이어 버들습지가 반긴다. 청계8경이요, 청계천의 마지막 비경이다. 청계1경에서 7경까지가 사람의 손길이 묻어나는 공간이었다면 8경은 오롯이 자연이 주인이다. 버들습지는 갯버들이나 매자기, 꽃창포 같은 수생식물의 서식 환경을 조성하기 위한 습지다. 청계천에서도 가장 자연친화적인 생태 공간이다. 수생식물의 성장을 바탕으로 어류나 양서류 등의 생물 서식도 이뤄진다. 메기나 버들치, 피라미 같은 어류도 종종 만날 수 있다.<br /><br />특히, 조류 보호구역으로 지정돼 청둥오리는 물론이요 흼뺨검둥오리, 중대백로 같은 새들이 날아든다. 버드나무 아래 한가로운 풍경이다. 아이들과 함께라면 청계천 생태해설사의 설명을 들어도 좋고, 겨울철 철새탐조교실 같은 프로그램을 활용해도 좋다. 산책 삼아 걷고 싶다면 생태탐방로 데크를 따라 걸어도 좋겠다. 잘 알고 있다고 생각했던 청계천의 새로운 모습을 발견할 수 있을 것이다.<br>','02-2290-6114',null,null,null,null,null,null,null,'청계천 전 구간의 인근 주차장 이용','가능','없음','관광코스안내:청계천문화관 -> 오간수교 (2.6km)
+화장실:청계천 전 구간 인근 화장실 이용 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오동근린공원','01139','서울특별시 강북구 덕릉로42길 49(번동)',38,127,'서울 강북구와 성북구에 걸쳐 있으며 강북 번동, 미아동외 5개 동과 성북구 월곡동에 걸쳐 있는 대단위 공원으로 수림이 잘 형성되어 있다. 오동공원은 쉼터와 구민체육관, 인조잔디구장, 테니스장, 황토지압 보도, 산책로 등을 두루 갖추고 구민의 쉼터로 자리 잡아 인근 주택단지에 주거하고 있는 주민들의 휴식과 운동장소로 이용되고 있다.<br>','02-901-6923','1987년 4월 27일','연중무휴',null,null,null,null,null,'없음(공원 옆 강북구민운동장 이용-유료)','불가','없음','화장실:있음
 입 장 료:무료
 이용가능시설:* 조경시설 : 실개울, 생태연못, 정자 등<br />
 * 편의시설 : 음수대 등 <br />
@@ -1139,31 +1222,2692 @@ Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF
 * 피톤치드 체험장, 어린이놀이시설(모래체험장, 개미놀이동산 등), 자연학습 체험장 등
 한국어 안내서비스:불가
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신사동 가로수길','06028','서울특별시 강남구 신사동 일대','3호선 신사역에서 압구정 현대고등학교 앞으로 통하는 은행나무길.‘예술가의 거리’ 라 불리는 신사동 가로수길 주위로는 아기자기한 커피숍과 맛집, 디자이너들의 옷 매장들이 즐비해 있어 이국적인 분위기를 연출한다. 이러한 신사동 가로수길만의 독특한 분위기 덕분에 평일에도 카메라를 들고 여기저기서 사진을 촬영하는 사람들의 모습을 종종 볼 수 있다. 특히 가을에는 낙엽지는 거리를 보러 많은 사람들이 찾아오며, 젊은이들의 입소문을 타고 유명세를 탄 이후 많은 영화의 배경지로 나오기도 했다.','강남관광정보센터 02-3445-0111',null,null,null,null,null,null,'상시 가능',null,'없음','가능','입 장 료:없음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신사동 가로수길','06028','서울특별시 강남구 신사동 일대',38,127,'3호선 신사역에서 압구정 현대고등학교 앞으로 통하는 은행나무길.‘예술가의 거리’ 라 불리는 신사동 가로수길 주위로는 아기자기한 커피숍과 맛집, 디자이너들의 옷 매장들이 즐비해 있어 이국적인 분위기를 연출한다. 이러한 신사동 가로수길만의 독특한 분위기 덕분에 평일에도 카메라를 들고 여기저기서 사진을 촬영하는 사람들의 모습을 종종 볼 수 있다. 특히 가을에는 낙엽지는 거리를 보러 많은 사람들이 찾아오며, 젊은이들의 입소문을 타고 유명세를 탄 이후 많은 영화의 배경지로 나오기도 했다.','강남관광정보센터 02-3445-0111',null,null,null,null,null,null,'상시 가능',null,'없음','가능','입 장 료:없음
 이용가능시설:음식점, 의류 및 악세사리 상점, 카페 등
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수락산 학림사','01632','서울특별시 노원구 덕릉로129가길 241(상계동)','<strong>노원구 수락산에 위치한 통일신라 승려 원효가 창건한 사찰로 가을 단풍이 아름다운 노원9경(九景)중 한 곳</strong><br>
-<br>
-멀리서 바라보는 수락산은 드물게 암벽이 우뚝 솟아 봉우리를 이루고 있고, 그 아래로는 울창한 숲이 바다를 이루며 펼쳐져 있다. 이 나무의 바다 속에는 수많은 생명들이 삶을 영위해 가고 있으며, 또한, 크고 작은 많은 사찰들도 자리하여 자연과 더불어 법등을 이어가고 있다. 남쪽 산록에 자리한 학림사는 주변지세가 마치 엄마가 자식을 품고 있는 듯한 모습이다. 그래서 절 이름도 학이 알을 품고 있는 것과 같다고 해서 학림사라 하였다. 경내에는 가지가 늘어지다 못해 처진 듯한 노송(老松)이 당당하게 서 있어 오랜 역사를 말해주는 듯하다.<br>
-<br>
-이러한 학림사는 서울 근교에 자리한 많은 사찰 가운데 그 역사만큼이나 기도도량으로 명성이 높다. 오백나한전에 가득하신 나한님들의 위신력과 약사전의 약사여래의 가피력은 지성으로 기도를 한 사람들에게 반드시 감응이 있기 때문이다. 또한 학림사는 천혜의 자연 조건이 갖추어져 있어 참배는 물론 가족이 함께 산행까지 겸할 수 있는 웰빙 사찰이라 하지 않을 수 없다. 울창한 숲을 걸으며 삼림욕을 즐기고, 산사에 들러 시원한 감로수 한 모금이면 속세에 찌든 온갖 티끌이 씻겨 내려갈 수 있기 때문이다.<br>
-<br>산록에 자리한 학림사가 기도와 웰빙의 도량 역할을 하고 있다면, 노원역 부근에 자리한 학림불교회관은 포교와 교육의 도량으로 자리매김하고 있다. 이곳에서는 다양한 법회와 경전강의, 문화강좌 등을 설치 운영하고 있으며, 유치원과 노인대학을 통하여 복지활동도 펼쳐가고 있기 때문이다. 그러므로 학림사는 명실공히 기도와 수행, 포교와 교육의 도량을 함께 갖춘 사찰로서 역할하기 위해 끊임없이 노력하고 있다.<br>','학림사 02-916-1700',null,'연중무휴',null,null,null,null,'상시운영',null,'불가','불가','입 장 료:무료
-');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수락산 당고개지구 공원','01639','서울특별시 노원구 상계로 273','수락산 당고개지구 공원은 지하철 4호선 당고개역 인근에 있다. 지역주민의 편안한 휴식과 문화공간을 목적으로 지어졌다.  공원 중심에 나선형 광장과 어린이 놀이공간, 야외무대, 소나무 동산, 농구장, 배드민턴장, 체력단련장 등이 조성되어 있다.  열주 이외에 특별한 시설물이 없는 나선형광장은 주민들의 커뮤니티 활성화 공간으로 설계 되어졌다고 한다. 공원내 인기시설로 인공암벽장이 있는데 평일과 주말에 암벽등반 동호인들이 자주 이용한다.<br>','02-950-3918',null,null,null,null,null,null,'연중개방','있음','없음','불가','이용가능시설:휴양시설 : 정자, 야외음악당, 데크쉼터<br /> 
-체육시설 : 궁도장, 배구장, 게이트볼장<br />
-편익시설 : 매점, 약수터 <br />
-문화재 및 사찰 : 아차산보루군, 사찰
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이태원 앤틱 가구 거리','04391','서울특별시 용산구 보광로 109-1',38,127,'이태원 앤틱 가구 거리는 1960년대 인근 미군부대에 근무하던 군인들이 본국으로 귀환하면서 사용하던 가구들을 팔려고 내놓은 것에서 시작됐다. 이후, 점차 시장으로 활성화되면서 아시아는 물론 유럽, 미주 등지의 다양한 고가구 상들이 모여 ‘앤틱 가구 거리’로 자리잡게 됐다. 오래된 골동품에서 진귀한 물품, 가구 외에 시계, 찻잔, 각종 장신품 등도 인기 품목이다.<br>','02-797-5119',null,'매장에 따라 다름',null,null,null,null,null,'없음','불가','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신천 어린이교통공원','05510','서울특별시 송파구 올림픽로35다길 33(신천동)',38,127,'어린이교통공원은 교통시설 및 유희 시설, 휴식시설 등을 갖추어 자라나는 어린이들에게 즐겁게 뛰어놀면서 자연스럽게 교통 질서와 교통 도덕을 익히도록 각종 시설(신호등, 교통표지판, 횡단보도, 육교, 지하도, 터널, 고가차도)등을 마련해 놓은 곳이다. 이곳은 현재 유치원생을 비롯해 초등학생들이 많이 찾고 있으며 산 교육의 장소로 활용되고 있다. 또한, 이 공원에서는 서울지방경찰청에서 마련한 어린이 교통 시설로 경찰관의 도움을 받아 어린이들이 직접 자전거를 타고 다양한 도로를 돌아다니면서 실습을 통해 교통 학습을 받을 수 있다.<br>','02-413-0004',null,'주말 및 공휴일','현장체험 - 횡단보도, 육교, 지하도, 철길 건널목 건너기, 자동차 체험','유치원생(5세 이상 교육) 및 초등학생',null,null,'평일 09:00~18:00<br />
+※ 동절기 17:00까지','있음','불가','불가','입 장 료:무료
+이용가능시설:[교통시설] 신호등, 교통안전표지판, 횡단보도, 육교, 지하보도, 터널, 고가차도, 철길건널목<br />
+[교육시설] 교통강의실, 표지판 광장, 체험자동차, 자전거교육장<br />
+[유희시설] 미끄럼틀, 그네, 구름다리 등 조합놀이대<br />
+[휴식시설] 파고라, 벤치, 음료수대<br />
+[특수시설] 인공폭포, 보호감시탑, 야외음악당, 남산, 한강다리(모형)<br />
+[기타시설] 사육장(토끼, 닭, 메추리 등)
 화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('종묘광장공원','03135','서울특별시 종로구 종로 157(훈정동)',38,127,'종묘는 조선 왕조의 왕과 왕비, 그리고 사후에 추존된 왕과 왕비의 신주를 모신 사당이다.종묘 건축물은 문화적, 건축적 가치를 인정받아, 1995년 12월 유네스코 세계유산위원회의 정기총회 의결을 거쳐 세계문화유산으로 등록됐다.종묘 앞 일대 39,669m²(1만 2천여 평)의 마당에 주차시설을 갖춘 종묘광장공원은 서울시민들의 휴식공간으로 널리 이용되고 있다. 공원 안에는 조선왕조 역대 임금들이 종묘를 드나들 때 물을 마셨다는 우물이 다시 만들어졌고, 월남 이상재선생의 동상과 편의시설을 갖춘 녹지대가 만들어져 있다. 서울시는 15,206m²(약 4,600평)에 달하는 주차광장을 문화예술의 광장으로 활용할 계획이며, 특히 젊은이들이 마음껏 활용할 수 있도록 자율적인 운영을 해 나갈 방침이다.<br>','02-2148-2842',null,'연중개방',null,null,null,null,'24시간','종묘지하주차장에 1,000여 대 주차 가능','없음','없음','입 장 료:무료
+이용가능시설:벤치, 그늘막, 식수대 등
+주차요금:유료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('세검정 터 (구 세검정)','03018','서울특별시 종로구 세검정로 244',38,127,'상명대학교 입구에서 북악터널 쪽으로 5분 가량 오르면 냇가 큰 바위 위에 세워진 세검정이 있다. 1623년 인조반정(仁祖反正) 전에 거사 동지인 이귀(李貴) · 김류(金#29804;) 등이 광해군 폐위 문제를 의논하고 칼을 씻은 자리라고 해서 "세검정" 이라는 이름이 붙었다고 한다. 또, 이곳은 영조 23년(1747)에 북한산성을 쌓은 후 군사들의 휴식처로 세운 것이라 한다. 북한산 남쪽 기슭의 백운대로부터 흘러내려오는 계곡물 주변을 일컫는데,  주말이면 아담한 물가 식당에서 음식을 즐기는 등산객들이 줄을 잇고 있다. 세검정은 2009년 2월 5일로 세검정 터라는 명칭으로 변경되었다. 이유는 멸실된 유적에 건물을 완전히 새로 복원한 경우는 ''터''라는 한글 표현을 붙여주기로 하였다. 그래서 현재 명칭은 세검정 터이다. <br>','02-731-0412',null,'연중무휴',null,null,null,null,null,null,'없음','가능','입 장 료:무료
+화장실:없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용산가족공원','04383','서울특별시 용산구 서빙고로 185',38,127,'시원스럽게 탁 트인 잔디밭, 주변과 잘 어울리는 연못, 산뜻하게 닦여진 산책로가 시민들의 나들이를 즐겁게 만든다. 용산가족공원은 미8군 골프장 부지 9만 평에 가족공원으로 개방하다 1997년 11월 15일 국립박물관 건립에 따라 공원이 축소되어 현재 27,000평을 사용하고 있으며, 골프장의 잔디, 숲, 연목 등은 그대로 유지한 채 2.0㎞의 산책로, 자연학습장, 태극기 공원 및 잔디광장이 있고, 공원 곳곳엔 비둘기, 호로새, 야생꿩 등이 서식하고 있다.<br>','02-792-5660',null,'연중무휴',null,null,null,null,'24시간','있음(50대)','없음','없음','화장실:있음
+이용가능시설:조경시설 : 잔디광장, 연못, 정자, 원두막, 자연학습장, 맨발공원, 태극기공원 <br />
+운동시설 : 철봉, 평행봉, 역기, 윗몸일으키기, 등배치기 등 <br />
+편익시설 : 음수대, 공중전화, 벤치, 자동판매기 <br />
+교양시설 : 국제조각품 <br />
+기타시설 : 야외예식장, 빗물펌프장
+입 장 료:무료
+
+주차요금:5분당 150원<br />
+※ 장애인차량, 국가유공자 : 최초 1시간 무료 및 80%할인
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('개운사(서울)','02842','서울특별시 성북구 개운사길 73',38,127,'서울 성북구 안암동 네거리에서 약 500m쯤 북쪽으로 올라간 곳에 자리 잡고 있다. 고려대학교와 고려대부속병원 사이다. 개운사는 조선 태조 이성계의 왕사인 무학대사가 1396년에 세웠다. 넓은 뜰과산 비탈을 타고 앉은 한적한 경내는 도심 속의 좋은 쉼터역할을 하며, 중앙승가대학(현재는 김포에 위치)이 있던 곳으로 20세기 이후에 한국 교육불사와 불교의 진보적인 운동을 주도해 왔다.<br>','02-926-4069',null,null,null,null,null,null,null,'주차 가능','없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('승가사(서울)','03001','서울특별시 종로구 비봉4길 213(구기동)',38,127,'승가사는 진흥왕순수비로 유명한 북한산 비봉에서 동쪽으로 1km쯤 떨어져 있으며, 승가대사를 봉안한 독특한 사찰이다. 승가대사는 서역인으로서 서기 640년에 출생하여 당나라로 건너와 53년간 불교 전교에 헌신한 분으로 갖가지 변화를 자유자재로 하여 기적을 나타내어 동방의 불교 홍법에 큰 획을 이루어 관음보살로 회신되어 중국의 각지에 승가당이 설치되어 있다. 위쪽 암벽에 조각된 마애석불님상은 기실 32현상에 의한 관음보살상으로 승가대사와 인연을 깊게 하고 있다. 신라, 고려, 조선조에 이르기까지 1,400년간 왕상공경(王相公卿)이 국난 때마다 참배 기도드려 가피를 입었으며 백성의 소원도 한 가지만은 꼭들어주는 영험이 따랐다고 한다.  승가사의 명칭도 승가대사를 기리기 위하여 창건의 취지가 담겨져 있다. 승가사는 대한불교 조계종 제1교구에 속한다.<br>','02-379-2996',null,'연중무휴',null,null,null,null,null,null,'불가','없음','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('흥천사','02825','서울특별시 성북구 흥천사길 29(돈암동)',38,127,'북한산 서쪽 기슭의 정릉 입구에 있는 신흥사는 조선 태조 이성계의 계비 강씨의 능인 정릉의 조포사(제사에 쓰는 두부를 만드는 절)였다. 정릉이 이장되면서 몇번 옮겨지다가 정조 18년(1794년)부터 지금의 자리에 정착되었다.<br>','02-929-6611~2',null,'연중개방',null,'전연령',null,null,'일출시~일몰시','주차 가능','없음','불가','화장실:있음
 입 장 료:무료
 ');
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('효사정','06904','서울특별시 동작구 현충로 55(흑석동)','효사정은 세종조에 한성부윤과 우의정을 지낸 노한대감의 별서였다. 노한대감의 자는 유린이며 시호는 공숙공이다. 노한대감이 모친을 여의고 3년간 시묘를 했던 자리에 정자를 짓고, 북쪽 개성에 있는 아버님 산소를 바라보며 추모했던 곳이다. 당시 이조판서 강석덕이 효사정이라 명명하였다고 한다. 이 정자는 효사정의 제자리를 찾기 위해 정인지, 서거정 등의 시문과 신증동국여지승람을 찾고 하였으나, 주위환경 변화로 부득이 이 자리를 선정하여 신축하였다. 정면 3칸, 측면 2칸 5량 집 구조와 검소한 인도리가구 구조의 팔작기와 지붕에 온돌방 1칸을 겸한 정가형식으로 주위에 난간을 둘렀다.<br>','02-820-1258','1993년','연중무휴',null,null,null,null,'00:00~24:00','없음','없음','없음',null);
-Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('공덕동 족발 골목','04186','서울특별시 마포구 임정로21길 12-4(신공덕동)','시장 골목 한쪽에서 시작한 족발집이 골목을 이루고 시장 상권보다 오히려 더 활발하게 손님을 모으고 있는 곳이 있다. 그 곳이 바로 공덕동 시장 족발골목이다. 시장 한쪽에 2평(7㎡)짜리 식당이 족발골목의 뿌리였다. 당시 시장 사람들의 식사를 위해 순대국을 끓였고 팍팍한 생활을 달랠 술안주로 족발을 만들어 냈다. 순대국과 족발은 그렇게 시장 사람들을 속과 마음을 달래주면서 점차 식당이 잘 되자 부근 가방 가게를 하던 곳에서 업종을 변경해 순대와 족발을 팔기 시작했다. 이렇게 주변에 족발집이 늘어나면서 어느덧 이 골목이 족발 골목으로 자리 잡게 된 것이다. 세월이 흐르며 단골도 시장 사람들에서 학생과 주변 직장인들로 늘어갔다. 이 골목 손님들은 낮에는 나이 드신 분들이 많고 저녁에는 젊은 사람들이 많은데 나이든 분들은 청춘 시절 이 골목에서 술잔을 나누었던 추억을 찾아오는 것이다. 젊은이들은 그들의 추억을 만들며 활기찬 밤 술자리를 만들어 가는 것이다. 손님도 세대가 바뀌었지만 이 골목 식당 가운데는 대를 이어 순댓국을 팔고 족발을 만드는 집도 있으니 오래된 옛 맛을 찾아가보는 것도 괜찮겠다.<br>','02-334-7878',null,null,null,null,null,null,null,null,'불가','불가','화장실:있음
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청와대 앞길','03042','서울특별시 종로구 궁정동',38,127,'문민정부가 들어서면서 개방된 청와대 앞길은 효자동의 효자 삼거리에서 팔판동의 팔판 삼거리에 이르는 길이다. 경복궁 지하철역에서 효자로를 따라 효자 삼거리에 이르면 청와대 사랑채, 분수대, 무궁화 동산, 연무관, 대고각, 영빈관 등이 있다. 청와대 사랑채는 지하 1층, 지상 2층 건물로 1층은 한국문화전시실, 기획전시실, 기념품점, 쉼터(한식홍보관, 카페)로, 2층은 청와대관, 행복누리관으로 구성되어 있다.대고각에는 신문고의옛 얼을 담아 김영삼 대통령에게 기증된 북이 걸려 있다. 연무관은 경호실 요원들의 무술 및 체력단련장이다.1993년 7월에 안가를  헐어내고  조성한 무궁화 동산에는 상징 우물, 자연석 성곽,휴게소 등이 있다.무궁화 동산 바로 뒷쪽으로는 주한 로마교황청 대사관과 칠궁이 있다.청와대 앞길로 들어서면 좌우로 울창한 나무들이 줄지어 서 있어 나무그늘과 아름다운 꽃밭을 감상하면서 산책을 할 수가 있다.  경복궁의 북문인 신무문 맞은편에는 청와대가 있고, 청와대 앞길이 끝나는 곳에는 청와대의 기자회견장인 춘추문이 있다.춘추문에서 경복궁 정문인 건춘문에 이르는 삼청동길에는 국제화랑, 그로리치 화랑, 갤러리 현대 등이 있으며, 효자로 쪽에는 진화랑이 있어 예술작품감상의 기회도 가질 수 있다.<br>','02-120',null,'연중무휴',null,null,null,null,null,null,'없음','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대학로','03087','서울특별시 종로구 대학로 104(동숭동)',38,127,'서울 종로구 종로5가 사거리에서 혜화동 로터리까지 1.1km에 이르는 가로로서 이 일대의 특성을 살려 문화예술의 거리로 개방하면서 『대학로』라는 명칭을 사용한다.마로니에 공원을 중심으로 문예진흥원, 문예회관 등 각종 예술단체와 공연장, 화랑 등 문화시설이 밀집한 대학로는 예술과 문화의 거리로 성장했다.우리나라 연극공연의 중심지이며 크고 작은 극장과 개성 있는 패션, 문화, 맛집들이 즐비한 복합문화지대이다.<br /><br />서울대학교 병원 건너편의 마로니에 공원 주변에는 주말마다 다채로운 거리공연이 펼쳐지고 봄, 여름에는 특색있는 거리축제도 열린다.서울시에서 ''젊음의 거리’로 지정받기도 한 대학로는 다채로운 거리공연이 끊이지 않고 상징적인 조형물이 설치되어 있어 지나는 이의 발걸음을 멈추게 하는 곳이다. 또한 다양한 먹거리로 많은 사람들이 모여드는 서울의 명소로 친근성이 우수하다.<br>','02-2148-1114',null,'연중개방',null,'전연령',null,null,'00:00~24:00',null,'불가','가능','이용가능시설:마로니에공원, 박물관, 공연장 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남산서울타워','04340','서울특별시 용산구 남산공원길 105',38,127,'''남산서울타워''는 효율적인 방송전파 송수신과 한국의 전통미를 살린 관광 전망시설의 기능을 겸비한 국내 최초의 종합전파탑으로 방송문화와 관광산업의 미래를 위해 건립되었다. 세계 유명한 종합 탑들이 그 나라 또는 그 도시의 상징적인 존재가 된 것 처럼 ''남산서울타워'' 역시 지난 40여 년간 대한민국의 대표적인 관광지이자 서울의 상징물 역할을 해왔다.<br>
+<br>''남산서울타워''는 서울 시내 전 지역에서 바라보이는 탑의 높이와 독특한 구조, 형태 등으로 인하여 시민의 관심과 사랑의 대상이 되었고, 내외국인들이 즐겨 찾는 제1의 관광 명소로서의 위치를 확고히 하고 있다. 최근에는 한류 바람을 몰고 온 각종 예능, 드라마의 촬영지로 이름이 높아지면서 내외국인 관광객들이 발길이 끊이지 않는 곳이다.<br>
+ <br>
+  <br> 
+<u>놓치지 말 것<br></u>남산서울타워를 오르는 남산케이블카는 1962년 처음 운행했으며, 50년을 넘겨 운행 중이다. 회현동 승강장에서 남산 꼭대기에 있는 예장동 승강장까지 길이 약 600m, 속도는 평균 초속 3.2m, 편도 운행 시간 3분 남짓이다. 명동역에서 남산케이블카 탑승 건물까지 도보로 7~8분 이동하거나, 명동역 1번 출구 또는 서울역 서울스퀘어 버스 정류장에서 셔틀버스로 남산케이블카 주차장까지 이동할 수 있다. 명동역에서 회현사거리까지 직진한 후 왼쪽으로 올라간 다음, 남산오르미(에스컬레이터)로 케이블카 승강장까지 이동 후 남산케이블카로 남산서울타워까지, 소요 시간은 15~20분이다.<br>','02-3455-9277',null,'연중무휴',null,null,null,null,'평일 : 12:00 ~ 22:00<br />주말 : 11:00 ~ 22:00',null,'가능','불가','입 장 료:* 전망대 - 대인 16,000원 / 소인 12,000원<br />
+* 남산 케이블카<br />
+운행시간 : 10:00~23:00<br />
+운행요금 : 대인왕복 14,000원 / 대인편도 11,000원/ 소인왕복 10,500원 / 소인편도 8,000원
+화장실:있음
+이용가능시설:* N서울타워<br />
+T7 : 엔그릴<br />
+T5 : 전망대, 위니비<br />
+T4 : 전망대, 투썸플레이스<br />
+T3 : 한쿡<br />
+T2 : 더플레이스 다이닝<br />
+T1 : 티켓부스, 엔버거, 엔테라스, 투썸플레이스, 올리브영, 제일제면소, N테디베어샵<br />
+5F : 엔스위트바, 투썸플레이스<br />
+<br />
+* 서울타워플라자<br />
+4F : 게임플라자, 전국 지자체 투어 VR 홍보관<br />
+3F : 방송시설/보안구역<br />
+2F : 153포인츠부대찌개, 퀸센스 주방 선물샵, 부엉이 돈가스<br />
+1F : 스타벅스, 공차, 아딸, GS25<br />
+<br />
+* 남산서울타워 전용 셔틀버스<br />
+- 남산서울타워는 일반 차량 출입이 불가<br />
+※장애인 등록증이 부착되어있는 차량은 출입 가능(복지카드 1~3급)<br />
+※관광협회에 등록된 12인승 이상(여행사)차량 및 관광버스 역시 방문 가능<br />
+※차량 출입시 서울시에 통행료 부담해야 함<br />
+외국어 안내서비스:* 영어, 일어, 중국어 통역가이드 안내서비스<br />
+* 10명 이상 고객님에 한해 선착순 접수<br />
+* 단체관람객 주차안내 (주차관리인 배치)<br />
+* 서울타워 단체관람을 위한 사전답사시 무료입장 및 안내서비스<br />
+* 리플렛, 팜플렛, 지도 제공 (영어, 중국어, 일본어)<br />
+* 한국어, 영어, 일본어, 중국어 통역 서비스인 오디오 가이드 대여. (대여시 3천원의 추가요금 부여됨)
+내국인 예약안내:단체의 경우 20인 이상을 기준으로 최소 3일전 예약해야 하며, 별도의 가이드가 필요한 경우 예약 시 반드시 사전 협의<br />
+※ 20인 이상 단체 문의 및 예약 02-3455-9208, 9210
+한국어 안내서비스:* 리플렛, 팜플렛, 지도 제공<br /> 
+* 단체관람객 주차안내 (주차관리인 배치)<br />
+* 서울타워 단체관람을 위한 사전답사시 무료입장 및 안내서비스
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서서울호수공원','07916','서울특별시 양천구 남부순환로64길 20',38,127,'2009년에 개장한 서서울호수공원은 옛 신월정수장을 공원조성사업을 통해 ''물''과''재생''을 테마로 문을 연 친환경 공원이다. 1959년 처음 문을 연 김포정수장은 1979년 서울시에서 인수하여 하루에 평균12만t의 수돗물을 공급하는 중요한 역할을 하였고, 2003년 ''서울시 정수장 정비 계획''에 의거 가동이 중단되었다. 2006년경 서울의 지역 간 불균형 해소 및 서남권의 대표 테마공원 조성을 통해 지역활성화의 발판을 삼고자 최종적으로 공원을 조성하기로 결정되었다. 부천시와 경계를 이루는 능골산을 건강한 숲으로 복원하고 등산로를 정비하여 여의도공원, 양재 시민의 숲에 버금가는 총 225,368㎡ 의 면적을 가진 서남권 최대 규모의 테마공원으로 몬드리안 정원, 어린이놀이터, 물놀이장, 서서울예술교육센터 등 다양한 볼거리와 휴식공간들이 많다.<br>','서서울호수공원 02-2604-3004','2009-10-26','연중개방','체험안내 <a href="https://www.sfac.or.kr/artspace/artspace/arteducation_main.do" target="_blank" title="새창: 체험안내 ">https://www.sfac.or.kr/artspace/artspace/arteducation_main.do</a>',null,null,null,null,'없음','없음','없음','화장실:있음
+이용가능시설:물놀이장, 재생정원, 100인의 식탁, 열린풀밭, 어린이놀이터, 생태숲탐방로, 열린마당, 약수터, 소리분수, 문화데크광장, 방문자센터, 다목적운동장, 몬드리안정원, 야구장 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북촌한옥마을','03059','서울특별시 종로구 계동길 37(계동)',38,127,'※ <strong>북촌마을 방문 시 지켜야할 ''에티켓'' </strong><br />- 단체관광객 방문시 반드시 가이드 동행<br />- 관광버스 불법주차 금지<br />- 무단 침입, 무단 촬영, 무단 투기, 노상방뇨, 소음 금지<br />- 마을 방문시간 준수<br /><br />예로부터 북촌이라 하여 양반 동네로 알려진 이곳 주택은 모두  조선 시대의 기와집으로서 상류층의 구조 형태를 간직하며 지금까지 보존되어 오고 있다. 원래 이 동네에는 솟을대문이 있는 큰 집 몇 채와 30여 호의 한옥밖에 없었으나, 일제 말기와 6.25 수복 직후 지금의 상태로 늘어났다. 북촌한옥마을은 경복궁과 창덕궁, 종묘의 사이에 위치한 지역으로 서울 600년 역사와 함께해온 우리의 전통 거주 지역이다. 거대한 두 궁궐 사이에 밀접하여 전통한옥군이 위치하고 있으며, 수많은 가지 모양의 골목길을 그대로 보존하고 있어 6백 년 역사도시의 풍경을 극적으로 보여주고 있다. 지금은 전통문화체험관이나 한옥음식점 등으로 활용이 되어 간접적으로나마 조선시대의 분위기를 느낄 수 있는 곳이다.<br /><br />예로부터 원서동, 재동, 계동, 가회동, 인사동으로 구성된 이 지역은  청계천과 종로의 윗 동네라는 이름에서 ‘북촌''이라는 이름으로 불리었으며, 당시로써는 왕실의 고위관직에 있거나 왕족이 거주하는 고급 주거지구로 유명하였다. 곳곳에 아직까지 남아있는 몇 채의 한옥들은 이때의 명성을 그대로 간직하고 있다. 여러 채의 한옥이 지붕처마를 잇대고 벽과 벽을 이웃과 함께 사용하고 있는 풍경은 우리가 잊고 살았던 따뜻한 정과 살아갈 맛을 느끼게 해준다. 북촌 지역을 걷다보면 이어진 처마선의 아름다운만큼이나 골목길의 정겨움을 느낄 수 있다.북촌한옥마을이 지속가능한 관광지가 될 수 있도록 침묵관광을 하도록 주의를 요한다.<br /><br />* 허용시간 : 10:00 ~17:00(주중,토) / 일 : 골목길 쉬는 날<br />* 대상지역 : 북촌로 11길 일대 약 100m 구간<br /><br />※ 침묵관광이란 외부 관광객들의 관광지 방문으로 인해 주민들의 생활권과 환경권이 침해받지 않도록 큰 소리로 떠들지 않고 조용히 여행하는 관광형태를 말한다.<br>','02-2148-4161',null,'(일요일) 골목길 쉬는 날',null,null,null,null,'* 허용시간 : 10:00 ~17:00(주중,토) / 일요일 : 골목길 쉬는 날<br />
+* 대상지역 : 북촌로 11길 일대 약 100m 구간','없음','없음','가능','관광코스안내:도보관광코스(3시간 30분 소요)<br />
+안국역 → 북촌문화센터 → 가회동 11번지 → 한상수자수공방 → 가회민화공방 → 북촌생활사박물관 ''오래된 향기'' → 안국동 윤보선가 → 안국역<br /><br />
+* 예약신청 : 인터넷(dobo.visitseoul.net) 예약 / 관광일 기준 3일전까지 신청
+<br />* 예약확인 : 휴대폰 문자로 전송 및 인터넷을 통한 상세정보 확인<br />
+* 안내언어 : 한국어, 영어, 일본어, 중국어<br />
+입 장 료:무료
+이용가능시설:카페, 공방 및 박물관 등
+외국어 안내서비스:재동초교 관광안내소 02-2148-4160 (영, 일)<br />
+정독도서관 관광안내소 02-2148-4161 (영, 일, 중)
+한국어 안내서비스:해설사(가이드) 안내 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이랜드크루즈 (한강유람선)','07337','서울특별시 영등포구 여의동로 290 노들나루',38,127,'한강 유람선은 1986년 10월 26일, 서울특별시의 중심부를 동서로 가로지르는 유람선을 첫 취항하여 운항을 개시하였다.현재 ㈜이랜드크루즈에서 여의도, 잠실을 중심으로 2개의 터미널을 운영하고 있다. 이랜드크루즈에서는 한강의 아름다운 낮 경치를 관람할 수 있는 스토리크루즈와 야경과 함께 반포대교 달빛무지개분수를 관람할 수 있는 뮤직크루즈, 야경과 감미로운 재즈 공연이 함께하는 달빛크루즈와 같은 상품을 만나볼 수 있다. 이 밖에도 고품격 선상 뷔페 상품인 런치 뷔페크루즈와 디너 뷔페크루즈에서 이랜드크루즈 수석 쉐프의 다양한 호텔식 식사를 즐길 수 있다. (주)이랜드크루즈는 한강이라는 천혜의 도심 속 자원을 문화와 관광이 어우러진 복합적인 테마파크로 개발, 서울을 상징하는 명소로 발전시키고자 하는 의지를 가지고 있다.<br> 또한 한강을 전 세계적인 관광명소로 육성, 발전시키기 위하여 외국인들에게도   친근하고 직접적 의미 전달을 목적으로 운영되고 있다.<br>','02-6291-6900',null,'매주 월요일 정기휴무',null,'전 연령 체험가능',null,null,'매표 : 11:00~21:00 (평일/주말)','63빌딩 앞 한강시민공원 1주차장 (영등포구 여의도동 86)','없음','불가','관광코스안내:스토리 크루즈, 달빛크루즈 : 여의도 - 서강대교 - 여의도<br />
+런치 크루즈 : 여의도 - 성산대교 - 여의도<br />
+뮤직크루즈, 불꽃크루즈, 디너크루즈 : 여의도 - 반포대교 - 여의도<br />
+잠실 스토리 크루즈, 잠실 달빛 크루즈 : 잠실 - 성수대교(상류) - 잠실<br />
+잠실 재즈 크루즈 : 잠실 - 반포대교 - 잠실
+상점정보:1터미널 - 롯데리아, 루버스 카페, 카페루고, CU<br />
+2터미널 - 애슐리 마린,  CU, 미코치킨
+촬영장소:tvN 《김비서가 왜 그럴까》<br />
+MBC every1 《어서와~ 한국은 처음이지?》<br />
+tvN 《서울메이트》<br />
+MBC 드라마《운명처럼 널 사랑해》 , SBS 드라마《별에서 온 그대》, SBS 예능《런닝맨》, MBC 예능《무한도전》, SBS 예능《꽃놀이패》, OCN 드라마《터널》등 촬영
+주차요금:* 기본 30분 2,000원 (10분당 300원) /하루 15,000원<br />
+* 유람선을 이용 시 당일 무료<br />
+※ 주차등록은 일반유람선의 경우 매표소, 뷔페유람선의 경우 뷔페선내에서 가능<br />
+※ 무료 주차 등록이 되었을 경우 무료 출차 가능(영수증 불가)
+화장실:있음
+외국인 예약안내:전화·홈페이지 예약 가능
+내국인 예약안내:전화·홈페이지 예약 가능 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('흥인지문','03119','서울특별시 종로구 종로 288(종로6가)',38,127,'서울 성곽은 옛날 중요한 국가시설이 있는 한성부를 보호하기 위해 만든 도성(都城)으로, 흥인지문은 성곽 8개의 문 가운데 동쪽에 있는 문이다. 흔히 동대문이라고도 부르는데, 조선 태조 5년(1396) 도성 축조때 건립되었으나 단종 원년(1453)에 고쳐 지었고, 지금 있는 문은 고종 6년(1869)에 새로 지은 것이다. 앞면 5칸·옆면 2칸 규모의 2층 건물로, 지붕은 앞면에서 볼 때 사다리꼴모양을 한 우진각 지붕이다. 지붕 처마를 받치기 위해 장식하여 만든 공포가 기둥 위뿐만 아니라 기둥 사이에도 있는 다포 양식인데, 그 형태가 가늘고 약하며 지나치게 장식한 부분이 많아 조선 후기의 특징을 잘 나타내주고 있다. 또한 바깥쪽으로는 성문을 보호하고 튼튼히 지키기 위하여 반원 모양의 옹성(甕城)을 쌓았는데, 이는 적을 공격하기에 합리적으로 계획된 시설이라 할 수 있다.흥인지문은 도성의 8개 성문 중 유일하게 옹성을 갖추고 있으며, 조선 후기 건축 양식을 잘 나타내고 있다.<br /><br />[출처] 문화재청 <br>','02-2148-1842',null,null,null,null,null,null,null,'없음','없음','불가','화장실:관리소직원용 이용 
+한국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('광화문','03045','서울특별시 종로구 사직로 161',38,127,'※ 19_20 한국관광 100선 ※<br /><br />광화문은 경복궁의 남문이며, 궁성의 정문이다. 광화문은 국왕이 드나드는 정문이기도 했지만, 조선의 법궁인 경복궁의 정문이었기 때문에 다른 궁궐의 정문에 비해 그 규모와 격식 면에서도 매우 웅장하고 화려했다. 또한 광화문은 담장 끝 동쪽과 서쪽에 각각 동십자각과 서십자각을 두어 조선의 5대 궁궐 가운데 유일하게 궐문형식을 갖추고 있기도 했다. 광화문은 중층으로 된 문루를 받치는 기단석축에 세 개의 홍예로 이루어져 있는데, 중앙의 홍예로는 왕이, 좌우의 홍예로는 왕세자와 신하들이 출입하도록 하였다. 문루(門樓)에는 종을 걸어 때를 알리는 데 사용하였다. 이처럼 경복궁이 조선왕조의 법궁이라는 점은 광화문을 비롯한 성문의 형태에서도 확인할 수 있다. 다른 궁의 문들은 낮은 단 위에 문을 세우지만 경복궁의 문은 돌로 높은 석축을 쌓고 중앙에 홍예문을 내서 마치 성곽의 문과 같은 모습을 취한다. 광화문은 그 중에서도 홍예문을 셋이나 내서 가장 격식 높은 모습을 보여준다. 광화문이 법궁의 정문이라는 사실을 잘 드러내준다. 경복궁 창건 당시에는 특별한 이름이 없이 궁제에 따라 ''오문(午門)''으로 부르다가, 태조 3년(1395) 정도전에 의해 ''정문(正門)''으로 이름을 바꾸지만, 세종 8년(1426)에 경복궁을 수리하면서 집현전에서 ''광화문(光化門)''이라 이름을 지어 올리면서 지금의 광화문이란 이름을 얻게 되었다.<br /><br />원래 광화문은 조선총독부 건물을 지으면서 궁성의 동문인 건춘문 북쪽으로 옮겼으나 한국전쟁 때 폭격을 맞아 문루가 부서지고 석축은 탄흔 투성이가 되었다. 그런 가운데 광화문이 현재의 모습으로 재건된 것은 1968년 박정희 정권에 이르러서다. 파괴된 문루를 다시 짓고 광화문을 현재의 자리로 옮겨 놓았던 것이다.그러나 새로 재건한 광화문은 철근 콘크리트로 지어졌으며, 재건 당시 광화문의 축을 경복궁의 중심축에 맞춘 것이 아니라 당시 중앙청으로 쓰이던 구 조선총독부청사의 축에 맞추어, 그 결과 3.5도 가량 본래의 축과 어긋나게 틀어지고 말았다. 뿐만 아니라 원래의 광화문 자리에서도 14.5미터 가량 뒤로 물러나 지금의 자리에 서있게 되었다. 이렇게 원형을 잃어버린 광화문을 복원하고자 2006년부터 광화문 철거작업을 시작해 3년 8개월의 복원 공사를 마치고 2010년 8월 15일 완공되었다. 화강암으로 육중한 기단을 만들고 그 위에 이층의 문루를 얹어 멀리 조망하기 좋을 뿐 아니라 궁궐 정문으로서의 위엄을 나타내고 있다. 기단에 있는 3개의 아치형 출입문은 경복궁이 조선의 정궁이라는 위엄을 과시한다. 돌로 만든 기단 위에는 흙을 구워 벽돌처럼 만든 ''전돌''로 나지막한 담을 둘렀는데, 여기를 장식한 팔괘문양은 조선조 궁궐의 특성을 잘 반영하고있다.<br>','02-3700-3900',null,'매주 화요일',null,null,null,null,'11월 ~ 2월: 09:00~17:00(입장마감은 16:00)<br/>
+3월 ~ 5월: 09:00~18:00(입장마감은 17:00)<br/>
+6월 ~ 8월: 09:00~18:30(입장마감은 17:30)<br/>
+9월 ~ 10월: 09:00~18:00(입장마감은 17:00)<br/>
+※ 기관 사정에 따라 관람시간 단축 및 조정이 있을 수 있다.',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 방이동 고분군','05644','서울특별시 송파구 오금로 219(방이동)',38,127,'이곳은 1975년 잠실지구 토지구획정리사업을 하다가 발견된 고분 유적이다. 이곳에서 1976년까지 8기의 고분이 조사되었고 1983년에 복원공사를 시행하여 공원으로 만들었다. 고분이 있는 방이동 일대는 원래 해발 30~50m 가량의 나지막한 구릉이었으나 개발로 인해 지금은 평지가 되었다. 1~6호 무덤은 같은 구릉에 있고 7호와 8호 무덤은 조금 떨어진 구릉에 있다. 모든 무덤의 봉분은 원형이다. 무덤의 내부에는 생토면 위에 다듬은 돌을 이용해 방형 또는, 장방형의 널방을 쌓고 널길을 만들었으나, 세부적으로는 무덤마다 조금씩 차이가 있다. 대부분의 무덤은 도굴 당하였으나, 일부 무덤에서 회청색경질의 굽접시와 항아리 등이 출토되었다. 발굴될 당시 이들 유물을 백제시대의 것으로 추정하여 백제 고분군으로 이름 지었으나, 지금은 통일신라시대의 것으로 보고 있다.<br>','02-2147-2800',null,'연중무휴',null,null,'200명',null,null,'백제고분군 입구 옆 주차장 이용(협소)','불가','불가','입 장 료:무료
+한국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 문묘와 성균관','110-523,1','서울 종로구 성균관로 31',38,127,'유교를 집대성한 성인 공자를 비롯하여 옛 성현들의 위패를 모시고 제사를 드리는 사당이자 국립 최고 교육기관이다. 중국 당(唐)나라 때 공자가 문선왕(文宣王)으로 추봉(追封)됨에 따라 문선왕묘라고 부르다가 원대(元代) 이후로 문묘라고 하였다. 유교 건축인 대성전과 학교 건축인 명륜당으로 구성되어 있으며, 기숙사였던 동, 서재 그리고 존경각, 향관청이 있다. 명륜당 앞쪽에는 천연기념물 제 59호인 은행나무가 있고, 봄.가을에는 공자를 위시한 성현들에게 제사를 지내는 석전을 올리고 있다. 문묘의 동·서 양재를 일명 성균관이라고 한다.<br>','02-760-1472',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 풍납동 토성','05512','서울특별시 송파구 풍납동',38,127,'백제의 시조인 온조가 처음 정착한 곳이 하남 위례성이다. 그러나 현재까지 그 정확한 위치는 알려져 있지 않다. 그러나 풍납토성이나 몽촌토성, 방이동 백제고분군, 석촌동 백제 초기 적석총 등이 백제의 한성시대 흔적임에는 분명하다. 풍납토성은 서쪽으로는 한강이 면해 있고 남쪽으로는 몽촌토성으로 통한 길이 나 있다. 그리고 서북쪽으로는 한강을 사이에 두고 아차산성을 바라보며 동남쪽으로는 멀리 남한산성이 보인다. 한강의 천호대교 남단 옆에 있는 풍납토성은 백제 초기의 유적이다. 원래는 둘레가 4km에 달하는 큰 규모의 토성이었으나 1925년 한강의 대홍수로 일부가 유실되고 현재는 약 2.7km 가량만 남아 있다. 동편에는 출입문 터로 여겨지는 흔적 4곳이 남아 있으며 특히 선사시대부터 삼국시대에 이르는 유적이 출토되어 백제시대 전부터 사람이 살았던 곳임을 알 수 있다. 최근에 활발한 발굴 작업이 이루어져 이곳이 백제 왕성이었다는 견해도 제시되고 있다.','02-2147-2800',null,'연중무휴',null,null,null,null,'상시 개방','주차 가능','불가','없음','화장실:없음
+입 장 료:없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 동관왕묘','03115','서울특별시 종로구 난계로27길 84',38,127,'중국의 고전인 삼국지에 나오는 명장 관우의 사당(보물)으로 정식 명칭은 동관왕묘이다. 조선 선조 34년(1601)에 동묘, 서묘 및 북묘를 세웠으나 지금은 동묘만 남아 있다. 임진왜란 때 왜병을 격퇴함에 있어 관우의 힘이 컸다고하여 명의 신종이 임진왜란 후에 비용과 친필로 쓴 편액을 보내왔으므로, 이에 창건하였는데 그 후 영조 15년(1739)에 중수하였다. 중국 묘사 건축의 영향을 받아 그 평면이나 외관은 우리나라 건축과 비교 할때 매우 색다른 모습을 이루고 있다. 9,315m²의 대지는 흙돌담으로 둘러싸여 있고 각종 정원수와 의자가 있어 시민들의 휴식처 역할을 하고 있다.<br>','02-2148-4167',null,'연중무휴',null,null,null,null,null,null,'없음','불가','화장실:있음
+이용가능시설:벤치, 식수대
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('새남터기념성당','04374','서울특별시 용산구 이촌로 80-8',38,127,'서울역에서 1호선 전철을 타고 용산역을 지나다 보면 말끔하게 단장된 커다란 한옥 기와집이 눈에 들어온다. 한국 천주 교회 창립 200주년 기념의 해인 1984년 공사를 시작해 3년만에 완공한 순교 성지 새남터 기념 성당이다. 새남터는 조선초부터 군사들의 연무장으로 사용되었고 일명 "노들" 또는 "사남기" 라고도 불리웠다. 중죄인의 처형장으로도 사용된 이곳은 사육신의 처형 장소이기도 하다. 1801년의 신유박해를 시작으로 기해박해, 병오박해, 병인박해 등 천주교에 대한 탄압이 있을 때 많은 천주교인들이 여기서 처형당했는데, 이들 중에는 조선인 최초의 신부인 김대건(안드레아), 최초로 한국에 들어왔던 신부인 중국인 주문모 신부, 최초로 한국에 들어왔던 주교인 프랑스의 앵베르 주교등 11명의 성직자와 현석문 외 많은 신자들이 포함되어 있다. 9분의 성인유해가 소성당 제대에 모셔져 있다.','02-716-1791',null,null,null,null,null,null,'기념관 10:00 ~17:00','있음(대형차 주차 불가)','없음','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('올림픽공원','05540','서울특별시 송파구 올림픽로 424(방이동)',38,127,'올림픽공원은 백제 시대의 유적과 현대적 감각의 최신식 경기장이 공존하면서 숲과 잔디밭 또한 훌륭한 여가 공간이다. 88서울올림픽의 유산인 올림픽공원은 도시민의 생활 수준 향상으로 건강 증진에 대한 욕구가 높아지면서 도시 안에 마땅한 휴식공간이 없는 시민들에게 단순한 휴식처 뿐만 아니라 국내 최대의 스포츠 마당으로 부각되고 있다. 올림픽 공원은 체육공간, 문화예술공간, 역사와 교육의 장소, 휴식공간 등 다양한 용도를 갖춘 만능공원으로 자리매김하고 있다. 또한 백제 초기의 유적인 몽촌토성과 몽촌해자(인공호수)를 중심으로 43만평의 대지 위에 조성되어 있고, 세계적인 조각작품들, 기념조형물, 88놀이마당, 산책로, 올림픽스포츠센터 등이 들어서 있다. 이 외에도 각종 유료, 무료 공연이 수시 개최되고 있어 시민들을 위한 다목적 휴식공간의 역할을 담당하고 있다.<br /><br />서울올림픽을 치른 수영장, 체조경기장, SK핸드볼경기장, 우리금융아트홀, 테니스장을 비롯, 벨로드롬등이 있으며, 각종 스포츠교실은 쾌적한 공간에서 저렴한 가격으로 이용할 수 있다. 또한 88서울올림픽대회를 기념하는 유명 작가들의 조각품들이 야외에 전시 돼있어서 문화예술공간으로도 한 몫을 다한다. 올림픽공원 내에 있는 몽촌토성은 백제가 고대국가의 터전을 마련한 한성시대, 즉 3세기-4세기때 만들어진 거성의 하나이다. 하남 위례성으로 추정된다. 사적 제 297호로 지정되어 있다. 올림픽공원은 걸어서 한 바퀴 도는데 약 3시간 이상이 걸릴 정도로 넓은 공간이기 때문에 진입로와 동선을 미리 익혀둬야 관람이 편하고 시간을 절약하려면 평화의 광장 옆에서 호돌이열차(Road Train)를 탑승하면 된다.<br>','02-410-1114','1986년 4월','연중무휴',null,null,null,null,'도보,자전거 출입 - 05:00 ~ 22:00 (광장지역은 24:00)<br />
+차량 출입 - 06:00 ~ 22:00<br />
+※ 시설물 안전과 방문객의 신변보호를 위해 밤 10시 이후에는 평화의 광장, 만남의 광장을 제외한 공원 안쪽으로의 출입을 금함','있음','가능','가능','화장실:있음
+입 장 료:없음
+주차요금:소형 - 10분당 600원<br />
+대형(24인승, 2.5톤 이상) - 12,000원<br />
+※ 경차, 장애인, 저공해, 국가유공자 50% 할인<br />
+※ 다자녀 우대카드 소지자 - 2자녀 25%, 3자녀 50% 할인<br />
+※ 공원 내 대형행사가 개최될 경우 선불제로 전환 및 주차장 운영시간 탄력적 운영 (선불제 전환시 소형 5,000원 / 대형 12,000원)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('인왕산','03028','서울특별시 종로구 인왕산로1길 29(사직동)',38,127,'인왕산(仁王山)에는 태조, 무학대사의 기도터와 사직터널에서 자하문까지 서울 외곽을 쌓았던 성곽이 남아 있다. 많은 사람들이 즐겨 찾는 코스는 사직터널을 출발 기점으로 성곽터와 정상을 지나 부암동으로 하산하는 코스다. 청와대 앞길과 연결되어 있어 여유가 된다면 팔판로, 효자로, 경복궁까지 걸어보는 것도 좋다. 사직공원 뒤에서 본격적인 등산로를 오르는 길목에는 황학정이 있다. 조선시대 궁술을 연습하던 터였지만 일제 때 경희궁 안에 있던 황학정이 이곳으로 옮겨졌다. 숲으로 둘러싸인 너른 터를 조팝꽃 군락이 눈부시게 장식하고 있다.
+정상에 오르면 경복궁을 중심으로 인왕산과 함께 조선시대 한양을 둘러싸고 있던 내사산인 낙산, 남산, 백악산이 펼쳐진다. 정상 아래편에 겸재의‘인왕제색도’에 나오는 매바위와 치마바위가 장관을 이룬다. 사직공원에서 삼거리를 지나 오르는 코스에서는 점심시간을 이용해 산책을 즐기는 직장인들도 자주 보인다. 향긋한 내음이 풍기는 나무 계단을 지나 범바위에 오르면 동쪽으로 청와대 전경이 보인다. 종주 코스로 잡으려면 정상을 지나 홍제동 채석장이나 부암동 하림각, 자하문 방면으로 하산하면 된다.
+
+* 성곽 따라 걷는 옛길
+성곽길은 오르는 길 자체보다도 뒤쪽 전망을 쉬엄쉬엄 돌아보며 걷기 좋은 코스다. 창의문을 지나 성곽 안쪽 길을 따라 쭉 걷다가 돌계단을 오르면 성곽 바깥으로 나가게 된다. 성곽 밖 길은 200m 정도 이어지는데 태조·세종·숙종 때 쌓은 것으로 전해지는 성돌들을 볼 수 있다. 성돌에 낀 거무스름한 이끼가 서울의 오랜 역사를 말해주는 듯하다.
+다시 성 안쪽 길에 들어서서 숨을 몰아쉬며 계단길을 오르면 기다리고 있었다는 듯 다른 풍경이 펼쳐진다. 사방팔방이 탁 트인 전망과 함께 인왕산 정상이 눈에 들어온다.인왕산의 미끈한 바위 표면 위로 탕춘대성이 능선을 따라 이어진다. 임진왜란과 병자호란 뒤 수도를 방어하기 위해 보강된 성곽으로 북한산성과 연결된다. 정상에 올라 삿갓바위 근처에 서면 서울을 둘러싼 산들과 한강 물줄기 사이로 빽빽하게 들어찬 빌딩숲이 보인다. 정상을 지나 청운동으로 내려가는 길의 성곽은 옛 모습을 그대로 간직하고 있어 성벽 원형의 아름다움을 만끽할 수 있다.
+서대문구의 홍제동과 종로구의 무악동, 누상동, 옥인동, 부암동에 걸쳐있는 인왕산(仁王山)은 정상의 높이가 338.2미터이다. 북한산에서 볼 때, 북악산을 중심으로  좌측에 낙산, 우측에 인왕산이 있어 좌청룡 우백호를  이룬다. 특이한 형태의 암석과 암벽의 웅대함이 등산객의 감탄을 자아내며, 정상에 서면 서울  중심가의 빌딩들과 청와대 부근의 녹지가 한 눈에 내려다 보인다.<br>','02-2148-2834',null,null,null,'전연령',null,null,null,null,'없음','없음','이용가능시설:벤치,소공연장 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마로니에공원','03087','서울특별시 종로구 대학로 104',38,127,'마로니에는 지중해 연안이 원산으로 칠엽수과에 딸린 갈잎 큰키나무이다. 이탈리아나 프랑스에서 가로수로 많이 가꾸고 있다. 오뉴월에 흰색 바탕에 붉은 무늬가 있는 종 모양의 꽃이 핀다.서울시민들을 위한 문화예술의 터전으로 문을 연 마로니에공원은 옛 서울대학교 문리대, 법대 자리에 있다. 마로니에 나무가 자라고 있어서 마로니에공원이라는 이름이 붙었다.각종 야외 문화행사장, 조각 전시장, 문예회관 등이 있는 이곳은 서울 시민의 꿈과 낭만이 어린 문화예술의 거리로 독특한 분위기를 자아내고 있다.<br>','02-2148-4158','1982년 04월 29 일','연중무휴',null,null,null,null,'24시','없음','불가','가능','이용가능시설:야외무대, 분수대, 조합놀이대 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼청공원','03050','서울특별시 종로구 북촌로 134-3(삼청동)',38,127,'북악산 동남쪽의 깊은 골짜기에 자리잡고 있다.예로부터 삼청이라는 이름 그대로 물이 맑고 숲이 맑고 사람의 마음 역시 맑은 곳이었다. 공원주변에는 수백년 묵은 소나무가 울창했던 곳이다. 솔숲 위로는 산벚나무가, 아래로는 진달래와 철쭉이 많이 자라 봄이면 천상의 화원을 이루던 곳이다. 삼청터널의 등장으로 인해 삼청공원은 두 동강이가 나 휴식공간이 그만큼 줄어들었다. 삼청공원은 서울 시내 중심부에 위치한 공원으로 교통이 편리한데다 주변에 화랑가, 별미집들이 많아 시민들의 산책 코스로 사랑받고 있다. 호젓한 산책로에 주위 경치가 좋아 많은 사람들의 발길이 오가는 삼청공원에는 고려 충신 정몽주와 그 어머니의 시조비가 있으며, 공원 한복판에는 약수터가 있다. 가을이면 단풍이 아름답다.<br>','02-2148-4150','1940년 03월 12일','연중무휴',null,null,null,null,null,null,'불가','불가','관광코스안내:삼청공원 – 공원산책로 – 말바위 탐방로 – 팥배나무 숲 – 소나무 숲 – 서울성곽 일대
+이용가능시설:삼청동문(암각), 배드민턴장, 테니스장, 어린이 놀이터, 약수터, 다목적 공터 및 매점 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('당고개순교성지','04368','서울특별시 용산구 청파로 139-26',38,127,'당고개 성지는 용산전자상가에서 도보로 불과 5분 거리인 작은 언덕에 있다. 기해박해 때인 1839년 12월 27~28(음)일 이틀 동안 천주교 신자10명이 처형당한 곳이다. 그 중에 아홉명이 천주교 성인으로 기려지고 있는데 최경환 성인(1839년 기해박해시 순교)의 부인이며 우리나라 두번째 사제였던 최양업 신부의 어머니인 이성례 마리아도 포함되어 있었다. 기해박해 당시 이성례 마리아는 마카오로 유학을 가 있던 맏아들 최양업 신부를 제외한  다섯 명의 자식들과 함께 옥에 갇혔다. 부모와 함께 어린 아이를 투옥시키는 일은 국법에도 없었으나 맏아들이 사제가 되기 위해 외국에 유학 가 있던 이 집안에 대해서는 일말의 관용도 베풀어지지 않았다.<br /><br />결국 당시 세살짜리 막내가 빈 젖을 빨다가 옥에서 굶어죽고 말자 이성례 마리아는 나머지 네 명의 자식들을 살리기 위해 일시 배교하고 옥을 나간다. 하지만 곧 아이들이 동냥 나간 사이 스스로 다시 옥으로 돌아와 갇히게 된다. 6세에서 15세까지의 네 형제는 부모들이 갇혀있는 옥에 찾아가면 자신들 때문에 부모들이배교할 것을 우려해 동냥을 해가며 살아간다. 그 후, 어머니가 참수되기 하루 전 어린 형제들은 동냥한 쌀과 돈 몇 푼을 가지고 희광이(사형 집행인)에게 찾아가 자신들의 어머니가 고통을 당하지 않도록, 단칼에 베어줄 것을 부탁하고 이에 감동한 희광이는 밤새 칼을 갈아 그 약속을 지켰다.  이렇게 순교한 이성례 마리아는 일시적이나마 배교한 사실때문에 성인으로 시성되지 못했다. 하지만, 이러한 애절한 사연과 서울 시내를 한눈에 내려다 볼 수 있는 좋은 전망때문에 당고개 성지는 많은 순례객들의 발길이 끊이지 않고 있는 순교성지이다. 주변에 한국형 성당이며 순교 성지인 새남터 성당과 용산가족공원 등이 인접해 있다.<br>','02-711-0933',null,null,null,null,null,null,null,'있음','불가','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성락원(서울)','02823','서울특별시 성북구 선잠로2길 47(성북동)',38,127,'조선 철종 때 이조판서를 지낸 심상응의 별장이었으나, 의친왕 이강(1877∼1955)이 35년간 별궁으로 사용했던 곳이다. 물이 흐르는 경치에 따라 세 개의 공간으로 나눌 수 있는데, 자연 지형으로 앞뜰, 안뜰, 바깥뜰로 나눌 수 있다. 앞뜰은 두 골짜기에서 흘러내린 물줄기가 하나로 합쳐지는 쌍류동천과 안뜰 앞을 막아 아늑하게 감싸 만든 용두가산이 있다. 물줄기 속 암벽에 행서체로 새긴 ‘쌍류동천’이란 글은 성락원의 자맥을 보호하는 뜻도 있다고 한다. 또한 쌍류동천 주위와 용두가산에는 200∼300년 되는 엄나무를 비롯하여 느티나무, 소나무, 참나무, 단풍나무, 다래나무, 말채나무 등이 울창한 숲을 이루어 안뜰과 성락원 바깥을 가려주는 구실을 하고 있다. 안뜰은 영벽지와 폭포가 있으며 바깥뜰은 송석과 연못이 있는 지역이다. 서쪽 아래 지역에 늪이 있고, 북쪽에는 물길을 파서 인공폭포를 만들었다. 늪의 서쪽 암벽에 ‘장빙가(檣氷家)’라고 새긴 글씨는 명필 추사 김정희 선생의 것이다. 자연과 인공이 어우러져 그 아름다움을 맘껏 뽐내고 있는 성락원은 조선시대 서울 도성 밖에 위치한 몇 안되는 별서정원의 하나로 가치가 크다.<br>','02-745-0181',null,null,null,null,null,null,null,null,'없음','없음','관광코스안내:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국회의사당','07233','서울특별시 영등포구 의사당대로 1(여의도동)',38,127,'여의도 면적 80만 평 가운데 의사당 대지 10만 평에 건물면적 2만 4,636평을 차지하는 지하 2층 지상 8층의 석조건물이다. 단일 의사당 건물로는 동양에서 제일 크며, 장차 남북통일이 되고 의회제도가 양원제로 채택 되더라도 불편없이 사용할 수 있도록 배려되었다.6년의 공사 끝에 1975년 8월에 준공되었으며, 현대식 건물에 한국의 전통미를 가미하였다. 의사당을 둘러싸고 있는 24개의 기둥은 국민의 다양한 의견을 뜻하며,  ''돔'' 지붕은 국민의 의견들이 찬반토론을 거쳐 하나의 결론을  내린다는 의회 민주정치의 본질을 상징한다.<br>','02-788-2114',null,null,'- 국회참관안내<br />
+- 국회방청안내<br />
+※  홈페이지 신청안내 참고',null,null,null,null,'국회 참관객 차량은 국회 둔치 주차장 이용','불가','불가','입 장 료:무료
+장애인 편의시설:장애인용화장실, 전용주차구역
+주차요금:국회 둔치 주차장 2시간 무료 (국회의사당 또는 헌정기념관 안내실에서 주차권에 확인도장)
+
+
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북악스카이 팔각정','03010','서울특별시 종로구 북악산로 267(평창동)',38,127,'북악 팔각정은 철따라 그 자체가 다르게 보이고 새롭게 느껴지며 독특한 대자연의 아름다움을 간직한 곳으로, 50만평의 넓고 쾌적한 해발 342m 북악산 위에 한국 전통미를 살린 한옥형 정자로서 천혜의 입지조건을 갖춘 서울 도심속의 관광 명소이다. 한식, 양식, 음료를 즐길 수 있는 공간도 마련되어 있다.','02-725-6602',null,null,null,null,null,null,null,'있음','불가','없음','관광코스안내:* 광화문→창의문길→북악스카이웨이→팔각정(약10㎞)<br>
+* 삼청동→북악골프장→북악스카이웨이→팔각정(약10㎞)<br>
+* 돈암동→아리랑고개→북악스카이웨이→팔각정(약11㎞)
+촬영장소:드라마 ''내 딸 서영이'', ''사랑했나봐'' 촬영지
+이용가능시설:전통마당, 전망공간, 파고라(쉼터), 전망데크, 산책로, 카페, 매점, 팔각정 레스토랑, 망원경 등
+화장실:있음
+입 장 료:없음
+장애인 편의시설:장애인용화장실, 장애인전용주차구역<br>
+1층의 음식점은 경사로로 연결되어 휠체어 사용자도 이용 가능
+주차요금:승용차 - 1회 주차시 10분당 300원<br>
+버스 - 1회 주차시 10분당 900원<br>
+모범납세자 - 100%<br>
+국가유공자, 장애인, 고엽제후유의증환자 - 80% <br> 
+경차, 저공해차량 - 50% <br>
+5.18 민주유공자 - 1시간 면제 후 경과시 50% <br>
+다둥이 행복카드 - 두자녀 30% / 세자녀 이상 50%<br>
+승용차 요일제 차량 - 30% <br>
+65세 이상 종로구민 - 30%
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 용산신학교와 원효로 예수성심성당','04361','서울특별시 용산구 원효로19길 49(원효로4가)',38,127,'용산신학교와 원효로성당은 원래는 가톨릭신학교의 전신인 예수성심신학교(聖心神學校)와 부속 성당건물로 성심수도회와 학교법인 성심학원에서 관리하고 있다. 예수성심신학교는 부엉골(현 경기도 여주시 강천면 부평리)에 있던 것을 1887년 3월에 현 위치로 옮겼다. 이곳 일대는 원래 용강산을 굽어보던 함벽정 터로 이곳에서 성직자들이 참수된 한강가의 새남터와 많은 천주교도들이 피를 흘린 당고개가 가까이 바라보인다 하여 고종 23년(1886) 천주교회에서 구입하였다. 두 건물 모두 프랑스의 외방선교회 소속 코스트(Coste) 신부가 설계하였다.용산신학교 건물은 1891년 5월 6일 공사를 시작하여 1892년 6월 25일 축성식을 올렸다. 건물의 양식은 명동성당의 주교관과 흡사한 조오지안 양식의 벽돌조 건축물인데, 둥근 아치형 창호와 더불어 간결하고 장중하게 치장된 내부구조가 특이하다. 성당 건물은 1899년 6월 9일 착공하여 1902년 4월 14일 축성식을 올렸다. 이 건물의 특이한 점은 지형을 이용하여 전면 일부는 언덕 아래에 3층으로 언덕 위는 단층으로 되게 하여 작은 건물이지만 당당한 외관을 보여주고 있으며, 내부의 천장구성과 장식은 고딕 양식에 가까운 모습을 보여주고 있다.<br>','02-719-2331',null,null,null,null,null,null,null,'주차 가능','없음','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수국사(서울)','03424','서울특별시 은평구 서오릉로23길 8-5',38,127,'서울시 은평구 구산동 314번지에 소재한 대한불교조계종 수국사는 오랜 역사를 가진 고찰이다. 세조 5년(1459) 맏아들 의경대왕이 요절하자, 고양 봉현 능을 건립하고 원찰(願刹)로 삼아 중창한 것이 정인사(正因寺)인데 이 정인사가 바로 수국사의 전신이다. 정인사는 119칸의 호화찬란한 대찰로 광릉의 봉선사와 맞먹을 만한 풍광이 뛰어난 명찰이었다고 한다. 수덕사는 숙종과 인현왕후 능인 명릉의 원찰 기능까지 수행했지만 조선 후기에는 불상만 남긴 채 폐허가 되었는데 광무 4년(1900) 세자이던 순종이 병으로 위독하자 고종의 명으로 월초스님이 기도하여 병이 쾌차, 스님의 소원으로 수국사를 다시 중창하게 되었다. 1907년에는 불상의 개금과 불화 13점 등이 왕실의 발원으로 이루어지게 되는 등 수국사는 서울 근교의 명찰로 이름을 드날리게 되었다.<br><br>이후 6.25동란으로 피해를 입어 건물 대부분이 파괴되었는데 역대 주지스님들이 계속하여 중창을 거듭해오다 1995년에 황금법당으로 중창하여 현재에 이르고 있다. 우리나라에 존재하는 유일한 금으로 칠해진 황금법당은 외9포, 내15포, 108평 규모에 청기와로 된 전통 목조법당이며 법당 안팎을 기와 이외에는100% 순금으로 개금 불사했다. 현재 수국사에는 보물로 지정된 고려 목아미타불좌상(高麗 木阿彌陀佛坐像) 1점과 불화(아미타후불탱, 십육나한탱, 구품탱, 감로탱, 신중탱, 현왕탱) 6점이 남아있다.','02-356-2001','0',null,null,'미취학아동 보호자 동반아래 가능',null,null,null,null,'불가','불가','화장실:있음
+내국인 예약안내:전화/홈페이지 예약가능
+외국어 안내서비스:불가 
+한국어 안내서비스:경내 안내 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북한산국립공원(서울)','02700','서울특별시 성북구 보국문로 262',38,127,'북한산은 1983년 국립공원으로 지정되었으며 총면적(도봉산 포함)은 80.669㎢다. 북한산의 정상은 백운대(835.6m)·인수봉(810.5m)·만경대(799.5m)로 조선시대에는 삼각산(三角山)으로 불리기도 하였다.  이는 최고봉 백운대(白雲臺)와 그 동쪽의 인수봉(仁壽峰), 남쪽의 만경대(萬景臺, 일명 국망봉)의 세 봉우리가 삼각형의 모양을 이루고 있기 때문이다. 이외에도 삼봉산(三峰山, 세봉오리로 이루어진 산), 화산(華山, 꽃이 만발하는 산) 또는 부아악(負兒岳, 어린아이를 등에 업고 있는 모습) 등 역사적으로 여러 가지 이름으로 불리기도 하였다. 북한산으로 불리게 된 것은 조선 숙종때 북한산성을 축성한 뒤부터라고 추정된다.','02-909-0498',null,'※ 기상여건에 따라 통제 가능',null,null,null,null,null,'있음(정릉주차장, 북한산성제1주차장, 북한산성제2주차장 )','불가','불가','입산통제 구간:가을철 등산로 통제구간team_insert;안내 <a title="가을철 등산로 통제구간 검색" href="http://hiking.kworks.co.kr/sub_map/map_user01.aspx" target="_blank">http://hiking.kworks.co.kr/sub_map/map_user01.aspx</a>
+
+
+입산통제 기간:[봄가을철 산불조심기간] <br />
+(산불예방을 위해 한시적으로 등산로 구간통제)<br />
+봄철 3월 2일 ~ 4월 30일 <br />
+가을철 11월 1일 ~ 12월 15일<br />
+-국립공원 11월 15일 ~ 12월 15일(경주,태안해안제외)<br />
+※ 통제기간과 통제구간은 기상여건 등을 감안하여 산별로 일부 조정될 수 있으니 산행 시 사전확인 
+등산로:[탐방코스] <br />
+북한산성코스 : 북한산성탐방지원센터~대서문~보리사~백운대 (편도 3.4km, 2시간 40분 소요)<br />
+대남문코스 : 북한산성탐방지원센터~대서문~중성문~대남문 (편도 5.8km, 3시간 소요)<br />
+사패산코스 : 송추분소-(구)캡소대-회룡사거리-사패산-원각사-사패산입구 (5.5km, 3시간 소요)<br />
+오봉코스 : 송추분소-송추폭포-오봉삼거리-오봉-여성봉-오봉탐방지원센터team_insert; (총6.5km, 3시간 30분 소요)<br />
+우이암코스 : 도봉탐방지원센터-천진사-우이암 (3.0km, 1시간 30분 소요)<br />
+망월사, 포대, 회룡코스 : 원도봉탐방지원센터-덕제샘-망월사-포대능선-회룡사거리-회룡사 (5.5km, 2시간 50분 소요)<br />
+신선대코스 : 도봉탐방지원센터-금강암-도봉대피소-석굴암-신선대 (3.3km, 1시간 40분소요)<br />
+백운대코스 : 백운대탐방지원센터~하루재~백운대피소~백운대 (편도 1.9km, 1시간 30분 소요)<br />
+사모바위 코스 : 구기탐방지원센터~대남문~청수동암문~사모바위(편도 4.3km, 2시간 30분 소요) <br />
+비봉코스 : 비봉탐방지원센터~금선사~비봉 (편도 2.0km, 1시간소요) <br />
+보국문코스 : 정릉탐방지원센터~넓적바위~깔딱고개~보국문 (편도 2.4km, 1시간 20분 소요) <br />
+대동문코스 : 백련공원지킴터~백련사~진달래능선~대동문 (편도 2.7km 1시간 10분 소요)<br />
+소귀천코스 : 소귀천공원지킴터~소귀천계곡~대동문~동장대~용암문~도선사team_insert; (편도 5.1km, 3시간 10분 소요) <br>
+자연휴식년제 구역:국립공원 특별보호구역<br>
+ * 정릉계곡 : 청수폭포하단~수중보~넓적바위, 청수폭포~청수천 30m  상단, 청수폭포하단~정릉매표소team_insert;(17,500㎡) 2026년까지<br>
+ * 인수천(한일교~전경대  경계구역) 15,000㎡ 2026년까지<br>
+* 우이계곡(우이분소 200m하단~구 백운매표소)  8,000㎡ 2026년까지<br>
+* 구기계곡(구기분소~제4휴식처) 10,000㎡ 2026년까지<br>
+*  평창계곡(평창 2매표소~동령폭포위) 4,000㎡ 2026년까지<br>
+* 사기막골계곡 초입 ~ 군부대 입구 교량 28,750㎡ 2027년까지<br>*  송추계곡(송추1철교~송추3월교, 오봉삼거리) 34,200㎡ 2026년까지
+화장실:있음
+이용가능시설:탐방안내소, 탐방지원센터 등
+주차요금:<strong>북한산성 제 1, 2주차장 /team_insert;정릉주차장</strong><br />
+최초 1시간 - 경형 500원 / 중·소형 1,100원 / 대형 2,000원<br />
+1시간 이후 10분당 가산 요금 - 경형 100원 / 중·소형 (성수기 300원, 비수기 250원) / 대형 (성수기 500원, 비수기 400원)<br />
+9시간 이상 주차 - 경형 5,000원 / 중·소형 13,000원 / 대형 20,000원<br />
+※ 당일, 1구역 기준<br>
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 석촌동 고분군','05682','서울특별시 송파구 가락로7길 21(석촌동)',38,127,'이곳의 적석총은 잠실지구 개발사업의 목적으로 발굴 조사되었는데, 파괴가 심하여 전체적인 규모는 확인할 수 없었으나 제3호분은 기원 전후부터 나타나는 고구려 무덤형식인 기단식 적석총이다. 이 무덤은 약간 높은 지형을 평탄하게 정지작업을 하고 밑 테두리에는 매우 크고 긴 돌을 두르고 자연석으로 층단을 이루면서 쌓아 올려 3단으로 되었는데, 옛 고구려지역이었던 만주 통구에 있는 장군총에 버금가는 큰 것으로, 크기는 동서 길이 49.6m, 남북 길이 43.7m, 높이 4m이다. 따라서 이 무덤은 고구려 사람들이 남쪽으로 내려와 한강유역에 백제를 세웠을 때의 초기 권력자의 무덤인 것으로 보인다.
+제4호분은 정방형으로, 3호분과 그 축조 방법이 매우 비슷한 적석총인데 이 에서도 백제 초기의 연질토기 조각들이 많이 출토되었으며, 이 고분 주위에서는 금으로 만든 세환식 귀고리도 한 점 발견되었다. 제5호분은 완전하게 발굴, 조사되지 않아 묘각의 구조와 유물에 관해서는 확실히 알 수 없으나, 대개 가락동 제1·2호분과 같은 구조로 추정된다. 이중 사적으로 지정된 것은 3호와 4호 적석총이다. 백제 시대 초기 무덤으로 추정되는 이 적석총은 백제가 가장 왕성했던 4세기경의 대외관계 혹은 삼국시대의 문화 연구에 매우 귀중한 위치를 차지하고 있는 고분이다. 특히, 고구려의 적성 총과 비교하면 그 규모나 완성도에서 그리 차이가 나지 않음을 알 수 있으므로, 삼국 시대 초기 백제의 성세를 짐작할 수 있다. 동시에 백제의 지배층이 고구려 계통이라는 것도 추측할 수 있다.<br>','송파관광정보센터 02-421-0970',null,'연중개방',null,'전연령',null,null,'00:00~24:00','주차가능','없음','불가','입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 몽촌토성','05540','서울특별시 송파구 올림픽로 424',38,127,'올림픽공원 내 자리해 있는 몽촌토성은 백제의 토성으로 한강 지류를 끼고 있는 이곳의 자연 지형을 이용, 진흙을 다져 쌓아 성벽을 만들었다. 특히 북벽의 단을 이룬 곳에서 목책을 세웠던 흔적이 발견되어 나무울타리로 방비했음을 알 수가 있다. 올림픽공원 내에 있는 ''몽촌토성''은 백제가 고대국가의 터전을 마련한 한성시대, 즉 3~4세기 때 만들어진 거성의 하나이다. 하남 위례성으로 추정된다. 사적으로 지정되어 있다. 남한산성에서 뻗어내린 구릉지를 이용하여 외성과 내성으로 중첩된 구조로 지어진 성이다. 성 안에는 몽촌토성에서 발굴된 백제유물(세발토기, 긴 목 항아리, 계란모양 항아리, 원통형 그릇받침 등 생활용구)이 보존 전시되어 있으며, 움집터와 저장구덩이 등을 발굴 당시 모습 그대로 전시되어 있다.','02-2147-2814',null,'연중무휴',null,null,null,null,'몽촌토성 05:00 ~ 22:00 (차량출입: 06:00 ~ 22:00)<br />
+몽촌역사관 평일/토,일,공휴일 09:00 ~ 18:00','있음(올림픽공원 주차장 중 남3문, 남4문, 회관2문이 가깝다)','가능','없음','입 장 료:무료
+장애인 편의시설:휠체어 대여(평화의광장 앞 공원안내센터), 장애인용화장실, 전용주차구역 
+화장실:있음
+주차요금:* 소형 : 1시간 이내 1,000원 이후 15분당 500원<br />
+* 대형(24인승, 2.5톤 이상) : 12,000원<br />
+※ 경차, 장애인, 저공해, 국가유공자 50% 할인<br />
+※ 다자녀 우대카드 소지자 2자녀 25%, 3자녀 50% 할인<br />
+공원 내 대형행사가 개최될 경우 선불제로 전환 및 주차장 운영시간 탄력적으로 운영<br />
+※ 선불제 전환 일정 올팍소식 게시판에 공지<br />
+※ 선불제 전환 시 소형 5,000원 / 대형 12,000원 정액징수<br />
+※ 선불제 전환전 입차차량은 시간제 요금인 후불제 적용<br />
+※ 출차 후 재입차 시 정상요금 징수<br />
+※ 20분 이내 출차 시 무료
+한국어 안내서비스:가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼천사(서울)','03308','서울특별시 은평구 연서로54길 127(진관동)',38,127,'통일신라시대 원효대사에 의해 창건되었고, 그 규모가 대단히 커서 한때 3000여 대중이 모여 수도 정진하였다고 한다. 임진왜란 때는 서울 지역 승병들의 운집처로 왜병과 혈전을 벌였던 곳이다. 임진왜란 때 소실되었던 것을 진영화상이 중창하고 성운화상에 의해 거듭 중창 복원하였다.경내에 있는 천년고불 마애석불은 고려시대 조성된 것으로 보물로 지정되어 있으며, 세존진신사리 석종탑과 나한사 5층 석탑이 봉안되어 있어 법신제불이 상주방광하는 성지이며, 기도 도량으로 널리 알려져 있다. 삼천사 마애여래입상은 양감을 뚜렷하게 표현하지는 않았지만, 원만한 얼굴 표정과 부드럽게 흘러내린 유려한 옷고름 등에서 고려불화를 연상케 하는 독특한 매력을 보여 주는 고려의 마애불이다.
+현재 융기선을 따라 금분칠을 하여 본래의 모습과 다소 달라졌지만 아직도 사람들의 시선을 끌고 있으며 좌우에 네모난 목조가구의 흔적이 남아있다. 민머리 위에 높은 살상투가 솟아 있고, 풍만하고 둥근 얼굴에는 입가에 미소가 번져 온화한 느낌을 준다. 가슴에는 내의를 묶는 띠매듭이 리본형으로 표현되어 있는데 이러한 띠매듭은 통일신라 후기 상에 많이 보이는 형태이다. 양쪽으로 벌어진 연꽃대좌는 불안정라며 광배는 두 줄의 두광과 한 줄의 신광으로 간략화 되어 있다. 신체의 비례가 자연스럽고 조각수법도  섬세한 편이며 선묘도 유려하여 고려를 대표할 만한 뛰어난 마애불로 알려져 있다.','02-353-3004',null,null,null,null,null,null,null,null,'없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('진관사(서울)','03308','서울특별시 은평구 진관길 73',38,127,'진관사는 동 불암사, 서 진관사, 남 삼막사, 북 승가사와 함께  예로부터 서울 근교의 4대 명찰로 손꼽아 왔다. 진관사(津寬寺)의 연혁은 고려 제 8대 현종(顯宗)원년 서기 1010년에 현종이 진관대사(津寬大師)를 위해서 창건 하였다고 한다. 조선을 건국한 태조 이성계의 명령에 의하여 조종선령(祖宗仙靈)과 순국충열(殉國忠烈), 희생당한 고려 왕씨의 넋을 위로하기 위해 수륙사(水陸社)를 설치하고 춘ㆍ추로 수륙대재(水陸大齋)를 장엄하게 베풀어 왔었다. 세종 때에는 집현전 학사들을 위한 독서당을 진관사에 세우고 성삼문, 신숙주, 박팽년 등과 같은 선비들을 독서하게 했다고 한다. 한국 동란 때 공비소탕의 일환으로 사찰을 잿더미로 만들고 말았다. 1963년 비구니 진관(眞觀)스님이 주지로 부임하여 30여 년간 복원 불사를 하여 지금의 가람으로 일신 중창하였다. 건물로는 대웅전, 명부전, 나한전, 칠성각, 독성각, 나가원, 홍제루, 동정각, 동별당, 요사체 등으로 이루어져 있다. 대웅전에는  본존불인 석가모니불과 협시보살로는 미륵보살과 제화갈화보살을 모셨으며, 명부전은 지장보살과 도명존자, 무독귀왕 십대 대왕을 모셨으며, 나한전은 석가모니불과 미륵보살, 제화갈라보살, 십륙나한상을 보셨다. 북한산 국립공원으로 지정된 만큼 아름다운 자연환경과 문화역사를 자랑하는 진관사는 현대를 살아가는 서울 시민들에게 마음의 평안과  일상에 찌든 때를  말끔히 씻어주는 청량제 역할을 하면서 오늘도 부처님의 자비를 세상에 전하고 있다.<br>','02-359-8410',null,'연중무휴','[템플스테이]<br />
+휴식형(성인, 가족 대상)<br />
+불교문화체험형(성인 대상)<br />
+단체형(성인, 학생 대상)<br />
+* 어린이 템플스테이<br />
+- 일시 : 여름방학, 겨울방학, 특화프로그램 운영시<br />
+- 대상 : 초등학교 1~6학년<br />
+* 청소년 템플스테이<br />
+- 일시 : 여름방학, 겨울방학, 특화프로그램 운영시<br />
+- 대상 : 중고등학생',null,null,null,null,'주차 가능','없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('창덕궁과 후원 [유네스코 세계문화유산]','03072','서울특별시 종로구 율곡로 99(와룡동)',38,127,'창덕궁(사적)은 1405년 경복궁 다음으로 지어진 별궁이었다. 정궁인 경복궁의 동쪽 방면에 있다 해서 ''동궐''이라고도 했다. 금천교가 세워지고(1411) 돈화문이 건립되는가 하면(1412) 조선 제 9대 성종때부터는 여러 임금들이 여기서 지내 본궁역할을 하는 궁궐이 됐다. 임진왜란 때에는 창덕궁은 불에 타고 만다. 선조가 의주로 피난을 가자 이에 화가 난 백성들이 궁궐을 방화한 것이다. 1611년 광해군에 의해 다시 지어진 궁은 자연과 인공의 조화가 잘 이루어져 많은 관광객들이 찾고 있으며 인정전, 대조전, 선정전, 낙선재 등 많은 문화재가 곳곳에 있어 눈길을 끈다. 창덕궁은 1997년 12월 이탈리아 나폴리에서 열린 유네스코(UNESCO) 세계 유산위원회에서 수원 화성과 함께 세계문화유산으로 등록되었다.창덕궁 후원은 태종 때 만들어진 것으로 임금을 비롯한 왕족들이  휴식하던 곳이다. 후원은 북원(北苑), 금원(禁苑)이라고도 불렀으며, 고종 이후 비원(秘苑)으로 불렀다. 낮은 야산과 골짜기에 원래 자연 그대로 모습을 간직한 채  꼭 필요한 곳에만 사람의 손을 댄 우리나라의 으뜸가는 정원이다. 부용정과 부용지, 주합루와 어수문, 영화당, 불로문, 애련정, 연경당 등을  비롯한 수많은 정자와 샘들이 곳곳에 있다. 특히 가을 날 단풍들때와 낙엽질 때가 가장 아름답다고 한다.<br /><br />* 주요 문화재 - 인정전(국보), 돈화문(보물), 인정문(보물),선정전(보물), 희정당(보물), 대조전(보물), 구선원전(보물), 향나무(천연기념물)<br>','창덕궁관리소 02-3668-2300',null,'매주 월요일',null,'전연령',null,null,'[궁궐전각] <br />
+- 2~5월/9~10월 : 09:00~18:00 (입장마감 17:00)<br />
+- 6~8월 : 09:00~18:30 (입장마감 17:30)<br />
+- 11~1월 : 09:00 ~ 17:30 (입장마감 16:30)<br />
+[후원관람]<br />
+- 2월 : 10:00~17:00 (입장마감 15:00)<br>
+- 3~5월 : 10:00~17:30 (입장마감 16:00)<br>
+- 6~8월 : 10:00~17:10 (입장마감 16:00)<br>
+- 9~10월 : 10:00~17:30 (입장마감 16:00)<br>
+- 11월 : 10:00~17:00 (입장마감 15:30)<br>
+- 12~1월 : 10:00~16:30 (입장마감 15:00)<br>
+※후원관람은 제한관람지역으로 해설사와 동행 시에 관람 가능','주차가능','없음','가능','입 장 료:[창덕궁 관람권]<br />
+- 대인(만25세~만64세) : 3,000원 / 단체(10인이상) : 2,400원<br />
+※ 무료관람 대상자 - 창덕궁 홈페이지 참고<br />
+[특별 관람권]<br />
+- 상시관람권(1개월) : 30,000원<br />
+※ 구매일로 부터 1개월간 관람시간내사용 가능 / 사진 1매 제출 / 구입한 고궁만 입장가능<br />
+- 점심시간관람권(12:00~14:00) : 5,000원<br />
+※ 구매일로 부터 3개월간 10회 사용 가능 / 인근 직장인 대상(사원증 지참) / 구입한 고궁만 입장가능<br />
+[후원 관람권]<br />
+- 대인(만19세~만24세) 5,000원 / 대인(만25세~만64세) 8,000원 / 경로(만65세이상) 5,000원<br />
+- 소인(만7세~만18세) 2,500원<br />
+- 단체(성인 유료 10인이상) 7,400원<br/>
+※ 무료관람대상자 : 만 6세 이하 어린이 / 장애인 / 국가유공자
+이용가능시설:홍보관, 매표소, 화장실, 수유실 등
+외국어 안내서비스:* 영어/중국어/일어<br/>
+* 해설 시간 홈페이지 참조<br />
+* 소요시간 : 약 50분<br />
+* 시작장소 : 돈화문 권역 종합 안내도 앞<br />
+※ 개별 자유관람이 가능하며, 무료 안내해설은 인원 제한이 없음
+한국어 안내서비스:* 해설 시간 홈페이지 참조<br />
+* 소요시간 : 약 50분<br />
+* 시작장소 : 돈화문 권역 종합 안내도 앞<br />
+※ 개별 자유관람이 가능하며, 무료 안내해설은 인원 제한이 없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 효창공원','04311','서울특별시 용산구 효창원로 177-18(효창동) 일대',38,127,'효창동과 청파 2동에 자리한 총면적 122,245m²(36,979평)의 효창공원은 유서 깊은 장소로 예전에는 효창원 경내였다. 효창원은 조선 정조의 장자로 세자 책봉까지 받았으나 5세의 어린 나이로 죽은 문효세자의 묘원이다. 묘역이 넓고 송림이 울창했던 이곳에는 정조의 후궁이며 문효세자의 생모이기도 한 의빈 성 씨의 묘, 순조의 후궁인 숙의 박 씨의 묘와 그의 딸인  영온옹주의 묘가 같이 있었으나 지금은 서삼릉 내 의령원 바로 앞에 있다. 효창원이 일반인의 유람지로 허용되기 시작한 때는 일제 때인 1924년 경성부가 효창원의 일부를 공원용지로 책정하면서부터이다. 그러다 정식 공원으로 지정된 것은 1940년 총독부 고시 제208호에 의해서이다. 현재 효창공원에는 일제 때 항일투쟁을 하다 목숨을 바친 윤봉길, 이봉창, 백정기 등 삼의 사 와 백범 김구, 그리고 임시정부 요인인 이동녕, 차이석, 조성환 선생의 유해가 안치되어 있다. 효창운동장 맞은편에 있는 효창공원 정문을 들어서면 동쪽으로 30m 되는 쯤 올라가면 삼의 사묘가 바로 눈에 보인다. 이 삼의사묘터는 이봉창 의사 동상이 들어서 효창공원에 또 다른 역사의 흔적을 보듬게 됐다. 또한 의열사에는 공원 내에 묘역이 있는 이봉창 의사 등 독립운동가 7분의 영정이 모셔져 있다.','02-2199-7608',null,'연중무휴',null,null,null,null,null,'있음','불가','가능','화장실:있음
+이용가능시설:백범기념관, 반공투사위령탑, 이봉창의사 동상, 원효대사 동상, 배드민턴장, 광장, 자연학습장, 어린이놀이터, 매점, 음수대 등
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('63스퀘어','07345','서울특별시 영등포구 63로 36',38,127,'63스퀘어는 대한민국 서울특별시 영등포구의 여의도에 있는 마천루이다. 지상 60층, 지하 3층의 규모이며, 지상높이 249미터 (해발 264미터)이다. 연 면적 16만㎡에 이르는 하늘로 솟아오른 공간에 갖가지 명소들을 안고 있어 서울의 상징적인 관광명소로 손꼽힌다. 서울의 젖줄인 한강이 멀리 광나루부터 행주대교까지 한눈에 내려다보이고  남산과 북악산, 관악산을 마주 바라보고 있다. 또, 서울의 강남은 물론 강북 전역이 한 눈에 들어오고, 특히 저녁 시간 서해로 지는 노을과 강 양쪽을 끼고 이어지는 강변로의 차량 불빛은 63스퀘어의 조망 중 절경으로 꼽는다.','1833-7001','1985년 7월 27일','연중무휴',null,null,null,null,'관람장 10:00 ~ 20:00','있음(약 800여 대 가능)','없음','불가','촬영장소:* 뉴스보도용 사진촬영 다수 진행<br />
+* ''우리결혼했어요'',''시티헌터'',''런닝맨'' 등 다수의 드라마와 예능프로 촬영
+시설이용료:- 63아트 : 어른 15,000원 / 어린이 및 경로 11,000원<br>
+- 아쿠아플라넷63 : 어른 27,000원 / 어린이 및 경로 23,000원<br>
+- 63종합권(아쿠아플라넷63+63아트) : 어른 32,000원 / 어린이 및 경로 28,000원
+주차요금:패키지 구입시 최장 4시간 까지 무료
+화장실:있음
+내국인 예약안내:63 온라인 몰에서 예약 가능 (<a title="새창 : 63스퀘어 온라인 예약페이지로 이동" href="http://www.63mall.co.kr" target="_blank">http://www.63mall.co.kr</a>)
+외국인 예약안내:63 온라인 몰에서 예약 가능 (<a title="새창 : 63스퀘어 온라인 예약페이지로 이동" href="http://www.63mall.co.kr" target="_blank">http://www.63mall.co.kr</a>)
+한국어 안내서비스:가능
+외국어 안내서비스:중국어, 일본어, 영어(매표소 항시 대기)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('사직공원(서울)','03027','서울특별시 종로구 사직로 89(사직동)',38,127,'종로구에는 이름난 공원이 세 개 있다. 탑골공원, 사직공원, 삼청공원 등이 그것이다. 정부종합청사 서쪽, 인왕산 남동쪽 기슭에 있는 총 넓이 188,710㎡의 사직공원은 조선 태조 이성계가 1395년에 종묘와 함께 맨 처음 만든 사직단(사적)을 한복판에 두고 이루어진 공원이다. 사직이라는 말의 뜻을 보면 ''사''는 땅의 신이며 ''직''은 오곡의 신으로 이들에게 제사를 올려 풍년을 기원했던 곳이 사직단이다. 어린이 놀이터, 율곡 이이 선생과 신사임당의 동상, 활터(황학정), 시립어린이도서관 등이 자리잡고 있으며, 단군성전, 종로도서관 등이 인접해 있다. 사직공원 옆의 인왕산 길을 따라 5분 정도 걸어 올라가면 인왕산 등산로가 나온다.','02-2148-4149','1940년 03월 12일','연중개방',null,'전연령',null,null,'00:00~24:00',null,'없음','불가','화장실:있음
+이용가능시설:사직단, 단군성전, 황학정, 어린이도서관, 종로시립도서관, 수영장
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('여의도공원','07243','서울특별시 영등포구 여의공원로 68 여의도공원관리사무소',38,127,'뉴욕에 센트럴파크, 런던에 하이드파크가 있다면 서울에는 여의도공원이 있다. 27년간 검은 아스팔트로 뒤덮여 있던 여의도 광장이 숲과 잔디, 물이 어우러진 도심공원으로 새롭게 태어났다. 1997년 4월 10일 공원화를 위한 첫삽이 떠올려진 이후 1998년 10월 31일부터 부분적으로 공개되었고 1999년 2월 완전히 개장되었다. 여의도공원은 도심에서 쉽게 자연을 접할 수 있는 녹색공간으로 어린이에서 노인에 이르기까지 모든 시민들이 여가와 휴식, 산책과 운동뿐만 아니라 각종 문화행사를 즐길 수 있는 장소이다.<br>','02-761-4079',null,'연중개방',null,null,null,null,'24시간','없음','없음','불가','화장실:있음
+입 장 료:무료
+이용가능시설:생태연못, 사모정, 지당, 팔각정, 세종대왕동상, 야외무대, 잔디마당, 태극기 게양대, 지압보도, 자전거 도로, 산책로 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('쌈지길','03146','서울특별시 종로구 인사동길 44',38,127,'골목마다 이야기를 담고있는 정감 있는 서울의 인사동에 약 500m의 새로운 길이 만들어졌다. 2004년 12월 18일 문을 연 team_insert;쌈지길team_insert;은  공예품전문  쇼핑몰로서 “인사동 속의 새로운 인사동”으로 관광명소가 되고 있다.한국의 인간문화재가 만든 최고급의 전통공예품과 현대공예작품, 그리고 한국의 멋이 풍기는 디자인 제품들을 쌈지길에서 모두 만나볼 수 있다. 또한 대표적인 한국 음식인 ‘전주비빔밥’, ‘불고기’, ‘빈대떡’과 한국의  전통차도 맛볼 수 있다.<br>','02-736-0088',null,'설날/추석 당일',null,null,null,null,'10:30~20:30','없음','불가','불가','화장실:있음
+이용가능시설:디자이너 아트상품, 먹거리마당, 전통작가 공예상품점, 하늘정원, 식당, 찻집, 갤러리, 체험공방 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('조계사(서울)','03144','서울특별시 종로구 우정국로 55',38,127,'조계사는 대한불교 직할교구 본사로서 조계종 총무원, 중앙종회 등이 자리하고 있는 한국 불교의 중심 사찰이다. 원래 고려 말(14C말엽) 현 수송공원(전 중동고등학교 위치)에 창건된 사찰로서 화재로 소실(연대미상)되었다가 1910년 한용운, 이희광스님 등에 의해 각황사란 이름으로 중창되었다. 그 뒤 태고사로 개칭되어 1936년 한국 불교의 최고 기관으로서의 역할을 수행하다가 1954년 일제의 잔재를 몰아내려는 불교정화운동이 일어난 후 지금의 조계사로 바뀌었다.조계산은 중국 선불교의 육대 조사인 혜능대사 (638-713)께서 주석하셨던 산의 이름이다. 육조 혜능대사는 여러 선사 가운데에서도 특히 존경받는 분으로 그 일생과 가르침은 끊임없이 연구되어 수행의 지표가 되고 있다. 오늘날 조계사는 한국불교와 그 대표 종파인 조계종의 주요 사원으로서 역할을 수행하고 있다. 조계사 법당은 불교행사의 중심 장소로서 거의 일년 내내 법문이나 염불, 강좌, 또는 제사라든가 그 밖의 의식들이 거행되고 있다. 조계사 법당 뒤에 자리한 건물은 조계종 총무원으로서, 조계종단 전체를 관할하는 행정기관인 만큼 다양한 행사와 활동으로 분주하다.<br /><br />1층의 불교회관은 전시회나 각종 행사장소로 이용되고 있으며, 이 건물 안에 자리한 불교신문사에서는 주간으로 불교 신문을 발행하고 있다. 법당 앞에는 1930년에 조성된 7층석탑이 있다. 석탑 안에는 부처님의 사리가 봉안되어 있는데, 이 사리는 스리랑카의 달마바라 스님이 1914년 한국에 모셔온 것이다. 이 석탑 양편에는 석등이 자리하고 있으며 법당을 바라보면서 왼편으로 종각이 보인다. 종각에는 큰북과 범종, 운판과 목어가 있어 아침 저녁 예불 때마다 울린다. 이는 비단 사 람들 뿐만 아니라 부처님의 깨달음의 말씀을 듣고자 하는 모든 중생들을 위한 것인데 큰북은 네발 달린 짐승을, 범종은 타락하거나 지옥의 고통을 받는 이들을, 운판은 하늘의 날짐승을, 목어는 물에 사는 짐승을 제도하기 위한 것이다.<br /><br />종각 옆에는 1991년 말에 완공된 제 1문화교육관이 있다. 이 곳 문화교육관에서는 대체로 기도나  법회를 중심으로 활동을 해온 기존의 사원기능을 보다 확대하여 결혼식이나 세미나, 강연회, 연극공연, 음악제, 전시회와 같은 여러 문화행사가 열린다. 조계사 마당에는 오백 년이 된 백송 한 그루가 있다. 높이 12m, 둘레 1.67m로서 천연기념물 지정되어 있다. 또한 법당 정면에는 사백년된 24m 높이의 회화나무가 있어 우아한 자태를 뽐내고 있다. 제 2문화교육관에 위치한 조계사 교화사무국은 한국 사찰 중에서 유일하게 본사에만 구성되어 있는 불법홍포 전담기구로서 2년제 불교대학을 운영하며  부설로서 초심자를 위한 기초교리 강좌, 경전연구강원, 다양한 취미생활을 위한 문화강좌 등의 교육업무를 관장하고 있고 매월 2회 조계 사보(신문)를 발간, 신도 및 일반불자들에게 불교계 소식과 불법을 전파하고 있으며, 특시 사찰관리 및 업무 전산화를 위해 전산실을 운영하고 있다.<br>','02-768-8600',null,'연중개방',null,null,null,null,null,'있음 (주차공간 협소함으로 가능한 대중교통 이용 바람)','없음','불가','화장실:있음
+주차요금:[조계사 경내 주차안내]<br />
+10분당 1,000원 <br />
+조계사 신도에 한하여 할인쿠폰 판매 : 1시간 1,000원 <br />
+* 할인시간은 최대 3시간까지 이며, 3시간초과 시 10분당 1,000원 부과 <br />
+* 조계종스님 / 장애인 / 국가유공자 차량은 신도와 동일하게 적용<br />
+* 조계사 자원봉사자는 최대 5시간까지 할인쿠폰 적용<br />
+<br />
+[조계사 주변 유료 주차장]<br />
+- 서인사 마당 공영주차장 : 10분당 800원<br />- 조계종 총무원 주차장 : 1시간에 3,000원 (30분에 1,500원 추가)
+관 람 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울숲','04770','서울특별시 성동구 뚝섬로 273(성수동1가)',38,127,'2005년 6월 18일 "서울숲" 개원 이전까지는 뚝섬은 생성과 변천을 거듭해 오면서 임금의 사냥터, 군검열장 등으로, 최초의 상수원수원지로, 골프장으로, 경마장, 체육공원 등으로 활용되어 왔다.현재 "서울숲"은 18만 평 규모의 5개 테마공원으로서, 동북부 주민은 물론, 1,100만 서울시민에게 환경친화적인 대규모 휴식 공간으로 탈바꿈하였는 바, 영국의 하이드파크(Hyde Park), 뉴욕의 센트럴파크(Central Park)와 같이 서울의 "서울숲"이 자리메김 될 것이다.<br /><br />* 서울숲 광장<br />1) 서울숲 중앙에 위치<br />2) 서울숲광장, 뚝섬 가족마당, 장식화단, 방문자센터, 스케이트파크, 야외무대, 수변휴게실(레스토랑), 숲속의 빈터, 숲속놀이터, 물놀이터 등으로 구성<br /><br />* 뚝섬생태숲 (165,000㎡)<br />1) 과거 한강물이 흘렀던 곳<br />2) 한강과 중랑천을 연계하는 자연생태숲으로 재현 (야생동물의 서식 공간)<br />3) 야생동물 방사 - 8종 114수(꽃사슴 40, 고라니 10, 다람쥐 30, 다마사슴 8마리) 등<br />4) 연못 - 원앙 6, 청둥오리 8, 흰뺨검둥오리 8, 쇠물닭 4마리<br />5) 야생동물을 관찰할 수 있도록 보행가교 설치<br /><br />* 자연체험학습장 (85,000㎡)<br />1) 구 뚝섬정수장 구조물을 재활용<br />2) 곤충 식물원, 야생초화원, 테마초화원과 이벤트마당, 지킴이숲 등으로 조성<br /><br />* 습지생태원 (70,000㎡)<br />1) 유수지의 기존 자연환경을 활용<br />2) 습지생태관리소, 환경놀이터, 야외자연교실, 조류관찰대, 습지초화원, 정수식물원 등<br /><br />* 한강공원 (33,000㎡)<br />1) 공원의 남서측 한강변에 위치<br />2) 한강·중랑천 합류부의 자연호안, 수변공원, 선착장, 휴게공간 등<br>','02-460-2905','2005년 6월 18일','연중무휴 (일부 시설 월요일 휴관)',null,'전연령',null,null,'* 생태숲(사슴우리, 보행가교) - 05:30~21:30 (생태보전구역)<br />
+* 곤충식물원 - 10:00~17:00 (월요일 휴관), 동절기(11월 ~ 4월) 11:00 ~ 16:00 단축운영 <br />
+* 나비정원 - 10:00~17:00(5~10월, 월요일 휴관)<br />
+※ 휴관기(11~4월) 곤충식물원 2층에서 운영<br />
+* 바닥분수 가동시간 (5~9월 가동 / 월요일 정기점검)<br />
+- 5~6,9월 : 13시, 14시, 15시, 16시 30분씩 총 4회<br />
+- 7~8월 : 12시, 13시, 14시, 15시, 16시 30분씩 총 5회<br />
+* 방문자센터 (안내소, 서울숲이야기, 수유실 운영) - 10:00~18:00 / 동절기(11월~2월) 10:00~17:00','주차가능','가능','가능','화장실:있음
+이용가능시설:생태숲, 사슴우리, 곤충식물원, 나비정원, 바닥분수, 숲속놀이터 등
+입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('길상사(서울)','02839','서울특별시 성북구 선잠로5길 68(성북동)',38,127,'서울 성북동 중턱에 위치한 길상사는 예전 대원각 자리에 세워진 사찰로, 대원각 주인이였던 길상화 김영한님에게 당시 시가 1000억원이 넘던 대지와 건물을 시주 받아 1997년에 개원하였다. 역사는 짧지만 서울 도심권에 위치하여 내국인을 비롯한 외국인 관광객들이 쉽게 들러볼 수 있는 곳이며, 사찰체험, 불도체험, 수련회 등의 프로그램을 마련하여 도심문화공간의 역할도 수행하고 있다. 길상사에는 대중들의 정진 수행공간인 ‘길상선원’과 ‘침묵의 집’이 있다. 길상선원은 일반인들을 위한 상설시민선방으로 방부가 허락된 사람들만 이용이 가능하며, 침묵의 집은 참선은 물론 음악을 통한 명상 등을 자유롭게, 개인적으로 정진할 수 있는 공간으로 누구나 이용이 가능하다.<br /><br />무소유, 영혼의 모음, 말과 침묵, 물소리바람소리, 산에는 꽃이 피네, 오두막 편지 등을 저술하신 법정스님이 계신 곳으로도 유명하다. 파리에 길상사 분원이 있다. 또한 1997년 세워진 길상사는 역사는 짧지만 개원법회가 있던 날, 김수환 추기경이 개원 축사를 하였고, 2005년 5월 15일 부처님 오신날에는 김수환 추기경과 수녀님들을 초대하여 ‘길상음악회’를 통해 불교와 천주교의 종교를 뛰어넘은 만남을 갖기도 하였다. 또한 천주교 신자인 최종태 교수가 직접 조각한 관세음보살상과 기독교 신자인 영안모자 백성학 회장이 기증한 7층 석탑을 보유하고 있어 종교 화합의 상징적 공간이기도 하다.<br>','02-3672-5945',null,'연중무휴',null,null,null,null,null,'있음(단, 주차장이 혼잡하니 되도록이면 대중교통 이용)','없음','없음','화장실:있음
+한국어 안내서비스:가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('묘각사(서울)','03112','서울특별시 종로구 종로63가길 31(숭인동)',38,127,'묘각사는 서울시 종로구 숭인동 낙산 동쪽에 있는 사찰로서 대한불교 관음종 총본산이다. 1930년 5월에 태허 홍선 대종사가 창건하였고, 그 뒤 두 차례의 증축을 거쳐서 오늘에 이르고 있다. 창건 이래 현재까지 ''법화경'' 을 중심으로 수행과 대중 불교 운동을 지향하는 법화신앙의 중심사찰로, 현 위치에 절을 세우면 서울이 편안하고 시민생활에 안정을 가져온다는 풍수지리설에 의해 터를 잡았다고 전하고 있다. 현재 묘각사에는 대광명전과 천수관음이 봉안된 원통보전, 마애관세음보살, 석굴암, 산신당, 낙가선원이 보존되어 있으며,  법당의 본존불은 청동불로서 합장을 한 특이한 모습이 인상적이다. 도심속에 위치하여 교통이 편리한 관계로 많은 관광객들이 찾고 있으며, 명상 및 참선 프로그램을 중점으로 한 사찰의 일상을 체험할 수 있는 산사체험 프로그램을 운영하고 있다.<br>','02-763-3345',null,'연중무휴',null,null,null,null,null,'주차 가능','없음','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신트리공원(농촌체험,자연학습장)','08106','서울특별시 양천구 신정동(신정동)',38,127,'신트리공원은 약16,500㎡ 규모로 목동신시가지아파트 10,11,12단지에 둘러싸여 주민들의 편안한 휴식처 역할을 하고 있으며, 가을이면 아담한 사이즈의 농에 황금 벼이삭을 만날 수 있는 도심 속의 농촌이다. 신트리공원 농촌체험학습장에서는 어린이.일반주민,자원봉사자들이 참여해 5월에 모내기를 하고 10월쯤 벼를 수확한다. 또한 야생화, 농작물, 허브식물원, 장미원, 덩굴식물 등이 심어진 자연학습장에서는 다양한 식물을 만나볼 수 있다.<br>','양천구 공원녹지과 02-2620-3584',null,null,null,null,null,null,null,null,'없음','없음','관광코스안내:7코스: 정랑고개-장군정-신트리공원-해누리타운-희망장난감도서관-양천나눔누리센터
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍지문 및 탕춘대성','03015','서울특별시 종로구 홍지동',38,127,'임진왜란 및 병자호란 이후 수도 방위를 위하여 1719년에 완성한 성곽 서울 도성과 북한산성을 연결하기 위해 쌓은 것이다.1715년(숙종 41)에 서울의 도성과 북한산성의 방어시설을 보완하기 위해 홍지문(弘智門), 오간수문(五間水門),  탕춘대성(蕩春臺城)을 건립하였다. 홍지문은 서울의 북서쪽 방어를 위한 탕춘대성의 출입문으로 한북문(漢北門)이라고도하며 홍지문에 연결된 탕춘대성은 서쪽에 있어서 서성(西城)이라고도 한다. 원래 탕춘대성이 있는 세검정 일대는 삼국시대부터 한산주(漢山州)로서 군사상 중요한지역이었다.  탕춘대성은 인왕산 정상의 서울 성곽에서부터 홍지문을 거쳐 수리봉까지 이어진 4km 정도이다.<br /><br />* 탕춘대성<br /><br />탕춘대성은 도성·북한산성을 연결하는 성으로, 인왕산 동북쪽에서 시작하여 북쪽을 향해 능선을 따라 내려가다가 모래내를 지나 삼각산 서남쪽 비봉아래까지 연결되어 있었다. 이 성은 완공되지 못한 상태로 남아 있으니,  동쪽부분인 북한산성의 보현봉에서 형제봉을 지나 북악터널 위인 보토현을 거쳐 구준봉 서쪽으로 서울성곽과 이어지는 부분은 성이 이루어지지  않았다. 이 성의 명칭을 탕춘대성이라 한 것은 현재 세검정이 있는 동으로 약 100 여m가 되는 산봉우리에 연산군의 놀이터였던 탕춘대가  있었으므로 그 이름을 딴 것이다. 또한, 도성의 서쪽에 있다 하여 서성이라 하였으며,  겹성으로도 불려졌다. 탕춘대성 능선길은 완만하며 쉽게 오를 수 있는 오솔길로 등산을 겸한  역사탐방로가 된다. 탕춘대성에 오르려면 세검정 상명대학교와 구기터널·홍은동에서 시작하면 성관에 쉽게 접근할 수 있다.  탕춘대성은 홍지문·오간대수문을 경계로 크게 두 지형으로 나눈다. 홍제천을 경계로 남서쪽은 인왕산의 서울성곽에서 북쪽으로 갈려나 온 산줄기를 따라 축조되어 있고, 북동쪽은 북한산국립공원  탕춘대 능선을 따라 해발 527.5m 의 비봉을 향해 뻗어 있다. 인왕산지역은 서울 성곽에서 갈라진 지점으로부터 급경사를 타고 내려오는 지형으로,  솔밭 우거진 능선길에 토루가 형성되어 있다. 토루가 북쪽으로 이어지면서 성 바깥쪽으로 돌출된 암반 능선지대를 만난다.<br /><br />* 홍지문<br /><br />홍지문은 숙종이 친필로 ''弘智門(홍지문)''이라 편액을 써서 문루에 달았는데,1921년에 주저앉아 방치되었던 것을 1977년 7월에 서울특별시 도성복원위원회에서 홍지문과 오간대수문, 그리고 주변 성곽 280m를 포함하여 복원하였다. 이때 홍지문 현판은 박정희 대통령의 글씨로 새겨졌다. 홍지문은 홍예형태의 육축 위에 정면 3칸 측면2칸(9.38m X 4.02m)의 우진각지붕을 한 단층 문루가 있으며, 문루좌우에는 협문을 내고 전돌로 여장을 둘렸다.  육축의 앞뒤로 홍예에 철엽을 씌운 문비를 마련하고, 육축내부 좌우측에 성으로 오를수 있는 계단을 두었다.홍지문은 한성의 북쪽에 있다하여 ''한북문''이라고도 하였다. 1999년에 성문의 단청과문비를 비롯하여 문루 좌우  협문을 보수하였다. 상명대 앞에서 내리면 홍지문으로 향하는  진입로로 들어갈 수 있다. 옆으로 흐르는 시내가 걸음을 재촉한다. 맑은 물과 깨끗한 환경이 잘 보존되어 있다면 홍지문과  그  계곡이 더욱 빛을 발할 것이다.  홍지문은 산으로 연결되는 성, 즉 탕춘대성과 이어져있다. 급격히 산으로 오르는 도성은 아직도 고성의 면모를 간직하고 있다.<br>','02-2148-1842',null,'연중무휴',null,null,null,null,'상시 개방',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('탑골공원','03140','서울특별시 종로구 종로 99',38,127,'서울 최초의 근대 공원이다. 조선 세조 13년에 원각사로 건립하였던 것을 고종 34년인 1897년 도지부 고문인 영국인 브라운에 의해 공원으로 조성되어 1920년에 공원으로 개원하였다. 1919년 3·1 운동의 발상지로 처음으로 독립 선언문을 낭독하고 독립만세를 외친, 우리 민족의 독립 정신이 살아 숨 쉬는 유서 깊은 곳이다. 1992년 5월 28일 공원 명칭을 파고다 공원에서 탑골공원으로 개정하여 오늘에 이르고 있다. 주요 시설로는 독립운동 봉화에 불을 댕겼던 팔각정을 중심으로 국보 원각사지 10층 석탑, 보물 원각사비 등의 문화재와 3·1 운동 기념탑, 3·1 운동 벽화, 의암 손병희 선생의 동상, 한용운 선생 기념비 등이 있다. 탑골공원은 광무 1년(1897) 총세무사 영국인 브라운의 건의에 따라 우리나라에서는 처음으로 꾸며진 현대식 공원이며, 1919년 3·1운동 당시 시내 청년 학도와 애국시민이 이곳 파고다 공원에 모여 학생 대표의 독립선언문 낭독에 이어 대한독립만세를 외치고 시위를 벌였던 곳으로 유명하다.<br>','02-731-0534',null,null,null,null,null,null,null,'없음','불가','없음','입 장 료:무료
+화장실:있음
+이용가능시설:[주요시설] 원각사지 10층석탑, 팔각정, 3.1운동기념탑, 손병희선생 동상, 한용운선생 기념비, 우물, 편의시설 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('최순우 옛집','02880','서울특별시 성북구 성북로15길 9(성북동)',38,127,'최순우 옛집은 우리 문화의 아름다움을 찾고 알린 혜곡 최순우(미술사학자, 前 국립중앙박물관장, 1916~1984) 선생이 1976년부터 1984년 작고하실 때까지 사시던 집이다. 1930년대 근대 한옥인 기념관은 시민들의 성금으로 매입하여 보전된 내셔널트러스트 시민문화유산 제1호(등록문화재)로 선생의 뜻을 기리기 위해 기념관으로 운영하고 있다.','02-3675-3401~2',null,'일요일, 월요일, 추석 당일, 동절기(12~3월)',null,null,null,null,'10:00 ~ 16:00 *행사 별 상이하므로 상세 내용 홈페이지 참고 <br/>
+* 단체 20인 이상 관람 시는 사전예약',null,'불가','불가','관 람 료:무료
+화장실:있음
+이용가능시설:유품전시관
+외국어 안내서비스:외국어 안내 자료 제공
+내국인 예약안내:전화 예약 가능(15인 이상 단체, 방문 1주일 전까지)
+한국어 안내서비스:상시
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('만해한용운심우장','02879','서울특별시 성북구 성북로29길 24(성북동)',38,127,'이 집은 3.1운동 대 민족대표 33인 중 한 분이자 님의 침묵의 시인인 만해 한용운 선생이 1933년부터 1944년까지 살았던 곳이다. 동쪽으로 난 대문을 들어가면 북쪽으로 향한 기와집인 심우장과 양옥의 관리사 그리고 만해가 직접 심었다는 향나무 등이 있다. 심우장은 전체 규모가 5칸에 불과한 작은 집으로, 이곳에는 가운데 대칭을 중심으로 왼쪽에 온돌방, 오른쪽에 부엌이 있다. 부엌 뒤로는 식사 준비는 하는 공간인 천마루방이 있다. 한용운의 서재였던 온돌방에는 심우장이라는 현관이 걸려있는데, 이는 근대의 대표적인 서화가인 위창 오세창이 쓴 것이다. 이 이름은 깨우침을 찾아 수행하는 과정을 소를 찾는 일에 비유한 불교 설화에서 따온 것이다.
+심우장이 있는 성북동 일대는 1930년대 서울이 확장되면서 주거지로 개발되었는데, 이 집은 당시의 여느 집과는 다르게 검소하고 소박한 구성을 보여준다. 한용운은 조선의 불교를 개혁하려고 했던 승려이자 조국의 독립에 힘쓴 독립운동가이며 근대 문학에 큰 업적을 남긴 시인이었다. 한용운이 만년을 보낸 심우장은 그의 이 같은 면모를 살필 수 있는 역사의 현장이다.<br>','성북구 문화체육과 02-2241-2652',null,'연중무휴',null,'전연령',null,null,'09:00~18:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('반공순국용사 위령탑','07319','서울특별시 영등포구 신길1동 20-4(신길동)',38,127,'1945년 8월 15일 조국광복 이후 좌우의 충돌에 의한 혈전과 1950년 6월 25일 북한의 기습남침으로 조국의 운명이 누란의 위기에 처했을 때 영등포구 관내 대동청년단, 대한청년단, 대한노총, 반공연맹, 민보단 서북청년회 등 애국우익 단체소속 동지들과 경찰관, 소방관, 학생을 비롯한 많은 애국동지들이 구국의 일념으로 멸공전선에서 싸우다가 순국 산화한 이재호 등 134위의 호국용사들을 추모하기 위해 건립하였다.신길역 옆의 여의도 샛강을 지나는 노들길변에 위치해 있으며, 매년 6월 순국용사들의 숭고한 뜻과 희생을 기리는 위령제를 지내고 있다.<br /><br />* 규격 - 탑높이 약 15m<br />* 건립자 - 영등포구 재향군인회, 반공순국용사위령탑 건립위원회(1978.06.25. 건립)<br>','1577-0606',null,null,null,null,null,null,null,null,'없음','없음','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울학도병참전기념비','04353','서울특별시 용산구 두텁바위로 60(용산동2가)',38,127,'1950년 9월 28일 국군이 서울을 탈환하고 북진할 때, 국군은 포병으로 참전을 자원한 학도의용병들을 용산고등학교에 집결하도록 하였다. 수많은 학생들 중에서 341명이 선발되어 10월 20일 서울을 출발, 다음날 21일 평양에 도착하여 육군 제17사단 18포병 대대에 배속되었다. 그 이후 1953년 7월 23일 휴전 때까지 장교 임관하거나 기간요원으로 전선에서 활약하였고 이들 중 112명이 전사ㆍ실종되었다. 순국학도탑은 용산고등학교 학생 80명이 포병으로 참전한 것 이외에도 다른 군부대에 많은 학우들이 참전하여 꽃다운 젊음을 조국에 바친 넋을 기리기 위하여 1956년 10월 23일에 용산고등학교에서 건립하였다. 서울학도병참전기념비는 ''조국과 자유민주주의''를 수호하기 위하여 참전한 학도 의용병들의 숭고한 희생정신을 후세에 전하기 위해 참전 55주년을 기념하여 2005년 10월 20일에 서울학도포병동지회에서 건립하였다.서울학도포병동지회와 용상고등학교, 용산고등학교총동창회 주관으로 매년 6월과 10월에 학도의용병들의 숭고한 나라사랑 정신을 기리는 기념식을 개최하고 있다.<br /><br />* 규격 - 가로 1.6m, 세로 2m<br>','1577-0606',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('윌리엄해밀턴쇼 동상','03459','서울특별시 은평구 응암로 376(녹번동) 부근',38,127,'우리나라의 해군 및 해병대 창설에 크게 공헌한 미 해군대위 서위렴2세(William Hamilton Shaw)의 숭고한 한국사랑과 거룩한 희생을 추모하기 위하여 건립하였다. 서위렴2세는 6.25 전쟁 발발시 미국 하버드대학교에서 박사과정을 공부하는 학생신분이었음에도 불구하고, 자신이 태어나고 자란 제2의 조국인 대한민국의 자유와 평화를 지키기 위해 미 해군으로 자원입대하여 서울 수복 작전 중 1950년 9월 22일 은평구 녹번리 전투에서 29세의 꽃다운 나이에 전사하였다. 그가 전사한 녹번동에 비가 세워졌다가 응암어린이 공원을 거쳐 2010년 현 위치로 이전하였다.<br /><br />* 규격 - 비높이 1.57m<br />* 건립자 - 서위렴2세전사기념비건립위원회(1956.09.22. 건립)<br>','1577-0606',null,null,null,null,null,null,null,'있음','없음','없음','입 장 료:무료
+화장실:은평평화공원 내 화장실 이용
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('안중근의사 동상','04340','서울특별시 용산구 후암동 30-80',38,127,'안중근의사 동상은 독립운동에 투신하여 순국하신 안중근의사의 숭고한 뜻을 기리고 그 애국정신을 후세에 널리 전하기 위하여 2010년 10월 22일 재건립되었으며, 하얼빈역에서 이토 히로부미를 저격한 직후 태극기를 꺼내든 당당하고 떳떳한 모습으로 안중근의사기념관의 입구에 위치한다. 안중근의사는 우리나라를 식민지화한 민족의 원흉 이토 히로부미를 저격한 항일 독립운동의 핵심 인물로 현재 그의 동상과 기념관이 위치한 장소는 일제 식민 통치의 상징물이었던 남산 조선신궁이 건립되었던 곳으로 항일운동의 역사에서 상징성이 크다고 할 수 있다.<br /><br />* 규격 - 가로 4m, 세로 4m, 높이 7.3m<br>','1577-0606',null,'연중개방',null,null,null,null,null,'있음(남산공원주차장 이용)','없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('의열사(용산)','04311','서울특별시 용산구 효창원로 177-18',38,127,'의열사는 효창공원 내에 묘역이 있는 애국선열들의 영정을 모신 사당으로 대한민국임시정부 주석 김구, 임시정부 요인( 임정 의정원 초대의장 이동녕, 군무부장 조성환, 비서장 차이석), 3의사(이봉창ㆍ윤봉길ㆍ백정기 선생) 등 7인의 영정이 모셔져 있다. 대한민국 임시정부 수립 60주년인 1979년 4월 13일 합동추모제전을 봉행하고, 해마다 임시정부수립기념일에 연례적으로 제전을 봉행해오고 있다.<br /><br />* 건립주체자 -문화공보부, 서울특별시(1990.11.01. 건립)<br>','02-2125-0848',null,'연중무휴',null,null,null,null,'상시 개방','있음','없음','가능','입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이봉창의사동상','04311','서울특별시 용산구 효창원로 177-18(효창동)',38,127,'1932년 일본 천황 히로히토에게 폭탄을 던져 세계를 놀라게 한 이봉창의사를 기려 동아일보사의 후원으로 효창공원에 동상을 건립하였다.  이봉창의사는 서울 용산 문창보통학교 졸업 후 용산역 전철수로 일하다 한국인에 대한 차별 대우에 저항하여 사직하고 일본에 건너가 노동에 종사하며 일인 생활을 익혔다. 1931년 상하이로 건너가 김구 선생과 함께 일본 천황 폭살계획을 세워 1932년 1월 8일 도쿄 요요키 연병장에서 관병식을 마치고 돌아가는 히로히토를 겨냥하여 사쿠라다문에서 수류탄을 던졌으나 실패하고 현장에서 체포되었다. 그해 9월 의사는 일본 법정에서 사형선고를 받아 이치가야 형무소에서 교수형을 받고 순국하였다.<br /><br />* 규격 - 동상높이 3.5m, 좌대높이 3m<br> * 건립주체자 - 이봉창의사기념사업회, 동아일보 후원, 동상건립위원회(1995.10.10. 건립)<br>','02-2125-0848',null,null,null,null,null,null,null,'있음','없음','없음','입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이원등 상사상','04427','서울특별시 용산구 양녕로 445(이촌동)',38,127,'이원등 상사는 1966년 2월 4일 공수특전단 고공침투 낙하조장으로 고공강하 훈련 중 동료의 낙하산이 기능 고장을 일으키자 전우의 낙하산을 개방시켜주고 자신은 한강에 추락하여 순직하였다.이원등 상사의 거룩한 전우애와 희생정신을 길이 본받기 위하여 육군에서 1966년 2월 16일 고 이원등상사 기념사업위원회를 구성하여 전 장병의 정성어린 성금으로 동상을 세웠다. 이후 오랜 세월속에 훼손된 동상을 특수전부대 전 장병의 뜻을 모아 1998년 6월 5일 새롭게 단장하였다.<br /><br />* 규격 - 높이 9.74m<br />* 건립자 - 이원등상사 기념사업위원회(1966.06.09. 건립)<br>','1577-0606',null,null,null,null,null,null,null,'있음','없음','없음','화장실:있음(노들섬 내 생태화장실)
+입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이탈리아의무부대 6.25전쟁 참전기념비','07347','서울특별시 영등포구 신길로 190(신길동) 서울우신초등학교 교정 내',38,127,'6.25전쟁 당시 이탈리아는 UN의 비회원국이었지만 국제적십자사연맹의 구조 도움 호소로 1951년 10월 16일 의무장교 6명, 행정관 2명, 약제사 1명, 군목 1명, 간호사 6명, 하사관 6명, 사병 45명 등 67명을 우리나라에 파견(참전 연인원 189명), 서울우신초등학교에 의무부대를 주둔시켰다.이탈리아 의무부대는 1955년 1월 30일까지 약 3년 3개월 동안 23만명을 치료하였으며, 1952년 9월 17일 영등포 열차 사고 때에는 신속한 치료 활동으로 대통령 부대 표창까지 받았다.1989년 6월 2일 주한 이탈리아 대사Graziella Simbolotti가 이탈리아 의무부대의 6.25전쟁 참전을 기념하기 위해 당시 주둔지였던 서울우신초등학교 교사(서관) 벽면에 기념표석을 설치하였으나, 1999년 7월말 동 건물이 철거되자 대한민국 국가보훈처의 지원으로 1999년 8월 구령대 옆 화단으로 이전, 2013년 5월 현 위치로 재이전 설치하였다.<br /><br />* 기념비 규격 - 가로 0.97m, 세로 0.3m, 높이 0.87m<br>','1577-0606',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('호국무공수훈자공적비','04808','서울특별시 성동구 용답동237',38,127,'6.25 전쟁에서 나라를 지키고 베트남전에서 세계평화를 위해 용전분투한 무공수훈자들의 업적과 숭고한 호국정신을 기리기 위하여 성동구 및 성동구 무공수훈자들의 정성과 의지를 모아 6.25 전쟁 60주년이 되는 2010년에 건립되었다. 공적비는 원형좌대의 계단 위에 제1탑(공적비명), 제2탑(무공수훈자명단 279명), 제3탑(취지문, 후원기관 등)으로 이루어져 있다.<br />* 규격 - 가로 6.8m, 세로 6.8m, 높이 5m<br />* 건립주체자 - 대한민국무공수훈자회 성동구지회(2010.12.01 건립)','02-2286-7535',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울교통공사 (신정,수서,천왕)','04806','서울특별시 성동구 천호대로 346',38,127,'1~8호선 전 역에서는 안전사고에 빈번하게 노출되는 어린이, 어르신 등 교통약자를 대상으로 쉽고 재미있게 안전교육을 받을 수 있는 체험 프로그램을 운영 중이다.<br>','02-6110-6564',null,'토, 일요일, 공휴일','시민안전체험 및 홍보관(체험관 소개 및 VR체험, CPR체험, 전동차운전체험, 안전홍보관 관람 등)<br>
+<a href="https://www.seoulmetro.co.kr:444/kr/safetyExperience.do?menuIdx=753team_insert=6#;" target="_blank" title="새창 : 홈페이지로 이동">https://www.seoulmetro.co.kr/</a>',null,null,null,null,null,'없음','불가','이용가능시설:자원봉사, 차량사업소견학, 미술관 대관, 인재개발원 대관, 시설물 촬영, 기관사 체험, 시민안전체험 및 홍보관
+화장실:있음
+입 장 료:무료
+한국어 안내서비스:가능(안내사원 동행 하에 관람)
+내국인 예약안내:- 견학일시 : 평일 월~금 14:00~16:00<br />
+※ 견학시간은 사정에 따라 변경될 수 있음<br />
+- 신청방법 : 인터넷 또는 전화 신청 / 인터넷 신청 시 해당역과 사전 유선 협의<br />
+※ 역 안전체험은 역 사정에 따라 변경될 수 있으므로 사전에 유선으로 해당역과 일정 조율 등 협의가 필요<br /><br />
+[차량사업소 견학]<br />
+- 평일(토, 휴일 제외)<br />
+- 희망하는 견학일로부터 15일 전까지 신청<br />
+※ 차량사업소 사정에 따라 견학일 변경될 수 있음<br /><br />
+[차량사업소 견학가능일자]<br />
+* 각 차량사업소별 견할일자 다르니, 신청 시 참고하길 바람<br />
+※ 관내 소속 중학교 현장직업체험프로그램 진행으로 9월 신정차량사업소 견학신청 받지 않음<br /><br />
+* 견학가능 시간<br />
+- 고덕,방화,신내,도봉,천왕,모란(10:00~11:30)<br />
+- 군자,신정,지축,수서,창동(14:00~15:30)<br />
+- 신청가능 인원 : 일일견학인원은 최소 5명이상 최대 15명 까지만 가능<br />- 참여확정 안내 : 이메일 발송 후 개별 유선 통보<br /> 
+※ 참여확성 이후에도 차량사업소 사정에 따라 견학 취소될 수 있음<br />
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('롯데월드타워team_insert','05551','서울특별시 송파구 올림픽로 300',38,127,'한국적 곡선의 미를 지닌 한국 전통의 도자기와 붓의 형상을 모티브로 설계된 롯데월드타워는 총 123층, 555M 높이로 세계 5위의 초고층 빌딩이다. 대지면적은 축구장의 12.2배, 전체 총 면적은 축구장의 110배에 달하는 거대한 수직도시이다. 2016년 12월 마침내 준공되었으며, 특급 호텔 ''시그니엘 서울''과, 화려한 서울의 야경을 볼 수 있는 전망대인 ''서울스카이'', 최고급 레지던스와 오피스 공간, 복합기능공간 등으로 구성되어있다. 롯데월드몰은 국내 최대의 명품 백화점인 ''에비뉴엘''과 국내 시내 면세점 중 최대 면적을 자랑하는 ''롯데면세점'', ''롯데 하이마트'', ''쇼핑몰'', ''롯데마트'' 등이 위치해있는 쇼핑 관광의 명소로 다양한 국내외 브랜드를 만날 수 이는 공간이다. 쇼핑공간 외에도 문화·예술공간으로 아시아 최대규모의 멀티플렉스인 ''롯데시네마 월드타워관'', ''롯데월드 아쿠아리움'', 국내 최초 빈야드 스타일의 ''롯데 콘서트홀''이 있어 쇼핑과 엔터테인먼트를 함께 즐길 수 있는 복합 쇼핑몰이다.<br>','02-3213-5000',null,'시설에 따라 차이가 있으므로 홈페이지 참고',null,null,null,null,'※ 공식 홈페이지 참고','있음','없음','없음','상점정보:[롯데월드타워]<br />
+* 서울스카이, 시그니엘 서울 등<br />
+<br />
+[롯데월드몰]<br />
+* 아쿠아리움, 롯데마트, 에비뉴엘, 쇼핑몰, 롯데 하이마트, 롯데콘서트홀, 롯데시네마, 테마식당가 등
+주차요금:* 10시~20시 : 10분당 500원 / 그 외 시간 : 10분당 200원 <br />
+* 시네마, 아쿠아리움 당일 티켓 소지자는 최대 4시간까지 4,800원 
+
+이용가능시설:안내데스크, 아트홀, 외국인데스크(단체), 외화 환전 데스크, 고객상담실, 롯데금융센터, 물품보관소, 발렛라운지, 상품권판매소, 서비스라운지(에비뉴엘), 시계수선실, 식수대, 유모차 대여소, 유아휴게실, 은행, 의류수선실, 의무실, 휴게공간, 흡연실 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 삼전도비','05608','서울특별시 송파구 잠실로 148',38,127,'병자호란 때 청에 패배해 굴욕적인 강화협정을 맺고, 청태조의 요구에 따라 그의 공덕을 적은 비석이다. 조선 인조17년(1639)에 세워진 비석으로 높이 3.95m, 폭 1.4m이고, 제목은 ‘대청황제공덕비(大淸皇帝功德碑)’로 되어있다. 조선 전기까지 조선에 조공을  바쳐오던 여진족은 명나라가 어지러운 틈을 타 급속히 성장하여 후금을 건국하고, 더욱더 세력을  확장하여 조선을 침략하는 등 압력을 행사하면서 조선과의 관계가 원만하지 못하였다.  나라의 이름을 청으로 바꾼 여진족이 조선에게 신하로서의 예를 갖출 것을 요구하자 두 나라의 관계가 단절되었다.<br /><br />결국 인조 14년(1636) 청나라  태종은 10만의 군사를 이끌고 직접 조선에 쳐들어와 병자호란을 일으켰다.  남한산성에 머물며 항전하던 인조가 결국 청나라의 군대가 머물고 있는 한강가의 삼전도 나루터에서 항복을 하면서 부끄러운 강화협정을 맺게 되었다. 병자호란이  끝난 뒤 청태종은 자신의  공덕을 새긴 기념비를 세우도록 조선에 강요했고 그 결과 삼전도비가 세워졌다. 비문은 이경석이 짓고 글씨는 오준이 썼으며, ‘대청황제 공덕비’라는 제목은 여이징이 썼다.  비석 앞면의 왼쪽에는 몽골 글자, 오른쪽에는 만주 글자, 뒷면에는 한자로 쓰여져 있어 만주어 및 몽골어를 연구하는데도 중요한 자료이다.<br /><br />* 면적 - 2,850㎡<br>','042-481-4650',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 경모궁지','03080','서울특별시 종로구 대학로 103(연건동)',38,127,'함춘원은 조선시대의 정원으로 지금의 서울대학교 의과대학 부속병원이 위치한 곳이다.『동국여지비고』에는 창경궁의 동쪽, 경희궁 개양문의 남쪽 등에 있는 궁궐의 정원 이름이 함춘원이라고 기록되어 있으나 그중 그 입지나 규모로 보아 가장 대표적인 것은 창경궁 동쪽의 것이다. 함춘원은 성종 15년 (1484)에 창경궁을 짓고, 풍수지리설에 의해 이곳에 나무를 심고 담장을 둘러 그곳에 관계없는 사람의 출입을 금하였던 것에서 시작되었으며, 성종 24년(1493)에 정식으로 이름이 붙여져 창경궁에 딸린 정원이 되었다. 연산군 때에는 함춘원 밖의 백성들의 집을 없애고 확장하였으며, 군대를 배치하여 일반인의 통행을 금하고 대문을 만들었다. 그 후 중종은 백성들을 다시 돌아와 살게 하였다. 임진왜란 때에는 덕빈의 시신을 임시로 묻는 등 점차 관리가 소홀해졌으며,  인조 때에는 함춘원의 절반을 태복사에 나눠주었다. 이후 140여년간 말을 기르는 장소로 사용되었다.<br /><br />영조 40년(1764)에는 사도세자의 사당을 이곳으로 옮겨지었고, 정조가 즉위하자 이곳을 경모궁으로 불렀으며, 정조 9년(1785)에는 이 일대를 정비하였다. 광무 3년 (1899)에 경모궁에 있던 장조 즉  사도세자의 위패를 종묘로 옮기면서 경모궁은 그 기능을 잃게 되었으며, 경모궁도 경모전으로 이름을 고쳤다. 광무 4년 (1900)에는 경모궁 터에 6성조 즉 태조·세조·성종·숙종·영조·순조의 초상을 모시던 영희전을 옮겨 세웠다. 그 뒤 일제가 나라를 강점한 후 경모궁 일대에 경성 제국대학이 세워지면서 원래의 모습을 대부분 잃어버렸으며, 한국전쟁으로 인해 옛 건물이 불타 원래의 모습을 볼 수 없게 되었다. 함춘원은 조선 후기의 세련된 건물 중 하나이며, 현재 남아있는 유적은 함춘문 뿐이다.<br /><br />* 면적 - 4,142㎡<br>','02-2148-1844',null,null,null,null,null,null,null,'서울대학교병원 주차장 이용','없음','없음','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오목공원','07996','서울특별시 양천구 목동서로 159-2(목동)',38,127,'양천의 관문인 ''오목교''가 공원 근처에 있어 오목공원이라 불린다. SBS, CBS 방송국 건물과 각종 업무용 시설들을 배경으로 예쁘게 단장되어 바쁜 일상에 쫓기는 샐러리맨의 작은 휴식처가 되어준다. 큰빌딩이 즐비한 도시 한복판의 오아시스로 자리 잡은 오목공원에는 약20,000㎡ 규모의 수목들이 잘 정비되어 있으며 야외 간이무대와 농구장 등 기타 운동 편의시설 및 목공예 체험을 할 수 있는 나무마을 목공방이 있다. 여기에 곁들여진 컬러풀한 조명과 함께 시원한 분수가 뿜어져 나온다.','양천 공원녹지과 02-2620-3584',null,null,null,null,null,null,null,null,'없음','없음','관광코스안내:8코스, 오목공원-CBS방송국-선인문분수광장-자원순환홍보교육관-목동빗물펌프장-영학정
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('상허이태준가옥(수연산방)','02837','서울특별시 성북구 성북로26길 8(성북동)',38,127,'이 집은 상허 이태준이 1933년부터 1946년까지 살면서 많은 문학작품을 집필한 곳이다. 이태준은 이곳의 당호를 ''''수연산방''''이라 하고, 달밤, 돌다리, 코스모스피는 정원, 황진이, 왕자 호동 등 문학작품 집필에 전념하였다. 그의 수필 무서록에는 이 집을 지은 과정과 집터의 내력 등이 쓰여 있다.
+이 집은 건물 중앙의 대청을 중심으로 하여 왼쪽에 건넌방, 오른쪽에 안방을 두어 T자형을 이루고 아담하면서도 화려하게 지어졌다. 이 건물의 안방 앞에는 누마루를 두고 그 뒤편에는 부엌과 화장실을 두어서, 공간의 기능을 집약시킨 독특한 구성을 보여준다. 누마루는 작은 규모의 집에서는 보기 드물게 섬세하고 화려하며 사랑방의 기능을 안채에 집약시켰다. 건넌방 앞에 놓인 툇마루는 건넌방보다 바닥을 약간 높이고 ''''아(亞)''''자 난간을 둘러서 세심하게 고려한 공간임을 느끼게 한다.','02-764-1736',null,'매주 월요일, 화요일',null,'전연령',null,null,'평일 11:30~18:00<br/>
+주말 11:30~22:00  (18:00~19:00 브레이크타임)',null,'없음','불가','화장실:있음
+이용가능시설:수연산방 (전통찻집)
+입 장 료:현재 카페로 운영중(음료메뉴 유료)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('천간사','03363','서울특별시 은평구 불광로10길 20-8(불광동)',38,127,'천간사는 1960년에 창건되었다가 2009년 재개발로 인해 재건축되었다. 사찰에는 부처님 진신사리탑이 있으며, 창건주스님 부도탑과 육영수 여사의 추모공덕비 등 다수의 비석과 탑들이 있다. 새로 신축하면서 국토해양부로부터 2011년 올해의 대한민국 한옥상을 수상하였다. 북한산과 둘레길이 바로 옆에 있어 공기가 좋으며, 하이킹을 즐길 수 있다.<br>','02-355-7430',null,'연중무휴',null,null,null,null,'상시 가능','있음(약 8대 가능)','없음','불가','등산로:족두리봉-사모바위-향로봉-문수봉-대동문-위문-영봉-우이동
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아시아공원','05572','서울특별시 송파구 올림픽로 44',38,127,'아시아 근린공원은 86 아시안게임 개최를 위한 선수촌 및 기자촌 아파트단지 건립시에 조성된 곳으로 주변에 서울종합운동장등 각종경기 시절이 인접해 있다. 넓은 녹지공간으로 소나무, 대추나무등 각종 나무 및 꽃들로 훌륭한 조경시설을 갖추고 있고, 빛과소리 조형물, 야외공원무대, 시와 그림의 광장, 송파문화예술회관 등이 자리 잡고 있어 주민 문화공간과 휴식공간으로 널리 활용되고 있다.<br /><br />* 총면적 66,027㎡ <br>','02-412-0270','1986년 4월 30일','연중개방',null,null,null,null,null,'있음','없음','없음','입 장 료:없음
+이용가능시설:송파문화예술회관, 야외공연장, 부리도 기념비, 시와 그림의 광장, 음수대, 체육시설 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('영등포근린공원','07307','서울특별시 영등포구 신길로 275(영등포동)',38,127,'1997년 9월 12일에 공원 조성공사를 시작하여 1998년 7월 8일 부터 주민들에게 사용되었으며, 면적은 61,544㎡이며 수목은 52종 27,649주가 있고, 연못(151㎡), 개울(60m)등이 있다. 공원내에 영등포문화예술회관이 1999년 7월 5일에 개관하여 구민들의 문화생활에 기여하게 되었다.<br>','02-2670-3716',null,'연중개방',null,null,null,null,null,'있음','없음','없음','화장실:있음
+이용가능시설:[조경시설] 음악분수, 파고라, 연못, 개울, 벽천, 잔디밭<br />
+[운동시설] 농구장, 배드민턴장, 풋살경기장, 건강지압보도<br />
+[편익시설] 야외정자, 음수전, 의자
+입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보광사(서울)','04394','서울특별시 용산구 장문로15나길 6',38,127,'우후묘 주위에 좋지 않은 일이 많이 일어나고 사당터의 기가 세다는 설이 있어 이 기를 누르기 위해 사당 옆에 ''보광사''를 지었다. 도심 속의 적멸보궁이라 하여 부처님의 진신사리를 모시고 있으며 사람들이 직접 친견할 수 있다. 티벳에서 적사리를 모셔 왔다.<br>','02-793-6261',null,'연중개방',null,'전연령',null,null,'00:00~24:00',null,'없음','없음','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서빙고동 부군당','04384','서울특별시 용산구 서빙고로59길 3-6(서빙고동)',38,127,'서빙고동 부군당은 조선시대 이 마을 주민들이 마을의 수호와 주민의 안녕을 위해 세운 제당(祭堂)이다. 이 당은 인조 13년(1635)에 중수(重修)하였으며, 당을 처음 세운 시기는 15세기 말 또는 16세기초로 추정하고 있다. 이 당은 80여 평의 대지 위에 3평 내외의 맞배지붕으로 된 한옥으로 정면에는 한칸 규모의 본당이 있고 왼쪽에는 하주청이라고 부르는 150평 정도의 제물청(祭物廳)이 있는데 부엌ㆍ마루ㆍ온돌방ㆍ창고가 있다. 주위는 돌담으로 둘러 있고 대문은 기와를 얹은 솟을대문 형태로, 문의 가운데에 태극문양이 그려져 있다. 제당 내에는 3점의 신상(神像)이 있다. 정면에는 당의 주신(主神)인 태조 이성계와 부인 강씨의 신상이 있고 왼쪽 벽에는삼불제석(三佛帝釋)이 모셔져 있으며, 청색·적색·황색으로 되어있는 휘장으로 보관되어 있다. 태조상(太祖像)은 깃털이 달린 주립(朱笠)을 쓰고 청색 도포를 입었는데 소매와 옷고름은 붉은색이며 오른쪽 어깨 위로 화살이 담긴 화살통을 메고 있으며, 오른손에는 붓 같은 것을 잡고, 왼손으로 붉은색 옷 소매를 잡고 호피(虎皮)의자에 앉았으며, 좌우에는 사모관대를 한 신하가 한 사람씩 서 있다.<br /><br />옆벽의 삼불제석은 큰 연꽃 위에 흰 장삼에 긴 염주를 목에 두르고 손을 모아 합장하고 있는 모습이며 가운데 제석의 머리 뒤에는 파란색, 좌우 제석에는 빨간색, 그리고 주위에는 흰색으로 덮힌 광배가 보인다. 이 세 신상의 크기는 가로 43cm, 세로 85cm로 모두 견본채색(絹本彩色)으로서, 무신도(巫神圖) 중에서 매우 뛰어난 것으로 보여진다. 제당 내에는 3개의 현판이 있는데, 서까래에 걸려 있는 현판에는 ''崇禎紀元上之十三年乙亥四月十八日重建''이라 쓴 것으로 보아 인조 13년(1635)에 중건했다는 내용으로 부군당의 역사를 추정할 수 있다. 또 하나의 현판은 ''老人禊座目幷序''라 쓰고 끝에 ''辛卯五月''이라 하였으며, 그리고 ''里中契員座''이란 내용에는 ''光武七年癸卯五月'' 이라 쓴 현판이 있다. 하주청 마루에는 ''府君堂重修記''란 현판이 있는데 정묘(丁卯, 1927) 5월에 만든 현판으로 모두 부군당의 역사를 추정하는데 귀중한 자료이다. 서빙고동 부군당은 1910년대 초기에 일제가 훈련장을 만들기 위해 예전의 특무대 자리에서 현 위치로 옮겼다고 한다. <br /><br />제관 선정은 ''서빙고동부군당치성위원회''에서 주관하며, 음력 정월 초하루 상오 11시경에 제를 올린다. 10일 전부터 준비하는데 임원은 9명을 선정하며 선정된 제관은 이 기간 동안 목욕재계하고 궂은 곳에 출입하지 않는 등 엄격한 금기(禁忌)를 지킨다. 제사의식은 유례식(儒禮式)으로 초헌관(初獻官)이 분향한 다음 잔을 드리고 축을 고한 다음 4배하고 다음 아헌관(亞獻官)이 분향·헌작하고 4배한 다음 삼헌관(三獻官:終獻官)이 분향·헌작(獻酌)하고 4배한 뒤 소지(燒紙)를 올리고 일반 참배객이 4배한다. 이 의식이 끝나면 부군당 할머니라고 부르는 만신(萬神:女巫)이 나와 제비(祭費)를 낸 각 가구별로 소지를 올리게 하고 축원해 준다. 제사가 끝나면 ''반기''라 하여 제물을 고루 나누어주는 음복(飮福)이 시작된다. 이 부군당을 중심으로 마을의 수호와 주민의 안녕ㆍ질서ㆍ화목을 기원하며 살아왔던 옛 모습이 잔존해 오고 있어 토속신앙(土俗信仰) 연구에 도움이 되고 있다. <br>','02-2199-7245',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국제선센터','08013','서울특별시 양천구 목동동로 167(신정동)',38,127,'대한불교조계종 국제선센터는 한국 불교와 전통문화의 세계화를 위한 국제적인 센터이다.총면적 2,110㎡ (638평), 연면적 10,600,34㎡ (3,206평)의 지상 7층, 지하 3층 규모로 건립된 국제선센터는 선원, 템플스테이관, 큰 법당, 교육문화관 등의 시설을 갖추고 있으며, 간화선 수행, 템플스테이 선문화 강좌, 사찰요리 전수등 한국전통문화를 체험 할 수 있는 프로그램을 운영하고 있다. 특히 도심 한 가운데서도 템플스테이 및 템플라이프를 통하여 불교의 전통 수행법을 배우고 체험할 수 있는 곳으로, 내‧외국인을 위한 다양한 프로그램을 운영하고 있다. 사찰 체험을 하고 싶어도 시간이 부족한 현대인이나 몸과 마음의 휴식을 원하는 이들을 위한 열린 공간이다. 매주 토요일 영어로 진행하는 Dharma Talk는 ‘외국인들을 위한 명상교실’로 참선 수행을 배우고자 하는 외국인 뿐만 아니라 재미교포와 영어에 관심있는 내국인들도 자유롭게 참석할 수 있다.<br>','02-2650-2200',null,null,'프로그램 안내 <a href="http://seoncenter.templestay.com/"target="_blank" title="새창: 국제선센터">http://seoncenter.templestay.com/</a>',null,null,null,null,'있음(B2, B3 주차장)','없음','불가','주차요금:무료
+화장실:있음
+외국인 예약안내:템플스테이 매니저가 안내(영어) 및 홈페이지에서 가능
+내국인 예약안내:전화 및 홈페이지 예약 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경찰혼','07258','서울특별시 영등포구 국회대로 608(당산동3가)',38,127,'우리 사회의 안정과 치안을 위해 순국ㆍ순직한 영등포경찰서 출신 경찰들의 숭고한 희생정신을 추모하고 그 분들의 고귀한 업적을 후세에 널리알리기 위하여 건립된 추모비이다.6ㆍ25전쟁 직후 전몰ㆍ순직한 경찰 62위 및 국내에서 발생한 각종 시위 진압과정에서 순직한 경찰 16위 등 총 78위의 경찰들을 기리고 있으며 서울영등포경찰서 내에 위치해 있다.<br /><br />* 규격 - 높이 2m, 부지면적 33㎡<br />* 건립자 - 서울영등포재향경우회(2006.06.23. 건립)<br>','1577-0606',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북악산 숙정문','02822','서울특별시 성북구 대사관로 1(성북동) 삼청각 부근',38,127,'숙정문은 북한산 동쪽 끝자락에 자리잡고 있으며 서울 성곽의 북대문으로 "엄숙하게 다스린다"는 뜻으로 이름이 지어졌다. 태조 5년(1396)에 완공되었는데 처음에는 지금 위치보다 약간 서쪽에 있었으나 연산군 10년(1504)에 성곽을 보수하면서 옮겨졌다고 한다. 숙정문은 본래 사람들의 출입을 위해 지은 것이 아니라 서울성곽 동서남북에 4대문의 격식을 갖추기 위하여, 그리고 비상시 사용할 목적으로 평소에는 닫아두었기 때문에 숙정문을 통과하는 큰 길은 나있지 않다. 1976년 북안산 일대의 성곽을 복원하면서 문루를 짓고 ''숙정문''이란 편액을 달았다.','02-747-2153',null,'매주 월요일',null,null,null,null,'11월~2월 : 10:00 ~ 15:00 (17시까지 퇴장)<br />
+3월~10월 : 09:00 ~ 16:00 (18시까지 퇴장)','없음','없음','불가','관광코스안내: * 탐방코스 1
+- 홍련사쉼터 ~ 창의문쉼터 (약 3.4km) 약 2시간 30분 소요<br /> 
+- 북악산(숙정문입구) - 숙정문 - 촛대바위 - 곡장 - 백악마루 - 창의문<br />
+<br />
+ * 탐방코스 2 <br />
+- 말바위쉼터 ~ 창의문쉼터 (약 4.3km) 약 2시간 30분 소요<br /> 
+- 와룡공원 - 숙정문 - 촛대바위 - 곡장 - 백악마루(북악산정상) - 창의문<br /><br />
+* 탐방코스 3<br />
+- 창의문쉼터 ~ 말바위쉼터 (약 4.3km) 약 2시간 30분 소요<br /> 
+- 창의문 - 백악마루 - 곡장 - 촛대바위 - 와룡공원
+입 장 료:무료
+화장실:있음
+내국인 예약안내:20명이상 단체일 경우 홈페이지에서 신청서 다운로드 후 담당자 메일로 접수 <br />
+(탐방 희망일로부터 7일 전까지 사전신청) <br />
+- 홈페이지 <a href="http://www.chf.or.kr/c1/sub11_2_9.jsp" target="_blank" title="새창 : 한국문화재재단 북악산 예약페이지로 이동">http://www.chf.or.kr/c1/sub11_2_9.jsp</a> <br />
+- 담당자 메일 bukakwall@hanmail.net
+한국어 안내서비스:* 프로그램명 : 해설사와 함께 떠나는 "백악산 한양도성 역사 탐방"<br />
+* 운영기간  : 3월~7월, 9월~11월 (휴관일을 제외한 매일 2회 운영)<br />
+* 출발시간  : 말바위(2회): 10시, 14시 / 창의문(2회): 10시, 14시<br />
+* 탐방코스 
+- 말바위 -> 숙정문 -> 백악마루 -> 창의문(2.2Km) / 집결지: 말바위 안내소<br />
+- 창의문 -> 백악마루 -> 숙정문 -> 말바위(2.2Km) / 집결지: 창의문 안내소<br />
+* 이용방법  : 별도의 사전신청은 받지 않으며, 출발시간까지 집결지에 도착한 탐방객 대상으로 동행 해설을 진행
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('낙산공원','03085','서울특별시 종로구 낙산길 41(동숭동)',38,127,'낙산(125m)은 서울의 내사산의 하나로 좌청룡에 해당하는 산이다. 지형이 낙타의 등처럼 생겨 낙타산이라고도 했으며, 일대에 궁중에 우유를 보급하던 왕실 목장이 있어 타락산(駝酪山)이라고도 불렸다. 60년대 이후 시민아파트와 밀집된 주택으로 낙산의 본래의 모습이 사라지게 되었고, 서울시는 낙산복원계획을 수립하였으며 이 계획의 일환으로 공원화 사업이 진행되어 2002년 7월 낙산공원으로 개원하였다. 현재 낙산공원은 서울한양도성과 푸른 숲이 어우러져 아름다운 정취를 느낄 수 있는 시민의 휴식 공간으로 자리매김하였으며, 서울에서 가장 아름다운 야경을 볼 수 있는 곳으로 각광받고 있다<br><br>* 총 면적 152,443㎡ (약 46,114평)<br><br>* 녹지대 131,615㎡ / 광장 4,018㎡ / 기타시설 16,810㎡<br><br>* 수목관리<br>1) 수목식재 - 소나무 등 47종 107,603주<br>2) 지피식물 - 구절초 등 11종 43,075본','02-743-7985~6','2002년 6월 12일','연중무휴',null,null,null,null,'낙산공원 상시개방<br/>
+낙산전시관 09:00~17:00','있음','불가','없음','입 장 료:없음
+화장실:있음
+주차요금:10분 300원
+이용가능시설:[기반시설] 관리도로 2,920m, 산책로 1,010m, 광장5개소<br>
+[교양시설] 역사탐방로 935m, 비우당, 홍덕이밭, 낙산전시관<br>
+[편의시설] 화장실, 매점, 음수대, 주차장<br>
+[휴양시설] 파고라, 의자, 벤치, 정자<br>
+[광장] 중앙광장, 놀이광장, 전망광장 3개소
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구룡산(서울)','06792','서울특별시 서초구 염곡동, 강남구 개포동',37,127,'구룡산(九龍山) 정상은 해발307.7m의 서울특별시 서초구 염곡동, 내곡동, 양재동과 강남구 개포동 일대에 위치한 산이다. 구룡산은 열 마리의 용이 승천하는 것을 인근을 지나가던 임신한 여성이 보고 크게 놀라 소리를 질러 용 한마리가 떨어져 죽고, 아홉 마리만 하늘로 승천하였다고 한다. 아홉 마리의 용이 승천하면서 남긴 흔적이 구룡산이라 불리게 되었으며, 하늘에 승천하지 못하고 죽은 용이 있던 자리가 물이 되어 양재천(良才川)이 되었다는 전설이 있다. 실제로 산을 자세히 보면 9개의 계곡으로 이루어져 있다.<br /><br />정상보다 낮은 이 산의 주봉(主峰)은 국수봉(國守峰)이라고 하는데, 조선시대 전부터 정상에 봉수대(烽燧臺)가 있어 국가를 지킨다고 해서 붙여진 것으로 이 곳에는 바위굴 국수방(國守房)이 있어 봉수군(烽燧軍)이 기거했다고 한다. 『여지도서』 광주목에 "관아의 남쪽 30리에 있다. 봉수대가 설치되어 있다"고 기록되어 있다. 내곡동에 있는 헌인릉과 함께 구룡산 기슭에 세종대왕이 묻힌 영릉(英陵)이 있었으나, 1469년(예종 1년)에 여주로 천장(遷葬)하였다. 초장지(初葬地)였던 구룡산 내곡동에 국가정보원이 들어서 있다. 구룡산 제2봉인 국수봉전망대는 서울 강남.강북과 경기도 한강하류와 상류지역까지를 관망할 수 있는 최적지로 주.야경 조망명소이다. 약 300m의 산으로 산높이나 길이 험하지 않아 가족과의 산행코드로는 제격이며, 접근성도 용이하여 부담없이 즐길 수 있다.<br /><br />구룡산에는 능인선원과 자룡사가 있다. 2015년 9월 13일 능인선원에 세계 최대 약사여래좌불을 점안하여 이름을 "서울약사대불"이라 하였다. 이 산에는 자작나무과인 수피가 얇은 종잇장처럼 벗겨지는 물박달나무 군락지가 산재해 있으며, 그 외에 신갈나무, 리기다소나무, 아까시나무 등이 있다. 관악산, 청계산, 우면산 등과 산자락이 이어진다.<br>','02-2155-6860',null,null,null,null,null,null,null,null,'없음','없음','등산로:[염곡사거리 코트라.코이카등산로]  코트라, 한국학술진흥재단 사이 코이카 정문 → 구룡산 정상, 코이카, 서울둘레길4코스 이정표 → 구룡산염곡약수터, 서울둘레길4코스, 구룡산정상 이정표 → 어사모바위 → 구룡산산악기상관측소 → 능인선원등산로 이정표 →구룡산 국수봉 → 구룡제1약수터 이정표 - 서초구.강남구경계 표지판 → 구룡터널등산로 이정표 → 구룡산 정상(306m) → 소방방재청 국가지점 번호 다사 6216  4151 표시판  → 양재대로 구룡마을 <br />
+<br />
+[염곡사거리 도로교통공단서울지부등산로]  도로교통공단서울지부 421번 버스종점 → 구룡산정상, 코이카, 서울둘레길4코스 이정표 → 구룡산 염곡약수터,  서울둘레길4코스, 구룡산정상 이정표 → 어사모바위 → 구룡산산악기상관측소 → 능인선원등산로 이정표 →구룡산 국수봉 → 구룡제1약수터 이정표 - 서초구.강남구 경계 표지판 →  구룡터널등산로 이정표 → 구룡산 정상(306m)<br />
+<br />
+[구룡산 염곡약수터등산로]  양재대로 양재지하보도 →  염곡약수터 → 구룡산 약수터, 서울둘레길4코스, 구룡산정상 이정표 → 어사모바위 → 구룡산산악기상관측소 → 능인선원등산로 이정표 → 구룡산 국수봉 → 구룡제1약수터 이정표 - 서초구.강남구 경계 표지판 → 구룡터널등산로 이정표 → 구룡산 정상(306m) <br />
+ <br />
+[구룡산 능인선원등산로]  양재대로 능인선원 →  능인선원등산로 이정표 →구룡산 국수봉 → 구룡제1약수터 이정표 → 서초구.강남구 경계 표지판 → 구룡터널등산로 이정표 → 구룡산 정상(306m)<br />
+ <br />
+[구룡산 구룡터널등산로]   양재대로 구룡터널사거리 →  개암약수터, 강남그린웨어 이정표 → 서울시우수조망명소  → 구룡터널등산로 이정표 → 구룡산 정상(306m)<br />
+ <br />
+[구룡산 구룡마을등산로]  양재대로 구룡마을  → 구룡산등산로 이정표 → 대룡약수터 → 구룡천제1.2 약수터 → 소방방재청 국가지점 번호 다사 6216  4151 표시판 → 구룡마을이정표 → 구룡산 정상(306m)<br />
+ <br />
+[구룡산 염곡동탑골등산로]  헌능로 탑골마을 버스정거장 → 구룡제1약수터(옻우물) → 소나무 숲 → 서초구.강남구 경계 표지판 → 구룡터널등산로 이정표 → 구룡산 정상(306m)<br />
+ <br />
+[서울둘레길4코스 구룡산입구]  헌능로 염곡동 → 구룡산정상, 코이카, 서울둘레길4코스 이정표 → 구룡산 염곡약수터, 서울둘레길4코스, 구룡산정상 이정표 → 능인선원 일원 → 물박달나무군락지 → 구룡터널등산로 일원 → 개암약수터 → 三鳥人長琸위령비 → 소방방재청 국가지점 번호 다사 6216  4151 표시판<br />
+ <br />
+[서울둘레길4코스 여의천입구]  헌능로 염곡동 → 여의천 → 양재IC → 양재시민의 숲 → 양재천 → 우면산
+입산통제 기간:[봄가을철 산불조심기간] <br />
+(산불예방을 위해 한시적으로 등산로 구간통제)<br />
+봄철 3월 2일 ~ 4월 30일 <br />
+가을철 11월 1일 ~ 12월 15일<br />
+-국립공원 11월 15일 ~ 12월 15일(경주,태안해안제외)<br />
+※ 통제기간과 통제구간은 기상여건 등을 감안하여 산별로 일부 조정될 수 있으니 산행 시 사전확인 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('맥아더 사령관 한강방어선 시찰지','07307','서울특별시 영등포구 신길로 275(영등포동)',38,127,'맥아더 사령관이 1950. 6. 29. 도쿄에서 날아 와 수원비행장에서 내려 이승만 대통령과 채병덕 육군참모총장이 참석한 가운데 전쟁상황에 관한 브리핑을 실시하였다. 맥아더는 직접 전선을 시찰하기로 하고 시흥지구전투사령부 김종갑 작전처장과 동행하여 한강전선이 보이는 신길동 근처에서 전황을 관측하였다. 이때 맥아더 사령관이 한강 남쪽을 지키고 있던 한 병사에게 "너는 이곳을 얼마 동안 지킬 수 있다고 생각하는가?"라고 질문하자, 병사가 "상관이 철수명령을 내릴 때까지 지키겠다"고 답변하여 그럴 감동시켰다. 맥아더장군의 현지 전선 방문은 후퇴를 거듭하던 한국군의 사기를 크게 고무시켰다. 이와 더불어 인천상륙작전의 아이디어를 얻는데도 큰 도움이 되기도 하였다. 그는 1951년 4월 해임되기 전까지 한국전선을 10회 이상 방문하였다. 당시 시찰지는 영등포공원 앞 도로로 추정되며 영등포공원 내 분수대 인근에 현충시설 안내판이 설치되어 있다.<br>','02-2670-3717',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('여의천','06799','서울특별시 서초구 신원동, 염곡동, 양재동',37,127,'한강수계에 속하는 지방2급 하천으로서 양재천의 제1지류이다. 서울시 서초구 신원동의 136-1번지선을 기점으로 하여 강남구 양재동의 양재천 합류점을 종점으로 하며, 하천연장 4.85㎞, 유로연장은 6.87㎞, 유역면적은 12.98㎢이다.
+청계산(淸溪山；618m)에서 발원한 물이 신원동을 지나 염곡동 부근에서 구룡산(九龍山；306m)에서 흘러내린 물과 합친 뒤 경부고속도로 양재나들목과 양재시민의 숲을 거쳐 영동1교 부근에서 양재천으로 흘러든다. 양재천은 한강의 제1지류인 탄천(炭川)으로 유입되어 한강으로 흘러든다. 옛 지명은 염곡천(廉谷川)이었으며, 옛부터 서울시 강남은 한강을 북쪽에 끼고 있는 구룡산 등,북서쪽 기슭이나 양재천 남북의 구릉 및 평야지대를 이룬 천연의 지형으로서 이 지역에서 터전을 잡고 살던 주민들이 ''안개가 자주 끼는 하천''이라 하여 연내천(煙內川)이라고도 불렀다.<br>','서초구청 양재천관리팀 02-2155-7168',null,'연중개방',null,'전연령',null,null,'00:00~24:00',null,'없음','없음','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대림동 차이나타운','07419','서울특별시 영등포구 디지털로37나길 21',37,127,'2015년 기준, 관내 중국인이 6만 6000여명에 달하며 대림 중앙시장 내 상점의 40%가 중국인 소유일 정도로 전국에서 가장 규모가 큰 차이나타운이다. 서울시는 이곳을 단순 외국인 밀집거주지역이 아닌 문화관광교류명소로 조성한다는 계획이다. 지하철 2,7호선 대림역 12번 출구 앞 골목 안쪽에는 대림중앙시장이 있다. 이곳의 풍경은 우리나라 여느 재래시장과는 다르게 생소한 중국식 재료와 중국 향기가 물씬 풍기는 길거리 음식들을 판매하고 있다.대림동 차이나타운에는 마라탕이나 훠궈 등 전통식부터 퓨전식까지 다양한 종류의 중국 음식을 판매하는 유명한 중국음식점들이 많다. 많은 식당들이 한국어 메뉴를 갖추고 있지만, 한국어가 전혀 통하지않는 곳도 있다.<br>','02-833-8113',null,'매월 2번째 화요일 휴무(점포마다 상이함)',null,'전연령',null,null,'08:00 ~ 20:30 (점포마다 상이함)','주차가능(공용주차장)','없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남산서울타워 한복문화체험관','04340','서울특별시 용산구 남산공원길 105(용산동2가)',38,127,'서울의 랜드마크인 남산서울타워 로비층(지하1층)에 위치한  남산서울타워 한복문화체험관은 조선시대의 대표적인 공간을 테마로 한 포토존과 다채로운 디자인 및 색상의 한복을 테마별 (전통, 개량, 혼례 등)로 구비하고 있다. 특히 체험관 내 대표 포토존은 경복궁 근정전의 어좌, 경복궁 교태전 중전의 방, 한옥의 사랑방에서 원형을 가져왔다. 한복과 더불어 사진이라는 매개체를 통하여 왕, 중전, 사대부를 어우르는 조선시대 사람들의 삶을 체험하고 공감하여, 한국 전통 미학의 가치를 국내외 다양한 사람들에게 알리는 것을 목적으로 하기 때문이다. 또한 오흥석 예술감독의 필모그래피 중 team_insert;광해, 왕이 된 남자team_insert;의 어좌, team_insert;궁합team_insert;의 공주방 등 한국영화 속 전통사극의 세트공간을 간접적으로 체험할 수 있도록 하였다. 또한 한복 디자이너, 포토그래퍼를 비롯한 전문 스탭이 한복체험은 물론 한국의 혼례식을 현대적으로 재해석한 혼례체험 및 기념촬영 등을 진행하고 있다.<br>','02-772-9388','2016-08-18','연중무휴','* 한복체험 : 체험시간 180분 / 체험비용 1인 18,000원 부터(의상+장신구+셀프촬영)<br />
+* 혼례체험 : 체험시간 30분 / 체험비용 1인 200,000원 부터(혼례복+장신구+포토엽서+포토그래퍼 촬영 사진 원본 CD) <br />
+※ 한복 체험은 1인 1벌 체험 가능 / 대여시간 초과시 추가요금 발생',null,'180명',null,'10:00 ~ 19:00','남산공원의 생태환경보호를 위하여 일반 승용차량 통행 제한','없음','없음',':
+상점정보:팝업스토어 <희관> - 100% 국내생산 제품으로 채워진 희관은 한국의 중소 브랜드 5~10개를 정기적으로 교체해가며 운영되고 있다. 주로 국내외 방문객들이 선호하는 관광기념품 및 패션소품으로 채워진다.
+
+입 장 료:대인 (14세 이상) 2,000원 / 소인 (13세 이하) 1,000원<br />
+※ 7세 이하 무료 입장<br />
+<br />
+※ 한복 대여, 헤어 장신구대여비용 별도<br />
+※ 혼례 체험, 사진촬영, 포토엽서 등 체험 비용 별도
+외국어 안내서비스:중국어, 영어, 일본어 안내 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('레일크루즈 해랑열차','04320','서울특별시 용산구 한강대로 405',38,127,'호텔과 열차가 결합된 레일크루즈 해랑은 2008년 11월 국내최초로 편의시설이 갖춰진 호텔식 관광전용열차로 출발하였다. 해랑은 해(태양)와 함께 아름다운 금수강산을 유람하는 최고의 열차라는 순우리말의 의미와 함께 봉황을 형상화한 독특한 로고와 열차 전면에 도색된 파랑색과 금빛 라인이 매력적이다. 한국적인 인테리어와 함께 장거리 여행객을 위해 맞춤형으로 제작된 객실에는 침대, 소파, 화장실(비데), 샤워실, TV 등 여행과 휴식에 필요한 모든 편의시설을 갖췄다. 객실 또한 스위트룸(2인기준), 디럭스룸(2인기준), 패밀리룸(3인기준), 스탠다드룸(4인기준)으로 객실이 구분되어 있어 부부나 연인, 혹은 가족 여행 등 여행 콘셉트에 맞춰 객실을 선택할 수 있다.
+
+달리는 열차 내에서 창밖으로 펼쳐지는 풍경을 감상하며 와인과 케잌 등을 비롯해 다양한 식음료 서비스 받을 수 있는 고급 레스토랑칸과 아카펠라, 난타, 악기연주 등 해랑 승무원들의 특별공연과 다양한 문화이벤트가 펼쳐지는 이벤트 라운지칸도 해랑만의 또 다른 매력이다. 해랑은 이러한 상품의 우수성을 인정받아 , KATA(한국여행업협회)에서 주관하는 2014 / 2015 / 2016 우수여행상품 선정되었다. 해랑코스는 효도상품으로 인기인 화요일 출발 2박 3일 전국일주 코스와 자녀를 둔 가족단위의 여행객이 주로 이용하는 토요일 출발 1박 2일 동부권, 서부권 코스(격주운행)로 나뉜다. 해랑은 시즌 별로 고객의 만족도가 가장 높은 코스로 변화시켜 재이용하는 고객들도 꾸준히 증가하고 있는 추세이며, 정기코스 외에 스페셜코스와 단체 맞춤형 코스로도 운행 가능하다.','1544-7755',null,null,null,null,null,null,null,null,'없음','없음','한국어 안내서비스:※ 전화/홈페이지 예약 가능<br />
+1544-7755  /  <a title="새창 : 레일크루즈 해랑열차 홈페이지로 이동" href="http://www.railcruise.co.kr/" target="_blank">http://www.railcruise.co.kr/</a>
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수도박물관','04770','서울특별시 성동구 왕십리로 27(성수동1가)',38,127,'뚝섬수원지 제1정수장은 1908년 9월부터 한국 최초로 수돗물을 생산, 공급한 곳이다. 이를 2008년 복원, 정비하여 개관하였으니 100년만이다. 이곳에서 상수도의 역사와 가치를 이해하고 서울시 수돗물‘아리수’생산과정도 살펴본다. 박물관 건물은 근대식 건축물의 특징이 잘 나타나 서울시 유형문화재 제 72호로 지정되었다.','02-3146-5921',null,'매주 월요일, 1월 1일, 설날 및 추석 당일','제1관람코스(뚝도아리수정수센터+수도박물관 관람), 제2관람코스(수도박물관 관람)<br/>
+※ 체험학습 프로그램 참여 사전 예약 필수','7세 이상','20~40명 단체, 개인의 경우 단체팀과 합류하여 진행',null,'하절기(3~10월) 평일 10:00~20:00 /공휴일 10:00~19:00<br/>
+동절기(11~2월) 평일 10:00~19:00 /공휴일 10:00~18:00','가능(서울 숲 대형 주차장)','없음','없음','입 장 료:무료(전시해설을 원하는 경우에만 사전 예약)
+내국인 예약안내:전시해설 관람 희망일 일주일 전까지 사전예약(인터넷 홈페이지)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('올림픽대교','05505','서울특별시 송파구 신천동',38,127,'대한민국 세계화의 시발점인 제24회 서울올림픽을 영구히 기념하고 올림픽 경기장 주변 교통처리를 위해 건설된 특별시도502호선으로 국내 최초의 콘크리트 사장교이며 길이는 1.5km에 이른다. 88서울올림픽을 뜻하는 높이 88m의 주탑 4개가 서 있으며, 주탑은 올림픽 성화대 모양을 형상화하였다. 4개의 주탑은 연·월·일·시의 4주와 4계절, 4방향을 의미하며, 케이블 24개는 제24회 서울 올림픽 경기를 의미하며 그 예술성이 우수하다.올림픽대교 건설과 함께 남단 고수부지에는 2,500평 규모의 도로공원과  지구촌의 화합을 상징하는 지름 6m의 5륜과 24개의 기념조형물이 조성되었다.<br>',null,null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('율곡로','03136','서울특별시 종로구 율곡로(원남동) 일대',38,127,'율곡로는 고궁 돌담과 가로수가 어우러진 도로로서 원래는 창경궁과 종묘가 붙어 있었으나 일제가 1931년 민족 말살정책의 일환으로 창경궁과 종묘를 나누어  그 가운데로 길을 낸 아픈 역사를 간직한 도로로 고풍스런 돌담과 도로를 따라 늘여선 가로수가 어우러져 고즈넉한 분위기를 자아내는 운치있는 길이다. 이 길이 지나는 관훈동에 조선왕조의  대표적인 유학자 이이(李珥)가  살았던 곳이 있어 그의 호를 붙여 율곡로라 명칭하게 되었다. 동십자각에서 이화동 사거리를 거쳐 동대문에 이르는 폭 30m, 연장 3㎞의 동서를 잇는 주요 간선도로로 미관성이 우수하다.<br>','02-2148-1842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 관상감 관천대','03058','서울특별시 종로구 원서동',38,127,'조선시대 기상대나 천문대인 관상감이 있던 자리에 설치한 것으로, 흔히 소간의대(小簡儀臺)나 ‘별을 관측하는 데’ 라는 뜻에서 첨성대(瞻星臺)라고 불렀다.  세종 16년(1434)에 설치된 서운관의  관측대로서, 서운관은 천문, 지리, 측후, 물시계와 관련된 일을 관장하는 곳이었다. 서운관은 조선 세조 12년(1466)에 관상감, 고종 31년 (1894)에 관상소, 1907년에 측후소로 바뀌어  현대식 시설을 갖추기 시작할 때까지 업무를 수행했던 곳이다 관천대는 다듬은 돌을 높이  4.2m,  가로 2.8m, 세로 2.5m 크기로 만들었고, 그 위에 직사각형의 돌로 난간을 둘러 놓았다. 그리고 지금은 없어졌지만 원래는 대 위로 올라가는 돌계단이 있었다. 경주에 있는 신라의 첨성대, 개성 만월대의 고려 첨성대, 서울 창경궁 내의 관천대와 더불어 우리나라 천문 관측역사의 발전을 연구하는데 귀중한 자료이다.<br>','02-2148-1842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 우정총국','03144','서울특별시 종로구 우정국로 59(견지동)',38,127,'안국동 사거리에서 종각 방향으로 우정국로에 들어서서 바로 오른쪽으로 민가와 나란히 위치한 조그마한 건물이 우정총국(郵征總局)이다. 이곳은 조선 말기에 우체 업무를 담당하던 관청이다. 일본과 미국을 두루 돌아본 홍영식(洪英植)의 건의로 재래의 역전법(驛傳法)을 고쳐 근대식의 우편제도가 창설되면서, 1884년 (고종 21) 3월 옛 전의감(典醫監) 자리에 전의감의 건물을 보수해서 이용했다. 우정국은 국내의 우편사무 보다는 인천, 부산, 원산 등의 항구를 경유하는 국제서신 교류 사무에 역점을 두었다. 우정국은 최초의 근대적 우편제도가 시작된 곳이지만, 갑신정변이 일어난 곳으로도 유명하다. 청과 민씨 척족 세력이 임오군란을 기점으로 점차 세력을 확대해 나가자 위협을 느낀 김옥균, 박영효, 서재필 등의 개화파가 정권을 탈취하고자 우정국 개업 축하연 당일 정변을 일으켰다.<br />이날 우정국 옆 민가에 불을 지르고 이를 신호로 보수파에 대한 공격을 시작하였다. 이들이 당시 공포한 혁신정강은 양반중심의 정치사회 지배질서를 타파하고 민중의 평등과 자유를 실현하는 부국강병의 자주독립국가의 건설을 지향하고 있다. 그러나 정작 민중의 이해와 관심을 끌어들이는데 실패하고, 믿었던 일본군마저 청군에 격파되면서 정변은 ''삼일천하''로 끝나게 된다. 1884년 갑신정변으로 문을 닫았던 우정총국이 128년만에 우체국 기능을 갖추고 2012년 개국하였다. 개국한 우정총국은 우정사료 전시공간과 우체국 업무공간으로 나눠져 있으며, 우정총국이 사적으로 지정된 건물이기 때문에 기본적인 우편서비스만 제공하여 운영한다.<br />우정국의 건물은 여러 채 있었던 것으로 추정되지만 지금은 현재의 건물 한 채만 남아 있다. 또한 이곳은 우리나라 우편사업의 발상지로, 세계적으로도 가장 오래된 우편업무 주관 관청의 하나로 꼽힌다. <br />* 면적 - 2,588㎡<br>','02-2148-1822',null,null,null,null,null,null,null,'불가','없음','불가','입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 대한의원','03080','서울특별시 종로구 대학로 101(연건동)',38,127,'서울대학병원 구내의 고풍스런 2층 벽돌집이 옛 대한의원의 건물이다. 대한의원은 1907년 대한제국 정부가  앞서 세워졌던 내무부 소관의 광제원과 학부 소관의 경성의학교 부속병원, 궁내부 소관의 대한적십자 병원 등을 통합하여 의정부 직속으로 설립되었다.  대한의원은 마두봉(馬頭峰) 일대에 세워졌는데, 이 자리는 창경궁의 좌청룡에 해당되는 곳으로,1484년(성종 15)에 창경궁의 바깥 정원인 함춘원(含春園)이 있던 곳이다. 또한 1776년(정조 즉위) 정조가 자신의 생부인 사도세자의 위패를 모신 경모궁(景慕宮)을 세웠다. <br /><br />이처럼 조선왕실이 중시하던 곳에 일제가  경성제국대학을 세우면서 함춘원, 경모궁을 파괴하였다. 1907년 대한의원 설립 발표와 동시에 탁지부 건축소의 일본인 기사 시교현길(矢橋賢吉)의 설계로 본관과 병실 7개동, 그리고 부속건물들이 함께 착공하여  1908년 11월에 준공되었다. 건물이 완공되기 전까지 대한의원은 광제원에서 개원하였으며, 1910년 일제 강점기가 시작되면서 총독부의원으로 바뀌었고, 1911년에는 부속  의학강습소로 이름이 바뀌었다가 1926년에는 경성제국 대학에 편입되면서 대학병원으로 되었고, 1945년 해방이후 서울대학교 부속병원이 되어 오늘날에 이르고 있다. 오늘날 남아 있는 건물은 준공 당시의 본관건물 뿐이다. 이 건물은 중앙부의  시계탑을 중심으로 양쪽에 날개부를 두고, 두 끝 부분을 정면으로 돌출시킨 형태로, 좌우대칭의 평면구성을 한 2층 벽돌집이다. 붉은 벽돌과 화강암을 주재료로 사용하였다.<br /><br />* 면적 - 10,181.91㎡<br>','02-2148-1842',null,null,null,null,null,null,null,null,'없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구공업전습소본관','03087','서울특별시 종로구 이화장길 81(동숭동)',38,127,'대학로에 자리한 한국방송통신대의 역사관 건물이 바로 구 공업전습소의 역사관 건물이다. 이 건물은 탁지부 건축소에서 설계하고, 일본인 요시다겐조오(吉田謙造)가 시공을 맡아 1907년에 착공하여 1908년에 준공되었다.  공업전습소는 대한제국시기 상공업 진흥정책의 일환으로 설치되어 염직, 직조, 제지, 금은세공, 목공 등의 근대기술을 교육한 기관이다. 1906년에 발족되면서 원래 화폐를 인쇄하던 전환국 기계시험소가 있던 동숭동에 터를 잡아본관을 비롯한 부속건물이 지어졌다. 공업전습소는 1910년 일제강점기가 시작되면서 대한제국의 통감부 소관에서 조선총독부 소관으로 이관되었고, 1912년 4월 다시 중앙시험소 부설로 개설되었다가 1916년 4월 경성공업전문학교가 개설되면서 막을 내리게 된다. 이후 중앙시험소 등으로 명맥을 유지하다가 현재 한국방송통신대학의 본관 건물로 사용되고 있다. 이 건물은 2층의 르네상스식 건축으로 전체적으로는 좌우대칭을 이루는 ''H''자형의 목조 건물이다.  대한제국 때 지은 목조건물로는 유일하게 그 원형을 잘 유지하고 있을 뿐만 아니라, 현재 대한제국 탁지부가 설계한 몇 안 되는 현존건물로서 역사적 가치가 크다.<br /><br />* 면적 - 999㎡<br>','02-2148-1842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 고려대학교 중앙도서관','02841','서울특별시 성북구 안암로 145(안암동5가)',38,127,'이 건물은 고려대학교의 전신인 보성전문학교가 개교 30주년을 기념하여 세운 중앙도서관이다. 본관과 마찬가지로 한국인 건축가 박동진(1899~1982)이 설계하였고, 건축의 양식과 구조는 당시 교수로 있던 오천석의 모교인 미국의 듀크대학 도서관을 참고하였다고 한다. 시공자는 미상이다. 중앙 도서관을 준공할 당시 국내외적으로 많은 관심과 성원을 보여 당시 금액으로 22만 원의 공사비를 들여 차질 없이 마쳤다고 한다. 본관 건축 다음 해인 1935년 6월에 착공하여 1937년 9월에 본관의 왼쪽 언덕에 화강암 석조 고딕 양식의 5층 건물로 완공하였다. 평면은 ㄴ자형으로 모서리 부분의 중앙탑 부를 중심으로 본채가 양쪽에 있는데, 하나는 탑과 나란히 남쪽 정면을 바라보고 있지만, 다른 하나는 탑에서 북쪽으로 꺾여 동쪽을 바라보고 있다. 본채는 3층이고, 남서 모서리의 탑비는 고딕 성관풍 (城館風)의 5층 탑으로 철근 콘크리트 구조에 돌을 덧붙였다.
+도서관 준공 당시 1층에는 교수 연구실 32개, 2층에는 250석의 대 열람실을 배치하고, 각 책상마다 스탠드와 가죽의자를 비치하였다. 3층에는 20만 권의 장서를 보관하고, 3층 이상은 민속자료, 미술품을 진열할 수 있도록 꾸몄다. 그러나 개교 70주년을 맞아 중앙 도서관 신관이 준공되면서 여유 공간을 확보하게 되어 지금은 당시의 기능을 대부분 신관으로 넘기고 대학원생들의 열람실과 교수 연구실로 사용되고 있다. 고대 보유 장서 17여만 권 중 40여만 권이 있는 서고에는 서유견문 등 국보와 보물로 지정된 각종 귀 중서가 주류를 이룬다.','02-3290-1492',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 고려대학교 본관','02841','서울특별시 성북구 안암로 145(안암동5가)',38,127,'이 건물은 고려대학교의 전신인 보성전문학교의 본관이다. 보성전문학교는 한국인에 의해 설립된 최초의 근대적 고등교육기관이라 할 수 있다.1905년 대한제국 내장원경(內藏院卿)을 지낸 이용익(李容翊)이 교육구국 (敎育救國)의 이념 아래 박동, 지금의 수송동에 있던 러시아어 학교(露語學校)가 있던 자리에 법률과 실업교육을 목적으로 개교하였다. 1910년 천도교에서 인수하여 안국동 자리에 2동의 목조교사를 짓고 법과와 상과의 전문과정을 운영하였다. 그러나 재정난에 빠지자 김성수가 1932년에 이 학교를 인수하였고,1933년 지금의 안암동에 자리잡게 되었다. 1946년 8월에 정법,경상 및 문과의 3개 단과대학에 8개 학과로 편성된 종합대학으로 승격, 개편하여 고려대학교로 교명이 바뀌었다. 본관건물은 도서관과 함께 안암동으로 학교를 옮기면서 세워진 대표적 건물이다.<br /><br />일제 강점기 시대 중앙고등학교 본관 등의 창의적인 작품을 발표했던 박동진(朴東鎭,1899-1982)이 설계하고, 일본인 후지따고오지로오(藤田幸二郞)가 시공을 맡았다. 1933년 9월에 착공하여  1934년 9월 석조 및 철근콘크리트 구조의 3층 건물로 준공되었다. 평면은 중앙부를 중심으로 좌우의 날개부가 짧게 처리된 ''H''자형(l-l-l)의 완벽한 좌우대칭을 이루고 있다. 화강석을 주재료로 하였다.  내부에는 증기 난방과 수세식 위생장치를 갖추었는데,당시로서는 최신식 시설이었다.<br /><br />* 면적 - 3,223㎡<br />* 소유자 - 학교법인고려중앙학원<br>','02-2241-2653',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구 서울대학교 본관','03087','서울특별시 종로구 동숭길 3',38,127,'젊음의 거리, 문화의 거리로 알려진 대학로의 중심에 문화예술진흥원 건물이 자리잡고 있다. 이 건물이 바로 구서울대학교 본관이다. 일제 치하의 1931년 옛 경성제국대학의 본관 건물이다. 1922년 11월 이상재를 대표로 조선교육협회에 의하여 조선민립대학 기성회가 결성되고,1923년 3월 29일 발기인총회가 개최됨으로써 조선민립대학의 설립운동이 본격화되었다. 일제는 이를 저지하기 위하여 1923년 5월 경성제국대학령을 공포하고, 1924년 경성제국대학이란 관립대학을 설립하였다. 1924년 먼저 2년제의 예과를 설치하여 개교를 한 후, 1926년에는 3년제의  법문학부와 4년제의 의학부를 설치하였고, 1938년에는 이공학부를 신설하였다. 그리고 해방된 후 1946년 8월 미군정에 의해 국립 서울대학교 설치령이 발표되면서 오늘날 서울대학교로 바뀌었다. 이 건물은 한국인 건축가 박길룡이 설계를 하였고, 일본인 미야가와구미(宮川祖)가 시공을 담당하였는데, 1930년 8월에 착공하여 1931년 10월 준공되었다. 1945년 해방 이후 서울대학교 본관으로 사용되다가 1972년 서울대학교가 관악캠퍼스로 옮기면서 문화예술진흥원의 청사로 사용되고 있다.이 건물은 장방형의 평면에  구조는 철근콘크리트가 주가 되면서 벽돌과 목재를 겸용하였다. 지하는 1층이고, 지상의 일부분은 2층,  일부는 3층으로 설계되었으며, 근대합리주의적 형태로 세련되고 우아한 모습을 하고 있다.<br /><br />* 면적 - 1,628.1㎡ <br />* 소유자 - 한국문화예술진흥원<br>','02-2148-1842',null,null,null,null,null,null,null,'있음','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('중앙고등학교','03051','서울특별시 종로구 창덕궁길 164',38,127,'안국동 현대그룹 본사 옆으로 난 길을 따라 북쪽으로 올라가면 중앙고등학교 정문에 이른다. 중앙고등학교는 1908년 기호지방의 우국지사들에 의해 설립된 기호학교(畿湖學校)가 1910년 9월 흥사단에서 설립한 융희학교(隆熙學校)를 합병하여 설립된 학교이다. 또한, 우국지사들에 의하여 설립된 호남(湖南), 교남(嶠南), 관동(關東) 등의 학회가 운영난에 빠지자, 1910년 11월 모두 통합하여  중앙학교로 학교 이름을 개칭하였다. 1915년 김성수가 인수하였고, 1917년에는 계산(桂山) 언덕에 교사를 신축하고 이전하였다. 본관, 서관, 동관 등의 건물을 12월에 준공하였다. 당시의 교사는 2층 벽돌집이었다. 그러나 1934년 본관이 화재로 소실되었다. 따라서 1935년 6월 우리나라 근대건축가로 고려대학교 본관과 도서관, 조선일보 사옥을 설계한 박동진(朴東鎭, 1899-1980)의 설계로 다시 착공하여 1937년 9월에 준공하였다.<br /><br />[중앙고등학교본관] 사적 (1981.09.25 지정)<br />본관은 학교 정문에서 바라볼 때 정면에 세워졌으며, 석조 콘크리트 철근 2층의 근대식 건물이다. 좌우가 대칭되는 H자형 평면의 중앙에는 중세시대 고딕 성관풍(城館風)의 4층탑을 두고, 그 좌우로 1층에는 교무실, 2층에는 교실을 두었다.<br />* 면적 - 2,409.9㎡<br /><br />[중앙고등학교서관] 사적 (1981년 9월 25일 지정)<br />중앙고등학교 서관은 1921년 10월에 2층 붉은 벽돌집으로 준공되었으며, 설계자는 확실치않다. 1934년 화재로 없어진 구 본관 건물(지금의 동상이 있는 곳)을 중심으로 왼쪽에 동관이 있고, 오른쪽에 바로 서관이 자리 잡고 있다. 회백색의 화강암 돌과 붉은 벽돌로엇물려 지은 2층집이다. 설계자는 일본인 중촌여자평(中村與資平)이다. 평면은 T자형이며,박공면이 돌출해 있다. 이곳에는 모두 교실을 배치하였다. 또한, 3·1운동 이후 조선 소년군창설, 6·10만세운동, 광주학생운동을 시작한 곳이기도 하다.<br />* 면적 - 595㎡<br /><br />[중앙고등학교동관] 사적 (1981년 9월 25일 지정)<br />동관은 1923년 10월 준공된 2층의 붉은 벽돌집으로 1934년 화재로 소실된 구 본관 왼쪽에지어져 건너편의 서관과 마주 보고 있다. 서관과 마찬가지로 설계자와 시공자는 기록이 없어 확실하지 않다. 동관의 건물구조와 특징은 서관과 비슷하다. 붉은 벽돌조 슬레이트 이름의 고딕식이다. 평면은 T자형이며, 박공면이 돌출되어 있다.<br />* 면적 - 648㎡<br />* 소유자 - 학교법인고려중앙학원','02-742-1321',null,null,null,null,null,null,null,'없음(교내 외부차량 출입 통제)','없음','없음','화장실:있음
+이용가능시설:인문학박물관
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('창의문(자하문)','03020','서울특별시 종로구 창의문로 118(부암동)',38,127,'북소문인 창의문은 자하문이란 애칭으로 널리 불리었다. 숙정문이 항상 폐쇄된 채 제 구실을 못하였기에 이 문이 그 문의 역할까지 도맡지 않을 수 없었다. 그러하기에 사람들은 창의문을 늘상 북문이라 불렀던 것이다. 도성의 북쪽 교외로 빠지거나 가까이는 세검정과 북한산으로 가자면 이 문이 관문이기에 이용도가 적지 않았다.
+이 문 근처에는 자하가 많이 끼였는가 서울 내기들은 세검정 일대를 두고 자문밖이라 하였으니 이는 곧 창의문 밖을 일컫는 말이었다. 이 자하문은 4소문 중에서 그 원형을 유일하게 보존하고 있는 문이다.  등치로는 건축면적 49.587m²(15평) 안팎의 조그마하지만 매우 단단하고 굳건한 기풍을 풍기는 건축물이다.
+특히 우리의 눈길을 끄는 색다른 특징을 엿볼 수 있는데 바로 목계를 달아 놓은 것이다.  동소문 문루에 봉황새를 그려놓은 것이 여타 문과 다른 특색이듯이 창의문 추녀에 나무로 닭을 깎아 매달아 놓은것 역시 다른 문과 유를 달리하는 모습이다. 그 까닭은 문밖의 지세가 지네와 유사한 상이기에 그 기세를 제압하자면 지네와 상극인 닭의  꼴을 만들어 매달아 놓아야 한다는 속설에 따른 것이다. 창의문에 얽힌 역사적 사실 중에서 인조반정에 관한 것을 빼놓을 수 없다. 인조반정은 광해군 15년 (1623) 이귀 등 서인일파가 광해군 및 집권당인 이이첨 등의 대북파를 몰아내고 능양군 종(綾陽君 倧:인조)을 왕으로 옹립한 정변이다. 1623년 3월 12일 이귀, 김유, 김자점, 이괄 등은 반정계획을 진행하던 중 계획이 일부 누설되었으나 예정대로 실행에 옮겨 장단의 이서군과 이천의 이중로군은 홍제원에서 김유군과 합류하였다.  반정군은 창의문을 향해 진군하여 문을 깨뜨리고 입성한 뒤  훈련대장 이흥립의 내응으로 창덕궁을 무난히 점령하였다. 이에 당황한 광해군은 궁궐 뒷문으로 달아나 의관 안국신의 집에 숨었다가 체포되어서 인(庶人)으로 강등되어 강화로 귀양 보내지고 능양군이 왕위에 오르니 이가 곧 인조이다. 후에 영조는 이 거사를 기념하기 위하여 창의문의 성문과 문루를 개축하고 반정공신들의 이름을 현판에 새겨 걸어놓게 하였다. 지금도 그 현판이 문루에 걸려 있다.','02-2148-1822',null,'연중무휴',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('브이알존 큐브 강남점','06614','서울특별시 서초구 서초대로77길 25(서초동) 경일빌딩 3층',37,127,'VRZONE CUBE는 일반적인 VR체험에 머무르지 않고, 각방에 모니터team_insert 고객님께서 선택하여 체험할 수 있습니다. 좀비러쉬, 로스트시티, 야구, 고스트어택커, 우주전쟁, 슈퍼퐁, 승마, 델타, 키즈 도티잠뜰 등 색다른 컨테츠로 어느곳에서도 경험 하지 못했던 상상 그이상의 현실을 구현합니다. HUNTED는 가상의 섬 센트럴시티에서 일어나는 알 수 없는 상황을 조사하러 갔다가 일어나는 악마와 좀비로 부터의 탈출 스토리이며, LOST CITY는 외계로부터 지구를 정복하기 위하여 지구에서 가장 강력했던 생명체인 공룡이 소환되고 이를 저지하는 스토리입니다.스페이스델타는 약 20여가지의 콘텐츠로 놀이기구를 탑승하는 체험을 할 수 있는 기구입니다. 놀이기구를 VR로 재현함과 상상만 해왔던 장소를 탐험하는 상상 그이상의 현실을 구현합니다.<br>','02-591-0770','2017년 01월 26일','연중무휴',null,'만 8세 이상','시간당 60명 수용가능',null,'12:00 ~ 23:00','없음','불가','불가','시설이용료:3회 이용권 : 성인 18,000원, 소인 15,000원<br />
+5회 이용권 : 성인 24,000원, 소인 21,000원<br />
+※ 1회 추가이용<br />
+<br />
+Space Delta : 7,000원<br />
+Horse Racing : 7,000원<br />
+Hunted 2 : 10,000원<br />
+Hunted 3 : 12,000원<br />
+Lost city : 10,000원<br />
+Super Pong : 8,000원ㅍ
+엉망진창 스태디움 : 8,000원<br />
+고공체험 : 8,000원
+화장실:있음
+이용가능시설:[체험시설]<br />
+좀비사냥 (수용인원2명)<br />
+승마 레이싱VR (수용인원 4명)<br />
+흔들다리VR (수용인원 2명)<br />
+스페이스 델타VR (수용인원 2명)<br />
+<br />
+[기타시설]<br />
+카페 - 음료<br />
+위생시설 - 화장실
+주차요금:없음
+내국인 예약안내:전화예약 가능
+한국어 안내서비스:체험언어 : 한국어
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('VRZONE 용산 아이파크몰점','04377','서울특별시 용산구 한강대로23길 55(한강로3가) 6층(용산 아이파크몰)',38,127,'VRZONE은 일반적인 VR체험에 머무르지 않고, 각방에 모니터  플레이어로 고객님이 선택하여 체험할 수 있다. 헌티드 시리즈, 로스트시티, 호스 스프린트, 스페이스 델타, 령; 저주받은 인형 등 색다른 컨테츠로 어느곳에서도 경험 하지 못했던 상상 그이상의 현실을 구현한다. HUNTED는 가상의 섬 센트럴시티에서 일어나는 알 수 없는 상황을 조사하러 갔다가 일어나는 악마와 좀비로 부터의 탈출 스토리이며, LOST CITY는 외계로부터 지구를 정복하기 위하여 지구에서 가장 강력했던 생명체인 공룡이 소환되고 이를 저지하는 스토리이다. 스페이스델타는 약 20여가지의 콘텐츠로 놀이기구를 탑승하는 체험을 할 수 있는 기구이다. 놀이기구를 VR로 재현함과 상상만 해왔던 장소를 탐험하는 상상 그이상의 현실을 구현한다.<br>','02-2039-7521','2018-07-06','연중무휴',null,'만 8세 이상','시간당 60명 수용가능',null,'일~목 10:30 ~ 20:30<br />
+금~토 10:30 ~ 21:00','있음','불가','불가','입 장 료:없음
+화장실:있음 
+주차요금:용산 아이파크몰 정책에 따름
+내국인 예약안내:전화 예약 가능
+외국인 예약안내:전화 예약 가능
+한국어 안내서비스:체험 언어 : 한국어
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('파크하비오 워터킹덤team_insert','05837','서울특별시 송파구 송파대로 111',37,127,'워터킹덤은 사계절 편안한 휴식도 즐기고 짜릿한 즐거움도 느낄 수 있는 실내형 워터파크이다. 서울 도심에서 멀리 나갈 필요 없이, 궂은 날씨에도 상관없이 가족,친구,연인과 함께 365일 워터파크를 즐길 수 있다.','02-1600-0666','2017-03-25','매주 수요일 휴장(6월말까지) - 여름/겨울 성수기 휴장일 없음','모션슈팅슬라이드-주중3,000원/주말5,000원<br />
+스페이스존-체험시간 50분 / 체험비용 3,000원<br />
+실내서핑-체험시간 50분 / 체험비용 4만원','전체 이용 가능',null,null,'10:00 ~ 18:00','워터파크 이용시 13시간 무료','없음','없음','상점정보:수영복 판매 매장
+관광코스안내:워터킹덤 - 사우나 - 찜질방 - 메가박스 - 호텔
+화장실:있음
+주차요금:있음
+이용가능시설:실내서핑, 급류, 토렌트리버, 다양한 슬라이드, 파도풀, 유수풀, 찜질, 스파 등
+※워터파크 이용고객 찜질방 별도 현장결제(5,000원)
+입 장 료:[워터파크]<br />
+주중 종일권-55,000원 / 주말 종일권-58,000원<br />
+주중 오후권-35,000원 / 주중 오후권-35,000원<br />
+<br />
+[찜질방]<br />
+대인 주중-13,000원 / 소인 주중-10,000원<br />
+대인 주말-15,000원 / 소인 주말-12,000원<br />
+<br />
+※할인가는 홈페이지에서 확인 가능
+내국인 예약안내:전화/홈페이지 예약 가능<br />
+현장 예매 가능
+
+외국인 예약안내:홈페이지 예약 가능<br />
+현장 예매 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('150년 수령 느티나무',null,'서울 양천구 목4동 760-28',38,127,'수령 150년된 느티나무 고목으로 이 느티나무는 이곳이 대규모 주택단지로 변모하기 이전에도 마을이 존재했었다는 하나의 증표가 되고 있다. 지금으로부터 150년 전 뜻있는 나말(목4동의 옛이름)마을의 주민이 식재하여 현재에 이르고 있으며 6.25사변때는 폭격을 받아 고사상태였으나 새순이 움트는 등 각종 재해를 극복하고 잘자라고 있으며, 높이 10m 둘레 278cm로 건강을 빌면 이루어진다고 하였으며 함부로 훼손하면 저주를 받고 큰 재앙이 뒤따라서 오래전부터 잘 보호하여 현재까지 살아있는 마을의 수호신으로 받들여 지고 있다.<br>','02-2620-3407',null,'연중무휴',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('계남공원(유아숲체험장, 우렁바위)','08106','서울특별시 양천구 신정동',38,127,'1971년에 개원한 근린공원으로 다양한 운동시설과 야외무대, 약수터 등이 있다. 특히 무장애 숲길 1,023m를 포함한 둘레길 4km구간이 개통되어 있다.친환경 무장애숲길은 아기자기하게 오르내리며 환상적인 단풍길을 즐길 수 있게 꾸몄고, 야간에도 안전하게 산책할 수 있도록 친환경 발광다이오드 조명등을 곳곳에 설치했다. 신정산 숲속여행은 숲해설가와함께 체험활동 위주의 프로그램으로 자연과 호흡하고 심신을 재충전할 수 있는 좋은 기회가 무료로 주어진다. 신정산 초입에 아이들이 자연을 만끽할 수 있는 유아숲체험장이 있어 생태교육 전문가의 친절한 설명은 숲속 나들이의 즐거움을 더해준다. 숲속도서관,모험놀이공간,감성체험공간,상상놀이공간, 숲체험공간등이 있다. 공원내에 관심을 끄는 바위가 있다 이 우렁바위는 옛날에 울었다는 전설을 간직한 바위로 길마(소등받이)처럼 생겼다 하여 길마바위라부르기도 한다. 십자모양의 4개 바위 틈사이로 바람이 통하며너 공명현상이 일어나 바위에서 소리가 나자 사람들은 그 바위를 예사롭게 보지 않았던듯하다.<br>','02-2620-3570',null,null,'3월에서 11월까지 주말에 계절별 주제를 정해 신정산숲속여행 프로그램을 운영하고 있다.<br />
+* 유아숲체험장<br />
+평일-사전예약(단체 신청만 가능)<br />
+주말-개인이용 가능',null,null,null,null,null,'없음','없음','관광코스안내:10코스 : 연의생태공원에코로드-계남근린공원 무장애숲길-신트리공원산책로
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양천생활안전체험교육관','08094','서울특별시 양천구 목동서로 363',38,127,'양천문화회관 옆에 위치한 양천생활안전체험교육관은 2016년8월25일에 개관하였다. 양천구는 일상생활 속 안전사고의 위험을 사전에 예방하고, 다양한 체험교육을 통해 응급상황에 대한 대처능력을 키우고자 공간을 조성했다. 기존 주차장부지 일부에 실속있고 짜임새 있게 체험관을 꾸렸다. 264㎡규모의 체험관은 심폐소생술교육장과 생활안전체험장에서는 가슴압박 심폐소생술, 자동심장충격기 사용법, 화재소화체험, 연기피난체험 등이 가능하다.<br>','02-2620-4397~9',null,null,'심폐소생술 실습교육, 화재진압‧연기피난 체험, 완강기 사용 체험, 전기‧가스사용 실습교육<br />
+신청방법: 전화,방문,인터넷 예약신청(양천구청 홈페이지 www.yangcheon.go.kr)',null,null,null,'* 평일교육 : 1일3회<br />
+(1회차 10:00~12:00, 2회차 13:00~15:00,  3회차 15:00~17:00)<br />
+* 토요일교육 : 오전 10:00~12:00(가족단위 8세이상)<br />
+* 야간교육 : 월2회 성인위주교육(2.4째주 목 19:00~21:00)<br / >
+* 심화교육 월1회 중복교육이수자 및 교직원 위주 교육(마지막 주 금요일 14:00 ~ 17:00)<br / >
+* 원격심폐소생술 월 1회(마지막 주 수요일 13:00 ~ 15:00)<br />
+* 외상응급처치 월 5회(마지막 주 월요일 ~ 금요일 10:00 ~ 12:00)<br />
+* 원격 외상응급처치 월 1회(마지막 주 수요일 오후 13:00 ~ 15:00)',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('곰달래꿈마을','07925','서울특별시 양천구 곰달래로 36',38,127,'곰달래꿈마을은 2014년 주거환경관리사업 대상지로 결정되어 마을 기반시설 정비 및 공동이용시설 설치, 공동체 활성화 재생사업을 추진하였으며 공동이용시설에는 까페, 동아리발전소,다목적실이 있다. 주요활동으로는 골목길 축제(매년 10월), 밥상나누기(매주 목요일), 챔버오케스트라, 골목길 경관 조성사업이 있으며 서울시 마을상수상(2017년), 현대자동차기프트카공모전 수상(2017년) 공동체우수사례 발표한마당 최우수상(2018년) 한겨레-SH공사 행복둥지 공모전 최우수상(2018년)을 수상하였다.<br>',null,null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('장수공원(열녀문)','08028','서울특별시 양천구 신월동',38,127,'신월동 지역의 랜드마크 중 하나인 장수공원은 신정네거리 ''물이 흐르는 거리''를 기점으로 신월동 복개도로까지 조성되어 있으며 곳곳에 건강지압로, 배드민턴장 등이 있어 산책과 운동을 겸할 수 있는 공원이다. 물이 흐르는 거리의 해누리분수광장은 도심 속 아이들의 즐거운 놀이터가 되어주는 친수공원으로 시원함을 선물한다. 장수공원 중앙광장에는 6.25전쟁 및 월남전에 참전한 국가유공자를 위한 참전유공자명비도 건립되어 있다.장수공원의 걷고 싶은 길을 따라 걷다보면 열녀문이 나온다. 이 열녀문의 주인공인 부인 이씨는 전의 이씨 명문의 귀한 딸로 태어났으나 일찍 남편과 사별하였는데 사별한 남편에 대한 애통함때문에 밥을 먹지 않고 단식하여 이십대 후반에 사망하였다. 이러한 사실을 보고받은 조정에서는 1729년(영조5년)에 전의 이씨의 높은 뜻을 기리기 위하여 ''열녀학생 원정익 처 전의 이씨의 문''이라 기록된 현판의 열녀문을 하사하였다.<br>','02-2603-0203',null,null,null,null,null,null,null,null,'없음','없음','관광코스안내:1코스 : 연의생태공원-해맞이도서관-신월문화체육센터-오솔길공원-신월디지털정보도서관-장수공원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('나무마을목공방','07996','서울특별시 양천구 목동서로 159-2(목동)',38,127,'오목공원 내에 위치한 나무마을목공방은 책꽂이, 좌탁, 수납함 등 아이부터 성인까지 참여할 수 있는 다양한 목공예 체험프로그램을 운영하고 있다. 이전에는 공원 내 물품을 보관하거나 이따금 회의실로 이용하는 곳이었는데, 리모델링을 통해 지역주민들에게 목재를 활용한 색다른 경험을 제공하는 공간으로 재탄생했다. 주중에는 유치원, 초등학생 등이 실과과목을 연계한 프로그램을 운영하고, 주말에는 가족단위로 참여할 수 있는 프로그램이 주로 열린다. 실용목공과 전통목공을 배울 수 있는 전문 목공반 강좌도 있다. 나무라는 소재를 이용해 자연을 느끼고 만지면서 가족, 친구, 이웃과 소중한 시간을 보낼 수 있는 공간이다.<br>','02-2620-4736',null,'월요일','* 목공체험(전화문의)<br />
+* 양천구 평생학습관 홈페이지 메인 화면 공지사항에 ''나무마을목공반 운영프로그램안내'' 필독',null,null,null,'10:00~17:00(월요일 휴관)',null,'없음','없음','입 장 료:구청 홈페이지를 통한 인터넷 접수 후 무통장 입금
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양천나눔누리타운','08082','서울특별시 양천구 중앙로 250(신정동)',38,127,'2호선 신정네거리역 인근에 위치한 양천나눔누리센터는 지하2층~지상5층, 1,800㎡ 규모로 건립되었다. 1층에는 기부받은 생필품을 저소득 취약계층에게 제공하는 해누리푸드마켓이 들어섰고, 2층에는 자원봉사자와 수요처를 연결하는 징검다리 역할과 지역의 자원봉사 활성화를 위한 자원봉사센터가 위치해 있다. 3층에는 강의실과 별도의 작업실을 마련해 강의를 듣고 직접 해보는 통합 진로체험을 할 수 있으며, 4층에는 내일그림진로직업체험지원센터가 마련돼 청소년들의 진로 설계코칭, 진로상담 등 적성과 미래를 탐색할 수 있는 다채로운 체험 프로그램을 운영하고 있다. 5층에는 100여 명이 수용 가능한 강당이 들어서 각종 설명회 및 행사 등에 다용도로 활용할 수 있으며, 자원봉사센터와 협의 후 대관(유료)도 가능하다.<br>','02-2643-1365',null,null,'내일그림 진로직업체험지원센터(2084-5414)',null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연의근린공원(생태학습관, 북카페)','08049','서울특별시 양천구 신정이펜1로 12(신정동)',38,127,'연의근린공원은 국내 유일의 생태환경 저류지 공원으로 환경부 신기술인 생태적 수질정화 비오톱 특허시스템을 도입해 조성하였다. 연의공원은 나비, 사슴벌레, 장수풍뎅이 등 세계 희귀종들의 곤충표본 전시와 다양한 시청각 자료를 통해 생태계를 쉽게 이해할 수 있는 생태학습관을 상시 개방하고 있으며, 멸종위기종인 맹꽁이 등 다양한 생물서식처를 복원했다. 산택로에는 데크길과 황토길이 조성되었고, 공원사면에는 다양한 야생화가 심어져 있으며, 4대의 분수가 설치되어 밤에 운동하러 나온 주민들은 야간분수도 즐길수 있다.또한 산책길을 걸으며 공원 내 식생과 곤충에 대하여 알아보고, 쉽고 재미있게 생태계를 이해할 수 있는 생태체험 프로그램을 통해 어린이들에게 다양한 자연학습기회를 제공한다. 주말에는 가족생태프로그램을 월별 다양한 주제로 실시하고 있다.<br>','연의생태학습관 02-2603-0203',null,null,'* 평일오전 단체(전화예약)와 토요일 오전 개인 참여(구청 홈피 통합예약) 가능<br />
+* 생물자원이힘이다 : 4월~10월 1주 토요일 10시~12시 : 개인누구나 => 자원봉사 2시간 인정<br />
+* 나무랑 놀자 : 4월~10월 3주 토요일 10시~12시 : 2인가족, 4월~10월 월~금 10시~12시<br />
+* 사계절자연이야기,우리는지구레인져,학습관이살아있다 : 4월~10월 월~금10시~12시<br />
+* 자유관람 : 13시~17시 학습관개방시자유방문',null,null,null,null,null,'없음','없음','관광코스안내:1코스: 연의생태공원-해맞이도서관-신월문화체육센터-오솔길공원-신월디지털정보도서관-장수공원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도시농업공원','08051','서울특별시 양천구 신월동(신월동)',38,127,'2019년 4월에 개장한 서남권 최초의 도시농업공원인 “양천도시농업공원”은 신월동 산 174-1일대에 위치하고 있다. 도시농업공원은 98구좌(882㎡)규모의 노지텃밭 및 어르신과 장애인을 위한 책상형 텃밭과 비닐하우스, 옥외샘터 등으로 구성된 도시농업존과 야외학습장, 숲속마당, 힐링숲 등으로 구성된 산림복원존으로 총 면적 24,078㎡의 “도시농업” 특화 공원이다. 또한 공원 내 도시농업교육센터에서는 농사에 관심 있는 구민 누구나 쉽게 체험할 수 있는 도시농부학교와 어린이 도시농부체험교실을 운영하고 있다. 앞으로도 도시농업을 통해 몸과 마음의 건강, 가꾸는 재미, 나누는 행복, 뿌듯한 자부심을 느낄 수 있도록 다양한 행사와 볼거리를 제공할 예정이다.<br>','02-2620-3578',null,null,'도시농부학교, 도시농부체험 등 행사진행<br />
+체험 및 프로그램 문의 02)2620-3578',null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('노들섬','04427','서울특별시 용산구 양녕로 445',38,127,'1950년대까지 중지도로 불리며 백사장과 스케이트장으로 활용되었던 노들섬은 6-70년대 한강개발계획으로 중지도의 모래를 사용하면서 한강중앙에 떠있는 섬이 되었다. 이와 함께 약 50여년간 제대로 활용되지 못하다가 2005년 서울시가 섬을 매입하고 시민들의문화 휴식 공간으로 만들기위한 준비를 시작하면서 다양한 시도 끝에 2019년 9월 최대한 원형을 그대로 간직한 채로 시민들을 위한 복합문화공간으로 돌아왔다.<br>노들섬의 대표적 문화시설로는 라이브하우스, 노들서가, 앤테이블, 뮤직라운지류, 식물도, 스페이스445, 다목적홀숲 등이 있으며 각 시설들을 중심으로 다양한 문화 프로그램이 진행된다.','노들섬운영사무국 02-749-4500','2019년 09월 28일','매주 월요일 전체휴관, 구정/신정/추석 연휴 당일','비상시적 워크숍 프로그램 운영(노들섬 공식 홈페이지 및 SNS계정에 사전 안내)','전연령',null,null,'* 야외공간 24시간 개방<br>* 실내공간 09:00-21:30 (월요일 전체 휴관)<br>*문화시설 12:00-20:00','주차가능','불가','가능','상점정보:1. 차츰 : 마음이 담긴 물건 소개/판매, 작가와 작품을 연결하는 공간<br />
+2. picccnic : 노들섬에서 즐기는 특별한 피크닉, 피크닉 소품 렌탈 및 판매스토어<br />
+3. 노들서가 : 읽고, 쓰고, 만드는 마음을 담는 서점(070-7729-6553)<br />
+4. Fteam_insert 시설<br />
+* 1F<br />
+- 복순도가 : 음악과 발효의 조합으로 새롭게 소개하는 발효 라운지바(
+02-792-1963)<br />
+- emart24 : 발달장애인이 일하는 회사 베어베터가 새롭게 선보이는 편의점. 더 깨끗하고 더 꼼꼼하고 더 정확한 서비스 제공(070-4467-0007)<br />
+- 자전거 카페 voi (vacance on island) : 섬안에서의 특별한 휴식, 바캉스 온 아일랜드 카페<br />
+* 2F<br />
+- THE PIZZA SOUNDS : 이태리 나폴리피자를 새롭게 해석. 최상의 재료를 합리적인 가격에 제공(02- 3785-2225)<br />
+- Cafe BOOOC : ‘B’arista와 ‘C’urator 사이의 무언가(OOO)로 가득한 한강 한 가운데의 특별한 카페<br />
+- 마녀김밥 : 생활의 달인, 전참시의 이영자가 인정한 맛집 청담동 마녀김밥과 사회적기업 브레드 인 스마일이 언제든 부담없이, 간편하게, 같이 할수있는 노들의 공간(02-3785-2224)<br />
+* 3F<br /> 
+- 앤테이블 : 주제에 따라 변화하는 다양한 음식 콘텐츠를 만들어 나가는 음식문화살롱. 정해진 메뉴가 아닌 계속 변화하는 음식을 통해 매번 새로운 문화와 경험을 제공
+입 장 료:무료
+관 람 료:개설되는 프로그램별 상이(공식 홈페이지 및 SNS계정의 사전안내)
+이용가능시설:1. 라이브하우스<br />
+다양한 장르의 공연이 열리는 대중음악전용 라이브 홀<br />
+2. 노들서가<br />
+읽고, 쓰고, 만드는 마음을 담는 책문화 생산자의 플랫폼<br />
+3. 식물도<br />
+''도심 속 나를 위한 작은 초록섬'', ‘우리 삶 속에 식물도 함께’라는 의미를 담고 있는 식물공방<br />
+4. 앤테이블<br />
+주제에 따라 다양한 음식콘텐츠를 만들어가는 음식문화살롱<br />
+5. 뮤직라운지 류<br />
+음악을 나누는 사람들의 이야기로 채워지는 라운지<br />
+6. 스페이스445<br />
+각 지역에서 철학을 가지고 활동하는 독립 소규모 브랜드들의 제품 전시가 진행되는 전시형마켓<br />
+7. 다목적홀 숲<br />
+노들숲을 바라볼 수 있는 자연을 품은 다목적홀<br />
+8. 노들오피스<br /> 
+라이브하우스, 뮤직라운지 등 노들섬 내 시설 및 프로그램의 활성화를 위해 적극적으로 협업 가능한 음악·문화 산업에 속해있는 기획사, 프로덕션, 아티스트 등이 입주해 있는 업무 공간<br />
+9. 래;코드<br /> 
+환경을 생각하고 가치 있는 소비를 제안하는 업사이클링 기반의 지속가능한 패션브랜드
+시설이용료:시설별로 상이(공식홈페이지 시설소개 참고)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('녹사평역 지하예술정원','04353','서울특별시 용산구 녹사평대로 지하 195(용산동4가)',38,127,'서울지하철 6호선 녹사평역(용산구청)이 2019년 3월, 서울시의 공공 미술 프로젝트를 통해 예술과 자연이 어우러진 문화 공간으로 새롭게 태어났다.녹사평역은 지하 5층 승강장에 내리면서부터 지상으로 올라가기까지 다양한작품을 볼 수 있는 문화공간이다.<br>','02-794-5579',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('선유도공원','07200','서울특별시 영등포구 선유로 343(당산동)',38,127,'과거 정수장 건축구조물을 재활용하여 조성한 국내 최초의 물공원이다. 수질정화원, 수생식물원, 생태숲 등 자연을 즐기기 좋고 한강전시관과 시간의 정원 등 볼거리와 휴식공간도 잘 가꾸어져 있다. 볏짚 공예품 만들기, 꽃과 나무를 주제로 한 영어와 한자 배우기, 나뭇잎과 꽃잎을 이용한 장식품 만들기 등 체험 프로그램도 흥미롭다.','02-2631-9367~8',null,'연중무휴','누구나',null,null,null,'06:00~24:00','있음(장애인 차량은 선유도공원 내 주차 가능/일반 승용차는 양화 한강공원 주차장 이용)','없음','없음','입 장 료:무료 (프로그램별 이용요금 별도) 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('물빛광장','07241','서울특별시 영등포구 여의도동 84-9',38,127,'물빛광장 분수는 여의도 공원에서 한강으로 통하는 길목에 위치한 수경 공간이다. 지형을 이용하여 물의 흐름을 시각 · 청각화하여 볼거리를 제공하고 있다. 지하철 5호선 여의나루역과 연계되어 각종 공연과 한강 조망이 가능한 가족 나들이 장소이다.',null,null,null,null,null,null,null,'매일 08:00 ~ 21:00','있음','없음','가능','화장실:있음, 남녀분리
+주차요금:30분 3,000원
+외국어 안내서비스:불가
+한국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성북동성당','02823','서울특별시 성북구 선잠로 28(성북동)',38,127,'성북동 산책로 중심에 자리 잡은 성당으로 길상사와 가까운 곳에 위치해 있다. 마당 한가운데 서있는 성모상은 일반적인 성모상과 달리, 아기 예수 대신 성경책을 끌어안고 있으며 가르마를 탄 쪽진 머리도 인상적이다. 성북동을 방문하는 사람이라면 누구든 볼 수 있는 장소에 자리 잡고 있으며 아름다운 건축물을 배경 삼아 사진 찍는 사람들이 많을 정도로 사랑받는 곳이다.','02-3673-4251','1975-09-08','없음',null,null,null,null,'00:00 ~ 24:00 / 예배일정은 홈페이지참조','주차가능','없음','불가','주차요금:없음
+입 장 료:없음
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('과학동아천문대','04370','서울특별시 용산구 청파로 109(한강로3가)',38,127,'서울시 용산구 도심 속 위치한 천문대이다. 아동 과학 서적으로 잘 알려진 동아사이언스에서 운영하는 천문대로 천체 관측관, 보조 관측관, 천체 투영관, 다빈치 룸 등 시설을 갖췄다. 어린이들을 위한 다양한 프로그램들이 운영되고 있다.<br>','02-3148-0722','없음','없음','별학교, 별스카우트, 어린이우주탐사단, 우주심화반','체험별 상세, 초등생',null,null,'매일 09:00 ~ 22:00','주차가능','없음','불가','입 장 료:체험별 상이
+화장실:있음, 남녀 분리
+이용가능시설:천체관측관, 보조관측관, 천체투영관, 다빈치룸
+주차요금:19시 이후로 무료, 일요일 및 공휴일 종일 무료 <br> 공용 주차장 : 기본 1500원(30분), 10분당 500원<br>공휴일, 일요일 무료
+외국인 예약안내:불가능
+한국어 안내서비스:가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양화인공폭포','07200','서울특별시 영등포구 노들로 11(양화동)',38,127,'서울 영등포구 양화동 노들로 끝자락에 위치한 양화인공폭포는 1980~1990년대 신혼부부들이 제주도로 신혼여행을 가기 위해 김포공항으로 향하다 잠시 들러 기념 사진을 찍던 명소이다. 높이 15m, 길이 98m의 규모의 인공폭포로 주 폭포를 포함하여 모두 6줄기의 폭포수가 시원하게 쏟아져 내려오고 주변에 180개의 수중등을 설치해 야간에도 경관이 좋은 곳으로, 준공 후 30년 정도 운영되다가 시설의 노후화로 인한 누수 및 안전 문제가 제기되면서 2010년 가동을 멈췄다. 이후 월드컵대교 건설구간 남단 접속도로(IC) 부분에 저촉돼 철거 위기에 놓였으나, 영등포구와 서울시의 협상 끝에 2019년 2월 양화인공폭포를 새롭게 복원하기로 하여 현재 2022년 준공 목표로 공사가 진행 중에 있다. 새롭게 복원되는 양화인공폭포는 기존 폭포 이상의 규모로 폭포 상단부에 다양한 나무와 꽃들을 심어 녹색 환경의 전망대와 산책로를 조성하여 휴식공간으로 조성되며 야간 경관조명시설도 설치될 예정이다.','02-2670-3758','1979년 07월 27일','없음',null,null,null,null,'00:00~24:00','없음','없음','가능','이용가능시설:폭포		
+
+주차요금:없음
+
+입 장 료:없음		
+
+화장실:없음
+
+한국어 안내서비스:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우면산 소망탑 전망대',null,'서울특별시 서초구 서초동 419-3',37,127,'서울 서초구와 경기도 과천시의 경계를 이루는 우면산은 소가 잠자는 모습을 닮았다고 해서 붙여진 이름이다. 우면동과 서초동, 양재동 등 도심에서 쉽게 오를 수 있는 산이라 새벽부터 늦은 밤까지 등산객들의 발길이 끊이지 않는다. 굳이 등산화가 필요 없을 만큼 경사도 완만한 편이라 초보 등산객들에게 특히 사랑받는 코스다. 성인 기준으로 대부분 1시간 남짓이면 정상인 소망탑까지 오를 수 있다. 우면산 소망탑은 이곳을 찾은 사람들이 각자의 소망을 담아 하나둘 돌을 올리기 시작한 것이 지금과 같은 큰 돌탑이 되었다. 소망탑 근처에 조성된 전망대는 우수경관 조망명소로 선정될 만큼 탁월한 전망을 자랑한다. 이곳에서 바라보는 야경은 손에 꼽을 만큼 화려하게 반짝인다. 선사시대 유적인 지석묘를 비롯해 백제 시대 사찰인 대성사 등 다양한 역사유적도 자리한다.','02-570-6395',null,null,null,null,null,null,'일출 ~ 일몰','주차가능','없음','없음','입 장 료:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북한산 족두리봉',null,'서울특별시 은평구 불광동 산 43-108',38,127,'서울의 진산인 북한산은 은평구와 성북구, 강북구, 도봉구와 경기도 의정부시, 양주시, 고양시에 걸쳐 있다. 최고봉인 백운대와 동쪽의 인수봉, 남쪽의 만경대가 뻗어내린 화려한 능선이 일 년 내내 등산객들의 발길을 끌어모은다. 족두리봉은 북한산 가장 남서쪽에 솟은 높이 370m의 봉우리다. 멀리서 보면 봉우리 모양이 족두리를 쓴 것처럼 보인다고 해서 붙은 이름인데 한편으로는 독수리의 머리처럼 보인다고 하여 수리봉, 인수봉을 그대로 옮겨놓은 듯하다고 하여 ‘작은 인수봉’으로도 불린다. 불광역에서 출발하면 약 50분이면 족두리봉에 오를 수 있다. 시간은 짧지만, 난도는 조금 높다. 급경사의 계단은 물론 위험한 바위 구간이 있어 주의가 필요하다.','02-909-0497',null,null,null,null,null,null,'일출 ~ 일몰','있음 (공영주차장)','없음','없음','입 장 료:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('문래창작촌',null,'서울특별시 영등포구 128가길 13-8',38,127,'서울 영등포구 문래동 예술촌은 한때 서울에서 가장 큰 철강공단지대로 불리기도 했던 철강소 골목이 현재는 예술가들이 이곳에 몰리면서 예술과 철공소가 공존하는 공간으로 거듭나고 있는 곳이다. 2010년 서울문화재단이 예술가들을 위해 지은 창작공간 <문래 예술공장>을 세우면서 저렴한 임대료와 독특한 분위기에 이끌린 예술가들이 하나둘씩 모여 둥지를 틀었다. 문래 창작촌으로 불리는 이곳은 버려진 철과 낡은 연장들을 활용해 재탄생한 작품들이 거리 곳곳에 배치돼있다. 철공소와 예술인 공방 사이사이로 벽화, 조형물이 있어 구경할 것도 많고 빈티지한 감성 사진을 찍기에 좋은 장소로 급부상했다. 당산로와 도림로 128길이 만나는 지점의 문래창작촌 부스는 이곳의 랜드마크로 활용된다. 평일보다는 주말에 내려진 셔터에 그려진 다양한 그림 작품들을 볼 수 있다. 
+<어벤저스 2 : 에이지 오브 울트론>, 영화 <아저씨>, 영화 <특별시민>과KBS2 드라마 <추리의 여왕 시즌2>, MBC 예능프로그램<놀면 뭐하니>의 촬영지로 더욱 알려졌다. 현재 문래동에는 100여 개의 작업실이 있으며 약 200명의 예술가가 활동하고 있지만 재개발이라는 이슈가 문래동을 달구면서 예술가의 활동영역이 줄어들고 있다. 지하철 2호선 문래역 1번, 7번 출구에서 문래공원쪽으로 5분 거리에 있다.',null,'2010년','없음',null,null,null,null,'00:00~24:00','문래근린공원공영주차장','없음','가능','촬영장소:영화 <어벤저스2:에이지 오브 울트론>, 영화 <아저씨>, 영화 <특별시민>, KBS2 드라마 <추리의 여왕 시즌2>
+
+주차요금:5분당 250원, 토요일, 일요일 및 공휴일 무료개방
+
+이용가능시설:창작촌 거리		
+
+입 장 료:없음		
+
+화장실:있음(남,녀 구분)(공중화장실 : 서울 영등포구 도림로135길 10)
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('러쉬 이태원SPA점','04346','서울특별시 용산구 회나무로42길 10(이태원동)',38,127,'러쉬 이태원 SPA점은 테라피스트, 심리치유사, 음악가가 협력해 만들었다. 영국 전통 스파 혹은 감성 스파라 일컫는다. 9가지 트리트먼트를 각기 다른 프로그램으로 구성했다. 대표 프로그램은 ‘The Good Hour’이다. 흥겨운 분위기 속에서 육체 피로를 날려주고 내면에 편안함을 안겨준다. 가장 큰 특징은 배 위에 편안하게 누워 항해하는 테마로 꾸몄다는 것. 푸른 바다 빛깔 조명이 바다 한가운데 떠 있는 듯한 분위기를 느낄 수 있다. 선원들의 노랫소리, 직접 녹음한 파도와 갈매기 소리가 어우러져 생동감을 더한다. ‘Tales of Bath’ 프로그램도 인기다. 입욕과 부드러운 마사지로 몸과 마음을 회복하며 삶을 되돌아본다는 의미를 담았다.','02-790-7561',null,'없음',null,null,null,null,'10:00~22:00','있음','없음','없음','입 장 료:프로그램별로 다름 		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('시그니엘서울 리트릿 시그니엘','05551','서울특별시 송파구 올림픽로 300(신천동) 86층',38,127,'서울 인근 어디든 보이는 시그니엘 서울, 86층에 자리잡은 리트릿 시그니엘 스파는 한국 본연의 철학과 고차원적 감성을 더하여 일상 속 건강한 아름다움을 경험할 수 있는 휴식 공간이다.  스파 전문가 브랜드 르노벨,베르나르 까시에르와 그외 브랜드 샹테카이, 이스라이브러리를 사용하고 있다. 
+대표 프로그램으로는 보석 세공장인과 함께 콜라보한 피부 탄력 회복 프로그램 ''Eternit Diamond Facial'' 세계 최초 개발된 리얼 64% 카카오가 함유된 ''Chocolate Facial'' 천연 보습인자를 간직한 스크럽 케어와 르노벨 아로마 오일을 이용한 깊은 터치의 바디 집중 관리 ''Energy Deep Body with Aroma'' 머리부터 발끝까지 디톡스, 슬리밍 관리 프로그램 ''retreat Contour Whole Body Program'' 워터제트 욕조에 르노벨 아쿠아 아로마를 이용하여 스트레스 완화에 탁월한 ''Aqua Aroma Bubble Tub'' 그 외 산모 관리 프로그램 등 다양한 케어가 준비되어 있다.','02-3213-1383',null,'연중무휴',null,null,null,null,'10:00~22:00','주차가','없음','없음','입 장 료:프로그램별 예약제
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경국사(서울)','02705','서울특별시 성북구 보국문로 113-10',38,127,'삼각산(현 북한산)의 정기를 받아 정릉천이 흘러내리는 맑은 골에 자리잡은 경국사는 고려말에 창건된 고찰이다. 크고작은 전각들이 언덕 곳곳에 들어앉아 더욱 산사의 분위기를 내는 사찰이다.','02-914-2828',null,null,null,'미취학아동 보호자 동반아래 가능',null,null,null,'주차 가능','불가','불가','관광코스안내:우이신설(북한산보국문역) 하차하여 도보로 이동 약 7분
+화장실:있음
+내국인 예약안내:전화예약 02-914-2828 <br/>홈페이지 예약 <a href=" https://www.templestay.com/temple_info.asp?t_id=kyungguksa " target="_blank" >☞ 템플스테이 보러가기 </a>
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이태원 어린이 공원','04345','서울특별시 용산구 이태원동 562',38,127,'귀여운 반달가슴곰이 맞아주는 공원
+장근수가 박새로이에게 사과했던 장소다. 장 회장의 지시를 받은 이가 박새로이를 미행해서 몰래 사진을 찍다가 윤 형사에게 걸려서 카메라를 뺏기던 장면도 촬영됐다. 공원 내에 반달가슴곰 미끄럼틀을 비롯해 시소, 그네 같은 놀이기구와 앉아서 쉴 수 있는 벤치가 마련되어 있다.',null,null,null,null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('와플목공방','04778','서울특별시 성동구 성수동1가 656-1036',38,127,'원목으로 직접 만드는 인테리어 소품
+예능 프로그램 ''나 혼자 산다''의 박나래, EXO 카이 등 연예인이 많이 방문하는 공방이다. 영화 ''기생충''에 나온 수석 원목 함을 만든 곳이기도 하다. 원목을 이용해 의자, 탁상 등 인테리어 소품을 직접 제작할 수 있다. 볼펜과 샤프 만들기 원데이 클래스도 인기다.','0507-1361-3688',null,null,null,null,null,null,'월~금요일 10:00~22:00, 토·일요일 10:00~18:00',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성수미술관','04794','서울특별시 성동구 성수동2가 289-14',38,127,'그림 그리기부터 컬러링까지
+ITZY 유나가 방문해 미술 체험한 캔버스 드로잉 카페다. 그림 그리기와 컬러링, 전시회 감상을 모두 할 수 있는 문화생활 공간으로 꾸며져 있다. 도안, 아크릴물감, 붓 같은 그림 그리기 도구가 제공되며 시간제한 없이 드로잉 체험이 가능하다. 자신의 드로잉 모습을 타임랩스로 담을 수 있도록 휴대폰 거치대가 갖춰져 있다는 점도 흥미롭다.','0507-1324-1143',null,null,null,null,null,null,'12:00~22:00',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('길상도예','06735','서울특별시 서초구 서초동 1362-9 브니엘빌딩',37,127,'BTS가 체험한 도예공방
+''달려라 방탄''에서 BTS가 체험한 곳으로 아미들에게 유명한 도예공방이다. 지민은 뷔에게, 진은 정국에게, 뷔는 슈가에게 컵을 만들어주었다. 물레와 핸드빌딩으로 컵, 화병, 접시, 물병 등을 디자인하고 만들 수 있다. BTS 멤버들의 작품을 따라 만들어 보는 것도 재미있다.','0507-1415-8203',null,'월요일',null,null,null,null,'10:00~22:00',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성북동 주택가','02823','서울특별시 성북구 성북동 15-83 베네수엘라 대사관저',38,127,'영화 <기생충> - 서울의 오래된 부촌
+고액 과외를 위해 부촌에 있는 박 사장의 집을 찾아가는 골목길 장면은 성북동 주택가에서 촬영되었다. 오래된 부촌인 성북동은 조용한 골목에 고급 저택들이 늘어서 있으며, 곳곳에 예쁜 카페나 갤러리가 많아 느긋하게 돌아보기 좋다. 박 사장의 집은 세트장인데, 영화 촬영 후 철거되어 아쉬움이 남는다.',null,null,'항시개방',null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('내원사(서울)','02700','서울특별시 성북구 보국문로 262-151 내원사',38,127,'내원사는 북한산 자락에 자리하고 있는 수많은 사찰 가운데 하나로, 정릉 골짜기를 지나 1km 정도 오르면 멀리 목멱산을 바라다 보이는 곳에 자리하고 있다. 언제 누가 창건했는지는 정확하게 밝혀지지 않고 있지만 터전이 예사롭지 않음을 느낄 수 있다. 역사적으로 내원사의 존재를 밝혀주는 것은 현재로서는 김정호가 제작한 「수선전도(首善全圖)」와 1859년(철종 10) 만들어져 사찰에 전하는『백의대사불도(白衣大士佛圖)』라는 목판이 유일하다. 수선전도에는 현재 내원사가 자리한 곳과 같은 위치에 내원암이 표시되어 있고, 『백의대사불도(白衣大士佛圖)』목판에는 삼각산내원암(三角山內院庵)이라는 기록이 있어 19세기 전반만 해도 법등을 이어오고 있었던 것을 알려주는 것이다. 그러던 내원사가 언제 어떠한 이유로 역사 속으로 사라져 버렸는지 의문이 아닐 수 없다. 그래서 더욱 세월의 무상함이 절로 느껴진다. 오늘도 무상함 속에 범종루 아래 길게 이어진 이끼 낀 석축에서는 세월의 흔적이 배어나고, 바위틈에서 솟는 감로수는 사찰의 흥망성쇠를 잊은 듯 말없이 흐르고 있다.<br>','02-941-2011',null,'연중무휴',null,null,null,null,null,'북한산국립공원 주차장','없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대성사(서울)','06757','서울특별시 서초구 남부순환로328길 49',37,127,'백제는 384년(침류왕 1)에 불교가 전래되었다. 인도의 고승 마라난타 (摩羅難陀)가 동진(東晋)으로부터 바다를 건너서 서울인 한산으로 들어오자 왕은 그를 궁 안에 머물도록 하였고, 그 이듬해 10명의 백제인을 출가시켜 승려로 만들었다고 한다. 그런데 마라난타는 서역과 중국을 거쳐 백제로 오는 동안 음식과 기후가 맞지 않아 수토병(水土炳)으로 고생하였는데, 우면산 생수를 마시고 병이 나았다고 한다. 그리하여 궁중에서 우면산으로 자리를 옮겨“대성초당(大聖草堂)”을 짓고 머물렀다고 한다. 이곳이 백제불교의 초전법륜성지(初轉法輪聖地)로 지금의 대성사다. 마라난타가 대성초당을 짓고 머무른 이후 근대까지 대성사는 많은 고승들이 머무르며 수행을 한 도량이었다.<br /><br />특히 그 가운데에서도 1919년 3월 1일 독립만세운동 때 불교계 대표로 참가했던 용성(龍城) 스님은 일본에게 당한 경술국치의 치욕을 설욕하고 민족의 독립을 위해 헌신하신 분이다. 이러한 역사를 지니고 있는 대성사는 근래까지만 해도 사람들에게 잘 알려지지 않은 사찰이다. 그것은 오랜 세월 속에 대성사의 역사가 사라지고, 용성스님이 독립운동을 했다는 이유로 사찰의 모든 것을 불태워 버린 일본군의 만행이 있었기 때문이었다. 그렇지만 용성스님의 법손(法孫)이신 불심도문(佛心道文) 스님께서 폐허가 되다시피 했던 이 대성사를 백제불교의 초전법륜성지(初轉法輪聖地)로서 다시 중창하였다. 이는 용성스님의 10대 유훈가운데 “백제불교 초전법륜 성지를 잘 가꾸어라”는 뜻을 받든  결과이기도 하다.','02-583-1475',null,null,null,null,null,null,null,'주차 가능','없음','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('미타사(성북)','02874','서울특별시 성북구 보문사길 6-16',38,127,'미타사(彌陀寺)는 서울시 성북구 보문동 3가 51번지 대한불교조계종 직할교구 본사 조계사의 말사이다. 동대문 밖 비구니 수행도량 - 미타사(彌陀寺)에는 한가지 별칭이 있다. 그 대표적인 이름은 탑골승방으로 서울의 낙산 아래 동망봉을 경계로 청룡사, 보문사, 미타사 등 비구니 도량이 군집해 있어 생긴 이름이다. 하지만 탑골승방은 미타사 뒤편에 자리한 탑과 관련이 있는 듯하며, 고려시대 혜거국사 이후 혜감국사에 이르기까지 고려 국사와 왕사가 창건한 사찰로 그 사맥을 이어 왔다.<br /><br /> 특히 미타사는 조선시대에 탑골 승방이라 불리는 옥수동의 두뭇개 승방, 석관동의 돌곶이 승방, 숭인동의 새절 승방(청룡사)과 함께 여승들이 거처하는 성 밖의 네 이사 중의 하나로 꼽혔는데, 단종의 왕비 송씨와 연관된 동망봉과 청룡사가 이웃해 있어 이 곳이 왕비와 후궁들의 기도처였음을 짐작할 수 있다. 그 옛날 멀리 단종을 영월로 유배 보낸 왕비 정순왕후 송씨가 청룡사에 머물며, 미타산의 남산인 낙산에 올라 하염없이 그리움으로 세월을 낚은 곳. 또 그 그리움으로 단종의 축원을 위해 시주한 곳. 탑골승방이 자리한 이 곳 미타사와 청룡사에는 그녀의 그리움과 불심이 묻어 있다. 또 동문 밖, 비구니 도량으로 왕을 여의거나, 나이가 찬 후궁들이 갈 곳 없이 방황할 때 이곳 탑골승방의 문은 활짝 열려 그녀들의 지친 마음을 감싸 주었을 것이다.<br /><br /> 지금은 그녀들의 흔적은 찾아 볼 수 없지만, 대웅전과 삼성각에 남아 있는 그녀들의 불심어린 시주로 조성된 탱화를 보며, 내세의 기복과 왕에 대한 사모의 마음을 느낄 수 있다. 미타사, 그 사명처럼 아미타부처님이 상주하는 가람으로, 그녀들이 바라는 내세와 그녀들과 인연이 닿은 왕들의 축원이 조선시대 이래 이어져 오고 있다. 현재는 그런 역사적인 배경을 담은 듯 비구니 스님들이 상주하며, 정갈하고 단아한 가람, 그리고 정적인 분위기가 느껴지는 수행도량으로 알려져 있으며, 큰 스님 자원스님의 지도 아래 수많은 납자들이 수행하며 정진하고 있다.<br>','02-923-0492',null,'연중무휴',null,null,null,null,null,null,'없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('미타사(성동)','04739','서울특별시 성동구 독서당로40길 21(옥수동)',38,127,'미타사(彌陀寺)는 서울특별시 성동구 옥수동 395번지 종남산에 자리한 대한불교 조계종 제1교구인 조계사의 직할사찰로  달맞이봉 아래 위치해 있다.원래는 종남산(終南山) 동족 기슭에 있는데 옥수동에 있던 메주가마를 자하문 밖으로 옮겨가매 사람은 적고 도둑이 많으므로 절을 이곳에 옮기고 절 이름을 종남산 미타사라고 고쳤다.또, 두뭇개(豆毛浦)에 있으므로 두뭇개승방이라고도 하였다. 고 이승만 대통령이 자주 다녔다고 한다.','02-2298-3377',null,'연중개방',null,'전연령',null,null,'00:00~24:00','주차 가능','불가','없음','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('순교성지새남터기념성당','04374','서울특별시 용산구 이촌로 80-8(이촌동)',38,127,'‘새남터’는 억새와 나무가 많다 해서 붙여진 이름이다. 조선 초기 군사들의 연무장이며 국사범들을 처형하던 곳이었는데, 4대 박해 동안 천주교 신자들이 처형되었던 장소이다. 외관에 순교자들 소개가 붙어 있으며 형장도 일부가 보존되어 관람이 가능하다며, 내부엔 순교 당시의 다양한 전시품이 전시되어있다.','02-716-1791','2006-09-03','월요일',null,null,null,null,'10:00 - 17:00',null,'없음','불가','촬영장소:성인 유해실 내의 사진 촬영은 금지
+이용가능시설:교우촌, 장터, 순교자 모형 <br>
+체험실 <br>
+추모의장 <br>
+성인 유해실 <br>
+영상실
+화장실:가능 (남/녀 화장실 구분)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('법안정사','07983','서울특별시 양천구 목동동로 371(목동)',38,127,'목동에 있는 큰절 법안정사는 한/불 수교 백 주년을 기념하여 1989년 서울 목동지구 아파트 단지 내 종교 부지에 건축된 현대식 도심 사찰이다. 1층 불교용품점, 2층 종무소/관음전, 3층 요사채, 4층 법당으로 경내에는 범종각과 사적비가 있다. 예불 시간은 매일 오전 4시 30분, 오전 10시, 오후 6시이고, 매주 일요일 오전 10시에 정기일요법회가 있다.','02-2646-4975','1989년',null,null,null,null,null,'예불시간 - 매일 04:30, 10:00, 18:00 <br>
+매주 일요일 10:00 정기일요법회','가능 (법안정사 노상공영주차장)','없음','불가','화장실:가능 (남/녀 구분)
+이용가능시설:불교용품점, 종무소, 관음전, 요사채, 법당
+주차요금:30분 1,500원 <br>
+60분 3,000원 <br>
+120분 6,000원 <br>
+240분 12,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양천해누리체육공원','08018','서울특별시 양천구 안양천로 711(신정동)',38,127,'해누리체육공원은 전국 최초로 유수지 내 유휴 공간을 활용해 만든 야외 체육시설로써, 인조잔디축구장을 비롯하여 풋살장, 족구장, 야외농구장 등 다양한 체육시설을 갖추고 있어 동호회 경기 및 행사 장소로 많이 이용되고 있다. 축구장, 풋살장 이용은 팀 등록(공단 홈페이지 회원가입) 후 인터넷 신청 가능하며, 축구는 분기별, 풋살장은 매달 신청, 족구장 이용은 매주 월요일 09:00 유선 선착순 신청이다. 야외 시설 특성상 양천구 미세먼지 경보제 및 오존 예·경보제 운영계획에 따라 이용제한이 있음으로 확인 후 이용해야 한다.','02-2652-3453',null,'법정공휴일, 신정, 설연휴, 추석연휴, 대학수능능력시험일',null,null,null,null,'연중무휴 06:00 ~ 20:00 (일,출몰 시간에 따라 변경 운영) <br>
+양천구 미세먼지 경보제 및 오존 예·경보제 운영계획에 따라 제한 있음','주차가능','없음','불가','입 장 료:홈페이지 참고
+이용가능시설:인조잔디축구장 2, 풋살장 4, 족구장 3, 야외농구장 1
+화장실:가능 (남/녀 구분)
+내국인 예약안내:축구장, 풋살장 : 팀 등록(공단 홈페이지 회원가입) 후 인터넷 신청 <br>
+축구장 : 분기별 신청 <br>
+풋살장 : 매달 신청 <br>
+족구장 : 매주 월요일 09:00 유선 선착순 신청
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('문래근린공원','07295','서울특별시 영등포구 문래동3가 61',38,127,'서울시 영등포구 문래동에 있는 근린공원으로 주변에 문래역 1번 출구와 아파트 단지들이 있다. 공원 내에는 문래동의 유래가 되었던 물레의 조형물이 있으며, 건너편에는 있는 문래예술창작촌이 있다. 1961년 5.16 군사 정변의 발상지인 육군 제6관구 사령부가 주둔했었던 역사가 남아있는 장소로, 공원 동편에는 당시 육군 소장이었던 박정희 前 대통령의 흉상이 있다.','02-2670-3755','1986-06-18',null,null,null,null,null,'00:00 ~ 24:00','문래근린공원공영주차장','없음','가능','화장실:가능 (남,녀 분리)
+주차요금:30분 1,500원, 60분 3,000원, 120분 6,000원
+이용가능시설:운동시설, 휴식시설(벤치), 녹지, 물레 조형물, 연못, 박정희 흉상, 육군 제6관구 사령부 지하 벙커
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('목5동성당','07988','서울특별시 양천구 목동동로 353(목동)',38,127,'서울 양천구 목동, 파리공원 인근에 있는 성당으로 건축미가 아름답기로 유명하다. 1987년 설립된 성당은 높은 천장과 국내에 몇 안 되는 파이프 오르간 등을 갖추고 있어 고풍스러운 분위기를 느끼게 한다. 영화 속에서 결혼식이 열리는 장소로도 등장했으며,  지하 1층에 폐백실이 따로 마련돼 있을 만큼 가톨릭 신자들에게는 예식을 올리기 좋은 성당으로 인기 있는 곳이다.','02-2644-1100','상시',null,null,null,null,null,null,null,'없음','불가','이용가능시설:1층 성물방, 농수산물
+화장실:가능 (남/녀 구분)
+이용가능시설:대성당, 소성당
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대림어린이공원','07438','서울특별시 영등포구 대림로 106(대림동)',37,127,'서울 영등포구 대림동에 위치한 공원으로 어린이 놀이시설과 다양한 운동시설, 휴식공간이 갖춰져 있다. 산책로도 잘 조성되어 있어 가족 나들이로 좋고 인조잔디가 조성된 곳도 있어 안전하게 운동하기에도 좋다. 공원 지하에 공영주차장이 있어 이용하기 편리하다.','대림어린이공원 공영주차장 02-845-5505',null,null,null,null,null,null,'00:00 ~ 24:00','가능 (지하 공영주차장) <br>
+(5분 당 100원)','없음','가능','화장실:가능 (남/녀 구분)
+이용가능시설:놀이터, 운동시설, 휴식시설
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('은평구생활체육광장','03493','서울특별시 은평구 증산로5길 35-27(증산동)',38,127,'산속에 조성되어 있어 운동하는 동안 신선한 공기를 마실 수 있는 증산체육공원은 은평구 수색 증산 뉴타운 반홍산 내에 위치하고 있는 46,100㎡ 규모의 체육공원이다. 증산 생활체육 광장이라고도 불리며, 인조 잔디가 깔린 축구장 1면과 풋살구장, 농구장, 배구장과 족구장을 갖추고 있다. (6호선 증산역 3번 출구 증산초등학교와 증산중학교 뒤편)','02-351-8007','1993년 12월',null,null,null,null,null,'00:00 ~ 24:00','가능 (증산체육공원 주차장)','없음','불가','화장실:가능 (남/녀 구분)
+이용가능시설:인조잔디축구장, 풋살경기장, 농구장, 배구장, 족구장, 체육공원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('거북선나루터',null,'서울 용산구 이촌동 302-183',38,127,'서울 한강공원 이촌지구에 위치한 거북선 나루터는 도하(渡河)체험장 및 수상레포츠 시설로 일반인들과 단체 생활의 팀워크 훈련장으로 이용되는 선착장이다. 거북선나루터는 1990년 10월 1일 국군의 날을 기념하여 180t 급 거북선 실물 크기로 제작된 거북선의 닻을 이곳에 내리고 유람선을 운영, 전시장으로 사용했었던 것에서 붙여진 이름으로 당시 거북선 유람선은 2005년부터 이순신 장군 한산대첩의 전승지인 통영시에서 운행 중이다. 주변을 따라 대나무숲, 갈대, 들꽃이 철 따라 피어나서 시민들의 산책과 운동코스로 자주 이용되고 있으며 매년 10월 열리는 불꽃축제 명당자리로도 유명하다. 4호선 이촌역 3-1번 출구로 나와 이촌한강공원 LG한강자이 아래 있다.','02-3780-0551~4',null,null,null,null,null,null,'00:00 ~ 24:00','있음(이촌한강공원주차장)','없음','가능','촬영장소:없음(이촌안내센터 2층 화장실 이용)
+
+이용가능시설:나루터 시설, 편의점
+
+
+주차요금:최초30분 1,000원<br>초과10분당 200원<br>1일주차 최고한도 10,000원
+
+화장실:없음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양재근린공원','06780','서울특별시 서초구 동산로 35(양재동)',37,127,'신분당선 양재시민의숲역 2번 출구에서 약 300m 거리에 있는 도심 속의 근린공원으로 숲속처럼 느껴지고 잘 가꾸어져 있어 많은 사람이 찾는 공원이다. 공원이 언남 중,고등학교와 매헌초등학교 사이에 있어서 방과후 학생들의 휴식처가 되어주는 동시에 인근 주민들의 체육 시설이 되어준다. 공원 내에는 놀이터, 분수대, 벤치, 산책로 등이 조성되어 있으며 운동 시설로는 농구장, 놀이터, 축구장, 운동장이 있다. 축구장에서는 서울시민리그(풋살경기)가 개최되기도 한다. 지하철 신분당선 양재시민의숲역 2번 출구에서 약 300m 거리에 있다.','02-2155-6896',null,null,null,null,null,null,'00:00 ~ 24:00','주차가능','없음','가능','화장실:가능 (남,녀 구분)
+이용가능시설:놀이터, 축구장, 농구장, 분수대 등
+주차요금:10분당 300원
+내국인 예약안내:체육시설 이용 시 서울시 공공 서비스에약(https://yeyak.seoul.go.kr)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서리풀공원',null,'서울 서초구 서초동 1005-6',37,127,'서울 서초구 서래마을 주민들이 즐겨 찾는 서리풀공원은 휴식과 건강을 위한 공간이다. 서리골공원과 몽마르뜨공원, 서리풀공원을 하나로 묶어 서리풀공원이라 부른다. 1970년대 군부대가 주둔하여 주민들이 접근할 수 없었던 공간이 2015년 군부대이전과 함께 2019년 조성되었다. 잔디광장을 둘러가며 조성된 산책길이 아기자기하고 편안하다. 매년 6월 몽마르뜨공원에서 열리는 반포서래 한·불 음악축제를 비롯해 11월에는 문화 교류의 장인 서래당제, 12월에는 크리스마스 프랑스 전통장터 등이 성황리에 열린다. 서리풀공원의 산책로(등산로)는 반포동부터 방배동까지 서초구의 중심부를 가로지르는 두 가지(빠른 길, 여유롭게 가는 길)의 산책로(등산로)로 구성되어있다. 약 4km 산책로(등산로)는 몽마르뜨 공원까지 이어져 도로로 단절된 산책로(등산로)를 누에다리와 서리풀다리가 연결하여 북쪽으로는 한강을 남쪽으로는 우면산을 조망할 수 있다.','02-2155-6883','2019년','없음',null,null,null,null,'00:00 ~ 24:00','없음','없음','가능','주차요금:없음
+
+입 장 료:없음		
+
+화장실:있음(남,녀 구분)
+
+이용가능시설:팔각정쉼터, 배드민턴장, 참나무쉼터, 누에다리, 몽마르뜨공원, 서리풀다리, 할머니쉼터, 할아버지쉼터, 청권사쉼터, 전망대		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('안양천 (제방)벚꽃길','07276','서울특별시 영등포구 양평동 488',38,127,'안양천은 한강의 지류로 안양시, 광명시와 서울 금천구, 구로구, 양천구, 영등포구를 지나 성산대교 서쪽에서 한강에 합류하는 하천이다. 안양천 제방을 따라 영등포구부터 광명시로 길게 이어지는 안양천 벚꽃길은 서울에서 가장 긴 벚꽃길로, 봄철이면 길게 조성된 제방로를 따라 심어진 아름드리 벚나무들 사이를 여유롭게 산책하면서 벚꽃을 감상할 수 있는 곳으로 손꼽히는 서울 벚꽃 명소이다. 안양천은 제방을 따라 아파트들이 많이 들어서 있어 주변 주민들이 운동과 산책을 위해 늘 애용하는 장소로, 봄철이면 벚꽃 구경과 더불어 하천 주변에 조성된 꽃밭과 생태공원, 체육시설, 휴식 공간 등을 이용하는 사람들과 자전거 라이딩을 하는 사람들로 붐빈다. 안양천 제방과 하천 주변에는 생태 보존과 함께 생태하천을 이용한 사계절 테마원(장미원, 그라스원 등)과 포토존을 조성하여 이용 시민들에게 볼거리와 즐길 거리를 제공하고 있다.','02-2670-3772',null,'연중무휴',null,null,null,null,'상시 개방','가능 (오목교 주차장)','없음','가능','주차요금:30분 1,500원
+화장실:가능 (남,녀 구분)
+이용가능시설:산책로, 테마정원, 포토존, 정자, 벤치
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('여의도공원 문화의마당','07243','서울특별시 영등포구 여의공원로 68(여의도동)',38,127,'여가와 휴식을 즐길 수 있는 문화공간인 여의도공원은 한국 전통의 숲, 잔디마당, 문화의 마당, 자연생태의 숲 등 4개의 공간으로 이루어졌다. 이 중 문화의 마당은 24,730㎡ 규모의 광장으로 각종 행사와 공연 등 시민들이 함께 참여할 수 있는 문화 행사가 이루어지는 곳으로 여의도광장으로도 불린다. 농구, 배드민턴, 자전거, 인라인스케이트 등 가벼운 운동을 즐길 수 있으며 휴식을 하기에도 좋은 장소다. 광장 안에는 태극기 게양대와 공군창군 60주년 기념탑, 1945년 8월 여의도 공항에 착륙했던 실제 비행기 C-47 전시관이 설치되어 있어 의미 있는 장소이기도 하다.','02-761-4078~9',null,'연중무휴',null,null,null,null,'상시 개방','가능 (여의도 공원앞 2노상 공영주차장)','없음','가능','이용가능시설:야외무대, 농구장, 인라인 스케이트장, 베드민턴장
+화장실:가능 (남,녀 구분)
+주차요금:30분 3,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('무중력지대 양천','07999','서울특별시 양천구 오목로 359(목동)',38,127,'청년공간 ''무중력지대 양천''은 학교공부, 스펙쌓기, 혹은 직장생활에 치여 고달픈 삶 속에 사는 청년들의 아지트이다. 사회적 압박에서 벗어나 커뮤니티 활동을 할 수 있는 ''비무장지대''(코워킹 스페이스), 간단한 요리를 하고, 배달음식을 먹을 수 있는 ''먹어야지대''(공유부엌), 소규모 모임장소로 적합한 ''만나야지대''(미팅룸), 20명까지 강연, 간담회 장소로 이용할 수 있는 ''배워야지대''(세미나실), 팟캐스트 제작 등 녹음시설을 갖춘 ''방송중지대''(녹음실)로 구성되어 있다. 무중력지대는 청년들을 위한 공간으로 스페이스클라우드 또는 전화를 통해 예약 후 이용할 수 있다. 비무장지대와 먹어야지대는 누구나 무료로 이용할 수 있도록 개방된 공간이다. 청년들을 위한 다양한 강연, 프리마켓, 영화제를 개최하며, 청년들의 활발한 활동을 지원하기 위해 청년들의 공방 여가활동 및 커뮤니티 활동 지원 프로그램도 진행하고 있다.','무중력지대 양천 02-2646-2030',null,'일요일, 공휴일','<a href="https://www.spacecloud.kr/space/12491" target="_blank" title="새창: 홈페이지로 이동 ">https://www.spacecloud.kr/space/12491</a>',null,null,null,'평일 : 10:00 ~ 22:00<br />
+토요일 : 10:00 ~ 17:00<br />
+※ 일요일 및 공휴일은 휴관','없음','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('푸드뱅크마켓 신월점','07917','서울특별시 양천구 곰달래로13길 73(신월동)',38,127,'2017년4월 이웃과 함께 나눔의 즐거움을 느끼게 해주는 푸드뱅크마켓이 문을 열었다. 푸드뱅크마켓센터는 개인과 기업으로부터 식품과 생활용품 등을 후원받아 관내 저소득 가정에 무상 제공함으로서 식생활의 불균형 해소에 이바지하며 ​나눔 문화와 공동체 의식 확산에 주력하고 있다. 매 끼니 해결에 어려움을 겪는 저소득 가정에 후원받은 식품을 무상 제공하여 식생활 개선과 함께 다양한 생활용품도 전달하여 일상생활에 도움을 드리고 대상자가 직접 푸드마켓을 방문하여 원하는 식품을 선택하는 이용자 중심의 전달 방식을 도입하고 있으며, 기부식품모집 활성화를 위해 다양한 프로그램 운영과 이용자의 편익을 고려한 찾아가는 서비스를 제공하고 있다.<br>','02-2644-1377',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('안양천 사계절 테마원','08008','서울특별시 양천구 신정동',38,127,'양천구 안양천 좌안 제방 및 하천주변 나지에 생태보존과 이용이 조화를 이루는 생태하천의 사계절 테마원(장미원, 그라스원 등)과 포토존을 조성하여 이용 시민들에게 볼거리와 즐길거리를 제공하고 사람과 자연이 어우러지는 도심속 명소 조성 예정이다.<br>','02-2620-3592',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양천구 로데오거리','07938','서울특별시 양천구 목동로25길 23(신정동)',38,127,'맛집과 패션의 거리인 목동로데오거리는 봄이 되면 거리에 만개한 벚꽃풍경도 유명하다. 뉴욕의 ''soho 거리'', 밀라노의 ''몬떼 나뽈레오네 거리'', 파리의 ''샹제리제 거리'' 등 각 도시마다 패션을 주도하는 거리가 있다. 대한민국 서울에는 패션을 주도하는 양천구의 ''목동 로데오거리''가 있다. 매년 10월 개최되는 ''목동로데오 패션거리 문화축제''에서는 축제 예술단의 길놀이 공연을 시작으로 패션노래자랑, 연예인 초청공연 등 다양한 볼거리를 제공하며 풍성한 먹거리장터도 운영한다. 목동로데오거리는 지하철5호선 목동역2번 출구로 나와 50m 거리에 있고, 다양한 의류 상설할인 매장들이 집중되어 잇어 알뜰 소비자들의 쇼핑명소로 유명하다. 특히, 이곳에는 양천구 맛집이라고 소문난 음식점들이 한데 모여 있다. 이 곳을 흔히 목동 음식문화의 거리라 부르는데 매년 봄 벚꽃이 만개할 무렵 목동역 부근 음식문화의 거리(신정중앙로)에서 벚꽃문화축제가 열린다.<br>','02-2620-3405',null,'연중무휴',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('지양산(무장애숲길,유아숲체험원)','08037','서울특별시 양천구 신월동',38,127,'지양산에 장애인, 유아 등 모든 주민이 편리하게 산을 산책하며 숲을 이용할수 있는 무장애숲길을 조성하고, 등산로를 자연 친화적으로 조성하였다.(휠체어순환구간 570m, 휠체어 회차구간 210m) 또한 신정산,용왕산과 같이 도심 속 아이들이 숲속에서 마음껏 뛰어놀며 몸과 마음이 건강하게 성장할 수 있는 유아숲체험원이 있다. 인디언 집, 낙엽풀장, 하늘보기 해먹 등 유아숲체험원에서 감수성, 상상력을 키울수 있다.<br>','02-2620-3576',null,'없음',null,null,null,null,null,null,'없음','없음','관광코스안내:16코스: 가로공원주차장-신월청소년문화센터-달빛마을작은도서관-서서울호수공원-서서울예술교육센터-지양마을작은도서관
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양천공원(통합놀이터,키지트,베이비존)','08013','서울특별시 양천구 목동동로 111(신정동)',38,127,'양천공원은 약 33,000㎡  넓이의 공원으로 양천구 공공시설이 모여있는 양천구의 중심에 위치하고 있다. 배드민턴장, 조깅트랙, 산책로 등이 잘 조성되어 있으며, 특히 공원 외곽에 설치된 우레탄 조깅코스는 친환경적이며 탄력성이 높은 재질로 조성돼 큰 호응을 얻고 있다. 1966년 10월 양천구민 헌장비를 설치하였고 2008년 대한민국 건국 60년과 구청 개청 20주년을 기념하여 양천의 어제와 오늘의 역사를 담은 원통모양의 높이 1m,지름 0.31m 크기의 타임캡슐을 설치하였다.<br /><br />
+쿵쾅쿵쾅 꿈마루 놀이터 : 전국 최초 실내외 통합놀이터로 야외 뿐만 아니라 실내에도 놀이공간(키지트)을 갖추고 있어 날씨와 상관없이 이용할수 있으며, 유니버셜디자인을 적용하여 물, 흙, 모래, 목재 등 정서 발달에 좋은 친환경 자연소재를 활용한 놀이공간이 마련되어있다.<br /><br />
+베이비존 : 약200㎡ 에 해당하는 영유아 전용공간으로 잔디광장에 유아그네, 흔들의자 등이 설치되어 있어 안전하게 뛰어놀수 있는 숲속 공간이다.<br>','양천공원 02-2620-3576',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이태원 우사단길','04407','서울특별시 용산구 한남동',38,127,'우사단길은 한국적 정서와 이국적인 분위기를 느낄 수 있는 곳이다.파키스탄, 터키, 이집트, 레바논, 인도 등지의 음식점과 아랍어로 적힌 간판, 히잡과 터번을 쓴 이방인이 어우러져 이국적인 분위기가 짙으며, 오래된 집과 골목이 오밀조밀 이어지는 주택가로 한국적 정서와 분위기를 간직하고 있다.2010년대 초반부터는 젊은 예술가와 청년 창업자들이 우사단길로 들어와개성 넘치는 공간을 만들어냈다.<br>','02-3785-0942',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보문사(서울)','02874','서울특별시 성북구 보문사길 20',38,127,'보문사(普門寺)는 서울시 성북구 보문동 3가 168번지에 자리한 대한불교보문종 총본산이다. 동대문 밖 비구니 수행도량 보문사(普門寺)에는 조선후기부터 불리워온 별칭이 있다. 그 별칭은 ''탑골승방''으로 서울의 낙산 아래 동망봉을 경계로 청룡사, 미타사 등 비구니 도량이 군집해 있어 생긴 이름이다. 특히 보문사는 조선시대에 탑골 승방이라 불리는 옥수동의 두뭇개 승방, 석관동의 돌곶이 승방, 숭인동의 새절 승방(청룡사)과 함께 여승들이 거처하는 성 밖의 네 니사(尼寺) 중 하나로, 단종의 왕비 송씨와 연관된 동망봉과 청룡사ㆍ미타사가 이웃해 있어 이 곳이 왕비와 후궁들의 기도처였음을 짐작할 수 있다.<br /><br />또 동문 밖, 비구니 도량으로 왕을 여의거나, 나이가 찬 후궁들이 갈 곳 없이 방황할 때 이곳 탑골승방의 문은 활짝 열려 그녀들의 지친 마음을 감싸 주었다. 지금은 그 옛날 불심으로 수행한 비구니들의 흔적은 찾아 볼 수 없지만, 대웅전과 삼성각ㆍ묘승전ㆍ관음전 등에 남아 있는 불심어린 비구니스님들의 독경과 염불소리는 내세의 기복과 왕에 대한 사모의 마음으로 조성된 불화에서 그 마음을 엿볼 수 있다. 현재는 그런 역사적인 배경을 담은 듯 비구니 스님들이 상주하며, 정갈하고 단아한 가람, 그리고 정적인 분위기가 느껴지는 수행도량으로 널리 알려져 있으며, 세계유일의 비구니 종단인 보문종의 총본산으로서 한국불교 발전을 위해 포교ㆍ사회복지ㆍ교육활동에 전념하고 있다.<br /><br />보문사는 도심사찰로서 넓은 대지위에 대가람이 여법하게 자리잡고, 낙산의 수림과 조화를 이루며 수행도량으로서의 정적인 분위기가 느껴지는 곳이다. 또 각각의 전각을 담당하는 별원이 자칫 복잡한 가람구성을 보이지만 정갈한 가람과 정진하는 비구니스님들의 가르침을 통해 번뇌에 흔들리는 속세인이 마음자세를 다잡을 수 있는 수행도량으로서 불자들의 귀의처가 되고 있다.<br>','02-928-3797',null,'연중개방','템플라이프',null,null,null,null,'있음','없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('봉국사(서울)','02813','서울특별시 성북구 정릉로 202(정릉동)',38,127,'봉국사(奉國寺)는 서울특별시 성북구 정릉 2동 637번지 정릉(貞陵)의 북동쪽 산등너머에 자리한다. 봉국사(奉國寺)는 신덕 왕후 강씨 정릉(貞陵)의 원찰(願刹)로 서울 성북구 정릉 북동쪽 산등너머에 자리한 조계종 소속 사찰이다. 봉국사가 1354년(고려 공민왕 3)에 나옹(懶翁) 대사에 의해 창건되었다는 설이 있으나, 1395년(태조 4)에 나라의 무궁한 발전을 위하여 당시 왕사(王師)였던 무학대사가 전각을 지어 약사여래를 봉안하고 약사사(藥師寺)라고 한 것이 창건의 시작이다.<br /><br />1669년(현종 10)에 태조 이성계의 계비 신덕왕후의 정릉을 수봉(修封)하고 태묘에 제사를 드리게 되면서 정릉의 사초(沙草)를 새로 하는 동시에 정자각(丁字閣), 안향청(安香廳), 전례청(典禮聽) 등을 새로 세우면서 이 절을 원찰(願刹)로 하였다. 이 때 나라를 받든다는 뜻에서 절 이름을 봉국사로 고쳤다. 봉국사는 인근에 주택가가 밀집되어 있어 누구라도 쉽게 부처님의 지혜를 듣고 배울 수 있는 터전이 되고 있으며 천연의 청정수가 샘솟아 봉국약수를 찾는 발길이 이른 새벽부터 성시를 이루고 있다.<br>','02-919-0211',null,'연중무휴',null,null,null,null,null,null,'없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('자매공원(앙카라공원)','07342','서울특별시 영등포구 여의대방로 372-1(여의도동)',38,127,'자매근린공원(앙카라공원)은 1971년 8월 23일 서울시와 터키의 수도인 앙카라시의 자매결연 체결을 기념하기 위하여 터키의 풍물이 담긴 주제공원으로 조성하여 1977년 5월 개원하였다. 
+공원 곳곳에 놓인 벤치들은 식사를 마친 직장인들의 휴식장소로 인기가 높다. 앙카라하우스는 터키의 앙카라시에 있는 전통적인 포도농장 주택모양으로 1992년 8월 앙카라공원 내에 2층 건물로 건립되었으며, 앙카라시가 터키의 민속품을 기증, 내부를 장식하여 1995년 7월 개관하였다. 
+건물 1층에는 기도실, 거실, 주방이 있고 2층에는 응접실, 객실, 침실 등이 재현되어 있으며 전통생활기구와 농기구 등 800여 점이 전시되어 있어 터키의 역사와 전통 생활상을 엿볼 수 있다. 이중 16세기 초 오토만 터키 시대부터 혼례나 축제시 입던 전통의상과 은거울 등의 수제품은 현지에서도 귀중품으로 분류되고 있다.','영등포구청 푸른도시과 02-2670-3758','1977년 5월 1일','연중개방',null,null,null,null,'00:00~24:00',null,'불가','없음','입 장 료:무료
+이용가능시설:앙카라하우스, 조형물, 파고라 4개소, 배드민턴장, 게이트볼장 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('적조사(서울)','02825','서울특별시 성북구 흥천사길 49-23',38,127,'적조암은 원래 흥천사의 산내암자로 전체적인 규모는 큰 편이 아니지만 아담한 분위기에 전형적인 암자의 틀을 갖추고 있는 절이다. 특히 대웅전 앞의 두 소나무가 사격을 한층 높여주며, 주위를 둘러싼 아름다운 수림은 청정도량으로서 적조암의 분위기를 대변해준다. 적조암의 창건은 1849년(헌종 15)에 혜암성혜(慧庵性慧)스님에 의해 이루어졌는데, 그는 이절을 염불관선(念佛觀禪)의 도량으로 삼았다. 창건주인 성혜스님에 대한 자료가 전혀 남아 있지 않아 창건배경 등을 알기 어려우나,『동사열전(東師列傳)』에는 백파(白坡)스님의 제자로 혜암이라는 스님이 등장하고 있어 생존연대를 추정할 때 그를 동일인으로 추정할 수도 있다. 하지만 단정할 근거는 없는 상태이다.<br /><br />그 뒤 가람이 소실되어 폐허로 있던 것을 1958년 경산스님이 주지로 부임하여, 1960년대 가람을 정비하였으며, 1977년에는 경산희진(京山喜璡)스님에 의해 건물과 가람이 복원되어, 당시 관자재보살의 강림도량으로 알려졌다. 아울러 이곳은 대한불교조계종 총무원장을 네 번이나 역임한 경산스님이 입적하기 전까지 전법교화(傳法敎化)하셨던 장소로, 경산스님의 수행과 업적은 현대불교사의 전개 과정에서 반드시 주목되어야할 부분이다. 1970년대 이후 총무원장과 동화사 주지 등 불철주야로 교단정화와 화합에 앞장선 경산스님은 1974년에 자공(慈空)스님에게 주지직을 물려주었다. 이후 자공스님은 대웅전 내부의 불상과 탱화불사를 시작하여 1974년에 석가삼존상 조성과 1975년에 칠성탱, 독성탱, 산신탱 조성, 1976년에 신중탱을 조성하여 전각 내 모든 성보를 이 당시 조성하게 되었다.<br /><br />또 1979년에 경산스님이 입적한 후에는 스님의 사리를 수습하여 1982년 사리탑과 비석을 조성하였으며, 2002년에는 상좌인 자성(慈成)스님이 주지직을 이어 받아 현재 가람의 기틀을 이루었다. 스님은 오랜 세월 꿋꿋이 부처님을 모신 빛바랜 대웅전 복원 불사에 원을 세워 기도에 전념하신 바 주지로 부임하신지 3년 후인 2005년에 현재 대웅전의 전면 보수공사를 성취하게 되었다. 자성스님은 경산스님의 시봉하기 위해 강원에서의 공부를 중단하고 어린 시절 서울 적조암에 올라와 20여 년을 경산스님을 모신 상좌로서 누구보다 더 적조암을 아끼고 사랑하는 진심 어린 마음을 가지신 분이다. 그러기에 경산스님에 대한 자료가 전무한 가운데 경산대종사의 자료를 수집ㆍ발췌하여 스님의 업적과 종단화합에 힘쓴 다양한 생애를 근래 책으로 엮어 놓게 되었다.','02-924-5362',null,'연중무휴',null,null,null,null,null,'있음','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정법사(서울)','02822','서울특별시 성북구 대사관로13길 44',38,127,'삼선교에서 성북동길로 접어들어 길상사(옛 대원각)를 오른쪽에 두고 언덕길로 조금 오르다가 우측으로 보면 성북동에서는 가장 오래된 절인 정법사(正法寺)가 나온다. 이곳은 원래는 복전암(福田庵)이라고 불리우던 작은 암자였는데 1960년 석산(石山)스님이 가회동에 있던 건봉사(乾鳳寺) 포교당을 옮겨오면서 중창을 하여 정법사라 이름하였다. 복전암이 언제 누구에 의해서 지어졌는지 자세한 문헌은 없지만 지금의 길상사터가 예전에는 후궁터였다는 점에서 복전암이 혹시 후궁들의 기도처였던 것은 아닐까 추측해 볼 뿐이다.삼청동과 성북동 사이에 터널도 뚫리고 길도 좋아져 지금은 마을이 빼곡히 들어서 있지만 석산스님이 오실 당시만 하더라도 길상사가 있는 대원각까지 맑은 개울물이 흘렀고, 삼선교까지 걸망을 메고 30분씩을 걸어 다녀야만 했던 산길이었다고 한다. 북한산 줄기인 구준봉 자락 밑에 자리해서인지 정법사 일주문에 들면 이곳이 서울 한 중심에 있는 도심사찰인가 싶다. 무엇보다 항상 그 자리에 여법하게 계신 팔순이 넘으신 석산 노스님을 만날 수 있고, 스님께 그 옛날이야기며, 출가수행 이야기, 부처님 이야기를 전해들을 수 있어 생각만 해도 향냄새가 은은하게 풍겨오는 곳이다. <br /><br />* 연혁 <br /><br />정법사는 원래 종로구 가회동에 있던 건봉사(乾鳳寺)의 포교당으로 1939년에 처음 설립되었는데 1960년 이곳의 조그만 암자인 복전암(福田庵)으로 이전하였다. 즉 정법사가 위치한 가회동은 수행처로 적합한 분위기가 아니었으므로 이 암자를 인수하여 정법사로 개칭한 것이었다. 따라서 정법사의 연혁을 살피기 위해서는 우선 복전암의 연혁을 살펴보아야 할 것이다. 그러나 이곳에 있었던 복전암이 언제 어떻게 창건되었는지는 알려진 바가 없다. 다만 현재 정법사 아래에 위치한 길상사(대원각)터가 원래는 후궁터였다는 점에서 복전암이 혹시 후궁들의 기도처였던 것은 아닐까 추측된다. 여하튼 복전암의 정확한 역사는 추후의 자료발굴에 기대할 수밖에 없으며, 정법사가 이곳으로 이전해 온 1960년 이후의 역사가 정법사의 연혁으로 이해되어야 하겠다. 절을 이전할 당시 이곳에는 칠성각 한 채만 덜렁 있는 고즈넉한 암자였는데, 석산(石山)스님이 서대문 신학대학에 있던 황태자궁을 이전해 대웅전을 건립하면서 정법사라고 부르게 된다. 이후 스님은 1969년에 대웅전 옆으로 팔상전을 새로 건립하고, 1975년에는 미륵불상을 모셨다. 1980년에는 산신각을 중수하였으며, 이어 범종루와 요사채 등의 불사를 이루면서 지금과 같은 모습을 갖추게 된다. 최근 2002년에는 대웅전 중창불사를 발원하여 3년 여의 불사 끝에 2004년 4월에 낙성식을 하였고, 2005년에는 대웅전 지하에 극락전을 건립하였다.<br>','02-762-0774',null,'연중무휴',null,null,null,null,null,'있음','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('스파레이','06524','서울특별시 서초구 강남대로107길 5(잠원동)',38,127,'서초구 잠원동에 위치한 스파레이는 전통 동유럽 분위기를 물씬 느낄 수 있는 고품격 시설과 다양한 편의 시설이 갖추어진 여성 전용 찜질방 및 사우나이다. 지하1층, 지하2층, 지상 3층으로 구성된 스파레이는 웰빙 이벤트탕, 황토방을 비롯한 스파 시설과 더불어 불한증막, 참숯방 등의 테마 찜질방이 마련되어 있다. 뿐만 아니라 네일아트, 피부관리실, 한식당 및 분식 식당, 인터넷방, 좌욕실 등의 다양한 편의 시설도 마련되어 있어 여성들을 위한 전용 찜질방으로 편리하게 이용할 수 있다.<br>','02-545-4002',null,'연중무휴',null,null,null,null,'24시간','차량100대 가능(기본 6시간 3,000원 / 초과 시간당 2,000원)','없음','불가','이용가능시설:* 지하1층 : 신발장,습건조실,원적외선 건조실, 웰빙이벤트탕(히비 스커스탕,국화탕,쑥탕,장미탕,다시마탕),황토방,네일아트,유료수면실,경락마사지실,스포츠마사지실,만화방<br/>
+<br />
+* 지하2층 : 락커룸,개인사물함,수면실,란제리 의류코너,휴게실,흡연실,좌욕실,세신실,파우더실,불한증막,냉/온탕,이벤트탕,해수탕,마사지탕,스넥,부항/실면도,주얼리 코너,습사우나,원적외선 건조실<br/>
+<br />
+* 지상3층 : 테라스,노천탕,숯/소금방,모임방,황토방,인터넷방,한식당,분식,스넥,DVD방,발맛시지기,안마의자,피부관리실,쑥찜/썬텐실,웰빙다이어트룸
+주차요금:기본 10시간 추가 시간당 2,000원
+입 장 료:대인 - 기본요금(가운포함) 19,000원(12시간)<br /> 
+※ 추가요금 12시간 이후 1시간당 1,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('씨랄라 워터파크','07297','서울특별시 영등포구 문래로 164(문래동3가)',38,127,'씨랄라는 영문 ''SEA[:바다]와 의성어 LALA[:신나고 즐거운]''의 합성어로일상에 지친 도시인들에게 지중해 바닷가에 온 듯한 휴양감과 계절, 거리의 제약을 뛰어 넘어 사계절 언제나 가장 가깝게 찾으실 수 있는 도심 속 신개념 Waterpark team_insert 입니다.<br /><br />[출처 : 씨랄라워터파크]<br>','1522-9661',null,'연중개방',null,'전연령',null,null,'* 워터파크 : 10:00~19:00<br />
+* 사우나 : 07:00~21:00','있음(건물 내 지하 3층 주차장)','없음','불가','시설이용료:* 워터파크<br />
+- 종일권 (10:00~19:00) : 대인 40,000원 / 소인 32,000원<br />
+- 오후권 (15:00~19:00) : 대인 29,000원 / 소인 22,000원<br />
+* 사우나<br />
+- 대인 8,000원 / 소인 7,000원<br />
+- 찜질복 : 2,000원<br />
+- 사우나 정기권(10매) : 70,000원
+이용가능시설:워터파크, 찜질스파, 사우나, 푸드코트, 편의시설 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 삼각지 대구탕 골목','04382','서울특별시 용산구 한강대로 182(한강로1가)',38,127,'30년이 넘는 세월 삼각지에 대구탕 끓는 냄새가 이어지고 있다. 해장국 중 으뜸으로 꼽히는 대구탕이 삼각지에 처음 자리잡게된 것은 1979년. 그때부터 지금까지 삼각지 우리은행 주변에 네 곳의 대구탕집이 성업중이다. 대구탕은 그 국물맛이 깊이가 있어 애호가 층이 생기는데, 대략 젊은이들 보다는 나이 드신 분들이 단골이 많다. 특히 전날 술 먹는 사람들이 숙취 해소하러 들르는 경우가 많고, 등산이나 운동을 마치고 삼삼오오 모여 대구탕에 소주를 즐기는 부류도 있다. 또한 나이드신 분들은 깊은 국물 맛에 단골이 돼 대구탕집에서 모임을 갖는 경우도 많다. 이렇게 삼각지 대구탕 골목 단골들은 자신들의 입맛에 맞는 집을 찾아 입맛을 찾고 훈훈한 이야기를 나누며 정도 쌓아간다. 지하철 6호선 삼각지역 14번출구나 지하철 4호선 삼각지역 1번 출구로 나오면 우리은행이 나오고 그 앞에 평양집(식당)이 있다. 평양집 뒷골목에 원대구탕과 자원대구탕이 있다. 이 식당들이 오래된 집들이다.
+그 골목 초입에 참대구탕집이 있다. 세창대구탕은 우리은행 뒤로 이어지는 도로를 따라 가다보면 길 왼쪽에 있다. 대구탕 골목이 유명해진 건 순전히 군인들 덕이다. 삼각지 주변에는 육군본부 등 군인들이 많았었는데 그들이 주요 단골이 됐고, 전국에서 모여드는 동료들에게 맛을 보이면서 그 맛이 전국으로 소문난 것이다. 또한, 전출과 파견 근무 등이 많은 군인의 특성 상 외지에 갔다가 오랜 만에 돌아오는 단골들은 부대에 복귀 하기 전 삼각지 대구탕 한 그릇을 먼저 먹고 들어갔다는 이야기도 전해진다. 그래서 이곳 대구탕 골목에는 전역한 군인이 손주 손을 잡고와서 맛을 나누는 자리도 만들어진다. 대구탕은 대구 자체에서 시원하고 깊은 맛이 우러나기 때문에 별다른 육수를 쓰지 않는데, 한 때는 동태로 육수를 만들었던 적도 있었다. 이 골목에는 콩나물과 미나리 등을 넣고 벌겋고 얼큰하게 끓여내는 대구탕과 함께 맑은 국물로 나오는 대구탕도 있다.<br>','이태원 관광안내소 02-3785-0942',null,'점포마다 다름',null,null,null,null,'점포마다 다름',null,'불가','불가','화장실:있음
+외국어 안내서비스:영어,일어,중국어 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('반포대교 달빛무지개분수','06500','서울특별시 서초구 신반포로11길 40(반포동)',38,127,'서울 반포대교에 설치된 분수인 달빛무지개분수는 반포대교 570m 구간 양측 총 1천140m에 380개 노즐을 설치해 수중펌프로 끌어올린 한강물을 약 20m 아래 한강 수면으로 떨어뜨리는 새로운 개념의 분수이다. 달빛 무지개 분수는 낮과 밤에 다른 모습을 즐길 수 있다. 뿜어내는 물의 양만 분당 190톤에 달하는 달빛 무지개 분수는 낮에는 분수에 떨어지는 물결의 모양에 따라 휘날리는 버들가지와 버들잎을 형상화한 모양 등 백 여 가지의 다양한 모습의 분수를 만들어낸다. 밤에는 긍정과 희망의 이미지를 상징하는 무지개 색깔의 분수로 화려하게 변신한다. 설치된 조명 200개는 아름다운 무지개 모양의 야경을 선사하고 음악에 맞춰 춤추는 분수는 시민들에게 색다른 즐거움을 선사한다. 또한 달빛 무지개 분수는 지난 2008년 12월 세계 최장 교량 분수로 기네스북에 등재되면서 최고의 위용을 세계에서도 인정받았다.이 분수는 매년 4월부터 10월까지 매일 가동되며 하루 4~6회(회당 20분씩) 가동된다. 공원에는 야외무대와 생태관찰원, 피크닉 공간 등도 마련됐다.<br>','02-3780-0578',null,null,null,null,null,null,'비수기(4~6월, 9~10월) : 12:00, 19:30, 20:00, 20:30, 21:00(매회 20분)<br />
+성수기(7~8월) : 12:00, 19:30, 20:00, 20:30, 21:00, 21:30(매회 20분)','있음(4개소, 823대 주차가능)','없음','없음','이용가능시설:매점 2개소
+화장실:있음
+한국어 안내서비스:가능(반포한강공원 안내센터)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('응암동 감자국 거리','03478','서울특별시 은평구 응암로 172(응암동)',38,127,'장충동에 족발이 있고 청진동엔 해장국이 있다면 응암동엔 감자탕이 있다. 응암동 대림시장에 있는 응암동 감자국거리에 가면 이화감자국, 장군감자국, 시골감자국, 응암동감자국, 대림감자국 등 어느 집에 들어가도 실패하지 않을 감자국 전문점들이 버티고 있다. (응암동에서는 감자탕을 감자국이라는 하는데 감자탕은 올림말이고 감자국은 내림말이라고 한다. 누구나 즐길 수 있는 서민적인 음식이라는 의미를 강조하기 위해 응암동에서는 감자국이라고 한다.)<br /><br />응암동에서 감자국을 팔기 시작한 것은 1980년대 중반부터라고 한다. 대림시장에 있던 식당에서 돼지 뼈를 우린 국말에 감자, 우거지 등을 넣고 끓인 감자국을 팔기 시작했고 감자국의 인기가 알려지자 1980년대 후반부터는 타 지역에도 감자국(감자탕) 전문 식당이 생기기 시작했다. 그리고, 최근에는 전국 어디에 가더라도 얼큰한 감자탕 맛을 즐길 수 있게 되었다.감자국이 이렇게 인기를 끌게 된 데에는 값싸게 푸짐하게 먹을 수 있다는 점 외에도 감자국의 주원료인 감자와 돼지고기가 영양식으로 각광받게 된 것도 한 역할을 했다.잘 알려져 있는 것처럼 감자에는 수분 외에 녹말, 단백질, 무기질, 환원당, 비타민C, 필수아미노산이 함유되어 있으며, 또한 감자에 포함된 비타민C는 조리 후에도 거의 파괴되지 않는다고 한다.<br /><br /> 그리고, 돼지고기는 풍부한 영양소 외에도 성인병 예방에 좋고 독소제거 효능이 있다고 한다. 때문에 최근에 감자국이 남녀노소가 사시사철 찾는 가족음식이 되고, 전국적으로 감자국 전문식당을 쉽게 찾을 수 있지만 원조 감자국에는 타지에서는 맛볼 수 없는 무언가가 있다. 제대로 된 국물맛을 내기 위해 수년간 참으로 많은 돼지뼈와 감자를 갖다 버렸다는 원조의 감자육수 제조비법은 절대 다른 곳에서는 흉내낼 수 없을 것이다. 또한 매일 담그는 겉절이와 시원한 깍두기, 달콤 짭짤한 쌈장에 배추속까지 모두 원조 감자국의 맛을 배가한다. 원조 감자국의 차이를 체감하고 싶다면 오늘 당장 응암동 감자국 거리로 떠나보자. 감자국은 밥상보다는 술상에 제격이라는 말이 있듯이 저녁시간에 가는 것이 더 좋겠다. 남은 감자탕 국물로 만들어 먹는 비빔밤도 잊지 말아야 할 것이다.<br>','02-302-1666',null,null,null,null,null,null,'09:00~18:00','각 업소 주차장 이용','불가','불가','주차요금:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('영등포 신길동 홍어거리','07347','서울특별시 영등포구 신길로 200-20(신길동)',38,127,'애호가와 극단적으로 싫어하는 부류 등 싫고 좋음이 뚜렷하게 구분되는 음식 중 대표적인 게 바로 ''홍어요리''다. 영등포 신길동에 그 홍어요리를 전문으로 하는 음식점들이 모여 거리를 이룬 곳이 있다. 우신초등학교 사거리 부근 신길4동에 1990년대 초반 첫 홍어요리집이 등장하게 되었는데 지금도 그렇지만 홍어요리 음식점은 쉽게 찾을 수 없는 게 사실이다. 영등포 신길동에 홍어 음식점이 하나둘씩 생기자 주변 애호가들의 발걸음이 점차 늘어갔다. 홍어회, 홍어무침, 홍어찜, 애탕 등 홍어 애호가라면 어느 것 하나 맛 보지 않을 수 없는 요리들이 단골을 만들기 시작했다.<br /><br /> 당시 주변에는 중국집, 일반 식당 등 다른 업종 또는 홍어와는 전혀 다른 메뉴를 내걸고 장사를 하는 집이 있었는데 홍어집이 잘 되자 하나 둘씩 업종 변경을 하기시작했다. 그렇게 해서 오늘날 신길동 홍어거리가 만들어졌던 것이다. 이 거리에 서면 어느 음식점이건 다 비슷한 풍경을 볼 수 있는데 사람 없는 한적한 오후에도 계모임, 등산객, 단체 모임 등 과 회식 자리가 많다는 것이다. 손님이 많은 저녁 시간을 피해 여유 있게 홍어요리도 즐기고 친목도 도모하기 위한 시간 배려다.<br /><br />이들이 지나면 두 서넛이 한 상을 차지하는 개별 손님들이 피크를 이루고 밤이 깊어간다. 또 산악회, 결혼식, 장례식장에 쓰일 홍어요리 또한 이 거리 홍어요리집의 주요 매출 요인이다. 몇 년 지나면 이 거리 역사가 20년이니 아직은 그 관록에 무게가 실리지는 않지만 끊이지 않는 단골의 발걸음과 한결같은 주인들의 홍어와 막걸리 사랑이 이어진다면 이 거리야말로 서울에서 보기 드문 홍어거리로 관록이 붙을 것이다.<br>','02-323-2240',null,null,null,null,null,'사계절',null,null,'불가','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('몽마르뜨공원','06579','서울특별시 서초구 반포대로37길 59(반포동) 부근',37,127,'서초구 반포4동 산93번지 일대에 위치한 이 공원은 원래 아까시나무가 우거진 야산이었으나 지난 2000년 서울특별시 상수도사업본부에서 반포 지역의 원활한 수돗물 공급을 위해 배수지 공사를 시행함에 따라 서초구에서는 서울특별시와의 협의를 통해 주민들에게 휴식 공간을 제공하기 위해서 ''몽마르뜨공원''을 조성하게 되었다. 특히 인근 서래마을에는 프랑스인들이 많이 거주하고 있어 마을 진입로를 몽마르뜨길로 부르고 있었기 때문에 이 공원의 이름을 ''몽마르뜨공원''으로 명명하게 되었다.<br /><br />* 면적: 24,690m²<br />* 공원면적: 20,054m²<br>','02-2155-6860','2003년','연중개방',null,null,null,null,'24시간','없음','없음','가능','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('반포 서래섬','06500','서울특별시 서초구 신반포로11길 40(반포동, 반포안내센터)',38,127,'한강에 제방(堤防)을 쌓기 전 이 일대는 서래마을 뒤 청룡산에서 한강 모래사장으로 작은 개울들이 서리서리 굽이쳐 흐른다고 하여 ''서릿개(蟠浦)''라고하였으나 음이 변해서 지금의 반포(盤浦)로 부르게 되었다. 특히 1972년 이수택지개발 계획에 의거해 한강에 제방(堤防)을 쌓았으며 1973년 대한주택공사가 이곳에 대단위 아파트를 건립하면서부터 현재 반포동의 모습이 나타나게 되었다.<br /><br />한편 한강둔치 반포지구에 있는 ''반포 서래섬''은 1982년부터 1986년까지 올림픽대로 건설 및 한강 종합개발시 조성한 인공섬으로서 3개의 다리가 연결되어 있다. 또 물길을 따라 수양버들이 잘 드리워져 있고 철새도래지, 화훼단지, 수상스키장 등이 조성된 시민 
+휴식 공간이다.<br>','02-3780-0541','1986년','연중무휴',null,null,'500명 이상',null,'24시간','한강시민공원 주차장 이용','없음','가능','화장실:있음
+입 장 료:무료
+이용가능시설:반포 서래섬 다리, 반포지구 꽃동산, 반포 서래섬 수양버들, 한강둔치 반포지구 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('효령대군이보묘역','06666','서울특별시 서초구 효령로 135(방배동)',37,127,'이 곳은 효령대군(孝寧大君, 1396~1486)과 그의 배위(配位)이신 예성부부인(橤城府夫人) 해주 정씨(海州 鄭氏, 1394~1470)의 사당(祠堂)과 묘소(墓所)를 모신 곳으로서 서울특별시 지정 유형문화재로 보호 받고 있다. 효령대군은 조선 왕조(朝鮮王朝) 제 3대 태종대왕(太宗大王)의 둘째 왕자이고 제 4대 세종대왕(世宗大王)의 형님이다. 1737년 제 21대 영조대왕(英祖大王)의 칙명(勅命)으로 묘하(墓下)에 사당(祠堂)을 세우고 청권사(淸權飼)라 명명(命名)하였으며 1789년 제 22대 정조대왕으로부터 祠堂의 현판(懸板)을 하사(下賜)받아 오늘에 이르고 있다.<br>','02-584-3121~4',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('살곶이체육공원','04762','서울특별시 성동구 사근동길 16-18(사근동)',38,127,'중랑천을 따라 조성된 ''''살곶이체육공원''''은 시원한 강바람을 가르며 가족과 함께 즐길 수 있는 인라인 전용 스케이트장, 축구장, 농구장, 배트민턴장 등 다목적 체육시설이 마련되어 있다. 또한 공원 주변으로 자전거 전용도로와 보행자 도로가 분리 조성되어 있어 연중에는 걷기 대회, 단축 마라톤 대회가 열리기도 하며 생활 속 가장 친숙한 자전거 이용자들의 많은 사랑을 받고 있다.','02-2286-6090',null,'연중무휴',null,null,'1000명 이상',null,'24시간','있음(유료)','불가','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신선경과 류인호 묘역','05725','서울특별시 송파구 동남로 263(오금동)',38,127,'''문화류씨 묘역''에는 임진왜란 때 이항복(李恒福)과 함께 3등 공신으로 선조를 보필한 문양공(文陽公) 류희림(柳希霖), 그 아버지 증가선대부 이조참판겸동지의금부사(贈嘉善大夫吏曹參判兼同知義禁府事)를 역임한 문원군(文原君) 류복룡(柳伏龍)과 그 부인 평강(平康) 채씨(蔡氏)의 묘, 그리고 공조참의(工曹參議) 류인호(柳仁濠)와 숙부인(叔夫人) 거창 신씨의 합장 묘가 있다. 거창신씨 묘역은 조선 전기의 문신인 신선경(愼先庚)의 묘를 비롯한 거창 신씨들의 가족 묘역이다. 거창 신씨의 시조는 원래 중국 송(宋)나라 개봉부(開封府) 사람으로 지사라는 벼슬에 있던 신수(愼修)다. 그는 송나라와 고려의 외교 관계를 개설하기 위해 사절단으로 고려의 수도 개성에 왔다가 귀화하여 고려인이 됨으로써 거창 신씨의 시조가 되었다.<br /><br />신수는 고려 문종 29년(1075) 시어사(侍御史)가 되었고 숙종 때 수사공 우복야참지정사(守司空右僕射參知政事)에 이르러 사직하였으며 시호는 공헌(恭憲)이다. 신선경은 세조 원년(1456) 사헌부장령을 거쳐 가선대부 동지중추부사(嘉善大夫同知中樞府事)를 지냈다. 묘역은 약 500년 전에 조성된 것으로 정부인(貞夫人) 한씨와의 쌍분으로 되어 있으며 그 가운데에 묘비, 상석이 각각 1개씩 있고 문인석이 1쌍이 서 있다. 묘비는 윗 부분이 연꽃무늬로 장식된 갓 모양을 하고 있는 등 조선 초기의 특유한 형태로 묘비 연구에 귀중한 자료이다. 그리고 동쪽 옆에 문화 류씨인 공조참의 류인호(柳仁豪)와 숙부인(淑夫人) 거창 신씨의 합장묘가 있는데 여기에는 묘비,상석이 각각 1개씩 있으며 망주석 1쌍 서 있다. 또한, 임진왜란 때 이항복과 함께 3등공신으로 선조대왕을 보필한 문양공 류희림, 문원군 류복룡, 공조참의 류인호의 묘소이다.<br /><br />류희림은 명종 15년(1560) 1,000여명의 성균관 유생을 대표하여 불교를 비판하고, 선종, 교종 모두 폐지하자는 상소를 올렸다. 명종 16년(1561) 식년문과에 병과로 합격하여 문한관(文翰官)이 되었다. 검열, 박사, 정언 등을 차례로 역임하고 선조 3년(1570) 지평이 된 이후 계속 중앙에만 머물러 사헌부장령, 집의를 역임하였다. 선조 14년(1581) 형조참판으로 동지사(冬至使)가 되어 명나라에 다녀왔으나 가지고 간 방물 중 면주(綿紬) 10필과 흑마포(黑麻布) 11필이 부족하여 처벌을 받고 파직되었다. 선조 25년(1592) 임진왜란이 일어나자 첨지중추부사로서 왕을 호종하여 좌승지로 발탁되었다. 이후 1593년 동지중추부사, 1594년 예조참판, 1597년 동지돈녕부사가 되었다. 죽은 뒤인 선조 37년(1604) 호성공신(扈聖功臣) 3등과 문양공에 봉해졌다.<br /><br />묘소는 오금공원 내 관리사무소 서쪽에 남향으로 3기가 남북 방향으로 놓여 있다. 맨 위(북)쪽에 있는 류희림의 묘 앞에는 상석(床石)이 있고 그 앞 좌 기둥에 다람쥐 형상이 조각된 망주석(望柱石)과 문인석이 각각 1쌍씩 서 있다. 아래쪽의 2기는 좌우로 배치되어 있으며 류복룡과 그 부인인 평강 채씨의 묘이다. 두 무덤 사이에는 비석이 있고 그 앞에 망주석과 문인석 각각 1쌍이 배치되어 있으며 그 옆에 다시 신도비(神道碑)가 있다.<br>','02-2147-2002',null,'연중무휴',null,null,null,null,'24시간','오금공원 주차장 이용 (주차 공간 협소)','불가','불가','입 장 료:무료
+화장실:오금공원 내 화장실 이용
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오금공원','05725','서울특별시 송파구 오금로 363(오금동)',38,127,'''오금공원''은 해발200m 정도의 나지막한 야산에 자연 그대로의 멋을 살려 1990년 조성한 공원이다. 갖가지 나무와 꽃이 어우러져 몸과 마음을 상쾌하게 해주는 산책로, 주민 건강을 위한 각종 운동기구, 배드민턴장과 테니스장 등의  체육 시설을 다양하게 갖추고 있다. 또 오금공원 친수 공간이 조성되어 여름철 무더위를 식힐 수 있는 공간을 제공하고 있다. 뿐만 아니라 2000년에 개장한 자연학습장(무료 개장)은 경사진 산책로 양 옆으로 조성되어 야생 초화류와 자생 관목류가 자라고 있어 아이들의 교육 장소로 이용되고 있다. 무엇보다 이른 새벽부터 운동을 나온 주민들의 발길이 이어지면서 산책 중인 부부나 가족의 모습을 볼수 있고 운동을 나온 이웃들간에 인사를 주고 받는 모습을 보면서 자칫 삭막해지기 쉬운 도시 생활 속에 따뜻한 온정을 느낄 수 있는 공간이다.','02-400-0978',null,'연중개방',null,null,null,null,'24시간','주차 가능(주차 공간 협소)','불가','불가','화장실:있음
+이용가능시설:곰두리체육센터, 송파도서관, 테니스장, 배드민턴장, 게이트볼장, 자연학습관찰로, 삼림욕장 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관문사(서울)','06762','서울특별시 서초구 바우뫼로7길 111(우면동)',37,127,'서울시 서초구 우면동 우면산 아래 위치한 관문사는 수도권 천태법음의 요람이자 포교의 중심 도량으로서 1993년 기공식을 갖고 5년여의 공사를 거쳐 1998년 10월 낙성을하였다. 연건평 6,700여 평의 규모로 지하 4층, 지상 7층으로 이루어졌으며 현대와 전통적인 불교건축양식을 병행하여 시공되었다. 건물 내부는 첨단의 설비를 갖춰 다양한 국내외 문화, 학술, 종교의식 등을 치르고 있는 사찰이다. 관문사는 청계산, 우면산, 양재천 등의 천혜 자연 여건과 함께 위치해 있다. 특히 관문사가 자리한 우면산(해발293m)은 소가 누워 있는 형세라 하여 우면산(牛眠山)이란 이름을 붙었으며, 절이 위치한 곳은 길지(吉地)로 손꼽히고 있다. 서울시 도시자연 공원으로 지정·관리되고 있는 우면산은 여러 계곡에서 맑은 옹달샘이 끊임없이 흘러나오고 있으며, 울창한 삼림으로 다양한 동·식물군이 자연서생하고 있어 산과 사찰의 조화가 잘 어우러져 있다.<br>','02-3460-5300',null,'연중무휴','[관문사 템플스테이] <br />
+* 템플스테이 정기 프로그램(1박2일) : 매월 둘째, 넷째주 주말 
+* 마음의 짐 내려놓기 : 마음의 휴식과 힐링이 함께 하는 프로그램 
+- 프로그램 내용 : 사찰기본예절, 사찰안내, 점심공양, 연등만들기, 108염주 만들기, 스님과의 차담 등<br />
+※ 자세한 내용은 관련 홈페이지 및 전화문의',null,null,null,null,null,'없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('방이동 생태경관 보전지역','05651','서울특별시 송파구 동남로 397(방이동)',38,127,'방이동 생태보전지역은 면적 58,909㎡ 연못형태의 인공습지이다. 물억새, 애기부들 등의 습지식물과  청둥오리, 물총새 등의 야생조류가 관찰된다.<br /><br />* 생태계 현황<br /><br />식물상 : 애기부들, 수련, 마름, 물억새 등 총47과 114종 관찰<br />주요군락 : 갈대군락(34.4%), 농경지(9.8%), 버드나무군락(6.8%)<br />버드나무 등 목복군락은 감소 추세이지만, 갈대군락 등은 증가 추세<br />야생조류 : 황조롱이, 청둥오리, 물총새 등 총 32과 66종 관찰(’03~’05년)<br />양서파충류 : 청개구리, 옴개구리, 산개구리 등 2과 5종 관찰<br />곤충류 : 밀잠자리, 줄베짱이, 섬서구메뚜기, 네발나비 등 총 50과 120종 관찰<br />어류 : 떡붕어, 대륙송사리 등 3과 4종 관찰<br /><br />* 면적 : 58,909㎡(28필지)<br>','02-2147-3380',null,null,null,null,null,null,null,'오륜테니스장 주차','불가','불가','이용가능시설:안내소, 관찰데크(398m), 조류관찰소
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한강','04770','서울특별시 성동구 강변북로 257',38,127,'한국의 중부, 강원도·충청북도·경기도·서울특별시를 거쳐 황해로 유입하는 강. 한강은 반만년 유구한 역사를 우리 민족과 더불어 기쁨과 슬픔을 함께 해 온 우리 삶의 터전이며, 서울시민의 가장 대표적인 휴식공원이다. 한강의 본류인 남한강은 강원도 태백시 창죽동 검용소에서 발원한 하천으로서 삼척시 하장면 부근에서 골지천의 이름으로 북류하다가 광동댐을 지나 석병산(1,010m)에서 발원한 임계천과 합류해 서류, 정선군 북면 여량리에서 황병산(1,407m)을 발원지로 한 송천과 만나 조양강이 되어 흐르다가, 오대천과 합류한 후 남류하여 동강이 된다. 동강은 영월읍에서 평창강과 주천강이 합류해 만들어진 서강과 만난 후 흐르다가 충주시에서 달천, 강원도 원주시와 경기도 여주시 부근에서 섬강·청미천과 만난 후 양화천·복하천·흑천 등의 지류를 합친 후 양수리에서 북한강과 만난다.<br>','한강사업본부 (주)02-120 / (야)02-3780-0777',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('진관사계곡','03308','서울특별시 은평구 진관길 73(진관동)',38,127,'은평구 진관내동 북한산성 입구에 위치해 산림 생태계와 조화를 이루고 있으며 도롱뇽, 산개구리 등 서울시 보호종이 관찰되는 곳이다. 2011년 국립공원관리공단 북한산국립공원사무소는 수환경 및 수서 생태계 보호를 목적으로 은평구 진관동에 위치한 진관사 계곡(약 0.5㎞, 3500㎡)을 북한산국립공원 특별 보호구로 지정했다. 때문에 출입이 제한되어 진관사 무료주차장 아래 마실 길 근린공원 근처의 구역에서만 물놀이를 즐길 수 있다.','02-909-0497~8',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('헌인릉 생태경관보전지역(오리나무림)','06795','서울특별시 서초구 헌인릉길 34',37,127,'헌인릉 아래쪽으로 17,000여 평에 오리나무가 군락을 이루고 있는데, 이 숲은 2005년에 서울시에서 생태경관 보전지역으로 지정하였다. 헌인릉 주변 오리나무숲 일대는 지하수가 풍부하고 토심이 깊어 서울에서는 둔촌동 생태경관보전지역과 더불어 오리나무 군집을 형성하고 있다. 오리나무림, 노란물봉선 등이 있는 생태경관보전지역으로 오색딱다구리가 관찰된다.<br>','02-445-0347',null,'매주 월요일',null,null,null,null,'2~5월, 9~10월 09:00~18:00<br>
+6~8월 09:00~18:30<br>
+11~1월 09:00~17:30<br>
+※ 매표는 마감 1시간 전까지','있음','가능','불가','주차요금:무료 
+입 장 료:만 25세~64세 <br>- 개인 1,000원 / 단체(10인 이상) 800원<br>
+※ 무료관람대상자 <br> 
+- 만 24세 이하 청소년(학생증 또는 신분증 지참)<br>
+- 만 65세 이상 국민(신분증 지참)<br>
+- 국ㆍ공립기관에서 정양 중에 있는 상이군경 <br>
+- 장애인 복지법상 장애인 / 국가유공자<br>
+- 5,18민주유공자, 참전유공자 등 개별법에 의한 입장료 면제자<br>
+- 학생인솔 등 교육활동을 위해 입장하는 교원<br>
+- 관광진흥법에 따른 관광안내 관련 자격증을 소지하고, 단체관람객 인솔 및 안내를 위해 입장하는 자<br>
+- 병역명문가(병무청에서 발급한 병역명문가증 지참)<br>
+- 효행장려 및 지원법에 따른 효행우수자<br>
+- 한복착용자(신정, 설날 및 추석연휴에 한함)<br>
+- 기초생활수급자 - 문화(바우처)카드, 수급자증명서 증빙<br>
+- 차상위계층 - 문화(바우처)카드, 해당 증명서ㆍ확인서 증빙 <br>
+·자활근로자(확인서 증빙) <br>
+·차상위 본인부담경감 대상자(증명서 증빙) <br>
+·장애(아동)수당 대상자(확인서 증빙) <br>
+·한부모가족보호대상자(증명서 증빙) <br>
+·기타 보건복지부장관이 인정한 차상위계층<br> 
+- 65세 이상 외국인 중 영주자격(F-5) 취득자 <br>
+※ 무료관람대상자는 반드시 관련 증빙을 제시하여야 함<br><br>
+[시간제 관람권/점심식사 관람권/상시관람권]<br>
+* 시간제 관람권<br>
+- 이용기간 : 1년<br>
+- 이용시간 : 조기시간 06:00~09:00(11~2월 06:30~09:00) / 점심시간12:00~13:00<br>
+- 이용요금 : 30,000원<br>
+* 점심시간관람권(10회)
+- 이용기간 : 3개월<br>
+- 이용시간 : 12:00~14:00(입장시간 12:00~13:00)<br>
+- 이용요금 : 3,000원<br>
+* 상시관람권<br>
+- 이용기간 : 1개월<br>
+- 이용시간 : 관람시간동안 자유로이 이용가능<br>
+- 이용요금 : 10,000원 
+화장실:있음
+장애인 편의시설:휠체어 2대(대여시 신분증 필요) 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('반포한강공원','06500','서울특별시 서초구 신반포로11길 40 한강공원 반포 안내센터',38,127,'반포한강공원은 반포대교(잠수교)를 중심으로 상류는 한남대교, 하류는 동작대교 사이의 한강변 남단에 위치해 있다. 특히, 한강르네상스 사업으로 조성된 반포한강공원에서 반포대교 다리 양쪽에 설치된 달빛무지개분수는 총길이 1,140m로 2008년에 세계에서 가장 긴 교량분수로 세계기네스협회에 등재되었다. 야간에는 200여개의 조명으로 물을 뿜을 때마다 일곱빛깔 무지개처럼 아름다운 풍경을 연출한다. 또한 물방울놀이터, 인라인 전용트랙, 축구장, 농구장 등의 체육시설과 더불어 동작대교 남단에 설치된 전망대인 노을카페와 구름카페에서 탁 트인 한강수면과 강변 빌딩숲을 감상할 수 있다. 그리고 반포한강공원과 연결된 서래섬(盤浦島)은 도심 속 휴식과 놀이공간을 제공하는 인공섬으로 반포대교와 동작대교 사이에 위치해 있다. 봄이 되면 노란 유채꽃이 만발하여 ''서래섬 나비ㆍ유채꽃 축제'' 로 나들이와 산책을 즐기는 사람들이 많다. 이 외에도 반포한강공원에는 생태학습장, 보트장, 자전거도로, 피크닉장 등 볼거리와 즐길거리가 무궁무진하다.<br>','반포안내센터 02-591-5943',null,null,null,null,null,null,'반포대교 달빛무지개분수 가동시간은 확인후 방문','주차장 있음<br />
+※ 주차장을 제외한 지역은 원동기장치자전거, 이륜자동차와 차량은 출입할 수 없습니다.','없음','없음','입 장 료:무료
+화장실:화장실 있음
+이용가능시설:달빛무지개 분수, 서래섬
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('잠실한강공원','05502','서울특별시 송파구 한가람로 65(잠실동)',38,127,'잠실한강공원은 잠실철교에서 영동대교 사이 강변 남단에 위치하고 있으며, 잠실종합운동장, 롯데월드, 올림픽공원과 인접해 있어 공원 내의 생활체육시설 및 문화시설을 함께 이용하기에 편리하다. 공원내의 자연학습장은 야생화, 농작물 등이 잘 조성되어 있어 어린이들의 자연학습과 가족나들이 장소로 많이 이용하고 있다. 특히, 잠실 수중보의 어도(漁道, 물고기길)는 살아있는 한강을 직접 느낄 수 있고 생태프로그램도 운영되고 있어 잠실한강공원의 또 하나의 자랑거리이다. 어도 주변으로 물고기 휴식처인 수중식물 섬과 바람개비, 산책로 등 테마공원으로 조성하였으며, 더불어 잠실대교 위에 설치된 전망쉼터 리버뷰 봄 카페와 <누에나루> 유람선에서 아름다운 한강의 야경을 감상할 수 있다.<br>','02-3780-0511~4',null,'연중무휴',null,null,null,null,null,'있음(5개소, 706대 주차 가능)','없음','가능','이용가능시설:[운동시설] 트랙광장, 청소년광장, 게이트볼장, 족구장, 배구장<br />
+[기타시설] 수영장, 유람선선착장, 수상시설, 자전거대여점<br />
+[편의시설] 매점, 식당, 음수대, 그늘막, 자전거보관소, 자연학습장, 잠실대교전망카페
+주차요금:기본요금 - 최초 30분 1,000원 / 초과 10분당 200원<br />
+1일 주차 최고한도 10,000원
+화장실:있음
+입 장 료:없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이촌한강공원','04427','서울특별시 용산구 이촌로72길 62(이촌동)',38,127,'이촌한강공원은 중랑천교와 원효대교 사이 강변 북단에 위치하고 있다. 강변을 따라 갈대, 억새, 코스모스가 철따라 피어나서 산책과 나들이코스로 이용하는 사람들이 많다. 공원 내에는 청소년광장과 X-게임장, 국제규모의 인라인스케이트장, 농구장, 테니스장, 게이트볼장 등의 운동시설과 여가시설을 갖추고 있다. 또한 고무보트를 타고 물살을 헤쳐나가는 래프팅 프로그램 운영하는 <한강도하체험장>이 마련되어 있어 학교 및 직장 등 단체위주의 팀웍훈련장으로 이용되고 있다. 이 외에도 자연학습장 및 수상훈련장, 차범근 축구교실, 노들섬 등의 볼거리와 즐길거리가 많다.<br>','02-3780-0551~4',null,'연중무휴',null,null,null,null,null,'있음(5개소, 483대 주차가능)','없음','가능','주차요금:기본요금 - 최초 30분 1,000원 / 초과 10분당 200원<br />
+1일 주차 최고한도 10,000원
+입 장 료:없음
+이용가능시설:[운동시설] 축구장, 농구장, 배드민턴장, 족구장, 풋살경기장, 테니스장, 인라인롤러스케이트장, 게이트볼장 등<br />
+낚시터, 자전거도로, 자전거대여소, 한강도하체험장, 수상훈련장, 수상시설(모터보트, 수상스키)<br />
+[편의시설] 매점, 음수대, 그늘막, 어린이놀이터, 자연학습장, 자전거보관소
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아쿠아플라넷 63','07345','서울특별시 영등포구 63로 50 63한화생명빌딩',38,127,'63스퀘어에 위치한 아쿠아 플라넷63은 리모델링으로 2016년 7월1일 개장하였으며, 수달플라넷, 수초 수조와 아마존 수조, 폐어 수조로 이루어진 아쿠아가든, 아름다운 빛의 해파리가 있는 골든 미라클존, 펭귄 플라넷, 물범 플라넷, 형형색색의 산호들이 아름다운 코랄 플라넷 등 다양하고 신기한 생물들과 다채로운 주제로 꾸며진 새로운 공간들이 마련됐다. 메인 수조에서는 음악과 조명이 어우러져 펼쳐지는 판타스틱 머메이드쇼를 관람 할 수 있다.<br>','02-780-6382',null,'연중무휴',null,null,null,null,'10:00~19:00 (매표마감 18:30)','있음(약 700여대 가능)','가능','불가','입 장 료:[아쿠아플라넷 63]<br>
+- 어른 : 27,000원<br>
+- 어린이, 경로 : 23,000원<br>
+
+[63아트]<br>
+- 어른 : 15,000원<br>
+- 어린이, 경로 : 11,000원<br>
+
+[63종합권(아쿠아플라넷63+63아트)]<br>
+- 어른 : 32,000원<br>
+- 어린이, 경로 : 28,000원
+주차요금:기본 무료 주차 1시간 / 추가 무료주차 + 30분<br />
+- 무료 주차 시간 외 추가 요금 발생시 15분당 1,000원<br />
+- 대형 버스(25인승 이상)의 경우 한강둔치에만 주차 가능<br />
+- 관람업장과 레스토랑 동시 이용 시 무료주차 혜택은 최장 4시간까지 가능
+화장실:있음
+내국인 예약안내:63 온라인 몰에서 예약 가능 (<a title="새창 : 63스퀘어 온라인 예약페이지로 이동" href="http://www.63mall.co.kr" target="_blank">http://www.63mall.co.kr</a>)
+외국어 안내서비스:중국어, 일본어, 영어(매표소 항시 대기) 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('키자니아 서울','05554','서울특별시 송파구 올림픽로 240',38,127,'키자니아란 만 3세에서부터 16세 어린이들이 현실을 재현한 도시에서 어른들의 활동을 롤 플레이 할 수 있는 곳이다. 어린이들은 경찰관, 승무원, 소방관, 요리사 등의 실제 유니폼을 갖춰 입고 다양한 직업을 체험 할 수 있다. 일을 하고 난 후 키조(KidZo)라는 가상 화폐를 지급받으며 키조를 키자니아 내 은행에 저금하거나 키조로 백화점에서 물건을 살 수도 있다. 이 곳에 있는 상점, 빌딩, 레스토랑, 방송국, 자동차, 거리의 가로수 등 모든 것들은 어린이들의 눈높이에 맞춰 실물의 2/3사이즈로 축소되어 있다. 실제 도시 환경을 모방한 키자니아에서는 다양한 직업이 존재하며 연일 다양한 이벤트가 벌어진다. 소방관은 화재가 발생하면 화재진압을 위해 출동하고 신문기자는 화재 현장 취재 후 기사를 작성해 키자니아 신문에 내며, 119구조원은 응급환자가 발생하면 구급차를 타고 응급처치를 하고 택배회사는 운송물을 운반한다. 어린이들은 이러한 키자니아에서의 체험을 통해 자연스럽게 사회의 구성원으로서의 역할을 배우게 되며 사회와 경제를 이해하게 된다.<br>','1544-5110','2010년 2월 27일','연중무휴 (휴장시 공식홈페이지를 통한 사전 공지)',null,'만 3세~16세까지',null,null,'평일 1부 통합권: 10:00~ 18:00 <br>
+주말 1부: 10:00 ~15:00<br>
+주말 2부: 15:00~19:30','있음','없음','불가','촬영장소:* MBC에브리원 무한걸즈2 촬영(2010년 3월 12일 방영)<br />* 베스트 베이비 화보촬영(2010년 
+3월, 4월호)<br />* MBC FM 현영 ''뮤직파티'' 공개방송 촬영(2010년 3월 29일 방영) 
+<br />* MBC 제28회 창작동요제 참가자 프로필 촬영(2010년 5월 5일 방영 예정) <br />* 
+EBSe 엄마표 영어특강 공개방송 촬영
+입 장 료:1부-어린이(36개월~16세) 45,000원<br>
+1부-성인(17세이상) 20,000원 <br>
+2부-어린이(36개월~16세) 38,000원 <br>
+2부-성인(17세이상) 17,000원<br>
+종일권-어린이(36개월~16세) 61,000원<br>
+종일권-성인(17세이상) 20,000원
+
+주차요금:평일(월~금) - 3시간 무료 / 추가 3시간 주차 확인시 3,000원<br />
+주말 및 공휴일 - 3시간 무료 / 추가 3시간 주차 확인시 11,200원<br />
+※ 롯데월드 주차장 이용시 키자니아 안내데스크에서 차량번호를 말하고 3시간 무료 주차 확인
+이용가능시설:[체험시설]<br />
+* 은행, 연기학교, 드라이빙 트랙, 소방재난본부, 쿠킹스쿨, 공기청정기 연구센터, 골프클럽, 플라워아뜰리에, 익스트림 클라이밍, 성우 스튜디오, 수면과학연구소, 스낵개발센터, 교육대학교, 승무원 교육센터, 법원, 아이스크림 가게,병원, 로보틱스 연구소, 백화점, 포토스튜디오, 마트, 키자니아 엔터테인먼트, 키자니아 대학교, TV 스튜디오, 환경위생 연구센터, 호텔, 비타민 연구소, 소방서, 경찰서, 과학수사대, 치과, 라디오 스튜디오, 백화점, 친환경 에너지 발전소, 한의원, 유니세프 키자니아 위원회, 마술학교, 음료수 공장 등 다양한 직업 체험 스튜디오<br />
+<br />
+[편의시설]<br />
+* 안내데스크, 물품보관소, 분실물 보관소, 의무실, 멤버십 데스크, 부모 편의시설 (부모라운지 등), 수유실 등<br />
+<br />
+[먹거리 등]<br />
+* 키자니아 카페테리아, 야광샵, 멀티샵, 에어샵, 내셔널스토어, 키즈코너, 스노우타운, 캔디샵, 스무디킹, 롯데리아 등
+화장실:있음
+외국인 예약안내:현장 예매
+내국인 예약안내:* 당일 현장에서 예매 후 입장 가능<br />
+* 공식홈페이지, 모바일, 콜센터(1544-5110)를 통한 사전 예매 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('충익공신경진묘역','02179','서울특별시 중랑구 망우로70길 103(망우동)',38,127,'신경진은 임진왜란 때 충주 탄금대에서 배수진을 치고 왜군과 싸우다 전사한 도순변사(都巡邊使) 신립 장군의 아들로 태어났다. 선전관으로 벼슬을 시작하여 오위도총부 도사로 임명된 후 무과에 급제하여 여러 관직을 거쳤으며, 인조 2년(1624) 이괄의 난이 일어나자 훈련대장이 되어 어가를 호위하였으며, 정묘호란 때에는 강화도로 왕을 모시고 가 이듬해 평성부원군에 봉하여졌다. 인조반정 때의 공로로 정사공신 1등이 되어 병조참판 등을 역임하고 인조 14년(1636년)에는 훈련원, 호위청, 포도청의 3대장을 겸하였다. 병자호란이 일어나자 적을 막아 왕이 남한산성으로 피신하기 위한 여유를 주는 등 커다란 공을 세워 우의정, 좌의정을 거쳐 인조 18년(1640년) 평성부원군(坪城府院君)에 임명되었다가 인조 20년(1642년) 영의정에 올랐으나 병으로 사퇴하였고, 이듬해 다시 영의정으로 임명된 지 열흘만에 세상을 떠났다. 신도비란 임금이나 고관의 평생업적을 기록하여 그의 무덤 남동쪽에 세워두는 것으로, 이 비는 조선 인조 때의 무신인 신경진 장군을 기리고 있다. 신도비는 높이 368㎝나 되는 거대한 석비(石碑)로 화강암으로 조각된 거북받침대 위에 올려져 있으며, 비(碑)몸 위에는 정교하게 조각된 용머리 장식이 정교하고 화려하게 조각되어 있다. 신도비는 우암 송시열(宋時烈)이 비문을 짓고 박태유(朴泰維)가 글씨를 썼으며 머리글인 두전(頭篆)은 이정영(李正英)이 썼으며, 비의 주인공이 밝혀지기 전에는 커다란 거북받침돌 탓에 ‘거북비’라 불리우기도 하였다. 비 건너편에는 신경진의 묘역이 자리하고 있다.<br>','02-2094-1822',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('봉화산(서울)','02041','서울특별시 중랑구 신내로21길(신내동)',38,127,'봉화산은 서울의 동북부 외곽인 중랑구 상봉동,중화동,묵동,신내동에 접하여 있고 정상까지 높이는 160.1m 로 평지에 돌출되어 있는 독립구릉이다. 동쪽에 아차산 주능선이 있는 것을 제외하고는 북쪽으로 불암산, 도봉산과 양주 일대까지 잘 조망 되며, 서쪽과 남쪽으로도 높은 산이 없어 남산과 이남 지역도 잘 보이는 지역이다. 봉화산은 일명 “봉우재”라고 불리는데 1963년 1월 1일 경기도 양주군 구리면에서 서울시로 편입되었다. 이곳은 북쪽 양주의 한이산으로부터 연락을 받아 목멱산(남산)으로 전달하는 아차산 봉수대가 있던 곳으로 지난 1994년 11월 7일 봉수대를 복원하였다.<br /><br />봉화산의 주요 수종은 소나무이며, 기슭에는 먹골배로 유명한 배나무 밭이 조성되어 있는데 점차 주변지역으로 잠식되고 있다. 한편 봉화산 정상에서 약간 남쪽에 봉화산 도당인 산신각이 있으며, 이 곳은 약 400년 전에 주민들이 도당굿과 산신제를 지내던 곳이기도 하다. 현재 산신각은 1992년 여름에 일어난 화재로 소실되어 지금은 붉은 벽돌과 시멘트로 지은 새 건물이 들어서 있다. 해마다 음력 3월 3일에 산 정상 부근에 있는 산신각(도당)에서 서울시 무형문화재 제34호로 지정된 봉화산 도당제가 열린다.<br>','02-2094-2353',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('망우산(서울)','02180','서울특별시 중랑구 망우동 산 69-1일대',38,127,'망우동과 면목동, 경기도 구리시에 걸쳐있는 망우산은 해발 281.7m이며 망우산 일대에는 서울시립장묘사업소 망우묘지가 있다. 이 묘지는 1933년에 공동묘지로 지정되었으며, 아동문학가인 소파 방정환과 민족대표 33인의 한 분인 독립운동가인 오세창, 한용운 그리고 천연두 보급의 건구자로 의학자이며 국어학자인 지석영 등이 안장되어있다. 이 후 시인 박인환, 문일평, 서병호, 서옹일, 오재영, 서광조, 유상규, 교육가 오긍선 등 여덟 분의 연보비가 추가로 설치되어 역사의 교육장으로 이용되고 있다. 문화재로는 거북비로 불려오던 조선중기의 문신인 신경진의 신도비(서울 유형문화재 제 95호)가 있다.team_insert;또한 망우리공원 내의 순환도로 5.2km를 아스콘포장하여 산책로를 만들었으며 산책로의 이름을 공모하여 98년 5월‘사색의 길’로 정하여 불리고 있다. 도시환경과 자연관찰로, 나무정자, 약수터 등의 시설이 있으며, 수목 관리가 잘 되어있고, 공기가 맑아 휴식 및 자연공원으로 많은 시민들이 찾고 있다.<br>','공원녹지과 02-2094-2344',null,'연중무휴',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('숭인근린공원','03110','서울특별시 종로구 동망산길 150(숭인동)',38,127,'1980년에 개원한 도시공원으로 주민들이 휴식과 산책, 가벼운 운동을 할 수 있도록 조성되었다.<br /><br />* 면적 : 42,943m(제곱)<br>','02-2148-2841',null,null,null,null,null,null,null,null,'없음','없음','화장실:있음
+이용가능시설:팔각정, 배드민턴장, 에어로빅장, 지압보도, 놀이터, 쉼터, 체력단련시설, 음수대 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이재명 의거지','04537','서울특별시 중구 명동길 74(명동2가)',38,127,'1909년12월22일 청년지사 이재명이 친일 매국노 이완용을 처단하기 위해 의거한 곳으로 서울시에서 설치한 표지석이 자리하고 있다.<br>','02-3396-5842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('봉화산근린공원','02040','서울특별시 중랑구 봉화산로45길(묵동)',38,127,'봉화산근린공원은 점토벽돌로 포장된 110평 규모의 진입광장을 비롯해 어린이 놀이터, 전통놀이마당, 주민건강마당, 야외무대 및 주민 쉼터 등으로 꾸며져 있다. 또한 공원을 따라 순환하며 조깅과 산책을 즐길 수 있는 630m의 외곽순환산책로와 공원 정상부에 800평 규모의 잔디마당, 장애인을 위한 전용 체력단력장 등으로 조성되었다. 이 밖에도 중랑구청을 찾아온 민원인들을 위해 구청 정문에서 한눈에 바라다 볼 수 있는 위치에 인공폭포를 조성하여 휴식처를 제공하며,구청의 다양한 야외 문화예술 공연 장소로 활용하기 위해 이벤트광장을 인공폭포와 연계해 조성했다. 봉화산근린공원 뒤 등산로를 따라 20~30분정도 걸으면 봉화산 정상에 오를 수도 있다.<br>','02-2094-2340',null,'연중개방',null,null,null,null,null,'있음(35대)','없음','없음','화장실:있음
+이용가능시설:자연학습장, 체력단련장, 배드민턴장, 농구장, 피크닉장, 휴게광장, 약수터 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('사가정공원','02261','서울특별시 중랑구 사가정로72길 47(면목동)',38,127,'2005년 4월 13일 개장한 사가정공원은 면목동 면목약수터지구 입구에 약 3만 3천 2백여 평 규모로 조성되었다. 공원의 명칭은 용마산 부근에서 거주했던 조선 전기의 문인인 서거정 선생의 정취를 느낄수 있도록 그의 호를 따서 지어졌다. 또한, 그의 대표적인 시 4편을 골라 시비를 만들어 설치함으로써 공원이용객들이 산책과 함께 명시를 감상 할 수 있는 기회를 제공하고 있다. 그 외 피크닉장, 어린이 놀이시설, 체력단련시설, 건강지압로, 사가정(전통 정자), 다목적광장 등 다양한 휴게시설과 운동시설, 조경시설이 갖춰져 있다.<br>','02-2094-0000',null,'연중개방',null,null,null,null,null,null,'없음','없음','입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울광장','04524','서울특별시 중구 세종대로 110',38,127,'서울광장은 3.1운동, 6월 민주화운동 등 한국현대사의 한 획을 긋는 역사적 사건의 무대였으며 2002년 월드컵 기간에는 시민들의 축제의 마당이었다. 시청광장의 역사는 고종이 러시아공사관으로 피신했다가 월산대군 개인집(덕수궁)으로 돌아온 1897년부터 시작된다. 황제의 자리에 오른 고종은 나라의 기틀을 새로이 하기 위해 덕수궁 대한문 앞을 중심으로 하는 방사선형 도로를 닦고 앞쪽에는 광장과 원구단을 설치하였다.  이때부터 대한문앞 광장은 고종보호 시위, 3.1운동, 4.19혁명, 한일회담 반대시위, 6월 민주화에 이르기까지 시민들의 주요무대가 되었다.<br /><br />도심 한가운데 위치하고 있으며 주변에 역사문화자원들이 산재하여 국가적 상징성 및 역사성을 지닌 장소로 서울의 대표적인 이미지를 형성할 수 있는 여건을 갖추고 있으나 사람을 위한 광장이 아니라 자동차를 위한 교통광장으로 상습적인 교통혼잡과 정체로 몸살을 앓아오던 곳이었다.  또한, 지하상가 및  지하보도로만 횡단이 가능하여 보행접근성이 매우 불리했고 장애자, 노약자에 대한 보행권 배려가 전무한 상황이었기 때문에 보행공간으로 조성해달라는 시민단체들의 끊임없는 요구와 함께 시민여론조사에서도 광장조성에 대한 수요가 파악되었다. 이러한 가운데 2002년 월드컵을 계기로 서울광장이 붉은 악마의 응원의 메카로 부각되면서 시민결집과  커뮤니케이션 공간의 필요성이 대두되면서 본격적인 광장조성 논의가 진행되었다.<br /><br />※ 총면적 - 13,207㎡(3,995평) / 잔디면적 6,294㎡ (1,904평)<br />※ 형태 - 대청마루에 뜬 보름달을 연상하는 타원형의 잔디광장<br />※ 잔디종류 - 추위에 강한 켄터키 블루그래스(서울월드컵경기장과 같은 품종<br>','02-2133-5640,566',null,null,null,null,null,null,null,null,'불가','불가','이용가능시설:바닥분수, 잔디광장, 스케이트장(동절기)
+입 장 료:없음
+외국어 안내서비스:없음 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('숭례문','04528','서울특별시 중구 세종대로 40',38,127,'숭례문(崇禮門)은 조선 태조 5년(1396)에 최초로 축조되었고 1398년 2월 중건되었다. 이 문은 조선시대 한성 도성의 정문으로  4대문 가운데 남쪽에 위치하므로, 남대문으로도 불린다. 1448년에도 크게 고쳐지었다. 이후 임진왜란과 병자호란 때에도 남대문은 피해를 입지 않았다.처음 만들어졌을 때는 양측에 성벽이 연결되어 있었지만 1908년 도로를 내기 위하여 헐어 내고 성문만 섬처럼 따로 떨어져 있었으나, 2006년 복원 공사를 마치고 지금과 같은 모습을 하게 되었다. 1962년 문화재보호법에 의하여 보물에서 국보로 지정되었다.<br><br>건물의 평면은 아래.위층이 모두 5칸, 측면 2칸이며,  건물 내부의 아래층 바닥은 홍예의 윗면인 중앙칸만이 우물마루일 뿐, 다른 칸은 흙바닥으로 되어있고 위층은 널마루이다. 편액의 필자에 관하여는 여러가지 설이 있으나, team_insert;지봉유설team_insert;에는 양녕대군이 쓴 것이라고 기록되어 있다. 다른 문의 편액은 가로로 쓰여 있으나 숭례문이 세로로 쓰여 있는것은 숭례(崇禮)의 두 글자가 불꽃을 의미하여, 경복궁을 마주보는 관악산의 불기운을 누르게 하기 위해서라고 한다.<br><br>현존하는 성문 건물로는 우리나라에서 가장 규모가 큰 남대문은 전형적인 다포(多包)양식의 건물로 견실한 목조건축물의 수범을 보이고 있는 한국 건축사상 중요한 건물의 하나이다.1997년 초 서울시에서 이 문의 경관을 더욱 돋보이게 하기 위하여 조명설비를 새로이 한 바 있다.서울 중구는 2005년 10월부터 통로 보수공사와 홍예문 입구 등 5곳에 대한 지표조사를 실시, 조선 세종때의 것으로 추정되는 아랫부분 석축 기단과 지대석(맨 아래 기초석), 박석(바닥에 까는 돌), 문지도리(문을 다는 돌 구조물) 등을 발굴했다.<br><br>이는 1907년께 남대문을 관통하던 전차선로를 내면서 문 주위로 흙을 1미터 가량 쌓아올려 아래쪽 기단과 박석들이 완전히 묻힌 것으로 보인다고 밝혔다. 따라서 중구는 시민들이 지반보다 1.6ｍ 아래에 있는 이들 구조물을 볼 수 있도록 중앙통로 시굴 부분을 그대로 남겨둔 채 관람시설을 설치했다. 숭례문의 중앙통로인 홍예문을 따라 숭례문을 둘러볼 수 있다. 그러나 숭례문은 2008년 2월 10일 화재로 인하여 전소되었고, 5년 3개월에 걸친 복구 사업을 완료하고 2013년 개방되었다. 2013년 5월 1일에는 숭례문 복구를 고하는 ''고유제(告由祭)''가 치러졌다.숭례문 복원에는 충남 태안의 안면송이 사용되었다. 안면송은 고려시대부터 궁궐이나 선박용으로 사용되어 왔으며, 이번 숭례문의 석가래, 기둥, 지붕 등에 사용되었다.','02-779-8547',null,'월요일',null,null,null,null,'[개방시간] 09:00~18:00<br />
+※ 6~8월은 18:30까지 개방<br />
+※ 12~2월은 17:30까지 개방',null,'없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('덕수궁 돌담길','04519','서울특별시 중구 세종대로 지하 101',38,127,'기존의 도로를 보행자 중심의 도로로 재정비하고, 보행자를 위해 보도와 차도 공존도로 및 푸르름이 가득한 가로공간인 녹도의 개념을 복합적으로 도입한 우리나라 최초의 사례로 길이는 900m이다. 자연친화적인 점토블록 및 보행자의 안전한 보행권 확보를 위해 차도에 석고석 포장(페이빙스톤) 실시하였고, 시민들의 휴식 공간을 위해 느티나무 외 2종 130주 식재, 평의자 20개 설치하였으며 주변의 역사적 시설인 덕수궁과 연계한 역사적 가로 경관의 창출 및 가로환경 개선하였다.낭만이 가득한 덕수궁 돌담길은 연인들이 걷기에 더없이 좋은 곳이며, 주변에 서울시립미술관과 서울역사박물관이 있어 문화산책 코스로도 제격이다.<br>','02-120',null,'연중개방',null,null,null,null,'상시 가능','없음','없음','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남산 케이블카','04630','서울특별시 중구 소파로 83',38,127,'수도 서울의 복판에 솟아오른 민조의 영산 남산의 풍광을 한눈에 조망할 수 있는 케이블카는 40여년이 넘는 세월동안  국민들의 사랑을 듬뿍 받아온 우리나라의 대표적인 관광시설이다.
+
+* 남산
+남산은 조선의 태조 이성계가 한양에 도읍을 정하면서 특별히 중요하게 여겨진 산이다. 무학산, 북한산,  인왕산등 도성의  북쪽을 병풍처럼 두르고있는 이른바 ''내사산''과 함께 도읍지를 감싸고 있는 산이기 때문이다. 본래 이름은 인경산이었으나 한양 정도 후  남쪽에 있는 산이라 해서 ''남산''으로 불렸고 목멱대왕을 모신 신당이 있다해서 ''목멱산''으로 불리었다.해발 262m의 남산은 오늘날엔 서울의 중심부에 자리한 ''도심 속의 생태 공원''으로  서울 시민의 많은 사랑을 받고 있는, 서울의 상징과도 같은 산이다.
+
+* 남산 관광 가이드
+오늘날  남산은 편의상 행정구역상의 주소에 따라 몇 개의 지구로 나누어 소개되는 것이 보통이다. 지구별로 주요 관광 명소들을 안내한다.
+1) 한남지구
+한남지구는 용산구 한남동 일대에 걸쳐있는 지역으로 별다른 시설 없이 숲으로 이루어진 지역이다. 이른바 생태공원으로 야외식물원이라고 부르기도 한다. 여기에는 수생식물원, 약용식물원, 희귀식물원,유실수원, 무궁화원 등 식물의 종류에 따라 구분된 각종 식물원들이 있다. 어린이의 자연 및 생태교육에 아주 좋은 지역이다.
+2) 예장지구
+중구 예장동 일대에  걸쳐있는 지역으로 케이블카 본관  승강장이 있는 지역을 포함하고 있다. 케이블카 승강장, 와룡묘가 있고 가까이에는 한옥마을이 있다.
+3) 회현지구
+남산 관광권의 중심을 이루고 있는 지역이다. 남산 도서관과 중앙광장을 중심으로 각종 위락 및 편의 시설들이 들어서 있다. 주요 시설물들은 다음과 같다. (안중근 의사 기념관, 남산 도서관, 남산식물원, 소동물원, 다산동상, 퇴계동상, 소월시비, 백범동상, 우당동상, 김유신동상, 광장)
+
+* 개통일 - 1962년 5월 12일 
+* 선로길이 - 605m 
+* 정원 - 38명
+* 고저차 - 138m * 운행속도 - 초속 3.2m
+※ 오전에는 비교적 이용자가 작은 편이므로 한적한 관광을 원한다면 오전 시간에 이용
+※ 야간에 탑승 시 환상적인 서울의 야경 관람','주간 02-753-2403<br />
+야간 02-757-1308',null,null,null,null,null,null,'10:00~23:00<br>
+매표마감 : 왕복티켓 22:30 / 편도티켓 22:45',null,'없음','없음','시설이용료:대인 : 왕복 14,000원 / 편도 11,000원 / 단체 왕복 12,500원 / 단체 편도 10,000원<br>
+소인 : 왕복 10,500원 / 편도 8,000원 / 단체 왕복 9,500원 / 단체 편도 7,500원<br>
+65세 이상, 국가유공자, 5.18 민주부상자, 장애인 : 왕복 10,500원 / 편도 8,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('백범김구선생상(백범 광장)','04636','서울특별시 중구 회현동남산공원 백범광장 내',38,127,'백범광장(白凡廣場) 백범김구상(白凡金九像)은 백범김구선생기념사업회가 독립운동가이자 교육자이자 정치가인 김구(金九, 1876~1949)의 항일구국운동과 통일국가수립을 위해 노력한 애국정신을 기리기 위해 1969년 8월 남산공원 백범광장 안에 설립한 동상이다.1949년 그가 암살당한 뒤 2달 만에 김구선생동상건립추진위원회가 설립되면서 동상 건립논의가 시작됐다. 장소는 일제강점기 조선신궁(朝鮮神宮) 터였던 남산공원으로 정했다. 동상은 국내외 각계에서 보내온 찬조금으로 1969년 생존 시 만들어진 석고흉상을 바탕으로 조각가 김경승(金景承)과 민복진(閔福鎭)이 조각하여 높이 10m로 만들었다. 1960년에 결성된 백범김구선생기념사업회의 주도 하에 1969년 4월 8일 동상건립기공식을 열고, 그가 태어난 날인 8월 23일 동상제막식을 가졌다.<br /><br /><출처 : 서울특별시 중구청 문화관광><br>','02-3396-5856',null,'연중개방',null,null,null,null,null,'남산공원주차장 이용','없음','없음','입 장 료:무료
+이용가능시설:백범광장 : 시민의 모임, 휴식, 간이운동장, 광장, 지압보도 등
+주차요금:유료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청계천','04563','서울특별시 종로구 창신동',38,127,'청계천이 시작되는 세종로에 조성된 청계광장.청계천 복원 시작지점인 동아일보사 앞에서부터 신답철교 사이로 연장160m, 폭50m, 총 면적 2천 106평의 규모로 조성되었다. 분수와 폭포, 청계천 미니어처, 산책로와 탐방로 등으로 꾸며져있고, 청계천 복원의 의미와 함께 만남과 화합, 평화와 통일을 염원하는 장소로 만들어져 있다. 이 중 광장은 청계천 복원 시작지점중심에 741평 규모로 조성되었고, 우리나라 전통적보자기형태의 디자인을 가져와 다양한 색상의 석재포장으로 우아한 전통미를 살린다. 이 곳에는 청계천 축소모형인 청계 미니어처가 설치되어 복원된 청계천의 모습을 한눈에 볼 수 있다. 청계천을 가로지르는 22개 다리에 대한 해설판도 설치되어 있고, 이외에도 다양한 형상의 분수가 만들어져 아름다운 경관을 연출한다.한편, 광장에서 청계천으로 진입하기 위한 시설로는 왼편에 계단형 진입로, 오른편에 청계탐방로가 들어 서 있다. 청계 탐방로 중 18m 구간에는 터널이 설치돼 광장에서 청계천으로 들어 오는 시민들에게 색다른 경험을 선사한다. 서울시는 청계천광장 조성 후 공휴일에는 이 곳을 차 없는 거리로 만들어 광장, 수변공간, 도로가 시민들의 휴식과 문화공간으로 이용되도록 마련해놓았다. 삼색 조명이 어우러진 캔들 분수와 4m 아래로 떨어지는 2단 폭포가 장관을 연출한다. 폭포 양 옆에는 전국에서 돌을 가져온 8도석으로 제작된 ''팔석담''을 깔았다. 밤이면 빛과 물이 어우러지는 환상적인 모습을 연출한다. 또, 청계천 전구간을 1/100로 축소한 미니어쳐 역시 멋진 볼거리를 제공한다.<br /><br />* 청계천복원구간 1/100의 미니어쳐캔들(촛불)분수, 4m 2단 폭포, 팔도석<br>','02-2290-7111',null,'연중무휴',null,'전연령',null,null,'00:00~24:00','주차가능(공용주차장)','가능','가능','이용가능시설:추억의 판잣집, 디지털 가든/캔버스
+입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('충무공 이순신 동상','03172','서울특별시 종로구 세종대로 175(세종로)',38,127,'광화문의 충무공 이순신 장군 동상은 정부의 산하 단체였던 애국선열 조상건립위원회와 서울신문사의 공동주관으로 1968년 4월 27일 건립되었다. 전체 높이 17m(동상 6.5m, 기단 10.5m)의 청동 입상 형태로 건립되었으며 주변 조형물로는 거북선 모형 1개와 북 2개가 위치해 있다.
+국가의 심장부로 통하는 광화문 네거리에 위치할 애국선열동상의 인물지정에 관해 확인된 바에 따르면 세종로와 태평로가 뻥 뚫려 있어 남쪽 일본의 기운이 너무 강하게 들어오게 되는데 이를 제어할 필요가 있다던 당시 풍수지리학자들의 주장을 배경으로 세종로 네거리에 일본이 가장 무서워할 인물의 동상, 국가를 수호하는 지킴이의 의미를 지닐 선열조상의 인물로서 왜적을 물리쳐 나라를 구하신 이순신 장군이 결정되었다고 한다.
+이 동상의 조각적 특징은 기념비적 상징성에 있다. 형상의 완전한 사실성보다는 그 인물이 지니는 역사적 의미를 강조하는 표현이다. 바다를 지킨 이순신 장군의 업적을 기리기라도 하듯이 이순신 장군 동상은 분수대를 설치하였다.','세종문화회관 미술관 02-399-1114',null,'연중개방',null,'전연령',null,null,'00:00~24:00',null,'불가','없음','화장실:있음
+이용가능시설:광화문 광장 : 해치마당, 중앙광장, 세종대왕동상 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('부암동','03022','서울특별시 종로구 창의문로 145',38,127,'종로구에 있는 부암동은 세련된 삼청동 분위기와 옛날 모습의 촌스러움이 고스란히 남아있는 구불구불한 골목길을 가진 동네이다. 부암동은 미술관, 개성 있는 카페와 레스토랑이 1960~70년대 방앗간과 이발소와 함께 자리 잡고 있다. 본래는 화가, 문인, 교수 등 다양한 분야를 아우르는 예술가들이 느릿느릿 살아가던 동네였으나 최근에 부암동사무소 앞에서부터 ‘커피 프린스 1호점, 최한성의 집’으로 유명해지면서 산모퉁이 카페에 이르는 길 곳곳에 개성 넘치는 카페와 가게가 줄지어 들어서고 있다. 삼청동, 신사동 가로수길과 더불어 감각적인 공간으로 주목받는 곳이다. 산책코스로도 좋으며 관광지 분위기도 나는 다양한 모습을 가진 동네이다.<br>','02-2148-1807',null,'연중무휴',null,null,null,null,'24시간',null,'없음','가능','이용가능시설:미술관, 카페 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남산 팔각정','04628','서울 중구 예장동 8-1',38,127,'남산 팔각정은 1959년 이승만 대통령을 기리기 위해 지어진 우남정을 1960년 4.19의거 때 철폐한 후 1968년 11월 11일 건립된 역사를 갖고 있다. 팔각정은 남산정상에 세워져 있어 서울시가가 눈아래 펼쳐진다. <br>','02-3783-5900',null,'연중무휴',null,null,null,null,null,null,'없음','없음','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('무궁화동산','03047','서울특별시 종로구 궁정동 55-5',38,127,'옛 중앙정보부의 궁정동 안전가옥 터에 마련된 시민휴식공원이다. 본래 이곳은 청와대 구내로 출입이 금지되었던 곳이었으나 1993년 청와대 앞길이 개방된 뒤 시민공원으로 조성되었다. 태극무늬로 무궁화를 심었으며, 중앙에 궁정동을 상징하는 우물 정(井)자 분수대가 놓여 있다. 주변에 자연석으로 성곽을 만들고 240m의 산책로 주위에는 화단을 만들어 놓았다. 화단에는 전국 각지의 야생화 7,700그루를 심었으며, 무궁화와 소나무·느티나무 등 수목 13종 1,500여 그루를 심어 놓았다. 군데군데 벤치가 있어 인근 주민들의 휴식터로도 이용된다.','02-2148-4147',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('동십자각','03045','서울특별시 종로구 삼청로 1',38,127,'동십자각은 광화문에서 연결되어 오는 경복궁 외궁성(外宮城)이 건춘문(建春門)을 향하여 꺾이는 부분에 세운 망루(望樓)이다. 석단(石壇)은 조선시대 초기의 유구(遺構)로 추측되나 누각은 대원군 시대의 건립으로 추측된다. 규모는 적으나 조화로운 예술적 조형미로는 경복궁내 뛰어난 건축물중의 하나라고 할 수 있다. 이 건물은 궁성(宮城)의 동남 모퉁이에 세웠던 망루와 같은 돈대(墩臺) 건물의 기능을 갖고 있던 것인데 궁성 원장(垣墻)이 헐리면서 현재와 같이 길가에 독립건물같이 되었다. 이 건물은 궁성 전면 양모서리에서 궁내외를 감시할 수 있게 하였던 것인데 서십자각(西十字閣)은 헐려 현재 볼 수 없다. 평면은 정면과 측면이 모두 3칸 방형(方形)이며 축부(軸部) 구성은 하방(下枋)과 창방(昌枋)만을 짜올리고 벽 없이 모두 개방하였다. 주간(柱間)에는 무벽(無壁)의 개방식이며 바닥은 흙바닥으로 되었다.<br>','02-2148-1842',null,null,null,null,null,null,null,null,'없음','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울어린이대공원','04991','서울특별시 광진구 능동로 216(능동)',38,127,'에버랜드나 과천 서울랜드 같은 테마파크 규모에는 못 미치지만 서울시민들이 자녀들과 함께 찾아가서 휴식을 취하기에 좋은 공간이다. 어린이대공원은 1973년 5월에 개장되었다. 56,552㎡ 규모로 푸른 숲과 파란 잔디의 녹지공간으로 이루어져 있어, 어린이는 물론 청소년과 일반시민을 위한 휴식 및 문화공간으로써 시민공원의 역할을 다하고 있다. 또한, 각종 교양시설 및 동,식물원, 놀이시설 등을 갖춘 어린이의 낙원이자 살아있는 학습교육장으로 사랑받고 있다. 2009년 5월 5일 어린이대공원은 재개장과 함께 백곰과 바다표범 수중생활을 관찰할 수 있는 생태형 수족관인 ''바다동물관''과 앵무새 생태를 직접 볼 수 있는 대형새장 ''꼬마동물마을.앵무마을'' 등을 선보인다. 또 음악 선율에 맞춰 물줄기가 상하좌우로 움직이는 ''음악분수''도 조성된다. 공원 한가운데 녹지엔 객석 8,000석을 갖춘 야외공연장 ''능동 숲속의 무대''가 들어서고 낡은 팔각당엔 국산 만화캐릭터 전시관과 어린이 교통안전체험관이 있다.','02-450-9311',null,'연중무휴',null,null,null,null,'이용시간 : 05:00 ~ 22:00<br />
+정문, 후문, 구의문, 능동문 개방시간 : 05:00 ~ 22:00<br />
+동물원 : 10:00 ~ 17:00','서울상상나라 지하주차장<br>능동문 주차장/구의문 주차장/후문 주차장','없음','불가','이용가능시설:동물나라, 자연나라, 재미나라, 운동 및 대관시설
+입 장 료:* 공원 입장료 : 무료<br />
+* 잔디구장 : 1회 2시간 156,000원 (02-450-9356)<br />
+* 풋살경기장(5:5) : 1회 2시간 (02-457-8718)<br />
+- 평일 25,000원<br />
+- 주말, 공휴일 : 32,500원<br />
+* 테니스장 1회,1면 2시간 (02-457-8718)<br />
+- 실내 평일 25,000원 / 실내 주말,공휴일 및 야간 32,500원<br />
+- 실외 평일 8,000원 / 실외 주말,공휴일 및 야간 10,400원<br />
+* 야외무대 : 1회 2시간 (02-450-9356)<br />
+- 주간 100,000원(초과 1시간당 25,000원)<br />
+- 야간 200,000원(초과 1시간당 50,000원)
+화장실:있음
+주차요금:5분당 - 승용차 150원 / 중형차 300원 / 대형차 450원<br />
+※ 경차 ·저공해자동차 : 50% 할인<br />
+※ 장애인, 국가유공자, 고엽제휴유(의)증환자, 의상자 : 80% 할인<br />
+※ 다둥이행복카드 소지자(운전자 본인) : 2자녀 30%, 3자녀 50% 할인 <br />
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('은곡마을공원',null,'서울 강남구 세곡동 369-3',37,127,'서울 강남구 세곡동 자연마을인 은곡마을에 위치한 근린공원으로 어린이 놀이 시설과 다양한 운동시설, 분수가 있다.  은곡마을은 과거에 막은골이라고 한 것에서 유래했는데, 막은골은 나무를 심어서 마을 입구를 막은 데서 유래되었다고 한다. 공원에 나무가 많고 한적하여 서울 근교의 느낌을 주며, tvN 드라마 <또 오해영> 촬영 장소이기도 하다.','02-3423-6245',null,'없음',null,null,null,null,'00:00 - 24:00',null,'없음','가능','촬영장소:tvN <또 오해영> 촬영장소
+화장실:있음(남/녀 구분)
+이용가능시설:놀이시설, 운동시설, 벤치
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('역삼개나리공원','06237','서울특별시 강남구 논현로79길 24(역삼동)',37,127,'역삼역 3번 출구 근처에 있는 도심 속 근린공원으로 어린이들을 위한 놀이터와 남녀노소가 모두 이용할 수 있는 운동기구가 설치되어 있으며, 휴식을 위한 정자와 벤치가 있다. 인근 직장인들이 점심시간에 산책 및 쉼터로 많이 이용한다. 강남구보건소 지정 금연/금주 공원이다.','02-3423-6245',null,'없음',null,null,null,null,'00:00~24:00',null,'없음','없음','이용가능시설:놀이터, 노인정, 운동기구, 정자		
+
+입 장 료:없음
+
+화장실:있음(남/녀 구분)
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('장충단공원','04620','서울특별시 중구 동호로 261(장충동2가)',38,127,'남산의 동북쪽 기슭에 있는 장충단 공원은 조선조 영조 때 도성의 남쪽을 수비하던 남소영이 있던 자리이다. 1895년 8월 20일, 명성황후가 일본의 자객들에 의해 경복궁에서 시해당하는 사건이 발생한다. 당시, 궁내부 대신 이경직, 시위대장 홍계훈 등 많은 장병들이 일본인들을 물리치다가 죽음을 맞았다. 이에 고종 황제는 그들의 영령을 위로하고자 1900년 11월 장충단이라는 사당을 짓는다. 그 자리가 지금의 신라호텔 영빈관 자리이다. 이후 1908년까지 매년 춘추로 제사를 올렸다. 사당은 한국전쟁 중 파괴되고 사라져 버렸다. 1969년 장충단에 세워졌던 비가 현재의 자리로 옮겨졌다. 장충단이 공원으로 된 것은 1919년. 일제는 민족 정기를 말살하기 위하여 박문사라는 절을 세우고 공원을 조성하였으나 광복 후 일제가 세운 건물은 모두 철거되었다.<br /><br />1984년 9월 22일 건설부고시 제374호로 근린공원이 된 장충단공원은 자연공원인 남산공원의 일부로 흡수, 합병되었다. 그러나 나머지 구역은 장충단공원이라는 예전의 이름 그대로 불리고 있다. 장충단공원 일대는 장충단비, 수표교, 승정전, 관성묘, 와룡묘 등 문화재를 비롯하여 3·1운동 기념비, 한국유림독립운동파리장서비, 만해 한용운 시비와 유관순, 이준열사, 김용환 선생 동상 등이 있는 항일운동과 관련된 애국충정이 깃든 민족공원이라 할 수 있다.<br>','02-3396-5856',null,'연중무휴',null,null,null,null,null,'없음','불가','없음','화장실:있음
+이용가능시설:다담에뜰, 정자, 운동시설, 경로당, 문화행사마당 등
+입 장 료:없음
+외국어 안내서비스:없음 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 명동성당','04537','서울특별시 중구 명동길 74(명동2가)',38,127,'서울 대교구 주교좌 명동대성당은 한국 가톨릭 교회 공동체가 처음으로 탄생한 곳으로 순교 성인들의 유해를 모시고 있는 한국 가톨릭의 대표 성지이며, 우리나라 최초의 고딕양식으로서 사적으로서 기념비적인 건축물이다. 명동대성당은 1894년에 공사를 시작해 1898년 완성된 것으로 우리나라 최초의 벽돌조교회당으로서 순수한 고딕양식 구조로 지어졌다. 군사 정권 시대를 지나면서 민주화투쟁의 중심지로 더 많이 인식되어 왔으나 지하성당에는 엥베르 주교, 모방신부, 샤스탕신부 등 순교자들의 유해가 안장되어 있는 거룩한 성지이다.<br /><br />* 지하 순교자 묘역<br /><br />1900년 9월 10일 베르뉘(Berneux)주교 등 병인박해시 순교하신 순교자들의 유해를 용산신학교로부터 대성당 지하묘소로 안치하였으나 이후 연고지로 옮겨 모셨고,  1926년 기해교난과 병오교난시의 순교자 79위의 영광스러운 시보식후 복자들의 유해를 지하묘소에 모신후 대성당 좌측 회랑에 복자제대를 설치하고 79위 복자 성화를 모셨다. 1950년 전쟁 때에 대성당이 인민군에 점거되어 지하묘소에 안치중인 순교자 유해가 손괴당하기도 하였다.1991년, 퇴락한 유해의 포장, 부식된 납관 등을 새로 제작, 유해를 안치한 후  봉인하여 석관에 모시고, 이를 새로 말끔히 단장한 현실에 모신 후 각 현실마다 비명을 적은 석판을 세움으로서 마무리하였고 수시로 순례자들이 참배할 수 있도록  묘역의 입구를 유리문으로 개조 설치하였다.<br /><br />현재 모셔져있는 성인 및 치명자의 유해는 기해박해(1839년)시 순교하시고 1984년 시성되신성 엥베르(Imbert) 주교, 성 샤스탕(Chastan) 신부, 성 모방(Maubant) 신부,  성 김성우(안토니오), 성 최경환(프란치스코) 등 다섯분의 성인과 병인박해(1866년)시 순교하신  파리외방전교회 Pourthie J. Antoine 신부,  Petitnicolas M. Alexandre 신부 등 2분과 무명 치명자 2분 등 총 9분의 유해를 모시고 있다.<br>','02-774-1784',null,null,null,null,null,null,null,'있음','없음','불가','화장실:있음
+입 장 료:없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신사공원','06000','서울특별시 강남구 논현로189길 57(압구정동)',38,127,'서울 강남구 압구정에 있는 근린공원으로 가로수길과 한강시민공원 잠원지구 사이에 위치해 있다. 공원 규모가 크지는 않지만 공원 양끝에 두개의 넓은 광장 사이로 산책로가 조성되어 있으며, 운동기구와 음수대, 정자, 벤치가 있어 운동과 더불어 휴식 하기 좋은 공원이다.','02-3423-6240',null,'없음',null,null,null,null,'00:00 - 24:00','없음(인근 잠원 2주차장 사용)','없음','없음','이용가능시설:공원시설, 게이트볼장, 음수대, 체력단련시설		
+
+입 장 료:없음
+
+화장실:있음(남/녀 구분)
+
+주차요금:잠원 2주차장  최초30분 1,000원 / 초과 10분당 200원/ 1일 주차 최고한도 금액 10,000원
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남산공원 백범광장',null,'서울특별시 중구 회현동1가 100-115',0,0,null,null,null,null,null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('뷰티플레이','04538','서울특별시 중구 명동1가 1-3 YWCA연합회',38,127,null,'070-4070-9675',null,'일요일',null,null,null,null,'10:00~19:00(뷰티 체험은 18:00까지)',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용마폭포공원','02257','서울특별시 중랑구 용마산로 250-12(면목동)',38,127,'중랑구 지역은 일찍이 경기도 양주군 구리면에 속해 있었다. 중랑구는 현재 중랑천을 경계로 동대문구와 마주보고 있다. 구 안에는 그리 높지는 않으나, 이름이 많이 알려진 봉화산, 용마산, 망우산이 있다. 이 가운데 가장 높은 산은 해발 348m의 용마산이다. 용마산은 아차산의 최고봉으로 면목동 동편에 위치한다. 망우리 공원, 중곡동 간의 산 능선을 따라  이어지는 등산로를 통해 망우리에서 아차산성을 거쳐 어린이대공원 후문까지 이어진다. 용마폭포공원은 바로 용마산 산자락에 들어선 시민휴식공간이다.<br /><br />암반채석으로 생긴 높은 바위절벽을 최대한 이용하여 만든 3개의 인공폭포가 지난 1997년 4월 완공되어 그해 5월 준공식을 가졌다. 주 폭포인 용마폭포는 51.4m이고 용마폭포 좌측에는 21.4m의 청룡폭포가, 우측에는 21m의 백마폭포가 자리하며, 그 밑에 7백 여평의 연못이 설치되어 새로운 용마폭포공원으로 조성되었다. 폭포수의 장관도 멋지거니와 이곳에는 시민광장, 잔디광장이 마련되어 있고 조형전시벽이 설치됨으로써 시민의 휴식공간은 물론 각종 문화행사가 계절별로 다채롭게 펼쳐지고 있다. 구리시와 경계를 이룬 망우리 고개에는 조선 태조 이성계와 관련된 일화가 전해진다.이성계는 조선 창업 후 구리시의 동구릉 자리에서 묘터를 찾고 돌아온다. 잠시 한 고개에 멈춰서서 산천을 돌아보며 근심 걱정을잊었다. 그 고개가 바로 망우리 고개이다.<br>','02-2094-2965','1993년 5월','연중개방',null,null,null,null,null,'있음(72대 주차 가능)<br />
+※ 문의 - 시설관리공단 02-1577-3325(내선번호 2번)','없음','없음','화장실:있음
+입 장 료:무료
+이용가능시설:인공폭포, 팔각정, 어린이놀이시설, 화장실, 매점, 축구장, 테니스장, 게이트볼장, 배드민턴장, 대형 잔디광장 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('봉천동 마애미륵불좌상','08800','서울특별시 관악구 낙성대로15길 56-39',37,127,'관악산 북쪽 골짜기로 올라 약수터를 지나면 바위가 열립한 곳에 거대한 절벽이 서 있는데, 서울이 내려다보이는 북쪽 바위면에 등신대의 불좌상이 새겨져 있다. 낮은 육계, 소반의 머리칼, 다소 풍성하게 보이는 갸름한 얼굴 등은 상당히 우수한 기법을 보여 주고 있다. 이러한 특징은 늘씬한 체구나 타원형의 어깨 등에서도 잘 나타나고 있는데, 17세기 조선조 사회에도 미륵신앙이 상당히 유행 하였음을 알려 주고 있다. 따라서 이 마애미륵불은 17세기 조선조 불상을 대표하는 기준이 될만한 작품으로 평가되고 있다.<br>','02-879-5618',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('중명전','04518','서울특별시 중구 정동길 41-11(정동)',38,127,'덕수궁(德壽宮) 돌담길을 돌아 뒤쪽으로 가면 현재 정동극장이 있고, 그 골목으로 들어가면 ''중명전(重明殿)''이 있다. 중명전은 원래 정동지역 서양 선교사들의 거주지에 속해 있다가, 1897년 경운궁(현 덕수궁)이 확장되면서 궁궐로 편입되었다. 이때 당호를 ‘수옥헌’이라 짓고, 주로 황실 도서관(King''s Library) 용도로 사용되었으나 1901년 화재로 전소된 후 재건되어 지금과 같은 2층 벽돌 건물의 외형을 갖추게 되었다. 건물의 설계는 독립문, 정관헌 등을 설계한 러시아 건축가 사바찐(A.I. Sabatin)이 하였다. <br>중명전은 대한제국의 중요한 현장이다. 특히, 1904년 경운궁(현 덕수궁) 대화재 이후 중명전으로 거처를 옮긴 고종황제의 편전으로 사용되었다. 1905년 11월 을사늑약이 이곳에서 불법적으로 체결되었으며 그 후 을사늑약의 부당함을 국제사회에 알리고자 1907년 4월 20일 헤이그 특사로 이준 등을 파견한 곳도 바로 중명전이다. 일제는 헤이그 특사 파견을 빌미로 고종황제를 강제 퇴위시켰다. 한편 중명전은 1925년 화재로 외벽만 남기고 소실된 뒤 다시 재건하여 외국인을 위한 사교클럽으로 주로 쓰이다가 자유당 정부가 들어서면서 국유재산으로 편입되었다. 그러나 1963년 박정희 대통령은 영구 귀국한 영친왕과 이방자 여사에게 중명전을 돌려주었다. 1977년 중명전은 다시 민간에 매각되었다. 그 후 2003년 정동극장에서 매입한 뒤 2006년 문화재청에 관리 전환하여, 2007년 2월 7일 사적 제124호로 덕수궁에 편입되었다. 2009년 12월 복원을 거쳐 2010년 8월부터 전시관(‘대한제국의 운명이 갈린 곳, 덕수궁 중명전’)으로 일반에 공개하고 있다.<br>','02-751-0734',null,'매주 월요일',null,null,null,null,'[입장시간] 09:30~17:00<br>
+[관람시간] 09:30~17:30',null,'없음','불가','이용가능시설:매표소, 매점, 화장실/장애인 화장실, 돌담길 기념품샵(02-3789-3197)<br>
+휠체어 대여(02-751-0713), 분실물 센터, 수유실 
+
+관 람 료:무료
+화장실:있음
+한국어 안내서비스:[해설안내]<br>
+- 참여인원 : 회당20인 이내(선착순)<br>
+- 소요시간 : 35분<br><br>
+[시간표]<br>
+- 평일 14:00, 15:30<br>
+- 주말 11:30, 14:00, 15:00<br>
+- 공휴일 14:00, 15:30<br><br>
+※ 안내기관 <br>
+- 석조전 안내실 02-751-0753<br>
+- 문화유산국민신탁 02-752-9297 / http://www.nationaltrustkorea.org<br><br>
+[안내 참고사항]<br>
+- 중명전 전시관 해설은 전시관 내부 출입문에서 시간에 맞춰 시작함<br>
+- 전시관 개관시간 동안 상시 자유관람 가능 
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('와룡공원','03063','서울특별시 종로구 와룡공원길 192',38,127,'서울 종로구 명륜동에 위치한 team_insert;와룡(臥龍)공원team_insert;은 1984년에 개원한 공원으로 서울우수조망명소인 북악산 ''말바위''를 내려와 성곽길을 따라가면 와룡공원이 나온다. 와룡공원은 삼청공원, 창경공원, 북악산 도시자연공원이 인접해 있는 곳으로 용(龍)이 길게 누워있는 형상을 하여 와룡동이라고도 한다. 와룡공원은 토심이 얕아 수목생육이 어렵고, 아카시아 나무 등으로 산림을 조성하였으나 주민들이 생명의 나무 1,000만 그루 심기 행사에 참여하여 수목을 심고 가꾸어 푸르름과 계절별 아름다운 꽃이 피는 공원으로 탈바꿈하였다. 특히, 봄에는 산수유, 매화, 진달래, 개나리 등이 피어나 가족단위의 나들이 코스로 좋을 듯하며 공원 내에는 배드민턴장, 에어로빅장, 체력단련시설 및 정자 등의 편의시설을 갖추고 있어 운동, 산책, 휴식을 즐길 수 있도록 하였다. 와룡공원의 주요산책코스로 북악산 서울성곽탐방로와 삼청공원 간 순환산책로가 있는데, 산책로변에는 왕벚나무를 심어 봄에는 아름다운 벚꽃길을 연출하여 시민들에게 많은 사랑을 받고 있다.<br>','02-2148-4150','1984년 4월 1일','연중무휴',null,null,null,null,null,null,'없음','없음','화장실:있음
+입 장 료:없음
+이용가능시설:말바위, 테니스장, 노천탕
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북촌 8경','03059','서울특별시 종로구 계동길 37(계동)',38,127,'북촌은 원래 청계천과 종로의 윗동네를 이르는 지명이다. 지금의 남산에 해당하는 종로의 아랫동네는 남촌이라 했다. 북촌에는 조선시대 왕족이나 권세있는 사대부들이 살았고, 남촌에는 하급 관리들이 살았다. 근래에는 경복궁과 창덕궁 사이의 한옥마을을 북촌이라 부른다. 한옥의 멋과 분위기가 살아 있는 북촌 골목길 곳곳에는 북촌 8경이 있다. 이 곳에는 방문한 사람들을 위해  사진 촬영대(포토 스폿)을 마련해 놓았다. 한옥의 빛깔과 느낌을 가장 잘 담아낼 수 있는 북촌의 8경을 직접 둘러보고 사진을 촬영하면서 즐거운 시간을 보낼 수 있다.<br /><br />[북촌8경]<br />* 북촌1경 – 창덕궁전경<br />돌담 너머로 창덕궁의 전경이 가장 잘 보이는 장소이다. 북촌문화센터에서 나와 북촌 길 언덕을 오르면 첫 번째 포토 스팟이 나온다.<br />* 북촌2경 – 원서동공방길<br />창덕궁 돌담길을 따라 걷다보면 불교미술관과 연공방을 지나 골목 끝에 궁중음식원의 정갈한 마당과 기와문양의 담이 보이는 그 자리에 북촌의 두 번째 포토스팟이 보인다.<br />* 북촌3경 – 가희동 11번지 일대<br />아름다운 한옥과 전통문화를 체험할 수 있는 여러 공방이 자리하고 있다.<br />* 북촌4경 – 가회동31번지언덕<br /> 가회동31번지 일대를 한눈에 볼 수 있는 지점. 수많은 기와 지붕과 함께 북촌 꼭대기 이준구 가옥까지 한눈에 들어온다.<br />* 북촌5경 – 가회동골목길(내림)<br />키 큰 회나무집을 돌아 올라가면 처마를 서로 맞대고 빼곡하게 늘어선 예스런 한옥들이 있다.<br />* 북촌6경 – 가회동골목길(오름)<br />북악을 닮은 기와지붕들이 어깨를 나란히 하고 있는 가회동 31번지 한옥 골목길을 따라 올라가면 언덕길 막바지에 여섯 번째 포토 스팟이 보인다.<br />* 북촌7경 – 가회동31번지<br />북촌의 일곱 번째 장소는 한옥이 주는 고즈넉함과 작은 여유로움을 만날 수 있는 소박한 골목 전경이다.<br />* 북촌8경 – 삼청동돌계단길<br />빼곡한 한옥들의 지붕과 경복궁, 인왕산, 청와대의 조망이 좌측으로 펼쳐지는 화개1길을 따라 오르다보면 삼청동길로 내려가는 돌층계길이 있다. 돌계단길을 끝까지 내려가면 북촌의 마지막 여덟 번째 포토 스팟이 있다.<br>','02-2148-4161',null,'연중무휴',null,null,null,null,null,'없음','없음','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서소문역사공원','04510','서울특별시 중구 칠패로 5(의주로2가)',38,127,'서소문역사공원(西小門歷史公園)은 현재 공원으로 조성되어 있으나 원래는 ‘서소문 밖 네거리 처형지''로 구한말 서소문 전투의 군인 등 사회개혁 세력들 뿐만 아니라 1801년 신유박해부터 1866년 병인박해까지 많은 천주교인이 이곳에서 처형되었다. 처형된 천주교인 중 44명이 성인이 되어 국내 최대의 천주교 성지로도 자리잡았다.<br /><br />서소문(西小門) 즉 소의문(昭義門, 또는 소덕문(昭德門))은 아현과 남대문 밖의 칠패(七牌) 시장으로 통하던 문으로 일찍부터 사람들이 붐비던 곳이었다. 조선시대의 사형집행은 많은 사람들에게 경각심을 주어 범죄를 예방하려는 목적에서 사람들의 왕래가 잦은 곳에서 행해졌으며, 서소문 밖도 이러한 이유에서 1416년(태종 16)에 서울의 주요한 형장(刑場)으로 지정되었다. 이곳 형장의 위치는 서소문 밖의 비탈진 언덕길 아래, 즉 현재의 서소문역사공원(西小門歷史公園) 옆에 있던 이교(? 橋, 나무로 다리를 놓고 흙으로 덮어 흙다리라고도 함)의 남쪽 백사장이었던 것으로 알려지고 있다.<br /><br />순교자현양탑이 세워져 있는데 1999년 5월 15일 건립한 것으로 높이 15m의 주탑과 13m의 좌우 대칭탑 등 3개의 탑으로 이루어져 있다. 탑 기단 위는 유리로 막아 물이 흐르도록 하였는데, 이것은 박해와 죽음의 상징인 칼과 생명의 상징인 물을 대비시킨 것이다. 주탑 앞부분에는 순교의 참상을 형상화한 청동조각을 붙였다. 2013년부터 서울특별시 중구에서 지하4층~지상1층의 전시기념관과 추모공간이 있는 서소문성지역사박물관을 건립하여 2019년 6월부터 일반시민에게 개방하고 있다.<br>','02-3396-5852',null,'연중무휴',null,null,null,null,null,'있음','불가','불가','촬영장소:드라마 ''따뜻한 말 한마디'' 촬영지
+입 장 료:없음
+화장실:있음
+이용가능시설:기념전당, 도서실, 세미나실, 기념품 매장, 카페, 역사박물관(서소문성지역사박물관), 시계탑 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('덕수궁 대한문','04519','서울특별시 중구 세종대로 99(정동)',38,127,'정전인 중화전이 건립되기 전까지는 인화문을 사용했으나 1902년 궁궐을 크게 중전 하면서 중화전과 중화문, 그리고 와삼문인 조원문을 세워 법전의 체제를 갖추었다. 그리고 인화문의 자리에는 건극문을 세우고 조원문 동쪽에 대한문을 세워 정문으로 사용했다. 1904년 (광무8)재건하면서 대한문으로 고쳐 불렀다. 정동(正東)에 동향한 정문(正門)으로, 석계(石階) 위에 삼문(三門)을 만들어 세웠다. 지금의 문은 도로 확장에 밀려 뒤로 물려졌고 석계는 노하(路下)에 매몰되어 있다. 지붕은 우진각기와지붕이다. 보통 정문은 돈화문(敦化門) · 홍화문(弘化門)과 같이 중문이나 이 문만은 단층이 되었는데 이는 중화전이 단층으로 재건됨에 따른 조화를 이룬 구성이었다고 보인다.<br>','02-771-9951',null,'매주 월요일',null,'전연령',null,null,'덕수궁 관람시간 09:00~21:00(입장 마감 20:00)',null,'없음','없음','입 장 료:[덕수궁 관람요금]<br/>
+- 내국인 일반권(만 25세~만64세) : 개인 1,000원/단체 800원<br/>
+- 외국인 일반권 소인(7세~18세) : 개인 500원/ 단체 400원<br/>
+- 외국인 일반권 대인(19세~64세) : 개인 1,000원/단체 800원<br/>
+- 무료관람 : 6세이하, 65세이상, 매월 마지막주 수요일(문화가 있는날), 한복을 착용한자<br/>
+※ 단체 10인이상
+이용가능시설:카페, 기념품점, 수유실 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관훈동 민씨 가옥 (구 부마도위박영효가옥)','04626','서울특별시 중구 퇴계로34길 28',38,127,'관훈동 민씨 가옥은 최초 건립시기와 건립자가 불명하나 민영휘가 1895년 안국동으로부터 교동으로 이주하면서 일대의 토지를 매입하여 일가를 거주하게 한 가옥 중 하나이다. 1936년 기준으로 총 6동 목조와즙과 2층 양옥이 있었던 것으로 보이나 1976년 관훈동 30번지에 있던 가옥 중 일부가 멸실되고 안채 일부와 문간채 등 목조와즙 2동만 남아있었으며, 이 가옥이 1977년 서울시 민속자료 제 18호로 지정되었다.<br>','02-3396-5843',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('해풍부원군윤택영댁재실','04626','서울특별시 중구 퇴계로34길 28',38,127,'이 가옥은 순종의 장인인 해풍부원군 윤택영이 그의 딸 순정황후(純貞皇后)가 1906년 황태자비로 책봉되어 창덕궁에 들어갈때 지은 집이다. 건축자재는 경운궁(慶蕓宮)을 헐때 그 재목을 이용한 것으로 재질은 홍송(紅松)이다. 동대문구 제기동 224번지에 있던 것을 이곳으로 이전, 복원하였다. 가옥의 평면은 우리나라에서 보기 드문 ‘으뜸 원(元)자’모양이다. ‘ㅡ자’형(一字形)인 사당(祠堂)은 ‘원자(元字)’의 머리에 위치하여 집의 제일 안쪽 높은 터에 자리 잡았다. 그 앞 남쪽 한단 낮은 터에 원자의 ‘ㅠ형’몸채를 두었다. 몸채의 구조는 안채와 사랑채가 연속되어 ‘ㅡ자’형(一字形)으로 ㅠ의 ㅡ를 이루고, 그 앞 동서로 행랑채가 팔을 이루며 연속되어 있다. 사당은 1960년에 소실되었던 것을 복원하였으며, 사당 앞에 두단의 석축(石築)을 쌓아 화계(花階)를 구성하였다. ‘원형’평면의 중앙은 자연히 가운데 마당이 되는데, 전면 동서 행랑채 벽선을 따라 담장을 치고 일각대문을 두어 마당으로 드나든다. 안마당은 서쪽 행랑의 중문을 통하고 사랑마당에는 동쪽 행랑 끝에 뻗어 나온 담장의 일각대문으로 드나들게 되어 있다. 지붕은 팔작 기와지붕으로 사랑채는 부연(附椽)을 단 겹처마이고 나머지는 홑처마이다. 행랑채는 삼량가구(三樑架構)로서 맞배지붕을 이루고 있다. 가옥 전체의 분위기는 살림집이라기 보다는 재실(齋室)용도에 걸맞게 되어 있다. 때문에 대청을 중앙에 두고 안방과 사랑방이 마주한 것 등 특수한 요소가 많은 가옥이다. <br>','02-3396-5882',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼청동오위장김춘영가옥','04626','서울특별시 중구 퇴계로34길 28(필동2가)',38,127,'이 가옥은 1890년대에 오위장 김춘영이 지은 집이다. 원래 종로구 삼청동에 있던 것을 이곳으로 이전, 복원하였다. 이 집의 모습은 서쪽에 길을 두고 길에서 꺾이어 들어선 좁은 빈터에 면한 크지 않은 대지에 서남향으로 자리잡고 있었다. 집의 모양새는 ‘ㄷ자’형의 안채와 ‘ㄱ자’형의 사랑채가 연결되어 있다. 길에서 동쪽으로 꺾이어 들어서면 서남쪽을 향한 대문간과 서쪽을 향한 일각대문(一角大門)이 있는데 대문은 안채로, 일각대문은 사랑채로 들어가는 문이다. 대문간은 전면을 벽체로 막고 ‘ㄱ자’로 꺾여 안마당에 들어서게 되어 있다. 이러한 배치는 곧바로 안채가 들여다보이지 않게 하기 위함이다. 대문간에는 문간방 1칸을 두었다. 안채는 ‘ㄱ자’형으로 조선시대 서울주택의 전형적인 유형이라고 할 수 있다. 다만 부엌 남쪽의 찬마루와 광이 문간방과 연결되어 있는 것이 좀 색다른 점이라 하겠는데, 이러한 양식은 좁은 집터에 자리잡은 경우 쓰이던 양식으로 보인다. 안채의 구조는 긴 섬돌 초벌대 기단(基壇)위에 네모뿔대의 초석을 놓고 흘림이 없는 네모기둥을 세워 납도리로 결구(結構)한 민도리집이다. 사랑채는 대문간 채와 연이어 튀어나온 형태로 되어 있는데, 사랑방(1칸 × 1.5칸), 사랑대청 (1칸), 건넌방 (1칸)을 두고 있다. 대청과 건넌방 앞에 작은 사랑마당이 있는데, 이 사랑마당은 일각대문과의 사이에 있는 것이다. 이 가옥은 안방의 뒤쪽 벽, 길가에 면한 부분에 4개의 괴석(塊石)과 벽돌을 사용하여 화재를 방지하는 벽을 쌓아 집의 격조를 높인 점과 추녀의 끝부분에 태극문을 조각하여 장식한 것은 특기할 만하다. 이 가옥은 전반적으로 서민주택의 양식을 보이고 있으나 서민중에서는 경제적으로 윤택한 중상류층 집안의 양식으로 추측된다.<br>','02-3396-5843',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('순정효황후윤씨친가','04626','서울특별시 중구 퇴계로34길 28',38,127,'조선말 윤비의 저택이었다고 전하는 이 가옥의 평면은 전체 ''ㄷ''자형이고 대문은 동향으로 내었다. 사랑채는 대지의 동남 모서리의 전체 시가를 내려다 볼 수 있는 위치에 누각식으로 꾸몄다. 안채의 대청마루는 통2칸 전면 3칸의 6칸대청으로 동쪽을 향하고 있다. 기둥머리는 모두 초익공 이며 운공을 써서 도리를 받고 있는 짜임새가 특이하다. 사랑채의 지붕은 네귀에 추녀를 걸어 팔 작지붕으로 하고 합각면은 전돌쌓기로 마감하였다. 창호는 덧문형식으로 살문과 완자창을 달고 있으나 퇴락하였다. 사랑채 고정들창의 세로살을 약간 엇물려 꾸민 의장수법은 볼만하다. 부엌의 박공벽 면에는 낮은 행랑채의 지붕 위에 사롱창을 내어 자연환기를 도모하였는데, 새김이 우수하며 박공끝 초각도 전형적인 쇠사리를 쓰고 있고 기둥모서리, 중방 면치기 등 (외사모, 실오리, 모쌍사치기 등)도 정 교하게 꾸며져 있다. 이 건물은 본래 종로구 옥인동 47-133에 있던 것을 1996년 남산골 공원이 조성되면서 이곳으로 옮겨온 것이다.<br>','02-3396-5842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('극락사(서울)',null,'서울특별시 중랑구 망우로91길 98(망우동)',38,127,'1968년 4월 10일 건립된 극락사는 태조 이성계가 ''절골'' 이라 이름 붙인 곳에 위치하고 있는데, 공기 좋고 경치 좋은 생활명소로 연혁은 97년 화재로 소실되어 기록으로 남아있는 것이 없다. 하지만, 화재에도 불구하고 신도들이 끊이지 않고 있으며 인근에 있는 약수터나 동래 정씨 묘역 등을 사이에 두고 있다. <br>','02-434-1717',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경희궁 숭정전','03177','서울특별시 종로구 새문안로 45',38,127,'숭정전은 원래 경희궁(慶熙宮)의 정전(正殿)이었다. 경희궁은 원래 인조의 아버지인 원종(元宗)의 사저(私邸)가 있던 곳이다. 광해군이 이곳에 왕기(王氣)가 서렸다는 풍수설을 믿고 왕기를 누르기 위해 즉위 9년인 1617년에서 1620년 사이에 궁궐을 건립하여 경덕궁(慶德宮)이라 불렀던 곳이다. 숭정전은 1910년 일제가 경희궁을 철폐하고 일본인 자제들을 위한 학교인 경성중학교(京城中學校)를 설립할 때도 남아 있었다. 그 후 1926년에 필동 남산 기슭, 지금의 동국대학교 자리인 조계사(曹溪寺)의 본전으로 사용되기 위해 이건되었다. 광복 후 그 자리에 동국대학교가 세워지면서 1976년 9월 현재 위치로 옮겨져 학교의 법당인 정각원(正覺院)으로 사용되고 있다. 경희궁지 숭정전 일대는 서울특별시에 의하여 1985년과 1987년 두 차례에 걸쳐 발굴조사 되어 숭정전 월대와 계단을 비롯한 어도(御道)의 적심석(積心石), 그리고 좌우 행각지(行閣址), 숭정문지(崇政門址) 등이 확인되었다. 숭정전 주위에는 행각이 둘러져있었으며, 남쪽에는 숭정문(崇政門), 동남쪽에 건명문(建明門), 동쪽에 여춘문(麗春門), 서쪽에 의추문(宜秋門) 등이 있었다. 뒤로는 자정문(資政門)을 지나 편전(便殿)인 자정전(資政殿)이 자리잡고 있었다. 숭정전은 1980년대 말 경희궁을 복원ㆍ정비하면서 동국대학교에서 원래의 자리로 이건할 것을 검토했었다.<br /><br />그러나 동국대학교의 법당으로 사용되고 있고, 또 부재들이 낡아서 손상될 것을 우려하여 원래의 숭정전은 동국대학교 구내에 그대로 남겨두고, 경희궁지에 새로 숭정전을 복원하였다. 동국대학교에 있는 숭정전은 원래 이중(二重) 월대 위에 세운 정면 5칸, 측면 4칸의 겹처마 팔작지붕 건물이다. 기둥은 내·외진(內外陣)으로 배열되었으며, 내부의 어좌(御座)는 없어졌고, 불단을 설치하였다. 건물의 4면에는 꽃살분합문을 달았고, 그 위에는 교창(交窓)을 내었는데, 어칸에는 4짝, 그 옆 협칸에는 3짝, 그리고 가장 양 끝칸인 툇간에는 2짝문으로 나 있다. 내부 천장은 소란반자이고, 바닥은 난방시설을 하였다. 공포는 외부로는 창방 위에 외2출목의 쇠서와 교두형 첨차를 두어 다포계의 특징을 보이면서 기둥 위에만 짜여 있다. 간포(間包) 대신 화반을 두고, 공포 내부에 출목 없이 양봉형(樑奉形)으로 보아지를 마련하여 보를 받치는 점은 다른 건물에서는 볼 수 없는 특징이다. 내부 천장은 우물반자를 꾸며 화려한 용(龍)무늬 단청을 그렸다. 건물 앞에 놓인 계단 역시 다른 궁(宮)의 정전과 같이 삼도(三道)로 꾸며 중앙에는 봉황 1쌍을 양각하여 장식했다. 팔작지붕의 용마루에는 양성을 했고 양 끝에 취두를, 내림마루 끝에는 용두를, 추녀마루에는 잡상들을 얹어, 이 건물이 이전에 궁궐 건물이었음을 알 수 있다. 1975년 12월 27일부터 1976년 9월 15일까지 해체 복원공사를 하였다. 일본인들이 강제로 철거하여 팔아 넘긴 탓으로 원형이 크게 파손되었고, 교실·체육관 등으로 사용되면서 많이 변형되었다. 현재는 불교 의례를 행하기에 알맞도록 내부가 변경되어 있다.<br>','02-724-0274',null,'월요일',null,null,null,null,'09:00 ~ 18:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성덕사','02048','서울특별시 중랑구 봉화산로 109-8',38,127,'중화동 303-10번지에 있는 성덕사는 1957년 대지 800평 위에 신설된 사찰이다.  현재 주민들의 신앙생활과 지역사회 봉사활동에 도움을 주고 있고 ''애동지'' 전설이 있다.','02-434-7171',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('3.1독립운동기념탑','04621','서울특별시 중구 장충단로 91(장충동2가) 부근',38,127,'3.1독립운동기념탑은 일본 제국주의의 잔혹한 식민통치로부터 조국과 민족의 독립을 위해 전개된 3.1독립운동의 숭고한 정신을 계승ㆍ발전시켜 널리 국민들의 호국애족정신을 고양하고자 온 겨레의 정성을 모아 중구 장충동 남산공원에 건립되었다.1998년 8월 15일 대한민국 정부수립 제50주년 기념일에 착공하여 3.1독립운동 80주년 기념일인 1999년 3월 1일 준공하였으며, 탑의 높이가 19m 19cm로 이는 3.1독립운동의 거사일인 1919년을 의미한다. 3.1독립운동은 세계 최초의 비폭력 평화운동이며 세계 최초의 천도교ㆍ기독교ㆍ불교의 종교연합운동으로 중국의 5ㆍ4운동, 인도의 무저항운동을 비롯하여 전세계 비폭력 평화운동의 시발점이 되었다.<br /><br />* 건립자 - 광복회(3.1독립운동기념탑건립위원회)<br>','1577-0606',null,'연중무휴',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('나석주의사동상','04538','서울특별시 중구 을지로 66(을지로2가) 외환은행 본점 앞',38,127,'조국을 위해 기꺼이 목숨을 바쳤던 나석주 의사의 숭고한 희생정신을 추모하기 위해 현재 외환은행 본점이 위치한 옛 동양척식주식회사 자리에 그의 동상이 건립되어 있다. 나석주의사(1892~1926)는 동양척식주식회사 농장이 있었던 황해도 재령 출신으로, 3ㆍ1운동이 일어나자 겸이포에서 독립만세시위에 참여한 뒤 결사대를 조직해 독립군 자금 모집과 친일파 처단 활동을 펼치다 1920년 9월 중국 상해로 망명하였다. 중국에서 나석주는 임시정부 경무국 경호원과 한단 군관학교를 거쳐 1924년까지 중국군 부대에서 활동하였다. 그 뒤 천진에서 의열단에 입단해 한층 적극적인 독립투쟁을 강구하던 중, 1926년 6월 유림대표 김창숙을 만나 조국의 강토와 경제를 착취하는 동양척식주식회사와 조선은행, 식산은행 등을 폭파할 계획을 세웠다.1926년 12월 폭탄과 권총을 휴대하고 서울에 잠입한 나석주는 28일 오후 먼저 조선식산은행에 들어가 대부계 철책 너머로 폭탄 한 개를 던지고 큰길 건너편 동양척식주식회사 경성지점으로 달려가 총격과 함께 또 폭탄 한 개를 던졌다. 그러나 폭탄은 모두 불발에 그치고 말았다. 이어 나석주의사는 동양척식주식회사 바로 옆의 조선철도회사로 들어가 한차례 더 총격을 가하고 길거리로 나왔는데, 황급히 출동한 경찰대와 기마대의 추격을 받자 권총으로 자결하였다.<br /><br />* 규격 - 높이 2.3m<br />* 건립자 - (사)김상옥 나석주의사 기념사업회(1999.11.17. 건립)<br>','1577-0606',null,null,null,null,null,null,null,null,'없음','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('명성황후 조난지','03045','서울특별시 종로구 사직로 161(세종로)',38,127,'이곳은 조선 고종황제의 정후인 명성황후가 일본인의 손에 의해 무참히 시해된 곳이다. 청일전쟁이 끝난 후 명성황후가 일본세력을 배척하자 일본공사 미우라가 주동이 되어 고종 32년 (1895) 10월 8일(음력 8월 20일) 일본인들이 경복궁에 침입하여 많은 상궁과 명성황후를 상해하였다. 이것을 소위 을미사변이라 한다.<br>','02-3700-3900',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('세종로공원','03172','서울특별시 종로구 세종대로 지하 189',38,127,'세종로 공원은 서울의 중심인 광화문 네거리에서 광화문에 이르는 세종로에 있는 공원으로 세종문화회관 오른 편에 조성되었다. 공원 내에는 그늘집과 나무의자가 곳곳에 설치되어 인근 직장인들에게 도심 속의 휴식공간을 제공한다. 또한, 분수대와 야외 원형 무대, 각종 조형물이 들어서 깔끔하고 정돈된 분위기에 세종로 주차장과 연결되어 있어 주말에는 야외 결혼식장으로 이용되기도 한다. 이외에도 우리나라 자유시의 효시인 ''''불놀이''''를 지은 주요한 선생의 시비와 ''''서울의 찬가'''' 노래비가 건립되어 있다.','02-722-9598','2010년 11월 12일','연중무휴',null,null,null,null,null,'세종로 주차장 이용 (24시간 운영, 유료)','불가','없음','입 장 료:무료
+이용가능시설:[휴게․편익공간] 야외무대, 매점, 디자인파라솔, 야외테이블 등<br />
+[상징광장] 조선시대 사헌부 및 병조터 흔적복원<br />
+[한글글자마당] 전국민 공모 11,172자로 구성
+주차요금:5분당 300원 (세종로 공영주차장)
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('황학정','03027','서울특별시 종로구 사직로9길 15-32(사직동)',38,127,'황학정은 원래 광무 2년(1898) 고종의 어명으로 경희궁(慶熙宮) 회상전(會祥殿) 북쪽 담장 가까이 세웠던 궁술 연습을 위한 사정(射亭)이었다. 1922년 일제가 경성중학교를 짓기 위해 경희궁을 헐면서 경희궁 내 건물들이 일반에게 불하될 때 이를 받아 사직공원 북쪽인 등과정(登科亭) 옛터인 현 위치에 이건하였다. 황학정이 있는 사직동의 등과정 자리는 한말까지 궁술 연습장으로 유명했던 곳이다. 등과정은 경복궁 서편 인왕산 기슭 옥동(玉洞)에 있던 등용정(登龍亭)·삼청동의 운용정(雲龍亭)·사직동의 대송정(大松亭, 太極亭)·누상동의 풍소정(風嘯亭, 白虎亭)과 함께 인왕산 아래 서촌(西村) 오사정(五射亭)이라고 불렸다. 오사정을 비롯한 서울에 있던 이름 있는 활터는 일제 때에 전통 무술을 금지하면서 점점 사라졌다. 황학정의 활터는 전국에서 유명하였으며 광복 후에 계속 사용되었으나 6·25전쟁으로 건물도 파손되고 활쏘기도 중단되었다가 다시 중수되어 활터로 사용되고 있다. 과녁은 전방 약 145m 지점에 있으며, 1977년 일부 보수공사를 하였다. 황학정은 인왕산 동쪽 기슭 언덕 위에 동남향을 하고 자리잡았다. 정면에서 보아 4칸 중에서 동쪽 1칸은 서쪽의 3칸보다 한 단 높게 누마루를 꾸몄고, 동쪽 끝 초석은 장초석으로 처리되었다.<br /><br />건물 정면 서쪽에서 2번 째 칸 되는 추녀 밑에 ''황학정'' 현판이 걸려 있다. 북쪽 끝 1칸 양통은 온돌이며 나머지는 모두 우물마루를 깔았다. 주간 거리는 건물 정면의 서쪽에서 오른쪽으로 2,763mm, 3,051mm, 2,820mm, 2,793mm 이며, 측면은 정면에서 뒤로 2,787mm, 2,820mm 이다. 초석의 높이는 290mm, 장초석의 높이는 970mm이고, 대들보까지 기둥의 높이는 2,670mm 이다. 건물은 외벌 장대석 기단 위에 사각기둥을 세우고, 정면과 동쪽 측면 기둥에는 칠언 절구의 주련(柱聯)을 걸었다. 정면 외부 기둥 사이에는 사분합문을 달았으며, 내부는 우물마루와 연등천장으로 되었다. 건물은 판대공으로 종도리를 받친 무고주(無高柱) 5량가이며, 굴도리를 사용하였다. 정자로서는 비교적 규모가 큰 건물이나 간결하고 소박하게 구조로 조영되었다. 건물 서남쪽 뒤로는 샘이 있고 그 뒤 바위에 황학정 팔경을 노래한 시를 음각하였으며, 건물 오른쪽인 동북쪽으로는 사모지붕의 한옥 한천각(閒天閣)이 있고, 그 서쪽 뒤로는 철근 콘크리트로 지은 사우회관(射友會館)이 있다. <br>','02-738-5785',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경희궁 흥화문','03177','서울특별시 종로구 새문안로 55(신문로2가)',38,127,'※ 19_20 한국관광 100선 ※<br /><br />조선 광해군8년(1616)에 세운 경희궁의 정문으로, 경희궁은 처음에는 경덕궁이라하였는데 경복궁을 북궐이라하고 창덕궁을 동궐이라하듯이 이를 서궐이라 하였다. 본래는 인조의 생부 원종의 잠저가 있던 곳으로 광해군이 왕기를 없애기 위하여 건립하였다 한다. 일제 때인 1910년 경희궁을 헐고 경성중학교(서울 중고등학교)를 건립하였다. 이때 이 문은 남아 있다가 1932년 박문사에 이전되어 정문으로 삼았는데 박문사는 안중근의사의 손에 죽은 침략자 일본인 이등박문의 사당이었으나 현재 신라 호텔이 이 자리에 들어서게 되어 신라호텔 정문으로 사용되었었다. 1986년 서울시에 의하여 공원으로 개방되었다.<br>','02-724-0274~6',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경희궁공원','03177','서울특별시 종로구 새문안로 55',38,127,'종로구 신문로에 있으며 흥화문, 숭정전 등 문화재와 시립미술관, 서울 정도 600년 기념관 등이 있어 공원과 더불어 문화공간으로도 활용되고 있다. 경희궁은 원래 조선 시대 광해군 8년(1616)에 ''경덕궁''이라는 이름으로 건립되었다가 영조 36년(1760)에 경희궁으로 개명되었다. 처음에는 회상전, 융복전, 집경당, 흥정당, 숭정전, 흥화문, 황학정 등의 건물이 있었으나 융복전과 집경 당은 없어지고 나머지 건물들은 1910년 경성중학교(지금의 서울고등학교)가 설립된 후 여기저기로 옮겨졌다.<br>','02-731-0461','2002년','연중개방',null,null,null,null,null,'있음(146대)','없음','없음','이용가능시설:[주요시설] 자정전, 흥화문(서울특별시 유형문화재 제19호), 숭정전
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('낙선재','03072','서울특별시 종로구 율곡로 99(와룡동)',38,127,'정면 6칸, 측면 2칸, 단층 팔작기와지붕의 익공(翼工)집이다. 낙선재는 본래 창경궁에 속해 있던 건물이었으나 근래에 창덕궁에 속한 것으로 취급하게 되었다. 이 건물은 헌종 12년(1846)에 건립한 것으로 본 건물에 접속된 석복헌(錫福軒)과 수강재(壽康齋) 등 3개의 건물을 총칭하여 낙선재(樂善齋)라 부르고 있다.  정문은 장락당(長樂堂)으로 낙선재 남행각(南行閣) 12칸에 설치되었다. 이 문을 들어서면 넓은 마당 뒤로 낙선재가 있다. 정면 6칸 중 우측 한 칸이 전면으로 돌출되어 누마루가 되었고 몸채는 장대석 기단 위에 방형(方形) 초석과 기둥을 한 일반적인 주택풍으로 세워졌다. 즉 기둥 위 주두(柱頭) 위에 대량(大樑)을 걸고 그 틈에 도리를 얹었으며 창방(昌枋)과 도리받침장혀 사이에 소로를 끼웠고 창방머리는 초각(草刻)하였다. 누마루는 사다리꼴 높은 석주형(石柱形) 초석 위에 방주(方柱)를 세우고 머름창방 위에 사분합을 달았다. 누마루의 아래 분구(焚口) 있는 주변은 불규칙한 선의 모자이크 장식이 독특하며 주간의 문짝의 무늬가 다양하다. 집 뒤로는 큰 석재로 쌓아 만든 화계(花階)가 있고 굴뚝과 각 단의 꽃나무, 괴석들이 조화를 이루고 있어 조원(造園)이 뛰어나다. 낙선재에 연접한 석복헌은 역시 정면 6칸, 측면 2칸으로 안사랑에 해당하는 건물이다. 3급 장대석 기단에 계단이 둘 설치되어 있다. 사다리꼴 초석 위에 방주가 섰다. 전면의 주간에는 세장(細長)한 장지문이 달렸는데 그 중 중앙 1칸은 머름을 하여 낮고 문살 모양도 다른 문과 다르다. 건물 주위로 행각이 둘렸으며 밖으로 외행각(外行閣)이 나 있고 이것이 수강재에 이어진다. 수강재는 15칸 규모이며 5량 가구(架構)의 홑처마 단층기와지붕을 한 건물이다.<br>','02-2148-1822',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('창덕궁 인정문','03072','서울특별시 종로구 율곡로 99',38,127,'인정문은 인정전의 정문으로 태종5년(1405) 창건한 것이나 임진왜란때 소실되어 광해군 원년(1608) 재건하였다. 영조20년(1744) 10월 승정원 화재때 좌우 행각과 함께 소실되어 이듬해 3월에 재건하였다. 순조3년(1803) 12월에 선정전 서행각에서 화재가 나 인정전 등이 소실되매 이듬해 12월에 개건하였는데 이 문도 그때 재건된 것으로 여겨진다. 다포계양식, 팔작지붕의 평삼문형으로 가구수범에서 조선후기의 특징이 나타나 있다. 1910년에 일제에 의해 주위건물과 함께 일부변형 되었다. 현재 외벽을 만들고 앞뒤에 문을 달았으나 원래는 중앙 고주사이에 문을 달았던 것으로 추정된다. 3급으로 쌓은 석조기단 위에 초석을 놓고 원주(圓柱)를 세웠으며 기둥 윗몸에 창방(昌枋)과 평방(平枋)을 짜 돌려 공포(慊包)를 받았다. 공포는 외2출목, 내2출목, 짜임은 삼제공이 중첩하는 형상이고 도리받침부재는 운형(雲形)으로 깎았다. 외부의 평방과 창방은 중앙 평주(平柱) 위에서만 초각물(草刻物)을 삽입하여 놓았으며 내부는 이제공(二提慊)까지는 직절(直絶)한 첨차 끝이 되었으며 그 위는 운궁(雲宮)처럼 되어 도리까지 나가 보 아래에서 보아지가 되었다. 천장은 연등천장이고 처마는 겹처마이며 단청은 반초머리의 모루단청이다. 인정문 좌우 행각과 인정전의 문비(門扉)는 일제 때에 왜식(倭式)이 가미되어 변형된 부분이 많다. 인정문에서는 역대의 많은 왕들의 즉위가 있었는데 효종 · 현종 · 숙종 · 영조 등이 이 곳에서 즉위하였다.','02-3668-2300',null,'매주 월요일(휴궁일) / 휴무일이 공휴일과 겹칠경우 다음날 휴무',null,null,null,null,'2월~5월 : 09:00~18:00<br />
+6월~8월 : 09:00~18:30<br />
+9월~10월 : 09:00~18:00<br />
+11월~1월 : 09:00~17:30<br />
+※ 입장마감은 1시간 전','2016.12월부터 창덕궁 주차장 영구폐쇄<br /> [인근 유료 승용차 주차장]<br />- 원서공원 공영 주차장<br />- 현대 계동사옥 주차장<br>- 삼환빌딩 주차장<br />※ 인터넷 검색사이트(네이버,다음) 이용','없음','불가','이용가능시설:안내, 화장실, 홍보관(음료,기념품점), 매표소, 휠체어/유모차 대여, 물품보관함, 수유실, 구급약품, 심장제세동기<br />
+- 물품보관소 : 대여료 100원<br />
+- 휠체어 : 6대<br />
+- 음성안내기 대여 : 한국어,영어,중국어,일어/ 유료 대여 25대 (대여시, 신분증 필요 / 3,000원)
+
+관 람 료:[개인/내국인] 대인(만25세~만64세) 3,000원<br />
+[단체/내국인] 대인(10인 이상 / 무료대상자 제외) 2,400원<br />
+<br />
+[외국인]<br />
+- 대인(만19세~만64세) 3,000원(10인 이상 2,400원)<br />
+- 소인(만7세~만18세) 1,500원(10인 이상 1,200원)<br />
+- 무료 : 만6세 이하, 만65세 이상, 한복착용자, 매월 마지막주 수요일(문화가 있는 날)<br />
+※ 내국인 무료 입장 자격 : 홈페이지 참고 
+한국어 안내서비스:[한국어] 1,2,11,12월 : 09:30, 11:30, 13:30, 15:30<br />
+[한국어] 3,4,5,6,7,8,9,10월 : 한국어 09:30, 11:30, 13:30. 15:30, 16:30
+외국어 안내서비스:[영어] 10:15, 13:15<br />
+[중국어] 10:00, 16:00<br />
+[일어] 11:00
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('창경궁 홍화문','03072','서울특별시 종로구 창경궁로 185(와룡동)',38,127,'※ 19_20 한국관광 100선 ※<br /><br />창경궁(昌慶宮)의 정문으로 정면 3칸, 측면 2칸 중층(重層) 우진각지붕으로 다포식(多包式)이다. 장대석(長臺石)의 석조기단 위에 원형 초석을 두었으며 문루(門樓) 하층은 양개(兩開)의 판문(板門)이 설치되어 출입할 수 있도록 하였고 상층은 판상(板床)의 누(樓)가 설치되었다. 상층의 누는 사면 벽의 판문을 열면 사방을 관망할 수 있도록 하였다.  상하층의 공포(慊包)는 내3출목, 외2출목으로 명정전(明政殿)의 공포 형식과 유사하다. 다만 첨차 뒷몸이 모두어져 한몸이 되어 만들어진 양봉이 대량(大樑)을 깊숙이 받아 그 끝이 고주(高柱)의 그것과 맞닿을 정도로 발달된 점이 다르다. 가구(架構)는 고주가 상하층에 걸쳐 세워지고 하층보와 상층보가 여기에 결구(結構)되어 있다. 하층의 대량 상부에는 우물천장이 설치되었고 상층의 대량 이상은 노출하여 연등천장이 되었다. 처마는 겹처마이며 각 마루는 양성을 하고 용마루에는 취두(鷲頭) 합각마루 끝과 추녀마루에는 각각 용두(龍頭)와 잡상(雜像)을 놓고 사래 끝에는 토수(吐首)를 끼웠다.<br>','02-762-4868',null,'매주 월요일(휴궁일)',null,null,null,null,'* 입장시간 : 09:00~20:00<br />
+* 관람시간 : 09:00~21:00<br />
+※ 야간 상시관람 : 오후 9시까지',null,'없음','없음','입 장 료:· 내국인(만25세~만64세) : 개인 1,000원 / 단체 800원(10인 이상)<br>
+· 외국인(만19세~64세) : 개인 1,000원 / 단체 800원(10인 이상)<br>
+· 외국인(만7세~만18세) : 개인 500원 / 단체 400원(10인 이상)<br>
+· 외국인 무료 : 만 6세이하, 만 65세이상, 한복착용자, 매월 마지막 수요일 "문화가 있는 날"<br>
+※ 무료 관람대상자는 반드시 관련 증빙(주민등록증, 국가유공자증, 복지카드, 교원자격증, 관광통역안내사 및 문화관광해설사 자격증 등)을 매표소에 제시 후 무료입장권을 발권 받아 입장.<br>
+<br>
+· 만 24세 이하 및 만 65세 이상 국민(신분증 지참)<br>
+· 다자녀를 둔 부모로서 지방자치단체에서 발급한 다자녀(다둥이)카드 등 관련증빙서류를 소지한 부모<br>
+· 「모자보건법」제2조에 따른 임산부와 보호자 1인<br>
+· 국빈 및 그 수행자, 외교사절단 및 그 수행자<br>
+· 국 · 공립기관에서 정양 중에 있는 상이군경<br>
+· 공무수행을 위하여 출입하는 자, 한복을 착용한 자<br>
+· 학생인솔 등 교육활동을 위해 입장하는 초·중·고 교원(유치원 및 보육시설 교사 포함)<br>
+· 「장애인 복지법」에 따른 등록장애인 및 장애의 정도가 심한 장애인의 동행 보호자 1인<br>
+· 독립유공자 및 배우자, 애국지사, 선순위 유족<br>
+· 국가유공가 및 배우자, 상이(장애)1~3급자와 동행하는 보조인 1인, 선순위 유족<br>
+· 5.18 민주유공자와 배우자, 선순위 유족 및 특수임무유공자와 배우자, 선순위 유족, 참전유공자<br>
+· 고엽제후유증 등외자 및 수당지급 후유의증환자<br>
+· 관광통역안내사 자격증 및 문화관광해설사 자격증을 패용하고 단체관람객 인솔·안내를 위해 입장하는 자<br>
+· 「효행 장려 및 지원법」에 따른 효행우수자<br>
+· 「국민기초생활보장법」 에 의한 기초생활수급자<br>
+· 차상위계층 중 자활급여, 건강보험료 경감대상, 장애수당, 한부모 가정 중 하나 이상의 급여를 받고 있는 자 및 기타 보건복지부장관이 인정한 차상위계층<br>
+· 병무청 발급 병역명문가증 소지자(본인), 군복을 입은 현역군인<br>
+· 국가무형문화재 보유자 및 전수교육조교<br>
+· 문화재위원 및 전문위원<br>
+· 기타 궁능유적본부장 또는 해당 궁능유적기관의 장이 인정하는 자<br>
+· 매월 마지막 수요일 "문화가 있는 날"<br>
+※ 무료관람대상자는 반드시 관련 증빙을 제시하여야 함.
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('자생식물학습장','03072','서울특별시 종로구 창경궁로 185(와룡동)',38,127,'창경궁 내에 식물원이 있다. 그 옆에는 자생식물학습장이라고 해서 작은 정원,수목원 비슷한 곳으로 식물원과 자생식물학습장이 꽤나 아담하고 잘 관리되고 있다. 구름다리로 연결된 종묘가 있고 산책길을 가로질러 가는 청솔모도 볼 수 있다. 이 교육장은 우리나라의 산과 들에서 자라고 있는 여러 가지 식물을 모아서 도시 어린이들이 그 생태를 익힐 수 있도록 한 곳이다.<br>','02-762-4868',null,'매주 월요일',null,null,null,null,'2월 09:00~18:00<br />
+3월~5월, 9월~10월 09:00~18:00<br />
+11월~1월 09:00~17:30<br />
+6월~8월 09:00~18:30<br />
+※ 매표 마감 1시간 전까지 가능<br />  
+※ 전화문의','있음(33대 가능)','없음','불가','화장실:있음 
+입 장 료:만 19세~64세 - 개인 1,000원 / 단체(10인 이상) 800원<br>
+※ 무료관람대상자 (대상자는 반드시 관련 증빙을 제시하여야 함) <br> 
+- 만 18세 이하 및 만 65세 이상 국민(신분증 지참)<br>
+- 국ㆍ공립기관에서 정양 중에 있는 상이군경 <br>
+- 장애인 복지법상 장애인 / 국가유공자<br>
+- 5,18민주유공자, 참전유공자 등 개별법에 의한 입장료 면제자<br>
+- 학생인솔 등 교육활동을 위해 입장하는 교원<br>
+- 관광진흥법에 따른 관광안내 관련 자격증을 소지하고, 단체관람객 인솔 및 안내를 위해 입장하는 자<br>
+- 병역명문가(병무청에서 발급한 병역명문가증 지참)<br>
+- 효행장려 및 지원법에 따른 효행우수자<br>
+- 한복착용자(신정, 설날 및 추석연휴에 한함)<br>
+- 기초생활수급자 - 문화(바우처)카드, 수급자증명서 증빙<br>
+- 차상위계층 - 문화(바우처)카드, 해당 증명서ㆍ확인서 증빙 <br>
+ㆍ자활근로자(확인서 증빙) <br>
+ㆍ차상위 본인부담경감 대상자(증명서 증빙) <br>
+ㆍ장애(아동)수당 대상자(확인서 증빙) <br>
+ㆍ한부모가족보호대상자(증명서 증빙) <br>
+ㆍ기타 보건복지부장관이 인정한 차상위계층 <br>
+- 65세 이상 외국인 중 영주자격(F-5) 취득자 
+주차요금:1,500원(30분) / 추가요금 10분당 500원<br>
+※ 휴궁일, 운영시간 외 무료개방 <br>
+승합차(12인승~16인승) - 기본요금 3,000원 / 초과요금 매 30분마다 1,000원<br>
+※ 주차요금 감면(50%)<br>
+- 장애인 차량(장애인복지법 제32조의 규정에 의한 장애인등록증소지자 또는 장애인 자동차 표지 부착 차량)<br>
+- 국가유공자(국가유공자등 예우 및 지원에 관한 법령에 따른 국가유공자증·국가유공자유족증 소지자)<br>
+- 경차<br>
+- 수도권법에 의한 저공해자동차로서 지방자치단체 발행 친환경 저공해인증 2종 또는 3종 인증 표시(전자태그) 부착 차량 
+외국어 안내서비스:[안내시간]<br>
+* 창경궁관리소 상설안내<br>
+- 영 어 : 11:00, 16:00<br>
+- 일본어 : 10:00, 14:00<br>
+- 중국어 : 13:00, 15:00<br>
+※ 30인 이상 단체는 2일전 전화예약(창경궁 02-762-4868)<br>
+※ 출발지 : 옥천교 앞, 소요시간 : 약 1시간 <br>
+※ 단체관람객의 안내요청 시 수시 안내 가능, 문의 02-762-4868 
+한국어 안내서비스:10:30, 11:30, 13:30, 14:30, 15:30, 16:30(동절기 16:00) <br>
+※ 30인 이상 창경궁 해설을 원하는 단체는 2일전 전화예약(창경궁 02-762-4868)<br>
+※ 출발지 : 옥천교 앞, 소요시간 : 약 1시간 <br>
+※ 일요일 한국어 해설은 (16:30분 제외) 자원봉사단체인 궁궐 길라잡이에서 실시<br>
+※ 우리궁궐길라잡이 문의 02-2273-2276 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('창덕궁 향나무','03072','서울특별시 종로구 율곡로 99(와룡동)',38,127,'창덕궁의 향나무는 나이가 약 700살 정도로 추정되며, 높이 12m, 뿌리부분 둘레 5.9m이다. 가지는 동서남북으로 1개씩 뻗어나갔는데 남쪽 가지는 잘라졌고, 북쪽 가지는 죽었으며, 동쪽 가지는 꼬불꼬불한 기형으로 자랐다. 나무의 모양은 마치 용(龍)이 하늘을 오르는 모습처럼 생겼다. 창덕궁은 조선 태종 4년(1404)에 왕실의 별궁으로 지었는데, 별궁을 지은 다음 어느 정도 자란 커다란 나무를 심었을 것이라고 생각해서 나무나이를 700년이라 추정한 것이다. 창덕궁의 향나무는 오랜 세월동안 조상들의 관심과 보살핌 가운데 살아온 나무로 문화적 자료로서의 가치가 높아 천연기념물로 지정·보호하고 있다.
+
+* 나무높이 12m / 보호구역 : 314㎡','02-3668-2300',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('창덕궁 다래나무','03072','서울특별시 종로구 율곡로 99(와룡동)',38,127,'다래나무는 덩굴나무로 중국, 일본과 우리나라의 깊은 산속 토질이 좋은 곳에서 잘 자란다. 잎은 타원형이며 봄에 돋아 가을에 떨어지고 꽃은 흰색으로 5월에 3∼10송이가 피며, 열매는 10월에 황록색으로 익는데 맛이 좋아 옛부터 우리민족이 즐겨 먹었다. 창덕궁의 다래나무는 나이가 약 600살 정도로 추정되며, 높이 19m, 가슴높이의 둘레 1.04㎝이며, 6개 정도의 굵은 줄기가 사방으로 길게 뻗어 있다. 이 나무는 창덕궁 안에 있는 대보단 옆에서 자라며, 특별히 타고 올라갈 지지대 없이 이리저리 엉키면서 자라는 모습이 매우 독특하고 또 줄기의 껍질이 얇게 벗겨져 일어나는 점도 특이하다. 창덕궁의 다래나무는 창덕궁이 세워지기 전부터 이곳에서 살고 있었던 것으로 생각되며, 우리나라의 다래나무 중 가장 크고 오래된 나무로서 생물학적 보존가치가 크다. 또한, 궁궐 속에서 자라온 역사적 자료로서의 가치도 있어 천연기념물로 지정·보호하고 있다.<br>','02-3668-2300',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('현대원서공원','03058','서울특별시 종로구 창덕궁길 19',38,127,'원서공원은 현대건설이 현대그룹 사옥을 건립할때 기업의 이익을 사회에 환원한다는 의미와 시민들의 휴식과 도심지의 녹지 공간을 위해 조성되었다. 그리 넓은 부지는 아니지만 아담한 공간만큼이나 운동시설과 게이트볼을 즐길 수 있는 운동장이 있고, 벤치와 그늘시렁이 조화롭게 잘배치되어 있다. 현대그룹의 직원들을 비롯한 인근 직장인들이 점심때 휴식공간으로 많이 이용되고 공원이 도로변에 위치해 있어 저녁때는 연인들의 약속장소로도 인기가 높다.<br>','02-731-0120',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('탑골공원 팔각정','03140','서울특별시 종로구 종로 99(종로2가)',38,127,'조선 고종(재위 1863∼1907) 때 영국인 브라운이 조성한 현대식 공원으로 공원 안에 있는 원각사 10층 석탑으로 인하여 파고다공원 또는 탑동공원이라 불리웠으며, 이때 팔각정도 함께 지었다. 황실공원으로 제실, 음악연주 장소 등으로 사용하였으며, 1913년부터는 일반인에게 공개되었다. 1919년 3.1운동 당시 학생들과 시민이 이 앞에 모여 학생대표의 독립선언문 낭독에 이어 대한민국 만세를 외치고 시위 행진을 벌였던 곳으로 유명하다. 일제강점기에는 시민들이 울적해진 심정을 달래기 위하여 이곳을 많이 찾았다고 한다.<br>','02-2148-1822',null,'연중개방',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('훈련원공원','04562','서울특별시 중구 을지로 227(을지로5가)',38,127,'훈련원 터는 병사의 무술훈련 및 병서·전투대형 등의 강습을 맡았던 훈련원이 있었다. 훈련원은 조선 태조 원년(1392)에 설치되어 처음에는 훈련관으로 불렀는데 태종 때 이곳으로 옮겨 청사 남쪽에 활쏘기 등 무예를 연습하고 무과시험을 보는 대청인 사청을 지었으며 세조 12년(1466)에 훈련원으로 고쳤다.  많은 무장들이 이 훈련원에서 오랜기간동안 시험과 봉직의 과정을 거쳤는데 충무공 이순신이 별과시험에서 말을 달리다가 실수로 낙마하여 왼쪽다리에 부상을 입은 곳도 이 훈련원이고, 봉사·참군 등 하위관직이 여러해 동안 복무하던 곳도 훈련원이었다.중종반정(1506)때 박원종 등이 훈련원에 모여서 장사들을 나누어 배치하고 밤중에 창덕궁 진입로에 진을 친 일도 있었다.<br /><br />그러나 5백여년의 역사를 갖고 여러 가지 군사관계의 일을 집행하던 훈련원도 국가의 대세가 기울어짐과 함께 막을 내리게 되었다. 1907년 8월에 체결된 한일신협약(일명 丁未7조약)에 의해 훈련원에서 군대해산식이 거행되고 한국 군인들에 대한 무장해제가 집행되었다. 이 군대해산으로 비분한 감정을 억제하지 못하던 장병들은 일본 단국이 지급한 은사금을 거부하고 의병부대에 합류함으로써 이제까지 재래식 무기와 체계적인 훈련을 받지 못한 채 활동하던 의병전쟁에 새로운 활력소가 되었다. 같은 해 12월 이인영과 허위가 중심이 된 서울 진공 작전도 신식무기와 병술에 익숙한 해산군인이 중심이 되었다. 이후 이들은 일본의 토벌작전이 치열해지자 그 활동무대를 국외로 옮겨 간도와 러시아등지에서 무장독립투쟁을 전개하였다. 한편, 현재의 훈련원공원 및 주차장이 건설되기 이전 이곳에는 적벽돌로 장식되고 내부구조는 백두산에서 벌목되어 압록강을 따라 황해로 운반된 육송으로 지어진 목조건물이 있었다. 이 건물 철거시 회수한 목재를 가공하여 여기 안내판을 제막하는데 사용함으로써 옛 내음을 보존하고자 하였다.<br>','02-3396-5810',null,'연중개방',null,null,null,null,null,'없음','없음','없음','화장실:있음
+이용가능시설:중앙광장, 휴게광장, 벤치 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대원군별장 (석파정)','03021','서울특별시 종로구 창의문로11길 4-1',38,127,'대원군 별장은 원래 창의문(彰義門) 밖 종로구 부암동 산 16-1번지에 있었던 건물이다. 1958년 서예가 소전(素筌) 손재형(孫在馨)이 이곳에 집을 지으면서 뒤뜰 바위 위 지금의 위치로 이전한 것이다. 부암동 산 16-1번지에는 조선말 흥선대원군 이하응(李昰應)의 별장인 석파정(石坡亭, 서울특별시 유형문화재 석파정 별당)이 지금도 보존되어 있다. 이 대원군 별장 건물은 그 곳 사랑채에 부속되어 있던 건물이었다. 동북향을 하고 있는 현재의 건물은 정면 5칸, 측면 3칸 규모의 역(逆)''ㄱ''자형 평면으로, 3량 가구의 맞배기와지붕을 하였다. 건평 10평정도 규모의 건물로 가운데에 1칸 대청방을 설치하고, 그 왼쪽인 동쪽에 2칸 반 크기의 큰방, 오른쪽에 1칸 반 크기의 건넌방을 꾸며놓았다. 큰방은 다시 앞으로 2칸 꺾여 나와 ''ㄱ''자를 형성하였는데, 이 방은 흥선대원군이 사용하였다. 건넌방은 손님 접대용이었으며, 대청방은 흥선대원군이 즐겨 그리던 사군자의 난초를 그릴 때만 사용하던 방이라고 한다. 회색 전벽돌로 쌓은 큰방 측벽에는 반원형의 창을 내었고, 건넌방 측벽에는 원형의 창을 내어 중국풍의 정취가 나도록 하였다. 대청방과 안방, 그리고 건넌방 사이에는 분합문을 달았고, 큰방 동측면 벽에는 벽장을 설치하여 공간의 이용 밀도를 높였다.<br /><br />건물 정면에는 ''ㄱ''자로 꺾인 곳을 따라 툇마루를 설치하였고, 그 양 끝은 전벽돌로 쌓은 측벽으로 막았으며, 건물 뒷면 중앙 3칸에는 쪽마루를 놓았다. 건물 앞퇴에는 대청마루 앞부분을 제외하고 모두 난간을 설치하여 고급스런 분위기로 장식하였으며, 기둥에는 주련(柱聯)을 달았다. 양측면 박공벽에는 전벽돌을 처마가 없이 지붕 밑까지 쌓아 중국 건축의 ''경산(硬山)''식 지붕으로 처리하였으며, 후면 외벽도 전벽돌로 쌓고 처마를 내었다. 큰방의 아궁이는 동쪽에 두었다. 이 건물은 평면 구성, 공간과 벽면 사용, 창호 디자인, 재료 마감 등에서 빈틈 없이 탄탄하게 처리한 점이 돋보인다. 대청을 중심으로 하는 정면 부분과 내부 구조, 그리고 창살은 전통 한옥형식을 갖추었으나, 외형을 이루는 전반적인 모습은 조선말기에 전래된 중국 청(淸)나라 건축의 영향을 받았다. 이건하면서 원 모습대로 복원하지 않고 평면과 구조를 부분적으로 바꾸었다. 손재형은 일본으로 유출된 김정희의 team_insert;세한도(歲寒圖)team_insert;를 천신만고 끝에 한국으로 가져온 인물로 유명하다. 그는 말년에 이곳에서 작품활동을 하였다. 이 별장 아래에 있는 손재형이 살던 건물들은 현재 전통음식점 ''석파랑''으로 사용되고 있다.<br>','02-2148-1825',null,null,null,null,null,null,null,null,'없음','없음','입 장 료:석파정 일일입장권 5,000원<br>
+서울미술관 성인 11,000원<br>
+서울미술관 우대/학생 7,000원<br>
+서울미술관 어린이 5,000원<br>
+※ 전화문의요망
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('동대문역사문화공원','04566','서울특별시 중구 을지로 281(을지로7가)',38,127,'공원 내에는 서울성곽과 이간수문(265m 8,030㎡)외에도 동대문역사관(1,313㎡), 동대문유구전시장(4,460㎡), 동대문운동장기념관(339㎡), 이벤트홀(2,058㎡), 디자인갤러리(400㎡) 등이 들어섰다. 특히 동대문운동장을 기념하기위해 남긴 야간경기용 조명탑 2기와 성화대도 자리한다. 문화재발굴조사를 통해 서울성곽(이간수문, 치성)이 드러났으며, 야구장 및 축구장 부지에선 하도감터를 비롯한 조선전기~후기 건물지유구 44기와 조선백자와 분청사기 등 조선전기~일제강점기 때의 도자류 등 주요 유물 1,000여 점이 출토되었다. 현재는 서울의 살아있는 역사를 만나는 역사문화 테마공원이자, 현대의 디자인과 문화를 경험할 수 있는 전시관 및 행사장이자, 시민들의 휴식공간으로 자리잡았다.<br>','02-2266-7188','2009년 10월 27일','관람시설 매주 월요일 휴무',null,null,null,null,'[공원] 24시간 개방<br />
+[배움터]  10:00~19:00 / 수,금 10:00~21:00 <br />
+[살림터] 평일 10:00~21:00 / 주말 또는 공휴일 10:00~22:00 <br />
+※ 알림터는 프로그램에 따라 운영 시간이 다름',null,'없음','없음','입 장 료:무료 
+화장실:있음 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한국전통주연구소','03042','서울특별시 종로구 자하문로 62(효자동) 3층',38,127,'"전통주 연구의 산실, 대중화 운동의 중심" 사단법인 한국전통주연구소는 쌀과 전통누룩, 물, 꽃과 약재 등 자연에서 얻어지는 재료로만 술을 빚고, 인공 감미료를 비롯 어떤 식품첨가물도 사용하지 않는 자연발효법의 양주기술을 교육하고 있는 국내 최고의 전통주교육기관이다.동동주, 막걸리를 비롯 죽과 떡 등 다양한 방법의 청주 빚기, 꽃으로 빚는 가향주, 전통소주 제조와 활용법 등 다양하고 차별화된 양주기술 교육을 실시하고 있으며 전통방식으로 빚은 우리술의 부드러운 맛과 아름다운 향기를 경험할 수 있는 곳이다.<br>','02-389-8611','2006년 8월','매주 일요일 및 공휴일','* 정규과정 : 가양주반, 연구반, 특기주반, 전문가반, 강사반<br />
+* 특별과정 : 일일체험반, 특별지도반, 기업team_insert 강의, 창업반','만 19세 이상',null,null,'09:00~22:00',null,'없음','불가','화장실:있음
+이용가능시설:* 2층 공방<br />
+* 3층 교육실 및 상담실
+내국인 예약안내:전화/홈페이지 예약 필수
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도봉서원','01300','서울특별시 도봉구 도봉산길 90(도봉동)',38,127,'도봉서원은 서울에 소재한 현존하는 유일한 서원으로 도봉산 입구 등산길에 오르면 우측 옛 영국사 터에 위치 해 있다. 남언경이 양주목사로 부임하여 1573년(선조6) 지방유림의 공의로 조광조(趙光祖)의 학문적 사상과 덕행을 추모하기 위해 창건하고 위패를 모셨다. 창건과 동시에 ''도봉(道峰)''이라는 사액을 받았으며 송시열(宋時烈)을 추가 배향하였다. 1775년(영조 51) 어필사액을 다시 받아 선현배향과 지방교육의 일익을 담당하였다. 400여 년간 양주, 파주, 포천, 서울지역에 있는 선비들의 발길이 끊이지 않았다고 하나 홍선대원군의 서원철폐령으로 1871년 훼철되었으며 위패는 땅에 묻었다. 1903년 지방유림에 의해 단을 설치하여 봄, 가을에 향사를 지내 오다가 6.25전쟁으로 다시 중단되었다. 1970년 도봉서원재건위원회가 구성되어 1971년 복원 매년 음력 3월10일(춘향제), 9월10일(추향제)에 전국 유림 및 지역유지가 모여 전통향사를 지내고 있다.<br>','02-2091-2263',null,null,'춘향제(제향)<br />
+추향제 및 추모음악회(제향·전통음악공연)',null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('명동 남대문 북창동 다동무교동 관광특구','04528','서울특별시 중구 세종대로 40(남대문로4가)',38,127,'서울의 중심부에 위치한 명동과 남대문, 북창동, 다동 무교동 일대는 외국인이 많이 찾는 쇼핑과 먹을거리의 명소다. 대한민국의 대표적인 상업·금융 중심지이며 쇼핑과 문화, 예술과 패션의 1번지로 롯데백화점, 신세계백화점, 명동 밀리오레, 삼익패션타운 등의 쇼핑몰이 자리하고 있다. 이곳에서 고급 명품에서부터 보세 옷에 이르기까지 다양한 쇼핑을 즐길 수 있다. 한국에 온 관광객이라면 누구나 들르는 랜드마크로 외국인 방문율이 가장 높은 지역이기도 하다. 한국 천주교회의 메카인 명동성당에서부터 남대문로에 이르는 명동 길을 중심으로 크고 작은 골목마다 상점들이 늘어서 있다. 최신 유행의 의류와 액세서리를 파는 상점뿐 아니라 수많은 노점까지 더해져 사는 재미, 구경하는 재미를 느낄 수 있다. 전통을 자랑하는 음식점과 휴식공간인 카페도 구석구석 자리를 잡았다. 남대문시장은 대한민국 최대의 전통 시장이다. 노상과 건물을 아우르는 대단지 쇼핑타운이 밀집해 저렴한 가격에 각종 기념품과 토산품을 구입할 수 있다. 의류부터 패션 소품, 생활용품, 먹을거리 등 없는 것이 없는 곳으로 구석구석 뒤지면 신기한 것들이 쏟아져 나온다. 북창동과 소공동 일대는 롯데호텔, 웨스틴조선호텔 등 고급 숙박 시설과 면세 상점 등이 몰려 있으며 한국 전통 음식점들이 많아 ''''한국의 맛''''을 찾는 외국인 관광객의 발길이 끊이지 않는다. 무교동과 다동 일대 역시 한국의 직장인들도 즐겨 찾는 한국의 다양한 먹거리로 유명한 지역이다.
+
+* 명동·남대문·북창동·다동무교동 관광특구 현황<br />1) 범위 / 명동, 회현동, 소공동, 북창동, 무교동, 다동 각 일부 지역<br />2) 면적 / 872,809㎡<br />3) 관광특구 지정일 / 2000년 3월 30일(범위 확대 2012년 12월 27일)<br /><br />* 명동·남대문·북창동·다동무교동 관광특구 시설 현황<br />롯데, 신세계 등 대규모 백화점과 재래시장, 면세점, 한옥마을, N서울타워 등 서울의 대표적인 관광 명소 소재<br>','중구 문화관광과 02-3396-4622',null,null,null,null,null,null,null,'백화점과 박물관 주차장 이외에도 곳곳에 건물 주차장과 공용 주차장 이용 가능','없음','없음','화장실:관광지와 호텔, 쇼핑센터 등 28개의 공공 화장실 이용 가능
+이용가능시설:움직이는 관광 안내소, 일반 관광 안내소, 외국인 전용 매장, 외국인 음식점, 쇼핑 상가, 음식점, 유흥 오락 시설, 관광호텔 등<br>
+고급호텔, 백화점, 면세점, 재래시장, 대형 상가, 박물관, 미술관, 관광 공연장, 여행사, 관광 안내소 
+외국어 안내서비스:영어와 일어, 중국어로 된 관광 안내지도 제공, 관광 안내소에 따라 영어, 중국어, 일어 관광 안내 가능. 움직이는 관광 안내소에서 외국어 책자 제공과 안내 서비스
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('종로 청계 관광특구','03072','서울특별시 종로구 율곡로 99',38,127,'청계천과 종로거리 사이 서린동부터 창신동까지 길게 뻗어있는 청계관광특구는 거리를 따라 관철동 젋음의 거리, 광장시장, 세운상가, 조명상가, 약국·의료기기 상가, 휘장상가, 인장거리, 문구·완구시장, 수족관거리, 신발상가 등 무려 1만 4,000여 개의 상점들이 있는 곳이다. 종로청계관광특구 인근에는 세련된 고층 빌딩숲과 함께 조선시대 궁궐인 경복궁, 창덕궁, 창경궁, 덕수궁, 운현궁과 종묘 그리고 인사동까지 있어 현대와 전통, 문화와 시장을 복합적으로 관광할 수 있다. 서울시의 심장과 같은 청계천 인근에는 언론사와 관공서, 서점 등이 밀집해 서울문화를 가장 가까이 느낄 수 있는 공간이며 청계천을 따라 걷는 산책 코스도 잘 갖춰져 관광객들의 많은 사랑을 받고 있다. 또한 이 지역은 조선시대 국가공인 장터였던 시전이 있던 곳으로 가을에는 ‘육의전 체험축제’로 겨울에는 ‘빛초롱축제’로 관광객을 불러모으고 있다. 청계관광특구에서는 옛 모습을 간직한 좁다란 골목, 오래된 한옥, 크고 작은 가게들을 둘러보는 것만으로도 충분히 흥미롭지만 구석구석 숨어 있는 서민들의 오래된 맛집을 찾아보는 것도 관광에 큰 즐거움을 줄 것이다.<br /><br />* 종로 청계 관광특구 현황<br />1) 범위 : 광화문 빌딩~숭인동 사거리(서린·관철·관수·장사·예지동 전역, 신문로1가 일부, 종로1~6가 일부, 창신동 일부)<br />2) 면적 : 540,602㎡<br />3) 관광특구 지정일 : 2006년 3월 22일<br /><br />* 종로 청계 관광특구 시설 현황<br />고궁, 미술관, 박물관, 창덕궁과 종묘 등 문화 시설 및 세계문화유산 분포<br>','02-2148-1861',null,null,null,null,null,null,null,'고궁 및 미술관, 박물관, 청계천변 등의 27개 주차장 이용 가능','없음','없음','이용가능시설:관광 안내소, 외국인 통역 안내소, 특급 호텔, 관광호텔, 면세점, 관광 식당 등<br />
+청계천변으로 음식점과 관광 안내소 등 편의 시설 이용 가능
+화장실:고궁이나 미술관, 호텔, 청계천변 등의 공중 화장실 이용 가능 
+외국어 안내서비스:고궁 등에서 시간에 따라 영어와 중국어, 일어 문화 해설 이용<br />
+움직이는 관광 안내소에서 외국어 안내 가능 및 외국어 안내책자 제공<br />
+일반 관광 안내소와 고궁, 박물관 등에 영어, 중국어, 일어 등 외국어 안내 책자 비치
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서촌마을','03037','서울특별시 종로구 필운대로 45',38,127,'서촌은 경복궁 서쪽에 있는 마을을 일컫는 별칭이다. 오랫동안 골목을 지켜온 낡은 상점들과 한옥집, 그리고 새로 생겨난 숍들과의 조화가 전혀 어색하지 않은 곳이다. 미로 같은 골목길을 걷다 보면 상큼한 파스텔 컬러의 벽화와 앙증맞은 그림들이 눈과 발을 사로잡는다. 옛 느낌과 더불어 감각적이고 세련된 공간들도 함께 공존하고 있는 서촌은 특유의 정겨움과 소박함을 유지하고 있다.<br>','02-2148-1114',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아리수나라','04991','서울특별시 광진구 능동로 216(능동)',38,127,'아리수나라는 우리나라 최초의 수돗물 체험 홍보관이다. 실내의 4개 나라와 바깥나라까지 아이들이 보고, 놀고, 체험하는 과정을 통해 수돗물에 대해 자연스럽게 이해하고 환경의 중요성까지 일깨울 수 있다.','02-3146-5946',null,'주 월요일, 1월 1일, 설날 및 추석 연휴','프로그램 : 4개의 체험관 관람(물의 기원·환경·과학, 아리수의 생산과 공급, 3D 입체 영상실, 아리수 커뮤니티, 물빛놀이터 등)','개인/단체 (적정 연령 만 6세~만 10세)','10~40명',null,'화~일 09:00 ~ 18:00','있음','없음','없음','입 장 료:무료
+내국인 예약안내:개인 자유 관람 / 단체 관람희망일 1주일 전까지 인터넷 홈페이지 신청
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('생명보험교육문화센터','03173','서울특별시 종로구 새문안로5길 31 센터포인트 B/D 3층(도렴동)',38,127,'<strong>금융보험에 대해 재미있게 체험하고 학습할 수 있는 공간, 생명보험교육문화센터입니다.</strong><br />생명보험교육문화센터는 생명보험의 기본정신인 생명존중, 상부상조를 실천하고자 생명보험사 공동 사회공헌 활동의 일환으로 2014년 6월 개관하였습니다. 약 300평 규모의 생명보험교육문화센터에서는 태블릿PC 등을 활용해 어렵게 느낄 수 있는 금융보험 내용을 쉽게 학습할 수 있고, 미션과 문제를 풀어가는 과정을 통해 자기주도학습(self-directed learning)이 가능합니다. 프로그램은 약 2시간동안 진행되는 체험학습과 4시간동안 진행되는 진로학습이 있으며, 매년 약 4,000명의 학생들이 방문하고 있습니다. 생명보험교육문화센터는 교육부 교육기부대상 및 금감원 금융공모전 우수프로그램 등 다양한 외부기관으로부터 수상 및 인증을 받았으며, 생명보험 전용 체험관으로서 우리나라 생명보험산업의 위상을 더욱 강화하고 있습니다.<br>','Tel: 02-2262-6549',null,'주말 및 공휴일','■ 체험학습</br>
+ - 생명보헙의 역사, 금융보험의 이해, 미래 위험대비, 
+   보험직업 체험 등</br>
+■ 진로학습</br>
+ - 체험학습 + 보험직업강의 / 금융보험강의','초·중·고등학생','최소 10명 ~ 최대 40명',null,'■ 체험학습 1일 3회 2시간 운영</br>
+   1회 : 10:00~12:00</br>
+   2회 : 13:00~15:00</br>
+   3회 : 15:30~17:00</br>
+■ 진로학습 4시간 운영 (진행 가능 요일 협의 가능)</br>
+    1회 : 10:00~15:00','있음 (소형, 대형 약 15~20대)','없음','불가','이용가능시설:전시홍보관, 체험학습관, 회의실 등
+주차요금:1시간 6,000원
+입 장 료:무료
+
+화장실:있음
+내국인 예약안내:- 인터넷 홈페이지 신청</br>
+- 대관 예약 안내</br>
+: 평일 9시~18시 / 공익목적의 금융보험 관련 행사
+
+한국어 안내서비스:가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('강남 마이스 관광특구','06164','서울특별시 강남구 영동대로 513(삼성동)',38,127,'일찍이 무역센터가 자리잡으며 국제 교류의 메카로 손꼽혀온 강남 삼성동 일대는, 세계에서 모여든 최첨단 비즈니스맨에게 한국을 알리는 창구 역할을 해왔다. 여기에 1990년대부터 강남 특유의 젊은 문화가 유입되면서 무역센터 일대는 비즈니스의 장이자 젊은 문화의 랜드마크라는 복합적인 성격을 띠며 발전했다. 2014년 싸이의 ''강남스타일'' 열풍과 더불어 국제교류 비즈니스 산업과 한류문화의 공생을 강화하기 위해 이 일대가 강남마이스 관광특구로 지정되었다. 강남 마이스 관광특구는 무역센터 일대로, 전시와 컨벤션, 세미나, 국제 전시회, 컨퍼런스 등이 이어지는 코엑스를 중심으로 자리잡고 있고, 백화점, 호텔, 면세점, 도심공항터미널이 유기적으로 물려 있어, 국내뿐만이 아니라 외국인 관광객이 끊이지 않는다. 특히 가수 싸이의 ''강남스타일''의 세계적인 열풍 이후 문화공간으로서의 가치가 다시 한번 주목받고 있다. 최근에는 말춤을 형상화한 ''강남스타일 랜드마크''가 조성되어, 새로운 명물로 떠오르고 있다. 또한 매년 C페스티벌도 열리고 있다. 한류 문화 콘텐츠를 중심에 둔 C 페스티벌은 가요부터 회화와 조각,만화, 캐릭터 상품, 게임 등 복합 문화가 어우러진 축제의 장으로서, 강남 마이스를 대표하는 축제다. 앞으로 강남 마이스 관광특구 일대는 한국판 타임스 스퀘어인 ‘KoMAD(Korea Media Art District(가칭))’로 조성된다. 최첨단 디스플레이를 활용해 홀로그램과 증강현실을 체험하고, 건물 외벽에 설치된 초대형 LED 전광판에서 표출되는 미디어아트의 장관과 화려한 광고를 감상할 수 있다.<br /><br />
+* 강남 마이스 관광특구 현황<br />1) 벙위 / 서울특별시 강남구 삼성동 일대<br />2) 면적 / 190,386㎡<br />3) 관광특구 지정일 / 2014년 12월 29일<br /><br />* 강남 마이스 관광특구 시설 현황<br />코엑스전시컨벤션센터, 코엑스 아쿠아리움, 코엑스 아티움, 메가박스, 현대백화점, 그랜드인터콘티넨탈호텔, 도심공항터미널 등<br>','02-3445-0111',null,null,null,null,null,null,null,'주차장 이용 가능','없음','없음','이용가능시설:관광안내소, 관람 전시장, 호텔, 유흥음식점, 서점, 영화관, 수족관 등
+외국어 안내서비스:관광안내소 책자 비치 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('전통주갤러리','03059','서울특별시 종로구 북촌로 18',38,127,'서울특별시 종로구 인사동에는 농림축산식품부와 문화체육관광부가 협력하여team_insert;만든, 전통주의 가치를 느낄 수 있는 전통주 갤러리가 있다.team_insert; 우리 농산물로 빚은 우리의 전통주를 상시적으로 홍보하기 위해 마련된 공간으로, 소비자와 외국인이 손쉽게 얻기 어려운 전통주에 대한 다양한 정보를 제공하는 안내 창구의 역할을 하고 있다. 또한 지속적인 전통주의 수요 창출과 시장 확대를 위하여 외식기업 및 유통(판매)전문가를 대상으로 전통주 교육과 비즈니스 상담을 지원하며, 국내외 언론과 파워블로거를 통해team_insert;우리의 전통주와team_insert;문화가 홍보되도록 적극적인 홍보활동도 펼치고 있다.<br />
+전통주 갤러리는 전통주 소믈리에 등 전통주에 특화된 전문가들이 운영을 하고 있으며, 매달 다른 주제를 가지고 다양한 전통주를 소개하고 시음하는 행사도 진행하고 있다. 또한 매달 달라지는 ''월별추천전통주''에 따라 한국공예디자인 문화진흥원에서 추천한 그 달의 술잔과 술병을 함께 전시하고 있다.team_insert; <br />
+<br />
+
+<strong>전통주 갤러리 전시</strong><br />
+team_insert; -우리 농산물을 기반으로 한 한국 전통주를 주제에 따라 전시하여 지역 특색이 담긴 한국 술의 다양성과 가치를 알림<br />
+  (식품명인의 전통주, 찾아가는 양조장, 우리술 품평회 수상작, 지역별 전통주 등)<br />
+team_insert; -주제별 전통주에 따른 한국공예디자인 문화진흥원 추천 주기 및 주병 전시<br />
+<br />
+<strong>전통주 콘텐츠 체험<br /></strong>team_insert;- 매달 달라지는 테마를 통해 지역별, 주제별로 선정한 전통주와 프리미엄 막걸리, 국산 와인 4~5종을 선정하여 이야기를 곁들인 시음체험 프로그램을 진행. (휴관일 제외, 매일 오후 3회 진행, 사전 예약제, 무료)<br />
+team_insert;- 월별로 관련분야전문가 초청하여 소비자와 소통의 장 마련 및 자유토론을 통한 전통주 발전 방향 모색<br />
+<br />
+<strong>전통주 비즈니스 센터</strong><br />
+team_insert;- 전통주 외식업 컨설팅 / 전통주 수출 컨설팅 (예약제)<br />
+<br />
+<strong>외국인 특화 프로그램</strong><br />
+team_insert;- 외국인 대상 전통주 교육 프로그램 진행(예약제)<br />
+<br /><br>','전통주 갤러리 02-739-6220',null,'매주 월요일 휴관','<strong>전통주 시음 및 체험 프로그램</strong><br />
+team_insert;- 정규 시음 프로그램 : 매일 1시·3시·5시 (3회 진행 / 20분), 이메일 예약제 (무료)<br />
+- 특별 시음 프로그램team_insert;: 심도 깊은 전통주 체험을 원하는 내·외국인 대상team_insert;/ 단체 4인 이상 전화문의 요망<br />
+team_insert;- 여행사 및 단체관람객 안내 : 최대 인원 20명, 사전 협의를 통해 시간team_insert;결정, 3일전까지 예약문의team_insert;<br />
+team_insert;- 전통주 전문가 초청 세미나 : 월별로 관련분야 전문가를 패널로 초청하여 소비자와의 소통의 장 마련<br />
+team_insert;- 막걸리 및 전통주 UCC 방영 (상시)<br />
+<br /><br>',null,null,null,'10:00 ~ 18:00 <br />
+시음 및 안내 : 1시, 3시, 5시 (매일 3회)',null,'없음','없음','상점정보:<strong>전통주 갤러리 샵</strong><br />
+-team_insert;전통주team_insert;team_insert; 전통주 미니어처, 전통주 관련 공예품, 전통주 갤러리 기념품<br />
+team_insert;- 막걸리 양조키트,team_insert;막걸리 비누, 막걸리 식초 등 판매team_insert;
+입 장 료:무료
+내국인 예약안내:관람 : 상시 가능<br />
+시음 :team_insert;인터넷 예약제 (<a title="새창 : 전통주갤러리 공식 블로그로 이동" href="http://blog.naver.com/soolgallery" target="_blank">http://blog.naver.com/soolgallery</a>team_insert;참고)<br />
+전통주 비즈니스 센터 : 사전 예약 필수<br />
+외국인 특화프로그램 : 사전 예약 필수<br />
+<br /><br>
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('KT스퀘어','03154','서울특별시 종로구 세종대로 178 KT 광화문 빌딩 West1층',38,127,'KT가 만든 복합문화공간으로 최신 IT기기 체험은 물론 다양한 문화공연을 감상할 수 있다. 대한민국의 130년 통신사를 한눈에 볼 수 있는 ''Gallery 130'' , KT의 5G 기술을 직접 체험할 수 있는 ''일상이상''으로 구성되어 있다.<br>','1577-5599',null,'연중무휴','* 시설 : 드림홀(공연장), 갤러리, 카페, 데크 라운지, 서비스라운지 등<br />
+* 전시 : Future Gallery, Gallery 130 등에서 상설전시프로그램 관람<br />
+* 공연 : Dream Hall에서 다양한 장르의 공연, 무료강연, 토크쇼 및 매월 마지막 주 수 문화가 있는 날 행사<br />
+* 투어 : 갤러리 투어는 전문 큐레이터와 함께 올레스퀘어 내부 주요시설을 둘러보고 국내 통신 산업의 역사와 전통을 관람하는 형태로 진행(소요시간 : 20~40분)<br>
+* 신청방법 : https://corp.kt.com > 홍보센터 > 문화 > KT스퀘어 > 투어신청','누구나','최대 20명(추가인원 협의)',null,'09:00~20:00 (주말 및 공휴일 동일)','주차 불가','없음','없음','입 장 료:무료 (드림홀 공연 시 기부금 1,000원)
+이용가능시설:드림홀, 퓨처 갤러리, 갤러리 130, 카페 라운지, 데크 라운지,team_insert;서비스 라운지 등
+화장실:있음
+외국어 안내서비스:외국어 안내(영어)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('백인제가옥','03055','서울특별시 종로구 북촌로7길 16(가회동)',38,127,'북촌 가회동에 위치한 백인제 가옥은 근대 한옥의 양식을 고스란히 보존하고 있는 대표적인 일제강점기 한옥이다. 북촌이 한눈에 내려다보이는 2,460㎡의 대지 위에 당당한 사랑채를 중심으로 넉넉한 안채와 넓은 정원이 자리하고, 가장 높은 곳에는 아담한 별당채가 들어서 있다. 백인제가옥은 전통적인 한옥의 아름다움을 유지하면서도 근대적 변화를 수용하여, 건축 규모나 역사적 가치 면에서 윤보선 가옥과 함께 북촌을 대표하는 건축물로 소개되고 있다.1907년 경성박람회 때 서울에 처음 소개된 압록강 흑송(黑松)을 사용하여 지어진 백인제 가옥은 동시대의 전형적인 상류주택과 구별되는 여러 특징들을 갖고 있다.사랑채와 안채를 별동으로 구분한 다른 전통한옥들과는 달리 두 공간이 복도로 연결되어 있어, 문 밖으로 나가지 않아도 자유롭게 이동할 수 있다. 또한 일본식 복도와 다다미방을 두거나 붉은 벽돌과 유리창을 많이 사용한 것은 건축 당시의 시대적 배경을 반영한 것이다. 또한 사랑채의 일부가 2층으로 건축되었는데, 이는 조선시대 전통한옥에서는 유례를 찾을 수 없는 백인제 가옥만의 특징이다.정원에서는 당당한 사랑채를, 중정에서는 넉넉한 안채를, 그리고 후원에서는 아담한 별당채의 모습을 감상할 수 있는 백인제 가옥은 우리 한옥의 다양한 아름다움이 한 자리에 모인 소중한 문화유산이다.<br>','02-724-0200',null,'매주 월요일 (월요일이 공휴일인 경우 개관), 1월 1일',null,null,'100명',null,'09:00~18:00 (입장마감 17:30)<br />
+※ 자유관람시 관람시간내에 시설 외부 관람 가능<br />
+(안채, 사랑채 등 시설 내부 입장 불가)',null,'없음','없음','입 장 료:무료
+내국인 예약안내:서울시 공공서비스 예약 페이지를 통한 해설 예약 가능 <a title="새창 : 서울시 공공서비스 예약페이지로 이동" href="http://yeyak.seoul.go.kr" target="_blank">http://yeyak.seoul.go.kr</a>
+한국어 안내서비스:평일 4회 (10:00  / 11:00 / 14:00 / 15:00 ) <br />
+주말 및 공휴일 5회 (10:00 / 11:00 / 14:00 / 15:00 / 16:00)<br />
+※ 예약제 운영 / 해설 관람 소요시간 약 50분 (실내입장 포함)
+외국어 안내서비스:외국어 해설 안내(16:00, 수요일- 일본어, 목요일-중국어, 금요일-영어) 예약 및 현장 접수<br />
+※ 예약후 참여가 어려울 경우 02-724-0232로 전화연락 필수<br />
+※ 예약시간보다 10분이상 지연도착할 경우 예약이 취소 됩니다.<br />
+(원활한 해설 진행을 위하여 초등학생미만 참여시 보호자 동반할 경우만 참여 가능)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울로 7017','04509','서울특별시 중구 한강대로 405',38,127,'※ 19_20 한국관광 100선 ※<br /><br />1970년에 준공되어 서울역 동부와 서부를 잇던서울역 고가도로는 당초 안전문제로 철거 위기에 놓였으나, 철거대신 지역의 새로운 활력을 불어넣기 위하여 고가도로를 재활용하는 team_insert;서울로7017가 추진되었고,고립되었던 서울역 일대를 연결하여 ''보행길''로 재생하였다.''서울로7017'' 이라는 이름은 ''1970년에 만들어진 고가도로가 2017년에 다시 태어나고, 1970년대 차량길에서 17개의 사람길로 재탄생하는 1970년대에 만들어진 17m 높이의 고가''라는 의미를 모두 담은 이름이다. 이 이름대로 서울로 7017은 단절되어있던 도시를 연결하는 17개의 보행길을 갖추고 있어, 침체된 지역에 활력을 연결하는 역할을 할 것으로 기대된다.<br /><br />또한 서울로 7017에는 관광안내소 및 카페부터 목련무대, 달팽이극장, 장미무대,방방놀이터 등 다양한 체험시설과 편의시설이 설치되어 있어 쉬고 거닐며 즐길 수 있는 공간이자, 645개의 원형화분에 총 228종의 24,085주의 다양한 수목을 식재한 아름다운 공중정원으로 조성되어있다. 서울로 7017은 365일 24시간 개방되어있어 언제든지 자유롭게 이용이 가능하며, 사전에 서울관광 홈페이지를 통해 서울도보관광 프로그램을 예약하면 서울로 7017과 함께 서울역 일대의 다양한 역사문화유산과 관광명소를 서울문화관광해설사의 전문적인 해설을 들으며 탐방하는 체험도 이용할 수 있다.<br>','02-120',null,'연중무휴',null,null,'5천명',null,'24시간 개방',null,'없음','없음','한국어 안내서비스:서울문화관광해설사 도보관광<br />
+- 이용방법 : 서울관광 홈페이지 (<a title="새창 : 서울관광 홈페이지로 이동" href="http://korean.visitseoul.net" target="_blank">http://korean.visitseoul.net</a>)를 통한 사전 예약 (개인은 3일전 / 단체는 5일전까지)<br />
+- 프로그램 : (서울로 7017) 한양에서 서울로 / (서울로 7017) 서울로 근·현대 건축기행 / (서울로 7017) 서울로 야행<br />
+- 이용요금 : 무료<br />
+ ※ 상세내용은 서울관광 홈페이지를 통해 확인요망<br />
+외국어 안내서비스:서울로 7017 리플릿 : 한국어, 영어, 중국어, 일본어 제공 (서울로 7017 홈페이지에서 다운로드 가능)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경성 부민관 폭탄 의거지','04519','서울특별시 중구 세종대로 125(태평로1가)',38,127,'1945년 7월 24일 경성부민관 폭탄의거 경성부민관은 1935년 12월 태평통 1정목 60번지에 세워진 경성부의 부립극장(府立劇場)으로, 오늘날로 하면 시립극장이다. 경성부민관은 지하 1층, 지상 3층에 대강당·중강당·소강당·담화실 등을 갖춘 다목적 회관으로서, 당시로는 드물게 냉난방 시설과 조명·음향시설을 갖추어 각종 극단의 공연은 물론 전시총동원체제하 각종 관변 집회의 장소로 널리 이용되었다. 경성부민관 폭탄의거를 주도한 조문기·유만수·우동학·강윤국 등 당시 20세 안팎의 열혈청년들은 1945년 5월 서울 관수동 13번지 유만수의 집에서 대한애국청년당을 결성하고 항일투쟁의 기회를 엿보았다. 1945년 7월 24일 저녁 경성부민관에서 친일파 거두인 대의당의 박춘금(朴春琴) 일당이 주최하는 아세아민족분격대회가 열린다는 보도가 나오자, 조문기 등은 비밀회합을 갖고 대회장을 폭파할 계획을 세웠다. 이를 위해 유만수가 수색변전소 공사장 발파 인부로 침투해 빼낸 다이너마이트로 사제폭탄 두 개를 만들어 대회 전날 밤 대회장 뒤편 화장실 쪽에 설치하였다. 폭탄은 대회 당일인 7월 24일 밤 9시경 박춘금이 시국강연을 위해 등단하고 얼마 뒤에 터졌고, 그것으로 대회는 중단되고 말았다. 경성부민관 폭탄의거는 해방을 한 달도 채 남겨두지 않은 시기에 꺾일 줄 모르는 민족의 독립의지를 안팎에 떨친 사건이었다.현재는 서울시의회 부지로 폭탄의거지임을 알리는 표지석이 설치되어 있다.<br>','02-3396-5842',null,null,null,null,null,null,null,'없음','없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('김익상 의거지','04628','서울특별시 중구 소파로 126(예장동)',38,127,'김익상은 1895년 평남 강서에서 태어나 평양 숭실학교를 졸업하고, 서울로 와서 광성연초공사의 기계감독으로 한동안 근무하였다. 그후 중국으로 건너간 김익상은 북경에서 김원봉을 만나 의열단에 입단하였다. 의열단에서 조선총독부 폭파 지령을 받고 서울로 잠입한 김익상은 1921년 9월 12일 전기수리공으로 가장하고 남산 중턱 왜성대 조선총독부 청사에 들어가 비서과 인사계실과 회계과에 폭탄 2개를 던졌다. 이 가운데 하나는 불발하고 회계과에 던진 폭탄이 터져 기물을 파손하였으나 인명피해는 없었다. 거사 직후 피신하여 북경으로 돌아온 김익상은 1922년 2월 상해로 가서 동지 오성륜과 함께 2월 28일 오후 3시 반경 상해 세관 부두에서 필리핀에서 도착한 일본 전육군대신 다나카 기이치[田中義一] 육군대장을 향해 폭탄을 던지고 총탄을 발사하였으나 소기의 성과를 거두지 못하고 체포되어 일본 나가사키[長崎]형무소에서 옥고를 치르다 순국하였다. 현재는 서울애니메이션 센터 부지로 의거지임을 알리는 표지석이 설치되어 있다.<br>','02-2133-2597',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대한제국군 서울시가 전투지','04513','서울특별시 중구 세종대로 39',38,127,'1907년 통감부가 대한제국 군대해산을 통고하자 제1연대 1대대장 박승환은 대한제국군의 해산 소식에 격분해 "군인으로서 나라를 지키지 못하고 신하로서 충성을 다하지 못하였으니 만 번 죽은들 무엇이 아깝겠는가."라는 말을 남기고 자결을 택했다. 이를 본 장병들이 대대 일부 장교들의 지휘에 따라 무기고를 부수고 총을 꺼내 일본군과 교전을 시작하였다. 대한제국군 장병들이 분투했으나 현격한 전력의 차이로 인하여 시가전은 일본군의 승리로 끝나고 말았다. 이 전투에서 대한제국군은 장교 11명 등 68명이 전사하고 100여명이 부상당했다. 해산된 대한제국의 군인들은 의병에 합류했고 항일의병의 전력이 예전과는 비교 할 수 없을 만큼 강해졌다. 현재는 서울대한상공회의소 부지로 건물 오른쪽 화단에 현충시설 안내판이 설치되어 있다.<br>','02-3396-5842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('반공 청년운동 순국 열사 기념비','04628','서울특별시 중구 남산공원길 125-72',38,127,'반공청년운동 기념비 건립위원회는 1968년 10월 9일 중구 예장동 산5-6에 반공청년운동을 전개하다 순국한 애국열사들의 넋을 기리고 그들의 호국정신을 길이 계승하고자 이 기념비를 건립하였다.<br>','02-2238-2172',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('상동교회','04529','서울특별시 중구 남대문로 30(남창동)',38,127,'상동교회는 1901년 기독교 스크랜튼 선교사가 설립한 감리교 교회이다. 1904년 교회 안에 여학생을 위한 초등학교인 공옥학교와 병행하여 청년학원을 세워 민족지도자를 양성하였으며, 1907년 전덕기 목사가 담임하면서 독립운동의 비밀본부 역할을 하였다. 이 학교의 교감 이회영, 전덕기, 이동녕 등이 항일 비밀결사인 신민회를 결성하여 국외 독립운동 기지 개척사업을 추진하였으며, 헤이그 밀사파견의 산실이 되었다. 이 교회는 민족운동에 참여한 많은 인재들을 길러 내었는데, 이동녕, 박용만 이승만 등이 이곳에 속하여 있었다.<br>','02-752-1136',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신석구 사택 터','04542','서울특별시 중구 청계천로 100(수표동) 부근',38,127,'신석구는 충북 청주군 미원면 금관리에서 태어났다. 15세때 고향을 떠나 방랑생활을 할 때 친구 김진우의 전도로 기독교로 개종하고 신앙생활을 시작하였다. 그는 1908년 정식으로 전도자의 길을 가게 되었는데 1918년에는 서울 수표교 교회에 파송 받아 목회하는 중에 3·1운동에 민족대표 33인중 1인으로 참여하였다. 1919년 2월 27일 기독교 측 대표들이 정동교회 이필주 목사 집에 모여 독립선언서에 서명할 때 신석구도 참여하여 서명하였다. 3월 1일 명월관 지점에 모일 때도 참여하여 독립선언 후 체포되어 2년 반의 옥고를 치루게 되었다. 1921년 11월 4일 출옥 후에는 목회에 임하였다. 천안교회의 목회 중에는 신사참배 반대투쟁을 일으켜 믿음을 지키도록 하다가 다시 체포되어 중형을 받아 중한 병을 얻고 석방되었다. 그 후 1939년 일제의 신사가 없는 평남 용강군 신유리교회, 유사리교회, 문애리교회에서 목회하다가 1945년 5월 전승기원 예배와 일장기 게양을 거부했다는 이유로 용강경찰서에 연행되어 감옥에서 해방을 맞았다.<br>','02-3396-5842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우당 이회영 선생 흉상','04538','서울특별시 중구 명동11길 20(명동1가)',38,127,'이회영은 이조판서 이유승의 4남으로 태어나 성장했다. 1905년에 을사늑약 체결의 음모를 저지시키고 무효화 하는 운동을 주도하였고, 고종황제를 설득하여 헤이그 만국평화회의에 밀사 파견을 주장하여 관철시켰다. 그러나 1910년 한일병탄이 되자 6형제 전원과 일가족 50여 명이 전 재산을 정리하여 망명을 떠났다. 그는 만주에서 신흥무관학교의 전신인 신흥강습소를 개소하였고, 1912년에는 ‘합니하’로 이전하여 본격적인 무관학교 교육을 시작한다. 신흥무관학교는 1920년 폐교할 때까지 독립군 간부 3,500여명을 양성하는 성과를 이루고 독립전쟁을 주도하였을 뿐만 아니라 광복군을 창설하는 밑거름이 된다. 이와 더불어 고종황제를 설득하여 망명계획을 추진하였다.team_insert; 상해 임시정부가 구성되어 그는 의정위원으로 참여한다. 이후 아나키즘 운동과 ‘의열단’ 조직을 지원함과 동시에 ‘항일구국연맹’을 결성하여 흑색공포단을 산하에 두고 의혈투쟁에 매진한다. 중국의 항일부대와 독립군 부대가 연합하여 항일투쟁을 하도록 현지 지도 차 잠입하던 중 대련에서 체포되어 여순 감옥으로 이송한다. 그는 이곳에서 모진 고문과 굶주림으로 순국하는데 이때가 선생의 나이 66세인 1932년 11월 17일의 일이었다. 이러한 이회영 선생의 공적을 기려 기념사업회에서 건립하였으며, ''이회영 이시영 6형제 집터'' 표지석이 위치한 서울YWCA 앞에 함께 놓여 있다.<br>','02-734-8851',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이충순 자결 터','04511','서울특별시 중구 서소문로 88(순화동)',38,127,'이충순 지사는 충청남도 홍성(洪城) 출신이다. 일찍이 군문에 들어가 1902년 7월에 육군보병 참위(參尉)로 임관되었다. 1905년에 군인구락부를 조직하고 구국운동을 전개하였다고 한다. 1907년 정미7조약(丁未七條約)이 체결되고 이어서 비밀각서에 의하여 한국군마저 강제 해산되기에 이르렀다. 8월 1일 시위대(侍衛隊)가 전격적으로 해산 당하자 이를 거부하고 이러한 사태에 대처하여 미리 파견된 일군과 경성에서 접전하던 중 크게 부상을 당하였다. 적에게 사로잡히게 될 위기에 처하자, 그는 즉석에서 자결하여 체포당하는 수모를 받지 않았다. 정부에서는 고인의 공훈을 기리어 1990년에 건국훈장 애국장(1977년 건국포장)을 추서하였다. 중앙일보 빌딩 앞 화단에 서울시에서 설치한 표지석이 자리하고 있다.<br>','02-3396-5842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('정동교회 이필주 사택 터','04516','서울특별시 중구 정동길 46(정동)',38,127,'3·1운동에 앞서 제2, 3차 학생단 간부회와 기독교계 대표들이 회합을 가졌던 이필주 목사의 사택이 있던 곳. 목사의 사택에서는 2월 25일, 26일 학생 대표들이 모여 독립운동 참여 방안을 논의하였고, 2월 28일에는 학생대표들에게 ''독립선언서''를 배부하기 위한 모임이 열렸다. 또한 이곳에서 기독교계 대표들이 모여 독립선언에 참여할 기독교측 민족대표의 인선을 마무리 지었다. 1918년부터 정동교회를 담임하던 이필주 목사는 3·1운동 추진계획을 듣고 그 취지에 동의하여 민족 대표 33인의 한 사람으로 ''독립선언서''에 서명하였고, 이로 인해 2년 여의 옥고를 치렀다.<br>','02-753-0001',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한복남','03044','서울특별시 종로구 사직로 133-5',38,127,'지금은 한복 입혀주는 남자, ''한복남''이라는 이름으로 서울까지 진출했지만, 이전에는 전주에서 2012년부터 한복데이를 기획하여 사람들에게 한복의 아름다움을 알리는 데 큰 역할을 했었다. 이처럼 한복의 재발견으로 주목받은 한복남은 문체부에서 2015년 창조관광기업으로 선정됐고, 2016년 북촌에 한복남 전시실과 대여점을 열었으며, 2017년에는 제주도지점과 홍대지점을 오픈한다. 비치된 한복은 감탄이 나올 만큼 화려하고 다양하다. 왕과 왕비 캐릭터에 맞춘 고급 한복부터 거지 한복까지 다양한 테마로 준비되어 있다. 전시된 한복 치마 중에 하나를 선택하면 스태프가 저고리를 추천해주며, 댕기나 비녀 등 다양한 악세사리도 골라볼 수 있다.<br /><br />1. U20 FIFA 월드컵 - 1000명 기적 한복 응원단<br />한복남은 전주에서 열린 개막식에 참여하여 전주시 소속 월드컵 추진위원단과 함께 "전주스러운 개막응원전"을 만들어 전국에서 모인 1000명의 시민들과 함께 한복응원전을 펼쳤다.<br /><br />2. HANBOKNAM 제주도 지점 홍대지점 오픈<br />전주한옥마을에서 시작된 한복남은 서울경복궁, 창경궁, 잠실롯데월드, 홍대, 제주도 지점을 오픈했다.<br /><br />3. HANBOKNAM의 새로운 꿈. 그리고 미션 (기업 존재의 이유)<br />기존 한복이 어렵고 비싸다는 한복의 개념을 바꾸어 한복은 쉬울 수 있고, 합리적인 가격으로 즐길 수 있는, 대한민국 곳곳에서 한복을 입을 수 있는 문화를 만들자는 목표를 가지고 있다.<br /><br />4. 해외에서 러브콜이 조금씩 들려온다. 세계속에서 ''한복''한복남의 서비스를 가지고 해외 각지에서 한복을 이용할 수 있도록 하며, 현지 여행사들과 미팅을 통해 "한복체험 패키지 상품"을 구성하고 있다.<br>','0507-1435-0189',null,'연중무휴','* 전통한복체험<br />
+1시간 30분 - 10,000원 / 2시간 30분 - 15,000원 / 4시간 - 20,000원 / 하루 -30,000원<br />
+<br />
+* 테마한복체험<br />
+1시간 30분 - 20,000원 / 2시간 30분 - 30,000원 / 4시간 - 40,000원 / 하루 - 50,000원<br />
+<br />
+* 악세사리,기타<br />
+물품보관함 1,000원<br />
+댕기·배씨댕기 2,000원 / 비녀·코사지 3,000원 / 속치마 2,000원 / 가방·꽃신 2,000원 / 어우동 모자·갓 3,000원<br />
+<br />
+* 화보촬영(경복궁 지점에서만 가능)<br />
+스튜디오 프로필 촬영 - 1인기준 10,000원<br />
+실속화보 촬영 - 30,000원<br />
+전문화보 촬영 - 1팀 기준 50,000원<br />
+<br />
+※ 자세한 내용은 전화문의 요망<br />
+※ 대여시간 초과시 추가 비용 발생<br>',null,null,null,'09:00 ~ 19:00<br>
+※ 시기에 따라 마감시간 변동됨으로 매장 문의',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('유관순동상','04621','서울특별시 중구 장충단로 101(장충동2가)',38,127,'천안 아우내 장터에서 독립만세운동을 주동하다 체포되어 옥중에서 순국한 유관순 열사의 애국정신을 후세에 알리기 위해 건립되었으며, 장충동 남산공원(남산 2호 터널 입구)에 위치해 있다. 유관순은 이화학당 재학 중 3.1운동이 일어나자 학생들과 함께 가두시위를 벌였고, 학교가 휴교에 들어가자 만세 시위를 지휘하기 위하여 고향인 천안 병천으로 내려갔다. 1919년 4월 1일, 3천여 명의 시위 군중이 모인 아우내 장터에서 유관순은 미리 준비한 태극기를 시위 군중들에게 나누어 주고 시위대열의 선두에 서서 독립만세를 외치며 시위 행진을 주도하였다. 이에 일본 헌병은 총검을 휘두르고 무차별 사격을 감행하여 유관순의 아버지 유중권과 어머니 이소제 등 19명이 현장에서 순국하고 30여 명이 부상당하였다. 일제는 유관순을 이 독립만세운동의 주동자로 체포하여 서대문형무소에 감금하였으나 유관순은 옥중에서도 계속 독립만세를 외치다가 모진 고문으로 결국 1920년 10월 18세의 꽃다운 나이에 옥중에서 순국하였다.<br /><br />* 규격 - 동상높이 3m, 좌대높이 6.8m<br />* 건립자 - 애국선열조상건립위원회, 서울신문사(1970.10.12. 건립)<br>','02-2125-0848',null,'연중무휴',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성재이시영선생동상','04636','서울특별시 중구 회현동1가 100-115(남산공원 백범광장 내)',0,45713430,'성재 이시영 선생은 일제에 국권을 빼앗긴 당시, 형 건영ㆍ석영ㆍ 철영ㆍ 회영, 동생 호영과 함께 6형제가 전 재산을 바쳐 독립운동에 투신한 명문가 출신으로,  노블레스 오블리주를 실천하신 그를 기리기 위한 동상이 남산공원 백범광장 내에 위치하고 있다.선생은 일찍이 관직생활을 시작하였으며 1910년 일제에 의하여 국권이 피탈 당하자 형제, 가족과 중국으로 망명하여 경학사와 신흥무관학교를 설립하여 교육을 진흥하고 수많은 독립군을 양성하여 청산리 전투를 승리로 이끄는데 큰 공헌을 하였다. 1919년 상해 대한민국 임시정부 수립에 주도적으로 참여하여 법무총장, 재무총장으로 재직하며 1945년 해방시까지 임시정부를 끝까지 지켰으며, 광복 후 환국하여 신흥무관학교의 건학이념을 계승하고 인재를 양성하기 위하여 1947년 성재학원 신흥대학(현 경희대)을 설립하였다. 1948년 7월 제헌국회에서 대한민국 초대 부통령에 당선되었으나 독재 정권에 항의하며 1951년 5월 ''국민에게 고함''이라는 성명서를 발표하고 부통령직을 하임하였으며, 1953년 피난지인 부산 동래에서 서거하셨다.<br /><br />* 규격 - 동상높이 2.7m, 좌대높이 4.3m<br />* 건립자 - 성재이시영선생동상건립위원회(1986.04.17. 건립)<br>','1577-0606',null,'연중무휴',null,null,null,null,null,'있음(남산공원주차장 이용)','없음','없음','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우남 이승만박사 동상','05234','서울특별시 강동구 고덕로 227(고덕동) 배재중고등학교 내',38,127,'어려서부터 한학을 공부하였던 우남이승만은 현재 동상이 위치한 배재고의 전신인 배재학당에 입학 후 신학문을 배워 개화기 언론과 독립협회의 개혁운동을 주도하다가 옥고를 치렀다. 석방 후 미국으로 건너가 박사 학위를 받았으며 해외에서 조국 광복을 위한 외교와 민족교육 및 홍보활동을 펼쳤다. 광복 후 1948년 대한민국정부 수립과 함께 초대 대통령을 지냈다.<br /><br />* 규격 - 가로 4m, 세로 4m, 높이 7.3m<br />* 건립자 - 학교법인배재학당(1984.02.28. 건립)<br>','02-429-1885',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일성이준열사동상','04620','서울특별시 중구 동호로 257-8',38,127,'헤이그 밀사로 특파되어 일제 침략의 부당함을 알린 이준 열사를 기리기 위하여 장충단 공원 내에 건립되었다. 이준 열사는 1859년 함남 북청 출신으로 독립협회에 가입하여 1898년 11월의 만민공동회에서 가두연설을 하는 등 적극적으로 활동하였고 1904년 대한보안회를 조직하여 일본의 황무지 개간권 획득을 저지하는 운동을 전개하였으며 일진회에 대항하여 공진회를 조직하고 친일적인 대신들을 규탄하는 등 애국계몽 운동에 힘썼다. 1907년 광무황제로부터 네덜란드 헤이그에서 개최되는 만국평화회의에 참석하라는 밀령을 받고 이상설, 이위종과 함께 헤이그에 도착하여 황제의 친서를 전달했으나 일제의 방해로 회의에 참석하지 못하게 되자 일제의 한국침략을 폭로 규탄하고 을사조약이 무효임을 선언하는 공고사(控告詞)를 공개하여 세계 언론에 여론을 환기시켰다. 그러나 각국의 언론들이 협조적인 데 비해 열강들이 냉담한 반응을 보이자 이에 분개한 열사는 연일 통탄하다가 의분을 이기지 못하고 순국하였다.<br /><br />* 규격 - 동상높이 3m, 좌대높이 4.8m<br />* 건립자 - (사)일성이준열사기념사업회(1964.07.14. 건립)<br>','1577-0606',null,'연중무휴',null,null,null,null,null,null,'없음','없음','화장실:있음
+입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한국유림독립운동파리장서비','04620','서울특별시 중구 동호로 261',38,127,'1919년 3.1운동이 일어나자 한국 유림은 파리에서 열린 세계평화회의에 한국의 독립을 호소하는 서한을 제출해 독립의지를 세계만방에 떨친 공헌을 한 바, 이를 기념하기 위해 대통령희사금과 국민의 성금 등으로 1972년 10월 서울 중구 장충단공원에 비를 건립하였다.파리 장서(長書)는 일제의 한국 주권 찬탈 과정을 폭로하고 식민 지배의 불법성과 한국 독립의 정당성을 주장하여 한국의 모든 계층과 사회 집단이 독립을 열망하고 있음을 국내외에 널리 알렸던 서한이다.곽종석, 김복한을 비롯하여 유림 대표 137명이 연서한 이 장서를 김창숙으로 하여금 상해로 가져가도록 하였고 이를 다시 김규식을 통하여 파리 강화회의에 제출되었으며 또한, 각국 대표와 외국 공관과 국내 각지의 향교에도 배포되었다.일본은 파리장서 운동에 참가한 유림들은 체포 투옥하는 등 가혹하게 탄압하였으며(제1차 유림단 사건), 이 사건을 계기로 유림계는 한말 구국운동의 전통을 계승하여 독립운동에 적극 참여하게 되었다.<br /><br />* 규격 - 높이 4.5m<br />* 건립자 - 한국유림독립운동파리장서협회(1973.10.03. 건립)<br>','1577-0606',null,'연중무휴',null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('망우리 시민공원','02178','서울특별시 중랑구 망우로 570(망우동)',38,127,'망우리공원은1933년 2월 2일자 동아일보 “미아리 공동묘지가 조만간 가득 찰 것에 대비하여 경기도 망우리의 임야 70여 만 평을 경성부의 공동묘지로 결정하였다.” 1935년 10월 24일자 동아일보 “이태원의 공동묘지를 택지화하기 위하여 37,000餘基 중 연고자가 있는 묘는 망우리로 이장하고 무연고 묘는 신사리(新寺里)에서 화장하기로 하였다.”라는 기록에서 알 수 있듯이 망우리 망우산을 1933년부터 서울시의 공동묘지로 사용하기 시작하였다. 
+
+이후 40년이 지난 1973년 3월 25일에는 28,500여기의 분묘가 가득차 더 이상의 묘지 쓰는 것이 금지된 이후 현재는 이장과 납골을 장려하면서 2018년 12월 기준 7,425基가 있으며, 앞으로도 계속해서 줄어들 전망이다. 이 시기에 도산 안창호, 고하 송진우, 명창 임방울, 애국지사 조종완, 박찬익, 백대진 등의 묘소도 이장하여 국립묘지와 사립공원 묘지에 안장되어 있다.
+
+1992년 2월에는 이곳에 안장되어 있는 방정환, 오세창, 한용운, 조봉암, 지석영, 문명훤, 장덕수 등 7명의 연보비를 중랑구에서 산책로를 중심으로 조성했으며, 1998년 2월에는 추가로 박인환, 문일평, 서병호, 서동일, 오재영, 서광조, 유상규, 오긍선 등 8명에 대한 연보비가 추가로 5.2km의 산책로에 조성하였다.
+
+그 동안 망우리 공원에는 3.1독립운동을 주도했던 萬海 한용운 등을 비롯한 17인의 유명인사가 안장되어 있는 것으로 알려졌으나, 각 언론사 인명록 및 독립유공자 공훈록을 중심으로 서울시 시설관리공단 장묘문화센터의 고인 검색을 통해 묘역을 확인하고 현장 답사를 통해 소설가 계용묵을 비롯한 10인의 유명인사가 추가로 안장되어 있음이 밝혀졌다.
+
+<출처 : 서울시 중랑구청>','02-2094-6824',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('화랑대 철도공원','01802','서울특별시 노원구 화랑로 608',38,127,'화랑대 철도공원은 공릉동 화랑대역 400m 구간에 조성된 불빛 정원원이다. 경춘선숲길 마지막 구간에 위치하며, 서울의 마지막 간이역이던 옛 화랑대역을 공원으로 탈바꿈했다. 실제 운행되었던 기차들이 전시돼 있으며, 불빛정원 개장에 이어 철도와 시간박물관, 기차카페 등을 운영하고 있다. 불빛정원은 화랑대역 400m 구간에 조성돼 있는데, 비밀의 화원, 불빛터널, 음악의 정원, 불빛정원, 하늘빛정원, 생명의 나무, 환상의 기차역, 은하수 정원, 숲속 동화나라, 반딧불 정원 총 10코스의 다양한 야간 경관 조형물로 이루어져 있다.<br>','02-2116-0545',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('채석장 전망대','03096','서울특별시 종로구 창신동(창신동)',38,127,'낙산 자락에 위치한 채석장 일대는 일제강점기 조선총독부와 옛 서울역 등을 짓는 데 사용될 석재를 공급하는 곳이였다. 한국 전쟁 이후 이주민과 피란민이 모여 마을을 이뤘으며,  2007년 뉴타운 지역으로 지정돼 아파트 단지가 들어설 뻔했으나, 주민들이 반대해 지정이 해제됐다. 현재는 국내 도시재생의 모범 사례로 평가받는다. 2019년 11월 채석장 상부에 문을 연 창신숭인채석장전망대는 서울의 스카이라인이 한눈에 보인다. 전망이 좋아 많은 주민들이 찾고 있다.','070-8844-6364',null,'월요일',null,null,null,null,'평일 13:00 ~ 22:00 (월요일 휴무)<br />
+주말 10:00 ~ 22:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('설화수 플래그십 스토어','06021','서울특별시 강남구 도산대로45길 18',38,127,'전통을 담은 한방 트리트먼트를 바탕으로 몸과 마음을 회복해 내재된 아름다움을 되찾도록 도와주는 설화수 플래그십 스토어. 설화수가 추구하는 미의 가치를 체험할 수 있는 감각적인 공간이다. 예로부터 우리 조상들은 여성의 아름다움을 가꾸는 데 필요한 지혜를 모으고 그 방법을 기록했다. 대표적으로 전통 고전인 <본초강목>이나 <동의보감> 등의 책에서는 한방 약재를 이용해 아름다움을 가꾸는 다양한 방법을 소개하고 있다. 이렇게 귀한 한방 성분으로 몸과 마음의 아름다움을 동시에 지켜내기 위해 노력해온 전통의 비법을 담고 그 가치를 이어나가기 위한 곳이 바로 ''설화수 플래그십 스토어''다.<br>','02-541-9272',null,'첫째주 월요일, 1월 1일, 설, 추석 당일 휴무',null,null,null,null,'10:00 - 20:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('SPA 1899 동인비','06176','서울특별시 강남구 영동대로 416(대치동)',38,127,'한방에서는 조금만 움직여도 땀이 나고 더운 여름에는 원기 소모가 심하다고 말한다. 다른 계절보다 더 피로를 느끼기 쉽고 체력이 많이 소모되기 때문에 무엇보다 원기를 보충해주는 것이 중요하다고 설명한다. 이에 <동의보감>에서는 기운을 돋워주는 식품으로 홍삼을 추천한다. <동의보감>에 따르면 ''홍삼은 늙지 않고, 오래 살고, 기운을 돋우는 효능이 있다''고 한다. 원기 회복과 피로 해소에 홍삼이 특효라는 의미다. 홍삼은 인삼을 껍질째 3시간 정도 찐 후 서서히 말린 것인데, 찌고 건조하는 과정에서 당 성분이 떨어져나가고 인삼에는 없는 새로운 유효 성분이 생기면서 함량이 풍부해진다. 홍삼에 많은 사포닌 성분은 면역력을 증진하고 원기 회복에 도움을 주는 것으로 유명하다. 진세노사이드 성분은 영양분 흡수와 소화를 돕고 신진대사를 촉진해 원기를 회복시키는 것으로 알려져 있다. 이렇게 몸에 좋은 홍삼을 이용해 전문적인 스파를 제공하는 곳이 있다. 바로 홍삼 명품 브랜드 ''정관장''에서 운영하는 SPA 1899 동인비다.<br>','02-557-8030',null,null,null,null,null,null,'10:00 ~ 22:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('배봉산','02508','서울특별시 동대문구 전농동',38,127,'해발 108m의 배봉산에 조성된 배봉산근린공원은 산지형 공원으로 비탈졌으나 무장애 둘레길이 있어 수월하게 오를 수 있는 공원이다. 배봉산근린공원은 걷기에 최적화된 길이다. 보행로 또한 완만한 오르막과 내리막으로 되어있어 걷기만 해도 운동량이 적당하며 중간에 벤치들이 적절하게 배치되어 있어 쉬어가기 좋다. 보행 데크가 잘 정비되어 있어 보행 약자에게도 좋은 산책길이자 운동길이다. 배봉산 정상부에 위치한 배봉산 보루는 2017년 2월9일 서울특별시 기념물로 지정되었다.<br>','02-2215-8573',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('안녕인사동','03145','서울특별시 종로구 인사동길 49',38,127,'2019년 10월에 오픈한 안녕인사동은 다양한 먹거리, 즐길거리, 볼거리가 가득한 복합문화공간으로, 일상의 재미와 여유를 제공하며 시민들에게 휴식을 제공한다. 1층부터 6층까지는 맛거리,멋거리,즐길거리 등 테마로 구성된 상업공간이 있으며, 6층부터 13층까지는 프리미어 호텔로 관광과 쇼핑을 목적으로 하는 고객들을 위한 시설이 위치해 있다.<br>','02-6954-2910',null,'연중무휴',null,null,null,null,'10:00~22:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('립바이 메이크업 스튜디오','06032','서울특별시 강남구 논현로155길 8한주빌딩 지하 1층',38,127,'립바이 메이크업 스튜디오는 메이크업 클래스 전문 서비스 브랜드이다. 생활 속 나만의 메이크업 방법을 차자 경험하고 즐길 수 있도록 서포터해준다. 한국의 뷰티 스타일로 나에게 어울리는 화장법을 배워보자.<br>립바이 메이크업 스튜디오는 나에게 어울리는 맞춤형 1:1 메이크업 레슨과 눈썹 정리 및 연출로 개성에 맞는 화장 방법을 알게 해주고, 삶에 긍정적인 영향력을 제공하기 위해 집중하고 있다.','02-542-3379',null,'연중무휴','1:1 맞춤형 개인 레슨 혹은 2:1,3:1 메이크업 클래스','전 연령','1~3명',null,'10:00 ~ 22:00 (전화문의)','주차 가능(무료)','없음','불가','이용가능시설:주요시설: 메이크업, 헤어, 스튜디오 촬영<br>
+부대시설: 휴식 공간, 커피 및 음료, 셀프바
+
+내국인 예약안내:문의전화 02-542-3379 / 카카오톡@ 립바이
+
+외국어 안내서비스:일본어 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수성동계곡','03034','서울특별시 종로구 옥인동 185-3(옥인동)',38,127,'수성동계곡은 인왕산에서 흘러 내려와 청계천으로 합류하는 계곡으로, 계곡의 물소리가 크고 맑아 동네 이름이 조선 시대에 수성동(水聲洞)으로 불렸다고 한다. 겸재 정선이 북악산과 인왕산의 경승 8경을 그려 담은 ‘장동팔경첩’에 속할 만큼 아름다운 곳으로 조선 시대 역사 지리서인 <동국여지비고>, <한성지략> 등에 ''명승지''로 소개된 곳이다. 또한 풍류를 아는 왕자 안평대군이 집(비해당)을 짓고 살았던 곳으로 계곡과 돌다리 등이 2010년에 서울시 기념물 문화재로 지정됐다. 1971년 옥인시범아파트가 들어서면서 수려한 경관을 잃어버렸으나 그로부터 40년 후, 아파트를 철거하고 문화재보호 구역으로 지정되면서 본래의 아름다움을 되찾게 되었다. 수성동계곡 복원사업은 국토교통부 주최 ‘2014년 대한민국 국토 도시디자인대전’ 에서 최고의 영예인 대통령상을 받았다.','02-2148-2844','월요일 ~ 일요일',null,null,null,null,null,'00:00 ~ 24:00',null,'없음','가능','화장실:가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('가회동성당','03052','서울특별시 종로구 북촌로 57(가회동)',38,127,'가회동성당이 위치한 북촌 일대는 최초의 선교사 주문모(周文謨, 야고보) 신부가 조선에 밀입국하여 1795년 4월 5일 부활 대축일에 최인길(崔仁吉, 마티아)의 집에서 조선 땅에서의 ‘첫 미사’를 집전한 지역이다. 본당 관할구역은 주문모 신부가 강완숙(姜完淑, 골롬바)의 집에 숨어 지내면서 사목활동을 펼쳤던 지역으로서 한국 교회사에서 매우 중요한 의미가 있다.<br>정식으로 본당이된 것은 1949년이고, 이후 1954년에 성전이 완공되었다. 하지만 성전이 낡아 2011년부터 옛 성전을 허물고 현재의 새 성전을 짓게 되었다. 2013년 11월 21일 준공되었고, 준공 3일 후인 24일(그리스도왕대축일)에 입주하여 입주미사를 봉헌하였다. 현재의 동서양 건축양식이 어우러진 새 성전은 과거의 역사를 되살리고자 2014년 4월 20일 부활대축일에 서울교구장 염수정 추기경님에 의하여 축성되었다. (출처 : 가회동성당 홈페이지)<br>* 서울대교구 성지 순례길 2코스 (생명의 길) 시작 성지<br>* 2017년 배우 김태희와 가수 비가 결혼한 장소로도 유명','02-763-1570',null,'월요일 (미사 후)','성지순례 - 서울대교구 성지 순례길 2코스 (생명의 길)',null,null,null,'주일 미사 - 06:00 (새벽미사) 11:00 (교중미사)  18:00 (학생미사) <br>
+토요일 - 18:00 (저녁 주일미사) <br>
+평일 미사 - 월요일 06:00 화요일 19:00 수요일 10:00 목요일 19:00 금요일 10:00 <br>  
+[월요일은 휴무로 미사 후 성당 문을 닫음]','가능 (지하 주차장)','없음','불가','시설이용료:대관예약 안내 <br>
+- 선착순 예약이 원칙이며, 신청서 접수와 예약금 입금이 확인 된 후에 확정됨 <br>
+- 3시간 기본으로, 성당 500,000원, 한옥 200,000원, 강당 100,000원, 1시간 초과 시 20%추가 <br>
+- 행사 당일 1일전까지 취소는 전체 사용료의 50% 반환하고 당일 취소는 30% 반환 <br>
+- Pipe Organ 사용료 200,000원
+화장실:가능 (남녀 분리)
+이용가능시설:본당, 역사 전시실, 아랫마당
+외국어 안내서비스:불가
+한국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마루공원','06334','서울특별시 강남구 개포로109길 74(개포동)',37,127,'강남구 일원동에 있는 마루공원은 주차가 가능한 공원으로 반려견과 함께 산책하기 좋은 곳이다. 날씨가 좋을 때는 다수의 방문객이 공원에 설치된 그늘막 아래쪽에서 텐트와 의자를 펼치고 쉬는 모습을 볼 수 있다. 공원 내에는 2개의 놀이터 구역이 있는데 한 곳은 미끄럼틀과 그네가 있는 일반 놀이터이고, 또 다른 구역은 여러 종류의 도로 교통 표지판들이 나열되어 있어 교통안전 교육과 더불어 기차, 자동차 등을 타고 놀 수 있는 공간으로 구성되어 있으며, 놀이터 바닥이 푹신푹신하게 되어 있어 어린이들이 넘어져도 다치지 않고 안전하게 뛰어놀 수 있다.','02-3423-6240',null,'연중무휴',null,null,null,null,'상시개방','있음','없음','없음','입 장 료:무료		
+
+주차요금:10분당 200원
+
+화장실:있음(남/녀 구분)
+
+이용가능시설:놀이터		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('율현공원','06377','서울특별시 강남구 밤고개로24길 24(율현동)',37,127,'율현공원은 세곡 주택지구의 동남쪽 영역에 넓게 분포되어 있으며 아파트 진입 도로를 기준으로 두 공간으로 나누어져 있다. 아파트와 인접해 있는 북쪽 구간은 너른 잔디광장과 랜드마크 역할을 하는 공원 관리동, 그리고 각종 수변 시설들이 있어 시민들이 여유롭게 쉴 수 있으며, 남쪽 구간은 탄천과 돌산 근린공원의 빗물이 모이는 저류지와 조형물, 놀이터, 다목적 운동시설 등이 있다. 공원이 위치한 자리는 예보부터 주위에 밤나무가 많이 있어 밤고개라 불렸는데 율현공원이라는 이름은 이로부터 유래되었다.','02-459-9452',null,null,null,null,null,null,'00:00 - 24:00','없음 (인근 밤고개 21길 공영주차장)','없음','가능','화장실:있음
+
+이용가능시설:조경시설 : 정자(4개), 조형쉼터(10개), 조형파고라(3개), 수경시설<br>운동시설 : 게이트볼장, 다목적구장, 체력단련시설<br>편익시설 : 화장실(2개), 음수대(3개), 근로자대기실<br>유희시설 : 어린이놀이터(2개)
+주차요금:밤고개 21길 공영주차장 5분당 100원
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('학동공원',null,'서울특별시 강남구 논현동 279-75',38,127,'신사역 인근에 자리한 근린공원으로 나무가 우거지고 잘 정비된 산책로와 더불어 정자도 있어서 주민들과 더불어 인근 직장인들이 산책과 휴식을 취하기에 좋은 공원이다. 체육시설과 배드민턴장, 음수대, 화장실 등도 설치되어 있다. 마을 모양이 학처럼 생겼다 하여 학동으로 불리던 전형적인 농촌 마을이었던 이곳에 1992년 공원을 조성하면서 옛 마을 이름을 따서 학동공원이라 하였다고 한다.','02-3423-6248',null,null,null,null,null,null,'24시간 개방','없음','없음','없음','화장실:있음(남/녀 구분)
+
+이용가능시설:체육시설, 배드민턴장		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한솔공원','06359','서울특별시 강남구 광평로10길 14-17(일원동)',37,127,'서울 강남구 일원동에 위치한 면적은 1만 2,878㎡ 규모의 근린공원으로 대모산 자락길 입구에 있다. 운동 시설과 휴게 시설, 어린이 놀이터로 구성되어 있다. 농구장과 체육단련시설 12종이 조성되어 있으며, 퍼골라 15개소와 사각 정자 2개소가 휴게시설로 설치되었다. 어린이 놀이터에는 조합 놀이대와 놀이시설물 4종류가 설치되어 있고, 편의 시설로 화장실과 음수전이 설치되어 있다.','02-3423-6264','1994년 01월 01일',null,null,null,null,null,'00:00 - 24:00','없음(인근 일원터널공영주차장)','없음','가능','이용가능시설:공원시설, 농구장, 체육관련시설 12종		
+
+화장실:있음
+
+주차요금:일원터널공영주차장 : 30분 780원
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('황금내근린공원','07531','서울특별시 강서구 허준로 221-40(가양동)',38,127,'한강 변 올림픽대로와 가양 6, 7단지 아파트 사이에 위치한 황금내 근린공원은 2만 2,002㎡ 규모의 근린공원으로 강서구 내 방화, 옹기골, 공암나루, 개화 근린공원과 함께 5대 근린공원에 속한다. 농구장, 풋살장, 테니스장, 배드민턴장, 족구장 등 코트 시설을 마음껏 즐길 수 있는 곳으로 특화되어 있다. 특히 풋살장, 농구장과 배드민턴 코트에는 미끄럼 방지 바닥재를 설치했고 족구장은 인조 잔디로 조성했다.','02-2657-8688',null,'연중무휴',null,null,null,null,'상시개방','있음(황금내 공원길 노상공영주차장)','없음','없음','주차요금:30분 600원
+
+화장실:있음(남/녀 구분)
+
+이용가능시설:족구장, 배드민턴장, 테니스장		
+
+입 장 료:무료		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('관악산계곡','08826','서울특별시 관악구 관악로 1(신림동)',37,127,'"어린이들이 이용할 수 있게 수심을 낮추고 주 1회 수질검사와 안전요원이 상시 대기 중인 계곡으로, 관악산 공원 입구 자연학습장 계곡에 70m 길이의 물놀이장을 조성해 놓았다. 숲속 환경과 잘 어울리며 물놀이와 함께 휴식을 즐길 수 있는 곳이다.
+시원한 나무 그늘에 기다란 야외 데크와 천막이 설치되어 있고, 다섯 칸 정도의 돌계단도 있어 편하게 앉아서 어린이들이 물놀이 하는 모습도 지켜볼 수 있다. 간이 탈의실과 먼지 털이장, 화장실, 안전관리소 등을 갖추고 있다. "','관악산공원관리팀 02-879-6524','7월~8월','개장 기간 동안 휴무 없음',null,null,null,null,'09:00 - 17:00','없음(인근 관악문화재단 주차장 이용 가능)','없음','없음','입 장 료:무료		
+
+화장실:있음(남/녀 구분)
+
+주차요금:관악문화재단 주차장 30분 1,000원
+
+이용가능시설:탈의실, 먼지 털이장, 안전관리소
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('금빛공원','08629','서울특별시 금천구 금하로 668(시흥동)',37,127,'서울 금천구 시흥 1동 주민센터 옆에 조성된 근린공원으로 휴식을 취하거나 문화예술 공연을 관람할 수 있는 넓은 공원이다. KBS 전국노래자랑, 금천구 주부가요제 등 각종 문화행사가 많이 열리는 곳이다. 공원 숲속 사이로 ‘찬란한’ 조깅 코스도 만들어 놓아 주민들에게 인기가 많다. 공원 내 피트니스센터에서는 헬스, GX, 골프 등 다양한 프로그램을 진행하고 있어 공원에서 다채로운 시간을 보낼 수 있다.','02-2627-1657',null,'연중무휴',null,null,null,null,'상시 개방','가능 (휘트니스 회원 전용)','없음','가능','이용가능시설:금빛휘트니스
+이용가능시설:공원시설, 휘트니스
+화장실:가능 (남/녀 구분)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('금천 체육공원','08560','서울특별시 금천구 독산로54길 102-27(독산동)',37,127,'서울 금천구 주민들의 건강을 위해 체육시설을 잘 갖추어 놓은 공원이다. 하루 이용객이 약 1,300여 명으로 금천구에서 가장 활성화된 대표적인 다목적 공원으로, 농구장, 배드민턴장, 게이트볼장, 조합놀이대 시설과 광장, 야외무대, 정자 등이 설치되어 있다. 새벽에는 운동하는 사람들이, 낮에는 어린이 놀이터에서 뛰어노는 어린이들이, 휴게공간에는 휴식을 취하는 노인층이, 저녁 시간에는 에어로빅 및 저녁 운동을 하는 사람들이 이곳에 와서 다양한 연령층이 공원을 애용하고 있다. 또한 다목적구장은 각종 행사 및 운동 공간으로 활용되기도 한다. 공원 옆에는 어린이들의 놀이터 겸 체험장인 ''베짱이 유아 숲''이 있다.','02-2627-1664','2001. 6. 1','연중무휴',null,null,null,null,'상시 개방','불가 (인근 금천구립 독산도서관 주차장 이용 가능)','없음','가능','이용가능시설:야외무대, 농구장, 배드민턴장, 게이트볼장, 그늘막, 조합놀이대, 연못, 장승, 목재 데크, 황토길, 지압로, 분수
+화장실:가능 (남/녀 구분)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('환구단','04533','서울특별시 중구 소공로 112(소공동)',38,127,'환구단은 천자가 하늘에 제사드리는 제천단을 말하며, 환단이라고도 한다. 환구단은 유교적인 정치 이념을 수용하던  우리나라나 중국 등에서 유교적인 의례에 따라 하늘에 제사를 드리던 제천단이었다.고려 성종 2년(983) 정월에 처음 시행되어 설치와 폐지를 계속 되풀이하다가 조선초에 제천의례가 억제되자 폐지되었다. 세조 2년(1456)에는 일시적으로 제도화하여 1457년에 환구단을 설치하고 제사를 드리게 되었다.  그러나 세조 10년(1464)에 실시된 제사를 마지막으로 환구단에서의 제사는 중단되었다. 환구단이 다시 설치된 것은 고종 34년(1897) 조선이 대한제국이라는 황제국으로 이름을 바꾸고, 고종이 황제로 즉위하면서부터이다. 현재 환구단 터에는 황궁우 건물과 3개의 석고가 있다.  황궁우는 환구단을 쌓은지 2년 뒤인 1899년에 완공되었다. 황궁우 옆에는 제천을 위한 악기를 상징하는 3개의 석고가 있다. 이 석고단은 돌로 만든 북의단으로  1901년 12월에 민관 유지들이 고종의 성덕을 찬양하는 석기문비를 세우기로 결의하여 이듬해에 준공한 것이다.  현재 환구단 대부분의 터에는 조선호텔이 들어서 있으며 남북변 정원에는 황궁우 건물이 있다. <br /><br />* 면적 - 8,661.16㎡<br>','02-3396-5842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 정동교회','04516','서울특별시 중구 정동길 46(정동)',38,127,'정동 교회는 개신교가 이 땅에 보급된 후 가장 먼저 세워진 교회이다. 1885년 미국 감리교 선교사 아펜젤러 우리 나라에 입국하여 배재학당을 세워 한국의 근대교육을 시작하였다. 그는 학교에서 종교 활동을 하였으나 예배만을 위한 건물을 구입하여 베델(Bethel) 예배당이라 하고 1887년 첫 예배를 시작하였다. 교인들이 늘어나면서 500여 명을 수용할 수 있는 교회 건립이 필요하게 되자  1895년 공사를 시작하여 1897년 12월 26일 봉헌식을 가졌다. 이 건물이 현재까지 유일하게 남아있는 19세기 교회 건물이다.이 건물은 구조는 단층이지만 층고가 높아 2층으로 보이고 남측 종각은 3층 높이로 지어졌다. 미국식의 단순화된 고딕양식으로 건립 당시의 사진을 보면 이웃한  기와집이나 덕수궁과 잘 어울린다. 이 곳에서는 많은 토론회와 음악회 등이 열려 신문화 수용과 민족 의식 고취에 크게 공헌하였다. 본래는 십자형으로 380.16m²(115평)이었으나 1926년 증축 때 양쪽 날개부분을 넓혀서 현재는 578.5m²(175평)의 네모난 모양을 이루고 있다.  원래 건물은 그대로 두고 양 날개 부분만 늘려지었기 때문에 건물의 원래모습에는 손상이 없다. 벽돌쌓기를 하였으며, 곳곳에 아치형의 창문을 내어 고딕양식의 단순화된 교회당 모습을 이루고 있다. 돌을 다듬어 반듯하게 쌓은 기단은 조선시대 목조 건축의 솜씨가 배어있어 주목된다.  이 교회당의 종은 장식없는 내부 기둥들의 겉모습과 함께 소박한 분위기를 지니고 있다. 소박한 분위기를 지니고 있는 북미계통의 단순화된 교회건물이다.<br /><br /> * 소유자 - 감리교재단<br />* 면적 - 1,143.8㎡<br>','02-753-0001~3',null,null,null,null,null,null,null,'있음','불가','불가','입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 약현성당','04506','서울특별시 중구 청파로 447-1(중림동)',38,127,'약현(藥峴) 성당(聖堂)은 길이 약 32m, 너비가 12m로 이루어진 396m²(120여 평)의 소규모 성당 건축물이다. 이 건물은 1886년 고종 23년 종교의 자유가 허용된 이후 천주교를 믿는 사람의 수가 늘어나자 명동 성당 아래 공소(公所)로 설립되었다. 1891년 당시 명동 성당의 주임 신부였던 두세(Doucet) 신부가 합동 (蛤洞)에 대지를 마련하고, 부주교인 코스트(Coste) 신부가 설계와 시공감독을 맡아 그 다음해인 1892년에 약현 성당이 탄생하였다. 이 성당이 위치한 곳은 예전에 약초를 재배했던 지역으로 ''약초 밭이 있는 고개'' 라는 뜻의 약전현(藥田峴)이라 불렀다고 전한다. 이후에 줄여서 ''약현''이라고 했는데, 서울 만리동에서 서울역으로 넘어오는 고개 부근의 지명으로 사용되어 약현성당이란 명칭이 붙여진 것이다.<br />이 성당은 우리 나라 최초로 건립된 서양식 성당 건축물로 주목된다. 또한 고딕적인 요소를 부분적으로 나타내고 있지만  반원형의 둔중한 아치 형태 지붕과 창의 면적을 좁게 나타내는 등 전체적으로 로마네스크 양식을 갖는 벽돌조 건물이다. 길이 약 32m, 너비 12m의 십자형 평면 구조이며 비교적 소규모의 성당이다.옆면 창은 처마 높이가 낮아 뾰족아치가 아닌 원형아치로 되어 있으나, 앞면의 출입구와 옆면 좌우로 돌출한 출입구 창 부분이 각기 뾰족아치를 이루어 고딕 모양을 하고 있다.<br><br> * 면적 - 1,309㎡','02-362-1891',null,'연중개방',null,'전연령',null,null,'[주일미사(일요일)]<br/>
+06:00, 09:30, 11:00, 18:00','주차 가능','없음','불가','입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('목멱산봉수대터','04628','서울특별시 중구 남산공원길 125-72(예장동)',38,127,'봉수대는 횃불과 연기를 이용하여 급한 소식을 전하던 옛날의 통신수단을 말한다. 높은 산에 올라가서 불을 피워 낮에는 연기로 밤에는 불빛으로 신호를 보냈다.  남산 봉수대는 조선 태조 3년(1394)에 도읍을 한양으로 옮긴 뒤 설치하여, 갑오경장 다음해까지 약 500년간 사용되어 왔다. 남산의 옛 이름을 따서 목멱산 봉수대라 하기도 하고, 서울에 있다하여 경봉수대라 부르기도 하였다. 평상시에는 1개, 적이 나타나면 2개, 적이 경계에 접근하면 3개, 경계를 침범하면 4개, 경계에서 아군과 전투를 벌이면 5개의 불을 올리도록 하였다.  남산 봉수대는 전국의 봉수가 도달하게 되는 중앙 봉수대로서 중요한 역할을 담당하던 곳이다. 동쪽에서부터 서쪽으로 향하여 5개소가 있었다 하는데, 현재 봉수대는 없어지고 터만 남아있다. 전해지는 기록이 없어 정확하 자리를 확인할 수는 없는데, 『청구도』등의 관련자료를 종합하여 1개소를 복원하였다.<br /><br />* 면적/수량 - 237.27㎡ (연대 5개)<br>','02-3396-5842',null,'연중무휴',null,null,null,null,null,null,'불가','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아차산봉수대터','02041','서울특별시 중랑구 신내동',38,127,'아차산 봉수대지는 함경도와 강원도 방면에서 남산 제1봉수로 연결되는 제1봉수의 말단으로 양주의 한이산에서 봉수를 받아 목멱산 (남산) 제1봉수로 전달해 주던 곳이다. 봉수는 대개 수십리의 일정한 거리마다 후방의 요지가 되는 산꼭대기에 봉수대를 설치하고 밤에는 횃불, 낮에는 연기로써 외적이 침입하거나 난리가 일어났을 때에 나라의 위급한 소식을 중앙에 전달하던 제도이다.우리 나라에서는 삼국시대 이전부터 봉수제가 시행되었던 것으로 추측되나 본격적인 국가제도로 확립된 것은 고려시대로 조선시대까지 이어져 세종 때에 체계적인 봉수제가 확립되어 전국적인 봉수망이 정비되었다. 이후 1894년 봉수제도가 전화통신체제로 바뀌게 되면서 봉수제도는 폐지되었다. 조선 시대의 문헌에 아차산 주봉에서 북쪽으로 벗어난 능선의 서쪽  봉우리에 있다고 표시되어 있어, 이곳이 아차산 봉수대터임이 밝혀졌고 터만 남아있던 것을 서울정도 600년 기념사업의 하나로1994년 복원하였다.<br />* 면적 - 4,060㎡<br>','02-490-3114',null,'주말',null,null,null,null,'09:00~18:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 구 러시아공사관','04518','서울특별시 중구 정동길 21-18정동공원',38,127,'러시아공사관은 조선말 한로수호조약이 비준된 1885년 직후에 착공되어 1890년에 준공되었다. 르네상스식의 우아한 2층 벽돌집으로 러시아인 사바틴(Sabatine)이 설계하였다고 한다. 공사관이 건립된 일대는  연산군이 도성 밖으로 놀러가기 편리하도록 설치한 3개의 마장 중 하나였다. 고종이 일본을 견제하기 위하여 미국과 영국의 영사관과 함께  러시아 공사관을 덕수궁이 인접한 곳에 두었다는 이야기가 있다. 러시아 공사관은 아관(俄館)이라 불리는데,우리에게는 고종의 아관파천 사건으로 익숙한 이름이다.
+
+을미사변으로 명성왕후가 일본군에 시해를 당한 후 친일내각에 들어서자 경복궁에 유폐된 상태에 놓여 있던 고종을 친러파의 범진 등과 러시아공사 베베르가 보호한다는 명분으로 1896년 2월 1일 세자와 함께 아관으로 옮겨오게 하였다. 그 결과 친일 김홍집내각을 무너뜨리고 친로 박정양내각을 조직하는 등의 국정을 처결하다가 다음해 2월 20일 경운궁으로 환궁하였던 일련의 과정을 아관파천이라고 한다. 이 곳에 있는 동안 고종은 음식을 담당하던 엄상궁과 사랑을 나누었는데, 엄상궁이 나은 아이가 영친왕이다.
+
+* 면적 - 1,102㎡','02-3396-5882',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('문화역 서울 284','04509','서울특별시 중구 통일로 1(봉래동2가)',38,127,'구서울역사를 복원하여 2011년부터 복합문화예술공간으로 거듭난 문화역서울284는 연중 내내 다양한 전시, 공연, 문화 행사, 상설 프로그램 등이 열리는 곳이다. 1900년 남대문정차장을 시작으로 경성역, 서울역을 거쳐 100여년의 역사를 이어가는 공간이다. 1925년의 경성역 모습을 복원하여 방문객에게도 즐거움을 주고 있다. 옛건물을 복원하여 시민들에게 문화예술의 문턱을 낮추고 특별한 경험을 줄 것이다.','02-3407-3500','2011년 8월 11일(목)','매주 월요일','* 공간투어 프로그램','전연령가능',null,null,'10:00-19:00<br />
+※ 관람시간 30분 전 입장 마감<br/>
+※ 매주 마지막주 수요일 ''문화가 있는날'' 21:00까지 연장운영',null,'없음','가능','입 장 료:무료
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오휘team_insert','04537','서울특별시 중구 명동10길 415층',38,127,'오휘스파는 최첨단 스파기술과 서비스, 한국의 대표 프리미엄 코스메틱 브랜드인 LG 오휘(O HUI) 후(whoo) 숨(SU:M) 제품으로 케어를 받을 수 있는 유일한 스파이다. 정원의 새소리를들으며 힐링할 수 있는 조용하고 고급스러운 분위기, 다양한 프리미엄 라이프스타일을 누릴 수 있는 공간이며 모든 관리 전 전문테라피스트와 컨설팅을 통한 1:1맞춤케어가 진행되고 있다. 관리후에는 컨디션별 홈케어 샘플링및 처방전을 제공하는 차별화된 서비스를 받을 수 있다. 국,내외 셀러브리티,유명 여배우들의 시크릿 힐링 아지트로 유명한 스파이다. 
+강남구 의료협력기관에 우수 뷰티업체로 선정된 유일한 스파!','0507-1364-5252',null,'명절휴무,1월1일,12월25일','* PACKAGE　PROGRAM<br />
+1. FACIAL CARE 100,000원 (70min)<br />
+2. REFRESH CARE 180,000원 (100min)<br />
+3. SPECIAL CARE 250,000원 (120min)<br />
+4. VIP CARE 320,000원 (150min)<br />
+5. 왕후 CARE 500,000원 (180min) <br />
+6. 아로마 전신 바디케어 170,000원 (80min)',null,null,null,'10:00 ~ 22:00 / 접수마감 20:00','불가','없음','불가','주차요금:없음
+내국인 예약안내:전화예약
+외국인 예약안내:전화예약
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 애니메이션센터','04631','서울특별시 중구 회현동2가10-1',38,127,'1999년 5월 개관한 서울애니메이션센터는 애니메이션, 캐릭터 등 콘텐츠를 기반으로 하는 시민문화체험 서비스 제공부터 교육, 제작지원, 서울게임콘텐츠센터, 미디어콘텐츠센터 운영 등 문화콘텐츠 관련 사업을 주로 하고 있다. 또한 재미랑(서울애니메이션센터 체험 및 쇼핑공간)과 주변시설 재미로(만화의 거리)와 연계하여 체험 가능하다.<br>','02-3455-8341~2',null,'월요일 및 공휴일','전시 : 복도갤러리, 디오라마, 애니시네마, 만화의 집 등</br>
+체험 : 이달의 문화체험(자세한 사항은 홈페이지 참고), 캐릭터체험 등</br>
+교육 : 재미꾼, 키즈툰애니틴스쿨 등','누구나','교육 1회 약 20~36명',null,'10:00~18:00(월요일 및 공휴일 휴무)','애니센터 유로체험시설 / 극장 이용객 당일에 한해 3시간 무료','없음','없음','입 장 료:어린이(36개월 이상~만 12세 이하) : 개인 6,000원<br />
+청소년(만 13세 이상) : 개인 4,000원<br />
+※ 단체 : 개인요금에서 20% 할인(20명 이상 단체예약 시 적용, 인솔교사 무료)
+내국인 예약안내:단체 예약 : 02-3455-8304
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('금천예술공장','08583','서울특별시 금천구 범안로15길 57(독산동)',37,127,'</b>글로컬(Glocal)미학을 실천하는 국제 창작공간</b>
+금천예술공장은 금천구 독산동의 옛 인쇄공장을 리모델링한 서울시창작공간으로 글로벌 미학과 로컬의 지역성을 실험하는 국제 레지던시이자 공동 프로젝트 스튜디오를 지향하는 신개념 예술 공간이다. 다양한 기획전시, 예술교육, 지역연계 프로그램을 통해 시민들과 함께하는 열린 창작공간으로 운영중이다.','02-807-4800',null,null,'·프로그램 : 옛 인쇄공장을 리모델링한 창작공간으로, 입주프로그램과 시민대상 문화예술교육 프로그램 운영<br>
+·신청방법 : 방문','전 연령',null,null,'09:00~18:00(토·일·공휴일 휴무, 전시 있을 경우 상시 운영)','있음','없음','없음','입 장 료:무료
+내국인 예약안내:방문
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('G밸리 패션지원센터','08514','서울특별시 금천구 디지털로10길 9(가산동) 현대시티아울렛 가산점',37,127,'남부권 G밸리 패션지원센터는 일감부족, 인력부족, 고령화 등의 패션 산업의 문제점을 해결하고, 패션제조업체의 자생력을 확보하여 남부권 패션산업 활성화 공헌을 위해 설립되었다.','02-2136-4740',null,'주말 및 공휴일 대관 불가능','라운드런웨이, 포토스튜디오, 회의공간',null,null,null,'평일 10:00 ~ 17:00','있음','없음','없음','입 장 료:무료
+내국인 예약안내:방문
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구로공단 노동자생활체험관','08509','서울특별시 금천구 벚꽃로44길 17(가산동)',37,127,'<strong>1960년대 서울 감성을 느끼고 싶다면?</strong><br /><br />1960년대 후반부터 80년대까지 구로공단에서 일을 했던 여공들이 기거했던 쪽방을 재현한 뒤, 관람객으로 하여금 당시 여공들의 퇴근 후 생활상을 직접 체험할 수 있도록 조성하였다. 순이의 만화공작소, 추억의 종이뽑기, 역사 및 직업체험, 여공생활체험, 추억의 도시락 체험 등 다양한 체험 프로그램을 통해 향수를 느낄 수 있는 공간이다.<br>','02-830-8426',null,'매주 일요일, 1월1일, 설,추석 연휴','체험프로그램 예약문의 : 02-830-8426<br />
+구로공단노동자생활체험관 > 체험마당 > 체험신청<br />
+체험안내 : <a href="https://www.geumcheon.go.kr/portal/contents.do?key=2275"target="_blank" title="체험안내">https://www.geumcheon.go.kr/portal/contents.do?key=2275</a>','누구나',null,null,'화~일 10:00~17:00','없음','없음','없음','입 장 료:무료
+내국인 예약안내:자유 관람 / 10인 이상 단체 관람일 경우 사전 예약
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('어린이 감각놀이터 디키디키','04566','서울특별시 중구 을지로 281동대문디자인플라자 배움터 4층',38,127,'''Design Kids Digital Kids''를 뜻하는 디키디키는 디자인을 통한 어린이의 감성과 창의력을 키우는 공간으로, 유·아동기부터 문화, 예술, 산업 전반의 디자인 마인드를 자연스럽게 체득 할 수 있는 디자인 활동이 가능한 대규모 놀이터이다.이 곳에서 아날로그 놀이와 디지털 매체를 융합환 디지로그 컨셉의 새롭고 건강한 놀이문화를 마음껏 즐길 수 있다.<br>','02-2153-0760','2017-09-27','매주 월요일, 1월 1일, 설날, 추석 휴무','* 아바타 토이 만들기 : 1회 3,000원 * 워크샵 프로그램 : 1회 10,000원<br />
+<br />
+※ 워크샵 : 토/일 운영 (프로그램에 따라 이용금액 다름)<br />
+<br />
+※ 워크샵 이용 시 놀이시간 추가 부여 (프로그램에 따라 부여 시간 다름)','24개월 ~ 만 8세','300명 수용가능',null,'10:30 ~ 18:30','있음 (동대문디자인플라자 지하주차장 이용 가능)','없음','불가','이용가능시설:[체험시설] - 조합놀이대, 과자블럭, 그루터기 내 가변놀이 체험 등<br />
+[디지털시설] - FX미러, 컬러블록, 디자인빌리지, 액션페인팅, 인터렉티브 볼게임, 미로테이블 등<br />
+[편의시설]- Fteam_insert;B시설, 쉼터, 의무실, 수유실 등<br />
+[위생시설]- 화장실, 정수기 등
+주차요금:영수액 20,000원 이상 1시간 무료<br />
+영수액 50,000원 이상 2시간 무료<br />
+ ※ 당일 동대문디자인플라자 전체이용 영수액 기준<br />
+ ※ 초과시간 5분당 400원 부과
+입 장 료:어린이(24개월~만8세) - 개인 15,000원<br>
+보호자 - 개인 5,000원<br />
+장애아동team_insert - 기본요금 50% 할인적용<br />
+※ 기본 2시간 이용, 추가시간 10분당 1,250원 부과(어린이에 한함)
+화장실:있음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('명동관광정보센터','04538','서울특별시 중구 을지로 66(을지로2가)',38,127,'명동 관광정보센터는 서울 중구 을지로2가에 위치해 있는 관광안내소이다. 서비스언어는 영어, 중국어, 일어이다. 외국인뿐만 아니라 서울시민에게도 관광, 축제, 쇼핑, 공연 등에 관한 서울의 정보를 빠르고 정확하게 제공한다.<br>','02-778-0333','2013.11.29','설날 당일, 추석 당일',null,null,null,null,'09:00 ~ 18:00',null,'없음','없음','이용가능시설:WiFi, 코인락커, 휴게공간, 기념품 판매관, 환전
+
+외국어 안내서비스:영어, 중국어, 일본어 가능 직원 상주
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('시간을 담다','04553','서울특별시 중구 삼일대로8길 20-1(충무로2가)',38,127,'시간을 담다 기존 캐리커쳐와는 차별화하여 우리나라의 전통 의상, 꽃, 랜드마크(광화문, 남산), 해태 등을 캐리커쳐에 가미하여 내국인 및 외국인 관광객들이 우리나라에서 경험한 추억을 한장의 캐리커쳐로 그린다. 캐리커쳐 이외에 전통 민화 색칠하기 체험 등의 체험 상품 및 선물용 소품을 판매하고 있으며, 모든 상품은 시간을 담다의 자체 디자인 상품으로 내국인 및 외국인 관광객들이 특별한 경험을 할 수 있다.<br>','010-8895-3368','2018년 11월 21일','매주 월요일','* 라이브 캐리커쳐 체험 - 체험시간 5분~20분 / 비용 10.000원~<br />                                                                                             * 캐리커쳐 색칠하기 체험 - 체험시간 30분~1시간 / 비용 20,000원<br />                                                                         
+* 전통 민화 색칠하기 체험 - 체험시간 30분~1시간 / 비용 3,000원','제한 없음','20명',null,'11:00 ~ 20:00',null,'불가','가능','상점정보:라이브 캐리커쳐, 캐리커쳐 제작, 반려동물캐리커쳐, 자체디자인 에코백
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('창경궁 명정전','03072','서울특별시 종로구 창경궁로 185(와룡동)',38,127,'국보. 명정전은 창경궁의 정전으로 신하들이 임금에게 새해 인사를 드리거나 국가의 큰 행사를 치르거나 외국 사신을 맞이하던 장소로 이용하였다.조선 1484년(성종 15)에 지었는데, 임진왜란 때 불에 탄 것을 1616년(광해군 8)에 다시 지은 것이다. 정면 5칸, 측면 3칸의 다포계 합각지붕건물이다. 이 건물은 조선시대의 정전(正殿) 중 가장 오래되고, 경희궁의 정전인 숭정전과 함께 단층으로 건축된 정전이며, 명정문과 그 좌우 행각·홍화문·창덕궁 돈화문 등과 더불어 17세기 전기의 목조 건축을 연구하는 데에 귀중한 자료라는 점에서 의의가 크다.<br>','02-762-4868~9',null,'월요일 휴무',null,null,null,null,'09:00 ~ 21:00 (20:00 까지 입장)','주차가능','없음','없음','입 장 료:* 내국인(만25세~만64세) : 개인 1,000원, 단체 800원(10인 이상)<br />
+* 외국인(만19세~만64세) : 개인 1,000원, 단체 800원(10인 이상)<br />
+* 외국인(만7세~만18세) : 개인 500원, 단체 400원(10인 이상)<br />
+* 무료(외국인) : 만 6세이하, 만65세이상, 한복착용자<br />
+<br />
+※ 무료 관람대상자는 반드시 관련 증빙(주민등록증, 국가유공자증, 복지카드,
+교원자격증, 관광통역안내사 및 문화관광해설사 자격증 등)을 매표소에 제시 후무료입장권을 발권 받아 입장하시면 됩니다.
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국립민속박물관team_insert 어린이박물관','03045','서울특별시 종로구 삼청로 37(세종로)',38,127,'국립민속박물관은 우리나라 전통생활양식과 관련된 4,000여 점의 민속자료가 전시된 있는 국내 유일의 민속생활사 관련 국립·종합박물관으로서 경복궁 안에 있다. 민속문화의 연구·수집·보존과 문화교육 및 생활문화 전시로 전통문화에 대한 올바른 인식을 통한 민족적 자긍심을 일깨울 수 있는 문화교육의 현장이며, 전통과 현대가 어우른 문화의 전당이다. 3개의 상설전시실과 2개의 기획전시실이 있으며, 자료실, 뮤지엄숍 등의 시설을 이용할 수 있으며, 다양한 문화교육 프로그램과 행사에 참여 할 수 있다.','Tel: 02-3704-3114<br>
+Fax: 02-3704-3113',null,null,'·교육 : 전문가, 일반인, 외국인, 장애인, 청소년, 찾아가는 교육
+·행사 : 우리민속한마당, 문화행사, 세시풍속행사
+※ 자유학기제 연계교육','누구나',null,null,'평일 09:00 - 18:00 6월~8월 (17시까지 입장, 어린이 박물관은 17시 30까지 입장)<br />
+매일 09:00 - 18:00 3월~5월, 9월~10월 (17시까지 입장, 어린이 박물관은 17시 30까지 입장)<br />
+매일 09:00 - 17:00 11월~2월 (16시까지 입장, 어린이 박물관은 16시 30까지 입장)<br />
+주말 09:00 - 19:00 6월~8월 (18시까지 입장, 어린이 박물관은 18시 30까지 입장)',null,'없음','없음','입 장 료:무료관람
+외국어 안내서비스:리플렛(영어,중국어,일어,인도네시아어,태국어,베트남어,아랍어) 전시해설(영어,중국어,일어)
+내국인 예약안내:어린이박물관의 경우 사전 예약 필수
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('산마루놀이터','03096','서울특별시 종로구 창신6가길 47(창신동)',38,127,'창신숭인 도시재생지역 누리공간사업 일환으로 조성된 산마루놀이터는 기존의 획일화된 놀이터에서 탈피하여 봉제산업의 메카인 창신동의 지역적 의미를 되살린 골무모양의 건축물이 있는 새로운 개념의 창의적인 놀이공간이다. 외부에는 황토놀이터, 모래놀이터, 열린광장이 있으며, 내부에는 9m 높이의 정글짐과 어린이도서관과 주민 휴게공간인 골무홀, 관리실, 화장실 등이 있다. 또한 상부 전망대가 있어 남산타워 등 서울시내가 한눈에 조망가능하다.<br>','종로구 공원녹지과 02-2148-2845','2019년 05월 02일','매주 월요일, 설/추석 연휴, 법정공휴일',null,null,null,null,'* 하절기(5~10월) 09:00~19:00<br />
+* 동절기(11~4월) 09:00~18:00','주차가능(창삼공영주차장, 5면 공유전용/주간 시간대만 가능)','없음','없음','이용가능시설:정글짐, 황토·모래놀이, 열린광장, 골무홀
+입 장 료:무료
+화장실:남/녀 구분
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('명동','04538','서울특별시 중구 을지로 66',38,127,'명동은 거대 쇼핑도시를 연상케하는 공간이다. 일반적으로 명동 거리는 지하철 4호선 명동역에서 을지로, 롯데백화점으로 이어지는 약 1km 정도의 거리를 말한다. 이곳에는 각종 브랜드매장, 백화점,보세가게 등이 밀집되어 있다. 유행의 메카라는 표현이 어울릴 정도로 의류,신발,액세서리 등의 다양한 제품을 구입할 수 있다. 남대문이나 동대문보다는 질이 좋은 브랜드가 많이 모여 있는 것이 특징이다. 우선 백화점으로는 가까이에 롯데백화점, 신세계백화점이 있으며, 명동거리에는 눈스퀘어(Noon Square), 명동밀레오레, 엠플라자(M Plaza)와 같은 쇼핑몰이 있다. 각종 브랜드숍은 중앙거리를 비롯해 사이드 골목에 밀집되어 있다.명동에는 쇼핑과 함께 먹을거리, 즐길거리가 많다. 먹을거리로는 패밀리레스토랑, 패스트푸드점은 물론 한식, 양식, 일식으로 다양하다. 이중에서 명동 돈까스와 칼국수(명동교자)는 유명하므로 한번 먹어보는 것이 좋다. 그 외에도 명동에는 헤어샵, 은행, 극장 등 많은 편의시설이 있다.<br /><br />* 명동 주요관광지<br /><br />- 명동성당 : 한국 천주교 서울대교구 본당 건물인 명동성당은 우리나라 최초의 본당이며 한국 천주교회의 상징으로, 고종 29년(1892)에 착공, 광무 2년(1898)에 준공된 순수한 고딕양식의 건물이다. 명동성당은 우리나라 기독교 역사뿐 아니라 정치, 사회, 문화 전반에 걸쳐 큰 영향을 미친 터전이다.<br /><br />- 명동예술극장 : 명동 옛 국립극장을 복원하여 2009년 6월 개관한 명동예술극장은 완성도 높은 연극작품을 만날 수 있는 연극예술전문 공연장이다. 1934년 바로크 양식으로 건축된 극장외형과 현대적인 내부공연 시설이 잘 조화되는 곳이다.<br /><br />- 명동 재미로 : 명동과 남산의 연결지점이지만 명동의 화려함에 비해 특색 없이 밋밋하고 가파르기만 했던 오르막길이 2013년 12월, 만화의 거리 ''재미로''라는 이름으로 새롭게 태어났다. 이 곳에서는 원로부터 신인 작가까지 약 70명의 대한민국 대표 작가의 다양한 만화 캐릭터들과 콘텐츠들을 만날수 있다. <br>','명동관광정보센터 02-778-0333',null,null,null,null,null,null,null,null,'없음','없음','외국어 안내서비스:관광안내전화 02-1330(한/영/일/중)<br />
+명동관광정보센터 02-778-0333
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청와대','03048','서울특별시 종로구 청와대로 1 청와대',38,127,'''청와대, 국민품으로'' 개방 안내<br />[운영시간]<br />2022년 6월 12일(일) ~ 계속 <br />* 매일 09시 ~ 18시 <br />* 매주 화요일 미개방<br />[관람신청 홈페이지]<br /><a href="https://www.opencheongwadae.kr/" target="_blank" title="새창: 청와대 관람신청 홈페이지로 이동" rel="noopener">https://www.opencheongwadae.kr/</a><br /><br />청와대와 아름다운 산책길의 조화 한국 정치의 중심인 청와대의 상징은 푸른 청기와다. 청와대에 도착해서 가장 먼저 눈에 띄는 것도 본관의 푸른색 청기와. 북악산(北岳山)을 배경으로 자리잡은 청와대 본관에는 청기와와 곡선의 지붕이 아름답다. 청와대가 한국을 대표하듯 청기와와 지붕의 곡선은 한국의 미를 대표한다.청와대는 중심에 위치한 본관, 영빈관, 춘추관(春秋館), 녹지원(綠地園), 무궁화동산, 칠궁(七宮) 등으로 이루어져 있다. 주목할 것은 각 건물의 모습이 각기 독특하다는 것. 특히 한국을 대표하기 위해 한국 전통양식으로 지어 아름답다. 우선 중심부에 자리잡고 있는 본관은 청기와 지붕으로 아름다운 곳. 청와대를 대표하는 곳으로 푸른 색의 기와와 지붕 곡선이 아름답다. 청와대를 상징하는 청기와는 약 15만장. 한 개씩 구워서 100년 이상 견딜 수 있을 정도로 단단하다. 눈을 오른쪽으로 돌리면 춘추관이 보인다. 춘추관은 토기와로 만든 지붕이 전통적이다.team_insert;<br /><br />반면 본관 왼쪽에는 영빈관이 보인다. 영빈관은 외국 국빈들을 위한 장소로 18개의 돌기둥이 건물을 받치고 있어 웅장하다. 산책하기에 좋은 곳으로는 녹지원과 무궁화 동산. 녹지원은 역대 대통령들의 기념식수가 있는 곳으로 그 중에서도 약 310년 된 소나무가 유명하다. 무궁화 동산은 무궁화꽃을 비롯해 분수대, 봉황상이 있어 관광객들의 기념촬영 장소로 애용된다. 무궁화가 피는 7-10월까지가 특히 아름답다. 외에도 효자동 사랑방은 볼거리가 많은 곳. 대통령이 외국 귀빈으로부터 받은 세계 각국의 선물들이 전시되어 있다. 무료로 관람할 수 있으며 기념품 코너에서는 청와대 기념품도 판매하고 있다. 여기에 빠질 수 없는 관람 코스가 바로 칠궁. 칠궁은 조선시대 7개의 궁으로 전통가옥과 아담한 뜰이 볼만하다.team_insert;<br /><br />* 청와대 산책길<br /><br />청와대 관람이 즐거운 것은 주변 산책로가 아름답기 때문이다. 이 산책로는 경복궁 돌담길을 따라 청와대로 이어지고 다시 삼청동 공원으로 이어진다. 특히 경복궁 동문 입구에서부터 청와대까지 이어지는 길은 산책의 특미. 이길은 도로를 사이에 두고 왼쪽에는 경복궁 돌담길이 오른쪽에는 미술관과 고건물이 자리잡고 있다. 경복궁 돌담길은 경복궁 돌담과 오래된 노목이 풍성하게 늘어져 있어 산책하기에 그만이다. 가을이면 낙엽으로 낭만적인 거리가 된다. 반대편 길은 갤러리 현대, 금호미술관을 비롯한 유명 미술관이 이어져 있고 세련된 카페도 있다. 그 중에서 저녁경치를 만끽할 수 있는 곳이 바로 team_insert;더 레스토랑team_insert;. 인테리어가 현대적이고 한쪽 면이 모두 유리로 되어 있어 경복궁 돌담길과 저녁 하늘을 감상할 수 있다. 이곳을 지나 청와대에 이르기 전 오른쪽 길로 꺾어지면 삼청동 공원으로 이어진다. 이곳은 유명 레스토랑, 한식집, 미술관이 많다. 삼청공원에 이르기 중간에 있는 삼청동수제비는 삼청동에서도 가장 유명한 맛집. 그곳을 지나 삼청동 길이 끝나는 곳에 삼청공원이 있다. 이곳은 많은 나무와 약수, 산책로로 유명하다.<br>',null,null,'매주 화요일',null,null,null,null,'09:00~18:00','경복궁 주차장 이용 (유료 / 주차문의 02-720-7595)','가능','불가','관 람 료:무료
+화장실:있음
+주차요금:<strong>경복궁 주차장 </strong><br />
+소형차 (15인승 이하) : 기본 2시간 2,000원 (단, 지상 주차장 주차시 중·대형차 기본요금 4,000원 적용)<br />
+중·대형차 (16인승 이상) : 기본 2시간 4,000원<br />
+<br />
+※ 기본시간 이후 15분 초과시 500원<br />
+※ 주차요금 면제대상 : 긴급차량 및 비상응소차량, 장애인표지 부착차량, 국가유공자증 소지자 차량, 5.18 민주유공자증 소지자 차량, 참전유공자증 소지자 차량, 국빈 및 그 수행자, 외교사절단 및 그 수행자, 긴급 보도 취재촬영차, 기타 공무수행·민원 등으로 경복궁 관리소의 확인 받은 차량<br />
+※ 특별 면제 대상 : 경찰 비생대기 버스, 청와대 관람전용 버스, 경복궁 직원차량<br />
+※ 주차요금 50% 감면 차량 : 저공해자동차, 경승용차(1,000cc 이하)<br />
+내국인 예약안내:홈페이지 사전예약<br />
+- 신청기간 : 관람희망일 6개월 전부터 최소 20일 전까지 신청 가능<br />
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경운동민병옥가옥','03146','서울특별시 종로구 인사동10길 23-9(경운동)',38,127,'1930년대에 지은 것으로 보이는 개량한옥으로, 일제강점기의 대표적인 건축가 박길용(1898∼1943)이 설계했다고 전한다. 경운동 66-8번지에 있던 정순주 가옥과 같은 평면으로 정순주 가옥은 이 집의 뒷채에 해당한다. 원래 건축주가 두 아들에게 한 채씩 주기 위하여 지은 집이라고 한다. 네모반듯한 집터 동쪽에 대문이 있고, 앞마당으로 들어가면 남향으로 H자형의 건물이 있다. 중심축에 부엌·대청·건넌방·사랑방이 있고, 부엌의 앞쪽으로 안방, 뒤쪽으로 뒷방이 있다. 반칸 너비의 툇마루를 두어 동선을 연결하였다. 사랑방의 앞쪽에는 누마루를, 뒷쪽에는 현관마루를 두었다. 건넌방은 상당히 큰 방으로 꾸며 사랑방 구실을 하고, 현관마루와 연결되는 사랑방은 응접실 용도로 사용하도록 설계한 듯하다. 마당 남쪽 담장 밑에는 작은 화단을 가꾸어 놓았다.현관과 화장실·목욕탕을 내부에 두고 이들을 연결하는 긴 복도를 둔 점과 유리창을 단 점 등은 이 시기 개량한옥의 모습을 잘 보여주며, 주택의 변천을 알 수 있도록 해주는 중요한 자료이다.<br /><br />[출처] 문화재청<br>','02-120',null,null,null,null,null,null,null,null,'없음','불가','이용가능시설:민가다헌(한식당)
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('장충동 족발 골목','04606','서울특별시 중구 장충단로 176(장충동1가)',38,127,'52년 전 지금의 장충동 족발거리에서 조금 떨어진 곳에 만정빌딩이라는 건물이 있었는데 그곳에 두 개의 족발집이 문을 열면서 장충동 족발집의 역사는 시작됐다. 그 두 족발집은 1년 터울을 두고 문을 열었고, 지금까지 족발거리에서 장사를 하고 있다. 맨 처음 문을 연 한 식당에서 처음부터 족발을 메뉴에 올린 것은 아니다. 빈대떡과 만두를 주 메뉴로 식사와 술을 팔던 그 식당에서 손님들이 든든하면서도 싸게 먹을 수 있는 술 안주를 원했고, 주인 아주머니는 어릴 때 기억을 되살려 족발을 안주에 올리게 됐던 것이다. 그 집 아주머니의 고향은 평북 곽산, 그러니까 평안북도에서 먹었던 족발 요리가 장충동에 터를 잡게 됐다. 그 아주머니의 어머니가 겨울이면 돼지를 통째로 잡아 걸어 놓고 고기요리를 해줬는데 그 중 꼬들꼬들하게 마른 족발 요리의 맛이 아주머니의 입맛과 마음에 남아있었다. 이렇게 시작된 장충동 족발은 70년대 후반과 80년대 초반을 거치면서 이름을 타게 되고 덩달아 지금의 족발거리에 식당들이 줄 지어 생기기 시작했다. 이렇게 만들어지기 시작한 게 장충동 족발거리다. 지금도 큰길과 좁은 골목에 십여 집이 옹기종기 모여 옛 맛을 지켜가고 있다. 그때부터 지금까지 사람들의 변치 않는 사랑을 받으며 수십년 동안 족발거리의 명성을 지켜온 것은 푸짐하고 맛 좋은 족발의 맛 때문일 것이다. 족발을 만드는 집 마다 그 맛의 차이가 조금씩 난다는 게 이 거리의 아주머니들 설명이다. 어느집이 맛있다고 이야기 할 수 없는 것은 개인의 입맛과 취향이 다르기 때문. 족발 거리에서 족발과 함께 빈대떡과 파전 등 곁들여 나오는 다른 음식도 즐겨볼만 하다.<br>','02-2236-9135',null,null,null,null,null,null,null,'없음','불가','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 종로 낙지볶음 골목','03157','서울특별시 종로구 종로 19(종로1가)',38,127,'식탁 하나 의자 하나에 세월의 향기가 나는 식당이 있다. 추억을 찾아 사람들이 모이고 또 추억을 만들려 사람들이 모이는 곳, 대를 이어 장사를 하거나 대를 이어 단골이 되는 그런 식당이 종로1가에 있다. 60년대 중반 지금의 광화문우체국과 외환은행, sk빌딩 등 그 언저리에 모여 있던 술집거리에 새로운 메뉴가 등장했다. 낙지볶음이 그것이었다. 당시에는 참새구이 등 다양한 안주가 있었다. 낙지 안주도 있었는데 데쳐서 초고추장을 찍어 먹는 식이었다. 여기에 매운 낙지볶음이 등장했고, 결과적으로 지금까지 살아 남은 낚지볶음이 안주의 전쟁에서 승리한 셈이다. 도시개발로 인해서 중구 무교동에서 종로구 수송동으로 식당을 옮겨서 장사를 하기 시작했다.<br /><br />현재 르메이에르빌딩에서 종로구청 가는 길목에 낙지집이 예닐곱집이 모여 있었다. 매운 낙지볶음에 입맛들인 단골들은 매일 저녁 그 거리에 모여들었고 문전성시를 이루었다. 그러나 이곳 낙지골목에 두 번째 재개발 폭탄이 떨어졌다. 빌딩이 들어서고 옛 건물이 사라진 것이다. 재개발 때문에 낙지볶음 식당들은 새로 지어진 르미에르빌딩으로 들어가거나, 그 주변으로 이사를 해야 했다. 낙지센터가 2009년 3월 현재 옛 자리에 남아 있지만 그마저도 조만간 재개발의 폭풍에 밀려 다른 곳으로 이전해야 한다고 한다.<br /><br />60년대 낙지집에서 일하던 아주머니가 따로 나와 낙지집을 차릴 정도로 낙지볶음은 식당 주인에게나 손님들에게나 매력적인 안주였다. 그랬으니 선술집 안주로 시작한 낙지볶음이 50년 가까운 세월 동안 그 맥을 잇고 있는 것 아니겠는가. 마늘과 매운고추가루 등 입맛으로 느낄 수 있는 재료 이외의 양념의 비밀은 끝내 알려주지 않는 것도 맵지만 맛 있는 낙지볶음 양념의 유혹적인 맛, 인기 안주의 맛을 더 하는 이유 아니겠는가. 마음이 답답하고 몸이 찌뿌둥할 때 종로1가 낙지골목을 찾아 매운 낙지볶음으로 몸과 마음을 달래보자.<br>','02-735-8688',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남대문 갈치조림골목','04528','서울특별시 중구 남대문시장길 16-17',38,127,'1988년 전후로 형성된 남대문 갈치조림 골목은 그 당시 가격이 저렴했던 갈치를 상인들의 입맛에 맞춰서 매콤하고 얼큰하게 조려 내놓았던 것이 매스컴과 입소문을 타면서 맛거리로 유명해졌다.본래 이 일대는 갈치조림을 하는 골목이 아닌 식당가였다. 가장 먼저 갈치조림으로 메뉴를 특화한 곳은 희락식당과 왕성식당이었는데 갈치조림이 유명해지면서 주변의 가게들이 하나둘씩 갈치조림으로 간판을 바꿔 달게 된 것이다.<br /><br />원재료부터 상인들이 직접 구매해 사용하며 밑반찬까지도 직접 만들어 제공한다. 원재료 중에서도 갈치를 고르는 것이 가장 중요하다고 하는데 식당마다 사용하는 갈치 산지는 다소 차이가 있지만 여수 갈치, 제주 갈치, 목포 갈치, 부산 갈치와 같은 최고 품질의 국산 갈치를 사용한다고 한다. 또한 갈치를 조리하는 방법에도 다소간 차이가 있어 같은 갈치조림이라 하더라도 식당마다 조금씩 다른 고유의 맛을 제공한다.우리나라에서 가장 큰 재래시장인 남대문시장에 대표 골목으로 꼽히는 갈치조림골목은 남대문시장의 주변 직장인들과 시장 상인들에게 필수 점심 코스가 되고, 한번 다녀간 이들에겐 또 찾는 곳이 되었다. 일본 언론에서 소개가 되면서 일본 관광객들의 발길도 늘었는데 갈치조림을 맛본 관광객이 그 맛에 반해 명함을 챙겨가서 한국을 다시 방문했을 때도 찾아올 정도라고 한다.<br>','02-752-1913',null,null,null,null,null,null,null,'없음(주변 유료 주차장 이용)','불가','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마포 문화비축기지','03914','서울특별시 마포구 증산로 87',38,127,'마포문화비축기지는 41년간 석유비축기지로 사용된 산업화시대 유산을 복합 문화 공간으로 탈바꿈한 장소이다. 기존의 5개의 탱크는 공연장, 전시장, 다목적 파빌리온으로 재생하고 신축 탱크 1개는 정보교류센터로, 임시주차장이었던 넓은 야외 공간은 문화마당으로 재탄생하여 시민들의 휴식과 다양한 커뮤니티 활동이 가능한 공간으로 조성되었다.<br>','02-376-8410',null,'연중개방<br/>Cafe Tank6/전시관 : 월요일 휴무',null,'누구나',null,null,'문화비축기지 00:00~24:00<br/>
+Cafe Tank6 10:00~19:00<br/>
+※ 시설별 운영시간 10:00~18:00(일자별 프로그램 공지사항 참고)','주차가능','없음','가능','시설이용료:시설마다 상이함으로 홈페이지 참조
+입 장 료:무료
+한국어 안내서비스:해설사와 함께하는 시민투어<br/>
+- 화~토요일 14:00, 16:00(1시간 소요)
+- 서울시 공공 서비스 예약사이트를 통해 사전예약 필수
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('조선일보 뉴지엄','06982','서울특별시 동작구 현충로 124',38,127,'<strong>스마트한 신문 세상을 향한 한 걸음</strong><br /><br />조선일보 뉴지엄은 뉴스(News)와 박물관(Museum)의 개념을 함께 아우른 공간으로, 조선일보 역사기념관과 미디어체험관으로 구성되어 있다. 국내 최초로 신문과 방송, 스마트폰과 3D 입체영상 등 첨단 정보기술을 접목시킨 복합 미디어체험관은 청소년들이 신문, 방송의 제작 현장을 체험해보며 미디어에 대한 이해를 높일 수 있는 기회를 마련했다.','02-3280-3244',null,'월요일, 명절연휴','* 전시 : 조선일보 역사 관람</br>
+* 체험 : 방송 스튜디오, 신문 기자실, 취재 현장 견학</br>
+* 교육 : 1일 기자체험, 금요 기자체험, 프리미엄 프로그램 등<br>
+* 신청방법 : http://newseum.chosun.com/ > 미디어 체험관 > 예약하기','초등 3학년~고등학생',null,null,'화~일 10:00~18:00','있음(대형버스는 국립현충원 주차장 이용)','없음','없음','입 장 료:- 역사기념관 : 관람료 1,000원<br>
+- 미디어체험관 : 초등학생 5,000원 중고등학생 10,000원
+내국인 예약안내:- 역사기념관 : 30인 이상 학생의 박물관 단체관람은 일주일 전까지 전화 예약<br>
+- 미디어체험관 : 단체 - 6~32명 2개월 전부터 홈페이지 예약 신청(32명 이상 전화 문의), 개인 - 회당 6명이상 모여야 체험가능, 2개월 전부터 홈페이지 예약 신청
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('양재동 화훼공판장 (꽃문화체험관)','06774','서울특별시 서초구 강남대로 27(양재동) 화훼공판장 본관 B1-01호',37,127,'양재동 화훼공판장은 2017년부터 꽃문화체험관을 새롭게 개관했다.. 양재 꽃문화 체험관에서 원데이 클래스, 어린이 및 청소년 대상 원예체험교실 등 다양한 체험 프로그램을 운영하고 있다. 가끔은 사는 것보다는 직접 만든 꽃을 선물한다면 좀 더 특별한 하루를 보낼 수 있을 것 같다.<br>','02-579-8100',null,null,'* 프로그램 : 원데이클래스 - 꽃다발, 센터피스, 가드닝, 플라워박스 등(매월 변경)
+* 신청방법 : http://yfmc.at.or.kr/ > 알림마당 > 공판장소식 > 꽃문화체험관 게시물 클릭','누구나','5~20명',null,'프로그램별 상이(자세한 사항은 홈페이지 참고)','있음','없음','없음','입 장 료:프로그램별 상이
+내국인 예약안내:· 홈페이지에 월별 일정 게시(세부시간, 체험비 포함)
+· 신청서 제출(E-mail 또는 Fax)
+· 신청기한 : 체험 1주일전 18시 이내
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한국가구박물관','02822','서울특별시 성북구 대사관로 121(성북동)',38,127,'서울 성북동 언덕에 위치한 한국가구박물관은 조선 후기에 제작된 전통목가구를 재료별(먹감나무, 단풍나무, 오동나무, 느티나무, 소나무, 종이 등), 종류별(사랑방, 안방, 부엌 등), 지역 특성 별로 분류 전시하고 있는 특수박물관으로 한국의 옛 가옥 10채와 더불어 실내 장식, 꽃담, 굴뚝, 마당 등 한국의 전통 주(住)생활 문화를 총체적으로 보여주고 있다.
+박물관의 전시와 운영에 있어 가구와 자연과 어우러진 한국의 집문화(housing culture)를 보여주기에 적합한 가이드 투어(한 그룹에 20명 최대 인원)로 관람방식을 택하고 있으며 가구라는 옛 생활기물을 유리 보관함 밖, 방 구조의 전시장에 전시하여 관람객들에게 아름다운 전통문화 경험을 제공하고 있다.
+2010년 G20 서울정상회의의 20개국 정상 배우자의 공식 오찬지로 선정된 이후, 중국의 시진핑 주석 내외를 비롯하여 독일 대통령, 헝가리 총리, 싱가포르 총리, 벨기에 국왕 내외, 스웨덴 국왕, IMF총재, 영화배우 브레드 피트, 빅토리아 베컴 등 국빈 및 세계적인 인사들의 발걸음이 끊이지 않았다. 또한 2011년 CNN에서 ‘서울에서 가장 아름다운 박물관’으로 선정된 바 있으며 최근 3월에는 세계적인 주목을 받고 있는 BTS의 인터뷰 장소가 되기도 하는 등 서울의 대표적인 탐방지이자 정부 부처를 비롯한 기업 등이 선호하는 문화 공간으로 각광을 받고 있다.','02-745-0181',null,'매주 일/월요일, 국공휴일 휴무','가이드투어(1시간) 20,000원','누구나',null,null,'평일 11:00~19:00<br/>
+토요일 09:00~18:00<br/>
+※ 사전예약제운영','있음','없음','없음','관 람 료:관람료 20,000원 (초중고생, 장애인, 성북구 주민 할인)
+외국어 안내서비스:외국어 안내(영어) 가능
+한국어 안내서비스:모든 관람 사전 예약제로 운영, 온라인 예약 필수</br>
+(15명 이상 단체관람은 전화로 예약 필수)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울교통공사 차량기지 (도봉, 모란기지)','04806','서울특별시 성동구 천호대로 346',38,127,'<strong>안전 체험과 함께 궁금증도 해결한다.</strong><br />서울교통공사는 각 차량사업소별로 견학과 역 안전체험을 실시하고 있다. 차량 설비와 시설을 둘러보면서 지하철 운영에 대한 이해를 높이고, 안전 수칙을 배우는 프로그램으로 운영되어 있다. 어린이, 어르신, 교통약자, 외국인 등 대상에 따라 눈높이 교육을 진행하는 점도 특징적이다. <br>','02-6311-3966(도봉)<br />
+02-6311-3634(모란)',null,null,'* 도봉역 견학 : 첫째,셋째 주 화요일 10:00~11:30<br />
+* 모란역 견학 : 둘째,넷째 주 화요일 14:00~15:30<br /> 
+(※ 견학 시간은 역 사정에 따라 변경될 수 있음)<br />
+* 자세한 신청 방법은 홈페이지 참고',null,null,null,null,'있음','없음','없음','입 장 료:무료
+내국인 예약안내:[차량기지 안전체험] 인터넷 홈페이지 신청, 참여확정 개별 이메일 통보<br />
+[역 안전체험] 인터넷 홈페이지 또는 전화 신청, 신청 후 해당역과 사전 유선 협의 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('세빛섬','06500','서울특별시 서초구 올림픽대로 2085-14',38,127,'세빛섬은 서울의 중심인 한강에 색다른 수변 문화를 즐길 수 있는 랜드마크로 조성된 복합 문화 공간이다. 세계 최초로 물 위에 떠 있을 수 있는 부체 위에 건물을 짓는 플로팅 형태의 건축물이다. 세빛섬은 한강을 아름답게 밝혀줄 세 개의 빛나는 섬과 다양한 영상 및 콘텐츠가 상영되는 예빛으로 이루어져 있다.
+
+서울 시민의 하루의 삶을 상징하며 서울과 한강을 비추고 있다. 채빛은 동쪽에서 떠오르는 해처럼 활기찬 하루를 여는 찬란한 빛입니다. 솔빛은 한낮의 해처럼 가장 높은 곳에 올라 온 사방을 비춘다. 가빛은 해질녘 노을빛처럼 하루의 끝을 갈무리하며 아름답고 우아하게 빛나고 있다. 미디어아트갤러리 예빛은 밤을 비추는 은은한 달빛과 같은 예술의 장이 될 것이다.','1566-3433',null,null,null,null,null,null,'*시설별로 다르므로, 홈페이지 참고','반포한강공원','없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍대','04055','서울특별시 마포구 홍익로 20',38,127,'<br>
+청춘들의 아지트 홍대 거리에는 패션과 뷰티, 리빙, 책과 문구 등 종류를 불문하고 갖은 매장과 디자이너 브랜드나 편집숍, 서점, 카페와 레스토랑 등이 즐비하다. 또 버스킹이나 춤 공연이 끊이지 않는 걷고싶은거리, 홍익대 후문 와우산로22길에 펼쳐진 벽화거리, 상수역과도 잇닿은 홍대클럽거리 등 이름난 골목을 거느렸다. 이곳을 찾는 이들은 무언가를 구입하거나 감상하는 데 머물지 않으며, 직접 만든 무언가를 선보이고 소개하기를 주저하지 않는다. 홍익대 정문 앞 홍익어린이공원에서 매주 토요일에 열리는 홍대앞 예술시장 플리마켓, 일요일에 열리는 홍대앞 희망시장 등 재기 발랄한 작가들이 이끄는 많은 예술시장이 홍대에서 비롯되었다. 쇼핑과 맛집에 이어 공연이나 전시 관람을 충족하는 상권이 있고, 젊음과 트렌드, 감각과 역동이 도처에 도사린, 언제나 매력적인 동네다. 낮에는 다채로운 숍이 형형색색 개성을 드러내고, 발길을 붙드는 그윽해진 불야성 역시 청춘들이 한결같이 찾고 머무는 까닭이다.<br> 
+team_insert;<br> 
+<u>놓치지 말 것<br>
+ <br></u><br>
+홍대입구역 3번 출구에서 동교동삼거리 방향은 연남동이다. 한때는 일대에 24시간 문을 여는 기사식당이 즐비해 연남동기사식당 거리로 통했는데, 이제는 개성 넘치는 숍과 카페, 식당이 그 자리를 대신한다. 한식, 중식, 일식은 물론 태국, 이탈리아, 프랑스 등 각국의 음식을 맛볼 수 있는 훌륭한 식당이 골목마다 빼곡하다. 푸르게 펼쳐진 team_insert;연트럴파크team_insert; 경의선숲길을 따라 지금도 호기심을 자극하는 매장이 출현 중이다.<br>
+<br>
+ <br>
+<u>즐길 거리<br>
+<br></u><br>
+홍대입구역을 중심으로 합정역, 상수역, 광흥창역을 잇는 서교동 일대의 골목에는 아기자기한 상점이 숨어 있다면, 홍대입구역에서 연남동, 연희동으로 이어지는 신흥 명소는 세련되고 트렌디하며 이국적인 분위기가 물씬한 가게가 줄을 잇는다. 홍대입구 3번 출구에서 연남동 산책을 시작해 경의선숲길공원을 걷다가 동교동 방향으로 살짝 틀면 연희동에 닿는다. 한편 홍대입구 7번 출구에선 경의선책거리가 시작되는데, 길을 따라가면 지하철 2호선 신촌역에 이른다. 경의선책거리에서 산울림소극장에 이르는 구간에는 공원이 있고, 이를 중심으로 양 길가에 책, 문구, 소품을 파는 다양한 가게가 즐비하다. 경의선숲길과 경의선책거리 일대를 즐기는 색다른 방법 team_insert;서울자전거 따릉이team_insert;는 어떨까. 참고로 자전거대여소는 홍대입구역 6‧8번 출구에 있다.<br>
+<br><br>','02-323-2240',null,null,null,null,null,null,null,null,'없음','없음','외국어 안내서비스:홍대입구 관광안내소 (영어, 중국어, 일어) <br />
+02-323-2240
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('잠원한강공원','06513','서울특별시 서초구 잠원로 221-124',38,127,'잠원한강공원은 영동대교에서 동호대교와 한남대교를 지나 반포대교 사이 강변 남단에 위치하고 있다. 길이는 5.4km로 강남 제일의 번화가인 압구정동, 신사동, 잠원동이 있는 강남구와 서초구에 인접해 있다. 공원 둔치에는 육상경기장, 축구장, 배구장, 수영장, 테니스장, 체력단련장 등 체육시설이 고루 갖추어져 있다. 특히 강변을 따라 자전거도로가 나 있어 한강경관을 즐기면서 자전거타기에 좋다. 이 외에도 누에체험학습장과 꽃ㆍ나비가 있는 아름다운 자연생태학습장이 마련되어 있고, 여름에는 도심 속 야외수영장과 윈드서핑, 모터보트 등 낭만적인 수상스포츠를 즐기는 사람들이 많다.<br>','02-3780-0531',null,'연중무휴',null,null,null,null,null,'있음(6개소, 735대 주차 가능)','없음','가능','입 장 료:없음
+이용가능시설:[운동시설] 농구장, 테니스장, 체력단련장, 배구장, 축구장<br />
+[기타시설] 낚시터, 수상스키장, 수영장, 수상업체(모타보트, 수상스키, 웨이크보드, 워터슬래드 등), 요트장, 자전거대여점<br />
+[편의시설] 매점 , 음수대, 그늘막, 자전거보관소, 자연학습장
+주차요금:기본요금 - 최초 30분 1,000원 / 초과 10분당 200원<br />
+1일 주차 최고한도 10,000원<br />
+월정기권 50,000원<br />
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 동대문 닭한마리 골목','03197','서울특별시 종로구 종로40가길 14',38,127,'의류 상가가 꽉꽉 들어찬 빌딩들이 즐비한 동대문, 이제는 아시아 최대의 의류상가 지대라고 해도 지나치지 않는 곳이 동대문 주변 지역이다. 이곳이 지금의 모습을 갖추게 된 뒤에는 동대문 원단시장, 평화시장과 인근에 자리잡은 시장 사람들이 있었다. 30여 년 전 그들의 허기를 달래주고 마음을 녹여주던 곳이 지금의 닭한마리 골목이었다. 지하철 4호선 동대문역 8, 9번 출구로 나와 직진하다가 기업은행 건물을 끼고 좌회전 하면 일방통행길이다. 그 길 오른쪽에는 오늘도 동대문 종합시장과 인근 시장으로 드나드는 물품을 나르는 택배오토바이들이 즐비하게 서 있다. 그 길 중간 쯤 오른쪽에 보면 덕성각이라는 중국요리집이 보이는데 그 골목으로 들어가면 닭한마리집들이 나온다.<br /><br />그 골목 닭한마리집들은 짧게는 5년부터 길게는 30년이 넘는 세월 동안 그 자리를 지키고 있다. 그러나 지금의 식당이 있기 전 개인집에서 닭칼국수를 팔던 시절까지 거슬러 올라가면 그 골목 닭한마리집의 역사는 30년 보다 훨씬 더 전으로 거슬러올라가야 한다. 당시 닭칼국수를 팔던 할머니집을 28년 전에 인수해서 지금까지 ''닭한마리''를 팔던 식당 주인의 이야기를 들어보면 할머니 한 분이 지금의 ''닭한마리''식의 요리가 아니라 닭고기를 넣고 칼국수를 끓여 팔았다고 한다. 기와 얹은 한옥집 마루와 방에서 손님을 받았다. 지금의 사장은 그 집을 고스란히 인수해서 당시 마당이었던 곳에 홀을 만들고 식탁을 놓았다. 지금 남아 있는 집들 가운데서 가장 오래된 집은 ''진옥화 닭한마리''이다. 그러나 식당에 불이 났고 2009년 2월 재건축 하였다.<br /><br />이 집 또한 처음에는 지금의 ''닭한마리''식의 요리가 아니라 ''닭칼국수''를 팔았다. 그러니까 동대문 닭한마리 골목 요리의 원조는 닭칼국수인 셈이다. 지금도 이 골목 식당 간판이나 현관, 유리창에는''닭칼국수''라는 단어가 남아 있다. 또한 ''닭한마리''와 곁들여 먹는 메뉴에 칼국수 사리가 남아 있는 것도 그 증거인 셈이다. 어떻게 보면 칼국수에 닭고기가 들어간 것에서 닭한마리를 육수에 넣고 끓이는 닭요리에 칼국수가 부재료로 들어가는, 주객이 전도된 요리이기도 하다. ''닭한마리'' 요리는 집집마다 거의 비슷하다. 다른 게 있다면 닭고기를 찍어먹는 소스의 맛과 육수, 선택해 넣어 먹을 수 있는 부재료 등이다. 그래서 이골목 집집마다 소스와 육수의 비빔을 반만 공개한다. 나머지는 비밀이란다. 소스의 주재료인 고춧가루가 좋아야 한다. 맵기만한 고춧가루가 아니라 매우면서도 풍부한 미감과 감칠맛을 머금고 있어야 한다.<br /><br /> 또한, 육수에 들어가는 재료도 엄나무, 인삼 등 집 마다 다르다. 큰 양푼에 육수 가득 붓고 그 속에서 닭한마리를 통째로 끓인다. 닭은 살짝 삶아서 나오지만 식탁 위 간이 가스렌지 위에서도 푹 끓이는 게 좋다. 왜냐하면 감자와 떡, 인삼, 대추, 버섯 등 부재료들의 맛이 우러나 뒤엉켜 한 맛을 내야 하기 때문이다. 그렇게 끓고 나면 고기와 부재료를 건저 먹은 뒤 남은 육수에 칼국수 사리를 넣어 끓여 먹는 것으로 닭한마리의 만찬은 끝난다. 지금도 이 골목 단골의 반 이상이 동대문 주변 시장 사람들이다. 소문이 일본까지 퍼져 일본 여행자들도 꽤 많이 찾는다. 또한, 맛골목을 좋아하는 젊은 연인들이 인터넷에서 정보를 얻고 팔품을 팔아 이 골목을 찾는다. 그들의 입맛에 30년 전 ''닭한마리''요리가 다시 태어나고 있다.<br>','02-2236-9135',null,null,null,null,null,null,null,'없음','없음','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('SK텔레콤 미래기술체험관 T.um(티움)','04539','서울특별시 중구 을지로 65(을지로2가) SK T-타워',38,127,'<strong>생활 전반이 혁신되는 새로운 세상, 세상 모든 것이 연결되는 미래</strong><br /><br />순수한 우리말로 ‘싹을 틔우다’라는 의미를 보유하고 있는 ICT 뮤지엄으로 SK텔레콤의 기술력을 체험할 수 있는 공간이다. 일방적인 정보전달이나 기능 위주의 체험에 그치던 기존 기업 홍보관의 한계를 탈피해 다양한 ICT 체험이 가능한 환경을 구축하고 있으며, 첨단 기술을 통해 사람과 사람을 연결하고자 하는 기업 정신이 잘 드러나 있는 곳이다.<br />2021년 4월부터 실시간 온라인 투어를 진행하고 있으며 홈페이지를 통해 예약 후 관람이 가능하다. 자세한 내용은 홈페이지 참고<br>','02- 6353-6665','2008년 11월','주말/ 공휴일/ 근로자의 날/ 매달 마지막 주 월요일(시스템 정기 점검)','·투어 : 체험미래기술, 하이랜드 플랫폼, 3D 영상회의, 가상현실, 비행셔틀 체험<br />
+·단체 관람 : 최소 2주 전 별도 예약 신청','만 10세 이상','단체관람 최대 10명',null,'평일 : 10:00~18:00','있음','없음','불가','입 장 료:무료
+내국인 예약안내:인터넷 홈페이지 신청(30일~30분 전까지)
+외국어 안내서비스:외국어 안내(영어, 중국어)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한방스파 여용국','05562','서울특별시 송파구 석촌호수로12길 60(잠실동)',38,127,'여용국은 조선 시대 안정복의 소설 <여용국전>의 내용을 바탕으로 ''여자가 얼굴을 가꾸는 것이 임금이 나라를 경영하는 것과 같다''라는 이념으로 탄생했다. 여용국에서는 사람마다 다른 개인의 체질을 강조한다. 사람의 체질이 다르므로 일괄적인 마사지 방법이나 약재를 통해 효과를 보는 데는 한계가 있다는 것. 각자의 체질에 맞는 약재와 마사지법을 적용해야 올바른 효과를 볼 수 있다.<br>','02-412-0100','2012년12월 1일','설/추석 연휴 당일',null,'전연령','6~10명',null,'평일 10:00~22:00 / 주말 10:00~20:00','있음','불가','없음','관광코스안내:* 코엑스코스: 코엑스 K-pop 전시관, 쇼핑몰 투어, 여용국 한방스파 체질마사지 체험 , 종합운동장 공연 또는 야구경기 관람<br />
+* 마롯데월드몰 코스: 석촌호수 주변 관광,  월드몰에서 다양한 볼거리 관광, 잠실새내 새마을 시장 먹거리 탐방                
+주차요금:없음
+
+화장실:있음
+
+시설이용료:체질체크:5만/여용관리:9만~/여신관리:13만~
+
+이용가능시설:상담실/케어실/스파실/족욕실
+
+외국인 예약안내:전화예약가능
+
+내국인 예약안내:전화예약가능
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('금천 폭포공원','08650','서울특별시 금천구 시흥대로38길 61(시흥동)',37,127,'금천 폭포공원은 서울시 서남부에 있는 총 4,835㎡ 규모의 공원이다. 경기도에서 서울 도심으로 진입하는 관문 성격의 교통 요충지로 박미 고갯길의 자연 지형을 이용하여 경사면에 인공폭포를 조성했으며 상부는 문화회관과 공원시설을, 하부는 연못 형태의 수조가 있는 공원이다. 인공폭포는 시계 지역을 지나는 차량과 사람들에게 청량감을 심어주고 랜드마크적인 요소를 강하게 부각해, 보행자뿐 아니라 운전자에게도 도심지로 진입하는 관문으로 인식시킨다. 또한, 문화회관 및 휴게공간은 지역 주민들에게 생활권 거점 공원으로 이용되고 있다. 인공폭포는 금천구 3개의 동(독산, 가산, 시흥)을 폭포의 3줄기를 상징하며, 시계 지역의 관문을 상징하는 LANDMARK 적 상징성을 표현했다. 휴게광장은 금천구 마크(진달래 외형-구화)를 나타내며, 문화회관은 우리나라 전통 초가지붕의 형상으로 전통 건축미를 보여준다.','02-2627-1652','2008. 10. 20','연중무휴',null,null,null,null,'상시 개방',null,'없음','가능','화장실:가능 (남/녀 구분)
+이용가능시설:문화회관(2,020㎡), 인공폭포(L30 x H12m), 공원시설, 전망대 등 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('독산 근린공원','08596','서울특별시 금천구 범안로 1096(독산동)',37,127,'서울 금천구 독산1동에 있는 근린공원으로, 산책로와 운동 시설이 갖추어진 소규모 공원이다. 안양천이 길 건너에 바로 있어 함께 이용해도 좋다. 공원 중앙에는 2017년에 조성된 16,528㎡ 규모의 대형 인조잔디축구장이 울창한 나무들로 둘러싸여 축구 동호회 인들에게 인기가 높다. 대관 예약 시간 이후에는 주민들에게 개방되어 어린이들도 안전하게 뛰어놀 수 있다. 축구장 외에도 게이트볼장과 배드민턴장 5면을 비롯해 안양천변을 낀 산책로와 운동 시설을 갖추고 있다.','02-2627-2341','1993-06-30','연중무휴',null,null,null,null,'상시 개방','불가 (인근 하안동상업지역 제1 노상공영주차장 이용 가능)','없음','가능','주차요금:30분 600원, 60분 1,000원, 120분 2,200원, 240분 4,600원
+화장실:가능 (남/녀 구분)
+이용가능시설:공원시설, 잔디축구장, 운동장, 배드민턴장, 정자
+이용가능시설:탈의실
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('산기슭 공원','08563','서울특별시 금천구 독산로54길 6-1(시흥동)',37,127,'관악산 생태공원 산자락에 위치한 자연을 품은 공원으로 8,412㎡ 규모의 큰 면적을 자랑한다. 시흥4동 문교초등학교 인근에 있는 이곳은 다양한 운동 기구와 정자 등이 설치되어 있고, 나무가 울창하여 운동과 휴식을 함께 취할 수 있다. 공원 안에 인공폭포가 있어 이곳을 찾는 사람들에게 시원함을 선사하고 있으며 공연을 감상할 수 있는 넓은 야외무대도 갖추고 있다.','02-2627-2341','1998년10월 26일','연중무휴',null,null,null,null,'상시 개방','불가 (인근 서울특별시 남부 여성 발전센터 주차장 이용 가능)','없음','가능','화장실:가능 (남/녀 구분)
+이용가능시설:인공폭포, 팔각정자, 육각정자, 야외무대, 음수대, 조합놀이대
+주차요금:30분 720원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('쌈지 어린이공원','08557','서울특별시 금천구 독산로76길 47',37,127,'서울 금천구 독산4동 주택가 가운데 있는 982㎡ 면적의 어린이 전용 공원으로 상상 공원이라고도 불린다. 미끄럼틀에 붙은 작은 시설부터 계단 옆에 마련된 대형 암벽 등반대까지 어린이들의 근육 단련 훈련을 마음껏 해 볼 수 있는 공간이다. 크기와 길이도 색다른 여러 종류의 미끄럼틀과 점핑 공간, 에너지 자전거 등 놀 거리가 많다. 1호선 독산역에서 독산 자연공원으로 가는 길, 정심초등학교 인근에 있다.','02-2627-2341','1983년5월5일','연중무휴',null,null,null,null,'상시 개방','불가 (인근 독산4동공영주차장 이용 가능)','없음','가능','주차요금:30분 390원
+이용가능시설:조합놀이대 , 사각정자, 지압보도, 야외무대, 운동기구 9점, 암벽등반대
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('긴고랑 공원',null,'서울 광진구 중곡동 68-19',38,127,'서울 광진구 아차산에 인근에 있는 근린공원으로 긴고랑길, 주몽교 등 여러 산책코스로 구성되어 있다. 아차산 안심 둘레길 구간으로 인근 주민 및 등산객들이 많이 이용하는 공원이다. 아차산과 용마산 계곡 길이 만나는 곳의 중곡동 언덕진 동네에서 벽화를 감상하며 걸을 수 있는 긴고랑길을 걷다 보면 산 입구에 다다르게 된다. <용마산·아차산 종합안내>와 <긴고랑길 아트투어>안내도가 설치되어 있어 이용하기 편리하다. 공원 전 구역에서 오토바이와 자전거는 출입을 금지하고 있다. 5호선 아차산역 1번 출구에서 중곡4동 주민센터 근처까지 도보로 17분 정도 걸리고, 5호선 군자역 4번 출구에서 도보로 18분 정도 소요된다.','02-450-7770',null,'연중무휴',null,null,null,null,null,'있음/아차산 공영주차창(369-6)','없음','가능','주차요금:5분당 150원
+
+입 장 료:무료		
+
+화장실:있음(남/녀 구분)
+
+이용가능시설:공원시설		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('뚝섬 한강공원 벽천마당',null,'서울 광진구 자양동 158-17',38,127,'뚝섬 한강공원에는 바닥에서 솟아오르는 시원한 물줄기를 감상할 수 있는 분수와 암벽 등반을 즐길 수 있는 벽천마당이 있다.  여의도 한강공원 수상 분수, 난지 한강공원 거울 분수와 함께 서울 3대 한강 분수공원 명소 중의 한 곳으로, 특히 밤에 보는 야간조명 분수는 화려한 한강대교들과 강남 빌딩 숲들의 조명이 어우러져 장관을 이룬다. 공원에 앉아 윈드서핑, 수상 스키, 모터보트 등의 수상스포츠를 즐기는 모습을 감상하며 도심 속 지친 일상을 날려볼 수 있다.','02-3780-0521~4',null,'연중무휴',null,null,null,null,'상시 개방','있음','없음','가능','이용가능시설:공원시설, 분수, 암벽		
+
+입 장 료:무료		
+
+화장실:있음(남/녀 구분)
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('백사실계곡','110-021,1','서울 종로구 부암동 115',38,127,'백사실계곡은 서울에서 보기 드물게 문화사적(백석동천, 사적)과 자연환경이 잘 어우러진 우수한 자연생지역으로서 도롱뇽, 개구리, 버들치, 가재  등 다양한 생물체들이 서식하고 있다. 특히, 1급수 지표종인 ''도롱뇽''은 서울특별시자연환경보전조례에 의한 서울시 보호야생동물로서 백사실계곡에 집단으로 서식하고 있어 그 보존가지가 매우 높은 지역이다.<br /><br />아는 사람만 안다는 서울의 청정 계곡으로 도롱뇽이 산다고 해서 화제가 됐다. 백사(白沙) 이항복의 별장터가 있어 붙은 이름이라고 전해진다. 깊은 숲을 따라 이어지는 오솔길과 걸음을 막아서는 크고 작은 계곡의 정취는 이곳이 과연 서울인가를 의심하게 한다. 버들치, 도롱뇽 등의 서식지인 만큼 계곡에 발을 담그지는 말고 그저 풍광만 탐할 것을 권한다. 카페 산모퉁이와 군부대를 지나면 계곡 입구가 나온다.','02-2148-1114',null,null,null,null,null,null,null,null,'없음','없음','화장실:있음
+입 장 료:없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용마산','02260','서울특별시 중랑구 용마산로62길 53(면목동)',38,127,'해발 348m의 용마산은 아차산의 최고봉으로 면목동 동현에 위치하고 있으며 망우리공원, 중곡동 간의 산능선을 따라 이어지는 등산로를 통해 망우리에서 아차산성을 거쳐 어린이 대공원 후문 근처까지 이어진다. (면적 2,800,619㎡)<br /><br />* 용마폭포공원<br /><br />면목동 산 1-4번지에 위치한 용마폭포는 세갈래의 폭포 줄기로 이루어져 있으며, 중앙의 폭포는 용마폭포, 좌측이 청룡폭포, 우측이 백마폭포이다. 용마폭포는 폭 3~10m, 2단으로 이루어진 51.4m의 높이를 자랑하고 있으며, 청룡폭포는 21m, 백마폭포는 21.4m로 이루어져 있다.<br /><br />* 용마산 사가정 공원<br /><br />2005년 4월 13일 개장한 사가정공원은 면목동 산 50번지 일대의 면목약수터지구 입구에 약 3만 3천2백여 평 규모로 조성되었다. 공원의 명칭은 용마산 부근에서 거주했던 조선 전기의 문인인 서거정 선생의 정취를 느낄 수 있도록 그의 호를 따서 지어졌다. 또한, 그의 대표적인 시 4편을 골라 시비를 만들어 설치함으로써 공원이용객들이 산책과 함께 명시를 감상 할 수 있는 기회를 제공하고 있다.<br /><br />이곳에는 피크닉장, 어린이놀이터, 체력단련시설, 자연형 계류, 사가정(전통 정자), 다목적광장, 냇가휴게소 등 다양한 휴게 시설과 운동시설, 조경시설이 갖춰져 있어 주민들의 수준 높고 쾌적한 휴식공간이자 중랑구의 명소로 자리잡고 있다.<br>','02-2094-2340',null,null,null,null,null,null,null,null,'불가','없음','등산로:구의동 영화사 - 팔각정 - 아차산 정상 - 용마봉 - 대원외고 광장동 동의초등학교 - 팔각정 - 아차산 정상 - 용마산 긴고랑체육공원 용마산길 아성빌라, 선진연립주택 코스 외
+이용가능시설:용마폭포공원, 시인의 길, 휴게 공간 외
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 경교장','03181','서울특별시 종로구 새문안로 29(평동)',38,127,'사적인 경교장은 대한민국 임시정부의 활동공간이자, 백범 김구 선생이 서거한 역사의 현장이다. 서울시는 대한민국임시정부의 마지막 청사이자 백범 김구가 서거한 역사적 현장인 경교장을 원형 복원하고, 우리 근현대사의 역사적 현장을 되살려 시민들의 교육공간으로 활용하고자 경교장을 복원하였다. 뿐만 아니라 내부를 임시정부의 지나온 역사를 한눈에 조망할 수 있도록 전시공간으로 꾸며 2013년 3월 2일부터 시민에게 개방하였다.<br /><br />경교장 복원공사는1949년 백범 김구 서거 이후 오랜 기간 대사관 및 병원시설로 사용되면서 변형된 내부 평면을 철거하고, 이 과정에서 옛 모습이 잘 남아있는 부분은 최대한 원형을 살려 복원하였다. 그렇지 않은 부분은 『조선과 건축(朝鮮と建築)』(1938년 8월호)에 수록되어 있는 경교장 도면을 근거로 하여 복원하였다. 복원된 경교장에서는 대한민국 임시정부가 걸어온 길을 유물과 영상, 정보검색코너 등 다양한 콘텐츠를 통해 살펴볼 수 있다.<br>','02-735-2038',null,'매주 월요일, 1월 1일',null,null,null,null,'09:00 ~ 18:00 (17:30 입장마감)','병원 주차장 이용','없음','불가','이용가능시설:제 1 전시실 - 경교장의 역사<br />
+제 2 전시실 - 대한민국 임시정부<br />
+제 3 전시실 - 백범김구과 임시정부<br />
+제 4 전시실 - 재현전시 (응접실, 귀빈식당, 김구 집무실)
+관 람 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍파동 홍난파 가옥','03178','서울특별시 종로구 송월1길 38(홍파동)',38,127,'홍파동 가옥은 1930년에 독일 선교사가 지은 벽돌조 서양식 건물로 작곡가 홍난파 선생이 인수하여 살던 곳이다. ′봉선화′, ′고향의 봄′ 등을 작곡한 홍난파 선생의 체취를 느낄 수 있는 이 주택은 1930년대 서양식 주택 특성이 원형대로 보존되어 있고 그의 대표곡들이 작곡된 산실이므로 근대문화유산으로 보존될 가치가 있다. 홍난파 선생은 일제강점기 친일행적으로 인해 비판을 받고 있기도 하다.<br>','070-8112-7900',null,'주말 및 공휴일',null,null,null,null,'하절기(4~10월) 11:00~17:00<br />
+동절기(11~3월) 11:00~16:00','없음','없음','불가','입 장 료:없음
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대한민국 임시정부 서울연통부 터','04516','서울특별시 중구 서소문로9길 14(순화동)',38,127,'대한민국임시정부(大韓民國臨時政府) 서울연통부(聯通府) 터는 1919년 중국 상해에 수립된 대한민국임시정부가 국내와 연락을 취하고, 국내행정을 담당하기 위해 비밀리에 만든 조직인 대한민국임시정부 직할의 서울연통부가 있었던 자리이다. 현재 서울특별시 중구 순화동 동화약품의 옛 사옥 앞에 표지석이 설치되어 있다.<br>','02-3396-5842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울월드컵경기장 스타디움 투어','03932','서울특별시 마포구 월드컵로 240(성산동)',38,127,'<strong>‘월드 사커’가 선정한 세계에서 가장 아름다운 10대 축구 경기장</strong>
+2002 FIFA 한일월드컵 역사의 현장과 세계적으로 손꼽히는 건축예술물인 서울월드컵경기장의 아름다운 모습을 관람할 수 있다.','02-2128-2002',null,'명절/근로자의 날/경기행사시 휴무','* 관람 코스 : 스타디움 투어 출입구 – 투어 대기 공간 – 주경기장(그라운드 진입 제한) - 선수감독실, 워밍업실 – 영상관 – 건립존 – 기념품샵(종료)','제한 없음','1회 30~40명',null,'09:00~18:00 / 50분간',null,'없음','없음','내국인 예약안내:서울시 공공서비스예약 접수 및 당일 현장접수
+외국어 안내서비스:영어 안내
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('올리바인 스파','03030','서울특별시 종로구 통일로16길 4-1(무악동)',38,127,'문화체육관광부와 한국관광공사가 뽑은 웰니스관광 25선에 선정된 올리바인은 도심 속 럭셔리 스파와 뷰티team_insert 운영하고 있습니다. 또한 올리비움 산후조리원, 세란병원 연계하여 전문적인 산전·산후마사지와 체형관리, 다양한 뷰티 프로그램을 제공합니다. 스파에서는 업계 최고의 실력을 갖춘 테라피스트들이 제공하는 마사지는 일상에서 쌓인 피로와 노폐물을 해소하고 건강하고 균형 잡힌 몸을 만들 수 있도록 도와 만족도가 높습니다. 이와 함께 스위스 명품 아로아 르노벨, 달팡 등과 같은 해외 브랜드들을 론칭하여 관리에 사용하고 있습니다. 뷰티team_insert 세란병원 의료진과 연계하여 고객 맞춤별 컨설팅과 다양한 뷰티 관련 메디컬 프로그램을 진행 가능합니다.<br>','02-730-1719','2016년 5월','연중무휴','* 스파 전문 프로그램<br />
+- 산전산후 : 임신에서 출산 후까지 주기별 안전하고 효과적인 마사지 프로그램<br />
+- 페이셜 : 지치고 주름진 피부를 되살리는 페이셜 안티에이징 프로그램<br />
+- 바디 : 고기능성 스파제품과 숙련된 전문 테라피스트의 손길로 몸속에 쌓인 노폐물과 독소를 배출시킬 수 있는 시그니처 스파 테라피<br />
+<br />
+* 뷰티team_insert 프로그램<br />
+- 슬리밍관리 : 캐비리포, 체외충격파와 같은 의료기기를 사용한 스페셜 관리<br />
+- 뷰티관리 : 각종 주사요법, 필러, 보톡스 등 시술을 통한 관리<br />
+<br />
+* 맞춤형 원스톱 여성케어<br />
+- 미혼여성 : 외모를 가꾸고 아름다운 젊음을 간직하고픈 미혼여성들을 위한 스파 페이셜관리, 화이트닝, 아쿠아필 등 맞춤형 케어<br /> 
+- 임신여성 : 건강한 출산을 준비하기 위한 임신여성을 대상으로 한 산전마사지, 튼살관리 등 케어<br />
+- 출산여성 : 출산 이후 늘어난 체중이나 몸속 쌓인 노폐물을 없애기 위한 집중 산후관리 프로그램<br />
+- 중년여성 : 급격한 노화가 시작되는 중년 여성들을 위한 레이저 질타이트닝, 각종 주사, 필러, 보톡스 등 관리 프로그램<br />
+- 노년여성 : 드러나는 노화의 흔적들을 없애고 좀 더 젊어 보이길 원하는 아큐트라, 리쥬란힐러, 물광주사 등 안티에이징 집중 프로그램.',null,'동시 8명 관리 가능',null,'* 평일 : 오전 10시 ~ 오후 6시<br />
+* 주말 : 오전 10시 ~ 오후 5시','있음','불가','불가','이용가능시설:관리룸 : 7개
+
+화장실:있음
+
+시설이용료:프로그램별 이용요금 상이
+주차요금:올리바인 이용고객 무료
+
+외국인 예약안내:전화예약 가능
+
+내국인 예약안내:전화예약 가능
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마포중앙도서관','03965','서울특별시 마포구 성산로 128',38,127,'마포중앙도서관은 청소년을 위한 특기적성 교육, 진로탐색, 문화체험 등의 다양한 시설을 갖춘 청소년교육센터가 포함된 국내 최초의 미래형 복합기능 도서관이다. 
+또한 일상생활에서의 다양한 문제해결능력을 향상시킬 수 있도록 글쓰기와 비판적 책 읽기를 기초로 한 다양한 ‘리터러시 서비스(정보 리터러시, 디지털 리터러시, 미디어 리터러시)’와 청소년의 진로와 적성 탐색을 위한 ‘마중도-L’ 프로그램을 중심으로, 문화예술 분야의 특기적성, 인공지능시대의 적응력 향상을 목표로 한 ICT관련 교육, 진로탐색, 영어교육 등 특화된 청소년교육 서비스를 제공할 것이다.','02-3153-5800','2017.11.15','매주 월요일/법정공휴일',null,'전연령',null,null,'<b>*사회적 거리두기에 따라 이용시간 변동이 있으니 방문전 확인 요망 </b><br>평일/주말 09:00~22:00','주차가능','없음','불가','이용가능시설:자료열람실Ⅰ/Ⅱ, 멀티미디어실, 어린이·유아자료실, IT체험실
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('광장시장 한복문화 체험관','03195','서울특별시 종로구 창경궁로 88광장시장 2층 특관 450호',38,127,'120년 전통의 광장시장 내  한복문화체험관  2019년 11월6일 개관 하였다. 광장시장 2층에서 한복문화체험을 진행하고 있으며, 한복을 입고 시장 주변을 돌아다니며 관광 할 수 있다. 체험관 내부에는 한복관련 악세사리도 판매하고 있다.<br>','02-2261-4112',null,null,null,null,null,null,'09:00~18:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('문래예술공장','07363','서울특별시 영등포구 경인로88길 5-4(문래동1가)',38,127,'서울특별시 창작공간 문래예술공장은 자생적 예술 마을인 문래창작촌을 포함하여 국내외 다양한 예술가들을 위한 창작지원센터로 2010년1월28일에 개관했다. 문래동 철공소 거리의 옛 철재 상가 자리에 전문창작공간으로 새롭게 건립되었으며, 공동작업실, 다목적발표장을 비롯해 녹음실, 세미나실 등 창작 및 발표 활동을 위한 다양한 지원시설을 갖추고 있다.<br>','02-2676-4300',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성수동 수제화거리','04782','서울특별시 성동구 연무장7길 15(성수동2가)',38,127,'1970년대부터 모여든 수제화 업체가 하나의 골목을 만들고 역사를 만들었다. 현재 350여개 수제화 생산업체와 100여개 중간 가공, 원부자재 업체가 있으며 독특한 분위기의 카페도 속속 문을 열고 있다. 빈티지한 매력으로 데이트명소, 사진찍기 좋은 곳, 핫플레이스로 떠오르고 있다.<br>',null,null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('뚝섬 한강공원 엑스게임장',null,'서울 광진구 자양동 427-27',38,127,'엑스 게임장(X-Game)은 익스트림 스포츠를 즐기는 마니아의 성지로 뚝섬 한강공원 내에 있다. 인라인, 스케이트보드, BMX 등의 익스트림 스포츠를 초보자부터 프로들까지 즐길 수 있으며 프로 대회까지 열려 연중 스포츠 열기로 가득한 곳이다.  80m×39.8m 타원형의 시설물에서부터 각종 시설물이 갖추어져 있어 인라인스케이트, 보드 등 스릴 넘치는 스포츠를 즐길 수 있다. 어린이와 초급자를 위한 평지 공간부터 초, 중급자를 위한 소형 기물, 중. 상급자를 위한 대형 기물까지 공간구성도 다양하다. 이용 시 헬멧과 무릎, 팔꿈치, 손목 보호장구를 반드시 착용해야 하며, 청소년 이상(만 9세 이상)만 이용할 수 있다.','02-3780-0521',null,'연중무휴',null,null,null,null,'상시 개방','있음','없음','불가','주차요금:최초 30분 1,000원<br>초과 1분당 200원(br)1일주차 최고한도 10,000원
+
+입 장 료:무료
+
+화장실:있음(남/녀 구분)
+
+이용가능시설:인라인 스케이트장
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우리유황온천','05102','서울특별시 광진구 자양로5길 33(자양동,와이엠프라젠스파)',38,127,'서울 잠실대교 북단 인근에 있는 우리 유황온천(프라젠 스파)은 매일 지하 1,040m에서 32.6도의 천연 유황 온천수를 끌어 올려 제공한다. 대온천탕, 히노키탕, 소금방, 스포츠 마사지 시설이 마련되어 있으며, 실내 카페와 함께 야외에는 온천수에 발을 담그고 즐길 수 있는 족욕 카페도 있다. 2호선 구의역 4번 출구 잠실대교 북단에 있다.','02-3436-0005',null,'연중무휴',null,null,null,null,'05:30~21:00','있음(지하3층 주차장 이용, 100대 가능)','없음','불가','주차요금:3시간 무료
+
+입 장 료:대인 10,000원<br>소인(24개월~7세 이하) 7,000원<br>조조할인(평일오전 8시 이전/주말 공휴일 제외) 8,000원<br>경로우대(신분증 지참한 65세 이상) 9,000원	
+
+화장실:있음(남/녀 구분)
+
+이용가능시설:유황 대온천탕, 유황 열탕, 바가지탕, 토굴방, 동굴방, 아이스방, 히노끼탕, 휴게실		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('뚝섬 전망 문화 콤플렉스','05089','서울특별시 광진구 강변북로 2202(자양동)',38,127,'강변대로 구리 방향을 가다 보면 우주선 모양의 건물을 발견할 수 있는데, 자벌레처럼 가늘고 긴 원통형 모양의 건물이 뚝섬 전망 문화 콤플렉스이다.  이곳은 4층 건물로 실내 총면적은 2,476㎡이며 약 700명의 관람객을 수용할 수 있다. 내부에는 한강을 내려다볼 수 있는 전망 공간이 마련되어 있어 휴식과 힐링의 장소로 인기를 얻고 있다. 1층 생각 마루는 천만 시민의 책장, 카페, 전망 데크, 시설관리실, 공연행사 공간이 있고, 2층 생각 마루는 서울 생각 마루 책장, 모임 공간이 있고, 3층 상상 마루는 개인 컴퓨터 사용 업무, 공용 사무 및 작업 공간이 마련되어 있다. 이곳은 서울시 공공서비스 예약(https://yeyak.seoul.go.kr)사이트를 통해 정기(월 단위) 접수 예약 후 이용할 수 있다. 한강시민공원 주차장과 7호선 뚝섬유원지역 3번 출구와 연결되어 있어 접근성이 편리하다.','02-3780-0517',null,'월요일, 1월 1일, 추석 연휴, 설 연휴',null,null,null,null,'화요일 ~ 일요일 10:00 ~ 22:00','불가 (뚝섬한강공원3주차장 이용 가능)','없음','불가','주차요금:뚝섬한강공원3주차장 이용 시; <br>
+최초 30분 1,000원 <br>
+초과 10분 200원 <br>
+1일 주차 최고한도 10,000원
+화장실:가능 (남/녀 구분)
+이용가능시설:사물함, 복합기
+이용가능시설:휴식시설, 카페, 독서시설, 모임시설, 사무공간
+이용가능시설:안전시설 설비사항: 소화기
+내국인 예약안내:3층 상상마루 - 서울시 공공서비스예약(https://yeyak.seoul.go.kr)사이트에서 정기(월 단위) 접수 예약 후 이용 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('일원장미공원','06359','서울특별시 강남구 광평로10길 28(일원동)',37,127,'서울 강남구 일원동 삼성서울병원 인근에서 대모산으로 올라가는 입구에 조성된 근린공원이다. 장미가 많아 장미꽃이 한창 피는 계절인 5월~6월에는 장미축제가 열린다.<br>주변 아파트 단지 주민들에게 인기 있을 뿐 아니라 대모산에 올라가기 전과 하산 후 모임 장소와 휴식을 담당하는 곳이기도 하다. 대모산 숲 체험 프로그램은 인기가 높아서 체험학습 마치고 놀이시간을 더 갖고 싶은 아이들과 대기하는 엄마들로 공원은 항상 사람들로 가득하다.','02-3423-6240',null,null,null,null,null,null,'00:00 ~ 24:00',null,'없음','없음','이용가능시설:공원시설		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('코엑스동측광장','06164','서울특별시 강남구 영동대로 513(삼성동)',38,127,'삼성역 트레이드 타워(무역센터)를 시작으로 코엑스 컨벤션센터를 지나 아셈타워에 이르는 보도 변 긴 광장을 말한다. <br>동 측 광장의 다른 이름은 코엑스 어반파크(Coex Urban Park)라고 해서 K팝 공연, 야외 영화제 등 다양한 행사가 연중 수시로 열리고 있다. 이곳 코엑스 일대는 K-Pop ''강남스타일''의 촬영지로 전 세계를 말춤 열풍으로 달구면서 ''강남''을 전 세계에 알렸던 강남스타일 랜드마크로 ''세계는 하나''라는 글로벌 마인드를 부각한 높이 5m, 폭 8m에 달하는 ''말춤'' 청동 조형물도 설치되어 있어 세계적인 관광 명소로도 주목받고 있다.','02-6000-1155',null,null,null,null,null,null,'00:00 ~ 24:00','주차가능','없음','가능','촬영장소:K-Pop ''강남스타일'' 촬영지
+주차요금:최초 30분 2,400원<br>15분 1,200원<br>1일 최대 48,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('무수골계곡','01313','서울특별시 도봉구 도봉로169길 265(도봉동)',38,127,'경기도 의정부와 맞닿은 서울의 최북단 도봉산은 자운봉 740m와 오봉산 683m의 높은 봉우리 아래로 용어천계곡, 문사동계곡, 원도봉계곡 등이 있다. 산 정상에서 마을로 내려가는 마지막 자락에 길게 뻗은 계곡이 있는데 그곳이 도봉계곡 또는 무수골계곡이라고도 불린다. 이곳은 많은 바위와 물줄기를 만날 수 있는 곳이다. 여름철 더위를 피해 산과 물을 찾는 사람들에게 사랑받는 인기 계곡이다. 1호선, 7호선 도봉산역을 통해 찾아갈 수 있다.','도봉구청 공원녹지과',null,'없음',null,null,null,null,'00:00 ~ 24:00','없음','없음','없음','입 장 료:무료		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('여의도한강공원','07337','서울특별시 영등포구 여의동로 330',38,127,'여의도한강공원은 정치, 금융, 언론의 중심지인 여의도에 자리하고 있으며, 지하철ㆍ버스 등 대중교통으로 접근성이 좋아 직장인과 일반시민들이 즐겨찾는 명소이다. 특히, 여의도 한강공원에서는 봄에는 벚꽃축제가, 가을에는 세계불꽃축제 및 각종 공연과 마라톤행사 등 다양한 행사가 이어져 볼거리와 즐길거리가 풍부한 휴식공간이다. 또한, 밤섬, 여의도 샛강 등이 비교적 자연그대로 보존되어 있어 생태학습장 및 자연친화형 공원으로 조성되어 있다. 뿐만 아니라 한강르네상스 특화사업으로 물빛광장, 수상무대 및 수상분수, 빛의 폭포, 피아노물길, 페스티발랜드, 요트마리나 등의 시설물들이 새로 조성되어 시민들에게 더 많은 사랑을 받고 있다.','02-3780-0561',null,'연중무휴',null,null,null,null,null,'있음(5개소, 1,991대 주차 가능)','없음','가능','화장실:있음
+입 장 료:무료
+이용가능시설:물빛광장, 수상무대 및 수상분수, 빛의폭포, 너른들판, 천상계단, 피아노물길, 광역여객선선착장, 친수형스탠드, 페스티발랜드, 자연형 호안, 서울색공원<br />
+요트마리나, 샛강 상·하류 IC, 샛강 생태공원 방문자센터 등<br />
+샛강 문화의 다리<br />
+[공원도로] 자전거도로, 보행자전용도로(산책로)<br />
+[광장] 너른들판, 멀티플라자, 여의마당, 버들광장, 민속마당, 잔디마당 등<br />
+[운동시설] 수영장, 인라인스케이트장, 파크골프장, 다목적운동장<br />
+[수상시설] Cteam_insert(유람선, 레스토랑, 편의점), 파라다이스(오리배, 모터보트, 레스토랑), 마리나요트장, 수상무대, 수상분수, 여객선선착장, 유람선선착장, 119수난구조대, 관공선 선착장
+주차요금:기본요금 - 최초 30분 2,000원 / 초과 10분당 300원<br />
+1일 주차 최고한도 15,000원<br />
+월정기권 100,000원(샛강쪽 80,000원)<br />
+※ 상세요금 정보는 홈페이지 참조<br />
+한강사업본부 <a href="http://hangang.seoul.go.kr/archives/3217"_blank" title="새창: 한강사업본부 ">http://hangang.seoul.go.kr/archives/3217</a>
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('동대문 문구완구거리','03120','서울특별시 종로구 종로52길 36(창신동)',38,127,'서울 지하철 1호선 동대문역 4번 출구로 나와 독일약국 옆 골목으로 들어서면 120곳의 문구점이 있는 동대문 문구거리가 나온다. 동대문 문구거리는 1960년대에 생겨나 오랜 전통을 자랑하는 국내 학용품의 중심지로 자리잡고 있다. 이 곳은 주로 공책류와 크레파스, 연필, 실내화, 가방, 스케치북 등의 학용품과 어린이 선물용품이나 팬시용품, 파티용품 등 서울시내 학교앞 문방구에 있는 문구가 이곳에 다 있다. 가격은 소비자 가격의30~40%까지 싸게 살 수 있고 한 번에 구입해야 하는 단위가 클수록 가격이 저렴하다. 또한 작년에 팔다 남은 이월상품이 정가의 절반이하로 파는 곳도 많다.<br>','02-743-7424',null,null,null,null,null,null,'08:00~19:00','없음','불가','없음','입 장 료:없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국립서울현충원','06984','서울특별시 동작구 현충로 210',38,127,'국립묘지는 관악산 기슭의 공작봉을 주봉으로 하여 동작의 능선이 병풍치듯 3면을 감싸고 있으며 앞에는 한강이 굽이쳐 돌고 있다. 43만여 평의 이곳 성역에는 구한 말의 의병들을 위시하여 조국 광복을 위하여 투쟁하신 애국지사, 나라의 발전과 민족의 번영을 위해 평생을 바치신 국가 유공자, 위기에 처한 나라를 구하다, 장렬히 산화하신 국군 장병과 경찰관, 예비군 등 165,000여 순국선열과 호국영령들이 잠들어 있다. 이 중 10만 4천여위는 현충탑내 위패 봉안관에 위패로 봉안 되었고, 시신은 찾았으나 그 이름을 알 수 없는 7,000여 무명용사는 납골당에 모셔져 있으며, 54,000여 위는 묘역에 안장되어 있다.  묘역은 애국지사 묘역, 임정요인 묘역, 국가 유공자묘역, 장병묘역 (장교 - 사병), 경찰 묘역 등으로 나뉘어져 있다. 경내에는 현충탑, 현충문, 충성분수대, 현충지, 현충관(영화관), 사진 전시관, 유품전시관, 각 시도 공원 등이 설치되어 있으며, 1955년 국군묘지로 창설되어 1965년 국립묘지로 승격되었으며, 기관 명칭은 1996. 6.1 국립묘지관리소에서 국립 현충원으로 변경하였다. 매년 6월 6일 현충일에는 거국적인 추념행사가 거행된다.','02-748-0114',null,null,'[견학프로그램] 단체 참관학습, 나라사랑체험학습, 나라사랑체험활동, 호국안보현장견학프로그램, 수학여행 참관교육',null,null,null,'[개방시간] 06:00~18:00<br />
+[견학시간] 09:00~17:00','승용차량 : 정문으로 진입, 주차안내원의 안내에 따라 지정 장소에 주차<br />
+대형차량 : 동문으로 진입, 선양단지 주차장에 주차','불가','불가','주차요금:무료
+화장실:있음
+장애인 편의시설:휠체어 대여(민원 안내실에 비치), 전용화장실, 전용주차구역
+이용가능시설:* 안장관련시설 - 현충관, 위패봉안관, 
+영현봉안관, 충혼당<br />
+<br />
+* 참배.추모시설 - 현충탑,  충열대,  경찰충혼탑,  대한독립군무명용사위령탑, 학도의용군무명용사탑,재일학도의용군전몰용사위령비,  육탄10용사현충비, 유격부대전적위령비,  50년현지임관전사자추념비,육사7기특별동기생추모탑,포병장교충혼비, 故함준호장군현충비, 안병범장군순의비<br />
+<br />
+* 조형/휴게시설 - 충성분수대, 충성거북상, 현충지, 공작지, 호국종, 충혼승천상, 정자, 휴게소, 육강정, 조각종원 및 기념관터, 온실 등
+관 람 료:무료
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('하늘공원','03900','서울특별시 마포구 하늘공원로 95',38,127,'하늘공원은 월드컵공원내에 속해 있는 공원으로 평화공원, 난지천공원, 난지한강공원, 노을공원과 함께 월드컵 경기장 주변의 5대 공원을 이룬다. 생태환경을 복원할 목적으로 조성되었으며, 자연에너지를 사용하여 자체 시설을 운영하고 있다. 억새 식재지, 혼생초지, 암석원, 해바라기 식재지, 전망휴게소, 풍력발전기 등으로 구성되어 있다. 월드컵공원 중 하늘과 가장 가까운 곳에 있으며, 쓰레기 매립지의 척박한 땅에서 자연으로 복원되는 변화를 보여주는 공원이다. 가을의 은빛 억새꽃이 장관을 이루며 북한산, 한강 등 서울의 풍경을 한눈에 볼 수 있다. 또한 노을과 야경이 아름답기로 알려진 명소이기도 하다.<br>','02-3153-8367',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울함공원','03954','서울특별시 마포구 마포나루길 407',38,127,'서울함 공원은 서울시와 자매결연을 맺고 30년간 해양수호의 임무를 수행하고 퇴역한 서울함을 비롯하여, 참수리호, 잠수함 총 3척의 퇴역 군함을 이용하여 조성한 서울시 최초의 함상테마파크다. 원형 그대로를 보존한 3척의 군함은 평소에 볼 수 없던 이색적인 전시와 체험의 공간을 제공하며, 서울 한강공원을 찾는 시민들에게 새로운 볼거리, 즐길거리를 통해 특별한 경험을 선사하고자 한다.','02-332-7500',null,'매주 월요일은 휴관',null,null,null,null,'하계(3월~10월)<br />
+- 평일 : 10:00 ~ 19:00<br />
+- 주말 : 10:00 ~ 20:00<br />
+<br />
+동계(11월~2월)<br />
+- 평일 : 10:00 ~ 17:00<br />
+- 주말 : 10:00 ~ 18:00<br />
+※ 매주 월요일은 휴관',null,'없음','없음','입 장 료:성인 : 개인 3,000원 / 단체 2,000원<br />
+청소년,군인 : 개인 2,000원 / 단체 1,400원<br />
+어린이 : 개인 1,000원 / 단체 700원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('공간 와디즈','04782','서울특별시 성동구 연무장1길 7-1(성수동2가)',38,127,'공간 와디즈는 와디즈에서 펀딩이 진행 중인 제품을 직접 보고 만지고 체험할 수 있는 곳이다. 스페이스는 테크·가전, 패션·잡화, 푸드, 뷰티, 반려동물 등의 카테고리로 구성, 다양한 제품을 소개하기 위해 제품은 2주에 한 번씩 바뀌며, 구경하다 마음에 드는 제품이 있다면 제품 옆 QR 코드를 통해 펀딩에 참여 할 수 있다.<br /><br />2층은 펀딩이 끝난 제품만을 모아 놓았으며,  소규모 창업자들의 업무 공간인 워크 스테이션, 푸드 메이커들의 먹거리를 맛볼 수 있는 푸드 체험존이 자리해 있다.  지하 1층 스퀘어에서는 펀딩을 준비하는 예비 메이커를 위한 메이커 클래스, IR 행사 스타트업 관련 행사가 열린다. 3층 루프톱은 투자를 기다리는 영화의 시사회, 메이커의 소규모 공연 등 문화 행사가 펼쳐지는 장소. 평소엔 탁 트인 하늘 아래 광합성을 할 수 있는 ‘풍경 맛집’이다.<br>','0507-1334-3604',null,'매주 월요일',null,null,null,null,'일~목 11:00~20:00 금~토 11:00~21:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('메타세쿼이아 숲길 (마포구)','03900','서울특별시 마포구 하늘공원로 95(상암동)',38,127,'메타세쿼이아 숲길은 월드컵공원을 조성하며 만들어진 숲길로, 한강 변에서부터 하늘공원으로 향하는 길 중간 샛길에 이어져 있으며, 사시사철 도심 속 산책 명소이자 유명 촬영지다.  메타세쿼이아 나무는 단풍이 들면 무척 아름다운 절경을 보이는 낙우송(落羽松)에 속한다. 그래서 이곳은 ‘가을 단풍길’이란 이름으로 불릴 만큼 화려한 단풍으로 더 많이 알려져 있다. 또한 여름날 마주하는 메타세쿼이아 숲길은 더욱더 싱그럽고 울창한 초록빛을 선사하며 비 오는 날이면 나무 향기와 초록빛이 진해져 낭만적인 우중 산책도 즐기기 좋다.<br>','02-300-5500',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('은평한옥마을',null,'서울 은평구 진관동 127-27',38,127,'은평 한옥마을은 북촌, 서촌에 이은 새롭게 만들어지고 있는 한옥 단지이다. 여유로움과 도심 속 전원을 한껏 느낄 수 있다. 국립공원 북한산, 그리고 진관사와 어우러진 역사 문화 마을이다. 은평한옥단지는 개인에게 한옥만을 지을 수 있게 토지를 분양해서 소유주의 취향에 따라 각 한옥마다 모양과 나무색이 달라 보는 즐거움이 있다. 상업시설을 제외한 곳은 대부분 개인의 사유지이기에 내부 관람은 불가하나 소유주의 허락이 있다면 관람이 가능하다. 또한, 산책로와 편의점, 카페 등 여러시설을 갖추고 있어 나들이를 즐기기에 적당하다.','02-351-6114',null,'연중무휴','한옥체험<br>
+※ 객실요금과 문의는 각 업체마다 다르므로 홈페이지 참조 요망',null,'각 업체마다 다르므로 홈페이지 참조 요망',null,'상시개방','있음','없음','없음','관광코스안내:[문화공간]<br>
+은평역사한옥박물관 (02-351-8524)<br>
+너나들이센터 (02-351-4433)<br>
+삼각산금암미술관<br>
+셋이서문학관 (02-355-5800)
+입 장 료:없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('달맞이봉공원','04740','서울특별시 성동구 금호동4가 산 27(금호동4가)',38,127,'응봉산 근처에 있는 달맞이봉공원은 서울야경 명소로 많은 시민들이 찾고 있는 공원이며, 해돋이 명소이자 달 야경이 아름다운 곳으로 널리 알려져 있다. 또한 달맞이봉공원은 옛부터 정월 대보름에 사람들이 모여 달을 맞이하며 소원을 빌던 곳이였다고 한다. 서울의 남, 서 방향의 전망과 한강, 롯데월드타워, 청계산, 관악산의 경관을 한눈에 조망할 수 있다.<br>','02-2286-5654',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('만남의광장','08825','서울특별시 관악구 신림로 23(신림동)',37,127,'관악구 만남의 광장은 서울 남쪽 경계의 명산 관악산으로 가는 사람들을 위한 집결지이다. 
+서울대 입구 정류장 관악산공원 현판이 있는 관악산공원이 제1 광장이며, 관악산과 서울대 사이 숲길을 따라 만나는 수중동산 인근에 제2 광장이 있다. 제2 광장까지는 무장애 숲길이라고 해서 휠체어 규격이나 회전 시 소요 공간 등을 고려한 산책길이 마련되어 있다. 걷는 거리는 총 1.3km이다.','02-879-6562',null,'없음',null,null,null,null,'00:00~24:00','있음(관악산주차장)','없음','가능','화장실:있음(남,녀 구분)
+
+주차요금:1회 주차시 5분당 150원
+
+입 장 료:없음		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍원사','07521','서울특별시 강서구 양천로49길 56-12(가양동)',38,127,'불교 신자들을 향한 수행과 포교 활동을 위해 도심에 2005년 새로 건립했다. 사찰 이름의 ‘홍원’이라는 뜻은 ‘크나큰 서원으로 일체중생을 제도하겠다’라는 의미를 담고 있다. 전통과 현대가 어우러진 사찰 건축으로 건물 맨 위의 금동탑이 인상적이다. 9호선 양천향교역 2번 출구를 통해 찾아갈 수 있으며, 인근에 궁산 근린공원과 서울식물원이 있다.','02-2658-3100',null,null,'정기법회',null,null,null,'05:00 ~ 19:00','주차가능','없음','없음','이용가능시설:법당
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('법종사','01365','서울특별시 도봉구 해등로 354(쌍문동)',38,127,'서울 도봉구 쌍문동에 있는 불교 사찰로 오대산 월정사 서울 포교원이다. 지상 5층으로 사찰 건물은 석탑 모양으로 높게 올려져 있다. 사찰 뒤편으로는 동네 야산과 같은 쌍문 근린공원이 있어 아름다운 자연을 병풍처럼 두르고 있다. 
+주변으로 우이동에서 바라보는 북한산과 방학동에서 바라보는 도봉산을 배경으로 하고 있으며, 우이선 솔밭공원역 1번 출구를 통해 이용할 수 있다.','02-905-6666',null,null,'정기법회',null,null,null,'05:00 ~ 20:00','주차가능','없음','없음','이용가능시설:법당시설		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성심사','07744','서울특별시 강서구 곰달래로35길 64(화곡동)',38,127,'서울 강서구 화곡동 주택가에 있는 불교 조계종 사찰로 비구니 사찰이다. <br>주택가 한복판에 있어 인근 불교 신자들의 안식처로 이용되고 있다. 언덕 위에 자리잡은 고풍스러운 사찰의 분위기와 함께 이곳에선 동네를 한눈에 내려다볼 수 있어 화곡동 명소 중의 한 곳으로 손 꼽힌다. 바로 위에 봉제산이 있어 함께 둘러보기에도 좋다. 2호선 5호선 까치산역 2번 출구를 이용하면 찾아가기 쉽다.','02-2602-0174',null,null,'정기법회',null,null,null,'03:30 ~ 17:00','주차가능','없음','없음','이용가능시설:법당(대웅전)		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('구강사','05324','서울특별시 강동구 천중로 64(천호동)',38,127,'서울 강동구 천호동에 있는 구강사는 서울 동부지역 천태법음 요람이자 포교도량으로 대한불교 천태종 사찰이다. 5층 단독건물로 5층에 법당이 있으며, 3층에는 교육시설인  ''금강유치원''이 있으며 옥상에는 정원이 있다. 정기법회는 매월 넷째 주 일요일 오전 11시에 열리고 있으며 불교대학도 운영되고 있다. 지하철 5호선 8호선 천호역 3번 출구 천인중학교 맞은편에 있다.','02-479-4450',null,null,'[ 정기법회 ] - 매월 4째주 일요일 11:00<br>[ 가족법회 ] - 매월 2째주 일요일 오전 11:00<br>[ 어린이법회 ] - 매월 1,3째주 일요일 오전 11:00<br>[ 초하루불공 ] - 매월 음력 1일 20:00<br>[ 보름불공 ] - 매월 음력 15일 20:00<br>[ 지장재일불공 ] - 매월 음력 18일 20:00<br>[ 관음재일불공 ] - 매월 음력 24일 20:00<br>[ 정진회 월례회 ] - 매월 2째주 14:00<br>[ 합창단연습 ] - 매주 화요일 19:00<br>[ 간부회의 ] - 매월 2째주 일요일  11:00<br>[ 불교대학수업 ] - 매주 수요일 19:30','제한 없음',null,null,'00:00 ~ 24:00','주차가능','없음','불가','등산로:
+이용가능시설:법당<br>어린이집
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청운공원','03046','서울특별시 종로구 창의문로 119(청운동)',38,127,'서울 종로구 청운동에 있는 청운공원은 자하문 옆 윤동주 시인의 언덕부터 청운어린이집 부근까지 포괄해서 일컫는다. 청운공원은 한옥으로 지어진 청운문학도서관과 윤동주 시인의 언덕으로 유명하다. 인왕산과 부암동, 종로 사직동 일대를 조망할 수 있는 곳으로 조용하게 서울의 아름다운 야경을 즐길 수 있다. 드라마<인현왕후의 남자>촬영지로 청운어린이집 부근에서 촬영되었는데 당시 사용되었던 빨간 공중전화는 현재 존재하지 않는다."','02-2148-2832',null,null,null,null,null,null,'00:00 - 24:00','주차가능','없음','가능','촬영장소:드라마<인현왕후의 남자>
+
+이용가능시설:윤동주 시인의 언덕
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('장안근린공원','02526','서울특별시 동대문구 장한로 191(장안동)',38,127,'서울 동대문구 장안동 동국사대부고 인근에 있는 주민 생활 밀착형 근린공원으로, 배봉산과 중랑천 제2 체육공원 사이, 아파트로 둘러싸인 주택가에 조성되었다. 어린이 놀이시설과 운동기구, 바닥분수, 야외공연장, 정자, 벤치가 설치되어 있으며, 부속 시설로 농구장, 배드민턴장, 인조 잔디 게이트볼장이 있다. 공원 한편에는 ''구립 동대문청소년독서실''도 있다.
+공원에서 중랑천으로 이어지는 뚝방길은 크고 굵직한 조경수가 있어 산책하기 좋다.','02-2249-8547',null,'없음',null,null,null,null,'00:00 ~ 24:00','있음(장안동 근린공원 지하주차장)','없음','가능','이용가능시설:어린이 놀이시설, 운동기구, 벤치, 정자, 바닥분수, 농구장, 배드민턴장, 인조 잔디 게이트볼장
+
+
+주차요금:1시간 1,000원
+
+입 장 료:없음		
+
+화장실:있음(남,녀 구분)
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('간데메공원','02595','서울특별시 동대문구 서울시립대로2길 59(답십리동)',38,127,'서울 동대문구 답십리 천변에 위치한 근린공원이다. 어린이 놀이터와 연못, 팔각정 정자, 장미 넝쿨 터널, 소나무 쉼터, 산책로까지 작지만 아기자기하게 조성된 공원이다. 농구장과 배드민턴장도 있다. 전매청 자리를 공원으로 조성하면서 옛날 답십리 일대 간데메(中山) 자연 부락 마을의 토박이 이름을 따서 간데메공원이라 이름을 정했다고 한다.','02-2249-2770',null,null,null,null,null,null,'00:00 ~ 24:00','예정(2021년 12월 간데메공원 지하주차장)','없음','가능','이용가능시설:배드민턴장, 게이트볼장, 잔디광장, 놀이터, 분수		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('응봉산(서울)','04743','서울특별시 성동구 금호동4가 1540(일대)',38,127,'응봉산(해발 94m)에서 바라보는 일출은 한강과 서울숲, 잠실운동장 등 서울 동부권의 모습을 한눈에 볼 수 있다. 한강조망명소로 사진 작가 및 많은 이들이 찾고 있으며, 매년 1월 1일 해맞이 행사를 실시한다. 또한, 개나리꽃의 명소이기도 한 응봉산에서는 4월경 개나리 축제를 열고 있다.<br>','02-2286-6061',null,null,null,null,null,null,null,'주차 가능','불가','없음','입산통제 구간:등산로 통제구간team_insert;안내 <a title="등산로 통제구간 검색" href="http://hiking.kworks.co.kr/sub_map/map_user01.aspx" target="_blank">http://hiking.kworks.co.kr/sub_map/map_user01.aspx</a>
+입산통제 기간:[봄가을철 산불조심기간] <br />
+(산불예방을 위해 한시적으로 등산로 구간통제)<br />
+봄철 3월 2일 ~ 4월 30일 <br />
+가을철 11월 1일 ~ 12월 15일<br />
+-국립공원 11월 15일 ~ 12월 15일(경주,태안해안제외)<br />
+※ 통제기간과 통제구간은 기상여건 등을 감안하여 산별로 일부 조정될 수 있으니 산행 시 사전확인 
+입 장 료:없음
+이용가능시설:팔각정, 운동시설, 벤치, 음수대 등
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대한성공회 서울주교좌성당','04519','서울특별시 중구 세종대로21길 15(정동)',38,127,'이 건물은 대한성공회 서울교구 주교좌성당으로서 조선 성공회 3대 주교인 마크트롤로프(Mark Trollope) 주교가 1922년 영국인 아더 딕슨(A.Dixon)의 설계대로 착공하여 1926년 5월 2일에 미완성인 채 992m²(300평)의 3층 구조로 헌당식을 가졌다. 이후 1993년에 원 설계도를 영국의 한 도서관에서 찾게 되어 본래 모습대로 1996년에 완공하였다. 이 성당 건물은 로마네스크 양식에 한국 전통 건축 기법을 조화시킨 아름다운 건물이다. 외형은 십자가 형태로서 다양한 선이 조화를 이루고 있고 성당 내부에는 좌우로 12사도를 상징하는 돌기둥이 서 있고 전면 반원형 벽면에 예수 그리스도의 모자이크상이 새겨져 있으며 지하 성당에는 트롤로프 주교의 유해가 안치된 동판이 새겨져 있다.<br /><br /> * 규모 : 지하 1층, 지상 3층<br />* 초창시 건축면적: 519㎡(157평), 연면적 909㎡(275평)<br>','02-730-6611',null,'매주 일요일',null,null,'1000명 이상',null,'11:00~16:00 (주말은 전화문의)','있음','불가','불가','화장실:있음
+외국어 안내서비스:사전 문의
+한국어 안내서비스:성당 내 일일봉사자 상시 대기
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북정마을','02879','서울특별시 성북구 성북로23길 132-3',38,127,'성북동에 위치한 마을로서 오래된 골목길의 정취를 즐길 수 있을뿐만 아니라 젊은 예술가들이 모여 살고 있는 곳이다. 한양도성 백악구간 코스에 포함되어 만해 한용운의 유택인 심우장과 연계하여 관광을 할 수 있다.<br>','02-747-2152',null,null,null,null,null,null,'09:00~18:00 (주민배려 정숙관광 필요)',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('안산','03731','서울특별시 서대문구 봉원동',38,127,'무악산으로도 불리며, 정상에서는 평안도에서 올라온 봉화를 연결하여 남산으로 보냈던 봉수대가 위치하고 있다. 안산자락길을 통해 안산도시자연공원과 서대문독립공원, 홍제천 연계하여 관광 할 수 있다.<br>','02-330-1114',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('마천공원','05732','서울특별시 송파구 성내천로23길 12(마천동)',38,127,'서울 송파구 마천동에 있는 근린공원으로 주택가에 자리 잡고 있다. 송파구가 테마를 도입하여 조성한 ''철쭉 테마공원''으로 매년 4월에는 철쭉제가 열리고 있어 봄에 더욱 이용객이 많은 공원이다. 어린이 놀이시설과 족구, 배드민턴 운동장이 있어 지역 어린이와 어른 모두에게 휴식과 건강 증진에 도움을 주고 있다.','02-2147-3380',null,null,null,null,null,null,'00:00 ~ 24:00',null,'없음','가능','화장실:가능 (남/녀 구분)
+이용가능시설:놀이터, 족구장, 배드민턴장, 음수대
+이용가능시설:경로당
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한수공원','06531','서울특별시 서초구 신반포로49길 9(잠원동)',38,127,'4호선, 9호선 동작역 1번 출구 반포주공아파트 단지 내에 있다. 반포주공아파트 96동 옆에 있는 한수공원은 아파트 단지 안에 있는 공원이지만 공원에서 한강 변 시민공원과 이어지는 산책길을 이용할 수 있다. 한강 공원의 갈대 섬과 함께 동작대교의 전망쉼터인 노을 카페와 구름 카페도 닿을 수 있다.','02-2133-2000','확인불가','없음',null,null,null,null,'00:00 ~ 24:00','없음','없음','가능','입 장 료:없음		
+
+이용가능시설:공원시설		
+
+화장실:없음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('응봉체육공원',null,'서울특별시 성동구 응봉동 235',38,127,'서울 성동구 응봉산 아래 중랑천 변에 위치한 체육공원으로 축구, 테니스, 야구 등 다양한 종목의 스포츠를 즐길 수 있는 시설이다. 시원하게 뚫린 천변에 인조 잔디가 깔린 축구장과 화려한 색깔로 새롭게 변신한 농구장이 인기가 많으며, 운동에 관심 있는 구민들의 이용이 나날이 늘어가고 있다. 개보수 하면서 안전 펜스와 안전 패드를 설치해 더욱 안전하게 농구를 즐길 수 있다. 경의·중앙선 응봉역 2번 출구에서 바로 연결되어 있다.','02-2204-7650',null,'없음','1:1 테니스 강습 (월,화,목,금)<br>월 16회<br>20분<br>190,000원',null,null,null,'00:00 ~ 24:00','있음 (응봉동(평면) 공영주차장)','없음','불가','이용가능시설:테니스장, 축구장, 농구장, 배드민턴장, 게이트볼장
+화장실:있음(남/녀 구분)
+
+입 장 료:공원 무료<br>테니스장(2시간) - 월~금 1면 10,000원 / 토,일,공휴일 1면13,000원 (주말 30% 사용료 할증) / 조명 1시간 1,500원 (대관신청시 별도신청)<br>축구장(2시간) - 평일 50,000원 / 주말(공휴일) 65,000원 / 조명사용료 1시간 11,000원<br>풋살장(2시간) - 평일 20,000원 / 주말(공휴일) 26,000원 / 조명사용료 1시간 5,500원
+
+주차요금:응봉동(평면)공영주차장 / 30분 600원
+
+내국인 예약안내:서울시 공공서비스예약(https://yeyak.seoul.go.kr/)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('우면산자연생태공원','06765','서울특별시 서초구 성촌6길 1(우면동)',37,127,'신분당선 양재시민의숲역에서 양재시민의 숲을 지나 삼성 Rteam_insert 연구소에 다다르면 뒤로 작은 마을이 있다. 이곳을 지나면 우면산으로 올라가는 등산로가 있는데 그 입구에 우면산 자연생태공원이 조성되어 있다. 생태공원도 깔끔하게 정돈된 학습장이라기보다는 자연 그대로를 즐길 수 있게 되어 있다. 우면산 생태공원에서 멀리 청계산이 보인다.','02-2155-6883','2004년 07월 23일',null,null,null,null,null,'00:00 ~ 24:00','없음(인근 세진주차장)','없음','가능','개방 구간:확인불가
+등산로:남부터미널 앞 → 전망대 → 정상(소망탑) → 대피소 → 경남아파트(1,436m/50분)<br>남태령 → 알봉 → 정상 → 대성사 → 예술의 전당 앞(2,983m/2시간)<br>우면동 → 전망대 → 정상 → 대성사 → 예술의 전당 앞(2,154m/1시간 30분)
+이용가능시설:산악시설		
+
+주차요금:세진주차장<br>최초40분 2,000원<br>초과시 20분다 1,000원<br>24시간 15,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('방이동 고분공원','05644','서울특별시 송파구 오금로 219(방이동)',38,127,'사적 제270호로 지정된 서울 송파구 방이동 일대에 있는 백제 초기(4C 초∼475)의 무덤군(31,154㎡)이다. 방이동 유적은 백제의 수도가 한성에 있을 때 만들어진 전기무덤으로 가락동·석촌동 무덤과 함께 한성백제의 문화를 알 수 있는 유적이다. 1971년 조사에 의해 고분 8기가 발견되었고, 1975년 잠실 일대를 개발하는 과정에서도 발굴되었다. 서울시는 1983년 복원 공사를 하여 오늘날의 고분 공원으로 조성하였다. 방이동 백제고분군 인접한 곳에 올림픽공원이 있다. 방이동 백제고분군에서 역사도 되짚어보고 올림픽공원에 있는 미술관이나 기타 시설들을 연계해서 즐기는 것도 좋다. 3개 지하철이 인접해 있어 대중교통을 이용하는 것도 편리하다.','02-2147-2800','확인불가',null,null,null,null,null,'09:00 ~ 20:00','있음(방이고분주차장)','없음','불가','화장실:있음(남/녀 구분)
+
+이용가능시설:유적시설		
+
+주차요금:5분 100원
+
+한국어 안내서비스:문화유산해설사
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('왜고개','04383','서울특별시 용산구 한강대로40길 46(용산동5가)',38,127,'왜고개는 기와와 벽돌을 구워 공급하던 와서(瓦署)가 있던 데서 유래한 명칭이다. 서울 명동성당과 중림동 약현성당을 지을 때 사용했던 벽돌도 이곳에서 공급해 주었다 전해진다. 이곳은 1899년 병인박해 때 새남터와 서소문에서 순교한 성인들이 매장되었던 유서 깊은 천주교의 성지이다. 또한 왜고개 성지는 1846년 9월 16일 병오박해 때 순교한 한국인 첫 사제 김대건 안드레아 신부의 시신이 모셔졌다가 이장된 역사를 지닌 곳이다. 4호선 용산역 1번 출구 용산우체국 삼거리에서 용산공원 가는 길에 있다.','02-798-2457',null,null,null,null,null,null,'00:00 ~ 24:00','불가 (인근 한강로2가동노상공영주차장)','없음','불가','이용가능시설:문화, 유적 시설
+주차요금:한강로2가동노상공영주차장 <br>
+30분 1,500원
+화장실:가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('향림사','08104','서울특별시 양천구 중앙로14나길 39(신정동)',38,127,'서울 양천구 신정동 갈산공원과 목동 2차 우성아파트 사이에 위치한 3층 규모의 조계종 소속 불교 사찰로 종무소와 대웅전이 한 건물에 있다. 3층 대웅전을 향해 원형 계단을 오르다 보면 계단 천정의 불화가 유리 밖 건물들과 함께 어우러져 조화를 이룬다. 사찰 우측 계단을 통해 올라가면 체육시설이 있어 운동과 등산을 할 수 있고, 인근 갈산공원을 이용할 수도 있다.','02-2645-6305',null,'연중무휴',null,null,null,null,'05:00 ~ 21:00','있음','없음','불가','화장실:있음(남,녀 구분)
+
+입 장 료:무료		
+
+주차요금:무료
+
+이용가능시설:1층 관음전, 2층 지장전, 3층 대웅보전		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용산역광장','04377','서울특별시 용산구 한강대로23길 55(한강로3가)',38,127,'용산역 주변으로 고층 빌딩이 들어서면서 건물 사이로 디자인이 개선되고 소규모 광장이 많이 생겼다. 용산구는 용산역 전면에 대규모 광장을 조성하고 있는데 연면적 2만2505m² 규모로 지상공원과 지하광장을 개발 중이다. 지하광장은 국철 용산역과 지하철 4호선 신용산역과 향후 신분당선이 연결되며 용산역 주변의 대형 주상복합 건물들과 아모레퍼시픽 사옥 등이 연결된다. 지상에는 문화공원이 조성되어 용산에 녹지대 확충과 이용객들의 편의성을 확대하게 된다.','02-2199-7404',null,null,null,null,null,null,null,'가능 (아이파크몰 달 주차장)','없음','가능','화장실:불가 (인근 전철역 화장실 남/녀 구분)
+이용가능시설:광장
+주차요금:30분 3,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('헬로애니멀','01331','서울특별시 도봉구 마들로 650(방학동)',38,127,'서울 도봉구 1호선 방학역 중랑천변에 위치한 실내 동물원이다. 작고 귀여운 파충류, 조류 등 50여 종의 작은 동물들이 있으며, 전문 사육사와 함께 동물들에 관해 설명을 들을 수 있고, 가까이에서 보고 만지면서 교감하고, 직접 먹이를 주며 관찰할 수 있다. 빌딩 지하에 주차공간이 있고 주말에는 도봉구청 주차장도 이용할 수 있다. 어린이와 함께 오는 이용객이 많지만, 이색 데이트로 오는 젊은 층도 늘고 있다.<br>인근에 중랑천 산책로가 있어 함께 나들이하기에 좋다.','02-955-6619',null,'추석, 설날 당일','있음(기간별 상이) ex 동물먹이주기',null,null,null,'10:30 ~ 19:00','주차가능','없음','불가','등산로:
+입 장 료:13,000원<br> ※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망	
+
+주차요금:이용시 평일 3시간 무료<br>주말, 공휴일: 도봉구청 지하주차장 무료개방
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('박정희대통령가옥','04584','서울특별시 중구 다산로36가길 25(신당동)',38,127,'박정희 전 대통령이 1958년부터 1961년 장충동의 국가재건최고회의 의장 공관으로 이주할 때까지 가족과 함께 생활했던 집이다.(면적 128.93㎡) 이 가옥은 1930년대 후반 조선도시경영주식회사에서 신당동 문화 주택지 개발로 조성한 가옥 중 유일하게 남은 가옥으로 우리나라 주거사의 중요한 자료로 인정받으며 국가등록문화재로 제412호로 지정되었다. 가족이 거주한 당시 사진과 언론 자료를 근거로 재현하여 2015년부터 시민에게 개방되었다. 박 전 대통령의 접견실과 육영수 여사의 생활 모습을 상상할 수 있는 안방 및 박근혜 전 대통령을 포함한 세 자녀의 어린 시절을 볼 수 있는 사진과 문구 등이 전시되어 있다. 
+관람을 위해서는 서울시 공공서비스(yeyak.seoul.go.kr) 사이트에서 사전 예약 및 현장 접수해야 한다.','02-2133-2646','2015년 시민에게 개방','월요일, 1월1일, 설, 추석',null,null,'15인 내외',null,'화요일 ~ 일요일 10:00 ~ 18:00','불가 (인근 동화동 공영주차장)','없음','불가','주차요금:30분 900원 <br>
+60분 1,800원 <br>
+120분 3,600원 <br>
+240분 7,200원
+화장실:불가 (주변 공용화장실 이용)
+내국인 예약안내:서울시 공공서비스예약(https://yeyak.seoul.go.kr/)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('다락원체육공원','01318','서울특별시 도봉구 창포원로 45(도봉동)',38,127,'서울 도봉산 자락에 위치한 서울 동북권 최대 규모의 체육공원이다. <br>배드민턴장은 코트 총 14면을 갖춘 대형 실내에 마루 시설이 잘 되어 있고 외관 시설도 세련되고 깨끗해 시민들의 만족도가 높다. 야간 조명까지 갖춘 인조잔디 축구장과 대형 실내 테니스장, 게이트볼장, 어린이 체육시설 및 놀이공원을 갖추고 있다. 지하철 7호선과 1호선 도봉산역 400미터 지점에 있다.','02-901-5199','2018.4.8','공원 연중무휴',null,null,null,null,'00:00 ~ 24:00','주차가능','없음','가능','등산로:
+주차요금:2시간 무료 이후 10분당 200원
+이용가능시설:축구장, 테니스장, 배드민턴장, 어린이 놀이시설		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('선바위(선암)','03023','서울특별시 종로구 통일로18가길 26(무악동)',38,127,'서울시 종로구에 위치한 선바위(선암)는 1973년 1월 17일 서울특별시 민속문화재로 지정된 문화재이다. (바위 1基, 토지 52.9㎡) 선바위는 사람의 모습을 하고 있는 자연석으로, 직접적인 신앙대상물은 아니지만 신성한 대상물인 바위로, 마치 중이 장삼(검은 베로 만들어진 품과 소매가 넓은 중의 웃옷)을 입고 있는 형상이라 하여 불교의 ‘선(禪)’ 자를 따서 선바위(선암)로 불리고 있다. 불력(佛力)을 지닌 존재처럼 신성시되었던 점이 주목된다. (출처: 서울특별시 종로구 문화과) 두 개의 큰 바위가 어깨를 나란히 하고 있는 형상으로 높이 7∼8m, 가로 11m 내외, 앞뒤 폭이 3m 내외이다.','02-2148-1823',null,'연중무휴',null,null,null,null,'상시 개방','주차가능 (간이 주차)','없음','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('안국선원','03056','서울특별시 종로구 북촌로 70(가회동)',38,127,'서울시 종로구에 위치한 안국선원은 총 1,983㎡ 규모에 지상 4층의 본관과 3동의 부속건물로 현대적 시설을 갖춘 대한불교 조계종 사찰이다. 1996년 서초구에서 문을 열었다가 종로구 내수동을 거쳐 2001년 3월 종로구 가회동에 자리했다. 매월 정기법회일에 초심자 법문이 있으며, 약 일 개월 후에 초심자 법문에 참가한 신도들을 대상으로 간화선 공부를 위한 선원장 스님의 지도를 받을 수 있다. 정기법회는 매월 3일과 18일에 진행된다. 도심 속에 위치한 만큼 대중교통으로 편리하게 방문할 수 있는 사찰로, 지하철 3호선 안국역 2번 출구에서 700m 거리에 있다.','02-732-0772,','2001년','연중무휴','정기법회',null,null,null,'상시 개방','주차가능','없음','불가','이용가능시설:법당
+화장실:가능 (남,녀 구분)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('독립선언문 배부 터','03147','서울특별시 종로구 삼일대로 457(경운동)',38,127,'서울 종로구에 있는 운현궁에서 길 하나만 건너면 ‘독립선언문 배부 터’라고 적힌 작은 표지석이 눈에 들어온다. 1919년 3·1운동 당시, 독립운동가들이 모여 독립선언문을 검토하고 배부했던 위치다. 지금도 표지석 앞에 민족대표 33인과 위안부 피해자 여성들의 이름을 기록한 돌이 자리해 보는 이들을 숙연하게 한다. 3.1 독립선언문은 이곳에서 멀지 않은 보성인쇄소에서 찍어낸 후 신축 중이던 천도교 대교당 마당(현재의 배부 터 바로 옆)에 갈무리해 두었다가 종교계, 학생 대표들에게 나누어주었다고 한다. 사람들이 무심하게 지나는 길옆에 자리해 그냥 지나치기 쉽지만, 나라의 독립을 위해 목숨을 걸고 싸웠던 1919년 봄의 자긍심을 느끼고 되돌아볼 수 있는 특별하고도 소중한 장소라 하겠다.','02-2236-9134',null,null,null,null,null,null,'24시간',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('월드컵공원','03900','서울특별시 마포구 하늘공원로 84(상암동)',38,127,'월드컵공원은 아름다운 섬 난지도 80여 만평에 1978년부터 1993년까지 15년간 서울시 쓰레기 약 9,200만 톤을 매립하여 버려졌던 땅에 환경공원을 조성한 곳으로 평화의 공원, 하늘공원, 노을공원, 난지천공원, 난지한강공원으로 이루어져 있다.
+월드컵 경기장 앞 13만 5천 평에 조성된 평화의 공원은 21세기 최초의 월드컵경기를 기념하고 한국과 서울의 이미지를 제고할 수 있는 현대적이고 품격 높은 열린 광장으로 월드컵 경기장의 앞마당으로서의 역할과 서울 서북부 지역의 중심공원으로 조성되었다.월드컵공원 전체를 대표하는 공원으로서 자연과 인간의 공존과 공생을 추구하고 ''평화''를 기원하는 공간이다. 유니세프광장은 미래지향적인 열린광장을 의미하며, 한강의 물을 끌어들여 조성한 난지연못에는 속새, 꽃창포 등과 정화능력이 뛰어난 수생식물을 심었다.
+상암 새천년 타운과 쓰레기 매립지 사이 89천평의 폐천 부지에 조성되는 난지천공원은 쓰레기 침출수가 흐르던 곳을 자연스러운 하천으로 복원하고, 주변은 노약자, 몸이 불편하신 분 및 청소년을 위한 여가 활용 장소로 조성하였다. 이 곳에는 나무 50,000그루가 자라고 있는 푸른 숲이 있으며, 수변을 따라 펼쳐지는 산책로에는 장애인, 청소년, 노인들을 위한 여가시설이 설치되어있다.','서부공원녹지사업소 02-300-5500','2002년 5월 1일',null,null,null,null,null,'※ 야간에는 생물 종 보호를 위해 출입을 통제<br />
+※ 홈페이지 이용시간 참조','주차 가능','없음','가능','이용가능시설:* 공원시설<br />
+월드컵공원 전시관 - 난지도 이야기, 난지연못, 풍력발전기, 탐방객안내소, 하늘계단, 노을계단<br />
+어린이놀이터, 반딧불이 관찰원, 누에생태체험장, 자연물놀이터, 분수시설, 하늘을 담는 그릇<br />
+노을캠핑장, 반려견 놀이터<br />
+* 체육시설<br />
+월드컵 파크골프장, 인조잔디구장, 다목적구장, 테니스장<br />
+* 광장시설<br />
+유니세프광장, 별자리광장, 평화잔디 광장, 난지잔디광장,평화광장<br />
+* 테마정원<br />
+평화의 정원, 평화의 정원 피크닉장, 귀화식물원<br />
+* 테마길<br />
+메트로 폴리스길, 메타세콰이어길, 난지순환길, 희망의 숲길<br />
+* 기타시설<br />
+월드컵경기장,난지 미술 창작 스튜디오,마포 자원 회수시설
+주차요금:운영시간 : 09:00 ~ 22:00<br />
+주차요금<br />
+승용차 : 5분당 150원 / 축구경기 및 행사시(정액요금) 5,000원(1회 4시간 기준)<br />
+중형차(미니버스) : 5분당 300원 / 축구경기 및 행사시(정액요금) 10,000원(1회 4시간 기준)<br />
+대형차 : 5분당 450원 / 축구경기 및 행사시(정액요금) 15,000원(1회 4시간 기준)
+화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울색공원','07337','서울특별시 영등포구 여의동로 330(여의도동)',38,127,'서울 색공원은 마포대교 교각과 둔치 사이의 하부공간에 색을 주제로 조성된 시민공원(약 9,000㎡)이다. 서울시 색채환경 개선 및 고유한 도시이미지 형성을 위하여 개발한 서울색을 공공공간에 적용하여 서울 색공원(Seoul Color Park)을 조성하여 한강을 찾는 시민들에게 휴식 공간과 동시에 일상적 디자인 체험의 기회도 제공하고 있다.서울 색공원은 한강의 물결을 형상화한 서울색 조형물, 서울 대표색10을 활용한 서울색 바코드 그래픽 및 벤치 등이 설치되어 있다. 공공시설물은 거리에 통합되어 쾌적해 보이도록 기와진회색과 돌담회색 등을 적용하고, 가로에서 눈에 잘 보여야 하는 것에는 단청빨간색, 꽃담황토색, 남산초록색 등과 그 계열색들을 적용하여 가로경관의 이미지를 체계적으로 개선해가고 있다. 또한, 서울시립미술관과 서울역사박물관에도 서울색을 활용한 조형물 및 작품이 설치되어 있다.서울지하철 5호선 여의나루역. 마포대교 남단을 10여 분 걸어가면 서울 색공원을 만날 수 있다.<br>','02-3780-0561',null,'연중개방',null,null,null,null,null,'있음','없음','가능','화장실:있음
+입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('템플스테이 홍보관','03145','서울특별시 종로구 우정국로 56(견지동)',38,127,'템플스테이와 사찰음식에 관한 정보를 국내,외국인이 누구나 알기 쉽게 관련 정보와 서비스를 제공하는 장소이다. 안내 뿐만 아니라 스님과의 차담, 사경, 연꽃등 만들기 등 전통문화체험이 무료 참여 가능하며, 불교문화 콘텐츠 등도 전시되어 있다.','02-2031-2000',null,'법정 공휴일','스님과의 차담, 인경체험, 연꽃 지화 만들기','전연령',null,null,'09:00~19:00','주차 가능','없음','불가','화장실:일부 사용 가능
+이용가능시설:- 1층 홍보관 : 템플스테이 및 사찰음식 안내, 전통문화체험 무료 참여
+- 2층 : 향적세계(사찰음식 전문 교육 기관)
+- 5층 : 발우공양(사찰음식 레스토랑)
+한국어 안내서비스:상시 가능
+외국어 안내서비스:영어 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('레치키치 스튜디오','04056','서울특별시 마포구  신촌로2안길 (2, 보애빌딩)지하',38,127,'한 공간에서 다양한 컨셉으로 촬영이 가능한 레치키치 스튜디오는 장소를 대여 할 수 있는 렌탈스튜디오 서비스와 증명사진, 이미지사진 등 다양한 사진촬영을 할 수있는 사진관이다.','050713325061',null,'연중무휴',null,null,null,null,'00:00~24:00',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('후암별채','04332','서울특별시 용산구 후암로35길 39',38,127,'오롯이 한 사람만을 위해 준비된 프라이빗한 공간으로 혼자만의 물놀이와 휴식이 가능한 공간이다.
+지친 일상 속 피로를 풀어줄 반신욕과 따뜻한 차 한잔의 여유를 즐길 수 있다.
+예약제로 운영되는 공간이며 1인 전용 공간이다.','010-6835-6552',null,'연중무휴','반신욕 및 개인명상',null,null,null,'13:00 - 00:00 중 6시간 선택','없음.',null,null,':
+:
+시설이용료:월-목 : 59,000원<br>
+금-일 : 66,000원
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('불광사','05610','서울특별시 송파구 백제고분로39길 35(석촌동)',38,127,'1974년 고 광덕스님이 불광회(佛光會)를 창립하고, 같은 해 <월간불광>이 창간된 이래 많은 사람들이 불광 법문을 직접 듣고자 모여든 것이 1982년 불광사 건립의 계기가 되었다. 2013년 30년 된 초기의 불광사 건물이 낙후되자 현재의 불광사 중창불사가 준공되었다. 불광교육원, 불광도서관 시설을 비롯해 불광불교대학, 선재대학, 불광아카데미, 불광연구원 등 불자들을 위한 여러 활동을 전개하고 있다. 5호선 방이역 방이초등학교 인근에 있다.','02-413-6060','1982년10월24일',null,null,null,null,null,'00:00 ~ 24:00','있음(협소)','없음','없음','등산로:
+이용가능시설:법당, 불광교육원, 불광도서관		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('올림픽공원들꽃마루','05540','서울특별시 송파구 올림픽로 424(방이동)',38,127,'올림픽공원 사거리 인근 장미공원에서부터 한성백제박물관 사이 자그마한 언덕 경사로에 마련된 대규모 야생화 단지이다. 2,800㎡에 이르는 면적에 경사로 맨 꼭대기에는 원두막이 놓여 있고 자그마한 오솔길을 마련해 양 옆으로 광대한 꽃밭을 만들어 놓았다. 계절마다 각기 다른 야생화를 심어 놓아 들꽃의 향연을 즐길 수 있는 올림픽공원의 대표적인 포토존 중의 한 곳이다.','02-410-1114',null,'없음',null,null,null,null,'05:00 ~ 22:00','있음(서울올림픽공원 주차장)','없음','가능','입 장 료:무료		
+
+화장실:있음(남,녀 구분)
+
+이용가능시설:장미광장, K-아트홀, 올림픽문화센터, 예술극장, 올림픽홀, 실내테니스장		
+
+주차요금:서울올림픽공원 주차장 <br/>
+소형 10분에 600원<br/>
+대형(24인승, 2.5톤이상) 12,000원<br/>
+-경자,장애인,저공해,국가유공자 50%할인<br/>
+-다자녀 우대카드 소지자 2자녀 25%, 3자녀 50% 할인
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한양공원',null,'서울특별시 송파구 송파동 152',38,127,'송파동 한양2차 아파트 옆으로 길게 조성된 공원으로 30년 넘게 한 자리를 지키고 있다. 산책길과 벤치, 분수대, 운동시설 등이 설치되어 있으며 울창한 나무들이 있어 편안한 휴식처를 제공하고 있다, 주변으로 가락고등학교와 잠실여자고등학교가 있고 인근에 아파트 단지들이 많아 주민 쉼터 역할을 하고 있다. 송파역 1번 출구 송파2동 주민센터 지나면 도착할 수 있다.','02-2147-3380',null,'없음',null,null,null,null,'00:00 ~ 24:00','없음','없음','가능','이용가능시설:벤치, 분수대, 운동시설, 산책길		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('평화광장','03901','서울특별시 마포구 월드컵로 251(성산동)',38,127,'서울시 마포구 성산동에 위치한 광장으로 서울 월드컵 경기장 앞에 펼쳐져 있다. 디양한 축제나 걷기 대회가 열리는 곳으로 서울 시민들이 자주 찾는 곳이다
+가까운 곳에 있는 평화의 공원 난지연못 주변으로 평화의 공원 별자리 광장과 평화 잔디광장 그리고 유니세프 광장까지 대규모 잔디 광장이 펼쳐져 있다. 6호선 월드컵 경기장역에 1번 출구에서 약 10분 내로 접근 가능하며 주차장도 넓어서 이용이 편리하다.','02-2128-2002,2972',null,null,null,null,null,null,'00:00 ~ 24:00','있음(경기장 서쪽 주차장)','없음','가능','주차요금:소형 5분당 150원<br>중형 5분 300원(16~25인승 버스, 2.5~5톤 트럭)<br>대형 5분 450원(25인승이상 버스, 5톤 이상 트럭)
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('평화잔디광장','03901','서울특별시 마포구 증산로 32(상암동)',38,127,'서울시 마포구 성산동에 위치한 월드컵 공원의 5개 테마 중 하나인 평화의 공원 내 잔디광장으로 서울 최대의 크기를 자랑하고 있다.. 하늘공원보다 많이 알려져 있지는 않지만 인근 주민들에게는 훌륭한 휴식처로 이용되고 있다. 주변으로 연결된 난지 연못은 피크닉 장소로 인기고 난지연못 위로는 월드컵 경기장이 있고 그 옆으로 갈대밭으로 유명한 하늘공원이 있어 연계하여 둘러볼만하다. <br>6호선 월드컵 경기장역에 1번 출구에서 약 10분 내로 접근 가능하며 주차장도 넓어서 먼 곳에서 찾는 사람들이 많다. 가족 단위나 연인들이 찾기 좋은 도심 속 잔디 광장이다','02-2118-2002','2002년 05월 01일',null,null,null,null,null,'00:00 ~ 24:00','있음(경기장 서쪽 주차장)','없음','가능','주차요금:소형 5분당 150원<br>중형 5분 300원(16~25인승 버스, 2.5~5톤 트럭)<br>대형 5분 450원(25인승이상 버스, 5톤 이상 트럭)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('수안사','06722','서울특별시 서초구 효령로68길 30(서초동)',37,127,'서울 서초구 남부터미널역 경부고속도로 서초IC 인근 주택가에 있는 대한 불교 조계종 사찰이다. 건물 입구에는 수안불교회관과 사단법인 명상연구원 현판이 걸려 있다. 도심 사찰로는 규모가 크고 대리석 벽체와 기와지붕으로 지어졌으며, 1층 무량수전, 2층 사무실, 3층 법당, 지하 식당으로 이뤄져 있다. 지하철 3호선 남부터미널역 3번 출구에서 조금 걸어가면 된다.','02-587-4677',null,'없음','정기법회','제한없음',null,null,'05:00 ~ 18:00','있음','없음','없음','입 장 료:없음
+
+화장실:있음(남,녀 구분)
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('은가어린이공원','03671','서울특별시 서대문구 증가로20가길 91(북가좌동,해들목휴먼빌)',38,127,'서울 서대문구 북가좌동 주택가 한가운데 위치한 소규모 공원으로, 바닥에 분수와 같은 수경시설을 갖추고 있어 어린이들만 아니라 인근 주민들에게도 쉼터로 이용되고 있다. 아침저녁으로 가벼운 운동을 하기 좋고 한낮엔 나무 그늘 아래서 휴식을 취하기 좋다. 어린이 놀이시설, 운동시설, 정자, 벤치, 바닥 분수대가 설치되어 있어 인근 어린이집 아이들의 방문도 잦다. 하지만 화장실이나 주차시설은 없어 아쉽다.','02-330-1960',null,'없음',null,null,null,null,'00:00 ~ 24:00','없음','없음','가능','화장실:없음
+
+이용가능시설:공원시설, 분수대, 놀이터		
+
+입 장 료:없음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성촌공원',null,'서울 용산구 이촌동 173-1',38,127,'서울 용산구 이촌동 원효대교 북단 교차로와 맞닿은 곳 한강 그랜드오피스텔 앞에 있는 공원으로 자연과 함께 휴식할 수 있는 근린공원이다. 산책로, 지압장, 배드민턴장, 음수대 등이 설치되어 있어서, 산책과 운동하기 좋다. 2개의 정자와 벤치가 마련되어 있어 휴식을 취하기에도 좋으며, 5월과 9월 사이에는 바닥분수도 가동되어 찾는 이들에게 편안한 쉼터가 되고 있다.','02-2199-7599','확인불가','없음',null,null,null,null,'00:00 ~ 24:00','없음','없음','가능','이용가능시설:배드민턴장, 음수대, 바닥분수, 지압장, 산책로 등		
+
+화장실:간이화장실
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('남산순환나들길','04628','서울특별시 중구 남산공원길 609(예장동)',38,127,'도시 한복판에 우뚝 솟은 남산은 서울의 랜드마크이자 사계절 시민들의 휴식처로 사랑받는다. 남산을 둘러싸고 조성된 총 길이 7.5km의 남산둘레길은 시민들이 즐겨 찾는 산책로다. 북측순환로와 역사문화길, 자연생태길, 야생화원길, 산림숲길 등 총 5개의 코스로 이루어져 있다. 그중에서도 북측순환로는 휠체어나 유아차 사용자와 시각장애인 등 보행 약자가 동행자 또는 보호자의 큰 도움 없이 다닐 수 있어 무장애산책로로 선정됐다. 남산둘레길 북측순환로는 남산케이블카 입구에서 시작하여 국립극장까지 이어지는 3.4km의 산책로로, 자동차와 자전거 통행이 금지되어 안전하게 걸을 수 있다. 모든 길의 가운데에는 점자 블록이 설치되어 있고, 점자 블록이 설치된 중간 길을 기준으로 비장애인은 우측으로 통행하며 질서를 지키자는 의미로 ‘배려의 길’이라고도 불린다.','02-3783-5995',null,null,null,null,null,null,'24시간','주차가능','없음','없음','입 장 료:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍건익가옥','03039','서울특별시 종로구 필운대로1길 14-4(필운동)',38,127,'서촌의 좁은 골목 사이에 있는 홍건익가옥은 지난 2017년 공공한옥으로 일반에 개방되었다. 1930년대 건축물인 이곳은 낮은 언덕을 따라 대문채와 행랑채, 사랑채, 안채, 별채 등 다섯 동이 자연스럽게 놓여 있다. 서울에 남아 있는 한옥 가운데 일각문과 우물, 빙고까지 갖춘 유일한 집이다. 특히 안채 대청마루의 풍혈판에 새겨진 팔괘 문양과 별채의 화초벽을 장식한 태극 문양, 이화꽃 문양, 연꽃 문양 등 당대 가옥의 화려한 면모를 엿볼 수 있다. 또 대청에 설치한 유리문과 처마에 설치한 차양이 근대 한옥의 특징까지 드러낸다. 이처럼 근대와 전통의 특성을 동시에 보여주는 홍건익가옥은 건축적, 문화적 가치를 높게 인정받아 서울시 민속문화재로도 지정됐다.','02-735-1374',null,'매주 월요일, 공휴일',null,null,null,null,'10:00 ~ 18:00',null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('국악사랑','03052','서울특별시 종로구 북촌로11길 35-16(가회동)',38,127,'북촌 한옥마을의 정취를 느끼며 걷다가 고샅길로 접어들면 닿는 곳이다. ‘한옥 풍류를 다시 쓰다’란 큼지막한 글귀가 붙은 대문을 열고 안으로 들어가면 본채, 별채, 마루로 이뤄진 공간이 펼쳐진다. 살림집을 겸하고 있어 장독, 맷돌, 소반 등 한국의 옛 세간을 엿보는 재미도 쏠쏠하다. 체험은 두 가지로 나뉜다. 첫 번째는 ‘오미자차+한과 혹은 과일+국악 감상’으로 이뤄진 프로그램이다. 음식을 맛보는 동안 흥겨운 국악 선율이 귓가에 울려 퍼진다. 두 번째는 ‘오미자차+한과 혹은 과일+국악기 소개+진도아리랑 배우기+장구 배우기’ 체험이다. ‘국악기 소개’를 통해 한국 전통 악기의 역사와 특징을 알려준다. 이어 전통 민요인 진도아리랑을 불러본다. 그런 다음 장구를 두들기며 세마치장단을 배운다. 체험의 마지막은 앞서 배운 진도아리랑에 장구 치기를 접목하는 시간이다. 생경한 느낌이 들지만, 관광객들이 가장 큰 즐거움을 얻어가는 체험이다. 어깨가 절로 들썩이는 모습을 발견할 수 있다. 예약은 필수다.','010-5211-5559',null,'없음','진도아리랑 배우기, 장구배우기 등',null,null,null,'예약에 따라 유동적','있음','없음','없음','시설이용료:오미자차+한과 혹은 과일+국악 감상: 30,000원<br/>
+오미자차+한과 혹은 과일+국악기 소개+진도아리랑 배우기+장구 배우기: 50,000원		
+<br/>※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('더벨스파 동대문현대시티아울렛점','04563','서울특별시 중구 장충단로13길 20(을지로6가)',38,127,'현대시티아울렛 동대문에 있는 이곳은 많은 사람에게 저렴한 가격으로 스파를 제공하고자 탄생했다. 여느 스파와 비교해도 손색없는 특급 스파다. 쇼핑 등으로 지친 몸에 활기를 불어넣고 싶다면 방문해보자. 대표 프로그램은 ‘유스트 아로마+발 관리’다. 편백은 일본에서 최고급 내장재로 인정받는다. 이 편백으로 만든 족욕탕에 입욕제를 푼다. 거품이 올라오는 족욕기에 발을 담그면 따뜻한 기운이 온몸으로 퍼져나간다. 족욕을 하는 동안 복부에는 온열 팩을 얹고, 유스트 오일을 이용한 마사지가 시작된다. 두피, 목, 어깨를 어루만지며 피로를 완화해준다. 일본식 전통 지압 마사지인 ‘시아추’도 인기다. 시아추 마사지는 몸 안팎에서 음양의 기가 조화를 이루도록 돕는다. 단순히 뭉친 근육을 풀어주는 것이 아니다. 테라피스트는 14개 경락을 다양한 방식으로 마사지한다. 손가락은 물론 팔꿈치, 무릎, 발 등을 두루 사용한다.','02-2283-2132',null,'1월1일, 추석 당일',null,null,null,null,'11:00~23:00','있음','없음','없음','입 장 료:유스트 아로마+발관리: 풋스파+두피·목·어깨·발관리 70분 69,000원<br>시아추: 근육/근막이완케어 50분 60,000원<br>아로마전신 80분 115,000원<br> 더벨 Faceteam_insert Package: 아로마전신+인텐시브 페이스 트리트먼트 110분 175,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('롯데호텔서울 설화수 스파','04533','서울시 중구 을지로 30 롯데호텔 3, 4층(소공동)',38,127,'설화수 스파는 마음의 안정을 돕고자 조선 시대 왕실에서 행한 전통의식을 스파에 접목했다. 5가지 한방재료로 만든 ‘자음단’으로 지친 피부를 효과적으로 다스린다. 홍삼의 기운이 담긴 미온수가 발의 피로를 풀어주는 ‘홍삼수 족욕’과 인삼 성분으로 발을 문질러 씻어주는 ‘인삼 스크러브’도 함께 진행한다. 프로그램이 끝나면 제공하는 차도 최적의 컨디션을 유지하는 데 도움을 준다. 대표 스파 프로그램은 ‘설화본생’이다. 따뜻하게 쪄낸 자음단으로 어깨 부위 피부를 관리한 후 ‘자음생 크림’으로 피부에 활력을 되찾아 준다. ‘진설’ 프로그램도 인기다. 몸의 피부를 정성껏 관리하는 트리트먼트로 피부 순환을 돕고 피부 에너지를 활성화한다.','02-318-6121',null,'매월 마지막 주 월요일',null,null,null,null,'10:30~21:00','있음','없음','없음','입 장 료:Ginseng Full Story(설화본생) 300,000원<br>TimeTreasure Renovation(진설) 400,000원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('한강방어백골부대전적비','07336','서울특별시 영등포구 여의동로 343 여의나루역',38,127,'1950년 6월 25일 북한군이 남침하자 서울 삼각지에 주둔해 있던 제18보병연대(백골연대)는 전선으로 출전하였고, 제3중대(중대장 중위 김상덕)는 연대본부를 지키고 있었다. 6월 28일 적이 서울까지 침공해오자 제3중대는 삼각지에 진지를 급편하여 시가전을 벌였으나, 중과부적으로 마포를 거쳐 영등포로 철수하여 한강 제방에 진지를 구축하고 도강을 기도하는 적과 대치하였다. 다음날 전선 시찰을 위해 내한하여 한강변의 지형과 국군의 방어 상태를 살펴본 미 극동사령관 맥아더 원수가 미군의 지원을 약속함에 따라 사기가 고양된 이 중대는 7일 동안 단독으로 영등포를 방어하여 이후 미 지상군 투입 및 아군이 지연전을 펼치는 데 크게 기여하였다. 이에 50여 년이 지난 2003년 10월 1일, 당시 조국수호를 위해 열세한 병력과 장비로 분전한 백골연대 장병들의 투혼을 영원히 기리기 위하여 백골전우회에서 양화인공폭포공원 내에 전적비를 세웠다. 현재는 월드컵대교 공사로 인해 여의도한강공원(여의나루역 2번 출구)으로 이전되어 보존되고 있다. (2020년 6월)
+<br>','영등포구청 02-2670-3114',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신촌 플레이버스','03789','서울특별시 서대문구 연세로5길 11(창천동)',38,127,'신촌 플레이버스는 신촌 연세로 스타광장 내에 위치한 이색체험 버스이다. 2층 버스로 이루어졌으며 버스에서 신촌 문화 체험과 음악감상 및 다양한 체험을 할 수 있다. 플레이 버스에서 직접 방송과 공연을 할 수 있고, 영상편지를 띄어 볼 수도 있다. 공연장, 디제이박스, 관광안내, 음악감상실을 갖춘 이색체험 버스이다.','02-330-1809','2014년 12월 06일','매주 월요일, 명절연휴<br />※ 전화문의','- 신촌 문화 체험<br />
+- 음악감상 및 휴식공간<br />
+- 관광안내 및 안내책자 비치<br />
+- 사진·동영상 방명록 등','전 연령 가능',null,null,'11:00 ~ 21:00',null,'없음','없음','이용가능시설:- Background, 신촌 : 신촌의 시작과 음악관련 이야기를 그래픽월로 연출<br />
+- Here I am, 신촌 : 영상방명록<br />
+- Enjoy it, 신촌 : 신촌관련 홍보리플렛, 서적류 배치<br />
+- 사운드 홀 : 신촌에서 공연했던 음악인을 소개하는 월<br />
+- Start it, 신촌 : 옛 것과 새것이 공존하는 신촌의 이야기<br />
+- Showtime, 신촌 : 신촌 관련 음악공연정보 포스터게시판<br />
+- Play Beat, DJ : DJ BOX(포토존, 전문DJ공간)
+관 람 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('아띠인력거','03061','서울특별시 종로구 북촌로5길 43(화동)',38,127,'아띠인력거은 2015년 창조관광기업으로 선정되었으며, 인력거 투어를 제공하는 기업이다. 관광코스는 북촌,서촌,명동과 정동 등이 있고, 라이더의 콘텐츠따라 개성과 아이디어가 넘치는 코스가 추가되기도 한다. 보조모터 등의 도움을 받지 않고 오직 두발로 만 운전하는 인력거를 타고, 라이더의 재치있는 해설을 들으며 코스를 즐기다 보면 그동안 바쁘게 지나치느라 돌아보지 못했던 새로운 풍경들과 이야기가 펼쳐진다. 또한 북촌과 서촌, 명동과 정동에 살아 숨쉬는 역사와 다양한 구경거리를 즐길 수 있고, 외국인 관광객을 위해 영어와 중국어로 인력거 투어를 운영하는 프로그램도 준비되어 있다. <br>','1666-1693',null,'매주 화요일',null,'전연령 가능','인력거 1대당 성인 2명',null,'10:00~18:00 (휴게시간 12:00~13:00)','없음(인근 주차장 이용)','없음','없음','시설이용료:서북촌 로맨스 투어(60분) : 성인 30,000원 / 만4세~만6세 15,000원 / 만 4세 미만 무료<br />
+동북촌 역사 투어(60분)  : 성인 30,000원 / 만4세~만6세 15,000원 / 만 4세 미만 무료<br />
+서촌 아티스틱 투어(60분) : 성인 30,000원 / 만4세~만6세 15,000원 / 만 4세 미만 무료<br />
+청와대 투어(60분) : 성인 50,000원 / 만4세~만6세 25,000원 / 만 4세 미만 무료<br />
+북촌 VIP 투어(60분) : 성인 50,000원 / 만4세~만6세 25,000원 / 만 4세 미만 무료<br />
+북촌,서촌 벚꽃 여행(60분) : 성인 40,000원 / 만4세~만6세 20,000원 / 만 4세 미만 무료
+외국어 안내서비스:영어 / 중국어 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('다이나믹 메이즈 (서울 인사동점)','03163','서울특별시 종로구 인사동길 12(인사동)',38,127,'다이나믹 메이즈는 여럿이서 협동하여 장애물을 뛰어넘고, 순발력과 집중력을 필요로 하는 미션을 수행하면서 미로를 탈출하는 실내 놀이 공간이다. 커다란 미로 공간 속에서 벽을 타고 올라가고, 촘촘한 밴드를 탈출하는 등 다양한 장애물을 넘어 탈출해야 한다. 2015년 7월, 인사동에 선보인 이후 수많은 국내외 고객들로부터 사랑을 받은 다이나믹 메이즈는 강원도 속초와 제주도 성읍에도 문을 열었다.<br>','1544-8506',null,'연중무휴','* EPISODE 1 : 해치의 습격<br />
+<br />
+※ 최소 2인 이상 참여가 가능한 프로그램<br />
+※ 5세 미만은 입장이 불가 (모든 어린이는 보호자 동반 입장이 필수)<br />
+※ 프로그램의 특성상 역동적인 동작이 많으므로 남녀 구분없이 바지 착용 권장',null,'2분 간격 한 팀씩 입장',null,'11:00 ~ 18:00',null,'없음','없음','입 장 료:다이나믹 메이즈(1인 기준) 12,000원 <br />
+다이나믹 메이즈+박물관은 살아있다(1인 기준)  18,000원<br />
+※ 국가유공자 : 50% 할인 (동반 1인 포함)
+
+주차요금:1,500원 / 30분 초과 시 10분당 500원<br />
+※ 주차할인권은 별도 제공되지 않습니다.
+내국인 예약안내:단체예약 가능<br/>
+※ 단체예약문의 1544-8506<br/>
+※ 전화문의시간 10:00 ~ 18:00 (12:30 ~ 13:30 제외)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('여의도한강공원 멀티프라자',null,'서울 영등포구 여의도동 84-4',38,127,'서울 마포대교 남단 여의도 한강공원에 있는 잔디 광장이다. 서울 불꽃축제가 열리는 곳이며 2019년서울시립교향악단의 강변연주회가 열린 바 있다. 2021년 공공디자인 프로젝트로 설치된 이색 그늘막인 ''구름막''은 초록 잔디광장에 동그란 구름이 떠있는 것처럼 보이는데, 햇볕을 가려주는 역할을 해 나들이 나온 사람들에게 인기다. 근처 여의나루역에는 수상택시 정류장이 있다. 5호선 여의나루역 2번 출구를 이용하면 된다.','02-3780-0561~5',null,null,null,null,null,null,'00:00 ~ 24:00','있음(여의도한강공원2주차장)','없음','가능','화장실:있음(남/녀 구분)
+
+이용가능시설:잔디광장, 매점, 배달존
+
+
+주차요금:최초 30분 2,000원<br>초과시 10분당 300원<br>1일주차 최고한도 15,000원
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용마공원놀이동산(용마랜드)','02180','서울특별시 중랑구 망우로70길 118(망우동)',38,127,'1983년 용마산 끝자락에 사설 놀이공원 용마랜드가 개장하여 운영됐었는데 2011년 문을 닫았다가 지금은 시설은 그대로 둔 채 추억의 폐놀이공원으로 인기를 끌고 있다. 특히 크레용팝의 <빠빠빠>라는 뮤직비디오 촬영지로 명성을 얻기 시작면서 CF 촬영, 예능프로그램 촬영과 웨딩 포토 촬영 등 사진 찍기 좋은 장소로 유명한 곳이다. 촬영 및 대관 중일 때는 입장이 제한될 수 있으므로 방문 전 확인하고 가야 한다. 경의중앙선 망우역 1번 출구 봉화중학교 옆에 있다.','02-511-3020',null,'매주 월요일',null,null,null,null,'10:00 ~ 19:00 (촬영시 변동)','있음(용마폭포공원 공영주차장)','없음','가능','촬영장소:드라마 <너를 기억해> 영화 <표적>, 예능프로그램 <대탈출3>, 뮤직비디오 크레용팝 <빠빠빠> 등 다수
+
+주차요금:5분당 100원
+
+입 장 료:성인 10,000원<br/>
+고교생이하, 답사 5,000원
+<br/>※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
+
+이용가능시설:폐놀이시설 영상 및 사진 촬영지		
+
+화장실:있음(남,녀 구분)
+
+내국인 예약안내:대관예약 시 홈페이지		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('해방촌마을','04338','서울특별시 용산구 신흥로3가길 66(용산동2가)',38,127,'서울 남산 주변으로 용산구 용산동 1가와 용산동2가에 걸쳐있는 마을로 서울의 대표적 달동네이다. 1945년 일본의 식민지에서 해방되어 해외에서 살던 국민들이 돌아와 정착한 곳이며 또한 한국 전쟁 이후 북쪽에서 내려와 서울에 정착한 사람들이 모여 살던 동네라 하여 불린 이름이 ''해방촌''이다. 1979년에 용산재개발지구로 선정되어 주택건립사업을 하였으나, 좁은 골목과 언덕 등 달동네의 모습을 유지하고 있는 곳이다. 2021년 용산구 도시재생사업을 통해 관광객들이 테마를 통해 마을을 들러볼 수 있도록 환경이 개선되었고, 해방촌 명소 ''108계단''에는 경사형 승강기가 설치되었다. 드라마 <내 이름은 김삼순>, <이태원 클라쓰>. <동백꽃 필 무렵>, 소니 카메라 광고 등 촬영지로 알려지면서 많은 사람의 발길이 닿고 있다.','02-2199-6114',null,null,null,null,null,null,'00:00 ~ 24:00','해방촌 공영주차장<br>평일 09:00 ~ 22:00<br>토요일/일요일/공휴일 09:00 ~ 22:00','없음','가능','등산로:도보코스
+촬영장소:드라마 <내이름은 김삼순>, <동백꽃 필 무렵> <이태원 클라쓰><br>광고 소니카메라(소지섭 편)
+이용가능시설:도보코스
+주차요금:30분 780원, 60분 1,560원, 120분 3,120원, 240분 6,240원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('송파구자원순환공원','05842','서울특별시 송파구 헌릉로 793(장지동)',37,127,'서울 송파구 장지동에 있는 5개 동 40,024.87㎡ 규모의 자원순환공원은 종합폐기물 처리시설을 갖춘 현대식 건물과 공원으로 조성해 놓은 테마공원이다, 장지동 일대 재활용 쓰레기, 음식물 처리시설과 대형 폐기물 및 생활 폐기물 처리시설을 갖춘 곳으로, 첨단 시설 처리 시스템을 도입하고 친환경 테마공원으로 조성하여 각종 체험 프로그램도 운영해 주민 친화적인 공간으로 이용되고 있다. 자원순환 홍보관에서는 자원순환과 환경보전의 중요성을 일깨워 주는 상시 체험과 전시공간이 있다.','02-2147-3972',null,'없음','현장방문 관람 및 영상자료 시청, 현장견학, 정크아트 체험, 폐기물을 활용한 각종 수공예품 만들기 체험 등','없음',null,null,'00:00 ~ 24:00','있음','없음','가능','화장실:있음(남,녀 구분)
+
+이용가능시설:공원 시설, 쓰레기 폐기장, 중앙지원센터, 휴게라운지
+
+
+입 장 료:없음		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('이랜드크루즈잠실선착장','05501','서울특별시 송파구 올림픽로 99(잠실동,잠실엘스)',38,127,'서울 송파구 잠실동 한강 변에 있는 크루즈 선착장으로 1986년 서울 중심부를 동서로 가로지르는 한강 유람선 운항이 개시되었다. (주)이크루즈에서 여의도, 잠실, 뚝섬, 양화, 잠두봉, 선유도, 서울숲, 김포, 인천 지역에 7개의 선착장과 2개의 터미널을 운영하고 있는데 그중 한 곳이다. 2호선 신천역 7번 출구에서 700m 지점 석촌나들목에서  이용할 수 있다.','02-6291-6900',null,null,null,null,null,null,'11:00 ~ 21:00','있음','없음','없음','입 장 료:한강 투어 크루즈 대인(16,900원) 청소년(16,900원) 소인(11,900원)<br/>
+선셋 크루즈 대인(21,900원) 청소년(21,900원) 소인(14,900원)<br/>
+달빛 크루즈 대인(29,900원) 청소년(29,900원) 소인(20,900원)
+<br/>※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
+
+화장실:있음(남,녀 구분)
+
+주차요금:무료
+
+이용가능시설:카페, 뷔페, 편의점, 햄버거집
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('올림픽공원피크닉장','05540','서울특별시 송파구 올림픽로 424(방이동)',38,127,'서울 송파구 올림픽공원 몽촌 토성을 올라가는 길에 조성된 넓은 잔디광장이다. 올림픽공원은 어디든 산책하고 쉴 수 있는 곳이지만 이곳은 돗자리를 깔고 아이들과 마음껏 뛰어놀 수 있는 공간이다. 가족 단위 나들이객과 야외에서 데이트하고 싶어 하는 젊은 남녀들이 많이 찾는다. 멋진 자연의 풍광을 담고 싶어 하는 웨딩 포토 예비 신혼부부와 다양한 목적의 사진 촬영 인기 지역이기도 하다.
+공원이 넓어 거리 두기가 잘 지켜지고 배달 음식을 주문해서 먹을 수도 있다
+단, 10시 이후는 음주 불가이다
+서울 도심에서 누워 하늘을 볼 수 있는 깨끗하고 정비가 잘 된 공원이다
+피크닉장에서 가장 가까운 주차장은 올림픽공원 서 2문 주차장이다.','02-410-1114',null,'없음',null,null,null,null,'05:00 - 22:00(차량출입 06:00 - 22:00)','올림픽공원서2문 주차장(10분 600원)','없음','가능','입 장 료:없음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('네츄럴 스파 블랑','06052','서울특별시 강남구 논현로134길 9',38,127,'가족이나 동료 연인이나 친구와 함께 누구나 받을수 있는 한국식 캐주얼 데이 스파이다. 지치고 바쁜 현대인들에게 잠시나마 건강하고 편안하게 쉴수있는 웰빙 철학을 가지고 운영한다. 네츄럴블랑은 기계에 의존하지 않고 사람의 손길을 이용하는 하이 터치로 테크 테라피를 우선으로 생각한다. 네츄럴 블랑에 사용되는 트리트 먼트 제품,방향 약초
+에센셜 오일등은 천연재료를 고집한다. 다섯 가지 감각의 형태로 자연 치유의 힘을 모방하여 자연의 소리나 심신의 안정을 돕는 소리와 쾌적한 공간에서 쉴수 있는 실내를 제공 한다. 아시아 철학의 본질과 서양의 웰니스를 결합하여 신체의 밸런스를 맞추고, 도심속에서 힐링할 수 있는 공간을 만들고자 한다.
+
+따뜻한 오로라의 빛 , 물과 자연의 평화로운 소리 , 자연의 온화한 냄세 , 제이드( 현무암, 뱀부 , 허브약초등) 에서 나오는 천연 전류의 부드러운 촉감, 천연 허브의 입맛, 쾌적한 공간과 유니크한 소품들로 재미를 더하여 도심속의 웰에이징 진정한 힐링을 선사하여 드리기 위해 최선을 다하며 고객들의 감각을 자극하고 순환하며 신경을 진정시키는 면역체계를 만들려 노력한다. 아시아 철학의 본질과 서양의 웰니스( 웰빙+행복+건강 ) 를 결합하여 신체의 밸런스를 맞추고 피로를 회복하고 도심속에서 힐링할 수 있는 공간이다.
+
+PRODUCT 컴포트 존, 베글리 미슈카, 히말라야 솔트, 한방약재
+관리후 사상체질 및 컨디션 맞춤형 건강 리포터 제공( 사상체질 분석 후에 맞는 차, 음식, 건강관리등)','02-511-3343',null,null,'Dry Therapy, Deep Tissue Oil Care, ALL BODY STONE Therapy, SKIN CARE, K-beauty team_insert Packge Proglam',null,null,null,'오전10:00 - 익일01:00','있음',null,null,':
+:
+이용가능시설:락커룸, 샤워시설, 족욕실, 커플룸, 싱글룸, 루프탑라운지
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('감로암(서울)','03099','서울특별시 종로구 율곡로23길 16(충신동)',38,127,' 동대문에서 대학로로 들어가는 율곡로 대로변에 자그마한 사찰이 있다. 그 이름도 특이하게 목마른 중생에게 구제의 감로를 준다는''감로암''이다. 도심 속 삭막한 빌딩 숲 사이에 아직 개발되지 않은 주택가 그 곳에 정말 도심에서 보기 힘든 자그마한 암자가 있다. 규모로 보나 사세로 보나 정말 암자의 수준이지만, 그 역사는 벌써 100여년이 흘렀다. 가람은 대로변에서 주택가로 나 있는 골목길을 따라 들어서면 보이는 곳에, 여느 주택과 별반 차이없이 건물을 지어 불상을 봉안하고 예배하고 있다. 하지만 여법하게 산문을 만들고 단청을 하며, 기와를 엮어 고풍스런 가람의 멋을 느끼게 한다.옛부터 관음영험도량으로 알려진 감로암은 동네 어르신들, 특히 할머니들의 다담방, 기도처로 알려져 있다. 감로암은 사찰의 이름처럼 누군가 구제 받을 수 있고, 고통에서 벗어날 수 있는 감로가 있는 곳이다. 지금은 마시지 못하지만 보타전 아래에는 여전히 그 옛날 감로의 맛을 느끼게 했던 감로가 흐르고 있다.<br>','02-762-5861',null,'연중무휴',null,null,null,null,null,null,'없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('세운청계상가','04545','서울특별시 중구 산림동 207-1 세운청계상가',38,127,'금가프라가의 실제 장소
+재벌의 횡포로 철거될 뻔했던 금가프라자. 실제 배경인 세운청계상가 역시 오랜 세월에 의한 노후로 철거 위기에 놓이기도 했었다. 하지만 도시재생을 통해 상가를 포함한 이 일대는 젊은이들이 열광하는 힙한 동네로 다시 태어났다. 유니크한 감각의 카페, 베이커리와 오래된 맛집들이 많아 어디를 가야할 지 고민이 될 정도이다. 세운상가와 청계상가를 잇는 다리에서는 과거와 현재가 공존하는 서울의 풍경을 감상할 수 있다.',null,null,null,null,null,null,null,null,null,null,null,':
+:
+시설이용료:상점마다 다름
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('북촌한옥마을 감고당길',null,'서울시 종로구 안국동',0,0,'아기자기한 카페와 갤러리가 자리한 골목
+최웅(최우식 분)과 국연수(김다미 분)이 술에 취했던 회상 장면과 마지막 회에 등장한 길이다. 북촌한옥마을 서울공예박물관 뒤쪽으로 풍문여고에서 정독도서관까지 약 440m 정도 이어져 있다. 아늑한 길에 예쁜 카페와 갤러리가 많고 공예 마켓 등이 열리기도 해 구석구석 둘러볼 것이 풍성하다. 국연수가 만취한 최웅을 업고 걷던 골목은 감고당길 중간의 윤보선길이다. 좁은 기와 담벼락과 돌담 사이로 언덕을 따라 쭉 뻗어 남다른 정취를 풍긴다.',null,null,null,null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('손놀림공방','03088','서울특별시 종로구 이화동 9-901',38,127,'드라마 ''남자친구''에 나온 가죽공방
+드라마 ''남자친구''에서 차수현(송혜교 분)과 김진혁(박보검 분)이 재회하는 장면에 등장한 가죽공방이다. 김영애 가죽공예 작가가 운영하는 곳으로 아기자기한 소품이 많은 것으로 입소문 났다. 가죽 매듭 끈 팔찌와 반지 만들기 등을 저렴한 비용으로 체험할 수 있다.','02-6012-4704',null,null,null,null,null,null,'09:00~22:00',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('익선동 한옥거리',null,'서울시 종로구 익선동',0,0,'''플레이 서울'' NCT 편
+''플레이 서울''에서 NCT의 제노와 천러가 익선동 한옥거리에서 SNS 감성 핫 플레이스 투어를 선보였다. 골목과 한옥이 어우러진 익선동에서 감성 식당 포토존, 운세 알아보기, 독특한 체험으로 익선동 여행의 재미를 전달했다. 오래된 숙박업소를 개조한 카페로 층마다 분위기가 달라 재미있는 공간인 ''호텔 세느장''과 플라워 디퓨저를 만들어 선물하면 좋은 향수 공방 ''아씨방앗간''에 들려보자.',null,null,null,null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('창신동골목길','03095','서울특별시 종로구 창신동 23-268',38,127,'영화 <기생충> - 정겨움이 묻어나는 동네
+기택의 가족이 집으로 돌아가던 날, 억수같이 퍼붓던 비는 물줄기를 이루며 사납게 흘렀다. 폭이 좁고 가파른 계단이 있는 창신동의 골목길은 굴러 떨어질 것 같은 기택 가족의 상태를 시각적으로 나타내주는 좋은 배경이었다. 창신동은 7~80년대의 흔적이 느껴지는 따뜻하고 아기자기한 동네로 구석구석 정겨움이 묻어난다.',null,null,'항시개방',null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('크라운해태 키즈뮤지엄','04352','서울특별시 용산구 한강대로72길 3(남영동)',38,127,'<b>거침없이 팍팍, 아이들의 해방구</b><br /><br />키즈뮤지엄의 프로그램은 매우 활동적이다. 보고 만지는 정도를 뛰어 넘어 온 몸을 움직이고, 친구들과 함께 다양한 놀이를 즐긴다. 커다란 블록놀이, 암벽등반, 벽면에 낙서하기 등 말리는 사람 없이 마음껏 놀 수 있으니 아이들 스트레스를 확실히 풀어주는 곳이다. 크라운제과가 운영하는 곳인 만큼 과자를 만드는 프로그램도 다양하게 마련되어 있다.<br>','02-709-7403',null,'매주 월요일, 화요일','* 신청방법 : http://www.art-block.co.kr/ >AQ체험 > 체험전','5세 ~ 10세','전시공간 100명 / 체험공간 40명',null,'수~일 10:00~17:00 (월요일, 화요일 휴관)','있음','없음','없음','등산로:
+입 장 료:평일 - 상상놀이터 소인 10,000원 / 입장권+체험권 22,000원<br />
+주말 - 상상놀이터 소인 12,000원 / 입장권+체험권 24,000원<br />
+대인 4,000원
+내국인 예약안내:관람희망일 1일 전까지 아트블럭 홈페이지 예약, 단체(20인 이상)일 경우 전화 문의
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('DMC 홍보관','03926','서울특별시 마포구 월드컵북로 366(상암동)',38,127,'<strong>첨단과 예술 사이, DMC 홍보관 </strong><br /><br />DMC 홍보관은 디지털미디어시티사업을 종합적으로 안내하기 위해 조성되었다. 2층 공간에는 DMC 사업을 한 눈에 볼 수 있는 홍보전시실과 3D 입체영상관, 입주기업체험공간으로 구성되어 있다. 3층에서는 1인 미디어산업 활성화를 위한 1인 미디어(MCN) 체험관이 2017년부터 운영되고 있다. 그동안 DMC 홍보관은 DMC 토지공급을 위한 투자자 대상 사업홍보와 분양 안내장소로 활용되어 왔으나 DMC 내 토지 공급이 마무리 단계에 들어서면서 입주민과 시민을 위한 문화중심시설로 변화하고 있다.<br>','02-2222-3827',null,'일요일 및 공휴일','* 전시 : DMC 전시관, 3D 입체 영상관, 입주기업 기술체험 전시</br>
+* 인 미디어(MCN) 체험관 : MCN쇼룸 MCN제작체험 공간(영상제작, 종합편집실, 성우체험실, 청각실, 쇼룸 등 운영), MCN 네트워킹 공간</br>
+- 1인 미디어 체험은 단체 예약만 가능(10명 이상, 전화문의) / 월~금 운영
+* 신청방법 : http://dmc.seoul.kr > DMC 홍보관','누구나','관람 최대인원 15명',null,'월~토 10:00~17:00 (일요일 및 공휴일 휴무)','있음','없음','없음','입 장 료:무료
+
+내국인 예약안내:자유 관람 / 단체 관람시 전화 또는 사이트 예약 필요 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('고촌홀(제약박물관)','03742','서울 서대문구 충정로 8',38,127,'‘고촌’은 종근당 창업자 고 이종근 회장의 호에서 따왔다. 종근당의 창업전시관에서 고촌의 일생, 종근당의 발생 과정, 국내외 의약사를 살펴보고, 도전과 나눔 정신을 체험해 보도록 구성되어 있다. 고촌 선생이 세계 각국에서 수집한 종들을 모티브로 만들어진, 종이미지의 체험 전시관이 독특하다.','070-7094-4510',null,'국경일 및 공휴일','프로그램 : 종근당 홍보, 국내외 의·약사 흐름 전시 관람<br />
+교육 : 초·중학생 자유학기제','누구나',null,null,'하절기(3~10월) 10:00~17:00<br />
+동절기(11~2월) 10:00~16:00','있음','없음','없음','입 장 료:무료
+한국어 안내서비스:있음
+내국인 예약안내:단체관람 시 관람희망일 7일전 유선 전화 예약
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('동대문디자인플라자(DDP)','04566','서울특별시 중구 을지로 281(을지로7가)',38,127,'꿈꾸고(Dream), 만들고(Design), 누린다(Play)는 뜻을 가지고 있는 DDP(동대문 디자인 플라자)는 서울특별시 동대문에 위치한 복합문화공간이다.team_insert;2014년 3월 21일 개관한 이래 굵직한 전시와 패션쇼, 신제품 발표회, 포럼과 콘퍼런스를 개최해오고 있다. 알림터, 배움터, 살림터, DDP디자인뮤지엄, 디자인장터와 어울림광장, 동대문역사문화공원으로 나뉘었다. 알림터에서는 서울패션위크, MAMA(Mnet Asian Music Awards), 반클리프 아펠전, BMW 신차 발표회 등을 개최했고, 다목적 연회 공간인 국제회의장 시설을 갖추었다. BTS 주제전과 서울도시건축비엔날레 등이 열렸던 배움터, 누구나 디자이너가 되는 곳을 주제로 2019년 개장한 시민 라운지 team_insert;D-숲team_insert;과 DDP 관련 기념품을 소개하는 DDP디자인스토어를 아우르는 살림터까지, 규모에 걸맞은 내실로 관람객의 흥미를 북돋운다. 식당과 베이커리, 카페가 들어선 디자인장터 역시 감성 충전을 기대하는 가족이나 연인을 만족시키고도 남을 산책 코스다. 
+team_insert;<br> 
+<u>놓치지 말 것</u><br> 
+SNS상에 동대문디자인플라자의 야경 사진이 범람하는 데는 이유가 있는 법이다. 건축가 자하 하디드(Zaha Hadid)가 동대문디자인플라자를 설계하며 team_insert;이른 새벽부터 밤이 저물 때까지 쉴 새 없이 변화하는 동대문의 역동성에 주목해 곡선과 곡면, 사선과 사면으로 이뤄진 특유의 건축 언어로 자연물과 인공물이 이음매 없이 이어지는 공간을 만들어냈다team_insert;고 밝혔는데, 해 질 녘 조명이 켜진 후 건축물에 오롯이 집중할게 될 때 곡선부가 주는 역동성의 진가가 드러난다. 야경 사진을 찍기 좋은 지점은 어울림광장 진입로로, 내부의 웅장함과 건축물의 신비로운 소재가 연출하는 분위기를 담을 수 있다. 알림터와 배움터를 나누는 살림터 문 앞은 내‧외부의 현란한 곡선과 조명이 정점을 이룬다.<br> <br>','02-2153-0000',null,'신정, 추석, 설날 당일(살림터는 매월 세번째주 월요일 휴무)','※ 전시/행사/키즈 프로그램등 자세한 사항은 홉페이지 참조','전연령',null,null,'[살림터] 10:00~21:00<br/>
+[배움터/알림터] 프로그램에 따라 상이함','주차가능','없음','없음','입 장 료:자유 관람 무료 (이벤트 및 체험 프로그램별 별도 요금 징수)
+이용가능시설:알림터, 배움터, 살림터, 디자인장터, 어울림광장, 동대문역사문화공원 등
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('홍대 벽화거리','04066','서울특별시 마포구 상수동 72-36(상수동)',38,127,'홍대 정문에서 왼쪽 골목으로 들어서면 마치 갤러리에 들어선 듯한 착각을 일으킬 만큼 대담하고 예술적인 벽화들이 길 양쪽을 장식하고 있다. 홍대 벽화거리는 예술적인 분위기를 자아낼 뿐만 아니라 주변 아기자기한 카페들이 많아 조용한 데이트를 즐기려는 사람들로 가득하다.<br>','홍대관광안내소 02-323-2240',null,'연중개방',null,'전연령',null,null,'00:00~24:00',null,'없음','없음','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('전태일동상','03197','서울특별시 종로구 청계천로 261(종로5가)',38,127,'1970년 11월 13일 서울 평화시장 앞에서 열악한 노동조건에 항거하고 근로기준법 준수를 요구하며 근로기준법 화형식을 치르고 시위를 벌이던 중 "근로기준법을 준수하라. 우리는 기계가 아니다!"며 분신(焚身)으로 항거한 당시 평화시장 봉제공장의 재단사 전태일(22세)을 추모하기 위한 추모 동상이다. 2005년 서울시는 청계천로 평화시장 인근 일대에 전태일 거리를 조성하고, 청계천 버들다리 내에 전태일 기념 동상과 동판을 설치했다.<br>2013년에는 전태일 분신장소(신당동 평화시장 A동과 B동 사이 대로변) 일대가 ''서울시 미래유산''으로 선정되었다. 선정 근거는, 고도성장의 과정에서 일방적인 희생을 강요당하며 신음하던 노동자의 삶이 사회문제로 등장하게 된 계기이자 우리나라 노동운동과 민주화운동의 신호탄이 된 역사적 사건이 발생한 장소로 보존 가치가 높은 곳이기 때문이다.','02-2148-1852','2005년',null,null,null,null,null,'00:00  ~  24:00','없음(인근 청계 노상 공영 주차장)','없음','가능','주차요금:청계 노상 공영 주차장<br>30분 3,000원<br>60분 6,450원<br>120분 14,250원<br>240분 29,850원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('묵정어린이공원','04559','서울특별시 중구 동호로31길 21(충무로5가)',38,127,'서울 중구 충무로 위치한 묵정어린이공원은 4,003㎡ 규모의 공원이다.1992년 개장해 2007년 개보수를 거쳐 인근 도시민들에게 휴식처를 제공하고 있다. 어린이 놀이기구, 운동 시설, 벤치, 조각품 등이 설치되어 있으며, 지하에는 공영주차장 시설이 있다. 소나무 등 여러 종류의 나무와 꽃들이 잘 심어져 있는 경관이 아름다운 공원이다.','02-923-2301',null,'없음',null,null,null,null,'00:00 - 24:00','있음(묵정공영주차장)','없음','가능','주차요금:30분 2,400원/60분 4,800원/120분 9,600원/240분 19,200원
+화장실:있음(남,녀 분리)
+
+이용가능시설:경로당
+
+입 장 료:없음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('백제초기적석총','05682','서울특별시 송파구 가락로7길 21(석촌동)',38,127,'서울시 송파구 석촌동에 위치한 백제 초기 만들어진 돌무지무덤(적석총)으로, 적석총(돌무지무덤)과 토광묘(널무덤) 등 백제 초기 유적 5기가 보존되어 있다. 백제 한성시대에 살던 왕과 왕족, 귀족들의 무덤으로 안내되고 있다. 이 중 제3호, 제4호 돌무지무덤이 사적 제243호로 지정되어 있으며, 주변 5,000m²이 사적공원으로 꾸며져 있다. 지하철 8호선 석촌역과 9호선 석촌고분역을 이용할 수 있다.','02-2147-2001','1975.05.27','무휴',null,null,null,null,'00:00 - 24:00','있음(공영유료주차장)','없음','가능','등산로:
+화장실:있음(남/녀 구분)
+
+주차요금:5분당 50원(평일 09:00 ~ 18:00) (토요일 09:00 ~ 15:00)
+
+이용가능시설:문화재시설, 공원시설		
+
+외국어 안내서비스:영문 안내문
+
+한국어 안내서비스:국문 안내문
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('스파어바인','06584','서울특별시 서초구 동광로 89(방배동)',37,127,'스파어바인(SPA IRVINE)은 서울 서초구 서래마을에 위치한 826m²(250평) 규모의 스파 및 피부관리 시설이다. 고급스러운 인테리어의 공간에는 다양한 프라이빗 트리트먼트실이 준비되어 있다. Signature Special(ONE-DAY 프로그램), Inner Beauty 프로그램, Couple 프로그램 등 다양한 프로그램을 제공하고 있다. 100% 사전 예약제로 운영되므로 전화나 홈페이지를 통해 예약한 후에 이용할 수 있다.','02-593-3277',null,'매주 월요일','Signature Special<br>Inner Beauty<br>Inner Healing<br>Les Aromas Body<br>Face team_insert<br>Inner Body<br>Brain team_insert<br>Face<br>INTRA ceuticals<br>Single Body<br>MOTHER TO BE<br>Couple<br>Les Nouvels',null,null,null,'11:00 ~ 20:00','주차가능','없음','없음','입 장 료:입장료 없음, 프로그램별 이용요금은 상이함		
+
+내국인 예약안내:100% 사전 예약제로 운영, 당일 방문 예약 - 전화 02-593-3277, 홈페이지 예약 - 하루 전까지		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('노들나루공원','06902','서울특별시 동작구 노량진로 247(본동)',38,127,'서울 동작구 노량진에 있는 노들나루공원은 노량진 배수지공원이라 불리다가 지금은 노들나루공원으로 명칭이 바뀐 근린공원이다. 바닥분수와 야외무대, 여러 가지 운동 시설이 갖춰져 있으며, 푸른 잔디와 함께 장미꽃 광장도 조성되어 있고, 여러 개의 산책코스도 마련되어 있다. 6.25 전쟁 초기, 서울이 함락된 직후 북한군의 한강 도하를 6일간이나 저지시킨 한강 방어선 전투의 전사자 명비를 볼 수 있다. 공원과 붙어 있는 풋살장, 족구장은 서울특별시 공공서비스예약(yeyak.seoul.go.kr)에서 예약 후, 사용할 수 있다. 
+여의도 불꽃축제 기간에 불꽃놀이를 감상할 수 있는 명소이기도 하다. 
+지하철 9호선 노들역 2번 출구와 연결되어 있다.','02-826-1395',null,null,null,null,null,null,'00:00 ~ 24:00','있음','없음','가능','이용가능시설:운동시설, 산책코스, 풋살장, 족구장, 자전거연습장<br/>
+풋살장, 족구장 이용은 서울특별시 공공서비스예약 https://yeyak.seoul.go.kr) 필요		
+
+
+
+입 장 료:없음
+
+화장실:있음(남,녀 구분)
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('방배배수지체육공원','06759','서울특별시 서초구 남부순환로296길 4-9(방배동)',37,127,'서울 서초구 사당역 방배래미안 아파트 건너편에 있는 방배체육공원은 앞으로는 매봉재산과 뒤로는 우면산을 사이에 두고 울창한 숲속에 있는 30,353㎡ 규모의 체육공원이다. 방배체육공원으로도 불리며, 공원 전체가 금연/금주 구역이다. 인조 잔디가 깔린 축구장, 풋살구장, 실내 배드민턴 코트도 있으며 야간 조명시설도 갖췄다. 시설은 서울시 공공서비스예약(yeyak.seoul.go.kr) 사이트를 통해 예약, 이용할 수 있다. 여성축구교실, 유아축구교실, 서초홍명보어린이축구교실, 서초리틀야구단 프로그램이 운영되고 있다.','02-2155-6212',null,null,null,null,null,null,'공원이용 00:00 ~ 24:00 <br>
+운동시설 06:00 ~ 22:00','주차가능','없음','없음','화장실:가능 (남,녀 구분)
+시설이용료:< 축구장 > <br>
+평일 34,000원(시간당) <br>
+ 토요일 44,200원(시간당) <br>
+<풋살장> <br>
+ 평일 4,000원(시간당) <br>
+ 주말 5,200원(시간당) <br>
+<배드민턴장> <br> 
+무료 <br>
+ <br>
+일요일, 공휴일, 축구장/풋살장 무료(단, 유소년 체육프로그램 시간 제외) <br>
+※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
+이용가능시설:축구장, 풋살장, 배드민턴장 등
+내국인 예약안내:서울시공공서비스예약(yeyak.seoul.go.kr)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('자하문터널','03022','서울특별시 종로구 부암동 281-11',38,127,'영화 <기생충> - 빈부격차를 상징하는 긴 계단
+박 사장의 집에서 도망쳐 나온 기택 가족이 집으로 가던 길 잔뜩 웅크리고 지나던 터널이다. 낮은 곳에 있는 기택의 집과 높은 곳에 있는 박 사장의 집 사이에 존재하는 층을 상징하는 듯한 긴 계단이 있어 채택된 촬영지이다. 길이 458m의 긴 터널로 종로구 부암동에서 청운동을 잇고 있다.',null,null,'항시개방',null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('티엔티에프','05095','서울특별시 광진구 자양강변길 277',38,127,'티엔티에프는 (사)국제티클럽 산하 교육장을 운영하고 있다. 또한, 한국 전통 다도 체험장으로 다도체험과 다례예절까지 체험할 수 있다. 외국인 관광객 대상으로도 운영하고 있어 한국의 다도 문화를 알리고 있다.','010-7330-7475',null,null,'[한국다도체험]<br />
+1. 인사<br />
+2. 한국예절 소개(ex: 인사법, 절하는법)<br />
+3. 한국차와 다구및 다식 소개(PPT)<br />
+4. 한복입기<br />
+5. 강사 다례시연<br />
+6. 1인다기 활용 - 차우리기 체험<br />
+(차 우리는 법, 차 마시는 법, 다식먹는 법, 다저 잡는 법)','전연령','8명',null,'매주 월요일, 수요일 15:00 (전화문의)','주차가능',null,'없음',':
+:
+화장실:있음
+한국어 안내서비스:가능
+외국어 안내서비스:영어가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('호전다실','03036','서울특별시 종로구 자하문로11길 16-2',38,127,'호전다실은 2012년부터 전 세계의 차를 수입, 유통 그리고 교육을 하고 있다. 중국, 일본, 대만, 인도, 스리랑카 등 차로 유명한 곳의 차들을 수입하여 품질 좋은 차를 소개하고 있으며 온라인 판매도 하고 있다. 또한, 서울 경복궁 옆 서촌에 전통차(클래식차) 등을 시음할 수 있는 공간을 오픈하여 호전다실 시음공간으로 개업이래 변함없이 무료 시음을 진행하고 있으며, 2시간 정도의 체험이 가능하다. 예약은 네이버 예약으로 받고 있다. 
+호전다실은 다양한 차 관련 교육 프로그램들을 운영하면서 차의 대중화에 힘쓰고 있으며, 시대의 변화에 발 맞추어 새로운 패러다임에 맞는 차 문화 확산을 위해 노력하고 있다.','02-722-1007',null,'매주 일요일',null,null,null,null,'10:00~21:00',null,null,null,':
+:
+입 장 료:무료
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('소림사(서울)','03015','서울특별시 종로구 세검정로 241-3',38,127,'소림사는 서울시 종로구 홍지동 80-1번지에 자리한 대한불교조계종 직할사찰이다. 인왕산을 앞에 두고 북악산을 뒤로한 공기 맑고 풍경 좋은 세검정(洗劍亭). 북악산으로부터 흘러내리는 계곡물 한가운데 자리하고 있는 세검정은 인조반정 당시 이귀, 김유 등이 칼을 씻고 창의문을 통하여 궁궐로 들어갔다는 이야기로 유명한 역사의 산실이다. 이 세검정 맞은편 산허리에 소림사는 자리한다. <br /><br />세검정에서 바라보는 소림사의 전경은 나무숲에 가려져 아주 고즈넉해 보인다. 비구니 수행도량으로 화려한 장식의 다른 사찰들 보다 오히려 아늑하고 편안한 느낌을 준다. 경내에 들어서면 불공을 드릴 수 있는 작은 법당과 그 앞 작은 마당의 한 가운데를 꽉 채우는 석탑, 말끔하게 정리된 모습에서 소박한 멋을 배우게 된다.<br /><br />소림사(小林寺)는 그 이름에서 알 수 있듯이 달마대사가 9년 동안 면벽좌선한 곳인 중국의 숭산 소림사에서 유래되었다. 조선 태조가 즉위하기 전 이곳의 작은 굴에서 기도하여 뜻을 이루자 1396년(태조 5) 당대의 선승으로 이름을 날리던 혜철(惠哲)선사로 하여금 절을 짓게 하고 ‘소림굴(小林窟)’이란 편액 내렸다고 것이다. 이후 1817년(순조 17)에 관해(觀海)스님이 중건하면서 ''소림사''라 개칭하여 현재까지 그대로 불리고 있다.','02-394-2145',null,'연중무휴',null,null,null,null,null,'있음','불가','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('안양암(서울)','03102','서울특별시 종로구 창신5길 59-2',38,127,'안양암(安養庵)은 서울시 종로구 창신동에 자리한 사찰로 한국미술박물관의 별관이다. 우리나라의 많은 사찰에는 오랜 역사와 함께 전래되어온 문화재들을 간직하고 있다. 하지만 일부 사찰을 제외하고는 대부분 몇 건에 지나지 않고, 그나마 일반인들이 쉽게 접근하지 못하는 곳에 비장되어 있는 경우가 많다. 그래서인지 중요한 유물을 보기 위해 사찰을 찾지만 제대로 보지 못하고 발길을 돌려야 하는 경우가 비일비재한 편이다. 서울 종로구 창신동에 자리한 안양암(安養庵)은 1889년 성월대사(性月大師)가 창건한 정토도량(淨土道場)이다.<br /><br />또한 이곳에는 조선 말기부터 조성된 전각, 불화, 불상, 공예품 등이 고스란히 보존되어 있는데, 대부분이 문화재로 지정되어 있다. 다시 말해서 사찰 전체가 문화재인 것이다. 작은 대문을 들어서면서부터 눈에 보이는 하나하나가 조심스럽다. 100여년의 짧지만은 않은 세월을 머금고 있는 성보들이기 때문이다. 그렇다고 일반 박물관에서처럼 유리장을 사이에 두고 유물을 관람해야만 하는 일은 전혀 없다. 다만 항시 예경을 올리는 종교적인 성지이기에 사찰에서 가지는 기본예절을 지켜가면서 감상을 하면 된다.<br>','02-744-6923',null,'연중무휴',null,null,null,null,null,null,'불가','불가','외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('롯데월드타워 서울스카이','05551','서울특별시 송파구 올림픽로 300',38,127,'세계 5위, 국내 최고 높이 롯데월드타워 117층~123층에 위치한 서울 스카이는 500m 상공에서 환상적인 서울의 풍경과 야경을 360도 뷰를 통해 즐길 수 있는 서울의 새로운 명소이다. 전시존, 전망대, 스카이데크, 디저트카페, 스카이테라스, 라운지 등으로 구성되었으며, 전시층은 지하 1층, 2층에 위치해있다. 전시층 및 전망대 로비에는 한국의 탄생과 성장의 역사, 전통과 자부심을 보여주는 미디어 아트들이 전시되어 있어 다양한 볼거리를 제공하고 있으며, 또한 서울스카이에서 자체적으로 개발한 캐릭터 상품과 롯데월드타워 관련 다양한 기념품점이 있어 서울스카이의 추억을 오래도록 기억할 수 있는 기념품을 구매할 수 있다. 전망층에서는 건물 2층 높이의 통유리를 통해 서울 시내를 한눈에 내려다 볼 수 있다. 지상 478m 높이에 시공한 ''스카이데크''는 세계에서 가장 높은 유리 바닥 전망대로 기네스 월드 레코드에 등재됐다.<br /><br />악천후로 기상이 좋지 않은 날에도 스카이시어터를 통해 맑은 날의 아름다운 서울 풍경을 대형 스크린으로 관람 할 수 있다. 120층으로 올라가면 고도 486m의 바람을 피부로 느낄 수 있는 스카이 테라스가 있다. 119층에는 서울스카이만의 독특한 메뉴를 판매하는 디저트 카페인 스카이프렌즈카페, 서울스카이의 최고층인 123층에는 와인을 즐길 수 있는 프리미엄 라운지가 있다. 이 곳은 아늑한 공간에서 환상적인 전망을 감상할 수 있는 서울에서 가장 높은 라운지이다. 서울스카이를 향해 올라가는 더블데크 엘레베이터 ''스카이 셔틀''도 빼놓을 수 없는 볼거리이다. 단순한 엘리베이터가 아닌 분속 600m로 운행하는 엘리베이터로, 세계 최초로 천장과 벽체 3면에 모니터 화면이 설치되어 있어 한국의 탄생과 발전 모습을 담은 영상을 상영한다. 전망대로 오르는 1분간 시공간을 초월한 황홀함을 느껴볼 수 있다.<br>','1661-2000',null,'연중무휴',null,'전연령',null,null,'* 일~목 : 10:30 ~ 22:00<br />
+* 금,토,공휴일 전일 : 10:30 ~ 23:00<br />
+※영업종료 1시간 전 입장 및 매표 마감','있음','없음','없음','입 장 료:[서울스카이 티켓정보]<br />
+일반티켓 : 관람날짜와 입장시각을 사전에 지정하는 입장권<br />
+- 어른 (만 13세 이상) 27,000원 / 어린이 (36개월 이상 ~ 만 12세 이하) 24,000원<br />
+- 온라인 / 모바일 / 현장매표소에서 구입가능<br />
+- 관람일 14일전부터 예매 가능 <br />
+<br />
+Fast Pass : 사전 예약 없이 바로 입장 가능한 입장권<br />
+- 전연령 50,000원<br />
+- 방문 당일 현장 매표소에서만 구입가능<br />
+<br />
+※ 36개월 미만 소아는 보호자 동반 하에 1명 무료 입장 (단, 증빙서류 지참)<br />
+※ 국가유공자증, 장애인증 제시시 입장권 30% 할인<br />
+※ 15인 이상 단체 입장시 단체요금 적용 (단, 사전 예약 문의 필수)
+이용가능시설:[관람시설] 전시존, 스카이데크, 스카이테라스, 스카이셔틀, 미디어테이블, 포토존, 상품점, 카페team_insert 등<br/> 
+[편의시설] 안내데스크, 유아휴게실, 가이드휴게실, 장애인 및 노약자 편의시설 등
+주차요금:전망대 당일 방문고객 주차권 지급 : 최대 4시간 <br />
+- 4시간 이후 정상 주차요금 적용 (10시~20시 : 10분당 500원 / 그 외 시간 : 10분당 200원)
+
+
+내국인 예약안내:일반 관람객 :온라인 예매 / 모바일 예매 / 현장매표 가능 <br />
+단체 관람객 : 15인 이상 단체시 단체요금 적용 (전화를 통한 사전 예약)<br />
+- 국내, 해외단체 문의 : 02-3213-8080~8081 <br />
+- 일본단체 문의 : 1899-8905 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연남동 공방거리','03984','서울특별시 마포구 성미산로28길 18',38,127,'마포의 젊은 예술가들이 활동하는 공방과 편집숍 등이 밀집된 공간으로, 경의선 숲길공원 연남동 구간 인근에 형성된 골목문화공간이다. 골목들마다 아기자기한 소품들과 벽화들이 그려져 있으며, 젊은 예술인들의 수공예 작품들을 만나볼 수 있는 곳이다.<br>','마포구 관광과 02-3153-8654',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('상수동 카페거리','04074','서울특별시 마포구 상수동',38,127,'상수동 주변에는 한강을 조망할 수 있는 카페들이 군데군데 들어서있어 한강 카페거리로도 불린다. 서강대교 앞의 밤섬이나 강 건너의 63빌딩, 국회의사당도 볼 수 있는 이곳은 밤이 되면 한강다리가 화려한 조명으로 장관을 이루며, 강변도로의 자동차 불빛 행렬은 황금빛으로 수놓은 듯한 풍경이 연출된다. 카페 안에서 바라보는 한강변의 야경과 감미롭게 흐르는 재즈음악을 들으며 데이트를 하려는 연인들이 많이 찾는 명소이다.<br>','02-3153-8114',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('로렌스길','04049','서울특별시 마포구 상수동',38,127,'상수역 1번 출구로 나와 쭉 내려오면 만날 수 있는 로렌스길은 한국에서 가장 오래된 시계회사인 로렌스 뒤쪽으로, 개성 있는 식당과 카페들이 위치한 골목이다. 시계회사 로렌스 옆쪽 벽에 아기자기한 로렌스길 지도가 벽화처럼 그려져 있어, 로렌스길을 찾는 관광객들이 원하는 곳을 쉽게 찾아갈 수 있다.<br>','02-3153-8353',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('광흥당','04065','서울특별시 마포구 독막로21길 15(창전동)',38,127,'광흥당은 공민왕사당 오른쪽에 있는 한옥문화공간으로 전통문화의 소중함을 일깨우기 위해 다양한 프로그램을 운영하고 있으며, 향토사료 발굴‧전시 및 청소년 등을 위한 교육 프로그램을 운영하고 있다. 정월대보름에는 근대 이전의 풍속과 생활모습이 반영되어 민간에 전해져 오는 정월대보름 놀이, 연날리기, 지신밟기, 석전, 척사대회를 진행하고 있다. 성년의 날에는 전통 성년식이 진행이 되며, 한국의 전통 국악을 알리기 위한 국악한마당, 마포국악울림 공연 등 다채로운 행사가 진행된다. <br>','02-312-1100',null,null,'강좌예약 : 방문 및 전화접수(02-312-1100)',null,null,null,'평일 09:00 ~ 18:00',null,'없음','없음','한국어 안내서비스:강좌예약 : 방문 및 전화접수(02-312-1100) 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('반포한강공원 달빛광장','06500','서울특별시 서초구 신반포로11길 40(반포동)',38,127,'서울 반포대교와 잠수대교 한강 남단에 있는 반포한강공원의 중심 광장으로, 달의 모습을 형상화하여 만든 테마 광장이다. 잠수교를 사이에 두고 동쪽에 2개, 서쪽에 3개의 초승마루가 있다. 주변에는 교량 양쪽에 설치된 달빛무지개분수를 비롯해 보행자 중심 다리로 거듭난 잠수교 등 재미있는 아이템이 가득하다. 달빛무지개분수는 총 길이가 1,140m로 2008년 세계에서 가장 긴 교량 분수로 기네스협회에 등재되었다. 세빛섬, 가빛섬, 예빛섬과 한강 주변의 빌딩 숲 야경이 달빛공원을 아름답게 만든다. 지하철 3호선, 9호선, 7호선 고속터미널역에서 가까워 접근성도 좋다.','02-3780-0541',null,null,null,null,null,null,'00:00 - 24:00','주차가능','없음','가능','촬영장소:MBC에브리원 <어서와 한국은 처음이지?> 100화
+이용가능시설:공원, 달빛무지개분수
+주차요금:최초 30분 1,000원 <br>
+초과 10분당 200원
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('인왕산국사당','03023','서울특별시 종로구 통일로18가길 20(무악동)',38,127,'인왕산 기슭에 위치한 국사당은 무속신으로 모시는 조선 태조와 무학대사, 다른 여러 신들을 모시는 당집으로 요란한 굿판을 벌이기 편리한 인왕산 속에 세운 ‘굿당’이다. 1973년 7월 16일 국가민속문화재 제28호로 지정되었다.
+원래는 남산 꼭대기에 있었는데, 일본인들이 남산에 조선신궁(朝鮮神宮)을 지으면서 이곳 인왕산 기슭으로 이전되면서 건물을 해체하여 옮긴 후 원형대로 복원하였다. 인왕산을 선택해 옮긴 이유는 이곳이 풍수지리설에서 명당이고 현재 무속신으로 모시는 조선 태조와 무학대사가 기도하던 자리이기 때문이다. 
+1925년에 새로 지어진 국사당은 영·정조 때의 건축기법을 바탕으로 원래의 국사당을 그대로 복원한 것으로, 다른 당집에 비해 건물이 견고하고 많은 무신도를 볼 수 있다.','02-731-1165',null,'없음',null,null,null,null,'00:00 - 24:00','없음','없음','없음','입 장 료:없음
+
+화장실:있음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청계광장','04520','서울특별시 중구 청계천로 8(무교동)',38,127,'서울 중구 청계천이 시작되는 세종로에 조성된 자연 친화적인 생태환경을 갖춘 광장이다. 다양한 볼거리를 제공하고 접근성이 좋아  시민들과 외국인 관광객들이 즐겨 찾는 서울의 대표적인 관광 명소이다. 삼색 조명의 캔들 분수와 2단 폭포에서 4m 아래로 떨어지는지는 물줄기, 폭포 양옆에는 전국에서 돌을 가져온 8도석으로 제작된 ‘팔석담’을 깔아 놓았다. 밤에는 광장의 조명들과 물이 어우러지는 환상적인 모습을 연출하여 밤에도 찾는 사람들이 많다. 청계천 전 구간을 1/100로 축소한 미니어처도 볼거리로 제공하고 있으며, 연중 다채로운 시민 문화행사 및 축제가 진행되는 곳이다. 지하철 5호선 광화문역 5번 출구에서 약 60m, 지하철 1, 2호선 시청역 4번 출구에서 약 300m 거리에 있다.','02-2290-7111',null,null,null,null,null,null,'00:00 - 24:00','없음(인근 주차장 이용)','없음','가능','이용가능시설:분수, 폭포, 팔석담		
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('평화의공원','03901','서울특별시 마포구 증산로 32(상암동)',38,127,'서울의 난지 매립장을 환경생태공원으로 재조성한 월드컵 공원은 테마별로 평화의 공원, 난지한강공원, 하늘공원, 난지천 공원, 노을공원으로 넓고 광활하게 펼쳐져 있다. 이중 평화의 공원은 전체를 대표하는 공간으로 유니세프 광장과 난지연못를 비롯해 평화의 정원, 피크닉장, 난지도 이야기(월드컵공원 전시관) 등이 있다. 449,000㎡ 규모의 평화의 공원은 월드컵공원 중 방문객이 가장 많은 공원으로 중앙에 대규모 호수인 난지연못을 중심으로 다양한 산책길들이 준비되어있으며 서울정원박람회가 개최되는 곳이기도 하다.','02-300-5576','확인불가','없음',null,null,null,null,'00:00~24:00','있음','없음','가능','이용가능시설:서울에너지드림센터, 모험놀이터, 피크닉장, 모형놀이터, 휴게음식점/매점
+
+
+입 장 료:승용차 10분당 300원 행사시 5,000원<br>중형차 10분당 600원 행사시 10,000원<br>대형차 10분당 900원 행사시 15,000원
+
+화장실:있음(남,녀 구분)
+
+입 장 료:없음		
+
+한국어 안내서비스:없음
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('잠실유수지공원','05573','서울특별시 송파구 탄천동로 211(잠실동)',38,127,'서울 송파구 잠실 유수지의 생태복원 공사를 통해 조성된 도심 속 생태공원이다. 유수지 내 습지 6,700㎡에는 갈대와 물억새 등 17종의 우리나라 자생 화초류를 식재되어 있고 주민들의 휴식을 위한 산책로와 벤치, 운동기구 등이 있어 송파구 서부권 지역인 잠실본동과 가락동 일대 주민들을 위한 친근한 생활공간으로 이용되고 있다. 공원 바로 옆에는 주민들을 위한 체육시설로 유소년야구장, 인조잔디축구장, 소프트테니스장, 족구장, 농구장, 다목적구장(풋살 등), 파크골프연습장 등이 조성되어 있다.','02-2147-2818',null,null,null,null,null,null,'24시간','주차가능','없음','가능','시설이용료:체육시설 유료
+이용가능시설:유소년야구장 1면(센터 70m, 1·3루 68m), 인조잔디축구장 1면(100m x 60m), 소프트테니스장 2면, 족구장 2면, 농구장 1면, 다목적구장(풋살 등) 1면, 파크골프연습장(5타석 규모)
+화장실:가능
+내국인 예약안내:체육시설 예약 - 서울시공공서비스예약(https://yeyak.seoul.go.kr)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼룡사','02180','서울특별시 중랑구 용마산로112나길 41(망우동)',38,127,'서울 중랑구 용마산 자락에 있는 사찰 삼룡사는 대한불교 천태종 말사로 등록된 3,000명의 불자가 이용하고 있는 도심 속 사찰이다. 지하 1층, 지상 4층 연건평 4,297㎡ 규모로 4층 대불보전, 3층 법화삼매당, 2층 소법당과 신행 단체 등에서 사용하는 휴식공간, 1층 종무실과 대중공양실, 주방 등이 있다. 신행 단체로는 삼화합창단, 청년회, 진여다도회, 정토회, 우담바라 꽃꽂이회, 연화봉사회가 있다.','02-496-3839','1982-09-20',null,null,null,null,null,'월 정기법회 - 매월 둘째 주 일요일 11:00','주차가능','없음','불가','화장실:가능 (남,녀 구분)
+이용가능시설:법당
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('원통사(서울)','01313','서울특별시 도봉구 도봉로169길 520(도봉동)',38,127,'원통사(圓通寺)은 서울시 도봉구 도봉산에 자리한 대한불교 조계종 1교구인 조계사의 직할사찰이다. 원통사는 예로부터 좌우에 수락산과 삼각산을 거느리고 한강을 바라보는 도봉산의 최고 길지에 자리잡은 수행기도처로 알려져 왔다. 조선초기의 무학대사를 비롯해서 근대에는 만공 · 동산 · 춘성스님 등 선지식이 이곳에 머물면서 큰 깨달음을 얻었으며, 많은 사람들에게 있어서는 관음기도 도량으로도 유명하다. 또한 조선 영조 때 영의정을 지냈던 조현명, 서명균 등이 나라의 일을 이야기하며 심신을 닦았던 곳으로 당대 유학자들 사이에 명소로 이름 높았다.<br /><br /> 현재 경내에는 조선 태조 이성계가 기도했다는 석굴이 있으며, 약사전 아래 큰 바위에는 태조가 기도를 마치던 날 천상의 상공(정승)이 되어 옥항상제를 배알하는 꿈을 꾸었다하여 새겼다는 《상공암(相公岩)》이라는 글씨가 있다. 그런가하면 절 뒤쪽에 있는 우이암으로 불리는 바위는 관음보살이 부처님을 향해 기도하는 형상을 하고 있어 원래는 team_insert;관음봉team_insert; 으로 불리었다고 한다. 주변의 자연 지세를 자세히 살펴보면 호랑이 · 코끼리 · 학 등 여러 동물 모습을 한 바위들이 이 바위를 향해 머리를 조아리고 있는 형상이다. 그래서인지 사람들은 이곳을 천혜의 관음성지라고 믿고 있다.<br>','02-2116-3776',null,'연중무휴',null,null,null,null,null,'없음','불가','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('인왕사(서울)','03023','서울특별시 종로구 통일로18가길 16-1(무악동)',38,127,'인왕사(仁王寺)는 서울시 종로구 무악동 인왕산 자락에 자리한 전통사찰이다.  성곽을 따라 이어진 길은 소나무 숲 사이로 간간이 빌딩숲이 내려다 보이곤 하더니 곧 도로를 만나 속세로 이어진다. 성곽에 기대서 바라보는 인왕산의 모습은 옛 정선의 인왕제색도처럼 정겹다. 서울 중심에서 가장 가깝고 손쉽게 오를 수 있는 산. 그 중턱에 수많은 기자신앙과 토속신앙의 상징이 어우러진 선바위와 호국도량 인왕사가 있다. 풍수상으로 조산인 북한산에서 주산인 북안산에 연결되고 낙산이 좌청룡이며, 인왕산이 우백호가 되는 산. 동쪽 기슭은 아늑하고 풍치가 빼어나 장안 제일의 명승지가 되며, 북쪽은 무계동(武溪洞)이라 불리워 중국의 무릉도원에 버금갈 정도로 아름다운 경치를 자랑하는 곳이다. 인왕산 호랑이하면 서울 시민 중 모르는 이들이 없으며, 서울을 한눈에 조망할 수 있는 곳 하면 모르는 이 없는 산이다.<br /><br />조선 초기 태조가 경복궁을 수호하는 호국도량으로 창건한 인왕사는 많은 서울 시민들이 즐겨 찾는 서울 사대문 안에 자리한 도량이었다. 인왕사에 올라 선바위에서 내려다 보는 서울의 조망은 마치 레고를 쌓아 놓은 조형물의 전시장 같지만, 멀리 우뚝 선 보현봉을 중심으로 서쪽으로 이어지는 비봉능선의 선경들은 마치 먼 옛날의 조선과 현재의 서울이 교차하는 타임머신을 탄 듯한 느낌을 갖게 한다. 이처럼 누구나 쉽게 오를수 있고 도심에서 쉽게 찾을 수 있는 서울의 명산에 자리한 인왕사는 선바위ㆍ국사당으로 불리는 무불습합의 신앙지와 함께 특이한 가람을 구성하고있다. 5개종단의 11개 암자가 하나의 인왕사라는 하나의 명칭 아래 공존하는 곳. 처음 사찰을 찾는 이들은 여느 사찰에서 느낄 수 없는 특이한 공간에 어색함을 느끼지만, 선바위로 오르는 여정에 다양한 암자들의 독특한 모습과 부처님들을 친견하는 묘미가 있는 곳이기도 하다.자그마한 근심이나 먼 옛날 호국도량의 의지를 맛 보고 싶을 때 언제나 오를 수 있는곳. 그 곳 인왕산에 먼 옛날 솟아 오른 영험한 선바위와 한양을 지키며 자리한 인왕사가 500여 년에도 그랬듯이 현재도 여전히 경복궁 수호하며 그 자리를 지키고 있다.<br>','02-737-4434',null,'연중무휴',null,null,null,null,null,null,'불가','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('예지원','04605','서울특별시 중구 장충단로 72(장충동2가)',38,127,'예지원은 1974년 9월 16일 개원한 곳으로  우리나라 고유한 전통문화를 전승, 발전시켜 생활화함으로써 국가관의 확립과 민족적 주체의식을 함양하며, 전통문화를 해외에 소개함으로써 국가간의 이해증진과 친선을 도모하고 있다. 또한 여성의 지도력을 배양하여 사회에 참여도를 높이기 위해 설립되었다. 한국의 전통 문화와 예절, 요리를 배울 수 있는 곳이며,  현재 전통 예절을 교육하고 예절을 바탕으로 한국 생활 문화를 외국인에게도 소개하고 있다.<br>','예지원 02-2234-3325 / 02-2253-2211',null,'매주 일요일, 공휴일','* 인사 예절, 다도, 가정 의례, 요리 등의 프로그램 운영<br />
+* 교육 - 예지반, 규수반, 다도반, 위탁교육, 특별교육','성인',null,null,'09:00~18:00
+프로그램에 따라 시간변동','주차 가능','없음','불가','이용가능시설:강의실, 예절실, 실습실
+화장실:실내에 위치(남/녀 별도)
+내국인 예약안내:예약(02-2253-2211~2) 필수
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('삼청동길','03049','서울특별시 종로구 삼청로 107',38,127,'삼청동의 지명은 산과 물이 맑고 인심 또한 맑고 좋다고 하여 삼청(三淸)이라 불리어졌다는 설과 도교의 태청(太淸), 상청(上淸), 옥청(玉淸) 3위(位)를 모신 삼청전(三淸殿)에서 유래되었다는 설이 있다. 삼청동 거리는 예스러움을 간직한 한옥건물의 전통미와 갤러리, 카페의 현대미가 조화되어 삼청동만의 색다른 분위기를 연출하고 있는 곳으로서 호젓한 산책로와 화랑, 박물관, 골동품 가게가 골목 사이에 숨어 문화향기가 가득하다.다양한 볼거리와 먹거리가 있는 삼청동길과 한적한 도심의 여유를 느낄 수 있는 청와대 앞길은 사람들의 발걸음을 멈추게 하는 매력 넘치는 거리로 길이는 2.9km이며 친근성이 우수하다.<br>','02-120',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('충주 정토사지 홍법국사탑','04383','서울특별시 용산구 서빙고로 137(용산동6가)',38,127,'고려 목종 때의 승려인 홍법국사의 부도로, 충청북도 중원군(현 충주시)의 정토사 옛터에 있던 것을 1915년에 경복궁으로 옮겨 왔으며, 현재는 국립중앙박물관에 있다. 홍법국사는 통일신라 말부터 고려 초에 활약하였던  유명한 승려로서 당나라에서 수행하고 돌아와 선(禪)을 유행시켰으며, 고려 성종 때 대선사(大禪師)를 거쳐 목종 때 국사(國師)의 칭호를 받았다. 기단(基壇)은 네모난 바닥돌을 깐 후에 8각의 아래받침돌을 놓고, 그 위로 엎어놓은 연꽃 무늬가 새겨진 높직한 괴임을 두어 가운데 받침돌을 올린 후 다시  윗받침돌을 얹어 놓은 모습이다. 가운데 받침돌에는 구름을 타고 있는 용이 섬세하게 조각되어 있고, 윗받침돌에는 아래와 대칭되는 솟은 연꽃무늬가 새겨져 있다. 이 탑에서 가장 특징적인 것은 탑신(塔身)의 몸돌로, 둥근 공모양을 하고 있다.<br /><br />몸돌에는 공을 가로·세로로 묶은 듯한 십(十)자형의 무늬가 조각되어 있으며, 그 교차점에는 꽃무늬를 두어 장식하고 있다.  지붕돌은 별다른 장식은 없으나 여덟 곳의 모서리마다 꽃조각을 둔 것이 눈에 띄는데, 아쉽게도 대부분이 없어져 버렸다. 삿갓 모양으로 깊숙이 패인 지붕돌 밑면에는 비천상 (飛天像)이 조각되어 있다. 전체적인 구성에서는 8각형을 기본으로 하는 신라의  부도형식을 잃지 않으면서  일부분에서 새로운 시도를 보여준 작품으로, 제작연대는 홍법국사가 입적한 고려 현종 8년 (1017) 이후로 보고 있다. 공모양의 몸돌로 인해 ‘알독’이라고 불려지기도 한 이 탑은 새로운 기법을  보여주는 고려시대의 대표적인 부도로, 섬세한 조각과 단조로운 무늬가잘 조화되어 부드러운 느낌을 주고 있다.<br>','02-2077-9000',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('챔피언1250','04377','서울특별시 용산구 한강대로21나길 17',38,127,'플레이타임그룹의 익스트림 어린이 스포츠클럽 [챔피언1250]은 어린이 하루 권장 칼로리 소모량인 1250kcal를 모두 소모하고 갈 수 있도록 높이 오르고, 뛰고, 매달리고, 넘어가고, 소리치며 놀 수 있게 만들어진 공간이다. 국내 350여개, 해외 30여개 매장을 가지고 있는 플레이타임그룹은 1993년 국내최초 키즈놀이 공간 설립 이후, 25년간의 풍부한 경험과 노하우를 바탕으로 놀이콘셉트별, 연령별에 따라 15여개의 다양한 브랜드를 개발, 보유하고 있다.<br>','02-2012-1401',null,null,'* 드롭와이어 : 9M 높이, 30M 길이의 짜릿한 짚라인<br />
+* 익스트림 플로어 : 9M 층고를 활용한 고공 챌린저 코스<br />
+* 타워클라이밍 : 9M 높이의 투명한 벽을 타고 오르는 놀이<br />
+* 에어바스핀2 : 플레이타임그룹의 인기 아이템으로 놀이마스터가 돌리는 2개의 에어바를 피해 점프하는 놀이',null,null,null,'월-목,일요일 10:30 ~ 20:30<br>
+금-토요일, 공휴일 10:30 ~ 21:00',null,'없음','없음','시설이용료:- 어린이 주중 22,000원 주말 25,000원(키 155cm 미만/2시간 기준)<br />
+- 마감입장 주중 11,000원 주말12,500<br />
+- 보호자 6,000원(36개월 미만 보호자 1인 무료입장)<br />
+* 단체 : 별도문의 
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('세운상가','03194','서울특별시 종로구 청계천로 159(장사동)',38,127,'<strong>다시-세운 프로젝트, 세운상가</strong><br /><br />세운전자상가는 1968년 만들어진 국내 최초의 종합전자상가이자 40년 전통의 전자상가이다. 서울의 중심인 종로에 위치한 도심전자산업지역의 메카로서 다양한 전자상품들을 구입할 수 있다. 2014년부터는 서울시 도시재생사업이 진행되어 공중보행길, 옥상전망대, 광장 그리고 4차 산업혁명을 체험할 수 있는 메이커스큐브 등이 조성되어 색다른 볼거리를 제공한다.<br>','02-2271-2344',null,null,'* 전시 : 서울시 도시재생사업 안내 전시 등</br>
+* 투어 : 한발두발 세운투어 (종로3가, 세운상가, 청계상가, 대림상가 투어 / 월~토 14:00)</br>
+* 교육 : 메이커 기술 등 프로그램 상시 진행</br>
+ – 전시/투어/교육 등 자세한 사항은 안내센터로 문의<br />
+* 신청방법 : "http://sewoon.org/ > 투어 > 자세히보기','누구나',null,null,null,'유료/토요일3시 이후 및 일요일 무료','없음','없음','입 장 료:교육 프로그램별 상이
+외국어 안내서비스:외국어 안내(투어 프로그램 영어가능)
+내국인 예약안내:투어 프로그램 사이트 예약
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('용산공원 (옛 미군기지)','04383','서울특별시 용산구 서빙고로 221서빙고 1번 출구 맞은편',38,127,'과거 한강과 인접했던 옛 미군장교숙소 5단지 부지는 조선시대 얼음을 저장했던 ''서빙고''가 있던 곳으로 해방 후 미군부대가 이곳을 차지했으며 일대를 ''캠프 서빙고''라 불렀다고 한다. 정부는 일부 시설 리모델링을 거쳐 20년 이곳을 일반에 처음 공개했다. 현재는 용산공원으로 유치중에 있으며 포토존으로 유명하다. 들내봄내 잔디마당, 빨간 테두리의 동그란 표지만, 두루두루 파빌리온 등에서 찍으면 색감 예쁜 인생 사진을 찍을 수 있다.','070-4224-1708',null,'일/월요일 (월요일이 공휴일이라면 다음날 휴관), 1월 1일, 명절 당일',null,null,null,null,'화-토요일 내부시설 09:00 ~ 17:00 / 외부시설 09:00 ~ 18:00','장애인 차량만 가능<br>인근 용산가족공원 주차가능','없음','불가','입 장 료:무료(신분증 지참)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('윤동주시인의언덕','03046','서울특별시 종로구 창의문로 119(청운동)',38,127,'한국인이 가장 좋아하는 일제 강점기 저항시인 윤동주(1917~1945) 시인을 기리는 이 언덕은 서울 종로구 청운동 인왕산 자락 청원공원 내에 자리해 있다. 시인 윤동주는 연희전문학교에 다니던 1941년 종로구 누상동에 있는 후배 소설가 김송의 집에서 하숙했었는데 그는 이때 청운동과 누상동 일대를 산책하며 시상을 가다듬으면서 <서시>, <별 헤는 밤>, <또 다른 고향> 같은 대표작을 썼다고 한다. 청운동에 윤동주 시인의 언덕이 들어선 이유이다. 이곳에 머무는 동안 저녁 무렵 하숙집 근처 이 언덕에서 해지는 서울 풍경을 바라보며 조국의 어두운 현실에 가슴 아파하면서 시상을 떠올렸을 것으로 생각된다. 서시의 시비를 비롯해 가수 이승환과 그의 팬들이 기증한 소나무 10그루, 시인의 주옥같은 시를 새겨넣어 눈으로 감상할 수 있게 한 돌계단 등으로 모습을 갖추고 있다. 서시의 시비 앞에는 ''서울 밤 경'' 표지판이 세워져 있는데 윤동주 시인의 언덕에서 야경 보기 좋은 곳임을 안내하고 있다. ''윤동주 소나무''로 불리는 소나무가 위치 한 곳도 해넘이 구간으로 일몰을 감상하며 사색하기 좋은 곳으로 이름나 많은 사람들이 혼자서도 찾는 곳이다. 
+윤동주 시인의 언덕은 2012년 7월 용도 폐기된 청운 수도가압장을 리모델링해서 조성한 윤동주문학관과도 이어져 있으며, 맞은편에 창의문이 있다.','02-2148-4175',null,'없음',null,null,null,null,'00:00 - 24:00','없음(인근 부암 민영주차장)','없음','가능','입 장 료:없음		
+
+화장실:있음(남,녀 구분)
+
+이용가능시설:음수대, 서시정, 윤동주시인의 언덕, 공원시설		
+
+주차요금:부암 민영주차장 30분 2,000원
+
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('그린워커스','04799','서울특별시 성동구 성수이로26길 47',38,127,'그린워커스는 플라스틱방앗간X노플라스틱선데이가 함께 만드는 자원순환 복합문화공간이다. 음료병뚜껑과 PP 재질 표기가 되어 있는 플라스틱을 모아 가져가면 모아진 플라스틱을 잘게 쪼개고 녹여 100% 재활용 되어진 제품으로 만들어 낸다. 기존에는 플라스틱을 모아두고 예약하면 방문수거로 수거해 갔으나 상시수거로 변경되어 공간 운영시간 내 자유롭게 수거 활동이 가능하다. 그린워커스 쿠폰을 제작하고 도장을 적립하여 도장 개수마다 달라지는 리워드도 받을 수 있다.','0507-1469-0521',null,'월요일',null,null,null,null,'화,수,목,금 12:00 ~ 19:00<br>토,일 12:00 ~ 18:00',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('리얼월드 성수','04783','서울특별시 성동구 연무장13길 8',38,127,'놀이와 문화가 공존하는 도심 속 신개념 놀이 문화 공간이다. 미스터리 호텔을 돌아다니면서 이색 체험을 할 수 있고 카페와 게임을 동시에 즐길 수 있다. 몽환적인 호텔을 배경으로 다양한 인터렉티브 게임을 경험하며 스토리 속 진짜 주인공이 되어볼 수 있다. 1층 매장에서 다양한 음료를 즐기는 것은 물론, 다양한 인터렉티브 게임을 구매할 수 있다. 그리고 포토존도 준비되어 있어 인생샷도 찍을 수 있다.','02-6011-1072',null,'설날/추석 당일','1.빨간 맛, 하얀 맛, 이상한 맛/난이도 : ★☆☆☆☆<br>
+2. 부귀명화/난이도 : ★★★★☆<br>
+3. 요한 캣트라우스 2세의 초대장/난이도 : ★★★☆☆',null,null,null,'평일 09:00~20:00<br>
+주말 11:00~20:00',null,null,null,':
+:
+시설이용료:음료와 게임 종류에 따라 다름 (홈페이지 참조)
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('경리단길','04343','서울특별시 용산구 이태원동210-65',38,127,'경리단길은 국군재정관리단 정문으로부터 그랜드하얏트 호텔 방향으로 이어지는 길과 주변 골목길을 통칭하며, 과거 육군중앙경리단이 현 위치에 있어 경리단길이라 불리어왔다. 경리단길은 저마다 개성이 넘치는 식당과 카페의 다양하고 독특한 먹거리가 유명한 문화와 젊음의 공간이다. 또한, 서울의 평범한 동네 같으면서도 세계 각국에서 온 외국인들이 주민들과 자연스럽게 어울려 지내는 모습이 이국적이고 색다른 분위기를 자아낸다.','용산구청 02-2199-6114',null,null,null,null,null,null,'00:00 ~ 24:00',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('성수동 카페거리','04795','서울특별시 성동구 성수동2가',38,127,'오래된 공장지대, 구두 공방 골목으로 대표되던 성수동 연무장길이 트렌디한 카페와 문화공간으로 거듭났다.
+지금도 자동차 정비공장과 인쇄 공장, 수제화 거리의 활기는 여전하지만, 요란하게 돌아가는 공장사이에 글로벌 외식 업체와 편집숍 카페들이 들어서면서 성수동만의 독특한 분위기가 형성됐다. ''대림창고''는 성수동 골목의 변화를 이끈 주인공으로, 현재 카페거리 곳곳에 들어선 창고형 카페의 원조라 할 수 있다. 이곳은 옛 창고의 붉은 벽돌 구조와 오래된 간판, 광활한 실내 공간을 살리고 감각적인 인테리어를 더해 패션쇼와 전시를 위한 공간으로 꾸며 오래된 성수동 건축의 새로운 가능성을 보여주었다. 
+이 외에도 하루가 다르게 새로운 카페와 베이커리, 레스토랑과 복합 문화 공간이 문을 열고 손님맞이에 분주하다.','02-2286-5114 (성동구 문화관광)',null,null,null,null,null,null,null,null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('승동교회','03164','서울특별시 종로구 인사동길 7-1(인사동)',38,127,'승동교회는 민족주의적인 색채가 짙은 교회로 출발하였다. 승동교회는 경기도 내 장로교회의 모교회적(母敎會的)인 역할을 담당하기도 하였다. 이 교회의 설립 과정을 보면 먼저 헤론(John W. Heron)이 1894년 동현(銅峴)에 홍문동교회(弘文洞敎會)를 세웠다. 이 교인 중에는 독립협회계(獨立協會系) 인사들이 있었는데, 이들은 선교사를 구타하여 축출하려는 계획을 세웠다. 이 일로 교인들은 분파되어 각기 교회를 세웠다. 독립협회계 교인들은 1904년 승동교회를 세웠고, 백정이나 천민들과 함께 예배를 드리기를 거부하는 이들이 안동교회를 세웠다.<br /><br />1919년 2월 20일 이 교회 지하에서는 당시 경성의 각 전문학교 대표자 20여명이 모여 3ㆍ1운동의 지침과 계획을 논의한 바 있다. 또 이 교회에서 대한여자기독교청년연합회(YWCA)가 창립되어 여성들의 사회활동과 봉사에 일익을 담당하는 계기를 만들기도 했다. 이렇게 승동교회는 일제 때의 민족운동과 사회운동에 큰 역할을 하였다. 승동교회 건물은 지하 1층 지상 2층, 약 200평 규모이며, 설계자와 시공자는 알 수 없다. 지금은 주변 건물에 가려 본래의 당당한 위풍을  볼 수 없으나, 설립 당시에는 주변 건물에 비해 높고 당당한 건물이었다. 지붕 형태는 십자형 박공지붕인데, 전면의 박공은 크고, 측면의 박공은 2단으로 처리되었는데 현재는 내부의 제단을 넓히면서 후면에 2단 박공처리되었다. 정면에서 중앙부는 대형 아치창(현재는 현대적인 사각창호로 개조됨)을, 그 좌우는 소형 아치 개구부(현재는 현대적인 출입구로 개조됨)를 두고, 박공에는 원형 창을 냈다. 승동은 인사동에 편입되었으나, 설립 당시의 이름을 그대로 쓰고 있다. <br /><br />* 시대 : 1904년, 1957년 증개축 <br />* 규모·양식 : 지하 1층, 지상 2층, 면적 773.56㎡, 로마네스크풍<br>','02-732-2340~3',null,null,null,null,null,null,null,null,'불가','불가','화장실:있음
+입 장 료:무료
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('청룡사(서울)','03107','서울특별시 종로구 동망산길 65',38,127,'청룡사(靑龍寺)는 대한불교조계종 직할교구 조계사의 말사로, 종로구 숭인동에 위치한다. 922년(고려 태조 5)에 도선(道詵) 국사의 유언에 따라 태조 왕건이 어명을 내려 창건했다. 풍수지리적으로 한양의 외청룡(外靑龍)에 해당하는 산등에 지었다고 하여 사호를 청룡사라 하였다.1036년(정종 2년)에 만선 비구니스님이 퇴락한 절을 창건 이후 처음으로 중창하였고 이후에도 여러 차례 중창하여 10차의 중창 역사를 갖고 있다. 1923년 다시 옛이름인 청룡사로 불리게 되었고 1950년대에 대대적인 중창이 있었으며 1973년에 다시 중창하여 오늘에 이르고 있다.<br /><br />* 창건배경과 역사<br /><br />청룡사(靑龍寺)는 922년(태조 5) 도선(道詵, 827~898) 국사의 유언에 따라 왕명으로 창건되었다. 풍수지리적으로 한양의 외청룡(外靑龍)에 해당되는 산등성이에 지었다고 하여 절 이름을 청룡사라 하였다고 한다. 제1대 주지로 비구니 혜원(慧圓) 스님이 주석한 이래 줄곧 비구니 스님만이 주석한 것이 특색이다. 고려에 와서는 1036년(정종 2)에 만선(萬善) 스님이 처음으로 중창하였고 1158년(의종 12) 회정(懷正) 스님이 두 번째로 중창하였는데, 이때 이 부근에서는 청룡사 동북쪽 고개 너머에 있는 보문사(普門寺) 창건 이후로 43녀 만에 처음 세워진 절이라 하여 "새절 승방"이라고도 불렀다. 1299년(충렬왕 25) 중국 원나라의 침입으로 절이 황폐화되자 지환(知幻)스님이 중창하였다. 고려 말에는 공민왕비 혜비(惠妃)가 머물렀다.<br /><br />조선시대에 들어와서는 태조의 딸 경순 공주가 머물렀으며, 1405년(태종 5) 무학(無學) 대사를 위하여 왕명으로 중창했다. 창건 당시 도선 국사를 위하여 창건한 이래 두 번째로 왕명에 의한 중창인 것이다. 이어서 1512년(중종 7)과 1624년(인조 2)에도 법공(法空)스님과 예순(禮順) 스님이 각각 중창하였다. 1771년(영조 47)에는 단종의 왕비 정순왕후(定順王后, 1440~1521)가 이곳에 있었다 하여 영조가 직접 ?정업원구기(淨業院舊基)?라는 글을 내려 비석과 비각을 세우게 했는데, 이때 절 이름을 잠시 정업원이라 부르기도 하였다. 이 비석과 비각은 현재도 절에 남아 있다. 1813년(순조 13) 화재로 소실되었으나 이듬해 묘담(妙潭)·수인(守仁) 두 스님에 의해 중창되었고 1823년(순조 23) 왕명으로 다시 옛 이름인 청룡사로 고쳐 부르게 하였다.<br /><br />1902년(고종 6) 정기(正基)·창수(昌洙) 스님이 중창하였고, 1918년과 1932년에 상근(詳根) 스님이 중창하였다. 근대에 와서는 1954년~1960년 사이에 윤호(輪浩) 스님이 전체적으로 대대적인 중창을 하였고 대웅전은 다시 1973년에 중창하여 오늘에 이르고 있다. 청룡사는 왕실의 여인과 관계가 많은 곳이다. 앞서도 말했듯이, 고려 말의 명신 익재 이제현(李齋賢)의 딸이자 공민왕비인 혜비(惠妃)가 이곳에 거주하였으며, 또 조선 초 태조의 딸 경순 공주가 이곳으로 와 머무는 등 왕실과의 관계가 많았던 것이다. 특히 세조에 의해 폐위되고 강원도 영월까지 유배가 결국 그곳에서 죽게 된 단종(端宗, 1441~1457)은 유배 갈 때 왕비 정순 왕후와 이곳 우화루(雨花樓)와 영리교(永離橋)에서 마지막 이별을 하고, 이어 왕비는 영월이 있는 동쪽이 가장 잘 보이는 이곳 청룡사에서 스님이 된 비극이 서려있기도 하다.','02-763-4031',null,null,null,null,null,null,'일출시~일몰시','없음','불가','불가','화장실:있음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('팹랩 서울','06145','서울특별시 강남구 선릉로 551 새롬빌딩4층',38,127,'<strong>21세기 연금술사들을 위한 공공 디지털 제작소</strong><br /><br />종로 세운전자상가에 위치해 있는 팹랩서울에서 디지털 기술을 이용해 메이킹을 하는 여러 가지 방법을 배울 수 있다. 3D프린터, 레이져커터, 3D스캐너 등 주변에서 쉽게 볼 수 없는 장비들을 체험해볼 수 있는 특별한 공간이다. <br>','070-7743-0806',null,'주말 및 공휴일','* 교육프로그램<br />
+- 아두이노 마스터 과정<br />
+아두이노 보드를 응용한 프로토타이핑 제작능력 습득을 목표로 하는 수업입니다.<br />
+<br />
+- 전자 회로 설계 마스터 과정<br />
+H/W의 회로 설계를 집중적으로 학습하여 독자적인 회로 개발 능력 습득을 목표로 하는 수업입니다.<br />
+<br />
+- PCB 설계 마스터 과정<br />
+준비된 (참고/설계) 회로도를 기준으로 PCB를 설계, 제작 하는 방법을 배우는 수업입니다.<br />
+<br />
+- CNC 마스터 과정<br />
+CAM 프로그램을 집중적으로 학습하여 CNC 라우터 운용능력을 습득하는 수업입니다.<br />
+<br />
+- 1:1 멘토링 과정<br />
+메이커스 프로 수료자, 수강자, 또는 이와 동등한 과정을 수학한 능력자를 대상으로 스타트업 제품, 전시를 위한 작품, 졸업 작품, 포트폴리오 제작 등 각기 다른 목적에 따른 맞춤형 개발 방법을 제공합니다.','누구나',null,null,'09:30~18:00(주말 및 공휴일 휴무)','있음(세운상가 방문고객 1시간 무료주차권 발급)','없음','없음','외국어 안내서비스:외국어 안내(영어)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('연필로 명상하기','04630','서울특별시 중구 퇴계로20길 50(남산동2가) 삼중빌딩 1층',38,127,'<strong>애니메이션, 나도 만들 수 있을까?</strong><br /><br />애니메이션 ‘소나기.‘소중한 날의 꿈,‘메밀꽃,‘운수 좋은 날 그리고‘봄봄을 제작한 스튜디오 연필로 명상하기에서 견학 프로그램을 운영 중이다. 애니메이션에 관심이 많은 누구나 견학 가능하며, 스튜디오 주변에 재미로 거리 등 애니메이션 관련 볼거리와 체험거리가 많으니 견학 후 주변을 둘러보는 것도 좋을 것 같다.<br>','02-318-4564',null,null,'* 견학 : 스튜디오 클립 시청, 작업 공간 둘러보기, 감독(안재훈 감독) 및 작업자와의 만남</br>
+* 프로그램 : 서울애니메이션센터에서 운영하는 ‘재미꾼’ 프로그램 연계 가능(별도 비용 문의) / 재미로 거리의 재미랑1~5호(애니메이션 만들기, 그리기, 칠하기 문화체험)','누구나','5인 이내',null,null,'있음','없음','없음','입 장 료:무료
+내국인 예약안내:메일로 날짜/시간/학교명/인원수 등 3주전 신청서 접수
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울새활용플라자','04807','서울특별시 성동구 자동차시장길 49',38,127,'<strong>자원순환사회를 위한 첫 걸음</strong><br /><br />새활용이란 버려지는 자원에 디자인을 더하거나 활용방법을 바꿔 새로운 가치를 만들어내는 업사이클링(Up-cycling)의 우리말이다. 서울새활용플라자에서는 새활용 관련 전시와 새활용 실천 교육 및 체험프로그램, 디자인 스튜디오, 업사이클링 편집매장, 공방 등을 운영 중이다. 물건을 가치 있게 오래 사용하는 방법을 알고 싶다면 들려보자.<br />또, 레스토랑, 카페, 넓은 정원도 갖추고 있어 도심 속 힐링과 사계절 피크닉 장소로도 제격이다.<br>','02-2153-0400',null,'매주 일요일','* 전시 : 새활용 소재 은행, 새활용 소재 라이브러리, 특별전시(지구를 위한 약속) 등</br>
+* 교육 : 새활용 상상(전문가, 일반시민, 초등학생), 새활용 놀이(어린이), 새활용 포럼</br>
+- 교육 프로그램 월별 상이</br>
+* 현장학습 : 정기 현장학습, 단체예약 현장학습</br>
+- 새활용이야기(1시간) / 새활용과 재사용 이야기(1시간 20분)</br>
+- 매일 2회, 화~금 10:00, 14:30 / 토·일 11:00, 15:00 / 20명 미만의 단체 또는 개인 /사이트 신청 또는 현장 참여 가능','누구나(새활용탐방 7세 이상)',null,null,'10:00~18:00','있음','없음','없음','입 장 료:입장료 무료 / 체험료 별도
+내국인 예약안내:사이트 신청 (선착순)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('YTN','03926','서울특별시 마포구 상암산로 76(상암동) YTN 뉴스퀘어',38,127,'<strong>뉴스가 만들어지는 현장으로 초대합니다!</strong><br /><br />보는 것을 즐기고, 즐긴 것을 꿈꾸는 YTN은 견학 프로그램을 진행 중이다. 하나의 뉴스가 만들어지기까지의 과정과 YTN 방송국의 역사를 들을 수 있다. 또한 자세한 설명과 생방송 장면을 눈으로 볼 수 있어 생동감 넘치는 견학이 될 것이다. 방송국의 생생한 모습까지 체험 가능하니 방송국에 관심이 있는 학생, 일반인들에게 좋은 기회가 될 것이다.<br>','02-398-8183',null,'토, 일','* 프로그램 : YTN 로비(히스토리 안내) → 스튜디오 관람 → 체험 스튜디오<br>
+* 신청방법 : http://tour.ytn.co.kr/#infor > 견학 신청서 작성','중학생 이상','최소5~20명',null,'월~금 10:00, 14:00 (1일2회)','있음','없음','없음','입 장 료:무료
+내국인 예약안내:YTN 홈페이지 회원가입 후 온라인 신청 (두 달 단위로 신청)
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('JTBC','03909','서울특별시 마포구 상암산로 48-6(상암동) JTBC빌딩',38,127,'시청자의 마음을 사로잡는 방송국, JTBC에 견학을 가보자. 부조정실, 이슈존, JTBC갤러리, 뉴스룸 스튜디오를 견학하며 방송국의 이곳저곳을 둘러볼 수 있다. 다양한 프로그램의 생생한 모습을 직접 확인할 수 있는 기회를 놓치지 말자.<br>','02-751-6000',null,null,'* 견학코서: 1층 라운지(집결) → 부조정실 → 이슈존 → JTBC Gallery → 뉴스룸 스튜디오<br />
+* 신청방법 : http://jtbc.joins.com/company/jtbctour > 견학신청','14세 이상','5~15명 단체',null,'월~금 10:00, 15:00','있음','없음','없음','입 장 료:무료
+내국인 예약안내:단체(5인 이하의 개인견학은 매월 45주차 금요일에 가능), 4주~1주 전 사이트 신청
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('오프컬리','04768','서울특별시 성동구 서울숲2길 16-9',38,127,'마켓컬리로 유명한 주식회사 컬리의 첫 오프라인샵, 오프컬리이다. 1층은 예약 없이 방문이 가능한 공간으로 시즌 별 테마에 맞게 큐레이션 된 굿즈를 전시한다.  2층 테마가 적용된 라운지에서는 미니 도슨트가 시간대별로 진행된다. 3층은 지식과 경험을 쌓기 위한 미식, 인문학, 예술 도슨트가 진행된다. 테마는 연간 3회 교체되어 매 시즌 어떤 테마가 선정되는지 궁금증을 자아낸다. 2층과 3층의 도슨트 프로그램은 사전예약제로 운영되며 프로그램에 포함된 주류 페어링은 만 19세 이상 성인에게만 제공 가능하다. 오프컬리는 오롯이 나에게만 집중하는 공간인 만큼 13세 미만 영유아나 청소년은 입장이 불가하다.','0507-1377-1615',null,'매주 수요일',null,null,null,null,'12:00 ~ 21:00',null,null,null,':
+:
+:
+:
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('대각사','03134','서울특별시 종로구 율곡로10길 87(봉익동)',38,127,'대각사(大覺寺)는 서울시 종로구 창덕궁 후원 앞 방향에 위치하고 있는 재단법인 대각회(大覺會)의 사찰로서, 1911년 용성(城) 진종(震鍾) 대종사가 창건하였다. 대각회는 불교 포교단체의 하나로 석가모니불의 대각 불교사상을 선포하여 민족번영의 원리로 발전시킨 용성 스님의 대각사상을 선도하며 이에 필요한 시설을 유지 경영함을 목적으로 1968년 자운(慈雲) 스님 등에 의하여 기존의 대각사를 중심으로 설립되었다. 창건 이후 용성 스님의 대각교는 이곳을 중심으로 교세를 확장해나가 1928년 일반인을 대상으로 한 대각 일요학교가 설립되었고, 이듬해에는 선회(禪會)가 개설되기도 하였다. 또 1930년에는 대각 성전(大覺聖殿)과 요사가 새로이 지어지기도 했다. 그 뒤 1939년 조선 불교 선종 총림 1944년에는 다시 경성 포교당 대각선원 등으로 절 이름이 바뀌었다.
+그러나 이 무렵 대각교가 대각사를 중심으로 민족 자주성을 일깨운다고 판단한 일제는 본격적인 탄압을 시작하여 대 가교는 억지로 그 재산을 신탁하게 되는 등 수난을 겪다가 결국 일제에 의해 폐지되었다. 하지만 폐지 이후에도 대각사와 만주 간도(間島) 포교당을 중심으로 대각 고운동은 꾸준히 전개되었다. 1969년 동헌(東軒) 완규(完圭) 대선사를 비롯한 용성 스님의 제자들이 스님의 대각교 창립정신을 기리고 대각사상을 널리 드러내기 위하여 재단법인 대각회를 대각사에 설립하였으며, 1986년 대각사 경내에 있던 건물을 모두 철거하고 지하 1층 지상 3층 총 건축면적 1,322.32m²의 신축 건물을 짓는 등 면모를 일신하여 오늘에 이르고 있다.','02-744-4502',null,'연중무휴',null,null,null,null,'일출시~일몰시','주차 가능(주차 공간 협소)','없음','불가','화장실:있음
+외국어 안내서비스:불가
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('서울 살곶이 다리','04763','서울특별시 성동구 성수동',38,127,'지금까지 남아있는 조선 시대 다리 가운데 가장 긴 다리인 ''살곶이다리''는 이 일대가 ''살곶이벌'' 이라는 이름으로 불리었던 데서 유래하였는데「한경식략」권량조(橋粱條)에 보면 그 공식 명칭은 제반교(濟盤橋)라 하였다.살곶이벌은 국왕의 군사대열장과 매사냥터로 이름이 났던 곳으로서 이 다리를 통해 태종과 순조가 모셔져 있는 ''헌/인릉''과 성종과 중종이 모셔진 ''선/정릉''에 갈 수 있어 국왕이 수시로 행차했다. 그러나 조선 시대 후기 흥선대원군이 이 다리의 반을 헐어 경복궁을 짓는 돌로 사용하여 거의 100년 동안 다리가 폐쇄되기도 했다. 1973년에 수리 및 복원이 된 살곶이다리는 교폭 20척(6m), 길이 258척(78m)으로서 조선 세종 2년(1420년)에 착공하여 성종 14년(1483년)에 완공되었다.교각을 횡렬로 4열, 종 열로 22열을 배치하고 3장의 장대로 건너지른 위에 다시 동틀돌을 놓아 청판돌을 받게 되어 있으며 좌우로 교안을 장대석으로 쌓았다. 기둥돌 아래는 네모난 주초가 있고 그것은 물밑 받침돌에 의하여 지탱되도록 하였으며 기둥은 유수의 저항을 줄이기 위하여 마름모꼴로 다듬었다.<br>','02-2286-5202',null,'연중무휴',null,null,null,null,'24시간','없음','불가','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('송파나루공원(석촌호수)','05608','서울특별시 송파구 삼학사로 136',38,127,'현재의 석촌호수 북쪽 잠실벌은 서호의 남쪽에 나룻터가 한강이었으나 세월이 지남에 따라 토사가 쌓여 인공 섬이 생기면서 광진교 밑에서부터 잠실야구장까지 지금의 석촌호수를 지나는 송파강과 신천강을 이루는 샛강이 생기게 되었다. 1969년 한강 본류의 하상 정비 개발에 착수하면서 이 강을 매립하였으나 일부는 남겨 놓았고 1980년대 초 이 호수를 정비하면서 공원이 만들어지게 되었다.''송파나루공원''은 송파대로가 개통하면서 동서로 같은 모양의 동호, 서호로 나누어져 있으며 호수와 공원으로 조성된 이상적인 형태의 공원으로 조깅 코스 및 산책로가 설치되어 있어 시민들의 휴식 공간으로 널리 이용되고 있다. 석촌호수의 면적은 217,850㎡이며 담수량은 737톤으로 수심은 4~5m이며 수원은 한강물로 1971년에 조성하였다.<br>','02-440-3595','1981. 11. 26','연중무휴',null,null,'1000명 이상',null,'24시간','있음(주차장 5개소)','불가','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('광화문광장','03154','서울특별시 종로구 세종대로 172',38,127,'새로운 모습으로 단장하여 시민들에게 개방된 광화문 광장은 600년 역사를 지닌 서울의 중심거리 세종로를 차량 중심의 거리에서 인간 중심의 공간으로 전환하고, 경복궁과 북악산 등 아름다운 자연경관을 조망할 수 있는 공간으로 새롭게 조성하여, 세종로의 옛 모습인 육조거리 복원을 통한 역사·문화 체험 공간으로 재탄생되었다.
+초입 구간인 ''광화문의 역사를 회복하는 광장''에는 월대를 재현하고, 해태상을복원하였으며,  세종로공원 주변 구간인 ''육조거리의 풍경을 재현하는 광장''에는 과거 한양의 중심거리였던 육조거리의 흔적을 재현하고 이를 형상화한 축소모형도 설치하였다.','서울시 다산콜센터 02-120','2009년 8월 1일','연중무휴',null,null,null,null,'24시간 개방','없음','없음','없음','입 장 료:무료
+화장실:있음
+이용가능시설:중앙광장, 해치마당, 플라워카펫, 역사물길, 이순신장군분수, 기념품 판매소(해치마당 지하 1층)
+한국어 안내서비스:광화문광장 관광안내 프로그램 신청시 가능
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('보성사터','03144','서울특별시 종로구 수송동',38,127,'보성사는 1910년 말 창신사와 보성학원 소속 보성사 인쇄소를 합병하여 만든 천도교 계통의 인쇄소이다. 3.1운동 동시 2만 장의 독립선언서를 인쇄한 곳이기도 하다. 당시 보성사 사장이었던 이종일은 공장 감독 김홍규, 총무 장효근 등과 함께 1919년 2월 27일 이곳에서 독립선언서를 인쇄하여 자신의 집으로 운반한 뒤, 다음날 전국 각지에 배포함으로써 독립운동의 발판을 마련하였다. 보성사는 30평 2층 기와 벽돌집으로 전동 보성학교 구내에 있었으며, 보성사의 소유주이기도 했던 천도교 교주 의암 손병희의 특명으로 육당 최남선이 초안을 집필하고 민족대표 33인이 서명한 독립선언서를 넘겨받아 사장 이종일, 공장 감독 김흥규, 총무 장효근이 1919년 2월 27일 밤에 3만 5천 매를 인쇄하였다. 일본측의 형사에게 발각되는 위기도 있었으나 족보책이라고 위장하여 위기를 넘겼다. 3월 1일에는 윤익선과 이종린, 이종일, 김홍규 등이 지하신문인 조선 독립신문 1만 부를 계속 발행하였다. 일경은 보성사를 즉각 폐쇄하였으며, 1919년 6월 28일 밤에는 불을 질러 태워버린 이후 터만 남아 오늘에 전한다. 보성사는 현 종로구 조계사 경내에 있으며, 기념비와 동상은 조계사 후문 맞은편 근린공원에 있다.','02-2075-4119',null,'연중개방',null,null,null,null,'상시 가능','없음','없음','없음','입 장 료:없음
+이용가능시설:없음
+');
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('유심사','03057','서울특별시 종로구 계동길 92-3',38,127,'유심사는 만해 한용운 스님이 1918년 9월 월간지 "유심"을 창간하고 제3호까지 발행한 곳으로 만해 한용운 스님의 거처로 사용되던 곳이다. 3.1만세운동을 위해 천도교 측과 기독교 측의 합작 교섭을 마무리한 최린이 한용운을 방문해 불교계의 참여를 허락받았던 곳이다.<br>','02-2148-1842',null,null,null,null,null,null,null,null,'없음','없음',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('민영환 자결터','03158','서울특별시 종로구 공평동',38,127,'한말의 충신 민영환은 을사늑약의 폐기를 궁궐 앞에서 주장하다가 일본 헌병의 강제해산으로 실패하자 1905년 11월 30일 새벽 6시에 청지기의 집에서 국민, 외교사절, 황제에게 보내는 유서 3통을 남기고 자결하였다. 순국후 피묻은 옷과 칼을 상청(喪廳)마루방에 걸어두었는데 이듬해 5월 상청의 문을 열어보니 대나무 네 줄기가 마루바닥과 피묻은 옷을 뚫고 올라왔으므로 사람들은 그의 충정이 혈죽(血竹)으로 나타났다고 하여 이 나무를 절죽(節竹)이라 하였다. 선생의 집은 견지동 27-2 현 조계사 경내에 있었다. 종로구 인사동 공평빌딩 부근 민영환의 자결터에 기념비가 세워져 있다.<br>','02-2075-4119',null,null,null,null,null,null,null,null,'불가','가능',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('낙원동 아구찜 거리','03140','서울특별시 종로구 삼일대로 428',38,127,'1972년 낙원동 거리에 서울에서 처음으로 아구찜을 하는 식당이 등장했다. 당시만 해도 아구를 찜으로 해먹는 것은 저 먼 마산에서만 듣던 소리다. 서울에서 가장 가까운 바다인 인천에서도 아구를 찜으로 해먹지는 안았다고 한다. 아구찜 거리에 처음으로 문을 연 식당은 그래서 아구찜을 만드는 데 온갖 정성을 다 들였다. 물에 끓으면 흐물흐물해지는 아구의 살을 꼬들꼬들하게 만드는 게 최우선 과제였다. 산에서 말려도 보고 인천 앞바다 섬에 들어가 모래사장에서 말려보기도 했으나 파리가 꼬이는 등 위생상 문제가 심했다. 갖은 방법을 동원했지만 그때마다 아구의 살을 유지하기 어려웠다. 결국 터득한 방법은 찬얼음물과 끓는물을 번갈아 가며 끓이고 식히는 식이었다. 서울에서 아구찜을 맛볼 수 있다는 말에 소문은 퍼져나갔고 소문 따라 주변에 아구찜을 하는 식당도 늘어났다. 한때 십여 집을 넘던 아구찜 식당이 어떤 이유에서인지 몰라도 문을 닫고 다른 곳으로 떠나는 시기가 있었다. 한 번 그렇게 시련을 겪고 난 뒤 다시 아구찜 거리에 아구찜 식당이 들어차게 됐고 그 결과 지금의 거리 모습을 갖추게 된 것이다. 지금 이거리에는 불과 3~4년 전에 문을 연 집부터 30년을 훌쩍 넘긴 집까지 사이좋게 식당문을 열고 성업중이다.<br>','02-2148-1114',null,null,null,null,null,null,'대부분 상점들이 24시간 영업',null,'없음','불가',null);
+Insert into SCOTT.TEAM_SEOUL_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('신당동 떡볶이 골목','04611','서울특별시 중구 다산로33길 10-18(신당동)',38,127,'신당동 떡볶이 골목이 지금처럼 골목을 이루게 된 건 70년대 후반부터다. 70년대를 지나 80년대로 넘어오면서 신당동 떡볶이 골목의 전성기를 맞이한다. 80년대에 새롭게 등장한 건 떡볶이집 마다 있었던 ''DJ박스''다. 사연과 함께 음악을 틀어주던 이른바 ''멋쟁이 DJ오빠''가 신당동 떡볶이 골목의 상징으로 떠올랐다. 또한 이 시기는 고교야구의 전성기였는데 인근에 있는 동대문야구장에서 덕수상고와 선린상고가 맞붙는 날이면 경기가 끝나고 신당동 떡볶이 골목은 학생들로 넘쳐 났다. 당시 학생이었던 아이들이 중년이 되어 찾는 곳이 바로 이 골목이다. 그들은 그렇게 이십년이 넘는 단골이 된 것이다. 아마도 그들은 무언가 그리워질 때면 이 거리를 찾아 청춘의 이름으로 이십년 전으로 돌아가 재잘 거리며 떡볶이를 먹을 것이다. 사실 떡볶이 골목의 역사는 70년대를 훨씬 더 지나 50년대로 거슬러 올라간다. 떡볶이 골목에 마복림할머니집이 있는데, 그 할머니 말에 따르면 1953년부터 떡볶이를 팔기 시작했다. 지금 떡볶이 골목 인근에 동아극장이 있었는데 그 앞에서 떡볶이와 옥수수, 감자 등을 팔았던 것이다. 처음에는 그냥 고추장만 넣어 떡볶이를 만들었다. 그렇게 시작된 신당동 떡볶이는 수십년 세월이 흐르면서 심심풀이 간식이 아닌 한 끼 식사로 충분한 하나의 요리로 자리잡게 된 것이다. 요즘은 떡볶이에 계란, 당면, 어묵, 쫄면, 라면사리는 기본이고 물오징어에 새우, 치즈까지 들어가 새로운 입맛을 사로잡고 있다.','120 다산콜센터',null,null,null,null,null,null,null,'각 업소 주차장 이용','불가','불가','화장실:있음
 ');
 --------------------------------------------------------
---  DDL for Index SYS_C007599
+--  DDL for Index SYS_C007707
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "SCOTT"."SYS_C007599" ON "SCOTT"."TEAM_SEOUL_01" ("NAME") 
+  CREATE UNIQUE INDEX "SCOTT"."SYS_C007707" ON "SCOTT"."TEAM_SEOUL_01" ("NAME") 
   PCTFREE 10 INITRANS 2 MAXTRANS 255 
   STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
   PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1

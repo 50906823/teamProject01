@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,10 +17,11 @@
   align-items: center;
 }
 .logo { 
-	/* width: 120px; height: 60px; */
-	color: black;
+	color: #7BB661;
 	font-size: 2rem;
+	font-weight: bold;
 	text-decoration: none;
+	margin: 0px 30px;
 	}
 .box-search {
   width: 500px; height: 50px;
@@ -58,7 +60,6 @@
 </head>
 <body>
 	<div id="header">
-		<!-- <a href="main.jsp"><img class="logo" src="로고"></a> -->
 		<a href="main.jsp" class="logo">놀러가조</a>
 		
 		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px;">
@@ -87,7 +88,29 @@
 			</div>
 			<button id="searchBtn" type="button" style="margin-left: 10px;">검색</button>
 	    </form>
-	    로그인 정보
+	    <%@ include file="loginInfo.jsp" %>
 	</div>
+	
+	<script>
+		document.getElementById('searchBtn').addEventListener('click', ()=>{
+			
+			let form = document.getElementById('searchForm');
+			let inputSearch = document.getElementById('inputSearch');
+			let inputArea = document.getElementById('inputArea');
+			
+			 if(inputArea.value == "none") {
+				alert('지역을 선택해 주세요.');
+				inputArea.focus();
+			} else if(inputArea.value != "none") {
+				form.submit();
+			} else if(inputSearch.value == ""){
+				alert('검색어를 입력해 주세요.');
+				inputSearch.focus();
+			} else {
+				form.submit();
+			}
+		});
+			
+	</script>
 </body>
 </html>
