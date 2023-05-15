@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원 관리</title>
+<title>회원관리 페이지</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -15,6 +15,10 @@
 	crossorigin="anonymous">
 </head>
 <body>
+
+	<jsp:include page="navBar.jsp" />
+	<!-- navBar.jsp 추가 -->
+
 	<div class="container">
 		<h1 class="mt-3">회원 관리</h1>
 		<table class="table table-bordered mt-3">

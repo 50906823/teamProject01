@@ -184,15 +184,12 @@
 		</div>
 </div> -->
 
-<%-- 	<h2>
-		-
-		<%=area%>
-		날씨 예보
-	</h2> --%>
+	<h2>
+		-<%=areaString%> 현재 날씨
+	</h2>
 	<div class="ctemp">현재 온도: </div>
 	<div class="clowtemp">최저 온도: </div>
 	<div class="chightemp">최고 온도: </div>
-	<div class="cicon">아이콘: </div>
 	<!-- 날씨 E -->
 	
 	<div class="searchList">

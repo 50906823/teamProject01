@@ -41,7 +41,7 @@
         out.println("</script>");
     } else {
         out.println("<script>");
-        out.println("alert('회원가입에 실패하였습니다.');");
+        out.println("alert('다시 확인해주세요.');");
         out.println("history.back();");
         out.println("</script>");
     }

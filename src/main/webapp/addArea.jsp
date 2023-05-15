@@ -4,21 +4,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>지역제보 페이지</title>
 </head>
 <body>	
+	<%@ include file = "navBar.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
 	
 	<form name='areaAddForm' action='addArea_proc.jsp' method="post">
 		<div class="mb-3">
-		  <label for="formGroupExampleInput1" class="form-label">지역 번호</label>
+		  <label for="formGroupExampleInput1" class="form-label">제보 장소 번호</label>
 		  <input type="text" class="form-control" id="inputNum"
-		  		name="num" placeholder="지역 번호 입력">
+		  		name="num" placeholder="제보 장소 번호 입력">
 		</div>
 		<div class="mb-3">
-		  <label for="formGroupExampleInput2" class="form-label">지역 이름</label>
+		  <label for="formGroupExampleInput2" class="form-label">제보 장소 이름</label>
 		  <input type="text" class="form-control" id="inputName"
-		  		name="name" placeholder="지역 이름 입력">
+		  		name="name" placeholder="제보 장소 이름 입력">
 		</div>
 		<button id="insertBtn" type="button" class="btn btn-primary">추가</button>
 	</form>
