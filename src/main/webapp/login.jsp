@@ -5,67 +5,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <title>로그인 페이지</title>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-
 <style>
+.login-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f0f0f0;
+	background-image: url('메인배경_1.png'); /* 이미지 파일 경로를 지정해주세요 */
+	background-repeat: no-repeat; /* 이미지 반복 방지 */
+	background-position: center; /* 이미지 중앙 정렬 */
+	background-size: cover; /* 이미지 크기 조절 */
+}
+
 .login-wrapper {
-	width: 400px;
-	height: 350px;
-	position: absolute;
-	left: 400px;
-	top: 300px;
-	box-sizing: border-box;
-}
-
-.login-wrapper>h2 {
-	font-size: 24px;
-	color: black;
-	margin-bottom: 20px;
-}
-
-#login-form>input {
-	width: 100%;
-	height: 48px;
-	padding: 0 10px;
-	box-sizing: border-box;
-	margin-bottom: 16px;
-	border-radius: 6px;
 	background-color: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	width: 400px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#login-form>input::placeholder {
-	color: gray;
+.login-wrapper h2 {
+	text-align: center;
+	margin-bottom: 1rem;
 }
 
-#login-form>input[type="submit"] {
+input[type="text"], input[type="password"] {
+	display: block;
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+}
+
+input[type="submit"] {
+	display: block;
+	width: 100%;
+	background-color: #007bff;
+	border: none;
 	color: white;
-	font-size: 22px;
-	background-color: #1a73e8; /* 진한 파란색으로 변경 */
-	margin-top: 20px;
-	border: none; /* 테두리 제거 */
-}
-
-#login-form>input[type="checkbox"] {
-	display: none;
-}
-
-#login-form>label {
-	color: black;
-}
-
-#login-form input[type="checkbox"]+label {
+	padding: 0.5rem;
 	cursor: pointer;
-	padding-left: 26px;
-	background-repeat: no-repeat;
-	background-size: contain;
+	font-weight: bold;
+	border-radius: 0.25rem;
 }
 
-#login-form input[type="checkbox"]:checked+label {
-	background-repeat: no-repeat;
-	background-size: contain;
+input[type="submit"]:hover {
+	background-color: #0056b3;
 }
 
 ul {
@@ -74,48 +63,58 @@ ul {
 }
 
 .kakao-buttons {
-	position: absolute;
-	top: 620px;
-	left: 390px;
+	position: relative; /* position 속성을 relative로 설정. */
+	top: 20px; /* top 속성을 이용해 버튼을 아래로 20px 이동. */
+	left: -30px; /* left 속성을 이용해 버튼을 오른쪽으로 50px 이동. */
 }
 
 .naver-buttons {
-	position: absolute;
-	top: 620px;
-	left: 610px;
+	position: relative; /* position 속성을 relative로 설정. */
+	top: 15px; /* top 속성을 이용해 버튼을 아래로 20px 이동. */
+	left: -30px; /* left 속성을 이용해 버튼을 오른쪽으로 50px 이동. */
 }
 </style>
-
 <body>
-	<div class="login-wrapper">
-		<h2>로그인</h2>
-		<div class="col-lg-4"></div>
-		<div class="col-lg-4">
-			<div class="jumbotron" style="padding-top: 20px;">
-				<form method="post" action="loginAction.jsp" id="login-form">
-					<input type="text" class="form-control" id="manager_id"
-						name="userID" maxlength="20" placeholder="아이디 입력 *"> <br>
-					<input type="password" class="form-control" name="userPassword"
-						maxlength="20" placeholder="비밀번호 입력 *"> <br> <label
-						for="remember-check"> <input type="checkbox"
-						id="remember-check" style="position: relative; left: 0;" /> 로그인
-						상태 유지
-					</label> <input type="submit" class="btn btn-primary form-control"
-						value="LOGIN">
-				</form>
-			</div>
+
+	<jsp:include page="navBar.jsp" />
+	<!-- navBar.jsp 추가 -->
+
+	<div class="login-page">
+		<div class="login-wrapper">
+			<h2>로그인</h2>
+			<form method="post" action="loginAction.jsp" id="login-form">
+				<input type="text" class="form-control" id="manager_id"
+					name="userID" maxlength="20" placeholder="아이디 입력 *"> <input
+					type="password" class="form-control" name="userPassword"
+					maxlength="20" placeholder="비밀번호 입력 *"> <label
+					for="remember-check"> <input type="checkbox"
+					id="remember-check" style="position: relative; left: 0;" />로그인 상태
+					유지
+				</label> <input type="submit" class="btn btn-primary form-control"
+					value="LOGIN">
+				<div class="social-buttons">
+					<br>
+					<div class="kakao-buttons">
+						<ul>
+							<li onclick="kakaoLogin();"><a href="javascript:void(0)">
+									<img src="카카오_로그인.png" alt="카카오 로그인"
+									style="width: 200px; height: 50px;">
+							</a></li>
+						</ul>
+					</div>
+					<div class="naver-buttons">
+						<ul>
+							<li>
+								<!-- 아래와같이 아이디를 꼭 써준다. --> <a href="#"
+								onclick="naverLogin.authorize()" style="cursor: pointer;"> <img
+									src="네이버_로그인.png" alt="네이버 로그인"
+									style="width: 200px; height: 50px;">
+							</a>
+						</ul>
+					</div>
+				</div>
+			</form>
 		</div>
-		<div class="col-lg-4"></div>
-	</div>
-
-
-	<!-- 카카오로그인 버튼 body-->
-	<div class="kakao-buttons">
-		<ul>
-			<li onclick="kakaoLogin();"><a href="javascript:void(0)"> <img
-					src="카카오_로그인.png" alt="카카오 로그인" style="width: 200px; height: 50px;">
-			</a></li>
-		</ul>
 	</div>
 
 	<!-- 카카오 스크립트 -->
@@ -177,15 +176,6 @@ function kakaoLogout() {
 
 </script>
 
-	<div class="naver-buttons">
-		<ul>
-			<li>
-				<!-- 아래와같이 아이디를 꼭 써준다. --> <a href="#"
-				onclick="naverLogin.authorize()" style="cursor: pointer;"> <img
-					src="네이버_로그인.png" alt="네이버 로그인" style="width: 200px; height: 50px;">
-			</a>
-		</ul>
-	</div>
 
 	<!-- 네이버 스크립트 -->
 	<script
@@ -193,7 +183,6 @@ function kakaoLogout() {
 		charset="utf-8"></script>
 
 	<script>
-
 var naverLogin = new naver.LoginWithNaverId(
     {
         clientId: "39I2hbPLaBqwis5MtIxf",
@@ -217,10 +206,8 @@ window.addEventListener('load', function () {
                 return;
             }
             
-
-         // 수정된 코드의 일부
             if(email !== undefined && email !== null) {
-                var naverNickname = naverLogin.user.name; // 수정된 코드
+                var naverNickname = naverLogin.user.name;
                 var xhttp = new XMLHttpRequest();
                 xhttp.onload = function() {
                     if (this.status === 200) {
@@ -240,27 +227,10 @@ window.addEventListener('load', function () {
 			}
 		});
 	});
-
-	var testPopUp;
-	function openPopUp() {
-		testPopUp = window.open("https://nid.naver.com/nidlogin.logout",
-				"_blank",
-				"toolbar=yes,scrollbars=yes,resizable=yes,width=1,height=1");
-	}
-	function closePopUp() {
-		testPopUp.close();
-	}
-
-	function naverLogout() {
-		openPopUp();
-		setTimeout(function() {
-			closePopUp();
-		}, 1000);
-	}
 </script>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-</body>
 
+</body>
 </html>
