@@ -9,19 +9,19 @@
 <head>
 <meta charset="UTF-8">
 <title>상세 검색 페이지</title>
-
-
-
+<style>
+	* { margin: 0; padding: 0; box-sizing: border-box; }
+	.searchList {
+			width: 100%; height: 590px;
+		overflow-y : scroll;
+	}
+	</style>
 </head>
-
-
-
-
 <body>
-
-	<%@ include file="header.jsp"%>
-	<%@ include file="menuBar.jsp"%>
-
+    
+	<%@ include file = "header.jsp" %>
+	<%@ include file = "menuBar.jsp" %>
+	<div class="container" style="width: 1200px">
 	<%
 	request.setCharacterEncoding("UTF-8");
 
@@ -184,33 +184,7 @@
 			/* searchDao.selectSearchInfoList(area, search) 출력 */
 			for (SearchDto item : searchInfoList) {
 			%>
-			<tr>
-				<!-- main에서 받은 값(area, name)을 detail.jsp에도 보내기 -->
-				<td><a
-					href="detail.jsp?area=<%=area%>&name=<%=item.getName()%>"><%=item.getName()%></a></td>
-				<!-- 값이 null인 부분은 - 출력 -->
-				<%
-				if (item.getAddress() != null) {
-				%>
-				<td><%=item.getAddress()%></td>
-				<%
-				} else {
-				%>
-				<td>-</td>
-				<%
-				}
-				%>
-				<%
-				if (item.getTel() != null) {
-				%>
-				<td><%=item.getTel()%></td>
-				<%
-				} else {
-				%>
-				<td>-</td>
-				<%
-				}
-				%>
+
 	<%
 		/* searchDao.selectSearchInfoList(area, search) 출력 */
 		for(SearchDto item : searchInfoList){	
@@ -237,5 +211,7 @@
 			%>
 		</tbody>
 	</table>
+	</div>
+</div>
 </body>
 </html>
