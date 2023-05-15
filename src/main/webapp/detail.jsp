@@ -38,6 +38,7 @@
 		%>
 			<p style="margin-bottom: 0; font-weight: bold; font-size: 1.1rem;">명칭</p>
 			<p><%=searchDto.getName()%></p>
+			
 				<!-- 값이 null인 컬럼은 출력되지 않게 하기 -->
 				<% if(searchDto.getPostNum() != null) { %>
 					<p style="margin-bottom: 0; font-weight: bold; font-size: 1.1rem;">우편번호</p>

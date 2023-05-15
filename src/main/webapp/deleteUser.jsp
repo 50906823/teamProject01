@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page import="base.dao.JoinDao" %>
-<%@ page import="java.io.PrintWriter" %>
+	pageEncoding="UTF-8"%>
+<%@ page import="base.dao.JoinDao"%>
+<%@ page import="java.io.PrintWriter"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +9,7 @@
 <title>회원 삭제</title>
 </head>
 <body>
-    <%
+	<%
     String userID = request.getParameter("userID");
 
     JoinDao userDao = new JoinDao();
