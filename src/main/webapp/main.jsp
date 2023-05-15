@@ -61,14 +61,20 @@ p {
 #searchBtn:hover {
   background-color: #7BB661;
 }
+.logo{
+	width: 400px;
+	height: 200px;
+	background-size: cover;
+}
 </style>
 </head>
 <body>
    <%@ include file = "navBar.jsp" %>
-   <%@ include file = "menuBar.jsp" %>
+   
 
    <div class="container">
-   <a href="main.jsp" style="text-decoration: none"><p>놀러가조</p></a>
+   <div class="logo"><a href="main.jsp"><img src="메인로고.png"></a></div>
+
       <!-- 검색form -->
       <form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px; margin: 0 auto;">
          <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">
@@ -96,6 +102,7 @@ p {
          </div>
          <button id="searchBtn" type="button" style="margin-left: 10px;">검색</button>
        </form>
+			 <%@ include file = "menuBar.jsp" %>
    </div>
 
 
