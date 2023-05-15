@@ -15,6 +15,10 @@
 	crossorigin="anonymous">
 </head>
 <body>
+
+	<jsp:include page="navBar.jsp" />
+	<!-- navBar.jsp 추가 -->
+
 	<div class="container">
 		<h1 class="mt-3">회원 관리</h1>
 		<table class="table table-bordered mt-3">
