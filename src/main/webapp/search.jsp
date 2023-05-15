@@ -10,12 +10,12 @@
 <meta charset="UTF-8">
 <title>상세 검색 페이지</title>
 <style>
-	* { margin: 0; padding: 0; box-sizing: border-box; }
-	.searchList {
-			width: 100%; height: 590px;
-		overflow-y : scroll;
-	}
-	</style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.searchList {
+	width: 100%; height: 590px;
+	overflow-y : scroll;
+}
+</style>
 </head>
 <body>
     
@@ -29,22 +29,15 @@
 	String area = request.getParameter("area");
 	String search = request.getParameter("search");
 
-	/* 필요없는 것 같아서 일단 주석처리 해놓음 */
-	/* SearchDto searchDto = new SearchDto(); */
-	/* 값 저장 */
-	/* 		searchDto.setArea(area);
-			searchDto.setName(search); */
-
 	/* DAO 객체 생성 */
 	SearchDao searchDao = new SearchDao();
 	/* DAO 메소드 사용 */
 	List<SearchDto> searchInfoList = searchDao.selectSearchInfoList(area, search);
 	%>
 
+	<!-- S -->
 	<%
-	// <!-- S -->
-
-	// <!-- main-select-option에 있는 value 를 cityId로 변환 -->
+	// main-select-option에 있는 value 를 cityId로 변환
 	String cityId = "";
 	if (area.equals("seoul")) {
 		cityId = "1835848";
@@ -67,12 +60,11 @@
 	} else {
 		out.println("<script>alert('잘못된 입력입니다.');</script>");
 	}
-	// <!-- api호출주소 구성하기 위해 cityId값 활용 -->
+	// api호출주소 구성하기 위해 cityId값 활용
 	String apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId
 			+ "&appid=41ecd1c23b0f1a112643d899fee45436&units=metric";
 	%>
-	<!-- 승연 S -->
-
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 		// apiUrl 내용을 getJSON으로 불러냄.
@@ -89,12 +81,7 @@
 							$('h2').prepend($cDate);
 						});
 	</script>
-
-
-	<!-- 승연 E -->
-
 	<!-- E -->
-
 
 	<%
 		/* main-select-option에 있는 value 한글화 */
@@ -143,6 +130,7 @@
 			out.println("<h3>지역: \"" + areaString + "\", 검색어: \"" + search + "\" 검색 결과</h3>");
 		}
 	%>
+	
 	<!-- 날씨 S -->
 	<!-- <div class="row justify-content-center">
 		<div class="col-12 col-md-6">
@@ -165,12 +153,12 @@
 		<%=area%>
 		날씨 예보
 	</h2>
-	<div class="ctemp">현재 온도 :</div>
-	<div class="clowtemp">최저 온도 :</div>
-	<div class="chightemp">최고 온도 :</div>
-	<div class="cicon">아이콘 :</div>
-
+	<div class="ctemp">현재 온도: </div>
+	<div class="clowtemp">최저 온도: </div>
+	<div class="chightemp">최고 온도: </div>
+	<div class="cicon">아이콘: </div>
 	<!-- 날씨 E -->
+	
 	<table class="table">
 		<thead>
 			<tr>
@@ -180,11 +168,6 @@
 			</tr>
 		</thead>
 		<tbody>
-			<%
-			/* searchDao.selectSearchInfoList(area, search) 출력 */
-			for (SearchDto item : searchInfoList) {
-			%>
-
 	<%
 		/* searchDao.selectSearchInfoList(area, search) 출력 */
 		for(SearchDto item : searchInfoList){	
