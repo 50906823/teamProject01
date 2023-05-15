@@ -71,7 +71,7 @@
 	String apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId
 			+ "&appid=41ecd1c23b0f1a112643d899fee45436&units=metric";
 	%>
-	<!-- 승연 S -->
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
@@ -91,7 +91,7 @@
 	</script>
 
 
-	<!-- 승연 E -->
+
 
 	<!-- E -->
 
