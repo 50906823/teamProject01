@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
+
 <%
 request.setCharacterEncoding("UTF-8");
 
@@ -35,10 +37,13 @@ if (area.equals("seoul")) {
 } else {
     out.println("<script>alert('잘못된 입력입니다.');history.go(-1);</script>");
 }
-String apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&appid=41ecd1c23b0f1a112643d899fee45436&units=metric";
+String apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=835848&appid=41ecd1c23b0f1a112643d899fee45436&units=metric";
+
 %>
 <script>
-$.getJSON("<%=apiUrl%>", function(data){
+$.getJSON('http://api.openweathermap.org/data/2.5/forecast?id=cityId&appid=41ecd1c23b0f1a112643d899fee45436&units=metric', function(data){
+    alert(data.city.name);
+
     var $minTemp = data.list[0].main.temp_min;
     var $maxTemp = data.list[0].main.temp_max;
     var $cTemp = data.list[0].main.temp;
@@ -53,7 +58,7 @@ $.getJSON("<%=apiUrl%>", function(data){
 
 <body>
   <h1>weather api</h1>
-  <h2> - <%=area %> 날씨 예보</h2>
+  <!-- <h2> - <%=area %> 날씨 예보</h2> -->
   <div class="ctemp">현재 온도 : </div>
   <div class="clowtemp">최저 온도 : </div>
   <div class="chightemp">최고 온도 : </div>
