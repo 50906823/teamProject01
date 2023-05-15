@@ -1,24 +1,24 @@
 package base.dto;
 
 public class SearchDto {
-	String name;			 //명칭
-	String postNum; 		 //우편번호
-	String address; 		 //주소
-	String outline;		 //개요
-	String tel;			 //문의및안내
-	String opening;		 //개장일
-	String dayOff;		 //쉬는날
+	String name;		   //명칭
+	String postNum; 	   //우편번호
+	String address; 	   //주소
+	String outline;		   //개요
+	String tel;			   //문의및안내
+	String opening;		   //개장일
+	String dayOff;		   //쉬는날
 	String experienceInfo; //체험안내
-	String experienceAge;	 //체험가능연령
-	String limitPeople;	 //수용인원
-	String period;		 //이용시기
-	String hours;			 //이용시간
-	String parking;		 //주차시설
+	String experienceAge;  //체험가능연령
+	String limitPeople;	   //수용인원
+	String period;		   //이용시기
+	String hours;		   //이용시간
+	String parking;		   //주차시설
 	String rentalStroller; //유모차대여여부
-	String withPet;		 //애완동물동반가능여부
-	String detailInfo;	 //상세정보
+	String withPet;		   //애완동물동반가능여부
+	String detailInfo;	   //상세정보
 	
-	String area;        //지역, 메인 페이지 옵션에 필요
+	String area;           //지역, 메인 페이지 옵션에 필요
 	
 	public String getName() {
 		return name;

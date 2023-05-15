@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-5월-11-2023   
+--  파일이 생성됨 - 월요일-5월-15-2023   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TEAM_SEJONG_01
@@ -33,34 +33,6 @@
   TABLESPACE "EXAMPLE" ;
 REM INSERTING into SCOTT.TEAM_SEJONG_01
 SET DEFINE OFF;
-Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('별신(삼버들협동조합)','30075','세종특별자치시 부강면 시장1길 6-2',37,127,'삼버들협동조합은 큰 버드나무 세 그루가 있었다 하여 지어진 부강의 옛 지명 ‘삼버들’에서 따온 이름으로 전통문화향유 활성화 사업 및 교육 콘텐츠를 기획하는 마을기업이다. 2018년부터 14개의 지역 문화재를 활용한 도보여행 코스 ‘작은 여행자마을’을 운영하며 역사공간을 활용해 문화공연과 돌잔치, 전통혼례장소 대관을 하고 있다.','044-863-5735',null,'토, 일(프로그램 예약시 주말 운영)','체험 : 도보투어, 민화체험 / 판매 : 육포',null,null,null,'10:00~15:00','5대','없음','없음','이용가능시설:삼버들작은도서관, 부강성당, 김재식고가, 부강초등학교 등
-입 장 료:체험 : 15,000원 / 판매 : 45,000원
-');
-Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('원수산습지생태원',null,'세종특별자치시 연기면 세종리 734-4',37,127,'원수산습지생태원은 세종시 연기면 세종리에 있다. 생태원 내에는 보존습지, 수생식물습지, 건생습지, 조류관찰공간, 생태학습장, 단풍나무숲, 산책로 등이 갖춰져 있다. 생태원은 서세종IC 와 가까운 거리에 있다. 주변에는 전월산국민여가캠핑장, 세종중앙공원이 있다.','044-120',null,null,null,null,null,null,null,'있음','없음','없음',null);
-Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도토리숲키즈파크','30054','세종특별자치시 장군면 영평사길 34',36,127,'도토리숲키즈파크는 세종시 장군면 산학리에 자리 잡고 있다. 아이들이 안전하고 신나게 즐길 수 있는 놀거리가 많다. 자연 친화적인 공간에 숲속 놀이터를 비롯해 쁘띠아르 조각공원, 소나무 산책길, 싱커토이 놀이터, 상상블록, 갤러리 랑 등 여러 시설이 갖춰져 있다. 이곳은 서세종IC에서 가까운 거리에 있다. 주변에는 연계 여행지로 삼기 좋은 세종호수공원과 전월산 국민 여가 캠핑장이 있다.','044-868-1103',null,null,'숲속 놀이터, 싱커토이 놀이터, 상상블록 등',null,null,null,'10:00 - 18:00','주차가능','없음','없음','입 장 료:입장료 10,000원(24개월 미만 무료), 개인의 경우 1인당 음료 1잔 제공<br>※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망		
-
-');
-Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('세종어린이천문대(세종미리내천문대)','30008','세종특별자치시 전의면 의당전의로 4',37,127,'세종 어린이천문대는 세종시 전의면 다방리에 자리 잡고 있다. 인류가 탐사선을 보냈고 직접 우주로 나가 탐험하는 우주를 통해 꿈을 키우는 곳이다. 또한 우주를 통해 과학을 배우는 곳이며 인류가 상상의 나래를 펼친 우주를 통해 생각하는 힘을 기르는 곳이다. 세종시 전역에서 20~25분 거리에 자리하며 은하수와 어두운 밤하늘 천체를 볼 수 있는 좋은 관측 환경을 갖추었다. 자라나는 아이들에게 별과 우주에 대한 관심과 호기심을 채워줄 수 있다.','044-867-1730',null,'일요일',null,null,null,null,'14:30 - 23:00','주차가능','없음','없음','입 장 료:체험 프로그램 12명 이하 1팀당 1회 420,000원<br>※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
-
-');
-Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('뽀로로파크 세종점','30121','세종특별자치시  갈매로 351 에비뉴힐B동 지하1층',36,127,'뽀로로파크 세종점은 세종특별자치시 어진동에 있다. 놀이를 하면서 교육 효과를 창출하는 에듀테인먼트 공간이며, 친근한 뽀로로 캐릭터로 어린이들을 서로 연결하고 함께 즐기는 놀이문화의 장이다. 입구로 들어서면 뽀로로 오션월드를 시작으로 뽀로로 기차 정거장, 삐삐뽀뽀 우주선, 뚜뚜 드라이빙, 패티 게임존 등 여러 가지 즐길 거리가 펼쳐진다. 서세종 IC에서 가깝고 주변에 국립세종수목원과 세종호수공원이 있다.','044-417-6886',null,'명절 당일','뽀로로 오션월드, 뚜뚜 드라이빙, 통통이 소극장 등',null,null,null,'11:00~19:00','있음',null,null,':
-:
-시설이용료:어린이 2시간 23,000원, 성인 2시간 8,000원, 어린이 3시간 26,000원, 성인 3시간 8,000원
-:
-');
-Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('베어트리파크','30009','세종특별자치시 전동면 신송로 217',37,127,' 세종특별자치시에 위치한 베어트리파크는 2009년 5월 개장하였다. 이재연 설립자가 50여년간 가꾸어온 식물과 동물들이 자라 숲과 군락을 이루어 현재의 베어트리파크가 되었다. 베어트리파크 33만여㎡(10만 평)의 대지에 1,000여종 40여만 점에 이르는 꽃과 나무, 비단잉어와 반달곰, 꽃사슴 등이 어우러진 곳이다. 백여마리의 비단잉어가 서식하는 오색연못을 시작으로 수백 마리의 반달곰과 불곰이 재롱을 부리는 모습을 직접 볼 수 있다. 베어트리파크를 한눈에 볼 수 있는 전망대를 시작으로 사시사철 꽃을 피우는 베어트리정원, 아기반달곰과 사슴, 공작새, 원앙 등을 관람할 수 있는 애완동물원 등이 조성되어 있다. 희귀한 소나무를 수집해 조성한 송백원, 고사목과 향나무가 조화를 이룬 하계정원, 수천 송이의 장미를 감상할 수 있는 장미원, 국내 야생화를 모아둔 산책로인 야생화 동산, 다양한 종류의 분재를 만나 볼 수 있는 분재원, 국내에서 보기 힘든 열대 식물을 한자리에 모아 놓은 열대온실원, 선인장과 과목, 나무화석 등 다양한 볼거리가 가득한 만경비원, 수령 100년 이상 된 향나무 사이로 산책로를 조성한 향나무동산, 800년 된 느티나무가 있는 우리나라 지도 모양으로 만든 유럽식 정원 송파원 등이 있다. 11월부터 2월까지 동절기에는 비단잉어 실내 관람 시설에서 먹이주기 체험이 가능핟. 여러 개의 야외 연못에 분산되어 있던 1,000여 마리의 비단잉어가 따듯한 겨울을 날수 있도록 한곳에 모여 더욱 장관을 이룬다. 먹이를 뿌리면 와르르 모여드는 비단 잉어떼를 만나볼 수 있다.<br>','044-866-7766','2009년 5월 11일','연중무휴','먹이주기 체험(곰, 비단잉어, 사슴, 염소 등)',null,null,null,'3월~11월 : 09:00 ~ 일몰시<br />
-12월~2월 : 10:00 ~ 17:00 또는 18:00','있음','가능','불가','화장실:있음
-입 장 료:대인(중학생 이상) 12,000원 / 청소년 10,000원 / 소인(만 3세~초등학생) 8,000원
-
-이용가능시설:[주요시설]<br />
-오색연못, 베어트리정원, 애완동물원, 반달곰동산, 야생화동산, 전망대, 잔디광장, 곰조각공원, 열대식물원 등<br /><br />
-[부대시설]<br />
-웰컴레스토랑, 베어트리 카페, 베어트리 라운지, 푸드코트
-주차요금:무료
-내국인 예약안내:단체 방문시 사전예약<br />
-- 대인 단체 문의/예약 044-866-7766, 863-2220<br />
-- 소인 단체 문의/예약 044-863-5566
-');
 Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('비암사(세종)','30008','세종특별자치시 전의면 비암사길 137(전의면)',37,127,'* 810년 된 느티나무가 있는 비암사 *<br /><br />세종시 전의면 비암사길 137 비암사는 2,000여 년 전 삼한시대의 절이라고 하지만 정확하진 않다. 통일신라 말기 도선국사가 창건했다는 설도 있다. 삼층석탑은 고려시대의 것으로 추정되며, 조선시대 기록에 비암사라는 이름이 나온다. 1960년 삼층석탑 꼭대기에서 ‘계유명전씨아미타불비상’이 발견되어 국보로 지정됐다. 이밖에 17세기에 제작된 것으로 알려진 영산회 괘불탱화와 소조아미타여래좌상이 있다. 비암사에서 방문객을 가장 먼저 반기는 것은 810년 된 느티나무. 높이 15m, 둘레 7.5m인 이 나무는 비암사로 오르는 계단 옆에 있다. 비암사 주차장에 차를 세운 뒤 바로 절로 올라가지 말고 화장실 뒤로 난 계단을 따라 산으로 조금만 올라가면 비암사를 한눈에 담을 수 있다.<br>','044-863-0230',null,'연중개방',null,null,null,null,null,'주차 가능','불가','없음','입 장 료:무료
 화장실:있음
 한국어 안내서비스:가능
@@ -123,6 +95,34 @@ Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLIN
 이용가능시설:푸트코트, 전문식당, 카페/베이커리, 편의점 등
 ');
 Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('금강보행교','30151','세종특별자치시 연기면 세종리',36,127,'세종시의 랜드마크가 될 금강보행교는 2018년 7월에 착공을 시작하여 2022년 3월 임시 개통을 앞두고 있다. 국내 최초로 복층 일면 강관트러스교로 지어졌으며, 독창적인 디자인으로 도시미관 향상에 크게 기여할 것으로 보여진다. 금강보행교는 환상의 시간여행 이라는 설계 개념으로, 교량상부(폭 12m)는 보행편의를 위한 휴게 및 편의시설과 다양한 이벤트, 놀이 체험시설이 가득한 녹지 보행공간으로 조성했고, 교량하부(폭 7m)에는 쾌적한 자전거 전용도로를 설치하여  보행자 안전을 보장하고 자전거 이용자들에게도 편의를 제공할 예정이다.<br>','044-868-9127',null,null,null,null,null,null,'06:00~23:00(연중무휴)','주차가능','없음','없음','입 장 료:무료
+');
+Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('별신(삼버들협동조합)','30075','세종특별자치시 부강면 시장1길 6-2',37,127,'삼버들협동조합은 큰 버드나무 세 그루가 있었다 하여 지어진 부강의 옛 지명 ‘삼버들’에서 따온 이름으로 전통문화향유 활성화 사업 및 교육 콘텐츠를 기획하는 마을기업이다. 2018년부터 14개의 지역 문화재를 활용한 도보여행 코스 ‘작은 여행자마을’을 운영하며 역사공간을 활용해 문화공연과 돌잔치, 전통혼례장소 대관을 하고 있다.','044-863-5735',null,'토, 일(프로그램 예약시 주말 운영)','체험 : 도보투어, 민화체험 / 판매 : 육포',null,null,null,'10:00~15:00','5대','없음','없음','이용가능시설:삼버들작은도서관, 부강성당, 김재식고가, 부강초등학교 등
+입 장 료:체험 : 15,000원 / 판매 : 45,000원
+');
+Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('원수산습지생태원',null,'세종특별자치시 연기면 세종리 734-4',37,127,'원수산습지생태원은 세종시 연기면 세종리에 있다. 생태원 내에는 보존습지, 수생식물습지, 건생습지, 조류관찰공간, 생태학습장, 단풍나무숲, 산책로 등이 갖춰져 있다. 생태원은 서세종IC 와 가까운 거리에 있다. 주변에는 전월산국민여가캠핑장, 세종중앙공원이 있다.','044-120',null,null,null,null,null,null,null,'있음','없음','없음',null);
+Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('도토리숲키즈파크','30054','세종특별자치시 장군면 영평사길 34',36,127,'도토리숲키즈파크는 세종시 장군면 산학리에 자리 잡고 있다. 아이들이 안전하고 신나게 즐길 수 있는 놀거리가 많다. 자연 친화적인 공간에 숲속 놀이터를 비롯해 쁘띠아르 조각공원, 소나무 산책길, 싱커토이 놀이터, 상상블록, 갤러리 랑 등 여러 시설이 갖춰져 있다. 이곳은 서세종IC에서 가까운 거리에 있다. 주변에는 연계 여행지로 삼기 좋은 세종호수공원과 전월산 국민 여가 캠핑장이 있다.','044-868-1103',null,null,'숲속 놀이터, 싱커토이 놀이터, 상상블록 등',null,null,null,'10:00 - 18:00','주차가능','없음','없음','입 장 료:입장료 10,000원(24개월 미만 무료), 개인의 경우 1인당 음료 1잔 제공<br>※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망		
+
+');
+Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('세종어린이천문대(세종미리내천문대)','30008','세종특별자치시 전의면 의당전의로 4',37,127,'세종 어린이천문대는 세종시 전의면 다방리에 자리 잡고 있다. 인류가 탐사선을 보냈고 직접 우주로 나가 탐험하는 우주를 통해 꿈을 키우는 곳이다. 또한 우주를 통해 과학을 배우는 곳이며 인류가 상상의 나래를 펼친 우주를 통해 생각하는 힘을 기르는 곳이다. 세종시 전역에서 20~25분 거리에 자리하며 은하수와 어두운 밤하늘 천체를 볼 수 있는 좋은 관측 환경을 갖추었다. 자라나는 아이들에게 별과 우주에 대한 관심과 호기심을 채워줄 수 있다.','044-867-1730',null,'일요일',null,null,null,null,'14:30 - 23:00','주차가능','없음','없음','입 장 료:체험 프로그램 12명 이하 1팀당 1회 420,000원<br>※ 이용요금은 변동될 수 있으므로 홈페이지 참조 또는 전화 문의 요망
+
+');
+Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('뽀로로파크 세종점','30121','세종특별자치시  갈매로 351 에비뉴힐B동 지하1층',36,127,'뽀로로파크 세종점은 세종특별자치시 어진동에 있다. 놀이를 하면서 교육 효과를 창출하는 에듀테인먼트 공간이며, 친근한 뽀로로 캐릭터로 어린이들을 서로 연결하고 함께 즐기는 놀이문화의 장이다. 입구로 들어서면 뽀로로 오션월드를 시작으로 뽀로로 기차 정거장, 삐삐뽀뽀 우주선, 뚜뚜 드라이빙, 패티 게임존 등 여러 가지 즐길 거리가 펼쳐진다. 서세종 IC에서 가깝고 주변에 국립세종수목원과 세종호수공원이 있다.','044-417-6886',null,'명절 당일','뽀로로 오션월드, 뚜뚜 드라이빙, 통통이 소극장 등',null,null,null,'11:00~19:00','있음',null,null,':
+:
+시설이용료:어린이 2시간 23,000원, 성인 2시간 8,000원, 어린이 3시간 26,000원, 성인 3시간 8,000원
+:
+');
+Insert into SCOTT.TEAM_SEJONG_01 (NAME,POSTNUM,ADDRESS,LATITUDE,LONGITUDE,OUTLINE,TEL,OPENING,DAYOFF,EXPERIENCEINFO,EXPERIENCEAGE,LIMITPEOPLE,PERIOD,HOURS,PARKING,RENTALSTROLLER,WITHPET,DETAILINFO) values ('베어트리파크','30009','세종특별자치시 전동면 신송로 217',37,127,' 세종특별자치시에 위치한 베어트리파크는 2009년 5월 개장하였다. 이재연 설립자가 50여년간 가꾸어온 식물과 동물들이 자라 숲과 군락을 이루어 현재의 베어트리파크가 되었다. 베어트리파크 33만여㎡(10만 평)의 대지에 1,000여종 40여만 점에 이르는 꽃과 나무, 비단잉어와 반달곰, 꽃사슴 등이 어우러진 곳이다. 백여마리의 비단잉어가 서식하는 오색연못을 시작으로 수백 마리의 반달곰과 불곰이 재롱을 부리는 모습을 직접 볼 수 있다. 베어트리파크를 한눈에 볼 수 있는 전망대를 시작으로 사시사철 꽃을 피우는 베어트리정원, 아기반달곰과 사슴, 공작새, 원앙 등을 관람할 수 있는 애완동물원 등이 조성되어 있다. 희귀한 소나무를 수집해 조성한 송백원, 고사목과 향나무가 조화를 이룬 하계정원, 수천 송이의 장미를 감상할 수 있는 장미원, 국내 야생화를 모아둔 산책로인 야생화 동산, 다양한 종류의 분재를 만나 볼 수 있는 분재원, 국내에서 보기 힘든 열대 식물을 한자리에 모아 놓은 열대온실원, 선인장과 과목, 나무화석 등 다양한 볼거리가 가득한 만경비원, 수령 100년 이상 된 향나무 사이로 산책로를 조성한 향나무동산, 800년 된 느티나무가 있는 우리나라 지도 모양으로 만든 유럽식 정원 송파원 등이 있다. 11월부터 2월까지 동절기에는 비단잉어 실내 관람 시설에서 먹이주기 체험이 가능핟. 여러 개의 야외 연못에 분산되어 있던 1,000여 마리의 비단잉어가 따듯한 겨울을 날수 있도록 한곳에 모여 더욱 장관을 이룬다. 먹이를 뿌리면 와르르 모여드는 비단 잉어떼를 만나볼 수 있다.<br>','044-866-7766','2009년 5월 11일','연중무휴','먹이주기 체험(곰, 비단잉어, 사슴, 염소 등)',null,null,null,'3월~11월 : 09:00 ~ 일몰시<br />
+12월~2월 : 10:00 ~ 17:00 또는 18:00','있음','가능','불가','화장실:있음
+입 장 료:대인(중학생 이상) 12,000원 / 청소년 10,000원 / 소인(만 3세~초등학생) 8,000원
+
+이용가능시설:[주요시설]<br />
+오색연못, 베어트리정원, 애완동물원, 반달곰동산, 야생화동산, 전망대, 잔디광장, 곰조각공원, 열대식물원 등<br /><br />
+[부대시설]<br />
+웰컴레스토랑, 베어트리 카페, 베어트리 라운지, 푸드코트
+주차요금:무료
+내국인 예약안내:단체 방문시 사전예약<br />
+- 대인 단체 문의/예약 044-866-7766, 863-2220<br />
+- 소인 단체 문의/예약 044-863-5566
 ');
 --------------------------------------------------------
 --  DDL for Index SYS_C007673

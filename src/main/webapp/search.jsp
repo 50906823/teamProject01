@@ -1,9 +1,9 @@
-현재 내 search.jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="base.dao.SearchDao"%>
 <%@ page import="base.dto.SearchDto"%>
 <%@ page import="java.util.*"%>
+<%@ page import="java.net.URLEncoder" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -115,17 +115,19 @@ $(document).ready(function() {
 		<tbody>
 	<%
 		/* searchDao.selectSearchInfoList(area, search) 출력 */
-		for(SearchDto item : searchInfoList){
+		for(SearchDto item : searchInfoList){	
 	%>
 			<tr>
-				<!-- main에서 받은 값(area, name)을 detail.jsp에도 보내기 -->
-				<td><a href="detail.jsp?area=<%=area%>&name=<%=item.getName()%>"><%=item.getName()%></a></td>
-				<!-- 값이 null인 부분은 - 출력 -->
+				<!-- main에서 받은 값(area, name) detail.jsp에도 보내기, URLEncoder (임포트 필요) → [, ] 문자 URL인코딩 / 아스키 코드 -->
+				<td><a href="detail.jsp?area=<%=area%>&name=<%=URLEncoder.encode(item.getName(), "UTF-8")%>"><%=item.getName()%></a></td>
+				
+				<!-- 값이 null인 부분은 '-' 출력 -->
 				<% if(item.getAddress() != null) { %>
 					<td><%=item.getAddress()%></td>
 				<% } else { %>
 					<td>-</td>
 				<% } %>
+				
 				<% if(item.getTel() != null) { %>
 					<td><%=item.getTel()%></td>
 				<% } else { %>
