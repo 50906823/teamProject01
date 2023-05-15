@@ -65,13 +65,13 @@ ul {
 .kakao-buttons {
 	position: relative; /* position 속성을 relative로 설정. */
 	top: 20px; /* top 속성을 이용해 버튼을 아래로 20px 이동. */
-	left: -30px; /* left 속성을 이용해 버튼을 오른쪽으로 50px 이동. */
+	left: 35px; /* left 속성을 이용해 버튼을 오른쪽으로 50px 이동. */
 }
 
 .naver-buttons {
 	position: relative; /* position 속성을 relative로 설정. */
 	top: 15px; /* top 속성을 이용해 버튼을 아래로 20px 이동. */
-	left: -30px; /* left 속성을 이용해 버튼을 오른쪽으로 50px 이동. */
+	left: 35px; /* left 속성을 이용해 버튼을 오른쪽으로 50px 이동. */
 }
 </style>
 <body>
