@@ -21,6 +21,7 @@
 .nav-left, .nav-right {
     display: flex;
     align-items: baseline;
+    font-weight: bold;
 }
 
 .nav-item { 
@@ -30,6 +31,7 @@
 .nav-item:last-child {
     margin-right: 0rem;
 }
+
 </style>
 
 </head>
@@ -56,7 +58,8 @@
 
     <ul class="nav">
     <div class="nav-left">
-        <li class="nav-item"><a class="nav-link" href="main.jsp" style="color: black">놀러가조</a></li>
+        <li class="nav-item"><a class="nav-link" href="main.jsp" style="color: black"><img src="놀러가조_로고.png" alt="Logo" style="height: 40px; width: 150px;">
+        </a></li>
     </div>
     <div class="nav-right">
         <% if (welcomeName == null) { %>
@@ -65,10 +68,10 @@
         <li class="nav-item"><a class="nav-link" href="join.jsp"
             style="color: black">회원가입</a></li>
         <% } else { %>
-        <li class="nav-item"><span><%= welcomeName %>님 환영합니다!</span></li>
+        <li class="nav-item"><span><%= welcomeName %>님 환영합니다! </span></li>
         <% if (welcomeName.equals("admin")) { %>
         <li class="nav-item"><a class="nav-link active"
-            aria-current="page" href="adminMembers.jsp" style="color: black">회원관리</a></li>
+            aria-current="page" href="adminMembers.jsp" style="color: black"> 회원관리</a></li>
         <% } %>
         <li class="nav-item"><a class="nav-link active"
             aria-current="page" onclick="kakaoLogout()" href="logoutAction.jsp"
