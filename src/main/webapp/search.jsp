@@ -9,6 +9,13 @@
 <head>
 <meta charset="UTF-8">
 <title>상세 검색 페이지</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.searchList {
+    width: 100%; height: 590px;
+	overflow-y : scroll;
+}
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -40,7 +47,7 @@ $(document).ready(function() {
     
 	<%@ include file = "header.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
-	
+	<div class="container" style="width: 1200px">
 	<%
 		request.setCharacterEncoding("UTF-8");
 		
@@ -103,7 +110,7 @@ $(document).ready(function() {
 	      </div>
   	  </div>
   </div>
-	
+<div class="searchList">
 	<table class="table">
 		<thead>
 			<tr>
@@ -139,5 +146,7 @@ $(document).ready(function() {
 	%>
 		</tbody>	
 	</table>
+	</div>
+</div>
 </body>
 </html>
