@@ -10,7 +10,19 @@
 <meta charset="UTF-8">
 <title>상세 검색 페이지</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'KyoboHand';
+
+ }
 
 .mainContainer {
    height: 913px;
@@ -100,6 +112,8 @@
 		cityId = "1842616";
 	} else if (area.equals("jeju")) {
 		cityId = "1846266";
+	} else if (area.equals("chungnam")) {
+		cityId = "1845759";
 	} else {
 		out.println("<script>alert('날씨 서비스가 제공되지 않는 지역입니다.');</script>");
 	}
@@ -197,8 +211,9 @@
 <!-- 	<div class="ctemp">현재 온도: </div>
 	<div class="clowtemp">최저: </div>
 	<div class="chightemp">최고: </div> -->
-	<span class="ctemp">현재 </span><span>℃</span><br>
-	<span class="clowtemp">최저 </span><span class="chightemp">℃ / 최고</span><span>℃</span>
+	<span style="font-weight: bold;">날씨정보</span><br>
+	<span class="ctemp">현재 </span><span>℃ | </span>
+	<span class="clowtemp">최저 </span><span class="chightemp">℃ | 최고</span><span>℃</span>
 	<!-- 날씨 E -->
 	
 	

@@ -28,7 +28,7 @@
 }
 .input-search {
   width: 400px; height: 80%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-left: 10px;
   border-style: none;
   background-color: #ffffff00;
@@ -95,11 +95,10 @@
         String welcomeName = userID != null ? userID : kakaoNickname != null ? kakaoNickname : naverNickname;
     %>
 	<div id="header">
-		<a class="nav-link" href="main.jsp" style="color: black"><img src="놀러가조_로고.png" alt="Logo" style="height: 40px; width: 150px;">
-        </a>
+		<a href="main.jsp" class="logo"><img src="놀러가조_로고.png" style=" width: 200px; height: 53px;"> </a>
 		
-		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px;">
-			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">
+		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px; ">
+			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px; font-size: 1.4rem;">
 			    <option value="none">==지역 선택==</option>
 			    <option value="seoul">서울</option>
 			    <option value="busan">부산</option>

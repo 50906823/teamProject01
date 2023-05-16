@@ -11,9 +11,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
+
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * { 
 	margin: 0; padding: 0; box-sizing: border-box; 
-
+     font-family: 'KyoboHand';
 }
 
 .mainContainer {
@@ -31,7 +45,7 @@
 	background-size: cover;
 	position: absolute;
 	bottom : 350px;
-	z-idnex:5;
+	
 }
 p {
   color: #7BB661;
@@ -43,7 +57,7 @@ p {
 
 .box-search {
   width: 600px; height: 50px;
-  border: 1px solid black; border-radius: 5px;
+ 
   margin: 0px 10px;
   position: absolute;
   left: 375px;
@@ -54,7 +68,7 @@ p {
 }
 .input-search {
   width: 400px; height: 80%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-left: 10px;
   border-style: none;
   background-color: #ffffff00;
@@ -65,17 +79,26 @@ p {
 }
 
 #searchBtn {
-  background-color: #AFD485;
+	width : 80px;
+	height : 50px;
+  /* background-color: #ffffff00; */
+  background-color: #f2fe8a;
+  /* background-color: #e6cffb;  */
+     /* background-color: #AFD485; */
   color: #ffffff;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bolder;
+  font-size: 1.4rem;
+  color : black;
+  border : 1px solid black;
+  
   padding: 10px;
   cursor: pointer;
   position: absolute;
-  left: 1005px;
-  bottom: 370px;
+  left: 1001px;
+  bottom: 368px;
+  padding-top : 5px;
+  padding-bottom: 6px;
 }
 #searchBtn:hover {
   background-color: #7BB661;
@@ -94,8 +117,8 @@ p {
 
       <!-- 검색form -->
       <form id="searchForm" action="search.jsp" method="post" style=" width: 900px; margin: 0 auto;">
-				<div class="fLeft" style="width: 170px; height: 100%; display: inline-flex;">
-         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px; position: absolute; bottom: 370px; ">
+				<div class="searchFlex" style="width: 170px; height: 100%; display: inline-flex;">
+         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; height: 50px; border : 1px solid black; margin-right: 10px; position: absolute; bottom: 368px; left: 186px; font-size: 1.3rem; background-color: #f2fe8a; ">
              <option value="none">==지역 선택==</option>
              <option value="seoul">서울</option>
              <option value="busan">부산</option>
@@ -115,17 +138,18 @@ p {
              <option value="jeonnam">전남</option>
              <option value="jeju">제주</option>
          </select></div>
-				 <a href="main.jsp"><img class="mainlogo" src="메인_곰돌이02.png" ></a>
+				 <img class="mainlogo" src="메인_곰돌이04.png" >
          <div class="box-search" style="flex: 1;">
             <input class="input-search" type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요.">
          </div>
-         <button id="searchBtn" type="button" style="margin-left: 10px;">검색</button>
-			 <%@ include file = "menuBar.jsp" %> 
+         <button id="searchBtn" type="button" style="margin-left: 11px;">검 색</button>
          
        </form>
+			 <%@ include file = "menu_main.jsp" %> 
+          <%@ include file = "footer.jsp" %> 
+   </div>
        
 			
-   </div>
 
 
    <script>
