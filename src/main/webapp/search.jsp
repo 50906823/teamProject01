@@ -211,8 +211,9 @@
 <!-- 	<div class="ctemp">현재 온도: </div>
 	<div class="clowtemp">최저: </div>
 	<div class="chightemp">최고: </div> -->
-	<span class="ctemp">현재 </span><span>℃</span><br>
-	<span class="clowtemp">최저 </span><span class="chightemp">℃ / 최고</span><span>℃</span>
+	<span style="font-weight: bold;">날씨정보</span><br>
+	<span class="ctemp">현재 </span><span>℃ | </span>
+	<span class="clowtemp">최저 </span><span class="chightemp">℃ | 최고</span><span>℃</span>
 	<!-- 날씨 E -->
 	
 	

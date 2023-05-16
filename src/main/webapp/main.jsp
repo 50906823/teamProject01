@@ -82,8 +82,8 @@ p {
 	width : 80px;
 	height : 50px;
   /* background-color: #ffffff00; */
-  /* background-color: #f2fe8a; */
-  background-color: #e6cffb; 
+  background-color: #f2fe8a;
+  /* background-color: #e6cffb;  */
      /* background-color: #AFD485; */
   color: #ffffff;
   border: none;
@@ -91,7 +91,7 @@ p {
   font-size: 1.4rem;
   color : black;
   border : 1px solid black;
-  font-weight: bolder;
+  
   padding: 10px;
   cursor: pointer;
   position: absolute;
@@ -118,7 +118,7 @@ p {
       <!-- 검색form -->
       <form id="searchForm" action="search.jsp" method="post" style=" width: 900px; margin: 0 auto;">
 				<div class="searchFlex" style="width: 170px; height: 100%; display: inline-flex;">
-         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; height: 50px; border : 1px solid black; margin-right: 10px; position: absolute; bottom: 368px; left: 186px; font-size: 1.3rem; background-color: #e6cffb; ">
+         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; height: 50px; border : 1px solid black; margin-right: 10px; position: absolute; bottom: 368px; left: 186px; font-size: 1.3rem; background-color: #f2fe8a; ">
              <option value="none">==지역 선택==</option>
              <option value="seoul">서울</option>
              <option value="busan">부산</option>

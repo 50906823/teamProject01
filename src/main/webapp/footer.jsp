@@ -19,7 +19,7 @@ text-align: center;
 font-size : 1rem;
 font-weight : bold;
 position: absolute;
-bottom: 5px;
+bottom: 5px; 
 padding-bottom : 0;
 left:450px;
 }
