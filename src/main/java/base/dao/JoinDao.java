@@ -74,7 +74,7 @@ public class JoinDao {
 
         try {
             conn = DBConnectionManager.getConnection();
-            String sql = "SELECT * FROM USERS"; // 사용자 테이블 이름에 맞게 변경하세요.
+            String sql = "SELECT * FROM USERS ORDER BY userId"; // 사용자 테이블 이름에 맞게 변경하세요.
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
 

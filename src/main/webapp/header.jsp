@@ -17,13 +17,7 @@
   justify-content: center;
   align-items: center;
 }
-.logo { 
-	color: #7BB661;
-	font-size: 2rem;
-	font-weight: bold;
-	text-decoration: none;
-	margin: 0px 30px;
-	}
+
 .box-search {
   width: 500px; height: 50px;
   border: 1px solid black; border-radius: 5px;
@@ -57,11 +51,52 @@
 #searchBtn:hover {
   background-color: #7BB661;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #FFFFFF;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: baseline;
+    font-weight: bold;
+}
+
+.nav-item { 
+    margin-right: 0rem;
+}
+
+.nav-item:last-child {
+    margin-right: 0rem;
+}
 </style>
 </head>
 <body>
+    <%
+        String userID = null;
+        String userName = null;
+        String kakaoNickname = null;
+        String naverNickname = null;
+
+        if (session.getAttribute("userID") != null) {
+            userID = (String) session.getAttribute("userID");
+            userName = (String) session.getAttribute("userName");
+        }
+        if (session.getAttribute("kakaoNickname") != null) {
+            kakaoNickname = (String) session.getAttribute("kakaoNickname");
+        }
+        if (session.getAttribute("naverNickname") != null) {
+            naverNickname = (String) session.getAttribute("naverNickname");
+        }
+
+        String welcomeName = userID != null ? userID : kakaoNickname != null ? kakaoNickname : naverNickname;
+    %>
 	<div id="header">
-		<a href="main.jsp" class="logo">놀러가조</a>
+		<a class="nav-link" href="main.jsp" style="color: black"><img src="놀러가조_로고.png" alt="Logo" style="height: 40px; width: 150px;">
+        </a>
 		
 		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px;">
 			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">
@@ -89,7 +124,35 @@
 			</div>
 			<button id="searchBtn" type="button" style="margin-left: 10px;">검색</button>
 	    </form>
-	    <%@ include file="loginInfo.jsp" %>
+		<ul class="nav">
+			<div class="nav-right">
+				<%
+				if (welcomeName == null) {
+				%>
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="login.jsp" style="color: black">로그인</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="registerTerms.jsp" style="color: black">회원가입</a></li>
+				<%
+				} else {
+				%>
+				<li class="nav-item"><span><%=welcomeName%>님 환영합니다! </span></li>
+				<%
+				if (welcomeName.equals("admin")) {
+				%>
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="adminMembers.jsp" style="color: black">회원관리</a></li>
+				<%
+				}
+				%>
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" onclick="kakaoLogout()" href="logoutAction.jsp"
+					style="color: black">로그아웃</a></li>
+				<%
+				}
+				%>
+			</div>
+		</ul>
 	</div>
 	
 	<script>

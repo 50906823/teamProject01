@@ -216,7 +216,7 @@
 					<th style="position: sticky; top: 0; background-color: #f1f1f1;">연락처</th>
 				</tr>
 			</thead>
-			<tbody style="overflow-y: auto;">
+			<tbody style="overflow-y: auto; cursor: pointer;">
 		<%
 			/* 페이지네이션 */
 			int currentPage = 1; //현재 페이지 번호. 초기값 1
