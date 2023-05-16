@@ -29,7 +29,7 @@
 	    SearchDto searchDto = searchDao.selectSearchInfoByName(area, name);
   	%>
   	
-	<div class="container" style="width: 800px">
+	<div class="container" style="width: 950px; height: 780px; overflow: auto;">
 		<br>
 		<h2><%= name %> 상세 정보</h2>
 		<br>

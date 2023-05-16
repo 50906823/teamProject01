@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    background-color: #FFFFFF;
 }
 
 .nav-left, .nav-right {
@@ -71,7 +72,7 @@
         <li class="nav-item"><span><%= welcomeName %>님 환영합니다! </span></li>
         <% if (welcomeName.equals("admin")) { %>
         <li class="nav-item"><a class="nav-link active"
-            aria-current="page" href="adminMembers.jsp" style="color: black"> 회원관리</a></li>
+            aria-current="page" href="adminMembers.jsp" style="color: black">회원관리</a></li>
         <% } %>
         <li class="nav-item"><a class="nav-link active"
             aria-current="page" onclick="kakaoLogout()" href="logoutAction.jsp"
