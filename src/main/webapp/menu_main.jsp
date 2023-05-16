@@ -12,7 +12,8 @@
 	position: absolute;
 	bottom : 300px;
 	left: 355px;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
+	font-weight: bolder;
 }
 </style>
 </head>
@@ -21,21 +22,27 @@
 		<li class="nav-item">
 			<a class="nav-link active" aria-current="page" href="main.jsp" style="color: black">이달의여행</a>
 		</li>
+		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
 			<a class="nav-link" href="main.jsp" style="color: black">지역</a>
 		</li>
+		<li class="nav-item" style="color: black">|</li>		
 		<li class="nav-item">
 			<a class="nav-link" href="main.jsp" style="color: black">인기</a>
 		</li>
+		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
 			<a class="nav-link" href="main.jsp" style="color: black">코스</a>
 		</li>
+		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
 			<a class="nav-link" href="main.jsp" style="color: black">축제</a>
 		</li>
+		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
 			<a class="nav-link" href="main.jsp" style="color: black">당일치기</a>
 		</li>
+		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
 			<a class="nav-link" href="addArea.jsp" style="color: black">장소제보</a>
 		</li>

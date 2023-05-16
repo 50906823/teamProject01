@@ -10,7 +10,19 @@
 <meta charset="UTF-8">
 <title>상세 검색 페이지</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'KyoboHand';
+
+ }
 
 .mainContainer {
    height: 913px;
