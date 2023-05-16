@@ -61,7 +61,7 @@
 </head>
 <body>
 	<div id="header">
-		<a href="main.jsp" class="logo">놀러가조</a>
+		<a href="main.jsp" class="logo"><img src="놀러가조_로고.png" style=" width: 200px; height: 53px;"> </a>
 		
 		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px;">
 			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">

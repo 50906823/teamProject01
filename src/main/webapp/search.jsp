@@ -100,6 +100,8 @@
 		cityId = "1842616";
 	} else if (area.equals("jeju")) {
 		cityId = "1846266";
+	} else if (area.equals("chungnam")) {
+		cityId = "1845759";
 	} else {
 		out.println("<script>alert('날씨 서비스가 제공되지 않는 지역입니다.');</script>");
 	}
