@@ -11,29 +11,9 @@
 <title>상세 검색 페이지</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 .searchList {
 	width: 100%; height: 590px;
 	overflow-y : scroll;
-}
-
-.paging {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.paging a {
-  display: inline-block;
-  padding: 8px 12px;
-  margin: 0 5px;
-  border-radius: 5px;
-  background-color: #e0e0e0;
-  color: #333;
-  text-decoration: none;
-}
-.paging a.active {
-  background-color: #333;
-  color: #fff;
 }
 </style>
 </head>
@@ -41,7 +21,7 @@
     
 	<%@ include file = "header.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
-	<div class="container" style="width: 1300px">
+	<div class="container" style="width: 1200px">
 	<%
 	request.setCharacterEncoding("UTF-8");
 
@@ -93,12 +73,12 @@
 							var $minTemp = data.list[0].main.temp_min;
 							var $maxTemp = data.list[0].main.temp_max;
 							var $cTemp = data.list[0].main.temp;
-							var $cDate = data.list[0].dt_txt;
+							// var $cDate = data.list[0].dt_txt;
 
 							$('.clowtemp').append($minTemp);
 							$('.ctemp').append($cTemp);
 							$('.chightemp').append($maxTemp);
-							$('h2').prepend($cDate);
+							// $('h2').prepend($cDate);
 						});
 	</script>
 	<!-- E -->
@@ -144,28 +124,12 @@
 			areaString = "지역선택";
 		}
 		/* if(검색어 입력X(지역만 검색시)){출력 내용}else{출력 내용} */
-		/* 페이지네이션 때문에 페이지 버튼을 누를 때, 첫 화면과 제목이 다르게 출력됨. */
-/* 		if (search == "") {
+		if (search == "") {
 			out.println("<h3>지역: \"" + areaString + "\" 검색 결과</h3>");
 		} else {
 			out.println("<h3>지역: \"" + areaString + "\", 검색어: \"" + search + "\" 검색 결과</h3>");
-		} */
-		
-		/* 출력하고자 하는 제목을 searchTitle에 저장하고 searchTitle을 출력하기 */
-/* 		String searchTitle = "";
-		if (search == null || search.isEmpty()) {
-			searchTitle = "지역: \"" + areaString + "\" 검색 결과";
-	    } else {
-	    	searchTitle = "지역: \"" + areaString + "\", 검색어: \"" + search + "\" 검색 결과";
-	    } */
-		String searchTitle = "지역: \"" + areaString + "\"";
-		if (search != null && !search.isEmpty()) {
-			searchTitle += ", 검색어: \"" + search + "\"";
 		}
-		searchTitle += " 검색 결과";
-		
 	%>
-	<h3><%= searchTitle %></h3>
 	
 	<!-- 날씨 S -->
 	<!-- <div class="row justify-content-center">
@@ -192,54 +156,23 @@
 	<div class="chightemp">최고 온도: </div>
 	<!-- 날씨 E -->
 	
-	<div class="searchList">
-		<table class="table">
-			<thead>
-				<tr>
-					<th>명칭</th>
-					<th>주소</th>
-					<th>연락처</th>
-				</tr>
-			</thead>
-			<tbody>
-		<%
-			/* 페이지네이션 */
-			int currentPage = 1; //현재 페이지 번호. 초기값 1
-		    int itemsPerPage = 10; //한 페이지에 표시할 아이템(리스트) 수
-		    int totalItems = searchInfoList.size(); //아이템의 총 수
-		    int totalPages = (int) Math.ceil((double) totalItems / itemsPerPage); //총 페이지 수
-		    				//전체 아이템 수와 페이지당 아이템 수를 나눈 뒤, Math.ceil()로 나머지 올림 처리
-	
-		    /* 현재 페이지 정보를 가져오기 */
-		    String pageParam = request.getParameter("page");
-		    if (pageParam != null && !pageParam.isEmpty()) {
-		        currentPage = Integer.parseInt(pageParam);
-		        if (currentPage < 1) {
-		            currentPage = 1;
-		        } else if (currentPage > totalPages) {
-		            currentPage = totalPages;
-		        }
-		    }
-
-		    /* 현재 페이지에 표시할 아이템의 범위 계산
-		       현재 페이지 번호와 페이지당 아이템 수를 사용하여 시작 및 끝 인덱스 계산 */
-		    int startIndex = (currentPage - 1) * itemsPerPage;
-		    int endIndex = Math.min(startIndex + itemsPerPage, totalItems);
-	
-		    /* 현재 페이지의 아이템 리스트 가져오기 */
-		    List<SearchDto> currentPageItems = searchInfoList.subList(startIndex, endIndex);
-			
-			int startItem = (currentPage - 1) * itemsPerPage;
-	        int endItem = Math.min(startItem + itemsPerPage, searchInfoList.size());
-	
-			/* searchDao.selectSearchInfoList(area, search) 출력 */
-			for(int i = startItem; i < endItem; i++) { 
-	        SearchDto item = searchInfoList.get(i);
-		%>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>명칭</th>
+				<th>주소</th>
+				<th>연락처</th>
+			</tr>
+		</thead>
+		<tbody>
+	<%
+		/* searchDao.selectSearchInfoList(area, search) 출력 */
+		for(SearchDto item : searchInfoList){	
+	%>
 			<tr>
 				<!-- main에서 받은 값(area, name) detail.jsp에도 보내기, URLEncoder (임포트 필요) → [, ] 문자 URL인코딩 / 아스키 코드 -->
 				<td><a href="detail.jsp?area=<%=area%>&name=<%=URLEncoder.encode(item.getName(), "UTF-8")%>"><%=item.getName()%></a></td>
-					
+				
 				<!-- 값이 null인 부분은 '-' 출력 -->
 				<% if(item.getAddress() != null) { %>
 					<td><%=item.getAddress()%></td>
@@ -253,50 +186,11 @@
 					<td>-</td>
 				<% } %>
 			</tr>
-		<%
+			<%
 			}
-		%>
-			</tbody>
-		</table>
-	</div>
-	
-	<div class="paging">
-	    <% if (currentPage > 1) { %>
-	    	<!-- 첫 페이지로 이동 -->
-	    	<a href="?area=<%= area %>&search=<%= search %>&page=1">&lt;&lt;</a>
-	    	<!-- 이전 페이지로 이동 -->
-	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= currentPage - 1 %>">&lt;</a>
-	    <% } %>
-	
-	    <% 
-	   	   int startPage = Math.max(currentPage - 2, 1); //시작 페이지 계산
-	       int endPage = Math.min(startPage + 4, totalPages); //종료 페이지 계산
-	       
-	       /* endPage와 startPage 사이의 차이가 4보다 작으면
-	       	  페이지 버튼이 5개로 고정되도록 시작 페이지를 재조정 */
-	       if (endPage - startPage < 4) {
-	           startPage = Math.max(endPage - 4, 1);
-	       }
-	       
-	       int fixedPageBtn = 5 - (endPage - startPage + 1); //고정 버튼 개수와 실제 출력 버튼 개수 차이 계산
-	       startPage = Math.max(startPage - fixedPageBtn, 1); //시작 페이지 조정
-	       
-	       /* startPage부터 endPage까지 페이지 버튼 출력 */
-	       for (int i = startPage; i <= endPage; i++) { %>
-	        <% if (i == currentPage) { %>
-	        	<!-- 현재 페이지인 버튼 active 효과 -->
-	            <a href="?area=<%= area %>&search=<%= search %>&page=<%= i %>" class="active"><%= i %></a>
-	        <% } else { %>
-	            <a href="?area=<%= area %>&search=<%= search %>&page=<%= i %>"><%= i %></a>
-	        <% } %>
-	    <% } %>
-	
-	    <% if (currentPage < totalPages) { %>
-	        <!-- 다음 페이지로 이동 -->
-	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= currentPage + 1 %>">&gt;</a>
-			<!-- 마지막 페이지로 이동 -->
-	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= totalPages %>">&gt;&gt;</a>
-	    <% } %>
+			%>
+		</tbody>
+	</table>
 	</div>
 </div>
 </body>

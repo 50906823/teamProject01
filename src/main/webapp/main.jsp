@@ -11,15 +11,32 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { 
+	margin: 0; padding: 0; box-sizing: border-box; 
 
-.container {
-   width: 100%;
-   height: 1000px;
-/*    background-size: cover;
-   background-image: url('메인배경_1.png'); */
 }
 
+.mainContainer {
+  
+   height: 913px;
+   background-size: cover;
+   background-image: url('메인배경_1.png');
+	 margin-left: 0;
+    margin-right: 0;
+}
+.searchFlex{
+	width: 100%;
+	height: 100%;
+
+}
+.mainlogo{
+	width: 650px;
+	height: 500px;
+	background-size: cover;
+	position: absolute;
+	bottom : 350px;
+	z-idnex:5;
+}
 p {
   color: #7BB661;
   font-size: 3rem;
@@ -27,14 +44,19 @@ p {
   padding: 1rem;
   text-align: center;
 }
+.fLeft {
 
+}
 .box-search {
-  width: 500px; height: 50px;
+  width: 600px; height: 50px;
   border: 1px solid black; border-radius: 5px;
   margin: 0px 10px;
-  display: flex;
+  position: absolute;
+  left: 30%;
+  bottom: 365px;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 25;
 }
 .input-search {
   width: 400px; height: 80%;
@@ -61,22 +83,21 @@ p {
 #searchBtn:hover {
   background-color: #7BB661;
 }
-.logo{
-	width: 400px;
-	height: 200px;
-	background-size: cover;
-}
+
 </style>
 </head>
 <body>
-   <%@ include file = "navBar.jsp" %>
+  
    
-
-   <div class="container">
-   <div class="logo"><a href="main.jsp"><img src="메인로고.png"></a></div>
+	
+   <div class="mainContainer" style=" width: 1280px;">
+	 <%@ include file = "navBar.jsp" %>
+   <div class="searchFlex" style="display: flex; align-items: center;">
+		
 
       <!-- 검색form -->
-      <form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px; margin: 0 auto;">
+      <form id="searchForm" action="search.jsp" method="post" style=" width: 900px; margin: 0 auto;">
+				<div class="fLeft" style="width: 170px; height: 100%; display: inline-flex;">
          <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">
              <option value="none">==지역 선택==</option>
              <option value="seoul">서울</option>
@@ -96,13 +117,17 @@ p {
              <option value="jeonbuk">전북</option>
              <option value="jeonnam">전남</option>
              <option value="jeju">제주</option>
-         </select> 
+         </select></div>
+				 <a href="main.jsp"><img class="mainlogo" src="메인_곰돌이02.png" ></a>
          <div class="box-search" style="flex: 1;">
             <input class="input-search" type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요.">
          </div>
          <button id="searchBtn" type="button" style="margin-left: 10px;">검색</button>
+			 <%@ include file = "menuBar.jsp" %> 
+         
        </form>
-			 <%@ include file = "menuBar.jsp" %>
+       
+			</div>
    </div>
 
 
