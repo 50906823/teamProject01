@@ -66,13 +66,13 @@
         <% if (welcomeName == null) { %>
         <li class="nav-item"><a class="nav-link active"
             aria-current="page" href="login.jsp" style="color: black">로그인</a></li>
-        <li class="nav-item"><a class="nav-link" href="join.jsp"
+        <li class="nav-item"><a class="nav-link" href="registerTerms.jsp"
             style="color: black">회원가입</a></li>
         <% } else { %>
         <li class="nav-item"><span><%= welcomeName %>님 환영합니다! </span></li>
         <% if (welcomeName.equals("admin")) { %>
         <li class="nav-item"><a class="nav-link active"
-            aria-current="page" href="adminMembers.jsp" style="color: black"> 회원관리</a></li>
+            aria-current="page" href="adminMembers.jsp" style="color: black">회원관리</a></li>
         <% } %>
         <li class="nav-item"><a class="nav-link active"
             aria-current="page" onclick="kakaoLogout()" href="logoutAction.jsp"
