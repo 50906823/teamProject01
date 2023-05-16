@@ -24,11 +24,7 @@
 	 margin-left: 0;
     margin-right: 0;
 }
-.searchFlex{
-	width: 100%;
-	height: 100%;
 
-}
 .mainlogo{
 	width: 650px;
 	height: 500px;
@@ -44,15 +40,13 @@ p {
   padding: 1rem;
   text-align: center;
 }
-.fLeft {
 
-}
 .box-search {
   width: 600px; height: 50px;
   border: 1px solid black; border-radius: 5px;
   margin: 0px 10px;
   position: absolute;
-  left: 30%;
+  left: 375px;
   bottom: 365px;
   justify-content: space-evenly;
   align-items: center;
@@ -79,6 +73,9 @@ p {
   font-weight: bolder;
   padding: 10px;
   cursor: pointer;
+  position: absolute;
+  left: 1005px;
+  bottom: 370px;
 }
 #searchBtn:hover {
   background-color: #7BB661;
@@ -92,13 +89,13 @@ p {
 	
    <div class="mainContainer" style=" width: 1280px;">
 	 <%@ include file = "navBar.jsp" %>
-   <div class="searchFlex" style="display: flex; align-items: center;">
+   
 		
 
       <!-- 검색form -->
       <form id="searchForm" action="search.jsp" method="post" style=" width: 900px; margin: 0 auto;">
 				<div class="fLeft" style="width: 170px; height: 100%; display: inline-flex;">
-         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px;">
+         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px; position: absolute; bottom: 370px; ">
              <option value="none">==지역 선택==</option>
              <option value="seoul">서울</option>
              <option value="busan">부산</option>
@@ -127,7 +124,7 @@ p {
          
        </form>
        
-			</div>
+			
    </div>
 
 
