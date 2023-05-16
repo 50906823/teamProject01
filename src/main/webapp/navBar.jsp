@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    background-color: #FFFFFF;
 }
 
 .nav-left, .nav-right {

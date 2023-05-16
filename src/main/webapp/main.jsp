@@ -13,11 +13,10 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-.container {
-   width: 100%;
-   height: 1000px;
-/*    background-size: cover;
-   background-image: url('메인배경_1.png'); */
+.mainContainer {
+   height: 913px;
+   background-size: cover;
+   background-image: url('메인배경_1.png');
 }
 
 p {
@@ -69,11 +68,11 @@ p {
 </style>
 </head>
 <body>
-   <%@ include file = "navBar.jsp" %>
+   <div class="mainContainer" style="width: 1280px">
    
+   <%@ include file = "navBar.jsp" %>
 
-   <div class="container">
-   <div class="logo"><a href="main.jsp"><img src="메인로고.png"></a></div>
+   <!-- <div class="logo"><a href="main.jsp"><img src="메인로고.png"></a></div> -->
 
       <!-- 검색form -->
       <form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px; margin: 0 auto;">

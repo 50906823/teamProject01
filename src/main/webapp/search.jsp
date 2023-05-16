@@ -12,12 +12,31 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+.mainContainer {
+   height: 913px;
+   background-size: cover;
+   background-image: url('메인배경_1.png');
+   position: relative;
+}
+.subContainer {
+	width: 1200px; height: 785px;
+	padding: 10px;
+	border-radius: 5px;
+	position: absolute;
+    top: 120px;
+    left: 40px;
+    background-color: #ffffff60; /* 불투명한 배경 색상 */
+    z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
+} 
+
 .searchList {
-	width: 100%; height: 590px;
-	overflow-y : scroll;
+	width: 100%; height: 620px;
+	overflow: auto;
 }
 
 .paging {
+  width: 100%;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -27,21 +46,25 @@
   padding: 8px 12px;
   margin: 0 5px;
   border-radius: 5px;
-  background-color: #e0e0e0;
+  background-color: #ffffffa1;
   color: #333;
   text-decoration: none;
 }
 .paging a.active {
-  background-color: #333;
+  background-color: #00000098;
   color: #fff;
 }
 </style>
 </head>
 <body>
+    <div class="mainContainer" style="width: 1280px">
     
 	<%@ include file = "header.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
-	<div class="container" style="width: 1300px">
+	
+    <div class="subContainer">
+    
+	<div class="container" style="width: 100%">
 	<%
 	request.setCharacterEncoding("UTF-8");
 
@@ -78,7 +101,7 @@
 	} else if (area.equals("jeju")) {
 		cityId = "1846266";
 	} else {
-		out.println("<script>alert('잘못된 입력입니다.');</script>");
+		out.println("<script>alert('날씨 서비스가 제공되지 않는 지역입니다.');</script>");
 	}
 	// api호출주소 구성하기 위해 cityId값 활용
 	String apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId
@@ -184,28 +207,36 @@
 		</div>
 </div> -->
 
-	<h2>
+<%-- 	<h2>
 		-<%=areaString%> 현재 날씨
-	</h2>
-	<div class="ctemp">현재 온도: </div>
-	<div class="clowtemp">최저 온도: </div>
-	<div class="chightemp">최고 온도: </div>
+	</h2> --%>
+<!-- 	<div class="ctemp">현재 온도: </div>
+	<div class="clowtemp">최저: </div>
+	<div class="chightemp">최고: </div> -->
+	<span class="ctemp">현재 </span><span>℃</span><br>
+	<span class="clowtemp">최저 </span><span class="chightemp">℃ / 최고</span><span>℃</span>
 	<!-- 날씨 E -->
 	
+	
 	<div class="searchList">
-		<table class="table">
-			<thead>
+		<table class="table table-hover">
+				<colgroup style="background-color: #ffffffa1">
+					<col style="width: 30%;">
+					<col style="width: 40%;">
+					<col style="width: 30%;">
+				</colgroup>
+				<thead>
 				<tr>
-					<th>명칭</th>
-					<th>주소</th>
-					<th>연락처</th>
+					<th style="position: sticky; top: 0; background-color: #f1f1f1;">명칭</th>
+					<th style="position: sticky; top: 0; background-color: #f1f1f1;">주소</th>
+					<th style="position: sticky; top: 0; background-color: #f1f1f1;">연락처</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody style="overflow-y: auto;">
 		<%
 			/* 페이지네이션 */
 			int currentPage = 1; //현재 페이지 번호. 초기값 1
-		    int itemsPerPage = 10; //한 페이지에 표시할 아이템(리스트) 수
+		    int itemsPerPage = 12; //한 페이지에 표시할 아이템(리스트) 수
 		    int totalItems = searchInfoList.size(); //아이템의 총 수
 		    int totalPages = (int) Math.ceil((double) totalItems / itemsPerPage); //총 페이지 수
 		    				//전체 아이템 수와 페이지당 아이템 수를 나눈 뒤, Math.ceil()로 나머지 올림 처리
@@ -236,9 +267,9 @@
 			for(int i = startItem; i < endItem; i++) { 
 	        SearchDto item = searchInfoList.get(i);
 		%>
-			<tr>
+			<tr onclick="location.href='detail.jsp?area=<%=area%>&name=<%=URLEncoder.encode(item.getName(), "UTF-8")%>'">
 				<!-- main에서 받은 값(area, name) detail.jsp에도 보내기, URLEncoder (임포트 필요) → [, ] 문자 URL인코딩 / 아스키 코드 -->
-				<td><a href="detail.jsp?area=<%=area%>&name=<%=URLEncoder.encode(item.getName(), "UTF-8")%>"><%=item.getName()%></a></td>
+				<td><%=item.getName()%></td>
 					
 				<!-- 값이 null인 부분은 '-' 출력 -->
 				<% if(item.getAddress() != null) { %>
@@ -263,9 +294,9 @@
 	<div class="paging">
 	    <% if (currentPage > 1) { %>
 	    	<!-- 첫 페이지로 이동 -->
-	    	<a href="?area=<%= area %>&search=<%= search %>&page=1">&lt;&lt;</a>
+	    	<a href="?area=<%= area %>&search=<%= search %>&page=1" style="width: 40px; height: 40px; text-align: center;">≪</a>
 	    	<!-- 이전 페이지로 이동 -->
-	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= currentPage - 1 %>">&lt;</a>
+	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= currentPage - 1 %>" style="width: 40px; height: 40px; text-align: center;">&lt;</a>
 	    <% } %>
 	
 	    <% 
@@ -285,19 +316,30 @@
 	       for (int i = startPage; i <= endPage; i++) { %>
 	        <% if (i == currentPage) { %>
 	        	<!-- 현재 페이지인 버튼 active 효과 -->
-	            <a href="?area=<%= area %>&search=<%= search %>&page=<%= i %>" class="active"><%= i %></a>
+	            <a href="?area=<%= area %>&search=<%= search %>&page=<%= i %>" class="active" style="width: 40px; height: 40px; text-align: center;"><%= i %></a>
 	        <% } else { %>
-	            <a href="?area=<%= area %>&search=<%= search %>&page=<%= i %>"><%= i %></a>
+	            <a href="?area=<%= area %>&search=<%= search %>&page=<%= i %>" style="width: 40px; height: 40px; text-align: center;"><%= i %></a>
 	        <% } %>
 	    <% } %>
 	
 	    <% if (currentPage < totalPages) { %>
 	        <!-- 다음 페이지로 이동 -->
-	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= currentPage + 1 %>">&gt;</a>
+	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= currentPage + 1 %>" style="width: 40px; height: 40px; text-align: center;">&gt;</a>
 			<!-- 마지막 페이지로 이동 -->
-	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= totalPages %>">&gt;&gt;</a>
+	        <a href="?area=<%= area %>&search=<%= search %>&page=<%= totalPages %>" style="width: 40px; height: 40px; text-align: center;">≫</a>
 	    <% } %>
 	</div>
 </div>
+</div>
+</div>
+
+<script>
+	function rowClickHandler(row, area, name) {
+	  // 클릭한 행의 정보를 사용하여 원하는 동작을 수행합니다.
+	  // 예: 특정 페이지로 이동하거나 행에 대한 상세 정보를 표시하는 등의 작업을 수행할 수 있습니다.
+	  var detailURL = 'detail.jsp?area=' + area + '&name=' + encodeURIComponent(name);
+	  window.location.href = detailURL;  // 페이지 이동 예시
+	}
+</script>
 </body>
 </html>

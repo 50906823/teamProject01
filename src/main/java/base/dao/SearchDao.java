@@ -63,7 +63,8 @@ public class SearchDao {
 				tableArea = "team_jeju_01";
 			}
 			
-			String sql = "SELECT * FROM "+ tableArea + " WHERE name LIKE '%' || ? || '%'";
+			String sql = "SELECT * FROM "+ tableArea + " WHERE name LIKE '%' || ? || '%'"
+					+ " ORDER BY name";
 
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, search);
