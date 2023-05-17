@@ -135,7 +135,7 @@
 				<%
 				} else {
 				%>
-				<li class="nav-item"><span><%=welcomeName%>님 환영합니다! </span></li>
+				<li class="nav-item"><span> <%=welcomeName%>님 환영합니다! </span></li>
 				<%
 				if (welcomeName.equals("admin")) {
 				%>

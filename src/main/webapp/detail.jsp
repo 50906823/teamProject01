@@ -9,6 +9,9 @@
 <meta charset="UTF-8">
 <title>단일 상세 페이지</title>
 <style>
+* { margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'KyoboHand';
+ }
 
 @font-face {
     font-family: 'KyoboHand';
@@ -17,10 +20,6 @@
     font-style: normal;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box;
-    font-family: 'KyoboHand';
- }
-
 .mainContainer {
    height: 913px;
    background-size: cover;
@@ -28,7 +27,7 @@
    position: relative;
 }
 .subContainer {
-	width: 1025px; height: 785px;
+	width: 1025px; height: 755px;
 	padding: 10px;
 	border-radius: 5px;
 	position: absolute;
@@ -38,6 +37,11 @@
     background-color: #ffffff85; /* 불투명한 배경 색상 */
     z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
 }
+
+h2 {
+	
+}
+
 .infoContainer {
 	font-size: 1.1rem;
 	margin-right: 30px;
@@ -80,7 +84,7 @@
 	    SearchDto searchDto = searchDao.selectSearchInfoByName(area, name);
   	%>
   	
-	<div class="container" style="width: 950px; height: 765px; overflow: auto;">
+	<div class="container" style="width: 950px; height: 735px; overflow: auto;">
 		<h2><%= name %> 상세 정보</h2>
 		<br>
 		<div class="infoContainer">
@@ -161,6 +165,7 @@
 		</div>
 	</div>
 </div>	
+<%@ include file = "footer.jsp" %> 
 </div>
 </body>
 </html>

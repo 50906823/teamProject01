@@ -10,6 +10,9 @@
 <meta charset="UTF-8">
 <title>상세 검색 페이지</title>
 <style>
+* { margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'KyoboHand';
+ }
 
 @font-face {
     font-family: 'KyoboHand';
@@ -18,10 +21,6 @@
     font-style: normal;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box;
-    font-family: 'KyoboHand';
- }
-
 .mainContainer {
    height: 913px;
    background-size: cover;
@@ -29,24 +28,28 @@
    position: relative;
 }
 .subContainer {
-	width: 1200px; height: 785px;
+	width: 1200px; height: 755px;
 	padding: 10px;
 	border-radius: 5px;
 	position: absolute;
     top: 120px;
-    left: 40px;
+    left: 50%;
+    transform: translate(-50%);
     background-color: #ffffff60; /* 불투명한 배경 색상 */
     z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
-    display: flex;
-    justify-content: center;
 } 
 
 .weatherContainer {
+	font-size: 1.1rem;
 	margin-bottom: 5px;
+}
+.weatherContainer > span {
+	background-color: #ffffff00;
+	padding: 0;
 }
 
 .searchList {
-	width: 100%; height: 585px;
+	width: 100%; height: 580px;
 	font-size: 1.1rem;
 	overflow: auto;
 }
@@ -327,8 +330,8 @@
 	    <% } %>
 	</div>
 </div>
-<%@ include file = "footer.jsp" %> 
 </div>
+<%@ include file = "footer.jsp" %> 
 </div>
 
 <script>

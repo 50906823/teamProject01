@@ -10,8 +10,8 @@
 
 .menu {
 	background-color: #FFFFFF00;
-	
-	font-weight: bold;
+	font-size: 1.3rem;
+/*  	font-weight: bold; */
 	
 }
 </style>
