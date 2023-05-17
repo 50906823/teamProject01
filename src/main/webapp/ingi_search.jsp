@@ -130,7 +130,7 @@ border: 1px solid black;
 
 </head>
 <body>
-<div class = "blank" style= "width: 100%; height: 470px; border: 1px solid black;"></div>
+<div class = "blank" style= "width: 100%; height: 470px; "></div>
 			<ul id="best_search">
 				<li><p>인기검색어</p></li>
 				<li>
