@@ -81,7 +81,7 @@
         <li class="nav-item"><a class="nav-link" href="registerTerms.jsp"
             style="color: black">회원가입</a></li>
         <% } else { %>
-        <li class="nav-item"><span><%= welcomeName %>님 환영합니다! </span></li>
+        <li class="nav-item"><span><%= welcomeName %>님 환영합니다!</span></li>
         <% if (welcomeName.equals("admin")) { %>
         <li class="nav-item"><a class="nav-link active"
             aria-current="page" href="adminMembers.jsp" style="color: black">회원관리</a></li>
