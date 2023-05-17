@@ -39,6 +39,7 @@
    background-image: url('메인배경_1.png');
 	 margin-left: 0;
     margin-right: 0;
+  
 }
 
 .mainlogo{
@@ -147,7 +148,7 @@ p {
          <button id="searchBtn" type="button" style="margin-left: 11px;">검 색</button>
          
        </form>
-        <%@ include file = "ingi_search.jsp" %> 
+       <%@ include file = "ingi_search.jsp" %> 
 			 <%@ include file = "menu_main.jsp" %> 
           <%@ include file = "footer.jsp" %> 
    </div>
