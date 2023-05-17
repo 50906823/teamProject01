@@ -18,10 +18,8 @@
     font-style: normal;
 }
 
-
 * { margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'KyoboHand';
-
  }
 
 .mainContainer {
@@ -39,11 +37,31 @@
     left: 40px;
     background-color: #ffffff60; /* 불투명한 배경 색상 */
     z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
+    display: flex;
+    justify-content: center;
 } 
 
+.weatherContainer {
+	margin-bottom: 5px;
+}
+
 .searchList {
-	width: 100%; height: 620px;
+	width: 100%; height: 585px;
+	font-size: 1.1rem;
 	overflow: auto;
+}
+/* 스크롤바 커스텀 */
+.searchList::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+.searchList::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #00000098; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+/* 스크롤바 뒷 배경 색상 */
+.container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
 }
 
 .paging {
@@ -189,31 +207,11 @@
 	%>
 	
 	<!-- 날씨 S -->
-	<!-- <div class="row justify-content-center">
-		<div class="col-12 col-md-6">
-			<div class="card my-4">
-				<div class="card-header">현재 날씨 정보</div>
-				<div class="card-body">
-					<div class="d-flex justify-content-center align-items-center" id="current-weather">
-						<div class="ctemp">현재 온도 :</div><br>
-	<div class="clowtemp">최저 온도 :</div>
-	<div class="chightemp">최고 온도 :</div>
-	<div class="cicon">아이콘 :</div>
-					</div>
-				</div>
-			</div>
-		</div>
-</div> -->
-
-<%-- 	<h2>
-		-<%=areaString%> 현재 날씨
-	</h2> --%>
-<!-- 	<div class="ctemp">현재 온도: </div>
-	<div class="clowtemp">최저: </div>
-	<div class="chightemp">최고: </div> -->
-	<span style="font-weight: bold;">날씨정보</span><br>
-	<span class="ctemp">현재 </span><span>℃ | </span>
-	<span class="clowtemp">최저 </span><span class="chightemp">℃ | 최고</span><span>℃</span>
+	<div class="weatherContainer">
+		<span style="font-size:1.3rem; font-weight: bold;">날씨정보</span><br>
+		<span class="ctemp">현재 </span><span>℃ | </span>
+		<span class="clowtemp">최저 </span><span class="chightemp">℃ | 최고</span><span>℃</span>
+	</div>
 	<!-- 날씨 E -->
 	
 	
@@ -231,7 +229,7 @@
 					<th style="position: sticky; top: 0; background-color: #f1f1f1;">연락처</th>
 				</tr>
 			</thead>
-			<tbody style="overflow-y: auto; cursor: pointer;">
+			<tbody style="border-color: lightgray; vertical-align: middle; overflow-y: auto; cursor: pointer;">
 		<%
 			/* 페이지네이션 */
 			int currentPage = 1; //현재 페이지 번호. 초기값 1
@@ -329,6 +327,7 @@
 	    <% } %>
 	</div>
 </div>
+<%@ include file = "footer.jsp" %> 
 </div>
 </div>
 
