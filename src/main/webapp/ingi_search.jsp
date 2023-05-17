@@ -75,7 +75,7 @@ button {
 	font-size:19px;
 	font-weight:bold;
 	margin:0px;
-	padding-right:30px;
+	font-size: 1.3rem;
 	font-weight: bold;
 	color: red;
 	
@@ -135,7 +135,7 @@ border: 1px solid black;
 				<li><p>인기검색어</p></li>
 				<li>
 					<dl class="time1" style="display:">
-						<dd><a class="t" href="#"><div class="num">1</div>정용진</a></dd>
+						<dd><a class="t" href="#" style="background-color: #fb96ad; font-size: 1.3rem;"><div class="num">1</div>정용진</a></dd>
 						<dd><a class="t" href="#"><div class="num">2</div>글램핑</a></dd>
 						<dd><a class="t" href="#"><div class="num">3</div>차박</a></dd>
 						<dd><a class="t" href="#"><div class="num">4</div>오토캠핑</a></dd>
