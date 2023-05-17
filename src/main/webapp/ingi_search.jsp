@@ -25,6 +25,7 @@ html,body {
 	margin:0px;
 	font-family: 'KyoboHand';
 	position:relative;
+	
 }
 
 a,img {
@@ -49,10 +50,11 @@ h1 > b {
 }
 
 #best_search {
-	width:740px;
+	width:900px;
 	margin:0 auto;
 	padding-top:0px;
 	text-align:center;
+	padding-left:70px;
 }
 #best_search li,dd {
 	display:inline-block;
@@ -70,14 +72,18 @@ button {
 }
 #best_search li p {
 	color:#393939;
-	font-size:17px;
+	font-size:19px;
 	font-weight:bold;
 	margin:0px;
 	padding-right:30px;
+	font-weight: bold;
+	color: red;
 	
 }
 dd {
-	margin:0px;
+height :0;
+padding-top : 1px;
+	padding-bottom: 0px;
 }
 dd  a.t{
 	cursor:pointer;
@@ -107,56 +113,61 @@ dd .num {
 	text-align:center;
 }
 .best_add {
+	
 	border:1px solid #bebebe;
 	color:#4b4b4b;
-	background-color: pink;
-	padding:0px 4px;
-	margin-left:10px;
+	  background-color: #f2fe8a;
+	padding:0px 20px 0px 20px;
+	margin-left:3px;
 }
-
+a.best_add{
+width: 51.7px;
+height: 22px;
+border: 1px solid black;
+}
 
 </style>
 
 </head>
 <body>
-<div class = "blank" style= "width: 100%; height: 500px; border: 1px solid black;"></div>
+<div class = "blank" style= "width: 100%; height: 470px; border: 1px solid black;"></div>
 			<ul id="best_search">
 				<li><p>인기검색어</p></li>
 				<li>
 					<dl class="time1" style="display:">
-						<dd><a class="t" href="#"><div class="num">1</div>자전거</a></dd>
-						<dd><a class="t" href="#"><div class="num">2</div>전동킥보드</a></dd>
-						<dd><a class="t" href="#"><div class="num">3</div>비키니</a></dd>
-						<dd><a class="t" href="#"><div class="num">4</div>모노키니</a></dd>
-						<dd><a class="t" href="#"><div class="num">5</div>원터치텐트</a></dd>
+						<dd><a class="t" href="#"><div class="num">1</div>정용진</a></dd>
+						<dd><a class="t" href="#"><div class="num">2</div>글램핑</a></dd>
+						<dd><a class="t" href="#"><div class="num">3</div>차박</a></dd>
+						<dd><a class="t" href="#"><div class="num">4</div>오토캠핑</a></dd>
+						<dd><a class="t" href="#"><div class="num">5</div>바베큐</a></dd>
 					</dl>
 					<dl class="time2" style="display:none;">
-						<dd><a class="t" href="#"><div class="num">6</div>등산화</a></dd>
-						<dd><a class="t" href="#"><div class="num">7</div>풋살화</a></dd>
-						<dd><a class="t" href="#"><div class="num">8</div>요가복</a></dd>
-						<dd><a class="t" href="#"><div class="num">9</div>텐트</a></dd>
-						<dd><a class="t" href="#"><div class="num">10</div>래쉬가드</a></dd>
+						<dd><a class="t" href="#"><div class="num">6</div>꽃구경</a></dd>
+						<dd><a class="t" href="#"><div class="num">7</div>바다</a></dd>
+						<dd><a class="t" href="#"><div class="num">8</div>수영</a></dd>
+						<dd><a class="t" href="#"><div class="num">9</div>서핑</a></dd>
+						<dd><a class="t" href="#"><div class="num">10</div>전시</a></dd>
 					</dl>
 					<dl class="time3" style="display:none;">
-						<dd><a class="t" href="#"><div class="num">11</div>수영복</a></dd>
-						<dd><a class="t" href="#"><div class="num">12</div>디스커버리반팔티</a></dd>
-						<dd><a class="t" href="#"><div class="num">13</div>축구화</a></dd>
-						<dd><a class="t" href="#"><div class="num">14</div>노스페이스바람막이</a></dd>
-						<dd><a class="t" href="#"><div class="num">15</div>전기자전거</a></dd>
+						<dd><a class="t" href="#"><div class="num">11</div>박물관</a></dd>
+						<dd><a class="t" href="#"><div class="num">12</div>동물원</a></dd>
+						<dd><a class="t" href="#"><div class="num">13</div>풀빌라</a></dd>
+						<dd><a class="t" href="#"><div class="num">14</div>애견동반</a></dd>
+						<dd><a class="t" href="#"><div class="num">15</div>키즈존</a></dd>
 					</dl>
 					<dl class="time4" style="display:none;">
-						<dd><a class="t" href="#"><div class="num">16</div>캠핑카</a></dd>
-						<dd><a class="t" href="#"><div class="num">17</div>캠핑테이블</a></dd>
-						<dd><a class="t" href="#"><div class="num">18</div>여성골프웨어</a></dd>
-						<dd><a class="t" href="#"><div class="num">19</div>여성래쉬가드</a></dd>
-						<dd><a class="t" href="#"><div class="num">20</div>캠핑의자</a></dd>
+						<dd><a class="t" href="#"><div class="num">16</div>시장</a></dd>
+						<dd><a class="t" href="#"><div class="num">17</div>볼거리</a></dd>
+						<dd><a class="t" href="#"><div class="num">18</div>호캉스</a></dd>
+						<dd><a class="t" href="#"><div class="num">19</div>자연</a></dd>
+						<dd><a class="t" href="#"><div class="num">20</div>카페</a></dd>
 					</dl>
 				</li>
 				<li>
-					<a class="best_add ad1" style="cursor:pointer" onClick="javascript:view('0')">></a>
-					<a class="best_add ad2" onClick="javascript:view('1')" style="display:none;cursor:pointer" >></a>
-					<a class="best_add ad3" onClick="javascript:view('2')" style="display:none;cursor:pointer" >></a>
-					<a class="best_add ad4" onClick="javascript:view('3')" style="display:none;cursor:pointer" ><</a>
+					<a class="best_add ad1" style="cursor:pointer;" onClick="javascript:view('0')">></a>
+					<a class="best_add ad2" onClick="javascript:view('1')" style="display:none;cursor:pointer;">></a>
+					<a class="best_add ad3" onClick="javascript:view('2')" style="display:none;cursor:pointer">></a>
+					<a class="best_add ad4" onClick="javascript:view('3')" style="display:none;cursor:pointer">></a>
 				</li>
 			</ul>
 
