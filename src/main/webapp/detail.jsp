@@ -9,12 +9,63 @@
 <meta charset="UTF-8">
 <title>단일 상세 페이지</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'KyoboHand';
+ }
+
+.mainContainer {
+   height: 913px;
+   background-size: cover;
+   background-image: url('메인배경_1.png');
+   position: relative;
+}
+.subContainer {
+	width: 1025px; height: 785px;
+	padding: 10px;
+	border-radius: 5px;
+	position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #ffffff85; /* 불투명한 배경 색상 */
+    z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
+}
+.infoContainer {
+	font-size: 1.1rem;
+	margin-right: 30px;
+}
+
+/* 스크롤바 커스텀 */
+.container::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+.container::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #00000098; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+/* 스크롤바 뒷 배경 색상 */
+.container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
 </style>
 </head>
 <body>
+	<div class="mainContainer" style="width: 1280px">
+
 	<%@ include file = "header.jsp" %>
 	<%@ include file = "menuBar.jsp" %>
+	
+	<div class="subContainer">
 	
 	<%
 		request.setCharacterEncoding("UTF-8");
@@ -29,10 +80,10 @@
 	    SearchDto searchDto = searchDao.selectSearchInfoByName(area, name);
   	%>
   	
-	<div class="container" style="width: 950px; height: 780px; overflow: auto;">
-		<br>
+	<div class="container" style="width: 950px; height: 765px; overflow: auto;">
 		<h2><%= name %> 상세 정보</h2>
 		<br>
+		<div class="infoContainer">
 		<%
 			if(searchDto != null) {
 		%>
@@ -107,6 +158,9 @@
 		<%
 			}
 		%>
+		</div>
 	</div>
+</div>	
+</div>
 </body>
 </html>
