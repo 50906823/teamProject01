@@ -136,7 +136,8 @@
 	} else if (area.equals("chungnam")) {
 		cityId = "1845759";
 	} else {
-		out.println("<script>alert('날씨 서비스가 제공되지 않는 지역입니다.');</script>");
+		/* out.println("<script>alert('날씨 서비스가 제공되지 않는 지역입니다.');</script>"); */
+		cityId = null;
 	}
 	// api호출주소 구성하기 위해 cityId값 활용
 	String apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId
@@ -210,11 +211,25 @@
 	%>
 	
 	<!-- 날씨 S -->
-	<div class="weatherContainer">
-		<span style="font-size:1.3rem; font-weight: bold;">날씨정보</span><br>
-		<span class="ctemp">현재 </span><span>℃ | </span>
-		<span class="clowtemp">최저 </span><span class="chightemp">℃ | 최고</span><span>℃</span>
-	</div>
+	
+	<%
+		if(cityId != null) {
+	%>
+		<div class="weatherContainer">
+			<span style="font-size:1.3rem; font-weight: bold;">날씨정보</span><br>
+			<span class="ctemp">현재 </span><span>℃ | </span>
+			<span class="clowtemp">최저 </span><span class="chightemp">℃ | 최고</span><span>℃</span>
+		</div>
+	<%
+		} else {
+	%>
+		<div class="weatherContainer">
+			<span style="font-size:1.3rem; font-weight: bold;">날씨정보</span><br>
+			<span>날씨 서비스가 제공되지 않는 지역입니다.</span>
+		</div>
+	<%
+		}
+	%>
 	<!-- 날씨 E -->
 	
 	

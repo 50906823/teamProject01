@@ -13,9 +13,14 @@
 #header {
   width: 100%; height: 80px;
   background-color: #FFFFFF;
+  font-size: 1.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+	margin-right: 10px;
 }
 
 .box-search {
@@ -64,6 +69,12 @@
     align-items: baseline;
     font-weight: bold;
 }
+.nav-right > li > span {
+	margin-left: 5px;
+}
+.nav-right > li > span, .nav-right > li > a {
+	padding: 10px;
+}
 
 .nav-item { 
     margin-right: 0rem;
@@ -95,10 +106,10 @@
         String welcomeName = userID != null ? userID : kakaoNickname != null ? kakaoNickname : naverNickname;
     %>
 	<div id="header">
-		<a href="main.jsp" class="logo"><img src="놀러가조_로고.png" style=" width: 200px; height: 53px;"> </a>
+		<a href="main.jsp" class="logo"><img src="놀러가조_로고.png" style=" width: 200px; height: 53px;"></a>
 		
 		<form id="searchForm" action="search.jsp" method="post" style="display: flex; align-items: center; width: 700px; ">
-			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; margin-right: 10px; font-size: 1.4rem;">
+			<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; font-size: 1.4rem;">
 			    <option value="none">==지역 선택==</option>
 			    <option value="seoul">서울</option>
 			    <option value="busan">부산</option>
@@ -121,7 +132,7 @@
 			<div class="box-search" style="flex: 1;">
 				<input class="input-search" type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요.">
 			</div>
-			<button id="searchBtn" type="button" style="margin-left: 10px;">검색</button>
+			<button id="searchBtn" type="button">검색</button>
 	    </form>
 		<ul class="nav">
 			<div class="nav-right">

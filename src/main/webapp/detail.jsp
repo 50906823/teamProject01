@@ -38,10 +38,6 @@
     z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
 }
 
-h2 {
-	
-}
-
 .infoContainer {
 	font-size: 1.1rem;
 	margin-right: 30px;
