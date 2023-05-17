@@ -11,11 +11,13 @@
 .menu {
 	background-color: #FFFFFF00;
 	
+	font-weight: bold;
+	
 }
 </style>
 </head>
 <body>
-	<ul class="nav justify-content-center menu">
+	<ul class="nav justify-content-center menu" >
 		<li class="nav-item">
 			<a class="nav-link active" aria-current="page" href="main.jsp" style="color: black ">이달의여행</a>
 		</li>
