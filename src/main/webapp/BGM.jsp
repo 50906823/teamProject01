@@ -8,7 +8,13 @@
 </head>
 <body>
   
-  <audio autoplay="autoplay" loop="loop" controls="controls"> <source src="https://youtu.be/xRnAeJF31SY"></audio>
+  <iframe src="배경음악30분.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+  <audio id="audio" autoplay>
+  
+  <source src="배경음악30분.mp3">
+  
+  </audio>
  
   
 </body>
