@@ -18,9 +18,9 @@
 </style>
 </head>
 <body>
-	<ul class="nav justify-content-center menu">
+	<ul class="nav justify-content-center menu" >
 		<li class="nav-item">
-			<a class="nav-link active" aria-current="page" href="main.jsp" style="color: black">이달의여행</a>
+			<a class="nav-link active" aria-current="page" href="https://tour.chungnam.go.kr/_prog/thememon/index.php?site_dvs_cd=kr&menu_dvs_cd=0201&func_dvs_cd=theme" target="_blank" style="color: black ">이달의여행</a>
 		</li>
 		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
