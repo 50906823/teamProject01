@@ -10,6 +10,8 @@
 <title>메인 페이지</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!-- 제이쿼리스크립트 -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 <style>
 
 @font-face {
@@ -118,7 +120,7 @@ p {
       <!-- 검색form -->
       <form id="searchForm" action="search.jsp" method="post" style=" width: 900px; margin: 0 auto;">
 				<div class="searchFlex" style="width: 170px; height: 100%; display: inline-flex;">
-         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; height: 50px; border : 1px solid black; margin-right: 10px; position: absolute; bottom: 368px; left: 186px; font-size: 1.3rem; background-color: #f2fe8a; ">
+         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; height: 50px; border : 1px solid black; margin-right: 10px; position: absolute; bottom: 368px; left: 186px; font-size: 1.3rem; background-color: white;">
              <option value="none">==지역 선택==</option>
              <option value="seoul">서울</option>
              <option value="busan">부산</option>
@@ -145,6 +147,7 @@ p {
          <button id="searchBtn" type="button" style="margin-left: 11px;">검 색</button>
          
        </form>
+        <%@ include file = "ingi_search.jsp" %> 
 			 <%@ include file = "menu_main.jsp" %> 
           <%@ include file = "footer.jsp" %> 
    </div>

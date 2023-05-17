@@ -10,7 +10,7 @@
 .menu {
 	background-color: #FFFFFF00;
 	position: absolute;
-	bottom : 300px;
+	bottom : 180px;
 	left: 355px;
 	font-size: 1.5rem;
 	font-weight: bolder;
