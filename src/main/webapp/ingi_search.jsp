@@ -20,33 +20,20 @@
 
 
 
-* {
+html,body {
 	padding:0px;
-	margin:0 auto;
+	margin:0px;
 	font-family: 'KyoboHand';
 	position:relative;
 }
-#wrap {
-	margin:0px;
-	padding:0px;
-	width:100%;
-	position: absolute;
-	bottom: 250px;
-	left: 60px;
-}
-.container {
-	width:1000px;
-	margin:0 auto;
-	position: absolute;
-	
-}
+
 a,img {
 	border:0px;
 	text-decoration:none;
 }
 ul,li {
 	list-style:none;
-	padding:0;
+	padding:0px;
 	margin:0px;
 }
 h1 {
@@ -55,7 +42,7 @@ h1 {
 	font-weight:100;
 	text-align:center;
 	margin:0px;
-	margin-top:0;
+	margin-top:193px;
 }
 h1 > b {
 	font-weight:900;
@@ -63,9 +50,8 @@ h1 > b {
 
 #best_search {
 	width:740px;
-	height: 20px;
 	margin:0 auto;
-	padding-top:0;
+	padding-top:0px;
 	text-align:center;
 }
 #best_search li,dd {
@@ -84,12 +70,11 @@ button {
 }
 #best_search li p {
 	color:#393939;
-	font-size:18px;
+	font-size:17px;
 	font-weight:bold;
-	margin:0;
+	margin:0px;
 	padding-right:30px;
-	padding-top: 0;
-	padding-bottom: 30px;
+	
 }
 dd {
 	margin:0px;
@@ -124,12 +109,9 @@ dd .num {
 .best_add {
 	border:1px solid #bebebe;
 	color:#4b4b4b;
-	background-color : pink;
-	padding:0px 10px;
+	background-color: pink;
+	padding:0px 4px;
 	margin-left:10px;
-	position: absolute;
-	bottom: 0px;
-	
 }
 
 
@@ -137,11 +119,9 @@ dd .num {
 
 </head>
 <body>
-  
-<div id="wrap">
-		<div class="container">
+<div class = "blank" style= "width: 100%; height: 500px; border: 1px solid black;"></div>
 			<ul id="best_search">
-				<li><p>인기검색어 :</p></li>
+				<li><p>인기검색어</p></li>
 				<li>
 					<dl class="time1" style="display:">
 						<dd><a class="t" href="#"><div class="num">1</div>자전거</a></dd>
@@ -176,11 +156,9 @@ dd .num {
 					<a class="best_add ad1" style="cursor:pointer" onClick="javascript:view('0')">></a>
 					<a class="best_add ad2" onClick="javascript:view('1')" style="display:none;cursor:pointer" >></a>
 					<a class="best_add ad3" onClick="javascript:view('2')" style="display:none;cursor:pointer" >></a>
-					<a class="best_add ad4" onClick="javascript:view('3')" style="display:none;cursor:pointer" >></a>
+					<a class="best_add ad4" onClick="javascript:view('3')" style="display:none;cursor:pointer" ><</a>
 				</li>
 			</ul>
-		</div>
-   </div>
 
 
 </body>
