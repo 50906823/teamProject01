@@ -12,16 +12,16 @@
 	
 	<form name='areaAddForm' action='addArea_proc.jsp' method="post">
 		<div class="mb-3">
-		  <label for="formGroupExampleInput1" class="form-label">제보 장소 번호</label>
+		  <label for="formGroupExampleInput1" class="form-label">제보 장소 전화번호</label>
 		  <input type="text" class="form-control" id="inputNum"
-		  		name="num" placeholder="제보 장소 번호 입력">
+		  		name="num" placeholder="제보 장소 전화번호 입력 *">
 		</div>
 		<div class="mb-3">
 		  <label for="formGroupExampleInput2" class="form-label">제보 장소 이름</label>
 		  <input type="text" class="form-control" id="inputName"
-		  		name="name" placeholder="제보 장소 이름 입력">
+		  		name="name" placeholder="제보 장소 이름 입력 *">
 		</div>
-		<button id="insertBtn" type="button" class="btn btn-primary">추가</button>
+		<button id="insertBtn" type="button" class="btn btn-primary">제보하기</button>
 	</form>
 	
 	<script>
