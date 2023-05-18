@@ -130,6 +130,8 @@ ul {
 				</div>
 			</form>
 		</div>
+		  <%@ include file = "BGM.jsp" %> 
+       <%@ include file = "footer.jsp" %>
 	</div>
 
 	<!-- 카카오 스크립트 -->

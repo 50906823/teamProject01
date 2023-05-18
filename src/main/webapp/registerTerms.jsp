@@ -107,6 +107,8 @@ p {
             <input type="submit" value="동의하고 회원가입">
         </form>
     </div>
+      <%@ include file = "BGM.jsp" %> 
+       <%@ include file = "footer.jsp" %>
 </div>
 
 </body>

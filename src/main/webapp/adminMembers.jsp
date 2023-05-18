@@ -48,6 +48,8 @@
 				<% } %>
 			</tbody>
 		</table>
+		  <%@ include file = "BGM.jsp" %> 
+       <%@ include file = "footer.jsp" %>
 	</div>
 </body>
 </html>
