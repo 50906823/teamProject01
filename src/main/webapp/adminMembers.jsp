@@ -13,6 +13,13 @@
 	rel="stylesheet"
 	integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
 	crossorigin="anonymous">
+<style>
+.container {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+</style>
 </head>
 <body>
 
@@ -28,7 +35,7 @@
 					<th scope="col">이름</th>
 					<th scope="col">이메일</th>
 					<th scope="col">전화번호</th>
-					<th scope="col">삭제</th>
+					<th scope="col">상세 정보</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -42,13 +49,12 @@
 					<td><%= user.getUserName() %></td>
 					<td><%= user.getUserEmail() %></td>
 					<td><%= user.getUserPhone() %></td>
-					<td><a href="deleteUser.jsp?userID=<%= user.getUserID() %>"
-						class="btn btn-danger">삭제</a></td>
+					<td><button onclick="location.href='memberInfoDetail.jsp?userID=<%= user.getUserID() %>'" class="btn btn-primary">확인하기</button></td>
 				</tr>
 				<% } %>
 			</tbody>
 		</table>
-		  <%@ include file = "BGM.jsp" %> 
+	   <%@ include file = "BGM.jsp" %> 
        <%@ include file = "footer.jsp" %>
 	</div>
 </body>

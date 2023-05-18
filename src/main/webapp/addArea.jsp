@@ -75,7 +75,7 @@ p {
 		<div class="subContainer">
 		
 			<div class="container" style="width: 70%">
-				<form name='areaAddForm' action='addArea_proc.jsp' method="post">
+				<form name='areaAddForm' action='' method="post">
 					<div class="col-md-6">
 						<label for="inputName" class="form-label"><br><br><p style="margin-bottom: 0;">이름</p></label> <input
 							type="text" name="name" class="form-control" id="inputName"
@@ -118,6 +118,7 @@ p {
 				alert('입력하지 않은 란이 있습니다.');
 			} else {
 				if(confirm('추가하시겠습니까?')){
+					form.action = 'addArea_proc.jsp';
 					form.submit();
 				}
 			}

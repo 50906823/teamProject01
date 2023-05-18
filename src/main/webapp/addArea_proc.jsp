@@ -32,6 +32,7 @@
 	%>
 		<script>
 				alert('제보 실패..');
+				location.href = './addArea.jsp'; 
 		</script>
 	<%
 		}

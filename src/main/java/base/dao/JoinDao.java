@@ -2,9 +2,11 @@ package base.dao;
 
 import base.dto.JoinDto;
 import base.oracle.DBConnectionManager;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -117,4 +119,79 @@ public class JoinDao {
 
         return result; // 1: 성공, 0: 실패
     }
+    
+	//update
+	public int updateMemberInfo(JoinDto joinDto) {
+
+		Connection conn = null;
+		PreparedStatement psmt = null;
+		ResultSet rs = null;
+		int result = 0;
+
+		try {
+			conn = DBConnectionManager.getConnection();
+
+			// 쿼리문!
+			String sql = "UPDATE USERS"
+					+" SET username = ?, userpassword = ?, usergender = ?, userphone = ?, user_email = ?"
+					+" WHERE userID = ?";
+
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, joinDto.getUserName());
+			psmt.setString(2, joinDto.getUserPassword());
+			psmt.setString(3, joinDto.getUserGender());
+			psmt.setString(4, joinDto.getUserPhone());
+			psmt.setString(5, joinDto.getUserEmail());
+			psmt.setString(6, joinDto.getUserID());
+
+			result = psmt.executeUpdate();
+
+			System.out.println("처리결과:" + result);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DBConnectionManager.close(rs, psmt, conn);
+		}
+
+		return result;
+	}
+    
+	public JoinDto selectMemberInfoById(String id) {
+		Connection conn = null;
+		PreparedStatement psmt = null;
+		ResultSet rs = null;
+		JoinDto joinDto = null;
+
+		try {
+			conn = DBConnectionManager.getConnection();
+
+			String sql = "select * from users"
+					+" WHERE userid = ?";
+
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, id);
+
+			rs = psmt.executeQuery();
+
+			if(rs.next()) {
+				joinDto = new JoinDto();
+
+				joinDto.setUserID(rs.getString("userid"));
+				joinDto.setUserName(rs.getString("username"));
+				joinDto.setUserPassword(rs.getString("userpassword"));
+				joinDto.setUserGender(rs.getString("usergender"));
+				joinDto.setUserPhone(rs.getString("userphone"));
+				joinDto.setUserEmail(rs.getString("user_email"));
+				
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DBConnectionManager.close(rs, psmt, conn);			
+		}
+
+		return joinDto;
+	}
+    
 }
