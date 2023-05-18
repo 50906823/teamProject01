@@ -20,14 +20,14 @@
 }
 
 .login-page {
-	display: flex;
+/* 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	min-height: 100vh;
-	background-color: #f0f0f0;
+/* 	background-color: #f0f0f0; */
 	background-image: url('메인배경_1.png'); /* 이미지 파일 경로를 지정해주세요 */
-	background-repeat: no-repeat; /* 이미지 반복 방지 */
-	background-position: center; /* 이미지 중앙 정렬 */
+	/* background-repeat: no-repeat; */ /* 이미지 반복 방지 */
+	/* background-position: center; */ /* 이미지 중앙 정렬 */
 	background-size: cover; /* 이미지 크기 조절 */
 }
 
@@ -37,6 +37,11 @@
 	border-radius: 1rem;
 	width: 400px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
+	position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .login-wrapper h2 {
@@ -86,10 +91,10 @@ ul {
 </style>
 <body>
 
-	<jsp:include page="navBar.jsp" />
-	<!-- navBar.jsp 추가 -->
 
 	<div class="login-page">
+	<jsp:include page="navBar.jsp" />
+	<!-- navBar.jsp 추가 -->
 		<div class="login-wrapper">
 			<h2>로그인</h2>
 			<form method="post" action="loginAction.jsp" id="login-form">
@@ -98,7 +103,7 @@ ul {
 					type="password" class="form-control" name="userPassword"
 					maxlength="20" placeholder="비밀번호 입력 *"> <label
 					for="remember-check"> <input type="checkbox"
-					id="remember-check" style="position: relative; left: 0;" />로그인 상태
+					id="remember-check" style="position: relative; left: 0;" /> 로그인 상태
 					유지
 				</label> <input type="submit" class="btn btn-primary form-control"
 					value="LOGIN">
