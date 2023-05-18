@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<audio src="배경음악저용량.mp3" autoplay loop></audio>
+<audio src="배경음악저용량.mp3" autoplay loop="1"></audio>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 --team_area 테이블 생성
 CREATE TABLE team_area
 (
-    area_num VARCHAR2(3) PRIMARY KEY,
+    area_num VARCHAR2(20) PRIMARY KEY,
     area_name VARCHAR2(15) NOT NULL
 );
 
