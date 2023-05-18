@@ -13,7 +13,6 @@
 .footer {
 width : 100%;
 height: 25px;
-color: #fb96ad;
 text-align: center;
 font-size : 1rem;
 font-weight : bold;
@@ -30,7 +29,7 @@ span {
 </head>
 <body>
   <div class="footer">
-     <span>개인정보 어쩌구 저작권 저쩌구 쌔비면 난 네 목숨 쌔비지</span>
+     <span>Copyright 2023. 놀러가조 all rights reserved.</span>
   </div> 
 </body>
 </html>
