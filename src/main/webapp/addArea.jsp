@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>지역 제보 페이지</title>
+<title>제보하기 페이지</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'KyoboHand';
@@ -39,12 +39,6 @@
     z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
 } 
 
-
-.searchList {
-	width: 100%; height: 580px;
-	font-size: 1.1rem;
-	overflow: auto;
-}
 /* 스크롤바 커스텀 */
 .searchList::-webkit-scrollbar {
     width: 8px;  /* 스크롤바의 너비 */
@@ -58,28 +52,6 @@
 .container::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0);
 }
-
-/* 페이지네이션 */
-.paging {
-  width: 100%;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.paging a {
-  display: inline-block;
-  padding: 8px 12px;
-  margin: 0 5px;
-  border-radius: 5px;
-  background-color: #ffffffa1;
-  color: #333;
-  text-decoration: none;
-}
-.paging a.active {
-  background-color: #00000098;
-  color: #fff;
-}
 </style>
 </head>
 <body>
@@ -90,7 +62,7 @@
 		<div class="subContainer">
 		
 			<div class="container" style="width: 70%">
-				<form form name='areaAddForm' action='addArea_proc.jsp' method="post">
+				<form name='areaAddForm' action='addArea_proc.jsp' method="post">
 					<div class="col-md-6">
 						<label for="inputName" class="form-label"><br><br><b>이름</b></label> <input
 							type="text" name="name" class="form-control" id="inputName"
@@ -137,37 +109,3 @@
 	</script>
 </body>
 </html>
-
-
-<%-- <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>지역제보 페이지</title>
-</head>
-<body>	
-	<%@ include file = "navBar.jsp" %>
-	<%@ include file = "menuBar.jsp" %>
-	
-	<script>
-			document.getElementById('insertBtn').addEventListener('click', ()=>{
-			
-			let form = document.areaAddForm;
-			
-			let inputNum = document.getElementById('inputNum');
-			let inputName = document.getElementById('inputName');
-			
-			if(inputNum.value == "" || inputName.value == ""){
-				alert('입력하지 않은 란이 있습니다.');
-				inputName.focus();
-			} else {
-				if(confirm('추가하시겠습니까?')){
-					form.submit();
-				}
-			}
-		});
-	</script>
-</body>
-</html> --%>

@@ -34,10 +34,10 @@
 			<a class="nav-link" href="main.jsp" style="color: black">축제</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="addArea.jsp" style="color: black">장소제보</a>
+			<a class="nav-link" href="addArea.jsp" style="color: black">제보하기</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="userArea.jsp" style="color: black">회원제보장소</a>
+			<a class="nav-link" href="userArea.jsp" style="color: black">자유게시판</a>
 		</li>
 	</ul>
 </body>

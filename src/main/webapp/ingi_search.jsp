@@ -135,7 +135,7 @@ border: 1px solid black;
 				<li><p>인기검색어</p></li>
 				<li>
 					<dl class="time1" style="display:">
-						<dd><a class="t" href="#" style="background-color: #fb96ad; font-size: 1.3rem;"><div class="num">1</div>정용진</a></dd>
+						<dd><a class="t" href="#" target="_blank" onclick="openNew()" style="background-color: #fb96ad; font-size: 1.3rem;"><div class="num">1</div>정용진</a></dd>
 						<dd><a class="t" href="#"><div class="num">2</div>글램핑</a></dd>
 						<dd><a class="t" href="#"><div class="num">3</div>차박</a></dd>
 						<dd><a class="t" href="#"><div class="num">4</div>오토캠핑</a></dd>
@@ -205,6 +205,12 @@ $("#best_search").mouseenter(function() {
 $("#best_search").mouseleave(function() {
 	rtcarousel = setInterval(function(){ view(viewcount) },3000);
 });
+
+
+/* 새창 */
+function openNew(){
+    window.open('https://band.us/band/90111458/chat/CiNmSK', 'title', 'width=500, height=700, left=200, top=200');
+  }
 
 </script>
 

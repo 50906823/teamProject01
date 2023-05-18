@@ -219,7 +219,7 @@
 		<div class="weatherContainer">
 			<span style="font-size:1.3rem; font-weight: bold;">날씨정보</span><br>
 			<span class="ctemp">현재 </span><span>℃ | </span>
-			<span class="clowtemp">최저 </span><span class="chightemp">℃ | 최고</span><span>℃</span>
+			<span class="clowtemp">최저 </span><span class="chightemp">℃ | 최고 </span><span>℃</span>
 		</div>
 	<%
 		} else {

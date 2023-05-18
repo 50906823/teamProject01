@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>자유 게시판</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'KyoboHand';
@@ -91,7 +91,7 @@
 	AreaDao areaDao = new AreaDao();
 	List<AreaDto> areaInfoList = areaDao.selectAreaInfoList();
 	
-    int pageSize = 12; // 한 페이지에 출력할 항목 수
+    int pageSize = 10; // 한 페이지에 출력할 항목 수
     int totalItems = areaInfoList.size(); // 전체 항목 수
     int totalPages = (totalItems + pageSize - 1) / pageSize; // 전체 페이지 수
     
@@ -116,8 +116,8 @@
 					<table class="table table-hover">
 						<colgroup style="background-color: #ffffffa1">
 							<col style="width: 30%;">
-							<col style="width: 40%;">
 							<col style="width: 30%;">
+							<col style="width: 40%;">
 						</colgroup>
 						<thead>
 							<tr>
@@ -145,30 +145,30 @@
                     <a href="?page=1" style="width: 40px; height: 40px; text-align: center;">≪</a>
                     <a href="?page=<%= currentPage - 1 %>" style="width: 40px; height: 40px; text-align: center;">&lt;</a>
                 <% } %>
-                
-                <% 
-                int startPage = Math.max(currentPage - 2, 1); //시작 페이지 계산
-     	        int endPage = Math.min(startPage + 4, totalPages); //종료 페이지 계산
-     	       
-     	        /* endPage와 startPage 사이의 차이가 4보다 작으면
-     	        	  페이지 버튼이 5개로 고정되도록 시작 페이지를 재조정 */
-     	        if (endPage - startPage < 4) {
-     	            startPage = Math.max(endPage - 4, 1);
-     	        }
-     	       
-     	        int fixedPageBtn = 5 - (endPage - startPage + 1); //고정 버튼 개수와 실제 출력 버튼 개수 차이 계산
-     	        startPage = Math.max(startPage - fixedPageBtn, 1); //시작 페이지 조정
 
-                	for (int i = 1; i <= totalPages; i++) { %>
-	                    <% if (i == currentPage) { %>
-	                        <a href="?page=<%= i %>" class="active"><%= i %></a>
-	                    <% } else { %>
-	                        <a href="?page=<%= i %>"><%= i %></a>
-	                    <% } %>
-                	<% } %>
-                
-                <% if (currentPage < totalPages) { %>
-                    <a href="?page=<%= currentPage + 1 %>" style="width: 40px; height: 40px; text-align: center;">&gt;</a>
+					<%
+					int startPage = Math.max(currentPage - 2, 1); //시작 페이지 계산
+					int endPage = Math.min(startPage + 4, totalPages); //종료 페이지 계산
+
+					/* endPage와 startPage 사이의 차이가 4보다 작으면
+					   페이지 버튼이 5개로 고정되도록 시작 페이지를 재조정 */
+					if (endPage - startPage < 4) {
+						startPage = Math.max(endPage - 4, 1);
+					}
+
+					int fixedPageBtn = 5 - (endPage - startPage + 1); //고정 버튼 개수와 실제 출력 버튼 개수 차이 계산
+					startPage = Math.max(startPage - fixedPageBtn, 1); //시작 페이지 조정
+
+					for (int i = 1; i <= totalPages; i++) {  %>
+						<% if (i == currentPage) { %>
+							<a href="?page=<%=i%>" class="active"><%=i%></a>
+						<% } else { %>
+							<a href="?page=<%=i%>"><%=i%></a>
+						<% } %>
+					<% } %>
+
+					<% if (currentPage < totalPages) { %>
+                    <a href="?page=<%=currentPage + 1%>" style="width: 40px; height: 40px; text-align: center;">&gt;</a>
                     <a href="?page=<%= totalPages %>" style="width: 40px; height: 40px; text-align: center;">≫</a>
                 <% } %>
             </div>
