@@ -14,9 +14,6 @@
 .link-text {
   color: tomato;
 }
-.link-text2 {
-  color: black;
-}
 </style>
 
 <script>
@@ -25,10 +22,10 @@ function toggleActiveLink() {
     
     if (currentPage === 'addArea.jsp') {
         document.getElementById('addAreaLink').classList.add('link-text');
-        document.getElementById('userAreaLink').classList.add('link-text2');
+
     } else if (currentPage === 'userArea.jsp') {
         document.getElementById('userAreaLink').classList.add('link-text');
-        document.getElementById('addAreaLink').classList.add('link-text2');
+
     }
 }
 </script>
