@@ -13,7 +13,7 @@
 .footer {
 width : 100%;
 height: 25px;
-color: red;
+color: #fb96ad;
 text-align: center;
 font-size : 1rem;
 font-weight : bold;

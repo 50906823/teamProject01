@@ -13,28 +13,29 @@
 	<%
 		request.setCharacterEncoding("UTF-8"); //한글 정상 인식을 위해
 		
-		String area_num = request.getParameter("num");
-		String area_name = request.getParameter("name");
+		String name = request.getParameter("name");
+		String address = request.getParameter("address");
+		String explanation = request.getParameter("explanation");
 		
 		AreaDao areaDao = new AreaDao();
 		
-		int result = areaDao.insertAreaInfo(area_num, area_name);
+		int result = areaDao.insertAreaInfo(name, address, explanation);
 		
 		if(result == 1){
 		//추가성공
 	%>
 		<script>
-			alert('추가성공');
+			alert('제보 성공');
 		</script>
 	<%
 		} else {
 	%>
 		<script>
-				alert('추가실패..');
+				alert('제보 실패..');
 		</script>
 	<%
 		}
 	%>
-	<script> location.href = './addArea.jsp'; </script>
+	<script> location.href = './userArea.jsp'; </script>
 </body>
 </html>

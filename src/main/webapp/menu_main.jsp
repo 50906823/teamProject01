@@ -40,11 +40,11 @@
 		</li>
 		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
-			<a class="nav-link" href="main.jsp" style="color: black">당일치기</a>
+			<a class="nav-link" href="addArea.jsp" style="color: black">장소제보</a>
 		</li>
 		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
-			<a class="nav-link" href="addArea.jsp" style="color: black">장소제보</a>
+			<a class="nav-link" href="userArea.jsp" style="color: black">회원제보장소</a>
 		</li>
 	</ul>
 </body>
