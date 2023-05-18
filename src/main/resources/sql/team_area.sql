@@ -1,14 +1,8 @@
 --team_area 테이블 생성
 CREATE TABLE team_area
 (
-<<<<<<< HEAD
-    area_num VARCHAR2(20) PRIMARY KEY,
+    area_num VARCHAR2(3) PRIMARY KEY,
     area_name VARCHAR2(15) NOT NULL
-=======
-    area_name VARCHAR2(4000) NOT NULL,
-    area_address VARCHAR2(4000) PRIMARY KEY,
-    area_explanation VARCHAR2(4000) NOT NULL
->>>>>>> refs/remotes/origin/develop
 );
 
 --team_area 테이블 조회
@@ -41,6 +35,7 @@ INSERT INTO team_area VALUES ('064', '제주');
 울산 052 세종 044 경기 031 강원 033 충북 043 충남 041
 전북 063 전남 061 경북 054 경남 055 제주 064
 */
+
 
 DROP TABLE TEAM_BUSAN_01;
 DROP TABLE TEAM_CHUNGBUK_01;

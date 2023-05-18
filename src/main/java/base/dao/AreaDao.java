@@ -23,24 +23,22 @@ public class AreaDao {
 		try {
 			conn = DBConnectionManager.getConnection();
 
-			// 쿼리문!
 			String sql = "SELECT * FROM team_area";
 
 			psmt = conn.prepareStatement(sql);
 
-			rs = psmt.executeQuery(); //쿼리를 실행!!
+			rs = psmt.executeQuery();
 
-			//ResultSet next() 메소드는 결과 데이터에 다음행 다음행 다음행 이동.
-			//return true/false  -> 값이 있다 없다!
 			areaInfoList = new ArrayList<AreaDto>();
 			
 			while(rs.next()) {
-				AreaDto areaDto = new AreaDto(); //데이터를 만들어서
+				AreaDto areaDto = new AreaDto();
 				
-				areaDto.setArea_num(rs.getString("area_num"));
 				areaDto.setArea_name(rs.getString("area_name"));
+				areaDto.setArea_address(rs.getString("area_address"));
+				areaDto.setArea_explanation(rs.getString("area_explanation"));
 
-				areaInfoList.add(areaDto); //리스트에 추가
+				areaInfoList.add(areaDto);
 			}
 
 		} catch (SQLException e) {
@@ -51,29 +49,30 @@ public class AreaDao {
 		
 		return areaInfoList;
 	}
-	public AreaDto selectAreaInfoByArea_num(String area_num) {
+	
+	//select
+	public AreaDto selectAreaInfoByArea_num(String area_name) {
 		Connection conn = null;
 		PreparedStatement psmt = null;
 		ResultSet rs = null;
 		AreaDto areaDto = null;
 		
-		//select 한개 단일
 		try {
 			conn = DBConnectionManager.getConnection();
 
-			// 쿼리문!
-			String sql = "SELECT * FROM team_area WHERE area_num = ?";
+			String sql = "SELECT * FROM team_area WHERE area_name = ?";
 
 			psmt = conn.prepareStatement(sql);
-			psmt.setString(1, area_num);
+			psmt.setString(1, area_name);
 
-			rs = psmt.executeQuery(); //쿼리를 실행!!
+			rs = psmt.executeQuery();
 
-			if(rs.next()) { //데이터가 있으면 true, 없으면 false
+			if(rs.next()) { 
 				areaDto = new AreaDto();
 				
-				areaDto.setArea_num(rs.getString("area_num"));
 				areaDto.setArea_name(rs.getString("area_name"));
+				areaDto.setArea_address(rs.getString("area_address"));
+				areaDto.setArea_explanation(rs.getString("area_explanation"));
 			}
 			
 		} catch (SQLException e) {
@@ -135,8 +134,9 @@ public class AreaDao {
 
 
 				psmt = conn.prepareStatement(sql);
-				psmt.setString(1, areaDto.getArea_name());
-				psmt.setString(2, areaDto.getArea_num());
+				areaDto.setArea_name(rs.getString("area_name"));
+				areaDto.setArea_address(rs.getString("area_address"));
+				areaDto.setArea_explanation(rs.getString("area_explanation"));
 				
 				result = psmt.executeUpdate();
 				
@@ -152,7 +152,7 @@ public class AreaDao {
 		}
 	
 	//insert
-	public int insertAreaInfo(String area_num, String area_name) {
+	public int insertAreaInfo(String name, String address, String explanation) {
 
 		Connection conn = null;
 		PreparedStatement psmt = null;
@@ -162,13 +162,13 @@ public class AreaDao {
 		try {
 			conn = DBConnectionManager.getConnection();
 
-			// 쿼리문!
 			String sql = "INSERT INTO team_area"
-						+" VALUES(?, ?)";
+						+" VALUES(?, ?, ?)";
 
 			psmt = conn.prepareStatement(sql);
-			psmt.setString(1, area_num);
-			psmt.setString(2, area_name);
+			psmt.setString(1, name);
+			psmt.setString(2, address);
+			psmt.setString(3, explanation);
 			
 			result = psmt.executeUpdate();
 			

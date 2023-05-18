@@ -150,33 +150,29 @@ p {
        <%@ include file = "BGM.jsp" %> 
        </form>
        <%@ include file = "ingi_search.jsp" %> 
-			 <%@ include file = "menu_main.jsp" %> 
-          <%@ include file = "footer.jsp" %> 
+	   <%@ include file = "menu_main.jsp" %> 
+       <%@ include file = "footer.jsp" %> 
    </div>
        
 			
 
 
    <script>
-      /* 검색 조건 */
-      document.getElementById('searchBtn').addEventListener('click', ()=>{
-         
-         let form = document.getElementById('searchForm');
-         let inputSearch = document.getElementById('inputSearch');
-         let inputArea = document.getElementById('inputArea');
-         
-          if(inputArea.value == "none") {
-            alert('지역을 선택해 주세요.');
-            inputArea.focus();
-         } else if(inputArea.value != "none") {
-            form.submit();
-         } else if(inputSearch.value == ""){
-            alert('검색어를 입력해 주세요.');
-            inputSearch.focus();
-         } else {
-            form.submit();
-         }
-      });
+	   /* 검색 조건 */
+	   document.getElementById('searchBtn').addEventListener('click', ()=>{
+	      let form = document.getElementById('searchForm');
+	      let inputArea = document.getElementById('inputArea');
+	      
+	      /* #inputArea = 필수값, #inputSearch = 선택값 */
+	       if(inputArea.value == "none") {
+	    	 //select-option 미선택시 alert 후 focus
+	         alert('지역을 선택해 주세요.');
+	         inputArea.focus();
+	      } else {
+	    	 //select-option 선택시 input값 유무 상관 없이 submint
+	         form.submit();
+	      }
+	   });
    </script>
 </body>
 </html>
