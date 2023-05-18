@@ -147,6 +147,7 @@ p {
          </div>
          <button id="searchBtn" type="button" style="margin-left: 11px;">검 색</button>
          
+       <%@ include file = "BGM.jsp" %> 
        </form>
        <%@ include file = "ingi_search.jsp" %> 
 	   <%@ include file = "menu_main.jsp" %> 
