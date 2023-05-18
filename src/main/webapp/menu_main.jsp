@@ -40,7 +40,7 @@
 		</li>
 		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">
-			<a class="nav-link" href="addArea.jsp" style="color: black">장소제보</a>
+			<a class="nav-link" href="addArea.jsp" style="color: black">제보하기</a>
 		</li>
 		<li class="nav-item" style="color: black">|</li>
 		<li class="nav-item">

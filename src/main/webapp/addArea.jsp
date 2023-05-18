@@ -39,6 +39,19 @@
     z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
 } 
 
+p {
+	margin-bottom: 0;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#inputName, #inputAddress, #inputExplanation {
+	background-color: white;
+}
+#inputName, #inputAddress, #inputExplanation, #addBtn {
+	font-size: 1.2rem;
+}
+
 /* 스크롤바 커스텀 */
 .searchList::-webkit-scrollbar {
     width: 8px;  /* 스크롤바의 너비 */
@@ -64,19 +77,22 @@
 			<div class="container" style="width: 70%">
 				<form name='areaAddForm' action='addArea_proc.jsp' method="post">
 					<div class="col-md-6">
-						<label for="inputName" class="form-label"><br><br><b>이름</b></label> <input
+						<label for="inputName" class="form-label"><br><br><p style="margin-bottom: 0;">이름</p></label> <input
 							type="text" name="name" class="form-control" id="inputName"
 							placeholder="제보하실 장소의 이름을 입력해 주세요.">
 					</div>
 					<div class="col-12">
-						<label for="inputAddress" class="form-label"><br><b>주소</b></label> <input
+						<label for="inputAddress" class="form-label"><br><p style="margin-bottom: 0;">주소</p></label> <input
 							type="text" name="address" class="form-control" id="inputAddress"
 							placeholder="제보하실 장소의 주소를 입력해 주세요.">
 					</div>
 					<div class="col-12">
-						<label for="inputExplanation" class="form-label"><br><b>설명</b></label> <input
+						<label for="inputExplanation" class="form-label"><br><p style="margin-bottom: 0;">설명</p></label> <!-- <input
 							type="text" name="explanation" class="form-control" id="inputExplanation"
-							placeholder="제보하실 장소의 설명을 입력해 주세요.">
+							style="height: 100px;" placeholder="제보하실 장소의 설명을 입력해 주세요."> -->
+							<textarea name="explanation" class="form-control" id="inputExplanation"
+							    style="height: 200px; padding: 10px; vertical-align: top; text-align: left;"
+							    placeholder="제보하실 장소의 설명을 입력해 주세요."></textarea>
 					</div>
 					<br>
 					<div class="col-12">
