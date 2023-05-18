@@ -1,14 +1,9 @@
 --team_area 테이블 생성
 CREATE TABLE team_area
 (
-<<<<<<< HEAD
-    area_num VARCHAR2(20) PRIMARY KEY,
-    area_name VARCHAR2(15) NOT NULL
-=======
     area_name VARCHAR2(4000) NOT NULL,
     area_address VARCHAR2(4000) PRIMARY KEY,
     area_explanation VARCHAR2(4000) NOT NULL
->>>>>>> refs/remotes/origin/develop
 );
 
 --team_area 테이블 조회
