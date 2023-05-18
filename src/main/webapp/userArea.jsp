@@ -41,7 +41,7 @@
 
 
 .userList {
-	width: 100%; height: 580px;
+	width: 100%; height: 650px;
 	font-size: 1.1rem;
 	overflow: auto;
 }
@@ -89,17 +89,29 @@
 	request.setCharacterEncoding("UTF-8");
 	
 	AreaDao areaDao = new AreaDao();
-
 	List<AreaDto> areaInfoList = areaDao.selectAreaInfoList();
 	
-	%>
+    int pageSize = 12; // 한 페이지에 출력할 항목 수
+    int totalItems = areaInfoList.size(); // 전체 항목 수
+    int totalPages = (totalItems + pageSize - 1) / pageSize; // 전체 페이지 수
+    
+    int currentPage = 1; // 현재 페이지 번호
+    if (request.getParameter("page") != null) {
+        currentPage = Integer.parseInt(request.getParameter("page"));
+    }
+    
+    int startIndex = (currentPage - 1) * pageSize; // 페이지의 시작 인덱스
+    int endIndex = Math.min(startIndex + pageSize, totalItems); // 페이지의 끝 인덱스 (마지막 페이지에서는 전체 항목 수를 초과하지 않도록 조정)
+    
+    List<AreaDto> currentList = areaInfoList.subList(startIndex, endIndex); // 현재 페이지에 출력할 부분 리스트
+%>
 	
 	<div class="mainContainer" style="width: 1280px">
 		<%@ include file="header.jsp"%>
 		<%@ include file="menuBar.jsp"%>
 		<div class="subContainer">
 			<div class="container" style="width: 100%">
-			  <br>
+				<br>
 				<div class="userList">
 					<table class="table table-hover">
 						<colgroup style="background-color: #ffffffa1">
@@ -115,61 +127,54 @@
 							</tr>
 						</thead>
 						<tbody
-							style="border-color: lightgray; vertical-align: middle; overflow-y: auto; cursor: pointer;">
-							
-							<%
-							/* 페이지네이션 */
-							int currentPage = 1; //현재 페이지 번호. 초기값 1
-							int itemsPerPage = 12; //한 페이지에 표시할 아이템(리스트) 수
-							int totalItems = areaInfoList.size(); //아이템의 총 수
-							int totalPages = (int) Math.ceil((double) totalItems / itemsPerPage); //총 페이지 수
-							//전체 아이템 수와 페이지당 아이템 수를 나눈 뒤, Math.ceil()로 나머지 올림 처리
-
-							/* 현재 페이지 정보를 가져오기 */
-							String pageParam = request.getParameter("page");
-							if (pageParam != null && !pageParam.isEmpty()) {
-								currentPage = Integer.parseInt(pageParam);
-								if (currentPage < 1) {
-									currentPage = 1;
-								} else if (currentPage > totalPages) {
-									currentPage = totalPages;
-								}
-							}
-
-							/* 현재 페이지에 표시할 아이템의 범위 계산
-							   현재 페이지 번호와 페이지당 아이템 수를 사용하여 시작 및 끝 인덱스 계산 */
-							int startIndex = (currentPage - 1) * itemsPerPage;
-							int endIndex = Math.min(startIndex + itemsPerPage, totalItems);
-
-							/* 현재 페이지의 아이템 리스트 가져오기 */
-							List<AreaDto> currentPageItems = areaInfoList.subList(startIndex, endIndex);
-
-							int startItem = (currentPage - 1) * itemsPerPage;
-							int endItem = Math.min(startItem + itemsPerPage, areaInfoList.size());
-
-							/* searchDao.selectSearchInfoList(area, search) 출력 */
-							for (int i = startItem; i < endItem; i++) {
-								AreaDto item = areaInfoList.get(i);
-							%>
-							<%-- <tr onclick="location.href='detail.jsp?area=<%=area%>&name=<%=URLEncoder.encode(item.getName(), "UTF-8")%>'"> --%>
-							<!-- main에서 받은 값(area, name) detail.jsp에도 보내기, URLEncoder (임포트 필요) → [, ] 문자 URL인코딩 / 아스키 코드 -->
-							<tr>
-
-								<td><%=item.getArea_name()%></td>
-								<td><%=item.getArea_address()%></td>
-								<td><%=item.getArea_explanation()%></td>
-							</tr>
-							<%
-			}
-		%>
+							style="border-color: lightgray; vertical-align: middle; overflow-y: auto;">
+						<% for (AreaDto item : currentList) { %>
+                            <tr>
+                                <td><%= item.getArea_name() %></td>
+                                <td><%= item.getArea_address() %></td>
+                                <td><%= item.getArea_explanation() %></td>
+                            </tr>
+                        <% } %>
 						</tbody>
 					</table>
 				</div>
 
-			</div>
-			
-		</div>
-		<%@ include file="footer.jsp"%>
-	</div>
+            <%-- 페이지네이션 링크 --%>
+			<div class="paging">
+                <% if (currentPage > 1) { %>
+                    <a href="?page=1" style="width: 40px; height: 40px; text-align: center;">≪</a>
+                    <a href="?page=<%= currentPage - 1 %>" style="width: 40px; height: 40px; text-align: center;">&lt;</a>
+                <% } %>
+                
+                <% 
+                int startPage = Math.max(currentPage - 2, 1); //시작 페이지 계산
+     	        int endPage = Math.min(startPage + 4, totalPages); //종료 페이지 계산
+     	       
+     	        /* endPage와 startPage 사이의 차이가 4보다 작으면
+     	        	  페이지 버튼이 5개로 고정되도록 시작 페이지를 재조정 */
+     	        if (endPage - startPage < 4) {
+     	            startPage = Math.max(endPage - 4, 1);
+     	        }
+     	       
+     	        int fixedPageBtn = 5 - (endPage - startPage + 1); //고정 버튼 개수와 실제 출력 버튼 개수 차이 계산
+     	        startPage = Math.max(startPage - fixedPageBtn, 1); //시작 페이지 조정
+
+                	for (int i = 1; i <= totalPages; i++) { %>
+	                    <% if (i == currentPage) { %>
+	                        <a href="?page=<%= i %>" class="active"><%= i %></a>
+	                    <% } else { %>
+	                        <a href="?page=<%= i %>"><%= i %></a>
+	                    <% } %>
+                	<% } %>
+                
+                <% if (currentPage < totalPages) { %>
+                    <a href="?page=<%= currentPage + 1 %>" style="width: 40px; height: 40px; text-align: center;">&gt;</a>
+                    <a href="?page=<%= totalPages %>" style="width: 40px; height: 40px; text-align: center;">≫</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <%@ include file="footer.jsp"%>
+</div>
 </body>
 </html>
