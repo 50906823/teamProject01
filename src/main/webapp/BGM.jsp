@@ -22,15 +22,15 @@ audio {
     const audio = document.getElementById('bgm');
     const storedTime = localStorage.getItem('playTime');
     //localStorage에 저장한 재생시간 가져옴
-
+ 
     if (storedTime) {
       audio.currentTime = parseFloat(storedTime);
-      // 문자열을 숫자로 변환한다.
+     // 문자열로 저장된 재생시간값을 숫자로 변환한다.
     }
 
     audio.play(); //음악재생
 
-    window.addEventListener('beforeunload', () => { //사용자가 페이지 떠날 때 
+    window.addEventListener('beforeunload', () => { //사용자가 페이지 떠나기전에 (unload되기 전에)
       localStorage.setItem('playTime', audio.currentTime); //오디오 현재 재생시간을 playTime에 저장
     });
   }
