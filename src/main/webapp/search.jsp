@@ -36,8 +36,8 @@
     top: 120px;
     left: 50%;
     transform: translate(-50%);
-    background-color: #ffffff60; /* 불투명한 배경 색상 */
-    z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
+    background-color: #ffffff60;
+    z-index: 1;
 } 
 
 .weatherContainer {
@@ -351,14 +351,5 @@
 <%@ include file = "BGM.jsp" %> 
 <%@ include file = "footer.jsp" %> 
 </div>
-
-<!-- <script>
-	function rowClickHandler(row, area, name) {
-	  // 클릭한 행의 정보를 사용하여 원하는 동작을 수행합니다.
-	  // 예: 특정 페이지로 이동하거나 행에 대한 상세 정보를 표시하는 등의 작업을 수행할 수 있습니다.
-	  var detailURL = 'detail.jsp?area=' + area + '&name=' + encodeURIComponent(name);
-	  window.location.href = detailURL;  // 페이지 이동 예시
-	}
-</script> -->
 </body>
 </html>
