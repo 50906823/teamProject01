@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원 삭제</title>
+<link rel="shortcut icon" type="image/x-icon" href="메인_새창_아이콘.JPG">
 </head>
 <body>
 	<%

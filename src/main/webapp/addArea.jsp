@@ -66,6 +66,8 @@ p {
     background: rgba(0, 0, 0, 0);
 }
 </style>
+<title>지역제보 페이지</title>
+<link rel="shortcut icon" type="image/x-icon" href="메인_새창_아이콘.JPG">
 </head>
 <body>
 <body>

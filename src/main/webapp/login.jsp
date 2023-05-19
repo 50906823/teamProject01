@@ -8,6 +8,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <title>로그인 페이지</title>
+<link rel="shortcut icon" type="image/x-icon" href="메인_새창_아이콘.JPG">
 <style>
 @font-face {
     font-family: 'KyoboHand';

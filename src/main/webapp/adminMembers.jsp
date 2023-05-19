@@ -8,6 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원관리 페이지</title>
+<link rel="shortcut icon" type="image/x-icon" href="메인_새창_아이콘.JPG">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
 	rel="stylesheet"

@@ -8,6 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>단일 상세 페이지</title>
+<link rel="shortcut icon" type="image/x-icon" href="메인_새창_아이콘.JPG">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'KyoboHand';
