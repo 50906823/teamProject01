@@ -21,15 +21,9 @@
 }
 
 .join-page {
-/*     display: flex;
-    justify-content: center;
-    align-items: center; */
     min-height: 100vh;
-/*     background-color: #f0f0f0; */
-    background-image: url('메인배경_1.png'); /* 이미지 파일 경로를 지정해주세요 */
-    /* background-repeat: no-repeat; */ /* 이미지 반복 방지 */
-    /* background-position: center; */ /* 이미지 중앙 정렬 */
-    background-size: cover; /* 이미지 크기 조절 */
+    background-image: url('메인배경_1.png');
+    background-size: cover;
 }
 
 .signup-wrapper {
@@ -88,7 +82,7 @@ input[type="radio"] {
 </head>
 <body>
 <div class="join-page">
-<jsp:include page="navBar.jsp" /> <!-- navBar.jsp 추가 -->
+<jsp:include page="navBar.jsp" />
     <div class="signup-wrapper">
         <h2>회원가입</h2>
         <form method="post" action="joinAction.jsp">
