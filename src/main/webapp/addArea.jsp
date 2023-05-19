@@ -9,8 +9,10 @@
 <head>
 <meta charset="UTF-8">
 <title>제보하기 페이지</title>
+<link rel="shortcut icon" type="image/x-icon" href="메인_새창_아이콘.JPG">
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box;
+* {
+	margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'KyoboHand';
  }
 
@@ -35,8 +37,8 @@
     top: 120px;
     left: 50%;
     transform: translate(-50%);
-    background-color: #ffffff60; /* 불투명한 배경 색상 */
-    z-index: 1; /* 메인 컨테이너 내부에서 가장 위에 배치하기 위해 z-index 설정 */
+    background-color: #ffffff60;
+    z-index: 1;
 } 
 
 p {
@@ -104,6 +106,7 @@ p {
 			</div>
 			
 		</div>
+		<%@ include file = "BGM.jsp" %> 
 		<%@ include file="footer.jsp"%>
 	</div>
 

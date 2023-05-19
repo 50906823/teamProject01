@@ -11,15 +11,15 @@
 
 <style>
 .footer {
-width : 330px;
-height: 25px;
-text-align: center;
-font-size : 1rem;
-font-weight : bold;
-position: absolute;
-bottom: 5px; 
-left: 37%;
-padding-bottom : 0;
+	width : 330px;
+	height: 25px;
+	text-align: center;
+	font-size : 1rem;
+	font-weight : bold;
+	position: absolute;
+	bottom: 5px; 
+	left: 37%;
+	padding-bottom : 0;
 }
 span {
    background-color: #ffffff83;

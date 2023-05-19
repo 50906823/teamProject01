@@ -25,7 +25,6 @@
 <body>
 
 	<jsp:include page="navBar.jsp" />
-	<!-- navBar.jsp 추가 -->
 
 	<div class="container">
 		<h1 class="mt-3">회원 관리</h1>
@@ -50,7 +49,7 @@
 					<td><%= user.getUserName() %></td>
 					<td><%= user.getUserEmail() %></td>
 					<td><%= user.getUserPhone() %></td>
-					<td><button onclick="location.href='memberInfoDetail.jsp?userID=<%= user.getUserID() %>'" class="btn btn-primary">확인하기</button></td>
+					<td><button onclick="location.href='memberInfoDetail.jsp?userID=<%= user.getUserID() %>'" class="btn btn-primary">확인</button></td>
 				</tr>
 				<% } %>
 			</tbody>

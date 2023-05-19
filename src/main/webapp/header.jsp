@@ -64,7 +64,7 @@
     background-color: #FFFFFF;
 }
 
-.nav-left, .nav-right {
+.nav-right {
     display: flex;
     align-items: baseline;
     font-weight: bold;
@@ -132,34 +132,34 @@
 			<div class="box-search" style="flex: 1;">
 				<input class="input-search" type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요.">
 			</div>
-			<button id="searchBtn" type="button">검색</button>
+			<button id="searchBtn" type="button">검 색</button>
 	    </form>
 		<ul class="nav">
 			<div class="nav-right">
 				<%
-				if (welcomeName == null) {
+					if (welcomeName == null) {
 				%>
-				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="login.jsp" style="color: black">로그인</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="registerTerms.jsp" style="color: black">회원가입</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="login.jsp" style="color: black">로그인</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="registerTerms.jsp" style="color: black">회원가입</a></li>
 				<%
-				} else {
+					} else {
 				%>
-				<li class="nav-item"><span> <%=welcomeName%>님 환영합니다! </span></li>
+					<li class="nav-item"><span> <%=welcomeName%>님 환영합니다! </span></li>
 				<%
-				if (welcomeName.equals("admin")) {
+					if (welcomeName.equals("admin")) {
 				%>
-				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="adminMembers.jsp" style="color: black">회원관리</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="adminMembers.jsp" style="color: black">회원관리</a></li>
 				<%
-				}
+					}
 				%>
 				<li class="nav-item"><a class="nav-link active"
 					aria-current="page" onclick="kakaoLogout()" href="logoutAction.jsp"
 					style="color: black">로그아웃</a></li>
 				<%
-				}
+					}
 				%>
 			</div>
 		</ul>

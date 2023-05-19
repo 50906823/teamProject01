@@ -30,17 +30,15 @@
 
 * { 
 	margin: 0; padding: 0; box-sizing: border-box; 
-     font-family: 'KyoboHand';
+    font-family: 'KyoboHand';
 }
 
 .mainContainer {
-  
-   height: 913px;
-   background-size: cover;
-   background-image: url('메인배경_1.png');
-	 margin-left: 0;
+    height: 913px;
+    background-size: cover;
+    background-image: url('메인배경_1.png');
+	margin-left: 0;
     margin-right: 0;
-  
 }
 
 .mainlogo{
@@ -49,7 +47,6 @@
 	background-size: cover;
 	position: absolute;
 	bottom : 350px;
-	
 }
 p {
   color: #7BB661;
@@ -61,7 +58,6 @@ p {
 
 .box-search {
   width: 600px; height: 50px;
- 
   margin: 0px 10px;
   position: absolute;
   left: 375px;
@@ -85,24 +81,21 @@ p {
 #searchBtn {
 	width : 80px;
 	height : 50px;
-  /* background-color: #ffffff00; */
-  background-color: #f2fe8a;
-  /* background-color: #e6cffb;  */
-     /* background-color: #AFD485; */
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.4rem;
-  color : black;
-  border : 1px solid black;
+ 	background-color: #f2fe8a;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	color : black;
+	border : 1px solid black;
   
-  padding: 10px;
-  cursor: pointer;
-  position: absolute;
-  left: 1001px;
-  bottom: 368px;
-  padding-top : 5px;
-  padding-bottom: 6px;
+	padding: 10px;
+	cursor: pointer;
+	position: absolute;
+	left: 1001px;
+	bottom: 368px;
+	padding-top : 5px;
+	padding-bottom: 6px;
 }
 #searchBtn:hover {
   background-color: #7BB661;
@@ -119,28 +112,29 @@ p {
    
       <!-- 검색form -->
       <form id="searchForm" action="search.jsp" method="post" style=" width: 900px; margin: 0 auto;">
-				<div class="searchFlex" style="width: 170px; height: 100%; display: inline-flex;">
-         <select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; height: 50px; border : 1px solid black; margin-right: 10px; position: absolute; bottom: 368px; left: 186px; font-size: 1.3rem; background-color: white;">
-             <option value="none">==지역 선택==</option>
-             <option value="seoul">서울</option>
-             <option value="busan">부산</option>
-             <option value="daegu">대구</option>
-             <option value="incheon">인천</option>
-             <option value="gwangju">광주</option>
-             <option value="daejeon">대전</option>
-             <option value="ulsan">울산</option>
-             <option value="sejong">세종</option>
-             <option value="gyeongi">경기</option>
-             <option value="gangwon">강원</option>
-             <option value="chungbuk">충북</option>
-             <option value="chungnam">충남</option>
-             <option value="gyeongbuk">경북</option>
-             <option value="gyeongnam">경남</option>
-             <option value="jeonbuk">전북</option>
-             <option value="jeonnam">전남</option>
-             <option value="jeju">제주</option>
-         </select></div>
-				 <img class="mainlogo" src="메인_곰돌이04.png" >
+		<div class="searchFlex" style="width: 170px; height: 100%; display: inline-flex;">
+        	<select id="inputArea" name="area" class="form-select" aria-label="Default select example" style="width: 170px; height: 50px; border : 1px solid black; margin-right: 10px; position: absolute; bottom: 368px; left: 186px; font-size: 1.3rem; background-color: white;">
+	             <option value="none">==지역 선택==</option>
+	             <option value="seoul">서울</option>
+	             <option value="busan">부산</option>
+	             <option value="daegu">대구</option>
+	             <option value="incheon">인천</option>
+	             <option value="gwangju">광주</option>
+	             <option value="daejeon">대전</option>
+	             <option value="ulsan">울산</option>
+	             <option value="sejong">세종</option>
+	             <option value="gyeongi">경기</option>
+	             <option value="gangwon">강원</option>
+	             <option value="chungbuk">충북</option>
+	             <option value="chungnam">충남</option>
+	             <option value="gyeongbuk">경북</option>
+	             <option value="gyeongnam">경남</option>
+	             <option value="jeonbuk">전북</option>
+	             <option value="jeonnam">전남</option>
+	             <option value="jeju">제주</option>
+         	</select>
+         </div>
+		 <img class="mainlogo" src="메인_곰돌이04.png" >
          <div class="box-search" style="flex: 1;">
             <input class="input-search" type="text" id="inputSearch" name="search" placeholder="검색어를 입력하세요.">
          </div>

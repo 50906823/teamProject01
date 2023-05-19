@@ -8,10 +8,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>상세 검색 페이지</title>
+<title>검색 상세 페이지</title>
 <link rel="shortcut icon" type="image/x-icon" href="메인_새창_아이콘.JPG">
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box;
+* {
+	margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'KyoboHand';
  }
 
@@ -101,49 +102,48 @@
     
 	<div class="container" style="width: 100%">
 	<%
-	request.setCharacterEncoding("UTF-8");
-
-	/* main에서 받은 값 가져오기 */
-	String area = request.getParameter("area");
-	String search = request.getParameter("search");
-
-	/* DAO 객체 생성 */
-	SearchDao searchDao = new SearchDao();
-	/* DAO 메소드 사용 */
-	List<SearchDto> searchInfoList = searchDao.selectSearchInfoList(area, search);
+		request.setCharacterEncoding("UTF-8");
+	
+		/* main에서 받은 값 가져오기 */
+		String area = request.getParameter("area");
+		String search = request.getParameter("search");
+	
+		/* DAO 객체 생성 */
+		SearchDao searchDao = new SearchDao();
+		/* DAO 메소드 사용 */
+		List<SearchDto> searchInfoList = searchDao.selectSearchInfoList(area, search);
 	%>
 
 	<!-- S -->
 	<%
-	// main-select-option에 있는 value 를 cityId로 변환
-	String cityId = "";
-	if (area.equals("seoul")) {
-		cityId = "1835848";
-	} else if (area.equals("busan")) {
-		cityId = "1838524";
-	} else if (area.equals("daegu")) {
-		cityId = "1835327";
-	} else if (area.equals("incheon")) {
-		cityId = "1843561";
-	} else if (area.equals("gwangju")) {
-		cityId = "1841811";
-	} else if (area.equals("daejeon")) {
-		cityId = "1835224";
-	} else if (area.equals("ulsan")) {
-		cityId = "1833747";
-	} else if (area.equals("sejong")) {
-		cityId = "1842616";
-	} else if (area.equals("jeju")) {
-		cityId = "1846266";
-	} else if (area.equals("chungnam")) {
-		cityId = "1845759";
-	} else {
-		/* out.println("<script>alert('날씨 서비스가 제공되지 않는 지역입니다.');</script>"); */
-		cityId = null;
-	}
-	// api호출주소 구성하기 위해 cityId값 활용
-	String apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId
-			+ "&appid=41ecd1c23b0f1a112643d899fee45436&units=metric";
+		// main-select-option에 있는 value 를 cityId로 변환
+		String cityId = "";
+		if (area.equals("seoul")) {
+			cityId = "1835848";
+		} else if (area.equals("busan")) {
+			cityId = "1838524";
+		} else if (area.equals("daegu")) {
+			cityId = "1835327";
+		} else if (area.equals("incheon")) {
+			cityId = "1843561";
+		} else if (area.equals("gwangju")) {
+			cityId = "1841811";
+		} else if (area.equals("daejeon")) {
+			cityId = "1835224";
+		} else if (area.equals("ulsan")) {
+			cityId = "1833747";
+		} else if (area.equals("sejong")) {
+			cityId = "1842616";
+		} else if (area.equals("jeju")) {
+			cityId = "1846266";
+		} else if (area.equals("chungnam")) {
+			cityId = "1845759";
+		} else {
+			cityId = null;
+		}
+		// api호출주소 구성하기 위해 cityId값 활용
+		String apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId
+				+ "&appid=41ecd1c23b0f1a112643d899fee45436&units=metric";
 	%>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -234,7 +234,6 @@
 	%>
 	<!-- 날씨 E -->
 	
-	
 	<div class="searchList">
 		<table class="table table-hover">
 				<colgroup style="background-color: #ffffffa1">
@@ -284,8 +283,8 @@
 			for(int i = startItem; i < endItem; i++) { 
 	        SearchDto item = searchInfoList.get(i);
 		%>
+					<!-- main에서 받은 값(area, name) detail.jsp에도 보내기, URLEncoder (임포트 필요) → [, ] 문자 URL인코딩 / 아스키 코드 -->
 			<tr onclick="location.href='detail.jsp?area=<%=area%>&name=<%=URLEncoder.encode(item.getName(), "UTF-8")%>'">
-				<!-- main에서 받은 값(area, name) detail.jsp에도 보내기, URLEncoder (임포트 필요) → [, ] 문자 URL인코딩 / 아스키 코드 -->
 				<td><%=item.getName()%></td>
 					
 				<!-- 값이 null인 부분은 '-' 출력 -->

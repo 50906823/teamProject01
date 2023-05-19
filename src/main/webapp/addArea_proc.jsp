@@ -11,7 +11,7 @@
 </head>
 <body>
 	<%
-		request.setCharacterEncoding("UTF-8"); //한글 정상 인식을 위해
+		request.setCharacterEncoding("UTF-8");
 		
 		String name = request.getParameter("name");
 		String address = request.getParameter("address");
@@ -29,10 +29,11 @@
 		</script>
 	<%
 		} else {
+		//추가실패
 	%>
 		<script>
-				alert('제보 실패..');
-				location.href = './addArea.jsp'; 
+			alert('제보 실패');
+			location.href = './addArea.jsp'; 
 		</script>
 	<%
 		}

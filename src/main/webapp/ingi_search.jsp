@@ -18,14 +18,11 @@
     font-style: normal;
 }
 
-
-
 html,body {
 	padding:0px;
 	margin:0px;
 	font-family: 'KyoboHand';
 	position:relative;
-	
 }
 
 a,img {
@@ -78,7 +75,6 @@ button {
 	font-size: 1.3rem;
 	font-weight: bold;
 	color: red;
-	
 }
 dd {
 height :0;
@@ -121,9 +117,9 @@ dd .num {
 	margin-left:3px;
 }
 a.best_add{
-width: 51.7px;
-height: 22px;
-border: 1px solid black;
+	width: 51.7px;
+	height: 22px;
+	border: 1px solid black;
 }
 
 </style>
@@ -207,7 +203,7 @@ $("#best_search").mouseleave(function() {
 });
 
 
-/* 새창 */
+/* 새창에서 열기 */
 function openNew(){
     window.open('https://band.us/band/90111458/chat/CiNmSK', 'title', 'width=500, height=700, left=200, top=200');
   }

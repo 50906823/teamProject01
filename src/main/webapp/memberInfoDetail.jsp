@@ -9,6 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원 상세정보 페이지</title>
+<link rel="shortcut icon" type="image/x-icon" href="메인_새창_아이콘.JPG">
 <style>
 .container { 
 	display: flex;
