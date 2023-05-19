@@ -100,7 +100,7 @@ input[type="radio"] {
             <input type="submit" value="SIGN UP">
         </form>
     </div>
-      <%@ include file = "BGM.jsp" %> 
+       <%@ include file = "BGM.jsp" %> 
        <%@ include file = "footer.jsp" %>
 </div>
 
