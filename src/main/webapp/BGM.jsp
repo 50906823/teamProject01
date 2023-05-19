@@ -25,7 +25,7 @@ audio {
 
     if (storedTime) {
       audio.currentTime = parseFloat(storedTime);
-      // 문자열을 숫자로 변환
+      // 문자열을 숫자로 변환한다.
     }
 
     audio.play(); //음악재생
