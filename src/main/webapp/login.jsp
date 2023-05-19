@@ -20,15 +20,9 @@
 }
 
 .login-page {
-/* 	display: flex;
-	justify-content: center;
-	align-items: center; */
 	min-height: 100vh;
-/* 	background-color: #f0f0f0; */
-	background-image: url('메인배경_1.png'); /* 이미지 파일 경로를 지정해주세요 */
-	/* background-repeat: no-repeat; */ /* 이미지 반복 방지 */
-	/* background-position: center; */ /* 이미지 중앙 정렬 */
-	background-size: cover; /* 이미지 크기 조절 */
+	background-image: url('메인배경_1.png');
+	background-size: cover;
 }
 
 .login-wrapper {
@@ -78,15 +72,15 @@ ul {
 }
 
 .kakao-buttons {
-	position: relative; /* position 속성을 relative로 설정. */
-	top: 20px; /* top 속성을 이용해 버튼을 아래로 20px 이동. */
-	left: 35px; /* left 속성을 이용해 버튼을 오른쪽으로 50px 이동. */
+	position: relative;
+	top: 20px;
+	left: 35px;
 }
 
 .naver-buttons {
-	position: relative; /* position 속성을 relative로 설정. */
-	top: 15px; /* top 속성을 이용해 버튼을 아래로 20px 이동. */
-	left: 35px; /* left 속성을 이용해 버튼을 오른쪽으로 50px 이동. */
+	position: relative;
+	top: 15px;
+	left: 35px;
 }
 </style>
 <body>
@@ -94,7 +88,6 @@ ul {
 
 	<div class="login-page">
 	<jsp:include page="navBar.jsp" />
-	<!-- navBar.jsp 추가 -->
 		<div class="login-wrapper">
 			<h2>로그인</h2>
 			<form method="post" action="loginAction.jsp" id="login-form">
@@ -178,7 +171,7 @@ function kakaoLogin() {
   });
 }
 
-//카카오로그아웃  
+//카카오로그아웃 (수정 필요) 
 function kakaoLogout() {
   if (Kakao.Auth.getAccessToken()) {
     Kakao.Auth.logout(function () {

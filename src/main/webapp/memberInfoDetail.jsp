@@ -69,6 +69,8 @@
 </div>
 
 <script>
+
+	//삭제 버튼
 	document.getElementById('deleteBtn').addEventListener('click', () => {
 		let form = document.memberDetailForm;
 		if (confirm('삭제하시겠습니까?')) {
@@ -77,7 +79,7 @@
 		}
 	});
 
-	// 수정 버튼 클릭 시 submit 이벤트를 발생시키도록 수정
+	//수정 버튼
 	document.getElementById('updateBtn').addEventListener('click', () => {
 		let form = document.memberDetailForm;
 		if (confirm('수정하시겠습니까?')) {

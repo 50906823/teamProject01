@@ -116,8 +116,6 @@ p {
    <div class="mainContainer" style=" width: 1280px;">
 	 <%@ include file = "navBar.jsp" %>
    
-		
-
       <!-- 검색form -->
       <form id="searchForm" action="search.jsp" method="post" style=" width: 900px; margin: 0 auto;">
 				<div class="searchFlex" style="width: 170px; height: 100%; display: inline-flex;">
@@ -169,7 +167,7 @@ p {
 	         alert('지역을 선택해 주세요.');
 	         inputArea.focus();
 	      } else {
-	    	 //select-option 선택시 input값 유무 상관 없이 submint
+	    	 //select-option 선택시 input값 유무 상관 없이 submit
 	         form.submit();
 	      }
 	   });
